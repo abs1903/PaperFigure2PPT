@@ -5,6 +5,7 @@
 
 <p align="center">
   <a href="#examples">Examples</a> ·
+  <a href="#visual-styles">Styles</a> ·
   <a href="#install">Install</a> ·
   <a href="#how-it-works">Workflow</a> ·
   <a href="paperfigure/SKILL.md">Skill</a> ·
@@ -22,10 +23,11 @@ figure to inspect it at full resolution.
 
 A cross-modal pairing matrix makes the learning objective visible; a separate
 zero-shot region shows how language descriptions define the classes.
+Shown with pale role surfaces; the [original and alternative palette](docs/runs/2026-11-17-color-study/clip-palette-comparison.png) are retained as a matched paint-only study.
 
-<a href="docs/runs/2026-11-17-clip-showcase/output-v2/native-render/preview.png"><img src="docs/runs/2026-11-17-clip-showcase/output-v2/native-render/preview.png" width="100%" alt="CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders."></a>
+<a href="docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/preview.png"><img src="docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/preview.png" width="100%" alt="CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders."></a>
 
-**[PowerPoint](docs/runs/2026-11-17-clip-showcase/output-v2/figure.pptx)** · [SVG](docs/runs/2026-11-17-clip-showcase/output-v2/editable.svg) · [PDF](docs/runs/2026-11-17-clip-showcase/output-v2/native-render/figure.pdf) · [Source & review](docs/runs/2026-11-17-clip-showcase/REPORT.md)
+**[PowerPoint](docs/runs/2026-11-17-color-study/clip-soft-dual/figure.pptx)** · [SVG](docs/runs/2026-11-17-color-study/clip-soft-dual/editable.svg) · [PDF](docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/figure.pdf) · [Source & review](docs/runs/2026-11-17-color-study/REPORT.md)
 
 ---
 
@@ -56,6 +58,28 @@ results or claims to outperform the original paper figures.
 
 Earlier ReAct, Reflexion, Voyager, BLIP-2 and LLaVA studies remain available in the
 [case archive and technical reference](docs/USAGE.md#examples).
+
+## Visual styles
+
+The skill saves [mechanism-specific visual profiles](paperfigure/assets/visual-styles.json)
+and [original palette families](paperfigure/assets/palette-families.json), with its own
+preview images, adaptation rules and source attribution. The [reference guide](paperfigure/references/color-and-hierarchy.md)
+records actual inspection of 12 ICLR 2026 and 4 CVPR 2026 method figures; it does
+not prescribe a single conference style.
+
+- **Role surfaces:** pale supporting modules, readable dark ink and a focal relation.
+  Compare [soft blue/green](paperfigure/assets/styles/clip-soft-dual.png) and
+  [plum/sage](paperfigure/assets/styles/clip-plum-sage.png).
+- **Token continuity:** repeated representation categories with consistent local cues;
+  [MAE example](paperfigure/assets/styles/mae-token-lane.png).
+- **Focus and detail:** one overview with a scientifically meaningful enlarged region;
+  [Agentless example](paperfigure/assets/styles/agentless-focus.png).
+- **Line-first:** restrained structural ink with explicitly labeled relation accents;
+  source-linked guidance, without a claimed new accepted project example.
+
+Profiles include composition, glyphs, typography, borders/routes, suitable mechanisms
+and failure modes. Paper source art remains link-only; bundled examples are our own
+native schematics. See the [style study and verification](docs/runs/2026-11-17-color-study/REPORT.md).
 
 ## Install
 

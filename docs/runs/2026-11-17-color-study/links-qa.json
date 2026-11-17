@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checked": {
+    "README.md": 36,
+    "paperfigure/SKILL.md": 14,
+    "paperfigure/references/color-and-hierarchy.md": 2,
+    "docs/runs/2026-11-17-color-study/REPORT.md": 18
+  },
+  "missing": []
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "baselineSceneSHA256": "4626d284f19cdce41dac54f89ae6223a6bfadff0bb5b91dfed50220cc0098332",
+  "newSceneSHA256": "a286be3e8c2c920cdb32d3bb84c8a82cc60a389c3f731564b742420d9437325a",
+  "structuralFingerprint": "f211806402ceea51af99e80bb1b806974de0c4fc02194413f82eccd11389c3d1",
+  "scope": "All fields except title/source identity, paint values and binding reference hash compare identical. Fonts/positions/text/edges/grouping remain unchanged."
+}

@@ -52,6 +52,9 @@ read [image-reference.md](references/image-reference.md).
 - Ground scientific modules, edges, phases, state lifetime and contribution claims
   in actual source evidence. Quote presence is not scientific entailment; invented
   relations cannot be justified by familiar method names or generated images.
+- For color or visual-style selection, read [color-and-hierarchy.md](references/color-and-hierarchy.md).
+  It routes to saved mechanism-specific style profiles, palette families and original
+  preview examples; choose a suitable grammar rather than imposing one venue style.
 - For new designs, default to solid semantic colors and no visible title, subtitle,
   footer or footnote. These defaults do not override a selected reference or an
   explicit user request. Keep provenance and uncertainty in accompanying files.

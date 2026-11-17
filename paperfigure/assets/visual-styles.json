@@ -1,0 +1,284 @@
+{
+  "version": "1.0",
+  "scope": "Original reusable visual-grammar descriptions informed by actual method-figure inspection. External source art remains link-only; bundled previews are our original schematic figures.",
+  "selection": "Choose by source mechanism and desired emphasis, then adapt; profiles are optional and may be combined. Existing accepted reference and explicit user requirements take precedence.",
+  "profiles": [
+    {
+      "id": "role-surfaces",
+      "name": "Pale role surfaces with a focal relation",
+      "fit": [
+        "Parallel modalities or model roles",
+        "Cross-modal alignment",
+        "Memory/perception interaction"
+      ],
+      "composition": "Align genuinely parallel branches and place the actual interaction at their meeting point. Keep supporting panels quieter than the focal mechanism.",
+      "glyphVocabulary": "Direct native model shapes, small modality glyphs and meaningful representation fragments. Preserve input-image identity through original schematic artwork or an explicit illustration exception.",
+      "typography": "Dark body/module ink on pale surfaces; short local phase captions. A localized dark core with readable light ink is an available variation, not a ban.",
+      "paint": "Role hue may appear in outline, connector and small glyphs; pale surface is separate from accent. Give focal warm/cool contrast a declared scientific meaning.",
+      "connectors": "Mostly restrained structural routes. Reuse a role accent when tracing the same representation; keep model reuse/control distinguishable from data flow.",
+      "paletteFamilies": [
+        "soft-dual",
+        "plum-sage"
+      ],
+      "avoid": [
+        "Large saturated heading bars that compete with the mechanism",
+        "Inferring trainability from tint",
+        "An equal card for every code node"
+      ],
+      "sources": [
+        {
+          "id": "memoryvla",
+          "paper": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 2,
+          "page": 4,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/1fa3d6ccbcd15f7285fee666b2bd57be-Paper-Conference.pdf#page=4",
+          "observation": "Perceptual blue and cognitive green recur in token glyphs, memory-bank entries and attention labels; several supporting modules use light cream/gray."
+        },
+        {
+          "id": "cache-to-cache",
+          "paper": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 5,
+          "page": 5,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/474ada926b331d78f06d95e8913111cc-Paper-Conference.pdf#page=5",
+          "observation": "A mostly white/gray compact schematic reserves peach/orange for the fuser path and blue-framed endpoints; flame/snowflake symbols redundantly expose state."
+        },
+        {
+          "id": "memgen",
+          "paper": "MemGen: Weaving Generative Latent Memory for Self-Evolving Agents",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 2,
+          "page": 4,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/26407588dfb08e48c459c074ab6adb7d-Paper-Conference.pdf#page=4",
+          "observation": "Light green/blue/lilac bands group reasoning, trigger and weaving contexts; dark text remains readable and token colors recur."
+        },
+        {
+          "id": "laver",
+          "paper": "Unleashing the Intrinsic Visual Representation Capability of Multimodal Large Language Models",
+          "venue": "CVPR",
+          "year": 2026,
+          "figure": 3,
+          "page": 4,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Unleashing_the_Intrinsic_Visual_Representation_Capability_of_Multimodal_Large_Language_CVPR_2026_paper.pdf#page=4",
+          "observation": "Peach visual tokens and plum text tokens recur in token rows and attention/position insets; a navy student and light-blue teacher use explicit flame/snowflake symbols."
+        },
+        {
+          "id": "omnivinci",
+          "paper": "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 2,
+          "page": 2,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/5c1863f711c721648387ac2ef745facb-Paper-Conference.pdf#page=2",
+          "observation": "Blue/lavender/mint token streams and lightly tinted stage fields organize modalities and alignment; small colored blocks recur through the flow."
+        },
+        {
+          "id": "fedafd",
+          "paper": "FedAFD: Multimodal Federated Learning via Adversarial Fusion and Distillation",
+          "venue": "CVPR",
+          "year": 2026,
+          "figure": 2,
+          "page": 3,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Tan_FedAFD_Multimodal_Federated_Learning_via_Adversarial_Fusion_and_Distillation_CVPR_2026_paper.pdf#page=3",
+          "observation": "Soft pink/yellow/green modality components recur in server/client features; pale blue-gray training panels and black labels/lines organize the framework."
+        }
+      ],
+      "ownPreviews": [
+        {
+          "path": "styles/clip-soft-dual.png",
+          "kind": "Actual native PPTX Office render; user-authorized paint-only revision",
+          "case": "CLIP conceptual illustration, not a 2026 paper or model execution"
+        },
+        {
+          "path": "styles/clip-plum-sage.png",
+          "kind": "Actual native PPTX Office render; same CLIP geometry and text",
+          "case": "Optional alternative treatment, not a second paper case"
+        }
+      ]
+    },
+    {
+      "id": "token-continuity",
+      "name": "Repeated representation categories",
+      "fit": [
+        "Token selection and masking",
+        "Context/memory consolidation",
+        "Multiple representation levels"
+      ],
+      "composition": "Repeat the same category vocabulary across aligned stages; use source-supported changes in count, grouping or position to show the operation.",
+      "glyphVocabulary": "Native small tokens, stack/sequence/group patterns and local category labels. Exact token/layer counts require evidence; example counts are declared schematic.",
+      "typography": "Place category words near the recurring pattern. Preserve paper-width legibility; do not shrink labels to fit a dense author layout.",
+      "paint": "Categories occupy small glyphs while surrounding model blocks remain quieter. Reuse a local key or direct label, and keep meaning visible in geometry or text.",
+      "connectors": "Connect the transformation, not every decorative token. Distinguish input/output categories from gradients and persistent state.",
+      "paletteFamilies": [
+        "token-categorical",
+        "soft-dual"
+      ],
+      "avoid": [
+        "Random colored squares without semantics",
+        "A token palette automatically painted across all modules",
+        "Copying literal layer counts or dense mini-text from source art"
+      ],
+      "sources": [
+        {
+          "id": "mem1",
+          "paper": "MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 1,
+          "page": 4,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/5fc8b3bdfbb9167b5144df5d3fae4616-Paper-Conference.pdf#page=4",
+          "observation": "Pale phase panels coexist with blue, pink and orange context-token categories repeated across turns and the attention mask."
+        },
+        {
+          "id": "lightmem",
+          "paper": "LightMem: Lightweight and Efficient Memory-Augmented Generation",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 2,
+          "page": 4,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a05b72653ec5b473732129829ae04195-Paper-Conference.pdf#page=4",
+          "observation": "Topic identity recurs in muted pink/green/lilac memory items, with mostly dark labels and thin outlines."
+        },
+        {
+          "id": "metaembed",
+          "paper": "MetaEmbed: Scaling Multimodal Retrieval at Test-Time with Flexible Late Interaction",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 1,
+          "page": 2,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/288720e07ddd4c9e2bfdab2d3cdbfd02-Paper-Conference.pdf#page=2",
+          "observation": "Green VLM supports remain consistent; blue/gold token planes carry representation distinctions while structural lines remain dark."
+        },
+        {
+          "id": "ultramemv2",
+          "paper": "UltraMemV2: Memory Networks Scaling to 120B Parameters with Superior Long-Context Learning",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 1,
+          "page": 4,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bfc03f077688d8885c0a9389d77616d0-Paper-Conference.pdf#page=4",
+          "observation": "Peach/yellow key labels, green values and navy linear blocks separate data and transformations within a white-ground memory schematic."
+        },
+        {
+          "id": "querystream",
+          "paper": "QueryStream: Advancing Streaming Video Understanding with Query-Aware Pruning and Proactive Response",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 2,
+          "page": 4,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/0b17d256cf1fe1cc084922a8c6b565b7-Paper-Conference.pdf#page=4",
+          "observation": "Pale purple/green blocks and pink/yellow/blue token marks distinguish representations; imagery and thin outlines carry much of the structure."
+        }
+      ],
+      "ownPreviews": [
+        {
+          "path": "styles/mae-token-lane.png",
+          "kind": "Accepted native PPTX Office render",
+          "case": "MAE 4/16 teaching example; not a 2026 source or a generic count template"
+        }
+      ]
+    },
+    {
+      "id": "focus-and-detail",
+      "name": "Overview with a targeted detail inset",
+      "fit": [
+        "Region selection and focused processing",
+        "Hierarchical narrowing",
+        "One local operation that needs a concrete example"
+      ],
+      "composition": "Keep one overview path and enlarge only the region needed to understand the central distinction. Stage/region identity may live in outline and line style rather than heavy filled panels.",
+      "glyphVocabulary": "Source-derived document/tree/image fragments, native crop frames or a magnified local replacement. Schematic examples are marked in companion records.",
+      "typography": "A small number of local mechanism captions with consistent heading/body levels. Keep enough context to interpret the enlarged fragment.",
+      "paint": "Use a restrained shared highlight to bind selected source region and inset. Keep distinct scientific channels separately keyed; photos do not define schematic palette.",
+      "connectors": "Separate magnification links from directed information arrows; retain selection provenance.",
+      "paletteFamilies": [
+        "soft-dual",
+        "line-first"
+      ],
+      "avoid": [
+        "A decorative zoom with no scientific operation",
+        "Borrowed photographic examples without provenance",
+        "Turning every detail into a competing main panel"
+      ],
+      "sources": [
+        {
+          "id": "slofo",
+          "paper": "Seeing What Matters: A Training-Free Self-Guided Framework for Multimodal Detail Perception and Reasoning",
+          "venue": "CVPR",
+          "year": 2026,
+          "figure": 2,
+          "page": 3,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ma_Seeing_What_Matters_A_Training-Free_Self-Guided_Framework_for_Multimodal_Detail_CVPR_2026_paper.pdf#page=3",
+          "observation": "Warm and purple dashed outlines separate scan/locate and focus regions, with orange/purple token keys and image crops."
+        },
+        {
+          "id": "modularagent",
+          "paper": "ModularAgent: A Task-Aware Modular Framework for Joint Optimization of Multimodal Large Language Models and World Models",
+          "venue": "CVPR",
+          "year": 2026,
+          "figure": 2,
+          "page": 3,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhan_ModularAgent_A_Task-Aware_Modular_Framework_for_Joint_Optimization_of_Multimodal_CVPR_2026_paper.pdf#page=3",
+          "observation": "Peach semantic paths and blue dynamics paths recur in model streams; task red/blue is a separate keyed distinction, with a warm feedback accent."
+        }
+      ],
+      "ownPreviews": [
+        {
+          "path": "styles/agentless-focus.png",
+          "kind": "Accepted native PPTX Office render",
+          "case": "Agentless narrowing and local edit magnification; original project example, not a 2026 source-paper figure"
+        }
+      ]
+    },
+    {
+      "id": "line-first",
+      "name": "Structural ink with selective relation accents",
+      "fit": [
+        "Compact memory/control relationships",
+        "Simple state transitions",
+        "A mechanism already clear from graph and labels"
+      ],
+      "composition": "Use white/neutral modules and explicit relationships. Keep empty space around the central relation; avoid an unnecessary large panel.",
+      "glyphVocabulary": "Simple native boxes, optional small state symbols and explicit endpoint roles. Use icons only when their semantic meaning is needed.",
+      "typography": "Dark text and concise edge labels. Geometry and line pattern carry meaning alongside hue.",
+      "paint": "Use very little fill. Assign any accent to an actual relation/state; neutral arrows are sufficient when no extra scientific category exists.",
+      "connectors": "Directional read/update/reuse relations need source support and redundant labels or dashes; red/green alone is insufficient.",
+      "paletteFamilies": [
+        "line-first"
+      ],
+      "avoid": [
+        "Adding read/write modules just to use the style",
+        "Treating monochrome as universally more professional",
+        "Hue-only distinctions between important operations"
+      ],
+      "sources": [
+        {
+          "id": "memagent",
+          "paper": "MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 4,
+          "page": 4,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/4264ee4376776907c0b87ed70b959585-Paper-Conference.pdf#page=4",
+          "observation": "White modules and black structure dominate; green and red directional edges distinguish read/write operations."
+        },
+        {
+          "id": "cache-to-cache",
+          "paper": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models",
+          "venue": "ICLR",
+          "year": 2026,
+          "figure": 5,
+          "page": 5,
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/474ada926b331d78f06d95e8913111cc-Paper-Conference.pdf#page=5",
+          "observation": "A mostly white/gray compact schematic reserves peach/orange for the fuser path and blue-framed endpoints; flame/snowflake symbols redundantly expose state."
+        }
+      ],
+      "ownPreviews": [],
+      "previewStatus": "Source-linked profile only; no standalone accepted project exemplar is bundled. Do not present this as a tested new paper case."
+    }
+  ]
+}

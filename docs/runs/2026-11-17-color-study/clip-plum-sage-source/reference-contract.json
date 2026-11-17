@@ -1,0 +1,223 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "reference": {
+    "path": "../../2026-11-17-clip-showcase/output-v2/native-render/preview.png",
+    "sha256": "ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7",
+    "width": 1610,
+    "height": 977
+  },
+  "centerTolerancePx": 4,
+  "sizeTolerancePx": 6,
+  "regions": [
+    {
+      "module": "train-phase",
+      "box": [
+        22,
+        15,
+        542,
+        66
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "test-phase",
+      "box": [
+        22,
+        623,
+        329,
+        58
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-images",
+      "box": [
+        88,
+        203,
+        161,
+        370
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-captions",
+      "box": [
+        663,
+        15,
+        574,
+        59
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-image-encoder",
+      "box": [
+        350,
+        333,
+        207,
+        135
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-text-encoder",
+      "box": [
+        764,
+        132,
+        379,
+        59
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "matrix",
+      "box": [
+        736,
+        278,
+        441,
+        270
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "objective",
+      "box": [
+        1227,
+        447,
+        355,
+        65
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "separator",
+      "box": [
+        22,
+        600,
+        1568,
+        2
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "query",
+      "box": [
+        55,
+        749,
+        175,
+        119
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "test-image-encoder",
+      "box": [
+        318,
+        743,
+        207,
+        93
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "test-text-encoder",
+      "box": [
+        649,
+        743,
+        211,
+        93
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "template",
+      "box": [
+        916,
+        708,
+        347,
+        50
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "class-chips",
+      "box": [
+        936,
+        774,
+        324,
+        48
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "cosine",
+      "box": [
+        895,
+        872,
+        267,
+        88
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "nearest",
+      "box": [
+        1285,
+        874,
+        307,
+        81
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    }
+  ],
+  "geometryChanges": [],
+  "contentChanges": [],
+  "typography": {
+    "path": "typography-profile.json",
+    "sha256": "894d29c963dc1429ab0c0b5967f8d976bfd563371afe709f6b3b5489a6b9285e"
+  },
+  "appearanceApproximations": [
+    "USER-AUTHORIZED PAINT CHANGE: same approved composition, glyph geometry, fonts and scientific roles; paints may differ from baseline.",
+    "Dark ink on pale role surfaces replaces white text on full saturated modules and phase banners; warm focal color remains on paired diagonal targets.",
+    "Existing icon-contour and orthogonal-elbow approximations remain unchanged."
+  ],
+  "reviewRequired": "Actual target/SVG/Office full and paper-width comparison; exact texts, 3x3 pairing, correct reuse/input origins, native XML/object map and actual typography.",
+  "authorizedPaletteRevision": {
+    "userRequest": "这种配色感觉能不能再参考很多新的iclr2026 等等顶会论文来学习？",
+    "family": "plum-sage",
+    "familyDefinition": {
+      "purpose": "Two persistent role families with a warm focal relation; useful when blue is already overloaded elsewhere in the manuscript.",
+      "inspiration": [
+        "MemGen Figure 2",
+        "LaVer Figure 3",
+        "OmniVinci Figure 2"
+      ],
+      "ink": "#34313C",
+      "muted": "#766F7B",
+      "neutralFill": "#F5F4F6",
+      "neutralStroke": "#9A929F",
+      "roleA": {
+        "accent": "#79668E",
+        "fill": "#F0ECF4",
+        "stroke": "#9D8CAB",
+        "text": "#5B466F"
+      },
+      "roleB": {
+        "accent": "#4A7D70",
+        "fill": "#EDF3EE",
+        "stroke": "#8DA697",
+        "text": "#3E6658"
+      },
+      "focus": {
+        "accent": "#A77B2E",
+        "fill": "#E6CCA0",
+        "surface": "#F5EBDD",
+        "text": "#715520"
+      },
+      "treatment": "Pale plum and sage support repeated role identity; amber marks the chosen focal relation. The purple family has no universal memory meaning. Keep text dark and do not imply frozen/trainable state from tint."
+    },
+    "evidence": "sources.json and paperfigure/references/color-and-hierarchy.md",
+    "scope": "Only primitive fill/stroke, text fill and connector stroke; zero coordinate/font/text/topology changes."
+  }
+}

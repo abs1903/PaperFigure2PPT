@@ -1,0 +1,169 @@
+{
+  "version": "1.0",
+  "reference": "../../2026-11-17-clip-showcase/output-v2/native-render/preview.png",
+  "sha256": "ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7",
+  "width": 1610,
+  "height": 977,
+  "regions": [
+    {
+      "module": "train-phase",
+      "box": [
+        22,
+        15,
+        542,
+        66
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "test-phase",
+      "box": [
+        22,
+        623,
+        329,
+        58
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-images",
+      "box": [
+        88,
+        203,
+        161,
+        370
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-captions",
+      "box": [
+        663,
+        15,
+        574,
+        59
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-image-encoder",
+      "box": [
+        350,
+        333,
+        207,
+        135
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "train-text-encoder",
+      "box": [
+        764,
+        132,
+        379,
+        59
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "matrix",
+      "box": [
+        736,
+        278,
+        441,
+        270
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "objective",
+      "box": [
+        1227,
+        447,
+        355,
+        65
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "separator",
+      "box": [
+        22,
+        600,
+        1568,
+        2
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "query",
+      "box": [
+        55,
+        749,
+        175,
+        119
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "test-image-encoder",
+      "box": [
+        318,
+        743,
+        207,
+        93
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "test-text-encoder",
+      "box": [
+        649,
+        743,
+        211,
+        93
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "template",
+      "box": [
+        916,
+        708,
+        347,
+        50
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "class-chips",
+      "box": [
+        936,
+        774,
+        324,
+        48
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "cosine",
+      "box": [
+        895,
+        872,
+        267,
+        88
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    },
+    {
+      "module": "nearest",
+      "box": [
+        1285,
+        874,
+        307,
+        81
+      ],
+      "anchorMeaning": "Manually registered visible source geometry before native authoring; train-images/captions/class-chips anchor visible compound frames as coherent batch groups."
+    }
+  ]
+}

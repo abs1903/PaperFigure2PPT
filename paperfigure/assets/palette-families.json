@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "scope": "Original optional figure-specific color treatments informed by a purposive 2026 paper study. These are not extracted author palettes, venue standards, defaults, or guaranteed accessibility schemes.",
+  "usage": "Assign each actual scientific role before choosing hues. Select a family for its emphasis strategy, then inspect native and Office renders at final size. Existing approved references and themes remain unchanged.",
+  "families": {
+    "soft-dual": {
+      "purpose": "Two peer modalities or model roles with a distinct shared interaction/objective.",
+      "inspiration": ["MemoryVLA Figure 2", "MEM1 Figure 1", "Cache-to-Cache Figure 5"],
+      "ink": "#273540", "muted": "#64727B", "neutralFill": "#F3F5F6", "neutralStroke": "#8B98A1",
+      "roleA": {"accent": "#4F7391", "fill": "#EAF0F6", "stroke": "#7894AB", "text": "#344F66"},
+      "roleB": {"accent": "#397568", "fill": "#ECF3EF", "stroke": "#7C9F91", "text": "#315F51"},
+      "focus": {"accent": "#B77359", "fill": "#E6B5A0", "surface": "#F4E4DB", "text": "#714635"},
+      "treatment": "Dark text on pale module surfaces. Saturated hues mainly on role glyphs, small tokens and selected relations. Keep phase headings neutral; use warm contrast for the shared mechanism."
+    },
+    "plum-sage": {
+      "purpose": "Two persistent role families with a warm focal relation; useful when blue is already overloaded elsewhere in the manuscript.",
+      "inspiration": ["MemGen Figure 2", "LaVer Figure 3", "OmniVinci Figure 2"],
+      "ink": "#34313C", "muted": "#766F7B", "neutralFill": "#F5F4F6", "neutralStroke": "#9A929F",
+      "roleA": {"accent": "#79668E", "fill": "#F0ECF4", "stroke": "#9D8CAB", "text": "#5B466F"},
+      "roleB": {"accent": "#4A7D70", "fill": "#EDF3EE", "stroke": "#8DA697", "text": "#3E6658"},
+      "focus": {"accent": "#A77B2E", "fill": "#E6CCA0", "surface": "#F5EBDD", "text": "#715520"},
+      "treatment": "Pale plum and sage support repeated role identity; amber marks the chosen focal relation. The purple family has no universal memory meaning. Keep text dark and do not imply frozen/trainable state from tint."
+    },
+    "line-first": {
+      "purpose": "Simple control, state or memory relations where geometry and labels already carry the figure.",
+      "inspiration": ["MemAgent Figure 4", "Cache-to-Cache Figure 5"],
+      "ink": "#252D35", "fill": "#FFFFFF", "stroke": "#68737C", "supportFill": "#F4F5F6",
+      "accents": ["#527E70", "#B97363"],
+      "treatment": "Mostly white/gray modules with dark ink. Assign the two accents to explicit relation types or states, with labels/dashes as redundant cues. Do not invent read/write or positive/negative semantics just to use both colors."
+    },
+    "token-categorical": {
+      "purpose": "Several genuinely distinct token, context or representation categories that recur across stages.",
+      "inspiration": ["MEM1 Figure 1", "LightMem Figure 2", "MetaEmbed Figure 1", "UltraMemV2 Figure 1"],
+      "ink": "#2B3440", "moduleFill": "#F3F5F6", "outline": "#687784",
+      "tokenFills": ["#BCD5EB", "#E9B9BC", "#E9CAA5", "#BFDBCB", "#CFC3DE"],
+      "treatment": "Reserve category color for repeated small items and supply a local key or direct category labels. Do not color every surrounding module differently; token categories need explicit source meanings."
+    }
+  }
+}

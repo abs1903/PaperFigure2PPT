@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "profiles": 4,
+  "paletteFamilies": 4,
+  "bundledOriginalPreviews": 4,
+  "inspectedPapers": 16,
+  "missingSkillLinks": [],
+  "scope": "Metadata/link/hash validation plus skill frontmatter check; aesthetic/native review separate.",
+  "attemptedPapers": 18,
+  "logicalDownloadAttempts": 20
+}

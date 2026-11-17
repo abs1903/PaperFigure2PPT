@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "artwork": "Original PaperFigure project schematics; source paper observations are separately link-only.",
+  "records": [
+    {
+      "path": "styles/clip-soft-dual.png",
+      "sha256": "766f87e00167a49d71ec12841776722d835537e35de9904791d37be3363e99c0",
+      "kind": "Original project-authored schematic; exact actual LibreOffice PPTX render",
+      "sourceRepositoryPath": "docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/preview.png",
+      "sourcePaperArtworkCopied": false,
+      "scope": "Visual exemplar; paper mechanisms/counts are case-specific, not style defaults."
+    },
+    {
+      "path": "styles/clip-plum-sage.png",
+      "sha256": "39e2eaccd9a95e3ad861f4167d26dd6c2c39684e0b146d56566076ca63b0f9cc",
+      "kind": "Original project-authored schematic; exact actual LibreOffice PPTX render",
+      "sourceRepositoryPath": "docs/runs/2026-11-17-color-study/clip-plum-sage/native-render/preview.png",
+      "sourcePaperArtworkCopied": false,
+      "scope": "Visual exemplar; paper mechanisms/counts are case-specific, not style defaults."
+    },
+    {
+      "path": "styles/mae-token-lane.png",
+      "sha256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa",
+      "kind": "Original project-authored schematic; exact actual LibreOffice PPTX render",
+      "sourceRepositoryPath": "docs/runs/2026-11-17-mae-high-quality/output-v2/native-render/preview.png",
+      "sourcePaperArtworkCopied": false,
+      "scope": "Visual exemplar; paper mechanisms/counts are case-specific, not style defaults."
+    },
+    {
+      "path": "styles/agentless-focus.png",
+      "sha256": "fe36e2edff4ff7ffffc0de1ef2869d9f7b9d0f7a0034a925ee170862b7fcfc6f",
+      "kind": "Original project-authored schematic; exact actual LibreOffice PPTX render",
+      "sourceRepositoryPath": "docs/runs/2026-11-17-agentless-native/output-v2/native-render/preview.png",
+      "sourcePaperArtworkCopied": false,
+      "scope": "Visual exemplar; paper mechanisms/counts are case-specific, not style defaults."
+    }
+  ]
+}

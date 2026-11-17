@@ -1,0 +1,30 @@
+{
+  "skillPackFiles": {
+    "paperfigure/SKILL.md": "a5cb58c3d5127391073a43418a6b4afa071a7ed402d2ff8841ea1a6cefaecbbc",
+    "paperfigure/references/design.md": "c79920e53d15792285a3919387b59e986a4bef4d483f75e68ecdf7fd4d435bf8",
+    "paperfigure/references/image-reference.md": "47d26fb29931f663dbd7e3e13512d53825240e31006a93c8bb88de13625f24c9",
+    "paperfigure/references/color-and-hierarchy.md": "ddb1fc649ac4d1578bbaf982d2cdf16340e4fbe9f81e59024527c82b32b834be",
+    "paperfigure/assets/palette-families.json": "39e0505a520a4d354e7a33769412786727bad4ab9e8023109dce49615e3d77ca",
+    "paperfigure/assets/visual-styles.json": "fc51c61e079fa06e08f4ed317a0a4b8377772c8e2410b5619837270e4e79c812",
+    "paperfigure/assets/styles/provenance.json": "f524d18573cba6f1426f8802eaf9df2f3b39c95deafa83f98b690dbdb271d1d5",
+    "README.md": "a06bd0bb40594b4c418e3549b5b79fd12d761ca2a508fd41a9c389e10752be3f"
+  },
+  "sourcePDFHashesMatch": true,
+  "localCorpusFilesIgnored": 42,
+  "inspectedPapers": 16,
+  "attemptedPapers": 18,
+  "logicalDownloadAttempts": 20,
+  "variants": {
+    "soft-dual": {
+      "deliveryReady": true,
+      "referencePNG": "ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7",
+      "pptxSHA256": "8067d332ba9c20a88089c4640fed10b37373fbd033a647feac7d2d721b88ab7f"
+    },
+    "plum-sage": {
+      "deliveryReady": true,
+      "referencePNG": "ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7",
+      "pptxSHA256": "11ec0d8f7f82e695bd304de6d8b198b077725cc0c57480f6c48049fb952ec6d7"
+    }
+  },
+  "readmePreview": "pass"
+}

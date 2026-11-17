@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "reviewer": {"kind":"independent-agent","name":"/root/color_study_review","isolation":"Non-authoring reviewer independently opened the accepted baseline, current actual Office render, source-side invariance record, and visual comparison before writing this record."},
+  "referenceFidelity": "pass",
+  "svgNativeEditability": "pass",
+  "pptxNativeEditability": "pass",
+  "reference": {"path":"../../2026-11-17-clip-showcase/output-v2/native-render/preview.png","sha256":"ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7","width":1610,"height":977},
+  "paintOnlyEvidence": {"sourceInvariant":"clip-plum-sage-source/paint-invariance.json","structuralFingerprint":"f211806402ceea51af99e80bb1b806974de0c4fc02194413f82eccd11389c3d1","scope":"All fields except title/source identity, paint values and binding reference hash compare identical; fonts, positions, text, edges, grouping and data flow remain unchanged."},
+  "regionChecklist": [
+    {"region":"upper paired image examples","verdict":"pass","finding":"Boat, bird and cup retain their collection route into the upper Image encoder."},
+    {"region":"upper text and matrix","verdict":"pass","finding":"boat/bird/cup chips retain their Text encoder route and the 3x3 matrix retains three diagonal pairing cells plus six off-diagonal comparisons."},
+    {"region":"training objective","verdict":"pass","finding":"Image-to-text, Text-to-image and Symmetric loss remain separate and confined to pre-training."},
+    {"region":"phase bridge","verdict":"pass","finding":"The two dashed reuse paths still bridge same-modality encoders across the divider annotation and do not imply a matrix-origin route."},
+    {"region":"zero-shot path and readout","verdict":"pass","finding":"New image and class-description inputs reach their respective encoders, then Cosine similarity and Nearest label."},
+    {"region":"actual Office paper width","verdict":"pass","finding":"No clipping, overlap, dropped labels, route loss, added title, or footer observed; dark ink remains readable on pale surfaces."}
+  ],
+  "authorizedDeviations": ["User-authorized paint treatment only: plum image roles, sage text roles and amber pairing/readout emphasis replace the accepted baseline colors.","No geometry, text, font, dataflow, route, grouping or semantic revision is accepted by this review."],
+  "unresolvedExceptions": ["No interactive Microsoft PowerPoint edit/reflow session was performed; native object evidence and actual LibreOffice rendering establish structure and appearance only.","This review does not claim original CLIP color fidelity, venue certification, accessibility certification, or execution of a CLIP system."]
+}

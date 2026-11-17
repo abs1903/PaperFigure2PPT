@@ -1,0 +1,448 @@
+{
+  "passed": true,
+  "errors": [],
+  "regions": [
+    {
+      "id": "train-phase",
+      "reference": [
+        22,
+        15,
+        542,
+        66
+      ],
+      "expected": [
+        22,
+        15,
+        542,
+        66
+      ],
+      "actual": [
+        22,
+        15,
+        542,
+        66
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "test-phase",
+      "reference": [
+        22,
+        623,
+        329,
+        58
+      ],
+      "expected": [
+        22,
+        623,
+        329,
+        58
+      ],
+      "actual": [
+        22,
+        623,
+        329,
+        58
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "train-images",
+      "reference": [
+        88,
+        203,
+        161,
+        370
+      ],
+      "expected": [
+        88,
+        203,
+        161,
+        370
+      ],
+      "actual": [
+        88,
+        203,
+        161,
+        370
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "train-captions",
+      "reference": [
+        663,
+        15,
+        574,
+        59
+      ],
+      "expected": [
+        663,
+        15,
+        574,
+        59
+      ],
+      "actual": [
+        663,
+        15,
+        574,
+        59
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "train-image-encoder",
+      "reference": [
+        350,
+        333,
+        207,
+        135
+      ],
+      "expected": [
+        350,
+        333,
+        207,
+        135
+      ],
+      "actual": [
+        350,
+        333,
+        207,
+        135
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "train-text-encoder",
+      "reference": [
+        764,
+        132,
+        379,
+        59
+      ],
+      "expected": [
+        764,
+        132,
+        379,
+        59
+      ],
+      "actual": [
+        764,
+        132,
+        379,
+        59
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "matrix",
+      "reference": [
+        736,
+        278,
+        441,
+        270
+      ],
+      "expected": [
+        736,
+        278,
+        441,
+        270
+      ],
+      "actual": [
+        736,
+        278,
+        441,
+        270
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "objective",
+      "reference": [
+        1227,
+        447,
+        355,
+        65
+      ],
+      "expected": [
+        1227,
+        447,
+        355,
+        65
+      ],
+      "actual": [
+        1227,
+        447,
+        355,
+        65
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "separator",
+      "reference": [
+        22,
+        600,
+        1568,
+        2
+      ],
+      "expected": [
+        22,
+        600,
+        1568,
+        2
+      ],
+      "actual": [
+        22,
+        601,
+        1568,
+        0
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 2
+      },
+      "change": null
+    },
+    {
+      "id": "query",
+      "reference": [
+        55,
+        749,
+        175,
+        119
+      ],
+      "expected": [
+        55,
+        749,
+        175,
+        119
+      ],
+      "actual": [
+        55,
+        749,
+        175,
+        119
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "test-image-encoder",
+      "reference": [
+        318,
+        743,
+        207,
+        93
+      ],
+      "expected": [
+        318,
+        743,
+        207,
+        93
+      ],
+      "actual": [
+        318,
+        743,
+        207,
+        93
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "test-text-encoder",
+      "reference": [
+        649,
+        743,
+        211,
+        93
+      ],
+      "expected": [
+        649,
+        743,
+        211,
+        93
+      ],
+      "actual": [
+        649,
+        743,
+        211,
+        93
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "template",
+      "reference": [
+        916,
+        708,
+        347,
+        50
+      ],
+      "expected": [
+        916,
+        708,
+        347,
+        50
+      ],
+      "actual": [
+        916,
+        708,
+        347,
+        50
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "class-chips",
+      "reference": [
+        936,
+        774,
+        324,
+        48
+      ],
+      "expected": [
+        936,
+        774,
+        324,
+        48
+      ],
+      "actual": [
+        936,
+        774,
+        324,
+        48
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "cosine",
+      "reference": [
+        895,
+        872,
+        267,
+        88
+      ],
+      "expected": [
+        895,
+        872,
+        267,
+        88
+      ],
+      "actual": [
+        895,
+        872,
+        267,
+        88
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "nearest",
+      "reference": [
+        1285,
+        874,
+        307,
+        81
+      ],
+      "expected": [
+        1285,
+        874,
+        307,
+        81
+      ],
+      "actual": [
+        1285,
+        874,
+        307,
+        81
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    }
+  ],
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-17-clip-showcase/output-v2/native-render/preview.png",
+    "sha256": "ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7",
+    "width": 1610,
+    "height": 977
+  },
+  "contractSHA256": "58f4f18d6586f6da1d2cbc1ea497f23fa486839b1dd9896c16706d7d255980bb",
+  "svgSHA256": "4a8b7f4c7c3b0541a2b64ba26ab7e159968b59f73560fc162247dd3a2b3937a2",
+  "sceneSHA256": "803e81365431faee5e2e210596d9ea011ee9b3eca62f035ef7902533f87c5193",
+  "scope": "Actual SVG anchor geometry versus frozen PNG regions; colors, text, arrow routes and aesthetics still require region comparisons and isolated fidelity review."
+}

@@ -49,6 +49,10 @@ must not be presented as actual layer/token counts. Add exact counts only from e
 
 ## Semantic color
 
+For recent-paper observations, saved visual profiles and optional palette families,
+read [color-and-hierarchy.md](color-and-hierarchy.md). It complements the semantic
+rules here without changing existing references or default theme values.
+
 Assign colors only after extracting scientific categories. Record each accent's
 meaning, applicable object IDs and evidence in the case's design contract. Use
 one color for equivalent categories across the whole figure; different module

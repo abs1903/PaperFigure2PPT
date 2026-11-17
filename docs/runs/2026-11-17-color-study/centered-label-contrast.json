@@ -1,0 +1,317 @@
+{
+  "scope": "Diagnostic from exact solid native fill/ink values for centered text on known uniform module surfaces only. Not a color-blindness/accessibility certification, pixel/occlusion check, reader study or aesthetic score.",
+  "treatments": [
+    {
+      "treatment": "original",
+      "minimumCenteredLabelContrast": 2.51,
+      "labels": [
+        {
+          "id": "text-train-phase-0",
+          "text": "Contrastive pre-training",
+          "ink": "#FFFFFF",
+          "surface": "#1656CC",
+          "luminanceContrast": 6.49
+        },
+        {
+          "id": "text-test-phase-0",
+          "text": "Zero-shot use",
+          "ink": "#FFFFFF",
+          "surface": "#1656CC",
+          "luminanceContrast": 6.49
+        },
+        {
+          "id": "text-train-image-encoder-0",
+          "text": "Image",
+          "ink": "#FFFFFF",
+          "surface": "#1656CC",
+          "luminanceContrast": 6.49
+        },
+        {
+          "id": "text-train-image-encoder-1",
+          "text": "encoder",
+          "ink": "#FFFFFF",
+          "surface": "#1656CC",
+          "luminanceContrast": 6.49
+        },
+        {
+          "id": "text-train-text-encoder-0",
+          "text": "Text encoder",
+          "ink": "#FFFFFF",
+          "surface": "#108C80",
+          "luminanceContrast": 4.13
+        },
+        {
+          "id": "text-objective-0",
+          "text": "Symmetric loss",
+          "ink": "#FFFFFF",
+          "surface": "#E58C78",
+          "luminanceContrast": 2.51
+        },
+        {
+          "id": "text-test-image-encoder-0",
+          "text": "Image",
+          "ink": "#FFFFFF",
+          "surface": "#1656CC",
+          "luminanceContrast": 6.49
+        },
+        {
+          "id": "text-test-image-encoder-1",
+          "text": "encoder",
+          "ink": "#FFFFFF",
+          "surface": "#1656CC",
+          "luminanceContrast": 6.49
+        },
+        {
+          "id": "text-test-text-encoder-0",
+          "text": "Text",
+          "ink": "#FFFFFF",
+          "surface": "#108C80",
+          "luminanceContrast": 4.13
+        },
+        {
+          "id": "text-test-text-encoder-1",
+          "text": "encoder",
+          "ink": "#FFFFFF",
+          "surface": "#108C80",
+          "luminanceContrast": 4.13
+        },
+        {
+          "id": "text-template-0",
+          "text": "a photo of a {label}",
+          "ink": "#07090C",
+          "surface": "#F2FAF3",
+          "luminanceContrast": 18.74
+        },
+        {
+          "id": "text-cosine-0",
+          "text": "Cosine",
+          "ink": "#FFFFFF",
+          "surface": "#E58C78",
+          "luminanceContrast": 2.51
+        },
+        {
+          "id": "text-cosine-1",
+          "text": "similarity",
+          "ink": "#FFFFFF",
+          "surface": "#E58C78",
+          "luminanceContrast": 2.51
+        },
+        {
+          "id": "text-nearest-0",
+          "text": "Nearest label",
+          "ink": "#FFFFFF",
+          "surface": "#4C596C",
+          "luminanceContrast": 7.11
+        }
+      ]
+    },
+    {
+      "treatment": "soft-dual",
+      "minimumCenteredLabelContrast": 10.16,
+      "labels": [
+        {
+          "id": "text-train-phase-0",
+          "text": "Contrastive pre-training",
+          "ink": "#273540",
+          "surface": "#F3F5F6",
+          "luminanceContrast": 11.5
+        },
+        {
+          "id": "text-test-phase-0",
+          "text": "Zero-shot use",
+          "ink": "#273540",
+          "surface": "#F3F5F6",
+          "luminanceContrast": 11.5
+        },
+        {
+          "id": "text-train-image-encoder-0",
+          "text": "Image",
+          "ink": "#273540",
+          "surface": "#EAF0F6",
+          "luminanceContrast": 10.96
+        },
+        {
+          "id": "text-train-image-encoder-1",
+          "text": "encoder",
+          "ink": "#273540",
+          "surface": "#EAF0F6",
+          "luminanceContrast": 10.96
+        },
+        {
+          "id": "text-train-text-encoder-0",
+          "text": "Text encoder",
+          "ink": "#273540",
+          "surface": "#ECF3EF",
+          "luminanceContrast": 11.16
+        },
+        {
+          "id": "text-objective-0",
+          "text": "Symmetric loss",
+          "ink": "#273540",
+          "surface": "#F4E4DB",
+          "luminanceContrast": 10.16
+        },
+        {
+          "id": "text-test-image-encoder-0",
+          "text": "Image",
+          "ink": "#273540",
+          "surface": "#EAF0F6",
+          "luminanceContrast": 10.96
+        },
+        {
+          "id": "text-test-image-encoder-1",
+          "text": "encoder",
+          "ink": "#273540",
+          "surface": "#EAF0F6",
+          "luminanceContrast": 10.96
+        },
+        {
+          "id": "text-test-text-encoder-0",
+          "text": "Text",
+          "ink": "#273540",
+          "surface": "#ECF3EF",
+          "luminanceContrast": 11.16
+        },
+        {
+          "id": "text-test-text-encoder-1",
+          "text": "encoder",
+          "ink": "#273540",
+          "surface": "#ECF3EF",
+          "luminanceContrast": 11.16
+        },
+        {
+          "id": "text-template-0",
+          "text": "a photo of a {label}",
+          "ink": "#273540",
+          "surface": "#ECF3EF",
+          "luminanceContrast": 11.16
+        },
+        {
+          "id": "text-cosine-0",
+          "text": "Cosine",
+          "ink": "#273540",
+          "surface": "#F4E4DB",
+          "luminanceContrast": 10.16
+        },
+        {
+          "id": "text-cosine-1",
+          "text": "similarity",
+          "ink": "#273540",
+          "surface": "#F4E4DB",
+          "luminanceContrast": 10.16
+        },
+        {
+          "id": "text-nearest-0",
+          "text": "Nearest label",
+          "ink": "#273540",
+          "surface": "#F3F5F6",
+          "luminanceContrast": 11.5
+        }
+      ]
+    },
+    {
+      "treatment": "plum-sage",
+      "minimumCenteredLabelContrast": 10.79,
+      "labels": [
+        {
+          "id": "text-train-phase-0",
+          "text": "Contrastive pre-training",
+          "ink": "#34313C",
+          "surface": "#F5F4F6",
+          "luminanceContrast": 11.6
+        },
+        {
+          "id": "text-test-phase-0",
+          "text": "Zero-shot use",
+          "ink": "#34313C",
+          "surface": "#F5F4F6",
+          "luminanceContrast": 11.6
+        },
+        {
+          "id": "text-train-image-encoder-0",
+          "text": "Image",
+          "ink": "#34313C",
+          "surface": "#F0ECF4",
+          "luminanceContrast": 10.91
+        },
+        {
+          "id": "text-train-image-encoder-1",
+          "text": "encoder",
+          "ink": "#34313C",
+          "surface": "#F0ECF4",
+          "luminanceContrast": 10.91
+        },
+        {
+          "id": "text-train-text-encoder-0",
+          "text": "Text encoder",
+          "ink": "#34313C",
+          "surface": "#EDF3EE",
+          "luminanceContrast": 11.3
+        },
+        {
+          "id": "text-objective-0",
+          "text": "Symmetric loss",
+          "ink": "#34313C",
+          "surface": "#F5EBDD",
+          "luminanceContrast": 10.79
+        },
+        {
+          "id": "text-test-image-encoder-0",
+          "text": "Image",
+          "ink": "#34313C",
+          "surface": "#F0ECF4",
+          "luminanceContrast": 10.91
+        },
+        {
+          "id": "text-test-image-encoder-1",
+          "text": "encoder",
+          "ink": "#34313C",
+          "surface": "#F0ECF4",
+          "luminanceContrast": 10.91
+        },
+        {
+          "id": "text-test-text-encoder-0",
+          "text": "Text",
+          "ink": "#34313C",
+          "surface": "#EDF3EE",
+          "luminanceContrast": 11.3
+        },
+        {
+          "id": "text-test-text-encoder-1",
+          "text": "encoder",
+          "ink": "#34313C",
+          "surface": "#EDF3EE",
+          "luminanceContrast": 11.3
+        },
+        {
+          "id": "text-template-0",
+          "text": "a photo of a {label}",
+          "ink": "#34313C",
+          "surface": "#EDF3EE",
+          "luminanceContrast": 11.3
+        },
+        {
+          "id": "text-cosine-0",
+          "text": "Cosine",
+          "ink": "#34313C",
+          "surface": "#F5EBDD",
+          "luminanceContrast": 10.79
+        },
+        {
+          "id": "text-cosine-1",
+          "text": "similarity",
+          "ink": "#34313C",
+          "surface": "#F5EBDD",
+          "luminanceContrast": 10.79
+        },
+        {
+          "id": "text-nearest-0",
+          "text": "Nearest label",
+          "ink": "#34313C",
+          "surface": "#F5F4F6",
+          "luminanceContrast": 11.6
+        }
+      ]
+    }
+  ]
+}

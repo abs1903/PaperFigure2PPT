@@ -88,6 +88,8 @@ locators in the handoff; the prompt compiler checks graph coverage, not storytel
   Set a figure-specific word budget; it is not a venue rule.
 - `palette`: `{color:"#RRGGBB",meaning,nodes:[IDs]}` covers each node once.
   Equivalent roles reuse colors; neutral text/borders/arrows are allowed.
+  For paint treatment and saved visual grammars, use [color-and-hierarchy.md](color-and-hierarchy.md);
+  distinguish role accent, pale surface, stroke and text ink in the existing brief.
 - `forbidden`: source-specific false mechanisms. Keep implementation minutiae in
   the source record unless needed to interpret a path. Essential conditions stay
   visible; compression requires reviewed abstraction, not deletion.
