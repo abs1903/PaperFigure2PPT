@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "error": "CLI must not copy development dependencies",
+  "isolatedProject": "/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-install-_h1q49al",
+  "steps": [
+    {
+      "step": "local-cli-install",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 4.7
+    }
+  ]
+}

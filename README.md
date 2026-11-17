@@ -12,6 +12,14 @@
   <a href="docs/USAGE.md">Reference</a>
 </p>
 
+```sh
+npx skills add abs1903/PaperFigure2PPT --skill paperfigure --agent codex --global
+```
+
+One installable skill at [`paperfigure/`](paperfigure/SKILL.md). The `skills` CLI
+requires Node.js 22.20+; this private repository requires GitHub access. After
+installation, start a new Codex chat and invoke `$paperfigure`.
+
 ## Examples
 
 These figures use the current image-first workflow: source and contribution planning,
@@ -83,18 +91,26 @@ native schematics. See the [style study and verification](docs/runs/2026-11-17-c
 
 ## Install
 
-Requires Node.js 20+ and npm. Clone the repository, then run:
+Install directly from GitHub with the `skills` CLI (1.9.0 tested):
 
-```bash
-git clone https://github.com/abs1903/PaperFigure2PPT.git
-cd PaperFigure2PPT
-npm --prefix paperfigure ci
-node paperfigure/scripts/install.mjs
+```sh
+npx skills add abs1903/PaperFigure2PPT --skill paperfigure --agent codex --global
 ```
 
-Follow the dependency command printed by the installer, start a new Codex chat,
-and invoke `$paperfigure`. Existing installations are protected from overwriting.
-See [custom destinations and dependencies](docs/USAGE.md#install-in-codex).
+Omit `--global` to install into the current project. The explicit skill URL is
+[`github.com/abs1903/PaperFigure2PPT/tree/main/paperfigure`](https://github.com/abs1903/PaperFigure2PPT/tree/main/paperfigure).
+You can also give that URL to Codex's Skill Installer. Existing Git or GitHub CLI
+authentication must have access to this private repository.
+
+Start a new Codex chat and invoke `$paperfigure`. Its first-use bootstrap installs
+missing locked Node dependencies inside the installed skill. A usable Chromium
+is needed for measured SVG QA; bootstrap can download it with `--with-chromium`
+if no existing browser is found. Installing files alone does not install Office.
+
+The skill runtime requires Node.js 20+ and npm. The GitHub installer above requires
+Node.js 22.20+. See the [packaged installation guide](paperfigure/references/installation.md)
+for setup, checks and the local-checkout alternative; the [technical reference](docs/USAGE.md#install-in-codex)
+retains the manual installer workflow.
 
 Image generation uses the host's built-in tool when available; no external provider
 API is called silently. Independent PowerPoint verification requires LibreOffice.

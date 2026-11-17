@@ -11,6 +11,15 @@ renderer requires Node.js 20+ and `npm ci`; it needs no API credentials.
 Understanding sources, interpreting images and composing figures run in the host
 agent, not an automatic paper parser or PNG vectorizer.
 
+## First use after installation
+
+Resolve this skill's actual directory; do not assume it is the current project.
+Before running its CLI, run `node <skill-directory>/scripts/bootstrap.mjs` to
+install missing locked Node dependencies. For measured SVG/native reconstruction,
+use `--with-chromium` if no usable browser is reported. `--check` inspects without
+installing. See [installation.md](references/installation.md) for GitHub install
+commands and optional Office/Python requirements. Setup is not a figure QA pass.
+
 ## Choose the route
 
 - **ImageGen-first design or visual-quality revision:** read

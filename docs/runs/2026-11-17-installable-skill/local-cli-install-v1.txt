@@ -1,0 +1,33 @@
+
+│
+●   codex  Agent detected — installing non-interactively
+[?25l│
+◇  Source: /Users/jackychen/02projs/tbs/PaperFigure2PPT
+[?25h[?25l│
+◇  Local path validated
+[?25h[?25l│
+◇  Found 1 skill
+[?25h│
+●  Selected 1 skill: paperfigure
+
+│
+◇  Installation Summary ─────────╮
+│                                │
+│  ./.agents/skills/paperfigure  │
+│    universal: Codex            │
+│                                │
+├────────────────────────────────╯
+[?25l│
+◒  Installing skills…◐  Installing skills…◓  Installing skills…◑  Installing skills…◒  Installing skills…◐  Installing skills…◓  Installing skills…◑  Installing skills…◒  Installing skills….◐  Installing skills….◓  Installing skills….◑  Installing skills….◒  Installing skills….◐  Installing skills….◇  Installation complete
+[?25h
+│
+◇  Installed 1 skill ────────────────╮
+│                                    │
+│  ✓ paperfigure (copied)            │
+│    → ./.agents/skills/paperfigure  │
+│                                    │
+├────────────────────────────────────╯
+
+│
+└  Done!  Review skills before use; they run with full agent permissions.
+

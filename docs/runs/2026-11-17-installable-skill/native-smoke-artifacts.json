@@ -1,0 +1,26 @@
+{
+  "source": "installed CLI, bundled physical-VLN illustrative fixture",
+  "artifacts": {
+    "figure.pptx": {
+      "sha256": "4e0b3a8b5aa9e2f6513d033ab8106a65e8ede0096d2142af5b02b85f7936bdd9",
+      "bytes": 21605
+    },
+    "figure.svg": {
+      "sha256": "6951b82a756570bd565b3ec20cc90f7a393639b30e30d9020dc9942e575e19af",
+      "bytes": 6957
+    },
+    "figure.pdf": {
+      "sha256": "93cd3b8be27819149b0899b8bea2f00d1b68ca189bc38f80f4b7ebad2a9c5617",
+      "bytes": 35347
+    },
+    "preview.png": {
+      "sha256": "bfe4df50044f93ae40948453049bd195212792b1443f9212c38058044d569c05",
+      "bytes": 66386
+    },
+    "qa.json": {
+      "sha256": "3ed69c235452023fb643437756803bb8dff63870bb53dcf0bf3edf9a62d56442",
+      "bytes": 962
+    }
+  },
+  "scope": "Runtime/native export smoke only, no independent visual or scientific acceptance."
+}

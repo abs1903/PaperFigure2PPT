@@ -1,0 +1,10 @@
+PaperFigure
+  build --spec FILE --out NEW_DIRECTORY [--force] [--font-family Arial] [--font-scale 1.1]
+  reconstruct --scene FILE --contract FILE --out NEW_DIRECTORY
+  validate --spec FILE
+  qa --out DIRECTORY
+  review-status --out DIRECTORY [--review FILE]
+  reference-prompt --spec FILE --brief FILE
+  candidates --spec FILE --out NEW_DIRECTORY
+
+Natural-language understanding runs in Codex via SKILL.md; this CLI never silently calls an AI API.

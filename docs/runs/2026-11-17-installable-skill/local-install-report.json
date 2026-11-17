@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "skillsCLI": "1.9.0",
+  "skillDirectory": "/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-install-24gjklx3/.agents/skills/paperfigure",
+  "isolatedProject": "/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-install-24gjklx3",
+  "steps": [
+    {
+      "step": "local-cli-install",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 3.22
+    },
+    {
+      "step": "cold-bootstrap-check",
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "elapsedSeconds": 0.04
+    },
+    {
+      "step": "first-bootstrap",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 22.46
+    },
+    {
+      "step": "ready-bootstrap-check",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 0.23
+    },
+    {
+      "step": "installed-cli-help",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 0.13
+    },
+    {
+      "step": "installed-native-export",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 0.59
+    },
+    {
+      "step": "installed-browser-measurement",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 5.84
+    }
+  ],
+  "freshNodeDependencies": true,
+  "nodePackagesFromInstalledSkill": true,
+  "nativeExportQA": "pass",
+  "actualBrowserMeasurement": "pass",
+  "globalSkillInstall": "not performed",
+  "figureDeliveryReady": "not asserted; smoke artifact is unreviewed",
+  "environmentScope": "Fresh skill directory on the current macOS host; existing fonts and browser reused, not a clean OS image."
+}

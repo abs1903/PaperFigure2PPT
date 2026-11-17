@@ -1,0 +1,16 @@
+
+added 55 packages in 20s
+{
+  "skill": "paperfigure",
+  "root": "/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-install-24gjklx3/.agents/skills/paperfigure/",
+  "node": "v24.14.1",
+  "nodeDependenciesReady": true,
+  "problems": [],
+  "chromium": {
+    "available": true,
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "scope": "Local runtime setup only; Office rendering and independent figure review remain separate."
+}
+npm warn deprecated jpeg-exif@1.1.4: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated crypto-js@4.2.0: Active development of CryptoJS has been discontinued. This library is no longer maintained.
