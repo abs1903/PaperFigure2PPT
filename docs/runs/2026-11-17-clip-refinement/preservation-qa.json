@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "exactVisibleTextMultisetPreserved": true,
+  "semanticRouteOwnersArrowheadsAndReusePreserved": true,
+  "counts": {
+    "oldTextLines": 30,
+    "newTextLines": 30,
+    "oldRoutes": 13,
+    "newRoutes": 13
+  },
+  "bindings": [
+    {
+      "path": "docs/runs/2026-11-17-clip-showcase/spec.json",
+      "unchanged": true
+    },
+    {
+      "path": "docs/runs/2026-11-17-clip-showcase/narrative-plan.json",
+      "unchanged": true
+    },
+    {
+      "path": "docs/runs/2026-11-17-clip-showcase/source-audit.json",
+      "unchanged": true
+    },
+    {
+      "path": "docs/runs/2026-11-17-clip-showcase/source-plan-review.json",
+      "unchanged": true
+    },
+    {
+      "path": "docs/runs/2026-11-17-clip-showcase/brief-stacked-transfer.json",
+      "unchanged": true
+    }
+  ],
+  "scope": "Regression against the previously accepted native CLIP scene. This checks literal text, semantic route owners/direction/reuse and original source-plan file identity; it does not prove source entailment, scientific novelty, image fidelity or aesthetic quality."
+}

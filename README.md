@@ -1,4 +1,4 @@
-<a href="#examples"><img src="docs/runs/2026-11-17-homepage-refinement/cover-triptych.png" width="100%" alt="PaperFigure — source-grounded research figures, editable by design. Gallery of actual CLIP, Agentless and MAE Office renders; SVG, PPTX and PDF examples below."></a>
+<a href="#examples"><img src="docs/runs/2026-11-17-clip-refinement/cover-triptych.png" width="100%" alt="PaperFigure — source-grounded research figures, editable by design. Gallery of actual CLIP, Agentless and MAE Office renders; SVG, PPTX and PDF examples below."></a>
 
 <p align="center">
   <a href="#examples">Examples</a> ·
@@ -28,11 +28,14 @@ figure to inspect it at full resolution.
 
 A cross-modal pairing matrix makes the learning objective visible; a separate
 zero-shot region shows how language descriptions define the classes.
-Shown with pale role surfaces; the [original and alternative palette](docs/runs/2026-11-17-color-study/clip-palette-comparison.png) are retained as a matched paint-only study.
+Refined with ImageGen for lighter framing, clearer typography and two-tone vector
+illustrations, then independently reviewed and rebuilt as native editable objects.
+Compare the [previous figure, ImageGen reference and actual Office render](docs/runs/2026-11-17-clip-refinement/comparison-original-imagegen-office.png).
+The earlier [palette study](docs/runs/2026-11-17-color-study/clip-palette-comparison.png) is also retained.
 
-<a href="docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/preview.png"><img src="docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/preview.png" width="100%" alt="CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders."></a>
+<a href="docs/runs/2026-11-17-clip-refinement/output-v2/native-render/preview.png"><img src="docs/runs/2026-11-17-clip-refinement/output-v2/native-render/preview.png" width="100%" alt="CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders."></a>
 
-**[PowerPoint](docs/runs/2026-11-17-color-study/clip-soft-dual/figure.pptx)** · [SVG](docs/runs/2026-11-17-color-study/clip-soft-dual/editable.svg) · [PDF](docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/figure.pdf) · [Source & review](docs/runs/2026-11-17-color-study/REPORT.md)
+**[PowerPoint](docs/runs/2026-11-17-clip-refinement/output-v2/figure.pptx)** · [SVG](docs/runs/2026-11-17-clip-refinement/output-v2/editable.svg) · [PDF](docs/runs/2026-11-17-clip-refinement/output-v2/native-render/figure.pdf) · [Source & review](docs/runs/2026-11-17-clip-refinement/REPORT.md)
 
 ---
 

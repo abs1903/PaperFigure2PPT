@@ -1,0 +1,1 @@
+Draft authoring failed before SVG or Office export: duplicate text-objective-0 after inserting the objective label twice. Source-v2 retains the failed scene/profile/contract. Corrected in source-v3 by keeping exactly one objective label.

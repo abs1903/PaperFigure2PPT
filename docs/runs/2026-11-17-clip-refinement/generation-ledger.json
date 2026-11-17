@@ -1,0 +1,35 @@
+{
+  "route": "ImageGen attached refinement of selected composition, then reference-bound native reconstruction",
+  "maxImageCalls": 4,
+  "compositionException": "Appearance-only refinement of independently accepted stacked-transfer composition; reuse frozen source-reviewed plan and specification. No new narrative or scientific claims.",
+  "bindings": {
+    "docs/runs/2026-11-17-clip-showcase/spec.json": "4545b44746364e2bb31809fad6db643db084b247791a26bd870ee2f971f7ff62",
+    "docs/runs/2026-11-17-clip-showcase/narrative-plan.json": "51590c85ddd8699f1b46a6312646fe12bcae3dd8307fdf4cb91ef30ff705b5b5",
+    "docs/runs/2026-11-17-clip-showcase/source-audit.json": "2ff6d9299d516c5c88dcaf18d74d8d73c076ce1a4b9462c39aa987832d00f3c3",
+    "docs/runs/2026-11-17-clip-showcase/source-plan-review.json": "b5a9593d77a3fea3edf03986e1950a8a5de551041199f54df73e4a69e35e62af",
+    "docs/runs/2026-11-17-clip-showcase/brief-stacked-transfer.json": "93e3ac8adaa9da910d5ca3bc1a1e3ba00e32394db7f0d5e66db647077d533b70"
+  },
+  "calls": [
+    {
+      "id": "a",
+      "prompt": "prompt-a.txt",
+      "promptSHA256": "ea4a74b90a16cb48866b0e9c5a35c3299b2f6bd1aaa77e84e3d703acd4aa8192",
+      "input": "../2026-11-17-color-study/clip-soft-dual/native-render/preview.png",
+      "inputSHA256": "766f87e00167a49d71ec12841776722d835537e35de9904791d37be3363e99c0",
+      "output": "candidate-a.png",
+      "outputSHA256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+      "status": "accepted raster only",
+      "dimensions": [
+        1609,
+        977
+      ]
+    }
+  ],
+  "selected": {
+    "path": "selected-reference.png",
+    "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+    "imageReview": "image-review-a.json",
+    "preOutputInventory": "native-reference-inspection.md"
+  },
+  "imageCallsUsed": 1
+}

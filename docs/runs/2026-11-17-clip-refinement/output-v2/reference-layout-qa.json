@@ -1,0 +1,394 @@
+{
+  "passed": true,
+  "errors": [],
+  "regions": [
+    {
+      "id": "train-images",
+      "reference": [
+        84,
+        202,
+        168,
+        372
+      ],
+      "expected": [
+        84,
+        202,
+        168,
+        372
+      ],
+      "actual": [
+        84,
+        202,
+        168,
+        372
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "train-captions",
+      "reference": [
+        661,
+        16,
+        578,
+        58
+      ],
+      "expected": [
+        661,
+        16,
+        578,
+        58
+      ],
+      "actual": [
+        661,
+        16,
+        578,
+        58
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "train-image-encoder",
+      "reference": [
+        351,
+        334,
+        205,
+        130
+      ],
+      "expected": [
+        351,
+        334,
+        205,
+        130
+      ],
+      "actual": [
+        351,
+        334,
+        205,
+        130
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "train-text-encoder",
+      "reference": [
+        764,
+        132,
+        377,
+        59
+      ],
+      "expected": [
+        764,
+        132,
+        377,
+        59
+      ],
+      "actual": [
+        764,
+        132,
+        377,
+        59
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "matrix",
+      "reference": [
+        735,
+        278,
+        444,
+        272
+      ],
+      "expected": [
+        735,
+        278,
+        444,
+        272
+      ],
+      "actual": [
+        735,
+        278,
+        444,
+        272
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "objective",
+      "reference": [
+        1229,
+        449,
+        353,
+        61
+      ],
+      "expected": [
+        1229,
+        449,
+        353,
+        61
+      ],
+      "actual": [
+        1229,
+        449,
+        353,
+        61
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "separator",
+      "reference": [
+        22,
+        600,
+        1567,
+        2
+      ],
+      "expected": [
+        22,
+        600,
+        1567,
+        2
+      ],
+      "actual": [
+        22,
+        601,
+        1567,
+        0
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 2
+      },
+      "change": null
+    },
+    {
+      "id": "query",
+      "reference": [
+        54,
+        750,
+        176,
+        118
+      ],
+      "expected": [
+        54,
+        750,
+        176,
+        118
+      ],
+      "actual": [
+        54,
+        750,
+        176,
+        118
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "test-image-encoder",
+      "reference": [
+        317,
+        744,
+        207,
+        94
+      ],
+      "expected": [
+        317,
+        744,
+        207,
+        94
+      ],
+      "actual": [
+        317,
+        744,
+        207,
+        94
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "test-text-encoder",
+      "reference": [
+        649,
+        744,
+        209,
+        94
+      ],
+      "expected": [
+        649,
+        744,
+        209,
+        94
+      ],
+      "actual": [
+        649,
+        744,
+        209,
+        94
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "template",
+      "reference": [
+        916,
+        707,
+        349,
+        52
+      ],
+      "expected": [
+        916,
+        707,
+        349,
+        52
+      ],
+      "actual": [
+        916,
+        707,
+        349,
+        52
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "class-chips",
+      "reference": [
+        936,
+        774,
+        327,
+        48
+      ],
+      "expected": [
+        936,
+        774,
+        327,
+        48
+      ],
+      "actual": [
+        936,
+        774,
+        327,
+        48
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "cosine",
+      "reference": [
+        896,
+        871,
+        267,
+        87
+      ],
+      "expected": [
+        896,
+        871,
+        267,
+        87
+      ],
+      "actual": [
+        896,
+        871,
+        267,
+        87
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "nearest",
+      "reference": [
+        1290,
+        875,
+        300,
+        78
+      ],
+      "expected": [
+        1290,
+        875,
+        300,
+        78
+      ],
+      "actual": [
+        1290,
+        875,
+        300,
+        78
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    }
+  ],
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-17-clip-refinement/selected-reference.png",
+    "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+    "width": 1609,
+    "height": 977
+  },
+  "contractSHA256": "a0677fc09e46db3c92c5aaf66a405af438271ce82908f095d8c7a18256d53dcb",
+  "svgSHA256": "287806fb1fd97fa164080ad467ec123b9e1ae1c95bff4c5f05f497c1fd34d064",
+  "sceneSHA256": "d351ed27cd46ac999e0659b958325864830df20aabcaf22d6faf96881bd5714e",
+  "scope": "Actual SVG anchor geometry versus frozen PNG regions; colors, text, arrow routes and aesthetics still require region comparisons and isolated fidelity review."
+}

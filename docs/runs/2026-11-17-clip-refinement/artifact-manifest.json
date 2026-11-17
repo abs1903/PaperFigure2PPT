@@ -1,0 +1,31 @@
+{
+  "scope": "Artifact identities for the local ImageGen-to-native CLIP revision. Final acceptance is output-v2/delivery.json.",
+  "files": {
+    "selected-reference.png": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+    "prompt-a.txt": "ea4a74b90a16cb48866b0e9c5a35c3299b2f6bd1aaa77e84e3d703acd4aa8192",
+    "generation-ledger.json": "1d32339ebd9b8e3f70d33f73e5d77ea28338bc80afe3d99e95f570fa2f454082",
+    "image-review-a.json": "50b72ea0979505a15022eb8b3abcf5ef336ae5791adf11df38991a621ef95cd4",
+    "native-reference-inspection.md": "d8923dc3e4a0f0d60d9e4b562b446d29ca76071ec2980f11f5c622ec4f20462c",
+    "reference-geometry.json": "4b79132f02d15a0aa5045fa0dc3024a3da0350d9cebd3af155d69bab9a916bb4",
+    "source-v4/layout-scene.json": "4895c3a093313fcb3b23cce999990cab926bc1cb6ea85f18054b18bbaa5dcc2c",
+    "source-v4/reference-contract.json": "c8cf9d4d7e70332bd6951059befd811d537377fce375ff861522512ca18a12ee",
+    "author-native.mjs": "8ca7fae9b383189650463ce614d92ea0642b70b53299ccaf474a15eff4c187dd",
+    "preservation-qa.json": "6ae4d5d33351960d1c4d26141452a955bff808a87b32d115d8974f918e61c379",
+    "native-sample-assessment.md": "e467e5eac647344cc97c07b121612e188b9af5f21af4a93ce8445974f1e3560e",
+    "output-v2/figure.pptx": "e1be931ec13f745c8a2f33525b914815706f3f455d4e82889ce715a014d8f420",
+    "output-v2/editable.svg": "287806fb1fd97fa164080ad467ec123b9e1ae1c95bff4c5f05f497c1fd34d064",
+    "output-v2/native-render/figure.pdf": "2ea91c97bc708b52d03906a3d459f026e9afdf6209130635ed045831e62db5f0",
+    "output-v2/native-render/preview.png": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d",
+    "output-v2/visual-review.json": "638b454155790d697a01b3eb6b32d9d48ba2ba8ed67c4d606c610abbf38a84e6",
+    "output-v2/reconstruction-review.json": "afd22b9416217ee2f3d2dd971b5a2451bc0bbf8398206ff5eec33d9599a89a92",
+    "output-v2/native-review.md": "d5415f103ab2dbc2e5ec9ff38df78fbe4afdb414de8162b16527525982aaa3d9",
+    "output-v2/delivery.json": "b48d5c4b3c136b2419710830823e03bfc139b16206ecd1c4509677377f1f77f8",
+    "REPORT.md": "f2a69880c522c97418ca96218879cf16cf5d2ea08fca08a318a57a85d03fb619",
+    "cover-triptych.png": "003dadcddd9576bc4149af9eea00ced0b8fb0e706bbb3f4ee7c6143d1ae397d5",
+    "homepage-cover-provenance.json": "068ea8acdb21975f2eb7d677370f5652344c7a0215291461df4342e1cee4537f",
+    "comparison-original-imagegen-office.png": "df77795a61aab4d95111c7f7275139874cef0613ff5410da1db2dbec0700053a",
+    "comparison-reference-svg-office.png": "58286e7bd0b4d9137ce83773cfda001ec2f98882a15a7f910463e6586ecc68e1",
+    "readme-links-qa.json": "e3e6369c14ffe3e0a7ff557f8018d476ccaa84688aa60c2bdf2a11cbea01ef71",
+    "preview-qa.json": "eae5bd578ef8e72cd82a5394ef9125d84d2774cef1059e7d1de1796bd2df8a7f"
+  }
+}

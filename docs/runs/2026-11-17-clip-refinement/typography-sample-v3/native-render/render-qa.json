@@ -1,0 +1,136 @@
+{
+  "engine": "LibreOffice -> PDF -> MuPDF",
+  "pptxSHA256": "349afb3c6b056c44310fc7549437c9d6a801a4edfc9688598986da4b9dece24c",
+  "pdfSHA256": "5f4941cf91c01fa55141673d3ad8780ff5ce1fc5201e0af68770d81bf372d367",
+  "requestedFonts": [
+    "Arial"
+  ],
+  "renderedFonts": [
+    "BAAAAA+ArialMT",
+    "CAAAAA+ArialMT",
+    "DAAAAA+Arial-BoldMT",
+    "EAAAAA+Arial-BoldMT",
+    "FAAAAA+ArialMT",
+    "GAAAAA+ArialMT"
+  ],
+  "fontScope": "Conversion-process-only fontconfig; no fonts installed globally",
+  "errors": [],
+  "limits": [
+    "No interactive Microsoft PowerPoint editing test.",
+    "Port attachment and font appearance are verified through this independent rendering engine.",
+    "Text isolation uses a contrasting matte without changing text styles; composed-slide contrast/occlusion still requires visual review."
+  ],
+  "textChecks": [
+    {
+      "id": "label-block:train-image-encoder",
+      "ink": [
+        384,
+        366,
+        140,
+        66
+      ],
+      "container": [
+        351,
+        334,
+        205,
+        130
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": 0.5,
+      "dy": 0.0,
+      "isolationMatte": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "id": "label-block:train-text-encoder",
+      "ink": [
+        848,
+        148,
+        210,
+        26
+      ],
+      "container": [
+        764,
+        132,
+        377,
+        59
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.5,
+      "dy": -0.5,
+      "isolationMatte": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "id": "label-block:template",
+      "ink": [
+        966,
+        721,
+        249,
+        29
+      ],
+      "container": [
+        916,
+        707,
+        349,
+        52
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.0,
+      "dy": 2.5,
+      "isolationMatte": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "edgeChecks": [
+    {
+      "id": "image-batch-encode",
+      "coverage": 1.0,
+      "samples": 12,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "text-batch-encode",
+      "coverage": 1.0,
+      "samples": 6,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "image-to-matrix",
+      "coverage": 1.0,
+      "samples": 36,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "text-to-matrix-left",
+      "coverage": 1.0,
+      "samples": 38,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "text-to-matrix-mid",
+      "coverage": 1.0,
+      "samples": 8,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "text-to-matrix-right",
+      "coverage": 1.0,
+      "samples": 40,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    }
+  ],
+  "passed": true
+}

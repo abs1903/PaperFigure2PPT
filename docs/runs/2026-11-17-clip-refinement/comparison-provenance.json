@@ -1,0 +1,37 @@
+{
+  "scope": "Diagnostic resizing/contact sheets of unchanged actual artifacts; not a new generated design or an image-similarity acceptance score.",
+  "evidence": [
+    {
+      "id": "original",
+      "label": "Previous accepted Office render",
+      "path": "../2026-11-17-color-study/clip-soft-dual/native-render/preview.png",
+      "sha256": "766f87e00167a49d71ec12841776722d835537e35de9904791d37be3363e99c0",
+      "width": 1610,
+      "height": 977
+    },
+    {
+      "id": "reference",
+      "label": "Refined ImageGen reference",
+      "path": "selected-reference.png",
+      "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+      "width": 1609,
+      "height": 977
+    },
+    {
+      "id": "svg",
+      "label": "Native SVG reconstruction",
+      "path": "output-v2/preview.png",
+      "sha256": "1fb1d2f3745f931ba54955a0e2195ec8bb7e1f33d7e779c44c6f0990b018f57f",
+      "width": 1609,
+      "height": 977
+    },
+    {
+      "id": "office",
+      "label": "Actual LibreOffice PPTX render",
+      "path": "output-v2/native-render/preview.png",
+      "sha256": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d",
+      "width": 1609,
+      "height": 977
+    }
+  ]
+}

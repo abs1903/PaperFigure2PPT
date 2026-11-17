@@ -1,0 +1,852 @@
+{
+  "version": "1.0",
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+    "width": 1609,
+    "height": 977
+  },
+  "expectedCounts": {
+    "modules": 16,
+    "edges": 13,
+    "labels": 30,
+    "primitives": 86
+  },
+  "labels": [
+    {
+      "id": "train-phase-label",
+      "owner": "train-phase",
+      "text": "Contrastive pre-training",
+      "referenceRegion": [
+        47,
+        23,
+        490,
+        50
+      ],
+      "font": "Arial",
+      "size": 44,
+      "bold": false
+    },
+    {
+      "id": "test-phase-label",
+      "owner": "test-phase",
+      "text": "Zero-shot use",
+      "referenceRegion": [
+        47,
+        630,
+        282,
+        48
+      ],
+      "font": "Arial",
+      "size": 42,
+      "bold": false
+    },
+    {
+      "id": "paired-caption",
+      "owner": "train-images",
+      "text": "Paired examples",
+      "referenceRegion": [
+        51,
+        132,
+        300,
+        42
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    {
+      "id": "train-caption-0",
+      "owner": "train-captions",
+      "text": "boat",
+      "referenceRegion": [
+        661,
+        16,
+        173,
+        58
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    {
+      "id": "train-caption-1",
+      "owner": "train-captions",
+      "text": "bird",
+      "referenceRegion": [
+        864,
+        16,
+        173,
+        58
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    {
+      "id": "train-caption-2",
+      "owner": "train-captions",
+      "text": "cup",
+      "referenceRegion": [
+        1067,
+        16,
+        172,
+        58
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    {
+      "id": "text-train-image-encoder-0",
+      "owner": "train-image-encoder",
+      "text": "Image",
+      "referenceRegion": [
+        351,
+        334,
+        205,
+        130
+      ],
+      "font": "Arial",
+      "size": 39,
+      "bold": false
+    },
+    {
+      "id": "text-train-image-encoder-1",
+      "owner": "train-image-encoder",
+      "text": "encoder",
+      "referenceRegion": [
+        351,
+        334,
+        205,
+        130
+      ],
+      "font": "Arial",
+      "size": 39,
+      "bold": false
+    },
+    {
+      "id": "text-train-text-encoder-0",
+      "owner": "train-text-encoder",
+      "text": "Text encoder",
+      "referenceRegion": [
+        764,
+        132,
+        377,
+        59
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    {
+      "id": "train-image-norm-a",
+      "owner": "train-image-encoder",
+      "text": "Normalized",
+      "referenceRegion": [
+        572,
+        347,
+        151,
+        30
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": false
+    },
+    {
+      "id": "train-image-norm-b",
+      "owner": "train-image-encoder",
+      "text": "embeddings",
+      "referenceRegion": [
+        568,
+        377,
+        158,
+        30
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": false
+    },
+    {
+      "id": "train-text-norm",
+      "owner": "train-text-encoder",
+      "text": "Normalized embeddings",
+      "referenceRegion": [
+        819,
+        201,
+        312,
+        31
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": false
+    },
+    {
+      "id": "i2t-caption",
+      "owner": "objective",
+      "text": "Image to text",
+      "referenceRegion": [
+        1331,
+        310,
+        258,
+        40
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": false
+    },
+    {
+      "id": "t2i-caption",
+      "owner": "objective",
+      "text": "Text to image",
+      "referenceRegion": [
+        1340,
+        375,
+        249,
+        40
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": false
+    },
+    {
+      "id": "text-objective-0",
+      "owner": "objective",
+      "text": "Symmetric loss",
+      "referenceRegion": [
+        1229,
+        449,
+        353,
+        61
+      ],
+      "font": "Arial",
+      "size": 38,
+      "bold": false
+    },
+    {
+      "id": "same-encoders-caption",
+      "owner": "test-text-encoder",
+      "text": "Same encoders",
+      "referenceRegion": [
+        480,
+        631,
+        239,
+        36
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": false
+    },
+    {
+      "id": "query-caption",
+      "owner": "query",
+      "text": "New image",
+      "referenceRegion": [
+        64,
+        700,
+        188,
+        40
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": false
+    },
+    {
+      "id": "class-caption",
+      "owner": "template",
+      "text": "Class descriptions",
+      "referenceRegion": [
+        949,
+        636,
+        350,
+        41
+      ],
+      "font": "Arial",
+      "size": 35,
+      "bold": false
+    },
+    {
+      "id": "text-test-image-encoder-0",
+      "owner": "test-image-encoder",
+      "text": "Image",
+      "referenceRegion": [
+        317,
+        744,
+        207,
+        94
+      ],
+      "font": "Arial",
+      "size": 34,
+      "bold": false
+    },
+    {
+      "id": "text-test-image-encoder-1",
+      "owner": "test-image-encoder",
+      "text": "encoder",
+      "referenceRegion": [
+        317,
+        744,
+        207,
+        94
+      ],
+      "font": "Arial",
+      "size": 34,
+      "bold": false
+    },
+    {
+      "id": "text-test-text-encoder-0",
+      "owner": "test-text-encoder",
+      "text": "Text",
+      "referenceRegion": [
+        649,
+        744,
+        209,
+        94
+      ],
+      "font": "Arial",
+      "size": 34,
+      "bold": false
+    },
+    {
+      "id": "text-test-text-encoder-1",
+      "owner": "test-text-encoder",
+      "text": "encoder",
+      "referenceRegion": [
+        649,
+        744,
+        209,
+        94
+      ],
+      "font": "Arial",
+      "size": 34,
+      "bold": false
+    },
+    {
+      "id": "text-template-0",
+      "owner": "template",
+      "text": "a photo of a {label}",
+      "referenceRegion": [
+        916,
+        707,
+        349,
+        52
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": false
+    },
+    {
+      "id": "class-caption-0",
+      "owner": "class-chips",
+      "text": "boat",
+      "referenceRegion": [
+        936,
+        774,
+        101,
+        48
+      ],
+      "font": "Arial",
+      "size": 31,
+      "bold": false
+    },
+    {
+      "id": "class-caption-1",
+      "owner": "class-chips",
+      "text": "bird",
+      "referenceRegion": [
+        1050,
+        774,
+        99,
+        48
+      ],
+      "font": "Arial",
+      "size": 31,
+      "bold": false
+    },
+    {
+      "id": "class-caption-2",
+      "owner": "class-chips",
+      "text": "cup",
+      "referenceRegion": [
+        1164,
+        774,
+        99,
+        48
+      ],
+      "font": "Arial",
+      "size": 31,
+      "bold": false
+    },
+    {
+      "id": "test-norm-caption",
+      "owner": "cosine",
+      "text": "Normalized embeddings",
+      "referenceRegion": [
+        479,
+        918,
+        355,
+        34
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false
+    },
+    {
+      "id": "text-cosine-0",
+      "owner": "cosine",
+      "text": "Cosine",
+      "referenceRegion": [
+        896,
+        871,
+        267,
+        87
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    {
+      "id": "text-cosine-1",
+      "owner": "cosine",
+      "text": "similarity",
+      "referenceRegion": [
+        896,
+        871,
+        267,
+        87
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    {
+      "id": "text-nearest-0",
+      "owner": "nearest",
+      "text": "Nearest label",
+      "referenceRegion": [
+        1290,
+        875,
+        300,
+        78
+      ],
+      "font": "Arial",
+      "size": 38,
+      "bold": false
+    }
+  ],
+  "groups": [
+    {
+      "id": "train-images",
+      "anchorShapeId": "train-images-anchor",
+      "referenceRegion": [
+        84,
+        202,
+        168,
+        372
+      ]
+    },
+    {
+      "id": "train-captions",
+      "anchorShapeId": "train-captions-anchor",
+      "referenceRegion": [
+        661,
+        16,
+        578,
+        58
+      ]
+    },
+    {
+      "id": "train-image-encoder",
+      "anchorShapeId": "train-image-encoder-anchor",
+      "referenceRegion": [
+        351,
+        334,
+        205,
+        130
+      ]
+    },
+    {
+      "id": "train-text-encoder",
+      "anchorShapeId": "train-text-encoder-anchor",
+      "referenceRegion": [
+        764,
+        132,
+        377,
+        59
+      ]
+    },
+    {
+      "id": "matrix",
+      "anchorShapeId": "matrix-anchor",
+      "referenceRegion": [
+        735,
+        278,
+        444,
+        272
+      ]
+    },
+    {
+      "id": "objective",
+      "anchorShapeId": "objective-anchor",
+      "referenceRegion": [
+        1229,
+        449,
+        353,
+        61
+      ]
+    },
+    {
+      "id": "separator",
+      "anchorShapeId": "separator-anchor",
+      "referenceRegion": [
+        22,
+        600,
+        1567,
+        2
+      ]
+    },
+    {
+      "id": "query",
+      "anchorShapeId": "query-anchor",
+      "referenceRegion": [
+        54,
+        750,
+        176,
+        118
+      ]
+    },
+    {
+      "id": "test-image-encoder",
+      "anchorShapeId": "test-image-encoder-anchor",
+      "referenceRegion": [
+        317,
+        744,
+        207,
+        94
+      ]
+    },
+    {
+      "id": "test-text-encoder",
+      "anchorShapeId": "test-text-encoder-anchor",
+      "referenceRegion": [
+        649,
+        744,
+        209,
+        94
+      ]
+    },
+    {
+      "id": "template",
+      "anchorShapeId": "template-anchor",
+      "referenceRegion": [
+        916,
+        707,
+        349,
+        52
+      ]
+    },
+    {
+      "id": "class-chips",
+      "anchorShapeId": "class-chips-anchor",
+      "referenceRegion": [
+        936,
+        774,
+        327,
+        48
+      ]
+    },
+    {
+      "id": "cosine",
+      "anchorShapeId": "cosine-anchor",
+      "referenceRegion": [
+        896,
+        871,
+        267,
+        87
+      ]
+    },
+    {
+      "id": "nearest",
+      "anchorShapeId": "nearest-anchor",
+      "referenceRegion": [
+        1290,
+        875,
+        300,
+        78
+      ]
+    },
+    {
+      "id": "train-phase",
+      "referenceRegion": [
+        47,
+        24,
+        484,
+        49
+      ]
+    },
+    {
+      "id": "test-phase",
+      "referenceRegion": [
+        47,
+        631,
+        275,
+        46
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "image-batch-encode",
+      "from": "train-images",
+      "to": "train-image-encoder",
+      "sourceRoute": [
+        [
+          293,
+          396
+        ],
+        [
+          346,
+          396
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "text-batch-encode",
+      "from": "train-captions",
+      "to": "train-text-encoder",
+      "sourceRoute": [
+        [
+          952,
+          102
+        ],
+        [
+          952,
+          127
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "image-to-matrix",
+      "from": "train-image-encoder",
+      "to": "matrix",
+      "sourceRoute": [
+        [
+          556,
+          423
+        ],
+        [
+          730,
+          423
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "text-to-matrix-left",
+      "from": "train-text-encoder",
+      "to": "matrix",
+      "sourceRoute": [
+        [
+          952,
+          239
+        ],
+        [
+          811,
+          239
+        ],
+        [
+          811,
+          274
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "text-to-matrix-mid",
+      "from": "train-text-encoder",
+      "to": "matrix",
+      "sourceRoute": [
+        [
+          952,
+          239
+        ],
+        [
+          952,
+          274
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "text-to-matrix-right",
+      "from": "train-text-encoder",
+      "to": "matrix",
+      "sourceRoute": [
+        [
+          952,
+          239
+        ],
+        [
+          1105,
+          239
+        ],
+        [
+          1105,
+          274
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "reuse-image",
+      "from": "train-image-encoder",
+      "to": "test-image-encoder",
+      "sourceRoute": [
+        [
+          413,
+          465
+        ],
+        [
+          414,
+          739
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "reuse-text",
+      "from": "train-text-encoder",
+      "to": "test-text-encoder",
+      "sourceRoute": [
+        [
+          1141,
+          161
+        ],
+        [
+          1203,
+          161
+        ],
+        [
+          1203,
+          576
+        ],
+        [
+          750,
+          576
+        ],
+        [
+          750,
+          739
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "query-image-encode",
+      "from": "query",
+      "to": "test-image-encoder",
+      "sourceRoute": [
+        [
+          231,
+          794
+        ],
+        [
+          315,
+          794
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "class-text-encode",
+      "from": "template",
+      "to": "test-text-encoder",
+      "sourceRoute": [
+        [
+          916,
+          738
+        ],
+        [
+          916,
+          784
+        ],
+        [
+          863,
+          784
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "image-to-similarity",
+      "from": "test-image-encoder",
+      "to": "cosine",
+      "sourceRoute": [
+        [
+          428,
+          837
+        ],
+        [
+          428,
+          878
+        ],
+        [
+          596,
+          878
+        ],
+        [
+          596,
+          915
+        ],
+        [
+          890,
+          915
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "text-to-similarity",
+      "from": "test-text-encoder",
+      "to": "cosine",
+      "sourceRoute": [
+        [
+          750,
+          837
+        ],
+        [
+          750,
+          878
+        ],
+        [
+          596,
+          878
+        ]
+      ],
+      "arrowhead": "none"
+    },
+    {
+      "id": "similarity-readout",
+      "from": "cosine",
+      "to": "nearest",
+      "sourceRoute": [
+        [
+          1164,
+          914
+        ],
+        [
+          1283,
+          914
+        ]
+      ],
+      "arrowhead": "triangle"
+    }
+  ],
+  "notes": [
+    "Native-reference-inspection.md supplies independent pixel inventory; author declarations do not self-certify completeness.",
+    "Native training image branch collection and paired-caption collection are shared inputs, not additional neural modules. Image-to-text and text-to-image direction glyphs are legend line art.",
+    "Lower two normalized outputs meet at a shared junction feeding Cosine similarity. Teal output joins there without a separate arrowhead, preserving candidate A topology."
+  ]
+}

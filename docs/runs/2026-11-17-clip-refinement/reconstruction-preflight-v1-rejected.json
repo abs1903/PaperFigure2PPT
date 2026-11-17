@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "stage": "before export",
+  "errors": [
+    {
+      "code": "uninventoried-reference-module",
+      "id": "train-phase"
+    },
+    {
+      "code": "missing-reference-anchor",
+      "id": "train-phase"
+    },
+    {
+      "code": "uninventoried-reference-module",
+      "id": "test-phase"
+    },
+    {
+      "code": "missing-reference-anchor",
+      "id": "test-phase"
+    }
+  ],
+  "resolution": "Use the existing contract.nonVisualGroups annotation feature for the two unboxed heading groups. They contain only native text, are not route endpoints, and are not routing obstacles; frozen text verification remains required. No runtime or QA threshold change."
+}

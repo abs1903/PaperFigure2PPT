@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "scope": "GitHub Markdown API HTML in a local GitHub-like CSS approximation; actual private GitHub page not screenshot-tested.",
+  "evidence": [
+    {
+      "viewport": "desktop",
+      "width": 1200,
+      "images": [
+        {
+          "alt": "PaperFigure — source-grounded research figures, editable by design. Gallery of actual CLIP, Agentless and MAE Office renders; SVG, PPTX and PDF examples below.",
+          "loaded": true,
+          "displayWidth": 914,
+          "naturalWidth": 1800
+        },
+        {
+          "alt": "CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders.",
+          "loaded": true,
+          "displayWidth": 914,
+          "naturalWidth": 1609
+        },
+        {
+          "alt": "Agentless: repository-to-edit-location localization funnel, focused context for local Search/Replace, and candidate patch selection.",
+          "loaded": true,
+          "displayWidth": 914,
+          "naturalWidth": 1637
+        },
+        {
+          "alt": "MAE: four visible patches enter the encoder, twelve learned mask tokens join afterward, and a lightweight decoder predicts all patches with masked-only MSE.",
+          "loaded": true,
+          "displayWidth": 914,
+          "naturalWidth": 1774
+        }
+      ],
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "width": 430,
+      "images": [
+        {
+          "alt": "PaperFigure — source-grounded research figures, editable by design. Gallery of actual CLIP, Agentless and MAE Office renders; SVG, PPTX and PDF examples below.",
+          "loaded": true,
+          "displayWidth": 372,
+          "naturalWidth": 1800
+        },
+        {
+          "alt": "CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders.",
+          "loaded": true,
+          "displayWidth": 372,
+          "naturalWidth": 1609
+        },
+        {
+          "alt": "Agentless: repository-to-edit-location localization funnel, focused context for local Search/Replace, and candidate patch selection.",
+          "loaded": true,
+          "displayWidth": 372,
+          "naturalWidth": 1637
+        },
+        {
+          "alt": "MAE: four visible patches enter the encoder, twelve learned mask tokens join afterward, and a lightweight decoder predicts all patches with masked-only MSE.",
+          "loaded": true,
+          "displayWidth": 372,
+          "naturalWidth": 1774
+        }
+      ],
+      "horizontalOverflow": false
+    }
+  ]
+}

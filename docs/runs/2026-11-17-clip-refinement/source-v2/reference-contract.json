@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+    "width": 1609,
+    "height": 977
+  },
+  "centerTolerancePx": 4,
+  "sizeTolerancePx": 6,
+  "regions": [
+    {
+      "module": "train-images",
+      "box": [
+        84,
+        202,
+        168,
+        372
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "train-captions",
+      "box": [
+        661,
+        16,
+        578,
+        58
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "train-image-encoder",
+      "box": [
+        351,
+        334,
+        205,
+        130
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "train-text-encoder",
+      "box": [
+        764,
+        132,
+        377,
+        59
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "matrix",
+      "box": [
+        735,
+        278,
+        444,
+        272
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "objective",
+      "box": [
+        1229,
+        449,
+        353,
+        61
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "separator",
+      "box": [
+        22,
+        600,
+        1567,
+        2
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "query",
+      "box": [
+        54,
+        750,
+        176,
+        118
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "test-image-encoder",
+      "box": [
+        317,
+        744,
+        207,
+        94
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "test-text-encoder",
+      "box": [
+        649,
+        744,
+        209,
+        94
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "template",
+      "box": [
+        916,
+        707,
+        349,
+        52
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "class-chips",
+      "box": [
+        936,
+        774,
+        327,
+        48
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "cosine",
+      "box": [
+        896,
+        871,
+        267,
+        87
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    },
+    {
+      "module": "nearest",
+      "box": [
+        1290,
+        875,
+        300,
+        78
+      ],
+      "anchorMeaning": "Manually registered current PNG visible frame/compound frames; phase headings are unboxed and covered by the label transcript and typography profile instead."
+    }
+  ],
+  "geometryChanges": [],
+  "contentChanges": [],
+  "typography": {
+    "path": "typography-profile.json",
+    "sha256": "19a6a11f7d6cb6f516681a9cb302615f208ca3adf924860c9cebf3cb0774b84c"
+  },
+  "appearanceApproximations": [
+    "Mild generated texture/shading approximated by matched flat native fills; major two-tone icon facets and contours are preserved.",
+    "Unknown generated sans-serif approximated with measured Arial regular by source role; major icon contours and two-tone details retained as native paths, with small contour/antialiasing differences.",
+    "Rounded connector elbows represented as editable orthogonal bends on registered routes."
+  ],
+  "reviewRequired": "Actual target/SVG/Office full and paper-width comparison; exact texts, 3x3 pairing, correct reuse/input origins, native XML/object map and actual typography."
+}

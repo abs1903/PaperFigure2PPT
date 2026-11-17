@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "review_type": "independent local appearance-refinement raster review",
+  "reviewer": "/root/clip_refinement_pixels",
+  "verdict": "accept",
+  "acceptance_scope": "Candidate A is accepted only as a reference-bound raster for native reconstruction; this is not Office or native-artifact acceptance.",
+  "inputs": {
+    "baseline": {"path": "../2026-11-17-color-study/clip-soft-dual/native-render/preview.png", "sha256": "766f87e00167a49d71ec12841776722d835537e35de9904791d37be3363e99c0", "pixels": {"width": 1610, "height": 977}},
+    "candidate": {"path": "candidate-a.png", "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8", "pixels": {"width": 1609, "height": 977}},
+    "source_bindings_read": {"source_audit": "../2026-11-17-clip-showcase/source-audit.json", "narrative_plan": "../2026-11-17-clip-showcase/narrative-plan.json", "spec": "../2026-11-17-clip-showcase/spec.json", "method_prose": "../2026-11-17-clip-showcase/source/method-prose.txt"}
+  },
+  "pixel_only_first_reading": {"completed_before_source_comparison": true, "finding": "A coherent two-phase schematic with a central diagonal matrix and lower zero-shot comparison; calmer, more editorial, and less visually heavy than the baseline."},
+  "semantic_checks": {"three_by_three_all_pairs_matrix": "pass", "three_diagonal_pairs_and_six_nonpairs": "pass", "training_image_and_text_inputs_have_separate_encoders": "pass", "symmetric_image_to_text_and_text_to_image_cues_with_training_loss": "pass", "separate_image_encoder_reuse_origin_and_destination": "pass", "separate_text_encoder_reuse_origin_and_destination": "pass", "class_template_and_three_class_chips_feed_lower_text_encoder": "pass", "lower_similarity_to_nearest_label_path": "pass", "no_zero_shot_loss_or_new_head": "pass", "no_measurement_or_execution_claim": "pass", "normalized_embedding_and_cosine_language_has_no_invalid_fixed_scale_claim": "pass"},
+  "appearance_comparison": {"improved_over_baseline": true, "finding": "Finer framing, restrained heading treatment, clearer matrix priority, coherent illustrations, and subdued warm/role palette improve hierarchy while retaining legibility."},
+  "seven_inch_typography": {"pixel_assessment": "appears legible at the supplied 1609-pixel-wide preview and consistent with the intended publication-width hierarchy", "status": "unverified_from_raster", "required_native_check": "verify actual point sizes, rendered-font coverage, and post-render legibility"},
+  "native_reconstruction_feasibility": {"status": "feasible_as_reference_only", "basis": "Visible components are flat, separable native primitives: text, rounded rectangles, grid cells, orthogonal connectors, dashes, and small vector-path illustrations.", "delicate_elements": ["bird interior accents", "boat waves", "dashed reuse links", "arrowheads"], "not_verified": ["native object structure", "connector endpoints", "Office rendering", "font coverage"]},
+  "blockers": [],
+  "nonblockers": ["Keep both dashed reuse links visibly separate and retain their encoder origins/destinations during reconstruction.", "Verify publication-width typography, text extraction, connector endpoints, and rendered-font coverage in the native artifact.", "Recheck delicate illustration contours and arrowheads after Office/native rendering."],
+  "stage_boundary": "Raster acceptance does not accept or approve an Office document, editable artifact, native render, execution, or measurement."
+}

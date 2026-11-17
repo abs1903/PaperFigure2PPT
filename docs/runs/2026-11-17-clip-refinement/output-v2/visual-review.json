@@ -1,0 +1,49 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/clip_refinement_native",
+    "isolation": "Dedicated non-authoring review task (fork_turns:none requested by the parent task); this reviewer did not create or edit the frozen output artifacts."
+  },
+  "verdict": "accept",
+  "checks": {
+    "referenceComparison": "pass",
+    "semanticFidelity": "pass",
+    "composition": "pass",
+    "modalityIdentity": "pass",
+    "typography": "pass",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "pass"
+  },
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8"
+  },
+  "artifacts": {
+    "editable.svg": "287806fb1fd97fa164080ad467ec123b9e1ae1c95bff4c5f05f497c1fd34d064",
+    "figure.pptx": "e1be931ec13f745c8a2f33525b914815706f3f455d4e82889ce715a014d8f420",
+    "preview.png": "1fb1d2f3745f931ba54955a0e2195ec8bb7e1f33d7e779c44c6f0990b018f57f",
+    "layout-scene.json": "19cd30409665421217188cfcaf5a394afd8cf152d52ffe408cb71b18839bba1a",
+    "reference-contract.json": "c8cf9d4d7e70332bd6951059befd811d537377fce375ff861522512ca18a12ee",
+    "reference-layout-qa.json": "09ddaa59f078b6a2505c62aa715620377beeb6688fc4cafa4fdfe306ee2d7ec4",
+    "layout-qa.json": "d0bdcbcba992722af777dcfe6bd51a9dee036e41dcf93d6604851a3630f4eb81",
+    "native-audit.json": "4b523ca229f87bc3feb80804115f37fefcb9972ddd6cbe45ede25bf8fe8c1051",
+    "native-render/figure.pdf": "2ea91c97bc708b52d03906a3d459f026e9afdf6209130635ed045831e62db5f0",
+    "native-render/preview.png": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d",
+    "native-render/render-qa.json": "1b971599cdd46680bc067973ce1054bec3e6c7d377bbf07ae6d56e8111be7b61",
+    "typography-profile.json": "46b5858314be8862f557d5511c3ad972cd90bb8972081b0c309ad4cfa1115dad",
+    "typography-style-qa.json": "1175d82c877c44295f3fe417c3c1ae92490940206357d8467a7acc8a14ad1aad",
+    "typography-qa.json": "5adae829f69b4a21a77fc16acd6f66b900a0ca5e483dd028ba9c7e94e0ba2101"
+  },
+  "notes": [
+    "Independently opened the frozen 1609x977 selected reference, editable SVG preview, actual LibreOffice PPTX raster and PDF, both supplied comparison triptychs, and reference/SVG/Office 672px views. The 672px Office result retains readable headings, matrix, dashed reuse routes, prompt chips, and final readout with no observed clip or collision.",
+    "Reference fidelity passes region by region: three stacked boat/bird/cup cards and upper text chips; a 3x3 matrix with exactly three coral main-diagonal pairs and six pale off-diagonal cells; separate image-to-text/text-to-image cues plus train-only Symmetric loss; the phase divider; two same-modality dashed reuse routes; class-description template/chips; and the cosine-to-nearest-label lower readout.",
+    "Exact transcript check: the source-v4 raster inventory has 30 text lines, and both SVG native text and PPTX literal a:t runs have 30 with no missing or extra line. preservation-qa.json independently reports the same 30-line multiset and all 13 semantic route owner/direction/reuse tuples preserved; that regression result is supporting evidence, not the visual verdict.",
+    "The source paper/spec/narrative remain consistent with this schematic: batch-wide paired image-text alignment, symmetric training directions, and conceptually reused dual encoders for candidate-class zero-shot matching. It makes no inference loss, fitted task head, execution, probability, accuracy, or benchmark claim.",
+    "The editable-SVG/PPTX design survives native reconstruction and Office rendering. SVG has 30 real text elements, vector paths and no raster image. PPTX XML/object map and audit report 26 native text boxes covering 30 SVG text lines, 51 native shapes, 23 semantic connector segments, 27 groups, zero pictures, and zero media; literal text and connector arrowheads are present in slide XML.",
+    "The actual visual differences are bounded approximations, not silent redesign: mild raster shading becomes flat role-matched fills; the unknown generated sans becomes measured Arial/Arial Bold; boat/bird/cup are native contour approximations. Their major two-tone facets, hull/wing/rim/handle details and class identities survive at full and 672px render, though their antialiasing and fine contour character are necessarily less soft than the raster target.",
+    "The two unboxed phase headings remain visible native text. Their nonVisualGroups annotation treatment introduces no invisible phase-frame workaround and has no observed visual impact. The divider crossings are the declared, reference-visible encoder-reuse routes, not crossings through an unacknowledged module.",
+    "This accepts fidelity and LibreOffice appearance for the hash-bound artifacts only. It does not prove the original raster font identity, publication/venue suitability, a real CLIP run, or editing ergonomics/reflow in Microsoft PowerPoint."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/clip_refinement_native",
+    "isolation": "Dedicated non-authoring reviewer task (fork_turns:none requested by the parent task). It independently inspected the source target and final native artifacts; no output export was authored or modified."
+  },
+  "referenceFidelity": "pass",
+  "svgNativeEditability": "pass",
+  "pptxNativeEditability": "pass",
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8",
+    "width": 1609,
+    "height": 977
+  },
+  "artifacts": {
+    "preOutputInspection": "../native-reference-inspection.md",
+    "preOutputInspectionSHA256": "d8923dc3e4a0f0d60d9e4b562b446d29ca76071ec2980f11f5c622ec4f20462c",
+    "sourceV4ReferenceContract": "c8cf9d4d7e70332bd6951059befd811d537377fce375ff861522512ca18a12ee",
+    "sourceV4ReferenceTranscript": "68fbc9bae390bc6bad4d8658653be57b9e98d3dd213fc10a0eed4611a3a0a457",
+    "editable.svg": "287806fb1fd97fa164080ad467ec123b9e1ae1c95bff4c5f05f497c1fd34d064",
+    "svgPreview": "1fb1d2f3745f931ba54955a0e2195ec8bb7e1f33d7e779c44c6f0990b018f57f",
+    "figure.pptx": "e1be931ec13f745c8a2f33525b914815706f3f455d4e82889ce715a014d8f420",
+    "officePreview": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d",
+    "officePdf": "2ea91c97bc708b52d03906a3d459f026e9afdf6209130635ed045831e62db5f0",
+    "objectMap": "f46f655b6cd44b2bfb13946bb8780d8375eb0efe115730eb9a7de993b73ee002",
+    "nativeAudit": "4b523ca229f87bc3feb80804115f37fefcb9972ddd6cbe45ede25bf8fe8c1051",
+    "referenceGeometry": "4b79132f02d15a0aa5045fa0dc3024a3da0350d9cebd3af155d69bab9a916bb4",
+    "renderQa": "1b971599cdd46680bc067973ce1054bec3e6c7d377bbf07ae6d56e8111be7b61",
+    "typographyQa": "5adae829f69b4a21a77fc16acd6f66b900a0ca5e483dd028ba9c7e94e0ba2101",
+    "preservationQa": "6ae4d5d33351960d1c4d26141452a955bff808a87b32d115d8974f918e61c379"
+  },
+  "regionChecklist": [
+    {
+      "region": "upper input batches and encoders",
+      "verdict": "pass",
+      "finding": "Three distinct native boat/bird/cup cards feed the Image encoder; boat/bird/cup text chips feed the Text encoder. Major sail facets, bird wing/sprig, cup rim/handle, role colors, and input direction are retained."
+    },
+    {
+      "region": "pairing field and training objective",
+      "verdict": "pass",
+      "finding": "The matrix is still a 3x3 all-pairs field with precisely three coral diagonal cells and six pale off-diagonal cells. Both retrieval labels and Symmetric loss remain separate, right-side, and pre-training-only."
+    },
+    {
+      "region": "phase boundary and reuse routes",
+      "verdict": "pass",
+      "finding": "The visible horizontal divider and unboxed headings are preserved. Blue/green dashed paths start at upper same-modality encoders and terminate at their lower counterparts; their documented divider crossings are visually intentional and do not use hidden phase frames."
+    },
+    {
+      "region": "zero-shot branch",
+      "verdict": "pass",
+      "finding": "New boat image and class-description prompt/chips enter their respective lower encoders; two lower embedding routes reach Cosine similarity and then Nearest label. No unsupported classifier head or inference loss appears."
+    },
+    {
+      "region": "typography and Office parity",
+      "verdict": "pass",
+      "finding": "All 30 raster-inventory text lines occur as native SVG text and PPTX XML literals. Full and 672px SVG/Office inspections show no observed missing text, clipping, collision, or semantic-route reversal; Arial substitution is visibly close in hierarchy but not asserted to be the unknown raster font."
+    }
+  ],
+  "authorizedDeviations": [
+    "Mild source shading/texture is flattened into matched solid native fills.",
+    "The unknown raster sans-serif is approximated by measured Arial/Arial Bold.",
+    "Boat, bird, and cup are editable native contour approximations; their major two-tone and identity-defining details are retained but their fine contours and antialiasing are not pixel-identical.",
+    "Rounded source elbows become editable orthogonal bends on the registered routes."
+  ],
+  "unresolvedExceptions": [
+    "No interactive Microsoft PowerPoint edit/reflow session was performed. XML/object-map inspection plus actual LibreOffice PDF/PNG establish native structure and Office-rendered appearance, not human editing effort in a different Office implementation.",
+    "The target is generated raster artwork; neither this review nor the source identifies the original font family. Arial is an accepted visual approximation, not a font-identification claim."
+  ],
+  "evidence": [
+    "Opened selected-reference.png, output-v2/preview.png, output-v2/native-render/preview.png, the actual PDF, both supplied full comparison triptychs, and reference-paper-width.png/svg-paper-width.png/office-paper-width.png.",
+    "Checked source-v4/reference-contract.json and native-reference-inspection.md before final output review; opened source paper, spec.json, narrative-plan.json, and source-audit.md to verify that matrix, symmetric training, conceptual encoder reuse, and zero-shot class text remain scientifically bounded.",
+    "Read SVG and PPTX XML/object map: 30 SVG text elements; 30 literal PPTX a:t runs; no SVG image content; PPTX native audit records zero pictures/media. preservation-qa passes exactly 30 literal text lines and 13 semantic route tuples, but is treated only as a scoped regression check."
+  ]
+}
