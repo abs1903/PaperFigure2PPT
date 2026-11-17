@@ -1,7 +1,4 @@
-<h1 align="center">PaperFigure</h1>
-
-<p align="center"><strong>Research figures you can actually edit.</strong></p>
-<p align="center">A Codex skill for source-grounded paper overviews, designed with ImageGen<br>and delivered as native PowerPoint shapes, text and connectors.</p>
+<a href="#examples"><img src="docs/runs/2026-11-17-homepage-refinement/cover-triptych.png" width="100%" alt="PaperFigure — source-grounded research figures, editable by design. Gallery of actual CLIP, Agentless and MAE Office renders; SVG, PPTX and PDF examples below."></a>
 
 <p align="center">
   <a href="#examples">Examples</a> ·
@@ -98,7 +95,7 @@ npx skills add abs1903/PaperFigure2PPT --skill paperfigure --agent codex --globa
 ```
 
 Omit `--global` to install into the current project. The explicit skill URL is
-[`github.com/abs1903/PaperFigure2PPT/tree/main/paperfigure`](https://github.com/abs1903/PaperFigure2PPT/tree/main/paperfigure).
+[the `paperfigure` skill directory on GitHub](https://github.com/abs1903/PaperFigure2PPT/tree/main/paperfigure).
 You can also give that URL to Codex's Skill Installer. Existing Git or GitHub CLI
 authentication must have access to this private repository.
 

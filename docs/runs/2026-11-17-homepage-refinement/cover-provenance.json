@@ -1,0 +1,64 @@
+{
+  "scope": "Homepage raster collage of three unchanged, previously accepted native Office previews. This cover is presentation artwork, not an independently editable scientific figure or a new Office delivery.",
+  "sources": [
+    {
+      "name": "CLIP",
+      "topic": "Align vision & language",
+      "color": "#547993",
+      "file": "docs/runs/2026-11-17-color-study/clip-soft-dual/native-render/preview.png",
+      "sha256": "766f87e00167a49d71ec12841776722d835537e35de9904791d37be3363e99c0"
+    },
+    {
+      "name": "Agentless",
+      "topic": "Make the contribution visible",
+      "color": "#687A62",
+      "file": "docs/runs/2026-11-17-agentless-native/output-v2/native-render/preview.png",
+      "sha256": "fe36e2edff4ff7ffffc0de1ef2869d9f7b9d0f7a0034a925ee170862b7fcfc6f"
+    },
+    {
+      "name": "MAE",
+      "topic": "Reveal the sparse mechanism",
+      "color": "#B88067",
+      "file": "docs/runs/2026-11-17-mae-high-quality/output-v2/native-render/preview.png",
+      "sha256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa"
+    }
+  ],
+  "evidence": [
+    {
+      "variant": "triptych",
+      "images": [
+        {
+          "loaded": true,
+          "contained": true
+        },
+        {
+          "loaded": true,
+          "contained": true
+        },
+        {
+          "loaded": true,
+          "contained": true
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "variant": "feature",
+      "images": [
+        {
+          "loaded": true,
+          "contained": true
+        },
+        {
+          "loaded": true,
+          "contained": true
+        },
+        {
+          "loaded": true,
+          "contained": true
+        }
+      ],
+      "overflow": false
+    }
+  ]
+}
