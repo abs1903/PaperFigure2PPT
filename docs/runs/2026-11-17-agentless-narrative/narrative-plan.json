@@ -1,0 +1,115 @@
+{
+  "version": "1.0",
+  "scope": {
+    "paper": "arXiv:2407.01489v1",
+    "role": "main paper overview",
+    "reader": "ML/software-engineering reader unfamiliar with Agentless internals",
+    "publicationWidthIn": 7,
+    "authorFigureAccess": true,
+    "authorFigureUse": "Previously inspected after the earlier run was frozen. This run is source-informed, not figure-hidden. Borrow grouping principles, not author artwork."
+  },
+  "takeaway": "Agentless progressively narrows repository code with three LLM localization steps, then generates, filters and selects a candidate patch.",
+  "story": {
+    "input": "Issue report and code repository",
+    "focalMechanism": "Repository tree \u2192 selected-file skeletons \u2192 selected element code \u2192 edit locations with surrounding context, through three LLM selections",
+    "support": "LLM patch sampling followed by syntax/regression filtering and normalized frequency selection",
+    "output": "Selected patch; not a guarantee of correct repair; exact serialization is outside the overview scope."
+  },
+  "informationSelection": [
+    {
+      "item": "Hierarchical file, element, edit-location localization",
+      "evidence": "Section 2.1; spec repo-files/files-elements/elements-locations",
+      "placement": "main",
+      "owner": "repository/files/elements/locations",
+      "reason": "Central method explanation",
+      "representation": "Four progressively focused source representations across the upper row"
+    },
+    {
+      "item": "Issue conditioning and LLM roles",
+      "evidence": "Section 2 overview and 2.1/2.2; issue-* edges",
+      "placement": "main",
+      "owner": "issue and model-driven transitions",
+      "reason": "Distinguishes language-model inference from deterministic source processing",
+      "representation": "Issue report input plus LLM + issue badges on first two localization transitions and generation; final localization arrow says LLM without a separate direct issue claim."
+    },
+    {
+      "item": "Source retrieval and context expansion",
+      "evidence": "Section 2.1 skeletons/full code and 2.2 context window",
+      "placement": "internal",
+      "owner": "files/elements/focus blocks",
+      "reason": "The model selects locations, not imaginary source code",
+      "representation": "Explicit Build tree and Build skeletons substeps; Selected code retrieval within its panel; Context windows show surrounding source; no LLM badge on these operations."
+    },
+    {
+      "item": "Patch sampling, filtering and ranking",
+      "evidence": "Section 2.2",
+      "placement": "main",
+      "owner": "samples/select/patch",
+      "reason": "Completes the input-output story while keeping the main emphasis on localization",
+      "representation": "Lower right-to-left row with Search/Replace diff candidates, compact filter/rank block and selected patch."
+    },
+    {
+      "item": "Syntax checks and regression tests; normalization and highest-frequency vote",
+      "evidence": "Section 2.2",
+      "placement": "internal",
+      "owner": "select",
+      "reason": "Must remain interpretable without dominating the overview",
+      "representation": "Two short labeled substeps inside Filter & rank"
+    },
+    {
+      "item": "AST parse/unparse, stripping docstrings, greedy versus temperature sampling, tie-breaking",
+      "evidence": "Section 2.2 and earlier pinned-code audit",
+      "placement": "record-only",
+      "owner": "companion source record",
+      "reason": "Not needed to explain the paper overview",
+      "representation": "Retained in source/audit; no separate main-figure boxes"
+    },
+    {
+      "item": "Minimum-failure cohort and empty-cohort bypass",
+      "evidence": "Prior pinned-code spec; differs from paper-v1 narrative",
+      "placement": "record-only",
+      "owner": "earlier implementation case",
+      "reason": "Outside this paper-v1 scope; do not silently equate paper and later code",
+      "representation": "Excluded from new figure spec, old case preserved"
+    },
+    {
+      "item": "Empirical performance, specific successful bug fix, autonomous agent loop",
+      "evidence": "No execution in this run; paper states fixed two-phase procedure",
+      "placement": "record-only",
+      "owner": "limitations",
+      "reason": "No evidence for newly measured outcomes or agent decision loop",
+      "representation": "No success ticks, benchmark numbers or feedback arrows"
+    }
+  ],
+  "visualEvidence": {
+    "sourceFragments": [
+      "django/forms/fields.py",
+      "class UUIDField(CharField):",
+      "def prepare_value(self, value):",
+      "def to_python(self, value):",
+      "class JSONField(CharField):"
+    ],
+    "fragmentSource": "Paper Figure 2 skeleton example, PDF p.4, textual content; schematic narrowing is illustrative and not a claimed repair case.",
+    "change": "Fewer paths/elements highlighted at each stage; skeleton signatures become selected source code and then context with edit lines highlighted. Diff tokens show candidate edits, not ornamental cards."
+  },
+  "alternatives": [
+    {
+      "name": "Vertical localization funnel beside repair column",
+      "tradeoff": "Makes narrowing literal, but the last localization stage must route back up to the repair input and competes with the shared issue bus."
+    },
+    {
+      "name": "Two-row serpentine sequence",
+      "selected": true,
+      "tradeoff": "Uses one short downward transition at the right and right-to-left repair, with step numbers making the route explicit. Similar reading principle to author, independently drawn with restrained flat styling and no repeated issue paragraphs."
+    }
+  ],
+  "composition": {
+    "route": "Upper row left to right, lower row right to left; one short right-side drop. No cycles.",
+    "prominence": "Localization source transformations occupy upper row; Repair is compact below, no implementation-detail branch cluster.",
+    "maxVisibleWords": 95,
+    "typography": "7-inch width, key labels about 9pt or larger; code examples may be smaller but cannot carry essential meaning. No overall title/caption."
+  },
+  "review": {
+    "path": "source-narrative-review-v3.md"
+  }
+}

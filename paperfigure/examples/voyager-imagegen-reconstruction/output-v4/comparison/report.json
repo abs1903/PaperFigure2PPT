@@ -1,0 +1,55 @@
+{
+  "mode": "png-native-reconstruction",
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/voyager-imagegen-reconstruction/reference.png",
+    "sha256": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f",
+    "width": 2061,
+    "height": 763
+  },
+  "svg": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/voyager-imagegen-reconstruction/output-v4/figure.svg",
+    "sha256": "59ab5c15725cb282c258fd6c4613b10cb883ee15245935459a102f7c65b30a32"
+  },
+  "inventory": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/voyager-imagegen-reconstruction/output-v4/inventory.json",
+    "sha256": "f376e15a5452a890479204d8d0caad6e7767147e2584099d23265fc060e8bb0c"
+  },
+  "native": {
+    "errors": [],
+    "warnings": [
+      "The checker cannot identify outlined words among legitimate icon paths, recover fonts, OCR the PNG, fully resolve clipping/paint effects or prove the inventory is complete. Inspect manually."
+    ],
+    "root": {
+      "xmlns": "http://www.w3.org/2000/svg",
+      "width": "2061",
+      "height": "763",
+      "viewBox": "0 0 2061 763",
+      "data-pptx-page-role": "content"
+    },
+    "counts": {
+      "semanticGroups": 60,
+      "nativeTextElements": 69,
+      "vectorElements": 117,
+      "rasterElements": 0
+    }
+  },
+  "visualAcceptance": "unreviewed",
+  "deliveryReady": false,
+  "limits": [
+    "Structural checks and pixel diagnostics are not fidelity or aesthetic acceptance.",
+    "PPTX native editability and independent rendering require separate review."
+  ],
+  "diagnostics": {
+    "normalizedRGBMAE": 0.06351979344027331,
+    "normalizedAlphaMAE": 0,
+    "comparisonBackground": "white",
+    "differenceAmplification": 4,
+    "threshold": "none; inspect each region"
+  },
+  "comparisonArtifacts": {
+    "preview.png": "d8a1340b296bb4a259d4c47329415735eadfd219e65f8d33d60a40943dc266df",
+    "overlay.png": "021821bd20300128d88da9243ec353d5f319baa480cfd4549ade88f4b44fe25e",
+    "difference.png": "91e6fa1a018d1faf274ba7690e7934ce24bea89c682d4edd1060eab9807410c5",
+    "side-by-side.png": "bd3ceab18f397f4256691e74bf987b3b2d861c23710dd7ba40c49d311f1698ba"
+  }
+}

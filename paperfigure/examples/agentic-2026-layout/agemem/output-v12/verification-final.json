@@ -1,0 +1,70 @@
+{
+  "case": "agemem",
+  "revision": "output-v12",
+  "passed": true,
+  "svg": {
+    "labels": 33,
+    "edges": 10,
+    "centeredBlocks": 5,
+    "errors": [],
+    "warnings": [],
+    "sourceExceptions": 0
+  },
+  "native": {
+    "passed": true,
+    "errors": [],
+    "counts": {
+      "nativeTextBoxes": 27,
+      "nativeSVGLabelsCovered": 33,
+      "centeredTextBlocks": 5,
+      "nativeSemanticConnectorSegments": 12,
+      "nativeLineArt": 0,
+      "nativeShapes": 126,
+      "auxiliaryPorts": 20,
+      "groups": 14,
+      "pictures": 0,
+      "media": 0,
+      "contentObjects": 165
+    },
+    "editability": {
+      "nativeContent": 165,
+      "totalContent": 165,
+      "ratio": 1,
+      "excluded": "Transparent auxiliary ports and semantic groups; native representation is not visual quality."
+    },
+    "endpointBinding": "Actual a:stCxn/a:endCxn IDs point to native port helpers inside owning module groups; full orthogonal rerouting is separate.",
+    "limits": [
+      "XML checks do not establish visual fidelity. Independently render the PPTX.",
+      "Moving a grouped module is supported; complex route segments may need reflow.",
+      "Interactive Microsoft PowerPoint behavior is not inferred from LibreOffice."
+    ]
+  },
+  "actualRender": {
+    "passed": true,
+    "textBlocks": 5,
+    "edges": 10
+  },
+  "editing": {
+    "topologyUnchanged": true,
+    "meaningUnchanged": true,
+    "measuredLayout": true,
+    "nativeAudit": true,
+    "actualRender": true,
+    "errors": []
+  },
+  "reproducibility": {
+    "svgByteIdentical": true,
+    "pptxByteIdentical": true
+  },
+  "sourceReferenceSHA256": "8a2ab882b9a3a73615d237e1cb0aa1ffffa181cced23ec9e9dc990bd552e0c68",
+  "sha256": {
+    "editable.svg": "272bae277c5f893626ff968a2a740d4347c293721338da8caf940bf663e8ae72",
+    "preview.png": "94775f0f7150b68127ce00e64f2d6945210fd46d045f83dc398030a3f5c0f74d",
+    "figure.pptx": "f02e46f646fd72e7d307d51d572572ab4cbc0b0fdad7cb7194bd0636ad714ff4",
+    "layout-scene.json": "4f7a5195b22f0d5b0a2a4fd95be896fdf4a1a0ab882d6af1ca449106b794244b",
+    "native-render/preview.png": "f37776644b164ab52e9bba87359c9e1a5fa2496a3d3a2b081cbb8cee75e8c7ed",
+    "native-render/render-qa.json": "1254907163e5a09576713fce840dfd0f7ad9cb84c7c416903d808cdbea479220",
+    "comparison-original-svg.png": "e626af6468d69c77b4fc8c81879889dbb7512e3a4847f9ddb80ec87b4d5ca509",
+    "comparison-svg-pptx.png": "256eabaab5443806b7588613fe2bd482f76341701ed4bfbbc2e57032cf2c6c52"
+  }
+}

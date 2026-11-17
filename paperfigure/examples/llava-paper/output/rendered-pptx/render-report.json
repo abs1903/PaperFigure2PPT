@@ -1,0 +1,90 @@
+{
+  "status": "rendered",
+  "renderer": "soffice",
+  "log": "convert /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/llava-paper/output/figure.pptx as a Impress document -> /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/llava-paper/output/rendered-pptx/figure.pdf using filter : impress_pdf_Export\nOverwriting: /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/llava-paper/output/rendered-pptx/figure.pdf",
+  "routeAlignmentPassed": true,
+  "routes": [
+    {
+      "edge": "e1",
+      "testedSamples": 9,
+      "matchedSamples": 9,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e2",
+      "testedSamples": 42,
+      "matchedSamples": 42,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e3",
+      "testedSamples": 78,
+      "matchedSamples": 78,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e4",
+      "testedSamples": 142,
+      "matchedSamples": 142,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e5",
+      "testedSamples": 10,
+      "matchedSamples": 10,
+      "coverage": 1,
+      "passed": true
+    }
+  ],
+  "pdfCheck": {
+    "rendered": true,
+    "routeAlignmentPassed": true,
+    "textComplete": true,
+    "missingLabels": [],
+    "routes": [
+      {
+        "edge": "e1",
+        "testedSamples": 9,
+        "matchedSamples": 9,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e2",
+        "testedSamples": 42,
+        "matchedSamples": 42,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e3",
+        "testedSamples": 78,
+        "matchedSamples": 78,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e4",
+        "testedSamples": 142,
+        "matchedSamples": 142,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e5",
+        "testedSamples": 10,
+        "matchedSamples": 10,
+        "coverage": 1,
+        "passed": true
+      }
+    ]
+  },
+  "normalizedPixelMAE": 0.010110598885335552,
+  "darkForegroundIoU": 0.7877721327865174,
+  "foregroundPixelRatio": 0.9857112100712739,
+  "limits": "Route ink alignment is an objective check with a 3px tolerance and 90% minimum per edge. PDF text extraction checks label presence including math glyphs, not visual typography. Pixel similarity is diagnostic, not an aesthetic score; independent visual review remains necessary."
+}

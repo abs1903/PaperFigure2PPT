@@ -1,0 +1,26 @@
+{
+  "operation": "generate",
+  "tool": "built-in image_gen",
+  "modelSnapshot": "not exposed by tool",
+  "compositionId": "sparse-full-columns",
+  "promptPath": "prompt-sparse-full-columns.txt",
+  "promptSHA256": "de8d6b06a5739f6231af650d3b7a21f37f795207e8d76de76f20ba89a7482c2c",
+  "inputImages": [],
+  "outputImage": {
+    "path": "candidate-a.png",
+    "sha256": "1924ee246390da207d959b61a0ad3d5c53f310747ffbbfb7fa8054edb493f376",
+    "sizePx": [
+      1684,
+      934
+    ]
+  },
+  "semanticSnapshotDigest": "78d2903cdc6e471d931efe6614098d735e18f651265e85c0ef144c92bf351116",
+  "narrativeParsedObjectDigest": "7ec165808468308cea93040ec0e2166f23e0a2a28a65401cf31540b5a695b1ad",
+  "specFileSHA256": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+  "briefFileSHA256": "1950694cfee8776bbbdc1e197a5eaa566fb3e5b5496adbcf274343c3c62777a7",
+  "narrativeFileSHA256": "eeb7d7e8d2e0c66065fbba1d93d317b815a57109dabfd9f672c039c67bb5dcc1",
+  "semanticFreezeSHA256": "9a83ccd754cc98c472f9e110c3a797bd92d0f382aaab4646329f293fd151effa",
+  "figureHidden": false,
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

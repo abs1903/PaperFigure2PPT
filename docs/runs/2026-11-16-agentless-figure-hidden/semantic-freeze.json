@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "semanticSHA256": "191303ce8082a02367f2d20128bbdb36118c0b032250981418cb7e82b652f78f",
+  "sourceManifestSHA256": "09de0c43d7d21ff1da7854fc3fdcbb1a5b38b237c8bdae30a82ee501f2afee14",
+  "sourceFigureAccess": false,
+  "authorFigureCompared": false,
+  "scope": "Freeze authored source interpretation before any new figure generation, not a claim about model pretraining."
+}

@@ -1,0 +1,146 @@
+{
+  "status": "rendered",
+  "renderer": "soffice",
+  "log": "convert /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/blip2-opt-code/output-final/figure.pptx as a Impress document -> /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/blip2-opt-code/output-final/rendered-pptx/figure.pdf using filter : impress_pdf_Export",
+  "routeAlignmentPassed": true,
+  "routes": [
+    {
+      "edge": "e1",
+      "testedSamples": 7,
+      "matchedSamples": 7,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e2",
+      "testedSamples": 7,
+      "matchedSamples": 7,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e3",
+      "testedSamples": 7,
+      "matchedSamples": 7,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e4",
+      "testedSamples": 14,
+      "matchedSamples": 14,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e5",
+      "testedSamples": 8,
+      "matchedSamples": 8,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e6",
+      "testedSamples": 19,
+      "matchedSamples": 19,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e7",
+      "testedSamples": 31,
+      "matchedSamples": 31,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e8",
+      "testedSamples": 122,
+      "matchedSamples": 122,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e9",
+      "testedSamples": 11,
+      "matchedSamples": 11,
+      "coverage": 1,
+      "passed": true
+    }
+  ],
+  "pdfCheck": {
+    "rendered": true,
+    "routeAlignmentPassed": true,
+    "textComplete": true,
+    "missingLabels": [],
+    "routes": [
+      {
+        "edge": "e1",
+        "testedSamples": 7,
+        "matchedSamples": 7,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e2",
+        "testedSamples": 7,
+        "matchedSamples": 7,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e3",
+        "testedSamples": 7,
+        "matchedSamples": 7,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e4",
+        "testedSamples": 14,
+        "matchedSamples": 14,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e5",
+        "testedSamples": 8,
+        "matchedSamples": 8,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e6",
+        "testedSamples": 19,
+        "matchedSamples": 19,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e7",
+        "testedSamples": 31,
+        "matchedSamples": 31,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e8",
+        "testedSamples": 122,
+        "matchedSamples": 122,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "e9",
+        "testedSamples": 11,
+        "matchedSamples": 11,
+        "coverage": 1,
+        "passed": true
+      }
+    ]
+  },
+  "normalizedPixelMAE": 0.010002794941506014,
+  "darkForegroundIoU": 0.7661083087465499,
+  "foregroundPixelRatio": 0.9976424234595014,
+  "limits": "Route ink alignment is an objective check with a 3px tolerance and 90% minimum per edge. PDF text extraction checks label presence including math glyphs, not visual typography. Pixel similarity is diagnostic, not an aesthetic score; independent visual review remains necessary."
+}

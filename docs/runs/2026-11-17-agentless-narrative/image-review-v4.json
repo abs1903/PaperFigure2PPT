@@ -1,0 +1,16 @@
+{
+  "version":"4.0",
+  "reviewType":"independent-raster-image-rereview",
+  "reviewer":{"kind":"independent-agent","name":"/root/agentless_narrative_review","isolation":{"method":"fork_turns:none","notOpened":["author diagram","other historical generated candidates","prior review reports"]}},
+  "verdict":"accept",
+  "acceptanceScope":"exact inspected raster candidate only; may be frozen as a possible native-reconstruction target",
+  "firstReading":"Issue report and code repository narrow through tree, files, related code, and edit locations; repair samples Search/Replace patches, filters/ranks, and produces a selected patch.",
+  "inspectedImages":[
+    {"path":"candidate-v4.png","sha256":"81bea89ab5a2cfd8437c5ed5e194f66a81fa27852b98f372d9755e8e63ad6bcf","sizePx":[1685,934],"view":"native"},
+    {"path":"candidate-v4-paper-width.png","sha256":"009194c9df89915577dc0d758c0790ba82bf771e5244ada45d130e21c8db3563","sizePx":[672,372],"view":"7in-at-96dpi diagnostic"}
+  ],
+  "checks":{"scientificFidelity":"pass","informationSelectionNarrative":"pass","modelDeterministicRoles":"pass","sourceContextTransformations":"pass","readingOrder":"pass","finalWidthTypography":"pass","flatSemanticPalette":"pass","phaseClarity":"pass","searchReplaceFormat":"pass","nativeFeasibilityVisualInference":"pass","authorFigureComparison":"unverified","nativeOfficeEditabilityDelivery":"unverified"},
+  "resolvedPriorFindings":["V1 premature context diff","V1 invented repair text and issue-rail ambiguity","V2/V3 flat-fill and shadow/gradient violations"],
+  "notes":["Phase-band removal is a documented appearance deviation; phase chips, spatial grouping, numbering, and color roles remain sufficient.","This acceptance does not compare to the author figure or establish native/Office parity."],
+  "artifacts":{"prompt-edit-v4.txt":"9b2be04b0755f2433e92d2c1af8dc80af03b3fbf04fcb38d8ea403ee21f32270","generation-record-v4.json":"63cbc84cac927f150521e44c1637d3249631a7c41a4979147c80122a16fb4944","spec.json":"cdef0cf5d66b9709bc6e22e9f7564c5995041fff27ec8491d0e68e438344fa2e","narrative-plan.json":"1c878fe7157ed7473c968853e0edd1196e7f339817d369d403baf33441477378","design-brief.json":"985839e929f82bb333d48a2845fefdc07f9af77e9f47326badf4ec45d6a5bca5"}
+}

@@ -1,0 +1,56 @@
+Use case: scientific-educational. Asset: paper method illustration. Art-direction metadata below is not extra canvas text.
+Reader takeaway: High-ratio random masking lets a large encoder process only visible patches; learned mask tokens enter afterward, and a lightweight decoder learns pixel reconstruction with masked-only supervision.
+Scientific scope: CVPR2022 paper pre-training architecture with 75% masking example; pinned official implementation corroborates restoration and masked-only MSE. A 4x4 teaching grid depicts 16 image-patch tokens, four visible and twelve removed; class token is not counted. No training, inference evaluation or performance measurement.
+Contribution hierarchy; emphasize the supported design choices without claiming every primitive is new:
+Focal design: Encode only the visible patch subset; reconstruct the full image with a lightweight decoder. Status: Coupled architectural design, not a new transformer primitive. Visible evidence: Four visible patch tokens enter a visibly substantial encoder; twelve gray learned mask tokens join the encoded visible tokens only afterward, making a full 16-slot decoder input. Decoder is visually smaller than encoder.. Prominence: Primary visual distinction: sparse encoder versus full-sequence lightweight decoder. Visual owners: Visible-only encoder, Restore order, Lightweight decoder.
+Focal design: High-ratio random masking creates a nontrivial reconstruction task. Status: Key design finding coupled with the architecture; 75% is the illustrative/default setting. Visible evidence: A 4x4 source-patch teaching grid becomes exactly four visible image-patch tokens. Clearly label Mask 75% and keep the empty/removed patches out of the encoder.. Prominence: Prominent paired claim with the asymmetric token load. Visual owners: Image patches, Visible-only encoder.
+Supporting operation: Learn pixel reconstruction using only masked positions in the MSE. Status: Supporting self-supervision objective, not a separately novel loss. Visible evidence: Compact original-pixel target and prediction comparison; the same binary mask selects the twelve removed positions for MSE. No reconstruction correctness tick.. Prominence: Small supervision inset, subordinate to the architecture. Visual owners: Masked-patch MSE.
+Outside figure scope; do not depict: Use the encoder without the reconstruction decoder for downstream recognition.
+Composition: White landscape approximately 2:1. A continuous left-to-right sparse bottleneck: source patch grid, exactly four visible tokens, large Encoder, exactly four encoded-visible tokens, a post-encoder mask-token merge and full restored 4x4 token grid, then small Lightweight decoder and a 4x4 pixel prediction. The twelve learned mask tokens enter from a short upper branch. Pixel target and masked-only loss occupy a compact lower inset. No two-column panels, numbered card pipeline, background bands or photo assets.
+Visible mechanism: The narrow visible-token lane through the expensive encoder expands ONLY afterward into the full decoder sequence, making the architectural distinction tangible. Small dashed metadata links carry restoration indices and the same binary mask; original pixel targets feed only supervision. All literal patch tokens and predicted-grid glyphs are schematic, not observed model outputs.
+Typography: Arial-like sans serif; local mechanism labels bold, body/branch annotations clear at seven-inch publication width. Keep exact short labels and token geometry legible. No giant overall header, tiny paragraphs, dense tensor notation or lettering-as-artwork.; publication width 7 inches.
+Visual representations; semantic coverage is validated separately:
+Image patches: A 4x4 grid of sixteen schematic colored image patches, built from flat vector-friendly tile geometry, not a real photo. This is the original unmasked source/target image. Use a simple blue/teal/sand landscape-like arrangement of flat squares, no painterly texture.
+Visible-only encoder: Mask 75% removes twelve of sixteen patches; gather exactly FOUR blue visible patch tokens into a substantial Encoder. No gray mask placeholders/tokens enter it. Exactly four encoded-visible patch glyphs leave it. Patch projection, positions and class-token bookkeeping are internal; token counts refer to IMAGE PATCH TOKENS ONLY. Show the changing token load, not a generic equal-card process.
+Restore order: Learned mask tokens are identical gray vector squares. They join the FOUR encoded blue visible patch tokens ONLY AFTER the Encoder. Restoration indices produce a full 4x4 decoder token grid containing exactly four blue visible latents and twelve gray mask tokens. Source positions are restored; this is not a second random mask and not pixel predictions.
+Lightweight decoder: Visibly smaller/narrower transformer module consuming the FULL restored sequence. Trainable during pre-training; no snowflake/frozen symbol. Decoder/pixel projection yields all patch predictions, not just four or only missing-position logits.
+Masked-patch MSE: Compact support inset. A 4x4 pixel prediction glyph covers ALL positions; compare against original pixel target from the same source image. The same binary mask selects the twelve removed patch positions for MSE. Use a small gold mask-selector key and dashed mask-metadata input. Internal prediction/target→MSE arrows must be legible. Predictions are schematic, not a guaranteed identical reconstruction. No performance/accuracy/cost badges.
+Directed relations; internal operations must remain visibly meaningful:
+Image patches -> Visible-only encoder: Original sixteen image patches enter 75% random removal; twelve are discarded and FOUR visible patch tokens remain.
+Within Visible-only encoder: Within the sparse lane only the four gathered visible patches enter Encoder; removed patches and learned mask tokens never do.
+Within Visible-only encoder: Encoder outputs four encoded visible patch representations (patch tokens only).
+Visible-only encoder -> Restore order: Only encoded-visible output feeds the post-encoder restoration/decoder-projection point.
+Within Restore order: Within restoration, twelve copies of the shared learned gray mask token join the four blue visible latents after encoding.
+Visible-only encoder -> Restore order: Thin dashed mask-metadata line carries original-position restoration indices to Restore order, not pixel values or mask tokens into Encoder.
+Restore order -> Lightweight decoder: The restored full 16-slot sequence (four blue + twelve gray) enters Lightweight decoder.
+Lightweight decoder -> Masked-patch MSE: Lightweight decoder predicts pixel values for ALL sixteen patch positions.
+Image patches -> Masked-patch MSE: Thin separate target-reference path from original image patches supplies Original target to the small supervision inset; never a target input to Encoder.
+Within Masked-patch MSE: Within the supervision inset, all-position Pixel predictions feed MSE, whose selector retains masked positions only.
+Within Masked-patch MSE: Within the supervision inset, Original target supplies pixel targets for the selected masked positions.
+Visible-only encoder -> Masked-patch MSE: Thin dashed gold metadata path carries the SAME binary mask to the Masked-patch MSE selector; visible-patch predictions are not scored.
+Exact visible text whitelist:
+"Image patches"
+"Mask 75%"
+"Visible patches"
+"Encoder"
+"Encoded visible patches"
+"Learned mask tokens"
+"Restore order"
+"Lightweight decoder"
+"Pixel predictions"
+"Original target"
+"Masked-patch MSE"
+"Masked positions only"
+"Restore indices"
+"Binary mask"
+Text budget: 70 words maximum; repeat labels only when needed to show shared inputs or source linkage.
+Semantic solid palette:
+#64748B: Original image/target pixels, deterministic masking/restoration and decoder support
+#2563EB: Visible patch embeddings and encoded visible patch tokens
+#A1A1AA: Learned missing-position mask tokens; introduced after encoder
+#0F766E: All-position pixel predictions; no correctness guarantee
+#D69E2E: Masked-position selector and its self-supervision objective
+White background and flat solid fills. No overall title, footer, shadows, glow or decorative icons. Keep the requested local mechanism/contribution captions. Colors supplement labels and geometry.
+Do not turn every semantic node into an equal card. Keep the primary mechanism prominent, supporting checks subordinate, and arrowheads/text unobstructed. Schematic examples are not measured executions.
+Forbidden scientific additions: Mask tokens or masked patches entering the encoder; A full sixteen-patch encoder token load in the 75% example; Twelve independently different learned mask vectors instead of shared token copies; Class token counted as one of sixteen image patches; Loss over visible patches or all patches instead of masked positions; Decoder output only visible tokens or a subset of pixel predictions; Frozen/snowflake encoder or decoder during pre-training; Target branch fed into encoder or decoder as observed content; New benchmark numbers, exact speedup promises, guaranteed reconstruction quality or training execution; A downstream inference decoder/recognition branch in this pre-training scope; Third-party photographic assets, decorative 3D, gradients, shadows or equal numbered cards.
+Generated pixels never authorize scientific changes. Return an imperfect candidate for review rather than inventing a mechanism.

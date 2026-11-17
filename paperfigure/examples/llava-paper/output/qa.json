@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [],
+  "warnings": [
+    {
+      "code": "font-coverage",
+      "objects": [
+        "art:fphi"
+      ],
+      "message": "Non-Latin glyph coverage is not verified by the metric checker"
+    }
+  ],
+  "metrics": {
+    "nodes": 6,
+    "edges": 5,
+    "texts": 19,
+    "groups": 0,
+    "minFinalTextPt": 7.132075471698114,
+    "nativeShapes": 79,
+    "nativeConnectors": 11,
+    "logicalEdges": 5,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 19,
+    "pictures": 1,
+    "editableRatio": 0.989010989010989
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

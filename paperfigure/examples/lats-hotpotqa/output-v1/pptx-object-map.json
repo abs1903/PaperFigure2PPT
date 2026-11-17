@@ -1,0 +1,1794 @@
+[
+  {
+    "id": 2,
+    "name": "shape-question",
+    "type": "shape",
+    "owner": "question",
+    "bbox": [
+      20,
+      180,
+      160,
+      80
+    ]
+  },
+  {
+    "id": 73,
+    "name": "label-block:question",
+    "type": "text-block",
+    "owner": "question",
+    "sourceTextIds": [
+      "label-question-0"
+    ],
+    "text": "Question",
+    "bbox": [
+      20,
+      180,
+      160,
+      80
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 85,
+    "name": "port-1-question",
+    "type": "port-helper",
+    "owner": "question",
+    "point": [
+      180,
+      220
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 119,
+    "name": "question",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "shape-tree",
+    "type": "shape",
+    "owner": "tree",
+    "bbox": [
+      220,
+      90,
+      360,
+      590
+    ]
+  },
+  {
+    "id": 41,
+    "name": "tree-branch-root-a",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      300,
+      255,
+      100,
+      90
+    ]
+  },
+  {
+    "id": 42,
+    "name": "tree-branch-root-b",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      400,
+      255,
+      0.01,
+      90
+    ]
+  },
+  {
+    "id": 43,
+    "name": "tree-branch-root-c",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      400,
+      255,
+      100,
+      90
+    ]
+  },
+  {
+    "id": 44,
+    "name": "tree-branch-a-d",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      260,
+      345,
+      40,
+      90
+    ]
+  },
+  {
+    "id": 45,
+    "name": "tree-branch-a-e",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      300,
+      345,
+      40,
+      90
+    ]
+  },
+  {
+    "id": 46,
+    "name": "tree-branch-c-f",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      470,
+      345,
+      30,
+      90
+    ]
+  },
+  {
+    "id": 47,
+    "name": "tree-branch-c-g",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      500,
+      345,
+      30,
+      90
+    ]
+  },
+  {
+    "id": 48,
+    "name": "tree-branch-e-h",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      300,
+      435,
+      40,
+      80
+    ]
+  },
+  {
+    "id": 49,
+    "name": "tree-branch-e-i",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      340,
+      435,
+      40,
+      80
+    ]
+  },
+  {
+    "id": 50,
+    "name": "tree-node-root",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      380,
+      235,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 51,
+    "name": "tree-node-a",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      280,
+      325,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 52,
+    "name": "tree-node-b",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      380,
+      325,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 53,
+    "name": "tree-node-c",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      480,
+      325,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 54,
+    "name": "tree-node-d",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      240,
+      415,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 55,
+    "name": "tree-node-e",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      320,
+      415,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 56,
+    "name": "tree-node-f",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      450,
+      415,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 57,
+    "name": "tree-node-g",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      510,
+      415,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 58,
+    "name": "tree-node-h",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      280,
+      495,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 59,
+    "name": "tree-node-i",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      360,
+      495,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 120,
+    "name": "trajectory-motif",
+    "type": "group",
+    "owner": "tree"
+  },
+  {
+    "id": 60,
+    "name": "tree-more-a",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      245,
+      355.16,
+      46.169999999999995,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 61,
+    "name": "tree-more-b",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      505,
+      455.16,
+      46.169999999999995,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 62,
+    "name": "tree-field-a",
+    "type": "text",
+    "owner": "tree",
+    "text": "Thought + action",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      299.66748046875,
+      555.16,
+      246.23999999999998,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 63,
+    "name": "tree-field-b",
+    "type": "text",
+    "owner": "tree",
+    "text": "Observation",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      327.495361328125,
+      593.16,
+      169.29,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 64,
+    "name": "tree-field-c",
+    "type": "text",
+    "owner": "tree",
+    "text": "Values + visits",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      314.80517578125,
+      631.16,
+      230.85,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 74,
+    "name": "label-block:tree",
+    "type": "text-block",
+    "owner": "tree",
+    "sourceTextIds": [
+      "label-tree-0",
+      "label-tree-1"
+    ],
+    "text": "Trajectory tree\nThis question",
+    "bbox": [
+      238,
+      105,
+      324,
+      95
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 86,
+    "name": "port-2-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      220,
+      220
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 87,
+    "name": "port-3-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      580,
+      170
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 94,
+    "name": "port-10-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      560,
+      90
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 95,
+    "name": "port-11-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      580,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 106,
+    "name": "port-22-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      400,
+      680
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 115,
+    "name": "port-31-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      238,
+      680
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 121,
+    "name": "tree",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 7,
+    "name": "shape-select",
+    "type": "shape",
+    "owner": "select",
+    "bbox": [
+      630,
+      120,
+      160,
+      100
+    ]
+  },
+  {
+    "id": 75,
+    "name": "label-block:select",
+    "type": "text-block",
+    "owner": "select",
+    "sourceTextIds": [
+      "label-select-0",
+      "label-select-1"
+    ],
+    "text": "Select\n(UCT)",
+    "bbox": [
+      630,
+      120,
+      160,
+      100
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 88,
+    "name": "port-4-select",
+    "type": "port-helper",
+    "owner": "select",
+    "point": [
+      630,
+      170
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 89,
+    "name": "port-5-select",
+    "type": "port-helper",
+    "owner": "select",
+    "point": [
+      790,
+      170
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 122,
+    "name": "select",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 10,
+    "name": "shape-policy",
+    "type": "shape",
+    "owner": "policy",
+    "bbox": [
+      860,
+      120,
+      225,
+      100
+    ]
+  },
+  {
+    "id": 76,
+    "name": "label-block:policy",
+    "type": "text-block",
+    "owner": "policy",
+    "sourceTextIds": [
+      "label-policy-0",
+      "label-policy-1"
+    ],
+    "text": "Expand\nLM candidates",
+    "bbox": [
+      860,
+      120,
+      225,
+      100
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 90,
+    "name": "port-6-policy",
+    "type": "port-helper",
+    "owner": "policy",
+    "point": [
+      860,
+      170
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 91,
+    "name": "port-7-policy",
+    "type": "port-helper",
+    "owner": "policy",
+    "point": [
+      1085,
+      170
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 114,
+    "name": "port-30-policy",
+    "type": "port-helper",
+    "owner": "policy",
+    "point": [
+      930,
+      220
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 123,
+    "name": "policy",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 13,
+    "name": "shape-tools",
+    "type": "shape",
+    "owner": "tools",
+    "bbox": [
+      1160,
+      110,
+      400,
+      160
+    ]
+  },
+  {
+    "id": 77,
+    "name": "label-block:tools",
+    "type": "text-block",
+    "owner": "tools",
+    "sourceTextIds": [
+      "label-tools-0",
+      "label-tools-1",
+      "label-tools-2",
+      "label-tools-3"
+    ],
+    "text": "Shared WikiEnv\nSearch / Lookup / Finish\nObservation / done\nExact-match reward",
+    "bbox": [
+      1160,
+      110,
+      400,
+      160
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 92,
+    "name": "port-8-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1160,
+      170
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 93,
+    "name": "port-9-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1360,
+      110
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 100,
+    "name": "port-16-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1540,
+      270
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 101,
+    "name": "port-17-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1560,
+      230
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 107,
+    "name": "port-23-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1500,
+      270
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 124,
+    "name": "tools",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 18,
+    "name": "shape-value",
+    "type": "shape",
+    "owner": "value",
+    "bbox": [
+      630,
+      620,
+      170,
+      90
+    ]
+  },
+  {
+    "id": 78,
+    "name": "label-block:value",
+    "type": "text-block",
+    "owner": "value",
+    "sourceTextIds": [
+      "label-value-0"
+    ],
+    "text": "LM value",
+    "bbox": [
+      630,
+      620,
+      170,
+      90
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 96,
+    "name": "port-12-value",
+    "type": "port-helper",
+    "owner": "value",
+    "point": [
+      630,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 97,
+    "name": "port-13-value",
+    "type": "port-helper",
+    "owner": "value",
+    "point": [
+      800,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 125,
+    "name": "value",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 20,
+    "name": "shape-rollout",
+    "type": "shape",
+    "owner": "rollout",
+    "bbox": [
+      860,
+      560,
+      660,
+      210
+    ]
+  },
+  {
+    "id": 65,
+    "name": "rollout-reuse",
+    "type": "text",
+    "owner": "rollout",
+    "text": "Reuse policy, shared tools and LM value",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      947.365966796875,
+      671.16,
+      600.2099999999999,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 66,
+    "name": "rollout-greedy",
+    "type": "text",
+    "owner": "rollout",
+    "text": "Keep the highest-valued continuation",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      967.7841796875,
+      710.16,
+      554.04,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 79,
+    "name": "label-block:rollout",
+    "type": "text-block",
+    "owner": "rollout",
+    "sourceTextIds": [
+      "label-rollout-0",
+      "label-rollout-1"
+    ],
+    "text": "Value-guided rollout\nAbsolute depth < 4",
+    "bbox": [
+      878,
+      570,
+      624,
+      110
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 98,
+    "name": "port-14-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      860,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 99,
+    "name": "port-15-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      1454,
+      560
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 102,
+    "name": "port-18-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      1490,
+      560
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 103,
+    "name": "port-19-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      1520,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 117,
+    "name": "port-33-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      1450,
+      770
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 126,
+    "name": "rollout",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 23,
+    "name": "shape-backup",
+    "type": "shape",
+    "owner": "backup",
+    "bbox": [
+      1570,
+      600,
+      220,
+      145
+    ]
+  },
+  {
+    "id": 80,
+    "name": "label-block:backup",
+    "type": "text-block",
+    "owner": "backup",
+    "sourceTextIds": [
+      "label-backup-0",
+      "label-backup-1",
+      "label-backup-2"
+    ],
+    "text": "Backup\nIf no success\nValues / visits",
+    "bbox": [
+      1570,
+      600,
+      220,
+      145
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 104,
+    "name": "port-20-backup",
+    "type": "port-helper",
+    "owner": "backup",
+    "point": [
+      1570,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 105,
+    "name": "port-21-backup",
+    "type": "port-helper",
+    "owner": "backup",
+    "point": [
+      1700,
+      745
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 127,
+    "name": "backup",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 27,
+    "name": "shape-failed",
+    "type": "shape",
+    "owner": "failed",
+    "bbox": [
+      1420,
+      350,
+      220,
+      130
+    ]
+  },
+  {
+    "id": 81,
+    "name": "label-block:failed",
+    "type": "text-block",
+    "owner": "failed",
+    "sourceTextIds": [
+      "label-failed-0",
+      "label-failed-1"
+    ],
+    "text": "Failed traces\nWrong terminal",
+    "bbox": [
+      1420,
+      350,
+      220,
+      130
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 108,
+    "name": "port-24-failed",
+    "type": "port-helper",
+    "owner": "failed",
+    "point": [
+      1500,
+      350
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 109,
+    "name": "port-25-failed",
+    "type": "port-helper",
+    "owner": "failed",
+    "point": [
+      1420,
+      415
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 128,
+    "name": "failed",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 30,
+    "name": "shape-reflect",
+    "type": "shape",
+    "owner": "reflect",
+    "bbox": [
+      1090,
+      350,
+      270,
+      130
+    ]
+  },
+  {
+    "id": 82,
+    "name": "label-block:reflect",
+    "type": "text-block",
+    "owner": "reflect",
+    "sourceTextIds": [
+      "label-reflect-0",
+      "label-reflect-1",
+      "label-reflect-2"
+    ],
+    "text": "Self-reflection\nNew distinct failure\n1-3 total",
+    "bbox": [
+      1090,
+      350,
+      270,
+      130
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 110,
+    "name": "port-26-reflect",
+    "type": "port-helper",
+    "owner": "reflect",
+    "point": [
+      1360,
+      415
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 111,
+    "name": "port-27-reflect",
+    "type": "port-helper",
+    "owner": "reflect",
+    "point": [
+      1090,
+      415
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 129,
+    "name": "reflect",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 34,
+    "name": "shape-context",
+    "type": "shape",
+    "owner": "context",
+    "bbox": [
+      800,
+      350,
+      230,
+      130
+    ]
+  },
+  {
+    "id": 83,
+    "name": "label-block:context",
+    "type": "text-block",
+    "owner": "context",
+    "sourceTextIds": [
+      "label-context-0",
+      "label-context-1",
+      "label-context-2"
+    ],
+    "text": "Reflection\ncontext\nThis question",
+    "bbox": [
+      800,
+      350,
+      230,
+      130
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 112,
+    "name": "port-28-context",
+    "type": "port-helper",
+    "owner": "context",
+    "point": [
+      1030,
+      415
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 113,
+    "name": "port-29-context",
+    "type": "port-helper",
+    "owner": "context",
+    "point": [
+      930,
+      350
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 130,
+    "name": "context",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 38,
+    "name": "shape-result",
+    "type": "shape",
+    "owner": "result",
+    "bbox": [
+      1390,
+      850,
+      370,
+      100
+    ]
+  },
+  {
+    "id": 84,
+    "name": "label-block:result",
+    "type": "text-block",
+    "owner": "result",
+    "sourceTextIds": [
+      "label-result-0",
+      "label-result-1"
+    ],
+    "text": "Return state\nSuccess / budget fallback",
+    "bbox": [
+      1390,
+      850,
+      370,
+      100
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 116,
+    "name": "port-32-result",
+    "type": "port-helper",
+    "owner": "result",
+    "point": [
+      1650,
+      850
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 118,
+    "name": "port-34-result",
+    "type": "port-helper",
+    "owner": "result",
+    "point": [
+      1760,
+      900
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 131,
+    "name": "result",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 67,
+    "name": "store-label",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Expanded children",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      1090,
+      28.08,
+      251.93999999999997,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 68,
+    "name": "call-label",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Call",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      1600,
+      266.08,
+      59.279999999999994,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 69,
+    "name": "observe-label",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Observation",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      1540,
+      561.08,
+      163.01999999999998,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 70,
+    "name": "stats-label",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Update values + visits",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      650,
+      766.08,
+      326.03999999999996,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 71,
+    "name": "fallback-label",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Budget fallback",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      950,
+      841.08,
+      222.29999999999998,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 72,
+    "name": "success-label",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Success",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      1570,
+      754.08,
+      103.74,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 132,
+    "name": "annotation-layer",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 133,
+    "name": "initialize",
+    "type": "connector",
+    "owner": null,
+    "edge": "initialize",
+    "fromBinding": "port-1-question",
+    "toBinding": "port-2-tree",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 134,
+    "name": "select-path",
+    "type": "connector",
+    "owner": null,
+    "edge": "select-path",
+    "fromBinding": "port-3-tree",
+    "toBinding": "port-4-select",
+    "stroke": "#BF8A20",
+    "width": 3.3,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 135,
+    "name": "expand-path",
+    "type": "connector",
+    "owner": null,
+    "edge": "expand-path",
+    "fromBinding": "port-5-select",
+    "toBinding": "port-6-policy",
+    "stroke": "#BF8A20",
+    "width": 3.3,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 136,
+    "name": "execute",
+    "type": "connector",
+    "owner": null,
+    "edge": "execute",
+    "fromBinding": "port-7-policy",
+    "toBinding": "port-8-tools",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 137,
+    "name": "store-children:segment:0",
+    "type": "connector",
+    "owner": "group-store-children",
+    "edge": "store-children",
+    "fromBinding": "port-9-tools",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 138,
+    "name": "store-children:segment:1",
+    "type": "connector",
+    "owner": "group-store-children",
+    "edge": "store-children",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 139,
+    "name": "store-children:segment:2",
+    "type": "connector",
+    "owner": "group-store-children",
+    "edge": "store-children",
+    "fromBinding": null,
+    "toBinding": "port-10-tree",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 140,
+    "name": "group-store-children",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 141,
+    "name": "candidate-values",
+    "type": "connector",
+    "owner": null,
+    "edge": "candidate-values",
+    "fromBinding": "port-11-tree",
+    "toBinding": "port-12-value",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 142,
+    "name": "best-child",
+    "type": "connector",
+    "owner": null,
+    "edge": "best-child",
+    "fromBinding": "port-13-value",
+    "toBinding": "port-14-rollout",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 143,
+    "name": "rollout-step:segment:0",
+    "type": "connector",
+    "owner": "group-rollout-step",
+    "edge": "rollout-step",
+    "fromBinding": "port-15-rollout",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 144,
+    "name": "rollout-step:segment:1",
+    "type": "connector",
+    "owner": "group-rollout-step",
+    "edge": "rollout-step",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 145,
+    "name": "rollout-step:segment:2",
+    "type": "connector",
+    "owner": "group-rollout-step",
+    "edge": "rollout-step",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 146,
+    "name": "rollout-step:segment:3",
+    "type": "connector",
+    "owner": "group-rollout-step",
+    "edge": "rollout-step",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 147,
+    "name": "rollout-step:segment:4",
+    "type": "connector",
+    "owner": "group-rollout-step",
+    "edge": "rollout-step",
+    "fromBinding": null,
+    "toBinding": "port-16-tools",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 148,
+    "name": "group-rollout-step",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 149,
+    "name": "rollout-feedback:segment:0",
+    "type": "connector",
+    "owner": "group-rollout-feedback",
+    "edge": "rollout-feedback",
+    "fromBinding": "port-17-tools",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 150,
+    "name": "rollout-feedback:segment:1",
+    "type": "connector",
+    "owner": "group-rollout-feedback",
+    "edge": "rollout-feedback",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 151,
+    "name": "rollout-feedback:segment:2",
+    "type": "connector",
+    "owner": "group-rollout-feedback",
+    "edge": "rollout-feedback",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 152,
+    "name": "rollout-feedback:segment:3",
+    "type": "connector",
+    "owner": "group-rollout-feedback",
+    "edge": "rollout-feedback",
+    "fromBinding": null,
+    "toBinding": "port-18-rollout",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 153,
+    "name": "group-rollout-feedback",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 154,
+    "name": "no-success",
+    "type": "connector",
+    "owner": null,
+    "edge": "no-success",
+    "fromBinding": "port-19-rollout",
+    "toBinding": "port-20-backup",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 155,
+    "name": "update-statistics:segment:0",
+    "type": "connector",
+    "owner": "group-update-statistics",
+    "edge": "update-statistics",
+    "fromBinding": "port-21-backup",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 156,
+    "name": "update-statistics:segment:1",
+    "type": "connector",
+    "owner": "group-update-statistics",
+    "edge": "update-statistics",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 157,
+    "name": "update-statistics:segment:2",
+    "type": "connector",
+    "owner": "group-update-statistics",
+    "edge": "update-statistics",
+    "fromBinding": null,
+    "toBinding": "port-22-tree",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 158,
+    "name": "group-update-statistics",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 159,
+    "name": "terminal-failure",
+    "type": "connector",
+    "owner": null,
+    "edge": "terminal-failure",
+    "fromBinding": "port-23-tools",
+    "toBinding": "port-24-failed",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 160,
+    "name": "reflect-failures",
+    "type": "connector",
+    "owner": null,
+    "edge": "reflect-failures",
+    "fromBinding": "port-25-failed",
+    "toBinding": "port-26-reflect",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 161,
+    "name": "store-reflection",
+    "type": "connector",
+    "owner": null,
+    "edge": "store-reflection",
+    "fromBinding": "port-27-reflect",
+    "toBinding": "port-28-context",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 162,
+    "name": "policy-feedback",
+    "type": "connector",
+    "owner": null,
+    "edge": "policy-feedback",
+    "fromBinding": "port-29-context",
+    "toBinding": "port-30-policy",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 163,
+    "name": "return-tree:segment:0",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": "port-31-tree",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 164,
+    "name": "return-tree:segment:1",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 165,
+    "name": "return-tree:segment:2",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": null,
+    "toBinding": "port-32-result",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 166,
+    "name": "group-return-tree",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 167,
+    "name": "return-rollout:segment:0",
+    "type": "connector",
+    "owner": "group-return-rollout",
+    "edge": "return-rollout",
+    "fromBinding": "port-33-rollout",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 168,
+    "name": "return-rollout:segment:1",
+    "type": "connector",
+    "owner": "group-return-rollout",
+    "edge": "return-rollout",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 169,
+    "name": "return-rollout:segment:2",
+    "type": "connector",
+    "owner": "group-return-rollout",
+    "edge": "return-rollout",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 170,
+    "name": "return-rollout:segment:3",
+    "type": "connector",
+    "owner": "group-return-rollout",
+    "edge": "return-rollout",
+    "fromBinding": null,
+    "toBinding": "port-34-result",
+    "stroke": "#243746",
+    "width": 2.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 171,
+    "name": "group-return-rollout",
+    "type": "group",
+    "owner": null
+  }
+]

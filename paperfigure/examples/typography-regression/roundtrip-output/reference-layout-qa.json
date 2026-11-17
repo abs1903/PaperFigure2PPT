@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "errors": [],
+  "regions": [
+    {
+      "id": "sample-0",
+      "reference": [
+        20,
+        20,
+        560,
+        115
+      ],
+      "expected": [
+        20,
+        20,
+        560,
+        115
+      ],
+      "actual": [
+        20,
+        20,
+        560,
+        115
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "sample-1",
+      "reference": [
+        20,
+        160,
+        560,
+        115
+      ],
+      "expected": [
+        20,
+        160,
+        560,
+        115
+      ],
+      "actual": [
+        20,
+        160,
+        560,
+        115
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "sample-2",
+      "reference": [
+        20,
+        300,
+        560,
+        115
+      ],
+      "expected": [
+        20,
+        300,
+        560,
+        115
+      ],
+      "actual": [
+        20,
+        300,
+        560,
+        115
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "sample-3",
+      "reference": [
+        20,
+        440,
+        560,
+        115
+      ],
+      "expected": [
+        20,
+        440,
+        560,
+        115
+      ],
+      "actual": [
+        20,
+        440,
+        560,
+        115
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    }
+  ],
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/typography-regression/output-v1/preview.png",
+    "sha256": "467da274fff36e2ee004ffe391f80416ec64d4822b6419f3ac6783074913d05e",
+    "width": 600,
+    "height": 580
+  },
+  "contractSHA256": "63c9f3446ba1b2514a087ac1a3d41c99be348dd89f8375faaf1201ed90741db0",
+  "svgSHA256": "b13344a7da83b6f077c237d45ed539c14154ec90cf0cb481caba31b36f92b805",
+  "sceneSHA256": "b65367f0b89c7dd7a43840d498f9627e8a5aea4dcc90f040f8d9043c7b9fb237",
+  "scope": "Actual SVG anchor geometry versus frozen PNG regions; colors, text, arrow routes and aesthetics still require region comparisons and isolated fidelity review."
+}

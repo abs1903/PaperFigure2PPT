@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "checked": [
+    {
+      "record": "image-review-v1.json",
+      "path": "candidate-v1.png",
+      "matched": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "path": "spec.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "path": "design-brief.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "path": "prompt-v1.txt",
+      "matched": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "path": "source-audit.md",
+      "matched": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "path": "source-audit-v2.md",
+      "matched": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "path": "generation-record-v1.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "candidate-v1.png",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "candidate-v2.png",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "spec.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "design-brief.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "prompt-v2.txt",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "generation-record-v2.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "source-audit.md",
+      "matched": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "path": "source-audit-v2.md",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "candidate-v2.png",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "candidate-v3.png",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "spec.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "design-brief.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "prompt-v3.txt",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "generation-record-v3.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "source-audit.md",
+      "matched": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "path": "source-audit-v2.md",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "candidate-v3.png",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "candidate-v4.png",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "spec.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "design-brief-v4.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "prompt-v4.txt",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "generation-record-v4.json",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "source-audit.md",
+      "matched": true
+    },
+    {
+      "record": "image-review-v4.json",
+      "path": "source-audit-v2.md",
+      "matched": true
+    },
+    {
+      "record": "selected-reference.json",
+      "path": "selected-reference.png",
+      "matched": true
+    }
+  ]
+}

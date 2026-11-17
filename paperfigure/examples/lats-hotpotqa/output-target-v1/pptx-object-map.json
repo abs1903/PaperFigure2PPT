@@ -1,0 +1,1898 @@
+[
+  {
+    "id": 2,
+    "name": "shape-question",
+    "type": "shape",
+    "owner": "question",
+    "bbox": [
+      4,
+      174,
+      152,
+      70
+    ]
+  },
+  {
+    "id": 84,
+    "name": "label-block:question",
+    "type": "text-block",
+    "owner": "question",
+    "sourceTextIds": [
+      "label-question-0"
+    ],
+    "text": "Question",
+    "bbox": [
+      4,
+      174,
+      152,
+      70
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 96,
+    "name": "port-1-question",
+    "type": "port-helper",
+    "owner": "question",
+    "point": [
+      156,
+      209
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 126,
+    "name": "question",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "shape-tree",
+    "type": "shape",
+    "owner": "tree",
+    "bbox": [
+      186,
+      101,
+      338,
+      554
+    ]
+  },
+  {
+    "id": 38,
+    "name": "tree-fields-a",
+    "type": "shape",
+    "owner": "tree",
+    "bbox": [
+      210,
+      202,
+      291,
+      58
+    ]
+  },
+  {
+    "id": 39,
+    "name": "tree-fields-b",
+    "type": "shape",
+    "owner": "tree",
+    "bbox": [
+      210,
+      268,
+      291,
+      35
+    ]
+  },
+  {
+    "id": 40,
+    "name": "tree-thought",
+    "type": "text",
+    "owner": "tree",
+    "text": "Thought / action",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      266.42822265625,
+      203,
+      227.99999999999997,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 41,
+    "name": "tree-observation",
+    "type": "text",
+    "owner": "tree",
+    "text": "Observation",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      288.366943359375,
+      230,
+      156.75,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 42,
+    "name": "tree-stats",
+    "type": "text",
+    "owner": "tree",
+    "text": "Values + visits",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      276.61474609375,
+      271,
+      213.74999999999997,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 43,
+    "name": "tree-branch-root-a",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      277,
+      335,
+      78,
+      88
+    ]
+  },
+  {
+    "id": 44,
+    "name": "tree-branch-root-b",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      355,
+      335,
+      0.01,
+      88
+    ]
+  },
+  {
+    "id": 45,
+    "name": "tree-branch-root-c",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      355,
+      335,
+      77,
+      88
+    ]
+  },
+  {
+    "id": 46,
+    "name": "tree-branch-a-d",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      247,
+      423,
+      30,
+      91
+    ]
+  },
+  {
+    "id": 47,
+    "name": "tree-branch-a-e",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      277,
+      423,
+      46,
+      91
+    ]
+  },
+  {
+    "id": 48,
+    "name": "tree-branch-c-f",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      404,
+      423,
+      28,
+      91
+    ]
+  },
+  {
+    "id": 49,
+    "name": "tree-branch-c-g",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      432,
+      423,
+      28,
+      91
+    ]
+  },
+  {
+    "id": 50,
+    "name": "tree-branch-e-h",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      282,
+      514,
+      41,
+      85
+    ]
+  },
+  {
+    "id": 51,
+    "name": "tree-branch-e-i",
+    "type": "line-decoration",
+    "owner": "trajectory-motif",
+    "bbox": [
+      323,
+      514,
+      37,
+      85
+    ]
+  },
+  {
+    "id": 52,
+    "name": "tree-node-root",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      335,
+      315,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 53,
+    "name": "tree-node-a",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      257,
+      403,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 54,
+    "name": "tree-node-b",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      335,
+      403,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 55,
+    "name": "tree-node-c",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      412,
+      403,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 56,
+    "name": "tree-node-d",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      227,
+      494,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 57,
+    "name": "tree-node-e",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      303,
+      494,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 58,
+    "name": "tree-node-f",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      384,
+      494,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 59,
+    "name": "tree-node-g",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      440,
+      494,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 60,
+    "name": "tree-node-h",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      262,
+      579,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 61,
+    "name": "tree-node-i",
+    "type": "shape",
+    "owner": "trajectory-motif",
+    "bbox": [
+      340,
+      579,
+      40,
+      40
+    ]
+  },
+  {
+    "id": 127,
+    "name": "trajectory-motif",
+    "type": "group",
+    "owner": "tree"
+  },
+  {
+    "id": 62,
+    "name": "more-a",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      210,
+      437,
+      42.74999999999999,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 63,
+    "name": "more-b",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      470,
+      437,
+      42.74999999999999,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 64,
+    "name": "more-c",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      210,
+      582,
+      42.74999999999999,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 65,
+    "name": "more-d",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      405,
+      582,
+      42.74999999999999,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 85,
+    "name": "label-block:tree",
+    "type": "text-block",
+    "owner": "tree",
+    "sourceTextIds": [
+      "label-tree-0",
+      "label-tree-1"
+    ],
+    "text": "Trajectory tree\nThis question",
+    "bbox": [
+      204,
+      110,
+      302,
+      82
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 97,
+    "name": "port-2-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      186,
+      209
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 98,
+    "name": "port-3-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      524,
+      181
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 105,
+    "name": "port-10-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      500,
+      101
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 106,
+    "name": "port-11-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      524,
+      625
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 113,
+    "name": "port-18-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      363,
+      101
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 122,
+    "name": "port-27-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      524,
+      600
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 128,
+    "name": "tree",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 7,
+    "name": "shape-select",
+    "type": "shape",
+    "owner": "select",
+    "bbox": [
+      570,
+      137,
+      147,
+      85
+    ]
+  },
+  {
+    "id": 86,
+    "name": "label-block:select",
+    "type": "text-block",
+    "owner": "select",
+    "sourceTextIds": [
+      "label-select-0",
+      "label-select-1"
+    ],
+    "text": "Select\n(UCT)",
+    "bbox": [
+      570,
+      137,
+      147,
+      85
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 99,
+    "name": "port-4-select",
+    "type": "port-helper",
+    "owner": "select",
+    "point": [
+      570,
+      181
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 100,
+    "name": "port-5-select",
+    "type": "port-helper",
+    "owner": "select",
+    "point": [
+      717,
+      181
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 129,
+    "name": "select",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 10,
+    "name": "shape-policy",
+    "type": "shape",
+    "owner": "policy",
+    "bbox": [
+      782,
+      135,
+      205,
+      87
+    ]
+  },
+  {
+    "id": 87,
+    "name": "label-block:policy",
+    "type": "text-block",
+    "owner": "policy",
+    "sourceTextIds": [
+      "label-policy-0",
+      "label-policy-1"
+    ],
+    "text": "Expand\nLM candidates",
+    "bbox": [
+      782,
+      135,
+      205,
+      87
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 101,
+    "name": "port-6-policy",
+    "type": "port-helper",
+    "owner": "policy",
+    "point": [
+      782,
+      181
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 102,
+    "name": "port-7-policy",
+    "type": "port-helper",
+    "owner": "policy",
+    "point": [
+      987,
+      181
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 121,
+    "name": "port-26-policy",
+    "type": "port-helper",
+    "owner": "policy",
+    "point": [
+      839,
+      222
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 130,
+    "name": "policy",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 13,
+    "name": "shape-tools",
+    "type": "shape",
+    "owner": "tools",
+    "bbox": [
+      1055,
+      118,
+      374,
+      140
+    ]
+  },
+  {
+    "id": 88,
+    "name": "label-block:tools",
+    "type": "text-block",
+    "owner": "tools",
+    "sourceTextIds": [
+      "label-tools-0",
+      "label-tools-1",
+      "label-tools-2",
+      "label-tools-3"
+    ],
+    "text": "Shared tool environment\nWikiEnv + QA wrapper\nSearch / Lookup / Finish\nObservation + EM reward",
+    "bbox": [
+      1055,
+      118,
+      374,
+      140
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 103,
+    "name": "port-8-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1055,
+      181
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 104,
+    "name": "port-9-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1200,
+      118
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 114,
+    "name": "port-19-tools",
+    "type": "port-helper",
+    "owner": "tools",
+    "point": [
+      1142,
+      258
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 131,
+    "name": "tools",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 18,
+    "name": "shape-failed",
+    "type": "shape",
+    "owner": "failed",
+    "bbox": [
+      889,
+      377,
+      175,
+      69
+    ]
+  },
+  {
+    "id": 89,
+    "name": "label-block:failed",
+    "type": "text-block",
+    "owner": "failed",
+    "sourceTextIds": [
+      "label-failed-0"
+    ],
+    "text": "Failed traces",
+    "bbox": [
+      889,
+      377,
+      175,
+      69
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 115,
+    "name": "port-20-failed",
+    "type": "port-helper",
+    "owner": "failed",
+    "point": [
+      954,
+      377
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 116,
+    "name": "port-21-failed",
+    "type": "port-helper",
+    "owner": "failed",
+    "point": [
+      1064,
+      412
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 132,
+    "name": "failed",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 20,
+    "name": "shape-reflect",
+    "type": "shape",
+    "owner": "reflect",
+    "bbox": [
+      1102,
+      376,
+      196,
+      71
+    ]
+  },
+  {
+    "id": 90,
+    "name": "label-block:reflect",
+    "type": "text-block",
+    "owner": "reflect",
+    "sourceTextIds": [
+      "label-reflect-0"
+    ],
+    "text": "Self-reflection",
+    "bbox": [
+      1102,
+      376,
+      196,
+      71
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 117,
+    "name": "port-22-reflect",
+    "type": "port-helper",
+    "owner": "reflect",
+    "point": [
+      1102,
+      412
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 118,
+    "name": "port-23-reflect",
+    "type": "port-helper",
+    "owner": "reflect",
+    "point": [
+      1298,
+      412
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 133,
+    "name": "reflect",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 22,
+    "name": "shape-context",
+    "type": "shape",
+    "owner": "context",
+    "bbox": [
+      1335,
+      358,
+      176,
+      109
+    ]
+  },
+  {
+    "id": 91,
+    "name": "label-block:context",
+    "type": "text-block",
+    "owner": "context",
+    "sourceTextIds": [
+      "label-context-0",
+      "label-context-1",
+      "label-context-2"
+    ],
+    "text": "Reflection\ncontext\nThis question",
+    "bbox": [
+      1335,
+      358,
+      176,
+      109
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 119,
+    "name": "port-24-context",
+    "type": "port-helper",
+    "owner": "context",
+    "point": [
+      1335,
+      412
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 120,
+    "name": "port-25-context",
+    "type": "port-helper",
+    "owner": "context",
+    "point": [
+      1417,
+      467
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 134,
+    "name": "context",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 26,
+    "name": "shape-value",
+    "type": "shape",
+    "owner": "value",
+    "bbox": [
+      570,
+      589,
+      152,
+      72
+    ]
+  },
+  {
+    "id": 92,
+    "name": "label-block:value",
+    "type": "text-block",
+    "owner": "value",
+    "sourceTextIds": [
+      "label-value-0"
+    ],
+    "text": "LM value",
+    "bbox": [
+      570,
+      589,
+      152,
+      72
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 107,
+    "name": "port-12-value",
+    "type": "port-helper",
+    "owner": "value",
+    "point": [
+      570,
+      625
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 108,
+    "name": "port-13-value",
+    "type": "port-helper",
+    "owner": "value",
+    "point": [
+      722,
+      625
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 135,
+    "name": "value",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 28,
+    "name": "shape-rollout",
+    "type": "shape",
+    "owner": "rollout",
+    "bbox": [
+      744,
+      532,
+      658,
+      190
+    ]
+  },
+  {
+    "id": 66,
+    "name": "shape-reuse-policy",
+    "type": "shape",
+    "owner": "rollout",
+    "bbox": [
+      768,
+      617,
+      156,
+      56
+    ]
+  },
+  {
+    "id": 67,
+    "name": "text-reuse-policy",
+    "type": "text",
+    "owner": "rollout",
+    "text": "Same policy",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      772.8056640625,
+      630,
+      156.75,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 68,
+    "name": "shape-reuse-tools",
+    "type": "shape",
+    "owner": "rollout",
+    "bbox": [
+      966,
+      617,
+      175,
+      56
+    ]
+  },
+  {
+    "id": 69,
+    "name": "text-reuse-tools",
+    "type": "text",
+    "owner": "rollout",
+    "text": "Same tools",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      986.96630859375,
+      630,
+      142.5,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 70,
+    "name": "shape-reuse-value",
+    "type": "shape",
+    "owner": "rollout",
+    "bbox": [
+      1183,
+      617,
+      185,
+      56
+    ]
+  },
+  {
+    "id": 71,
+    "name": "text-reuse-value",
+    "type": "text",
+    "owner": "rollout",
+    "text": "LM value",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1221.5224609375,
+      630,
+      113.99999999999999,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 72,
+    "name": "routine-line-0",
+    "type": "line-decoration",
+    "owner": "rollout",
+    "bbox": [
+      924,
+      645,
+      34,
+      0.01
+    ]
+  },
+  {
+    "id": 73,
+    "name": "routine-head-0",
+    "type": "shape",
+    "owner": "rollout",
+    "bbox": [
+      956,
+      640,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 74,
+    "name": "routine-line-1",
+    "type": "line-decoration",
+    "owner": "rollout",
+    "bbox": [
+      1141,
+      645,
+      34,
+      0.01
+    ]
+  },
+  {
+    "id": 75,
+    "name": "routine-head-1",
+    "type": "shape",
+    "owner": "rollout",
+    "bbox": [
+      1173,
+      640,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 76,
+    "name": "rollout-greedy",
+    "type": "text",
+    "owner": "rollout",
+    "text": "Greedy continuation",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      961.321533203125,
+      685,
+      270.75,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 93,
+    "name": "label-block:rollout",
+    "type": "text-block",
+    "owner": "rollout",
+    "sourceTextIds": [
+      "label-rollout-0",
+      "label-rollout-1"
+    ],
+    "text": "Value-guided rollout\nAbsolute depth < 4",
+    "bbox": [
+      760,
+      539,
+      626,
+      78
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 109,
+    "name": "port-14-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      744,
+      625
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 110,
+    "name": "port-15-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      1402,
+      625
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 124,
+    "name": "port-29-rollout",
+    "type": "port-helper",
+    "owner": "rollout",
+    "point": [
+      1088,
+      722
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 136,
+    "name": "rollout",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 31,
+    "name": "shape-backup",
+    "type": "shape",
+    "owner": "backup",
+    "bbox": [
+      1560,
+      572,
+      166,
+      106
+    ]
+  },
+  {
+    "id": 94,
+    "name": "label-block:backup",
+    "type": "text-block",
+    "owner": "backup",
+    "sourceTextIds": [
+      "label-backup-0",
+      "label-backup-1",
+      "label-backup-2"
+    ],
+    "text": "Backup\nNo success\nValue / visits",
+    "bbox": [
+      1560,
+      572,
+      166,
+      106
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 111,
+    "name": "port-16-backup",
+    "type": "port-helper",
+    "owner": "backup",
+    "point": [
+      1560,
+      625
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 112,
+    "name": "port-17-backup",
+    "type": "port-helper",
+    "owner": "backup",
+    "point": [
+      1726,
+      625
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 137,
+    "name": "backup",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 35,
+    "name": "shape-result",
+    "type": "shape",
+    "owner": "result",
+    "bbox": [
+      1263,
+      811,
+      288,
+      79
+    ]
+  },
+  {
+    "id": 95,
+    "name": "label-block:result",
+    "type": "text-block",
+    "owner": "result",
+    "sourceTextIds": [
+      "label-result-0",
+      "label-result-1"
+    ],
+    "text": "Return state\nSuccess / fallback",
+    "bbox": [
+      1263,
+      811,
+      288,
+      79
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 123,
+    "name": "port-28-result",
+    "type": "port-helper",
+    "owner": "result",
+    "point": [
+      1500,
+      811
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 125,
+    "name": "port-30-result",
+    "type": "port-helper",
+    "owner": "result",
+    "point": [
+      1263,
+      846
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 138,
+    "name": "result",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 77,
+    "name": "note-child",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Expanded children",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      955,
+      86,
+      242.24999999999997,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 78,
+    "name": "note-failure",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Wrong terminal",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1164,
+      267,
+      199.49999999999997,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 79,
+    "name": "note-reflect-a",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "New distinct failures",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1105,
+      312,
+      299.25,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 80,
+    "name": "note-reflect-b",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "1-3 total",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1150,
+      340,
+      128.25,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 81,
+    "name": "note-backup",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Update values + visits",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1370,
+      9,
+      313.5,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 82,
+    "name": "note-fallback",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Budget fallback",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1310,
+      515,
+      213.74999999999997,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 83,
+    "name": "note-endpoint",
+    "type": "text",
+    "owner": "annotation-layer",
+    "text": "Success / fallback",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1107,
+      775,
+      256.5,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 139,
+    "name": "annotation-layer",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 140,
+    "name": "initialize",
+    "type": "connector",
+    "owner": null,
+    "edge": "initialize",
+    "fromBinding": "port-1-question",
+    "toBinding": "port-2-tree",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 141,
+    "name": "select-path",
+    "type": "connector",
+    "owner": null,
+    "edge": "select-path",
+    "fromBinding": "port-3-tree",
+    "toBinding": "port-4-select",
+    "stroke": "#BF8A20",
+    "width": 3,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 142,
+    "name": "expand-path",
+    "type": "connector",
+    "owner": null,
+    "edge": "expand-path",
+    "fromBinding": "port-5-select",
+    "toBinding": "port-6-policy",
+    "stroke": "#BF8A20",
+    "width": 3,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 143,
+    "name": "execute",
+    "type": "connector",
+    "owner": null,
+    "edge": "execute",
+    "fromBinding": "port-7-policy",
+    "toBinding": "port-8-tools",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 144,
+    "name": "store-children:segment:0",
+    "type": "connector",
+    "owner": "group-store-children",
+    "edge": "store-children",
+    "fromBinding": "port-9-tools",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 145,
+    "name": "store-children:segment:1",
+    "type": "connector",
+    "owner": "group-store-children",
+    "edge": "store-children",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 146,
+    "name": "store-children:segment:2",
+    "type": "connector",
+    "owner": "group-store-children",
+    "edge": "store-children",
+    "fromBinding": null,
+    "toBinding": "port-10-tree",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 147,
+    "name": "group-store-children",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 148,
+    "name": "candidate-values",
+    "type": "connector",
+    "owner": null,
+    "edge": "candidate-values",
+    "fromBinding": "port-11-tree",
+    "toBinding": "port-12-value",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 149,
+    "name": "best-child",
+    "type": "connector",
+    "owner": null,
+    "edge": "best-child",
+    "fromBinding": "port-13-value",
+    "toBinding": "port-14-rollout",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 150,
+    "name": "no-success",
+    "type": "connector",
+    "owner": null,
+    "edge": "no-success",
+    "fromBinding": "port-15-rollout",
+    "toBinding": "port-16-backup",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 151,
+    "name": "update-statistics:segment:0",
+    "type": "connector",
+    "owner": "group-update-statistics",
+    "edge": "update-statistics",
+    "fromBinding": "port-17-backup",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 152,
+    "name": "update-statistics:segment:1",
+    "type": "connector",
+    "owner": "group-update-statistics",
+    "edge": "update-statistics",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 153,
+    "name": "update-statistics:segment:2",
+    "type": "connector",
+    "owner": "group-update-statistics",
+    "edge": "update-statistics",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 154,
+    "name": "update-statistics:segment:3",
+    "type": "connector",
+    "owner": "group-update-statistics",
+    "edge": "update-statistics",
+    "fromBinding": null,
+    "toBinding": "port-18-tree",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 155,
+    "name": "group-update-statistics",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 156,
+    "name": "terminal-failure:segment:0",
+    "type": "connector",
+    "owner": "group-terminal-failure",
+    "edge": "terminal-failure",
+    "fromBinding": "port-19-tools",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 157,
+    "name": "terminal-failure:segment:1",
+    "type": "connector",
+    "owner": "group-terminal-failure",
+    "edge": "terminal-failure",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 158,
+    "name": "terminal-failure:segment:2",
+    "type": "connector",
+    "owner": "group-terminal-failure",
+    "edge": "terminal-failure",
+    "fromBinding": null,
+    "toBinding": "port-20-failed",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 159,
+    "name": "group-terminal-failure",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 160,
+    "name": "reflect-failures",
+    "type": "connector",
+    "owner": null,
+    "edge": "reflect-failures",
+    "fromBinding": "port-21-failed",
+    "toBinding": "port-22-reflect",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 161,
+    "name": "store-reflection",
+    "type": "connector",
+    "owner": null,
+    "edge": "store-reflection",
+    "fromBinding": "port-23-reflect",
+    "toBinding": "port-24-context",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 162,
+    "name": "policy-feedback:segment:0",
+    "type": "connector",
+    "owner": "group-policy-feedback",
+    "edge": "policy-feedback",
+    "fromBinding": "port-25-context",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 163,
+    "name": "policy-feedback:segment:1",
+    "type": "connector",
+    "owner": "group-policy-feedback",
+    "edge": "policy-feedback",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 164,
+    "name": "policy-feedback:segment:2",
+    "type": "connector",
+    "owner": "group-policy-feedback",
+    "edge": "policy-feedback",
+    "fromBinding": null,
+    "toBinding": "port-26-policy",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 165,
+    "name": "group-policy-feedback",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 166,
+    "name": "return-tree:segment:0",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": "port-27-tree",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 167,
+    "name": "return-tree:segment:1",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 168,
+    "name": "return-tree:segment:2",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 169,
+    "name": "return-tree:segment:3",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 170,
+    "name": "return-tree:segment:4",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 171,
+    "name": "return-tree:segment:5",
+    "type": "connector",
+    "owner": "group-return-tree",
+    "edge": "return-tree",
+    "fromBinding": null,
+    "toBinding": "port-28-result",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 172,
+    "name": "group-return-tree",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 173,
+    "name": "return-rollout:segment:0",
+    "type": "connector",
+    "owner": "group-return-rollout",
+    "edge": "return-rollout",
+    "fromBinding": "port-29-rollout",
+    "toBinding": null,
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 174,
+    "name": "return-rollout:segment:1",
+    "type": "connector",
+    "owner": "group-return-rollout",
+    "edge": "return-rollout",
+    "fromBinding": null,
+    "toBinding": "port-30-result",
+    "stroke": "#243746",
+    "width": 2.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 175,
+    "name": "group-return-rollout",
+    "type": "group",
+    "owner": null
+  }
+]

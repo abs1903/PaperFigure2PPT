@@ -1,0 +1,21 @@
+{
+  "url": "https://arxiv.org/html/2407.01489v1",
+  "rawHTMLSHA256": "a396924132e609f916a7feb8dda94e78f5dd274c641df2c00d59d61fea38e5d8",
+  "rawHTMLRendered": false,
+  "imageAssetsFetched": false,
+  "excludedElements": {
+    "figure": 16,
+    "figcaption": 0,
+    "img": 11,
+    "svg": 18,
+    "table": 1,
+    "script": 4,
+    "style": 1
+  },
+  "figureReferencingParagraphsExcluded": 7,
+  "retainedSectionHeaders": [
+    "2 Agentless Approach"
+  ],
+  "textSHA256": "03c842e3eed24c8d811f04e641f2d166c59453053ae09453c279ede88e1114b6",
+  "figurePolicy": "No figure/table/image/caption elements or figure-referencing paragraphs in retained text; no paper image was rendered."
+}

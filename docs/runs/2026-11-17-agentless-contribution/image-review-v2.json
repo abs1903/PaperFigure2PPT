@@ -1,0 +1,11 @@
+{
+  "version":"2.0",
+  "reviewType":"independent-contribution-raster-image-rereview",
+  "reviewer":{"kind":"independent-agent","name":"/root/agentless_narrative_review","isolation":{"method":"fork_turns:none"}},
+  "verdict":"revise",
+  "verdictScope":"V1 issue-binding fix passes; one source-to-repair routing regression blocks acceptance",
+  "inspectedImages":[{"path":"candidate-v2.png","sha256":"b8f1d68ac98dd947a97368a97d57d4473d2861e9393303dfb2908fabd32723c6","sizePx":[1637,960],"view":"native"},{"path":"candidate-v2-paper-width.png","sha256":"8cec9627b72be378b6476dc56480c3d0ec72f2198f0bb0c8d767f209077b41ba","sizePx":[672,394],"view":"7in-at-96dpi diagnostic"}],
+  "checks":{"scientificFidelity":"fail","contributionVisibility":"pass","issueBindings":"pass","sourceContextVsGeneratedEdits":"pass","sourceToRepairDependency":"fail","modelDeterministicRoles":"fail","readingOrder":"fail","finalWidthTypography":"pass","flatNoShadowStyle":"pass","nativeFeasibilityVisualInference":"pass","authorComparison":"unverified","nativeOfficeEditabilityDelivery":"unverified"},
+  "findings":[{"id":"R2","severity":"blocking","region":"left Context window to deterministic selection strip","evidence":"horizontal context arrow enters Syntax + regression; right local-edit Context window has no incoming localization handoff","effect":"bypasses Search/Replace generation and makes filtering appear to consume raw context","requiredCorrection":"remove direct context-to-filter arrow; connect focused context to local-edit magnification; route only candidate fan to filter/rank."}],
+  "artifacts":{"prompt-edit-v2.txt":"34ea70456645d36d16d70d45b62fc5436956f2c140444a00ba2a5b34df1e69a3","generation-record-v2.json":"69a4d5ae6fe383fb13b0b1ccd203b7bae31d10c7fde2b60c54de4d534c73e680","spec.json":"4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c","narrative-plan.json":"776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65","design-brief.json":"e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8"}
+}

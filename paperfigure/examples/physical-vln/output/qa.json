@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "nodes": 8,
+    "edges": 9,
+    "texts": 19,
+    "groups": 0,
+    "minFinalTextPt": 6.999999999999999,
+    "nativeShapes": 27,
+    "nativeConnectors": 20,
+    "logicalEdges": 9,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 19,
+    "pictures": 0,
+    "editableRatio": 1
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-render-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

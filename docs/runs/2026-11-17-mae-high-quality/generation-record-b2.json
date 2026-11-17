@@ -1,0 +1,27 @@
+{
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "fe548d6e60d42d21b44870ec72a09fb87422b5b3e19fe5d2d29e3f5fb657fb8b",
+  "promptPath": "prompt-edit-b2.txt",
+  "promptSHA256": "0a73d1f9a91b9771f0543aa2cafbc113d09d6cfc2bcd2e7ae181a58c0dd8493b",
+  "inputImages": [
+    {
+      "path": "candidate-b.png",
+      "sha256": "fe548d6e60d42d21b44870ec72a09fb87422b5b3e19fe5d2d29e3f5fb657fb8b",
+      "role": "actual referenced_image_paths edit target"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-b2.png",
+    "sha256": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "sizePx": [
+      1774,
+      887
+    ]
+  },
+  "semanticFreezeSHA256": "9a83ccd754cc98c472f9e110c3a797bd92d0f382aaab4646329f293fd151effa",
+  "changeClass": "loss inset: exact 4x4 same-mask selector and readability/exact loss label",
+  "figureHidden": false,
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

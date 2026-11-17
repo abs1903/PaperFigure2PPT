@@ -1,0 +1,37 @@
+[
+  {
+    "kind": "center-text",
+    "module": "query",
+    "dx": -3.6624684929847717,
+    "dy": 2.3131184577941895,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "session-content",
+    "dx": 3.4274280071258545,
+    "dy": 0.34029483795166016,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "short-term-tools",
+    "dx": 0.726240485906601,
+    "dy": -1.47932767868042,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "long-term-tools",
+    "dx": 3.0697921216487885,
+    "dy": -2.012042999267578,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "llm-answer",
+    "dx": 2.6563621908426285,
+    "dy": 1.3267769813537598,
+    "pass": 0
+  }
+]

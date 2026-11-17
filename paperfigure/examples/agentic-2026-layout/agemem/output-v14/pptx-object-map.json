@@ -1,0 +1,3246 @@
+[
+  {
+    "id": 2,
+    "name": "path-1",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      3.2133,
+      3.3438,
+      590.4838,
+      780.309
+    ]
+  },
+  {
+    "id": 3,
+    "name": "path-2",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      2.4274,
+      2.5546,
+      592.0772999999999,
+      781.9431999999999
+    ]
+  },
+  {
+    "id": 6,
+    "name": "path-85",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      326.641,
+      23.111,
+      230.75920000000002,
+      176.6382
+    ]
+  },
+  {
+    "id": 7,
+    "name": "path-86",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      325.8857,
+      34.0964,
+      232.36949999999996,
+      154.6674
+    ]
+  },
+  {
+    "id": 8,
+    "name": "path-87",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      319.3411,
+      18.0416,
+      230.5562,
+      176.6382
+    ]
+  },
+  {
+    "id": 11,
+    "name": "path-90",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      56.3372,
+      33.5658,
+      233.2144,
+      155.05270000000002
+    ]
+  },
+  {
+    "id": 20,
+    "name": "path-95",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      313.4605,
+      11.9566,
+      230.75900000000001,
+      176.63819999999998
+    ]
+  },
+  {
+    "id": 73,
+    "name": "text-100",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Tools calling & ",
+    "font": "Times New Roman",
+    "fontSize": 23.74169158935547,
+    "bbox": [
+      230.9072,
+      405.22714373779297,
+      154.976,
+      29.677114486694336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 74,
+    "name": "text-101",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Memory operation",
+    "font": "Times New Roman",
+    "fontSize": 23.74169158935547,
+    "bbox": [
+      215.1075,
+      427.870443737793,
+      180.7478,
+      29.677114486694336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 117,
+    "name": "path-106",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      55.2388,
+      595.3922,
+      231.52470000000002,
+      156.80330000000004
+    ]
+  },
+  {
+    "id": 118,
+    "name": "path-107",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      54.394,
+      594.5474,
+      233.21429999999998,
+      158.6789
+    ]
+  },
+  {
+    "id": 157,
+    "name": "text-113",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Multi-round",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      16.7891,
+      533.9781086120606,
+      103.5848,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 158,
+    "name": "text-114",
+    "type": "text",
+    "owner": "source-context",
+    "text": "responses",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      28.1108,
+      553.4108086120606,
+      81.0597,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 159,
+    "name": "text-115",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Memory ",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      486.7664,
+      407.14680861206057,
+      74.9426,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 160,
+    "name": "text-116",
+    "type": "text",
+    "owner": "source-context",
+    "text": "retrieval tool",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      468.4321,
+      426.5795086120605,
+      106.5992,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 10,
+    "name": "path-89",
+    "type": "shape",
+    "owner": "query",
+    "bbox": [
+      57.1517,
+      34.3685,
+      231.5702,
+      153.5014
+    ]
+  },
+  {
+    "id": 12,
+    "name": "path-91",
+    "type": "shape",
+    "owner": "query",
+    "bbox": [
+      49.649,
+      26.9739,
+      231.5702,
+      153.3933
+    ]
+  },
+  {
+    "id": 13,
+    "name": "path-92",
+    "type": "shape",
+    "owner": "query",
+    "bbox": [
+      48.9021,
+      26.129,
+      233.21439999999998,
+      155.05440000000002
+    ]
+  },
+  {
+    "id": 14,
+    "name": "path-93",
+    "type": "shape",
+    "owner": "query",
+    "bbox": [
+      43.1602,
+      19.9714,
+      231.36729999999997,
+      153.50140000000002
+    ]
+  },
+  {
+    "id": 15,
+    "name": "path-94",
+    "type": "shape",
+    "owner": "query",
+    "bbox": [
+      42.2256,
+      19.2008,
+      233.2144,
+      155.05270000000002
+    ]
+  },
+  {
+    "id": 16,
+    "name": "text-90",
+    "type": "text",
+    "owner": "query",
+    "text": "Query",
+    "font": "Times New Roman",
+    "fontSize": 30.416400909423828,
+    "bbox": [
+      136.0163,
+      35.23701116333008,
+      82.8003,
+      38.020501136779785
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 33,
+    "name": "icon-51-refined-head-outline",
+    "type": "shape",
+    "owner": "icon-51",
+    "bbox": [
+      91.413346,
+      29.990642,
+      38.860674,
+      44.716392000000006
+    ]
+  },
+  {
+    "id": 34,
+    "name": "icon-51-refined-inner-rim",
+    "type": "shape",
+    "owner": "icon-51",
+    "bbox": [
+      103.65712,
+      27.86129,
+      26.08456200000002,
+      30.343265999999996
+    ]
+  },
+  {
+    "id": 35,
+    "name": "icon-51-refined-ray-0",
+    "type": "line-decoration",
+    "owner": "icon-51",
+    "bbox": [
+      109.512838,
+      22.53791,
+      0.01,
+      3.7263659999999987
+    ]
+  },
+  {
+    "id": 36,
+    "name": "icon-51-refined-ray-1",
+    "type": "line-decoration",
+    "owner": "icon-51",
+    "bbox": [
+      100.99543,
+      23.602586,
+      1.0646760000000057,
+      3.7263660000000023
+    ]
+  },
+  {
+    "id": 37,
+    "name": "icon-51-refined-ray-2",
+    "type": "line-decoration",
+    "owner": "icon-51",
+    "bbox": [
+      93.542698,
+      27.328952,
+      2.1293520000000115,
+      3.1940279999999994
+    ]
+  },
+  {
+    "id": 38,
+    "name": "icon-51-refined-ray-3",
+    "type": "line-decoration",
+    "owner": "icon-51",
+    "bbox": [
+      88.219318,
+      33.18467,
+      3.194028000000003,
+      2.1293520000000044
+    ]
+  },
+  {
+    "id": 39,
+    "name": "icon-51-refined-ray-4",
+    "type": "line-decoration",
+    "owner": "icon-51",
+    "bbox": [
+      118.030246,
+      24.134924,
+      1.5970140000000015,
+      3.7263659999999987
+    ]
+  },
+  {
+    "id": 40,
+    "name": "icon-51-refined-ray-5",
+    "type": "line-decoration",
+    "owner": "icon-51",
+    "bbox": [
+      124.41830200000001,
+      28.393628,
+      2.661689999999993,
+      3.194028000000003
+    ]
+  },
+  {
+    "id": 41,
+    "name": "icon-51-refined-ray-6",
+    "type": "line-decoration",
+    "owner": "icon-51",
+    "bbox": [
+      129.20934400000002,
+      34.781684,
+      3.7263659999999845,
+      2.1293520000000044
+    ]
+  },
+  {
+    "id": 42,
+    "name": "icon-51-refined-question",
+    "type": "text",
+    "owner": "icon-51",
+    "text": "?",
+    "font": "Arial",
+    "fontSize": 22.890534000000002,
+    "bbox": [
+      104.72179600000001,
+      37.14526471999999,
+      14.373126,
+      28.613167500000003
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 245,
+    "name": "icon-51",
+    "type": "group",
+    "owner": "query"
+  },
+  {
+    "id": 220,
+    "name": "label-block:query",
+    "type": "text-block",
+    "owner": "query",
+    "sourceTextIds": [
+      "text-91",
+      "text-92",
+      "text-93"
+    ],
+    "text": "Which band has \nmore members, Muse \nor The Raconteurs?",
+    "bbox": [
+      51,
+      84,
+      215,
+      81
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 225,
+    "name": "port-1-query",
+    "type": "port-helper",
+    "owner": "query",
+    "point": [
+      158.5,
+      174
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 246,
+    "name": "query",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 9,
+    "name": "path-88",
+    "type": "shape",
+    "owner": "session-content",
+    "bbox": [
+      318.4505,
+      29.027,
+      232.36790000000002,
+      154.6674
+    ]
+  },
+  {
+    "id": 21,
+    "name": "path-96",
+    "type": "shape",
+    "owner": "session-content",
+    "bbox": [
+      312.6189,
+      22.9421,
+      232.36970000000002,
+      154.66729999999998
+    ]
+  },
+  {
+    "id": 24,
+    "name": "text-96",
+    "type": "text",
+    "owner": "session-content",
+    "text": "1. Narcissus (band) ...",
+    "font": "Comic Sans MS",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      331.462,
+      90.27890861206055,
+      199.9679,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 25,
+    "name": "text-97",
+    "type": "text",
+    "owner": "session-content",
+    "text": "2. The Raconteurs ...",
+    "font": "Comic Sans MS",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      331.462,
+      114.61200861206055,
+      193.0398,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 26,
+    "name": "text-98",
+    "type": "text",
+    "owner": "session-content",
+    "text": "3. Sundae Club ...",
+    "font": "Comic Sans MS",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      331.462,
+      138.94510861206055,
+      159.835,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 27,
+    "name": "icon-50-refined-rolled-end",
+    "type": "shape",
+    "owner": "icon-50",
+    "bbox": [
+      383.620216,
+      39.500628,
+      8.47667899999999,
+      9.815102000000003
+    ]
+  },
+  {
+    "id": 28,
+    "name": "icon-50-refined-page",
+    "type": "shape",
+    "owner": "icon-50",
+    "bbox": [
+      356.851756,
+      39.946769,
+      28.553023999999994,
+      41.04497199999999
+    ]
+  },
+  {
+    "id": 29,
+    "name": "icon-50-refined-header",
+    "type": "shape",
+    "owner": "icon-50",
+    "bbox": [
+      361.313166,
+      45.300461,
+      18.73792199999997,
+      8.030538000000007
+    ]
+  },
+  {
+    "id": 30,
+    "name": "icon-50-refined-line-1",
+    "type": "line-decoration",
+    "owner": "icon-50",
+    "bbox": [
+      361.75930700000004,
+      59.130832,
+      18.291780999999958,
+      0.01
+    ]
+  },
+  {
+    "id": 31,
+    "name": "icon-50-refined-line-2",
+    "type": "line-decoration",
+    "owner": "icon-50",
+    "bbox": [
+      361.75930700000004,
+      64.484524,
+      18.291780999999958,
+      0.01
+    ]
+  },
+  {
+    "id": 32,
+    "name": "icon-50-refined-lower-roll",
+    "type": "shape",
+    "owner": "icon-50",
+    "bbox": [
+      351.051923,
+      70.73049800000001,
+      29.445306000000016,
+      8.030537999999979
+    ]
+  },
+  {
+    "id": 247,
+    "name": "icon-50",
+    "type": "group",
+    "owner": "session-content"
+  },
+  {
+    "id": 221,
+    "name": "label-block:session-content",
+    "type": "text-block",
+    "owner": "session-content",
+    "sourceTextIds": [
+      "text-94",
+      "text-95"
+    ],
+    "text": "Session \nContent",
+    "bbox": [
+      397,
+      28,
+      119,
+      65
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 227,
+    "name": "port-3-session-content",
+    "type": "port-helper",
+    "owner": "session-content",
+    "point": [
+      429.5,
+      173
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 248,
+    "name": "session-content",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 4,
+    "name": "path-3",
+    "type": "shape",
+    "owner": "memory-manager",
+    "bbox": [
+      42.9573,
+      236.3334,
+      506.94,
+      162.8291
+    ]
+  },
+  {
+    "id": 5,
+    "name": "path-4",
+    "type": "shape",
+    "owner": "memory-manager",
+    "bbox": [
+      42.1412,
+      235.5155,
+      508.5925,
+      164.43280000000001
+    ]
+  },
+  {
+    "id": 43,
+    "name": "icon-55-refined-antenna-left",
+    "type": "line-decoration",
+    "owner": "icon-55",
+    "bbox": [
+      103.670945,
+      255.546325,
+      6.571345000000008,
+      5.973949999999974
+    ]
+  },
+  {
+    "id": 44,
+    "name": "icon-55-refined-antenna-right",
+    "type": "line-decoration",
+    "owner": "icon-55",
+    "bbox": [
+      116.813635,
+      255.546325,
+      6.571345000000008,
+      5.973949999999974
+    ]
+  },
+  {
+    "id": 45,
+    "name": "icon-55-refined-antenna-tip-left",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      101.28136500000001,
+      253.156745,
+      3.5843699999999927,
+      3.5843699999999785
+    ]
+  },
+  {
+    "id": 46,
+    "name": "icon-55-refined-antenna-tip-right",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      122.19019,
+      253.156745,
+      3.584370000000007,
+      3.5843699999999785
+    ]
+  },
+  {
+    "id": 47,
+    "name": "icon-55-refined-left-arm",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      90.528255,
+      281.831705,
+      8.960925000000003,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 48,
+    "name": "icon-55-refined-right-arm",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      129.35893000000002,
+      266.89683,
+      9.558320000000009,
+      11.947899999999947
+    ]
+  },
+  {
+    "id": 49,
+    "name": "icon-55-refined-left-leg",
+    "type": "line-decoration",
+    "owner": "icon-55",
+    "bbox": [
+      110.24229000000001,
+      290.79263,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 50,
+    "name": "icon-55-refined-right-leg",
+    "type": "line-decoration",
+    "owner": "icon-55",
+    "bbox": [
+      120.39800500000001,
+      290.79263,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 51,
+    "name": "icon-55-refined-left-foot",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      105.46313,
+      300.35095,
+      8.960925000000003,
+      4.181764999999984
+    ]
+  },
+  {
+    "id": 52,
+    "name": "icon-55-refined-right-foot",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      118.60582,
+      300.35095,
+      8.960925000000003,
+      4.181764999999984
+    ]
+  },
+  {
+    "id": 53,
+    "name": "icon-55-refined-body",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      100.08657500000001,
+      261.52027499999997,
+      29.272355000000005,
+      29.272355000000005
+    ]
+  },
+  {
+    "id": 54,
+    "name": "icon-55-refined-eye-left",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      104.746256,
+      267.9124015,
+      7.4076980000000106,
+      8.721967000000006
+    ]
+  },
+  {
+    "id": 55,
+    "name": "icon-55-refined-eye-right",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      117.888946,
+      267.9124015,
+      7.4076980000000106,
+      8.721967000000006
+    ]
+  },
+  {
+    "id": 56,
+    "name": "icon-55-refined-iris-left",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      106.777399,
+      270.1825025,
+      3.942807000000002,
+      5.376554999999996
+    ]
+  },
+  {
+    "id": 57,
+    "name": "icon-55-refined-iris-right",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      119.32269400000001,
+      270.1825025,
+      3.9428069999999877,
+      5.376554999999996
+    ]
+  },
+  {
+    "id": 58,
+    "name": "icon-55-refined-pupil-left",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      107.97218900000001,
+      271.6162505,
+      2.1506219999999843,
+      3.3454120000000103
+    ]
+  },
+  {
+    "id": 59,
+    "name": "icon-55-refined-pupil-right",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      119.920089,
+      271.6162505,
+      2.1506219999999985,
+      3.3454120000000103
+    ]
+  },
+  {
+    "id": 60,
+    "name": "icon-55-refined-glint-left",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      107.1955755,
+      270.600679,
+      1.672705999999991,
+      2.1506219999999985
+    ]
+  },
+  {
+    "id": 61,
+    "name": "icon-55-refined-glint-right",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      119.2629545,
+      270.600679,
+      1.6727060000000051,
+      2.1506219999999985
+    ]
+  },
+  {
+    "id": 62,
+    "name": "icon-55-refined-smile",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      109.0475,
+      281.831705,
+      11.947900000000004,
+      4.181764999999984
+    ]
+  },
+  {
+    "id": 63,
+    "name": "icon-55-refined-bulb",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      132.9433,
+      245.39060999999998,
+      11.947900000000004,
+      17.921850000000006
+    ]
+  },
+  {
+    "id": 64,
+    "name": "icon-55-refined-bulb-glint",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      139.4549055,
+      250.52820699999998,
+      2.5090590000000077,
+      2.867496000000017
+    ]
+  },
+  {
+    "id": 65,
+    "name": "icon-55-refined-bulb-neck",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      136.52767,
+      262.715065,
+      4.77915999999999,
+      4.77915999999999
+    ]
+  },
+  {
+    "id": 66,
+    "name": "icon-55-refined-raised-hand",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      135.33288000000002,
+      266.299435,
+      7.1687399999999855,
+      7.168739999999957
+    ]
+  },
+  {
+    "id": 67,
+    "name": "icon-55-refined-bulb-base",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      136.52767,
+      263.31246,
+      4.77915999999999,
+      4.181764999999984
+    ]
+  },
+  {
+    "id": 68,
+    "name": "icon-55-refined-bag-handle",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      87.54128,
+      287.805655,
+      5.37655500000001,
+      5.973950000000002
+    ]
+  },
+  {
+    "id": 69,
+    "name": "icon-55-refined-bag",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      85.1517,
+      293.18221,
+      11.350504999999998,
+      11.947900000000004
+    ]
+  },
+  {
+    "id": 70,
+    "name": "icon-55-refined-bag-seam",
+    "type": "line-decoration",
+    "owner": "icon-55",
+    "bbox": [
+      89.333465,
+      293.779605,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 71,
+    "name": "icon-55-refined-bag-clasp",
+    "type": "shape",
+    "owner": "icon-55",
+    "bbox": [
+      92.49965850000001,
+      296.16918499999997,
+      2.031143,
+      2.3895800000000236
+    ]
+  },
+  {
+    "id": 249,
+    "name": "icon-55",
+    "type": "group",
+    "owner": "memory-manager"
+  },
+  {
+    "id": 72,
+    "name": "text-99",
+    "type": "text",
+    "owner": "memory-manager",
+    "text": "Agentic  Memory Management",
+    "font": "Times New Roman",
+    "fontSize": 26.95231056213379,
+    "bbox": [
+      151.3952,
+      263.78077428283694,
+      359.6931,
+      33.690388202667236
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 226,
+    "name": "port-2-memory-manager",
+    "type": "port-helper",
+    "owner": "memory-manager",
+    "point": [
+      158.5,
+      237
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 228,
+    "name": "port-4-memory-manager",
+    "type": "port-helper",
+    "owner": "memory-manager",
+    "point": [
+      429.5,
+      237
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 234,
+    "name": "port-10-memory-manager",
+    "type": "port-helper",
+    "owner": "memory-manager",
+    "point": [
+      459,
+      400
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 238,
+    "name": "port-14-memory-manager",
+    "type": "port-helper",
+    "owner": "memory-manager",
+    "point": [
+      43,
+      317
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 75,
+    "name": "path-99",
+    "type": "shape",
+    "owner": "short-term-tools",
+    "bbox": [
+      65.2948,
+      313.2531,
+      224.1723,
+      66.66929999999996
+    ]
+  },
+  {
+    "id": 81,
+    "name": "icon-56-refined-wrench",
+    "type": "shape",
+    "owner": "icon-56",
+    "bbox": [
+      82.54615199999999,
+      328.490212,
+      41.734573999999995,
+      39.60535200000004
+    ]
+  },
+  {
+    "id": 82,
+    "name": "icon-56-refined-ring",
+    "type": "shape",
+    "owner": "icon-56",
+    "bbox": [
+      113.42121949999999,
+      356.81016800000003,
+      4.684493000000003,
+      4.684504000000004
+    ]
+  },
+  {
+    "id": 83,
+    "name": "icon-56-refined-hammer-head",
+    "type": "shape",
+    "owner": "icon-56",
+    "bbox": [
+      102.561713,
+      325.935028,
+      16.608656999999994,
+      16.18283200000002
+    ]
+  },
+  {
+    "id": 84,
+    "name": "icon-56-refined-shaft",
+    "type": "shape",
+    "owner": "icon-56",
+    "bbox": [
+      93.19272699999999,
+      337.85922,
+      19.163835000000006,
+      18.312152000000026
+    ]
+  },
+  {
+    "id": 85,
+    "name": "icon-56-refined-handle",
+    "type": "shape",
+    "owner": "icon-56",
+    "bbox": [
+      82.54615199999999,
+      349.783412,
+      15.756930999999994,
+      16.18283200000002
+    ]
+  },
+  {
+    "id": 86,
+    "name": "icon-56-refined-grip-1",
+    "type": "line-decoration",
+    "owner": "icon-56",
+    "bbox": [
+      88.082371,
+      357.874828,
+      4.258629999999997,
+      4.258640000000014
+    ]
+  },
+  {
+    "id": 87,
+    "name": "icon-56-refined-grip-2",
+    "type": "line-decoration",
+    "owner": "icon-56",
+    "bbox": [
+      90.63754899999999,
+      355.319644,
+      4.258629999999997,
+      4.258640000000014
+    ]
+  },
+  {
+    "id": 250,
+    "name": "icon-56",
+    "type": "group",
+    "owner": "short-term-tools"
+  },
+  {
+    "id": 222,
+    "name": "label-block:short-term-tools",
+    "type": "text-block",
+    "owner": "short-term-tools",
+    "sourceTextIds": [
+      "text-102",
+      "text-103"
+    ],
+    "text": "Short-term \nMemory Tools",
+    "bbox": [
+      126,
+      316,
+      156,
+      59
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 229,
+    "name": "port-5-short-term-tools",
+    "type": "port-helper",
+    "owner": "short-term-tools",
+    "point": [
+      166,
+      378
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 251,
+    "name": "short-term-tools",
+    "type": "group",
+    "owner": "memory-manager"
+  },
+  {
+    "id": 78,
+    "name": "path-100",
+    "type": "shape",
+    "owner": "long-term-tools",
+    "bbox": [
+      312.5345,
+      311.4788,
+      218.17340000000002,
+      68.5281
+    ]
+  },
+  {
+    "id": 88,
+    "name": "icon-57-refined-orbit",
+    "type": "shape",
+    "owner": "icon-57",
+    "bbox": [
+      325.998131,
+      320.23936599999996,
+      42.745923000000005,
+      43.609578
+    ]
+  },
+  {
+    "id": 89,
+    "name": "icon-57-refined-gear",
+    "type": "shape",
+    "owner": "icon-57",
+    "bbox": [
+      328.157016,
+      325.85248,
+      34.973937000000035,
+      36.26935199999997
+    ]
+  },
+  {
+    "id": 90,
+    "name": "icon-57-refined-gear-hole",
+    "type": "shape",
+    "owner": "icon-57",
+    "bbox": [
+      338.087887,
+      335.783374,
+      15.543971999999997,
+      16.40756399999998
+    ]
+  },
+  {
+    "id": 91,
+    "name": "icon-57-refined-wrench",
+    "type": "shape",
+    "owner": "icon-57",
+    "bbox": [
+      323.839246,
+      319.807588,
+      45.768362000000025,
+      45.768467999999984
+    ]
+  },
+  {
+    "id": 252,
+    "name": "icon-57",
+    "type": "group",
+    "owner": "long-term-tools"
+  },
+  {
+    "id": 223,
+    "name": "label-block:long-term-tools",
+    "type": "text-block",
+    "owner": "long-term-tools",
+    "sourceTextIds": [
+      "text-104",
+      "text-105"
+    ],
+    "text": "Long-term \nMemory Tools",
+    "bbox": [
+      371,
+      311,
+      153,
+      59
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 231,
+    "name": "port-7-long-term-tools",
+    "type": "port-helper",
+    "owner": "long-term-tools",
+    "point": [
+      423,
+      375
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 253,
+    "name": "long-term-tools",
+    "type": "group",
+    "owner": "memory-manager"
+  },
+  {
+    "id": 254,
+    "name": "memory-manager",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 92,
+    "name": "path-101",
+    "type": "shape",
+    "owner": "agentic-context",
+    "bbox": [
+      42.2256,
+      465.4348,
+      247.32600000000002,
+      65.7382
+    ]
+  },
+  {
+    "id": 93,
+    "name": "text-106",
+    "type": "text",
+    "owner": "agentic-context",
+    "text": " Agentic Context",
+    "font": "Times New Roman",
+    "fontSize": 23.74169158935547,
+    "bbox": [
+      109.6521,
+      484.232043737793,
+      168.0992,
+      29.677114486694336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 94,
+    "name": "icon-58-refined-tile",
+    "type": "shape",
+    "owner": "icon-58",
+    "bbox": [
+      59.215946,
+      477.102046,
+      45.19350800000001,
+      45.193508000000065
+    ]
+  },
+  {
+    "id": 95,
+    "name": "icon-58-refined-sheet",
+    "type": "shape",
+    "owner": "icon-58",
+    "bbox": [
+      67.870022,
+      481.90986599999997,
+      30.289265999999998,
+      31.250830000000065
+    ]
+  },
+  {
+    "id": 96,
+    "name": "icon-58-refined-fold",
+    "type": "shape",
+    "owner": "icon-58",
+    "bbox": [
+      88.543648,
+      481.90986599999997,
+      9.615639999999999,
+      10.096422000000018
+    ]
+  },
+  {
+    "id": 97,
+    "name": "icon-58-refined-text-rule-0",
+    "type": "line-decoration",
+    "owner": "icon-58",
+    "bbox": [
+      73.158624,
+      495.85254399999997,
+      18.269716000000003,
+      0.01
+    ]
+  },
+  {
+    "id": 98,
+    "name": "icon-58-refined-text-rule-1",
+    "type": "line-decoration",
+    "owner": "icon-58",
+    "bbox": [
+      73.158624,
+      501.141146,
+      18.269716000000003,
+      0.01
+    ]
+  },
+  {
+    "id": 99,
+    "name": "icon-58-refined-text-rule-2",
+    "type": "line-decoration",
+    "owner": "icon-58",
+    "bbox": [
+      73.158624,
+      506.429748,
+      18.269716000000003,
+      0.01
+    ]
+  },
+  {
+    "id": 100,
+    "name": "icon-58-refined-tray",
+    "type": "shape",
+    "owner": "icon-58",
+    "bbox": [
+      61.619856,
+      511.237568,
+      39.90490600000001,
+      11.538768000000005
+    ]
+  },
+  {
+    "id": 101,
+    "name": "icon-58-refined-tray-label",
+    "type": "shape",
+    "owner": "icon-58",
+    "bbox": [
+      75.562534,
+      517.006952,
+      13.461895999999996,
+      3.365474000000063
+    ]
+  },
+  {
+    "id": 255,
+    "name": "icon-58",
+    "type": "group",
+    "owner": "agentic-context"
+  },
+  {
+    "id": 230,
+    "name": "port-6-agentic-context",
+    "type": "port-helper",
+    "owner": "agentic-context",
+    "point": [
+      166,
+      466
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 235,
+    "name": "port-11-agentic-context",
+    "type": "port-helper",
+    "owner": "agentic-context",
+    "point": [
+      166,
+      531
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 256,
+    "name": "agentic-context",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 102,
+    "name": "path-102",
+    "type": "shape",
+    "owner": "agentic-memory",
+    "bbox": [
+      312.7034,
+      463.4053,
+      238.115,
+      67.76769999999999
+    ]
+  },
+  {
+    "id": 103,
+    "name": "text-107",
+    "type": "text",
+    "owner": "agentic-memory",
+    "text": " Agentic Memory",
+    "font": "Times New Roman",
+    "fontSize": 23.74169158935547,
+    "bbox": [
+      365.2597,
+      482.03534373779297,
+      174.5986,
+      29.677114486694336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 104,
+    "name": "icon-59-refined-bottom",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      323.17713399999997,
+      504.328691,
+      37.104232000000025,
+      14.335725999999966
+    ]
+  },
+  {
+    "id": 105,
+    "name": "icon-59-refined-bottom-top",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      323.17713399999997,
+      500.112301,
+      37.104232000000025,
+      8.43277999999998
+    ]
+  },
+  {
+    "id": 106,
+    "name": "icon-59-refined-middle",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      323.17713399999997,
+      492.944438,
+      37.104232000000025,
+      13.914086999999995
+    ]
+  },
+  {
+    "id": 107,
+    "name": "icon-59-refined-middle-top",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      323.17713399999997,
+      488.728048,
+      37.104232000000025,
+      8.43277999999998
+    ]
+  },
+  {
+    "id": 108,
+    "name": "icon-59-refined-top",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      323.17713399999997,
+      480.716907,
+      37.104232000000025,
+      14.335725999999966
+    ]
+  },
+  {
+    "id": 109,
+    "name": "icon-59-refined-top-face",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      323.17713399999997,
+      476.078878,
+      37.104232000000025,
+      9.276057999999978
+    ]
+  },
+  {
+    "id": 110,
+    "name": "icon-59-refined-top-glint",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      328.23680199999995,
+      477.76543399999997,
+      11.384253000000001,
+      2.529833999999994
+    ]
+  },
+  {
+    "id": 111,
+    "name": "icon-59-refined-slot-0",
+    "type": "line-decoration",
+    "owner": "icon-59",
+    "bbox": [
+      341.30761099999995,
+      488.728048,
+      8.854419000000007,
+      0.843277999999998
+    ]
+  },
+  {
+    "id": 112,
+    "name": "icon-59-refined-status-0",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      353.53514199999995,
+      487.29447539999995,
+      1.686555999999996,
+      1.1805892000000426
+    ]
+  },
+  {
+    "id": 113,
+    "name": "icon-59-refined-slot-1",
+    "type": "line-decoration",
+    "owner": "icon-59",
+    "bbox": [
+      341.30761099999995,
+      500.53394,
+      8.854419000000007,
+      0.843277999999998
+    ]
+  },
+  {
+    "id": 114,
+    "name": "icon-59-refined-status-1",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      353.53514199999995,
+      499.1003674,
+      1.686555999999996,
+      1.1805891999999858
+    ]
+  },
+  {
+    "id": 115,
+    "name": "icon-59-refined-slot-2",
+    "type": "line-decoration",
+    "owner": "icon-59",
+    "bbox": [
+      341.30761099999995,
+      512.339832,
+      8.854419000000007,
+      0.8432779999999411
+    ]
+  },
+  {
+    "id": 116,
+    "name": "icon-59-refined-status-2",
+    "type": "shape",
+    "owner": "icon-59",
+    "bbox": [
+      353.53514199999995,
+      510.90625939999995,
+      1.686555999999996,
+      1.1805891999999858
+    ]
+  },
+  {
+    "id": 257,
+    "name": "icon-59",
+    "type": "group",
+    "owner": "agentic-memory"
+  },
+  {
+    "id": 232,
+    "name": "port-8-agentic-memory",
+    "type": "port-helper",
+    "owner": "agentic-memory",
+    "point": [
+      423,
+      465
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 233,
+    "name": "port-9-agentic-memory",
+    "type": "port-helper",
+    "owner": "agentic-memory",
+    "point": [
+      459,
+      465
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 258,
+    "name": "agentic-memory",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 119,
+    "name": "path-108",
+    "type": "shape",
+    "owner": "llm-answer",
+    "bbox": [
+      49.649,
+      589.8987,
+      231.6225,
+      156.822
+    ]
+  },
+  {
+    "id": 120,
+    "name": "path-109",
+    "type": "shape",
+    "owner": "llm-answer",
+    "bbox": [
+      48.9021,
+      589.0538,
+      233.21439999999998,
+      158.68060000000003
+    ]
+  },
+  {
+    "id": 121,
+    "name": "path-110",
+    "type": "shape",
+    "owner": "llm-answer",
+    "bbox": [
+      43.1602,
+      583.8915,
+      231.60389999999998,
+      156.94850000000008
+    ]
+  },
+  {
+    "id": 122,
+    "name": "path-111",
+    "type": "shape",
+    "owner": "llm-answer",
+    "bbox": [
+      42.3947,
+      583.1395,
+      233.2144,
+      158.68060000000003
+    ]
+  },
+  {
+    "id": 125,
+    "name": "text-110",
+    "type": "text",
+    "owner": "llm-answer",
+    "text": "<answer>",
+    "font": "Comic Sans MS",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      85.9949,
+      641.9665086120606,
+      81.0701,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 126,
+    "name": "text-111",
+    "type": "text",
+    "owner": "llm-answer",
+    "text": "The Raconteurs.",
+    "font": "Comic Sans MS",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      85.9949,
+      666.2996086120606,
+      153.3295,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 127,
+    "name": "text-112",
+    "type": "text",
+    "owner": "llm-answer",
+    "text": "</answer>",
+    "font": "Comic Sans MS",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      85.9949,
+      690.6327086120606,
+      91.4623,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 128,
+    "name": "icon-61-refined-antenna-left",
+    "type": "line-decoration",
+    "owner": "icon-61",
+    "bbox": [
+      93.445945,
+      592.522925,
+      6.571345000000008,
+      5.973950000000059
+    ]
+  },
+  {
+    "id": 129,
+    "name": "icon-61-refined-antenna-right",
+    "type": "line-decoration",
+    "owner": "icon-61",
+    "bbox": [
+      106.588635,
+      592.522925,
+      6.571344999999994,
+      5.973950000000059
+    ]
+  },
+  {
+    "id": 130,
+    "name": "icon-61-refined-antenna-tip-left",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      91.056365,
+      590.133345,
+      3.5843699999999927,
+      3.5843700000000354
+    ]
+  },
+  {
+    "id": 131,
+    "name": "icon-61-refined-antenna-tip-right",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      111.96519,
+      590.133345,
+      3.5843699999999927,
+      3.5843700000000354
+    ]
+  },
+  {
+    "id": 132,
+    "name": "icon-61-refined-left-arm",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      80.303255,
+      618.808305,
+      8.960925000000003,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 133,
+    "name": "icon-61-refined-right-arm",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      119.13392999999999,
+      603.87343,
+      9.558320000000009,
+      11.947900000000004
+    ]
+  },
+  {
+    "id": 134,
+    "name": "icon-61-refined-left-leg",
+    "type": "line-decoration",
+    "owner": "icon-61",
+    "bbox": [
+      100.01729,
+      627.76923,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 135,
+    "name": "icon-61-refined-right-leg",
+    "type": "line-decoration",
+    "owner": "icon-61",
+    "bbox": [
+      110.17300499999999,
+      627.76923,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 136,
+    "name": "icon-61-refined-left-foot",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      95.23813,
+      637.32755,
+      8.960924999999989,
+      4.181765000000041
+    ]
+  },
+  {
+    "id": 137,
+    "name": "icon-61-refined-right-foot",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      108.38082,
+      637.32755,
+      8.960925000000003,
+      4.181765000000041
+    ]
+  },
+  {
+    "id": 138,
+    "name": "icon-61-refined-body",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      89.861575,
+      598.496875,
+      29.27235499999999,
+      29.272354999999948
+    ]
+  },
+  {
+    "id": 139,
+    "name": "icon-61-refined-eye-left",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      94.521256,
+      604.8890015000001,
+      7.4076980000000106,
+      8.72196699999995
+    ]
+  },
+  {
+    "id": 140,
+    "name": "icon-61-refined-eye-right",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      107.663946,
+      604.8890015000001,
+      7.407697999999996,
+      8.72196699999995
+    ]
+  },
+  {
+    "id": 141,
+    "name": "icon-61-refined-iris-left",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      96.552399,
+      607.1591025,
+      3.942807000000002,
+      5.376554999999939
+    ]
+  },
+  {
+    "id": 142,
+    "name": "icon-61-refined-iris-right",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      109.09769399999999,
+      607.1591025,
+      3.942807000000002,
+      5.376554999999939
+    ]
+  },
+  {
+    "id": 143,
+    "name": "icon-61-refined-pupil-left",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      97.74718899999999,
+      608.5928505,
+      2.1506219999999985,
+      3.3454120000000103
+    ]
+  },
+  {
+    "id": 144,
+    "name": "icon-61-refined-pupil-right",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      109.695089,
+      608.5928505,
+      2.1506219999999985,
+      3.3454120000000103
+    ]
+  },
+  {
+    "id": 145,
+    "name": "icon-61-refined-glint-left",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      96.9705755,
+      607.577279,
+      1.6727060000000051,
+      2.1506219999999985
+    ]
+  },
+  {
+    "id": 146,
+    "name": "icon-61-refined-glint-right",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      109.0379545,
+      607.577279,
+      1.672705999999991,
+      2.1506219999999985
+    ]
+  },
+  {
+    "id": 147,
+    "name": "icon-61-refined-smile",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      98.82249999999999,
+      618.808305,
+      11.947900000000004,
+      4.181765000000041
+    ]
+  },
+  {
+    "id": 148,
+    "name": "icon-61-refined-bulb",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      122.7183,
+      582.36721,
+      11.947900000000004,
+      17.921850000000063
+    ]
+  },
+  {
+    "id": 149,
+    "name": "icon-61-refined-bulb-glint",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      129.2299055,
+      587.504807,
+      2.5090589999999793,
+      2.86749599999996
+    ]
+  },
+  {
+    "id": 150,
+    "name": "icon-61-refined-bulb-neck",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      126.30266999999999,
+      599.6916650000001,
+      4.7791600000000045,
+      4.7791599999999335
+    ]
+  },
+  {
+    "id": 151,
+    "name": "icon-61-refined-raised-hand",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      125.10788,
+      603.276035,
+      7.168740000000014,
+      7.168740000000071
+    ]
+  },
+  {
+    "id": 152,
+    "name": "icon-61-refined-bulb-base",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      126.30266999999999,
+      600.2890600000001,
+      4.7791600000000045,
+      4.181764999999928
+    ]
+  },
+  {
+    "id": 153,
+    "name": "icon-61-refined-bag-handle",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      77.31627999999999,
+      624.782255,
+      5.37655500000001,
+      5.973950000000059
+    ]
+  },
+  {
+    "id": 154,
+    "name": "icon-61-refined-bag",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      74.9267,
+      630.15881,
+      11.350504999999998,
+      11.947900000000004
+    ]
+  },
+  {
+    "id": 155,
+    "name": "icon-61-refined-bag-seam",
+    "type": "line-decoration",
+    "owner": "icon-61",
+    "bbox": [
+      79.108465,
+      630.756205,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 156,
+    "name": "icon-61-refined-bag-clasp",
+    "type": "shape",
+    "owner": "icon-61",
+    "bbox": [
+      82.2746585,
+      633.145785,
+      2.031143,
+      2.38957999999991
+    ]
+  },
+  {
+    "id": 259,
+    "name": "icon-61",
+    "type": "group",
+    "owner": "llm-answer"
+  },
+  {
+    "id": 224,
+    "name": "label-block:llm-answer",
+    "type": "text-block",
+    "owner": "llm-answer",
+    "sourceTextIds": [
+      "text-108",
+      "text-109"
+    ],
+    "text": "LLM \nAnswer",
+    "bbox": [
+      130,
+      587,
+      119,
+      57
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 236,
+    "name": "port-12-llm-answer",
+    "type": "port-helper",
+    "owner": "llm-answer",
+    "point": [
+      166,
+      584
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 237,
+    "name": "port-13-llm-answer",
+    "type": "port-helper",
+    "owner": "llm-answer",
+    "point": [
+      43,
+      654
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 260,
+    "name": "llm-answer",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 161,
+    "name": "path-114",
+    "type": "shape",
+    "owner": "construction",
+    "bbox": [
+      309.155,
+      554.2861,
+      271.4073000000001,
+      204.19549999999992
+    ]
+  },
+  {
+    "id": 162,
+    "name": "path-115",
+    "type": "shape",
+    "owner": "construction",
+    "bbox": [
+      307.254,
+      552.424,
+      275.20939999999996,
+      207.9502
+    ]
+  },
+  {
+    "id": 163,
+    "name": "text-117",
+    "type": "text",
+    "owner": "construction",
+    "text": "Long-term",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      479.4158,
+      707.7910086120606,
+      93.5237,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 164,
+    "name": "text-118",
+    "type": "text",
+    "owner": "construction",
+    "text": "Memory",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      488.9632,
+      727.2237086120606,
+      74.4358,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 165,
+    "name": "text-119",
+    "type": "text",
+    "owner": "construction",
+    "text": "Agentic",
+    "font": "Times New Roman",
+    "fontSize": 23.74169158935547,
+    "bbox": [
+      411.0549,
+      622.978243737793,
+      75.0037,
+      29.677114486694336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 166,
+    "name": "text-120",
+    "type": "text",
+    "owner": "construction",
+    "text": "construction",
+    "font": "Times New Roman",
+    "fontSize": 23.74169158935547,
+    "bbox": [
+      387.3978,
+      645.621543737793,
+      122.3651,
+      29.677114486694336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 204,
+    "name": "text-121",
+    "type": "text",
+    "owner": "construction",
+    "text": "Short-term",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      319.3765,
+      707.6220086120605,
+      96.9034,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 205,
+    "name": "text-122",
+    "type": "text",
+    "owner": "construction",
+    "text": "Memory",
+    "font": "Times New Roman",
+    "fontSize": 20.277599334716797,
+    "bbox": [
+      330.6137,
+      727.0548086120606,
+      74.4355,
+      25.346999168395996
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 219,
+    "name": "icon-65-refined-check",
+    "type": "shape",
+    "owner": "icon-65",
+    "bbox": [
+      431.551024,
+      679.02344,
+      25.138120000000015,
+      23.701655999999957
+    ]
+  },
+  {
+    "id": 261,
+    "name": "icon-65",
+    "type": "group",
+    "owner": "construction"
+  },
+  {
+    "id": 167,
+    "name": "icon-62-refined-antenna-left",
+    "type": "line-decoration",
+    "owner": "icon-62",
+    "bbox": [
+      435.916045,
+      569.793325,
+      6.571345000000008,
+      5.973950000000059
+    ]
+  },
+  {
+    "id": 168,
+    "name": "icon-62-refined-antenna-right",
+    "type": "line-decoration",
+    "owner": "icon-62",
+    "bbox": [
+      449.05873499999996,
+      569.793325,
+      6.571345000000008,
+      5.973950000000059
+    ]
+  },
+  {
+    "id": 169,
+    "name": "icon-62-refined-antenna-tip-left",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      433.526465,
+      567.403745,
+      3.5843700000000354,
+      3.5843700000000354
+    ]
+  },
+  {
+    "id": 170,
+    "name": "icon-62-refined-antenna-tip-right",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      454.43529,
+      567.403745,
+      3.5843699999999785,
+      3.5843700000000354
+    ]
+  },
+  {
+    "id": 171,
+    "name": "icon-62-refined-left-arm",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      422.773355,
+      596.078705,
+      8.960925000000032,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 172,
+    "name": "icon-62-refined-right-arm",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      461.60402999999997,
+      581.14383,
+      9.558320000000037,
+      11.947900000000004
+    ]
+  },
+  {
+    "id": 173,
+    "name": "icon-62-refined-left-leg",
+    "type": "line-decoration",
+    "owner": "icon-62",
+    "bbox": [
+      442.48739,
+      605.03963,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 174,
+    "name": "icon-62-refined-right-leg",
+    "type": "line-decoration",
+    "owner": "icon-62",
+    "bbox": [
+      452.643105,
+      605.03963,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 175,
+    "name": "icon-62-refined-left-foot",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      437.70822999999996,
+      614.59795,
+      8.960925000000032,
+      4.181765000000041
+    ]
+  },
+  {
+    "id": 176,
+    "name": "icon-62-refined-right-foot",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      450.85092,
+      614.59795,
+      8.960925000000032,
+      4.181765000000041
+    ]
+  },
+  {
+    "id": 177,
+    "name": "icon-62-refined-body",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      432.33167499999996,
+      575.767275,
+      29.272355000000005,
+      29.272354999999948
+    ]
+  },
+  {
+    "id": 178,
+    "name": "icon-62-refined-eye-left",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      436.991356,
+      582.1594015000001,
+      7.407697999999982,
+      8.72196699999995
+    ]
+  },
+  {
+    "id": 179,
+    "name": "icon-62-refined-eye-right",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      450.134046,
+      582.1594015000001,
+      7.407697999999982,
+      8.72196699999995
+    ]
+  },
+  {
+    "id": 180,
+    "name": "icon-62-refined-iris-left",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      439.022499,
+      584.4295025,
+      3.942807000000016,
+      5.376554999999939
+    ]
+  },
+  {
+    "id": 181,
+    "name": "icon-62-refined-iris-right",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      451.567794,
+      584.4295025,
+      3.9428069999999593,
+      5.376554999999939
+    ]
+  },
+  {
+    "id": 182,
+    "name": "icon-62-refined-pupil-left",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      440.217289,
+      585.8632505,
+      2.1506219999999985,
+      3.3454120000000103
+    ]
+  },
+  {
+    "id": 183,
+    "name": "icon-62-refined-pupil-right",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      452.165189,
+      585.8632505,
+      2.1506219999999985,
+      3.3454120000000103
+    ]
+  },
+  {
+    "id": 184,
+    "name": "icon-62-refined-glint-left",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      439.4406755,
+      584.847679,
+      1.6727060000000051,
+      2.1506219999999985
+    ]
+  },
+  {
+    "id": 185,
+    "name": "icon-62-refined-glint-right",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      451.50805449999996,
+      584.847679,
+      1.6727060000000051,
+      2.1506219999999985
+    ]
+  },
+  {
+    "id": 186,
+    "name": "icon-62-refined-smile",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      441.2926,
+      596.078705,
+      11.947900000000004,
+      4.181765000000041
+    ]
+  },
+  {
+    "id": 187,
+    "name": "icon-62-refined-bulb",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      465.1884,
+      559.63761,
+      11.947900000000004,
+      17.921850000000063
+    ]
+  },
+  {
+    "id": 188,
+    "name": "icon-62-refined-bulb-glint",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      471.7000055,
+      564.775207,
+      2.5090589999999793,
+      2.86749599999996
+    ]
+  },
+  {
+    "id": 189,
+    "name": "icon-62-refined-bulb-neck",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      468.77277,
+      576.962065,
+      4.77915999999999,
+      4.7791599999999335
+    ]
+  },
+  {
+    "id": 190,
+    "name": "icon-62-refined-raised-hand",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      467.57797999999997,
+      580.546435,
+      7.168740000000014,
+      7.168740000000071
+    ]
+  },
+  {
+    "id": 191,
+    "name": "icon-62-refined-bulb-base",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      468.77277,
+      577.5594600000001,
+      4.77915999999999,
+      4.181764999999928
+    ]
+  },
+  {
+    "id": 192,
+    "name": "icon-62-refined-bag-handle",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      419.78638,
+      602.052655,
+      5.376554999999996,
+      5.973950000000059
+    ]
+  },
+  {
+    "id": 193,
+    "name": "icon-62-refined-bag",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      417.3968,
+      607.42921,
+      11.350504999999998,
+      11.947900000000004
+    ]
+  },
+  {
+    "id": 194,
+    "name": "icon-62-refined-bag-seam",
+    "type": "line-decoration",
+    "owner": "icon-62",
+    "bbox": [
+      421.57856499999997,
+      608.026605,
+      0.01,
+      10.753109999999992
+    ]
+  },
+  {
+    "id": 195,
+    "name": "icon-62-refined-bag-clasp",
+    "type": "shape",
+    "owner": "icon-62",
+    "bbox": [
+      424.7447585,
+      610.416185,
+      2.031142999999986,
+      2.3895800000000236
+    ]
+  },
+  {
+    "id": 262,
+    "name": "icon-62",
+    "type": "group",
+    "owner": "construction-agent"
+  },
+  {
+    "id": 239,
+    "name": "port-15-construction-agent",
+    "type": "port-helper",
+    "owner": "construction-agent",
+    "point": [
+      417,
+      605.8
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 241,
+    "name": "port-17-construction-agent",
+    "type": "port-helper",
+    "owner": "construction-agent",
+    "point": [
+      478,
+      605.8
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 263,
+    "name": "construction-agent",
+    "type": "group",
+    "owner": "construction"
+  },
+  {
+    "id": 196,
+    "name": "icon-63-refined-tile",
+    "type": "shape",
+    "owner": "icon-63",
+    "bbox": [
+      341.243618,
+      666.265021,
+      41.69896399999999,
+      41.699058000000036
+    ]
+  },
+  {
+    "id": 197,
+    "name": "icon-63-refined-sheet",
+    "type": "shape",
+    "owner": "icon-63",
+    "bbox": [
+      349.228526,
+      670.701091,
+      27.947178000000008,
+      28.834455000000048
+    ]
+  },
+  {
+    "id": 198,
+    "name": "icon-63-refined-fold",
+    "type": "shape",
+    "owner": "icon-63",
+    "bbox": [
+      368.303584,
+      670.701091,
+      8.872119999999995,
+      9.315746999999988
+    ]
+  },
+  {
+    "id": 199,
+    "name": "icon-63-refined-text-rule-0",
+    "type": "line-decoration",
+    "owner": "icon-63",
+    "bbox": [
+      354.10819200000003,
+      683.565694,
+      16.857027999999957,
+      0.01
+    ]
+  },
+  {
+    "id": 200,
+    "name": "icon-63-refined-text-rule-1",
+    "type": "line-decoration",
+    "owner": "icon-63",
+    "bbox": [
+      354.10819200000003,
+      688.445371,
+      16.857027999999957,
+      0.01
+    ]
+  },
+  {
+    "id": 201,
+    "name": "icon-63-refined-text-rule-2",
+    "type": "line-decoration",
+    "owner": "icon-63",
+    "bbox": [
+      354.10819200000003,
+      693.325048,
+      16.857027999999957,
+      0.01
+    ]
+  },
+  {
+    "id": 202,
+    "name": "icon-63-refined-tray",
+    "type": "shape",
+    "owner": "icon-63",
+    "bbox": [
+      343.461648,
+      697.761118,
+      36.81929799999995,
+      10.646568000000002
+    ]
+  },
+  {
+    "id": 203,
+    "name": "icon-63-refined-tray-label",
+    "type": "shape",
+    "owner": "icon-63",
+    "bbox": [
+      356.32622200000003,
+      703.0844020000001,
+      12.42096799999996,
+      3.105248999999958
+    ]
+  },
+  {
+    "id": 264,
+    "name": "icon-63",
+    "type": "group",
+    "owner": "stm-instance"
+  },
+  {
+    "id": 240,
+    "name": "port-16-stm-instance",
+    "type": "port-helper",
+    "owner": "stm-instance",
+    "point": [
+      366,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 243,
+    "name": "port-19-stm-instance",
+    "type": "port-helper",
+    "owner": "stm-instance",
+    "point": [
+      380,
+      689.94
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 265,
+    "name": "stm-instance",
+    "type": "group",
+    "owner": "construction"
+  },
+  {
+    "id": 206,
+    "name": "icon-64-refined-bottom",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      507.720234,
+      694.2807909999999,
+      37.104232000000025,
+      14.335726000000022
+    ]
+  },
+  {
+    "id": 207,
+    "name": "icon-64-refined-bottom-top",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      507.720234,
+      690.064401,
+      37.104232000000025,
+      8.43277999999998
+    ]
+  },
+  {
+    "id": 208,
+    "name": "icon-64-refined-middle",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      507.720234,
+      682.896538,
+      37.104232000000025,
+      13.914086999999995
+    ]
+  },
+  {
+    "id": 209,
+    "name": "icon-64-refined-middle-top",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      507.720234,
+      678.6801479999999,
+      37.104232000000025,
+      8.43277999999998
+    ]
+  },
+  {
+    "id": 210,
+    "name": "icon-64-refined-top",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      507.720234,
+      670.669007,
+      37.104232000000025,
+      14.335726000000022
+    ]
+  },
+  {
+    "id": 211,
+    "name": "icon-64-refined-top-face",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      507.720234,
+      666.030978,
+      37.104232000000025,
+      9.27605799999992
+    ]
+  },
+  {
+    "id": 212,
+    "name": "icon-64-refined-top-glint",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      512.779902,
+      667.717534,
+      11.384253000000058,
+      2.529833999999937
+    ]
+  },
+  {
+    "id": 213,
+    "name": "icon-64-refined-slot-0",
+    "type": "line-decoration",
+    "owner": "icon-64",
+    "bbox": [
+      525.850711,
+      678.6801479999999,
+      8.854419000000007,
+      0.8432780000000548
+    ]
+  },
+  {
+    "id": 214,
+    "name": "icon-64-refined-status-0",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      538.078242,
+      677.2465754,
+      1.686555999999996,
+      1.1805891999999858
+    ]
+  },
+  {
+    "id": 215,
+    "name": "icon-64-refined-slot-1",
+    "type": "line-decoration",
+    "owner": "icon-64",
+    "bbox": [
+      525.850711,
+      690.48604,
+      8.854419000000007,
+      0.8432779999999411
+    ]
+  },
+  {
+    "id": 216,
+    "name": "icon-64-refined-status-1",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      538.078242,
+      689.0524674,
+      1.686555999999996,
+      1.1805891999999858
+    ]
+  },
+  {
+    "id": 217,
+    "name": "icon-64-refined-slot-2",
+    "type": "line-decoration",
+    "owner": "icon-64",
+    "bbox": [
+      525.850711,
+      702.291932,
+      8.854419000000007,
+      0.8432779999999411
+    ]
+  },
+  {
+    "id": 218,
+    "name": "icon-64-refined-status-2",
+    "type": "shape",
+    "owner": "icon-64",
+    "bbox": [
+      538.078242,
+      700.8583593999999,
+      1.686555999999996,
+      1.1805891999999858
+    ]
+  },
+  {
+    "id": 266,
+    "name": "icon-64",
+    "type": "group",
+    "owner": "ltm-instance"
+  },
+  {
+    "id": 242,
+    "name": "port-18-ltm-instance",
+    "type": "port-helper",
+    "owner": "ltm-instance",
+    "point": [
+      531,
+      665
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 244,
+    "name": "port-20-ltm-instance",
+    "type": "port-helper",
+    "owner": "ltm-instance",
+    "point": [
+      505,
+      689.94
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 267,
+    "name": "ltm-instance",
+    "type": "group",
+    "owner": "construction"
+  },
+  {
+    "id": 268,
+    "name": "construction",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 269,
+    "name": "source-context",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 270,
+    "name": "query-input",
+    "type": "connector",
+    "owner": null,
+    "edge": "query-input",
+    "fromBinding": "port-1-query",
+    "toBinding": "port-2-memory-manager",
+    "stroke": "#C9A128",
+    "width": 11,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 271,
+    "name": "session-input",
+    "type": "connector",
+    "owner": null,
+    "edge": "session-input",
+    "fromBinding": "port-3-session-content",
+    "toBinding": "port-4-memory-manager",
+    "stroke": "#C9A128",
+    "width": 11,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 272,
+    "name": "stm-operation",
+    "type": "connector",
+    "owner": null,
+    "edge": "stm-operation",
+    "fromBinding": "port-5-short-term-tools",
+    "toBinding": "port-6-agentic-context",
+    "stroke": "#F5B1B7",
+    "width": 6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 273,
+    "name": "ltm-operation",
+    "type": "connector",
+    "owner": null,
+    "edge": "ltm-operation",
+    "fromBinding": "port-7-long-term-tools",
+    "toBinding": "port-8-agentic-memory",
+    "stroke": "#F1B28D",
+    "width": 6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 274,
+    "name": "memory-retrieval",
+    "type": "connector",
+    "owner": null,
+    "edge": "memory-retrieval",
+    "fromBinding": "port-9-agentic-memory",
+    "toBinding": "port-10-memory-manager",
+    "stroke": "#F5B1B7",
+    "width": 3.3,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 275,
+    "name": "context-answer",
+    "type": "connector",
+    "owner": null,
+    "edge": "context-answer",
+    "fromBinding": "port-11-agentic-context",
+    "toBinding": "port-12-llm-answer",
+    "stroke": "#F5B1B7",
+    "width": 4.6,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 276,
+    "name": "multi-round:segment:0",
+    "type": "connector",
+    "owner": "group-multi-round",
+    "edge": "multi-round",
+    "fromBinding": "port-13-llm-answer",
+    "toBinding": null,
+    "stroke": "#C1C1C1",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 277,
+    "name": "multi-round:segment:1",
+    "type": "connector",
+    "owner": "group-multi-round",
+    "edge": "multi-round",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#C1C1C1",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 278,
+    "name": "multi-round:segment:2",
+    "type": "connector",
+    "owner": "group-multi-round",
+    "edge": "multi-round",
+    "fromBinding": null,
+    "toBinding": "port-14-memory-manager",
+    "stroke": "#C1C1C1",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 279,
+    "name": "group-multi-round",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 280,
+    "name": "construct-stm",
+    "type": "connector",
+    "owner": null,
+    "edge": "construct-stm",
+    "fromBinding": "port-15-construction-agent",
+    "toBinding": "port-16-stm-instance",
+    "stroke": "#8B8B8B",
+    "width": 1.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 281,
+    "name": "construct-ltm",
+    "type": "connector",
+    "owner": null,
+    "edge": "construct-ltm",
+    "fromBinding": "port-17-construction-agent",
+    "toBinding": "port-18-ltm-instance",
+    "stroke": "#8B8B8B",
+    "width": 1.8,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 282,
+    "name": "memory-coordination",
+    "type": "connector",
+    "owner": null,
+    "edge": "memory-coordination",
+    "fromBinding": "port-19-stm-instance",
+    "toBinding": "port-20-ltm-instance",
+    "stroke": "#679A3A",
+    "width": 2,
+    "dashed": true,
+    "startArrow": "triangle",
+    "endArrow": "triangle"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "round": 2,
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae",
+  "promptPath": "prompt-v2.txt",
+  "promptSHA256": "8f2d850e1bbd4874472a528cb16e7b1926d464d2761267a6be676280bbab05d8",
+  "inputImages": [
+    {
+      "path": "candidate-v1.png",
+      "sha256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae",
+      "role": "edit target, actual referenced_image_paths attachment"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-v2.png",
+    "sha256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132"
+  },
+  "specSHA256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+  "briefSHA256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e",
+  "defect": "flat-native visual modality",
+  "invariants": [
+    "text",
+    "topology",
+    "arrow routes/directions",
+    "semantic color ownership",
+    "relative hierarchy",
+    "no title/footer"
+  ],
+  "decision": "unreviewed",
+  "nativeDeliveryReady": false
+}

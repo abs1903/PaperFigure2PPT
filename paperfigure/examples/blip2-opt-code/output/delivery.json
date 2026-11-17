@@ -1,0 +1,15 @@
+{
+  "deliveryReady": false,
+  "visualAcceptance": "needs-revision",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/blip2_independent_audit"
+  },
+  "reasons": [
+    "Independent reviewer has not accepted this candidate",
+    "Unpassed review criterion: referenceComparison",
+    "Unpassed review criterion: semanticFidelity",
+    "Unpassed review criterion: officeRender"
+  ],
+  "scope": "Reference reconstruction review; not a venue-quality certification or a human user approval"
+}

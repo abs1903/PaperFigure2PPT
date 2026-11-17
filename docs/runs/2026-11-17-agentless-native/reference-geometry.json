@@ -1,0 +1,242 @@
+{
+  "version": "1.0",
+  "reference": "../2026-11-17-agentless-contribution/selected-reference.png",
+  "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+  "basis": "Manual full-resolution target pixel registration, crosschecked against independently authored reference-inspection.md. Frozen before final authoring revision; not recomputed from the SVG. Main visible shapes are anchors; associated text is independently inventoried and typography-bound.",
+  "regions": [
+    {
+      "module": "control-brace",
+      "box": [
+        126,
+        55,
+        1470,
+        33
+      ]
+    },
+    {
+      "module": "fixed-control",
+      "box": [
+        334,
+        8,
+        637,
+        68
+      ]
+    },
+    {
+      "module": "no-autonomy",
+      "box": [
+        1003,
+        14,
+        421,
+        52
+      ]
+    },
+    {
+      "module": "funnel",
+      "box": [
+        94,
+        116,
+        806,
+        839
+      ]
+    },
+    {
+      "module": "repair-panel",
+      "box": [
+        914,
+        141,
+        718,
+        587
+      ]
+    },
+    {
+      "module": "selection-panel",
+      "box": [
+        906,
+        774,
+        731,
+        174
+      ]
+    },
+    {
+      "module": "issue-left",
+      "box": [
+        6,
+        572,
+        131,
+        88
+      ]
+    },
+    {
+      "module": "repo-icon",
+      "box": [
+        238,
+        299,
+        132,
+        74
+      ]
+    },
+    {
+      "module": "tree",
+      "box": [
+        646,
+        316,
+        118,
+        33
+      ]
+    },
+    {
+      "module": "llm-files",
+      "box": [
+        177,
+        443,
+        82,
+        42
+      ]
+    },
+    {
+      "module": "selected-files",
+      "box": [
+        275,
+        459,
+        162,
+        50
+      ]
+    },
+    {
+      "module": "skeleton",
+      "box": [
+        582,
+        449,
+        213,
+        86
+      ]
+    },
+    {
+      "module": "llm-elements",
+      "box": [
+        212,
+        597,
+        80,
+        42
+      ]
+    },
+    {
+      "module": "selected-element",
+      "box": [
+        303,
+        619,
+        155,
+        42
+      ]
+    },
+    {
+      "module": "selected-code",
+      "box": [
+        584,
+        612,
+        195,
+        81
+      ]
+    },
+    {
+      "module": "llm-locations",
+      "box": [
+        238,
+        720,
+        81,
+        42
+      ]
+    },
+    {
+      "module": "left-context",
+      "box": [
+        413,
+        833,
+        251,
+        111
+      ]
+    },
+    {
+      "module": "right-context",
+      "box": [
+        945,
+        307,
+        245,
+        180
+      ]
+    },
+    {
+      "module": "search",
+      "box": [
+        1298,
+        242,
+        314,
+        96
+      ]
+    },
+    {
+      "module": "replace",
+      "box": [
+        1298,
+        350,
+        314,
+        96
+      ]
+    },
+    {
+      "module": "issue-right",
+      "box": [
+        887,
+        586,
+        97,
+        66
+      ]
+    },
+    {
+      "module": "llm-repair",
+      "box": [
+        1035,
+        596,
+        101,
+        49
+      ]
+    },
+    {
+      "module": "candidates",
+      "box": [
+        1318,
+        582,
+        221,
+        121
+      ]
+    },
+    {
+      "module": "syntax",
+      "box": [
+        926,
+        824,
+        170,
+        78
+      ]
+    },
+    {
+      "module": "normalize",
+      "box": [
+        1164,
+        824,
+        188,
+        78
+      ]
+    },
+    {
+      "module": "selected-patch",
+      "box": [
+        1415,
+        790,
+        208,
+        141
+      ]
+    }
+  ]
+}

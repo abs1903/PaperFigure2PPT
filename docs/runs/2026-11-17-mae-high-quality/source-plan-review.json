@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "review_type": "source-plan abstraction review before generation",
+  "decision": "accept_for_candidate_generation",
+  "semantic_abstraction": "accepted",
+  "compiler_binding": {
+    "status": "verified",
+    "semantic_snapshot_sha256": "78d2903cdc6e471d931efe6614098d735e18f651265e85c0ef144c92bf351116",
+    "parsed_narrative_sha256": "7ec165808468308cea93040ec0e2166f23e0a2a28a65401cf31540b5a695b1ad",
+    "scope": "digest(semanticSnapshot(spec)) and digest(parsedPlan), not raw-file SHA-256"
+  },
+  "accepted_mappings": [
+    {"id": "teaching-count", "claim": "4x4 teaching grid gives 16 image-patch tokens; 75% means 4 visible and 12 removed.", "evidence": ["source/method-prose.txt:77-89", "source/models_mae.py:123-148"]},
+    {"id": "visible-only-encoder", "claim": "Only visible patch tokens enter encoder; removed patches and mask tokens do not.", "evidence": ["source/method-prose.txt:91-100", "source/models_mae.py:150-170"]},
+    {"id": "post-encoder-restore", "claim": "Shared learned mask-token copies join encoded visible tokens after encoder and restored order uses position indices.", "evidence": ["source/method-prose.txt:101-112", "source/method-prose.txt:140-155", "source/models_mae.py:172-184"]},
+    {"id": "full-pred-masked-loss", "claim": "Pinned implementation predicts all patch positions before MSE reduction selects removed positions only.", "evidence": ["source/method-prose.txt:124-139", "source/models_mae.py:190-214"]},
+    {"id": "safe-omissions", "claim": "Class token, positional/projection internals, and normalized-target option are omitted.", "evidence": ["source/models_mae.py:150-194", "source/models_mae.py:204-209", "source-audit.md"]}
+  ],
+  "render_requirements": [
+    "Show four visible tokens entering encoder and a restored 16-slot decoder sequence with four visible plus twelve shared-mask-token copies.",
+    "Keep restore indices distinct from binary loss mask.",
+    "Show all-position predictions separately from the masked-only MSE selector.",
+    "Keep original target out of encoder and decoder data input.",
+    "Do not add scores, execution claims, guaranteed output quality, or a downstream decoder branch."
+  ],
+  "unverified": [
+    "generated-image semantic preservation and originality",
+    "seven-inch render legibility",
+    "native/Office editability and export parity"
+  ],
+  "raw_input_hashes": {
+    "spec.json": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+    "narrative-plan.json": "eeb7d7e8d2e0c66065fbba1d93d317b815a57109dabfd9f672c039c67bb5dcc1",
+    "brief-sparse-full-columns.json": "1950694cfee8776bbbdc1e197a5eaa566fb3e5b5496adbcf274343c3c62777a7",
+    "brief-horizontal-bottleneck.json": "6248f339c8ec25c09c37af1ccca7728ba0cd280f2efee40a828639acf2746c81",
+    "prompt-sparse-full-columns.txt": "de8d6b06a5739f6231af650d3b7a21f37f795207e8d76de76f20ba89a7482c2c",
+    "prompt-horizontal-bottleneck.txt": "4e7deb05c2f1d5f19968c13c894238e4ff5814ee6102b2aa9553342596e3c516",
+    "source/method-prose.txt": "f0630fbd77dd51ff4781138acad681d772edfc3a174641f3c085c0647a8974c7",
+    "source-audit.md": "d1f1a4b2fe518c0cc3d30cee55199bcf50944aea75999fb0774415fda02dc421"
+  },
+  "correction": "Earlier raw-file digest comparison was not applicable to the compiler binding and is superseded by this scope-aware verification."
+}

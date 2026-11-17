@@ -1,0 +1,23 @@
+{
+  "method": "Dark pixel support within fixed native-resolution line2 crop [590,456,318,25], BGR min<90 max<220; diagnostic, not acceptance score",
+  "bounds": {
+    "reference.png": [
+      608,
+      463,
+      893,
+      479
+    ],
+    "output-v10/figure.png": [
+      609,
+      462,
+      893,
+      477
+    ],
+    "output-v10/pptx-render/figure.png": [
+      609,
+      464,
+      894,
+      479
+    ]
+  }
+}

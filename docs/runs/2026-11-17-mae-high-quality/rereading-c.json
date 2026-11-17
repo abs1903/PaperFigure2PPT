@@ -1,0 +1,40 @@
+{
+  "reader_identity": "/root/image_first_read_02",
+  "isolation": {
+    "fork_turns": "none",
+    "scope": "Candidate C pixels and its supplied paper-width diagnostic; comparison uses only the reader's already-completed own B reading",
+    "not_consulted": ["other directories", "source", "prompts", "factual reviews", "web/search", "metadata beyond dimensions and hashes"]
+  },
+  "inputs": [
+    {
+      "path": "candidate-c.png",
+      "dimensions_px": [1774, 887],
+      "sha256": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766"
+    },
+    {
+      "path": "candidate-c-paper-width.png",
+      "dimensions_px": [672, 336],
+      "sha256": "a7ebe892df3a8e3bbd02be19fb1b01953866c830b149686267e0a090a48ad0a0",
+      "diagnostic": "stated intended paper width: 7 inches"
+    }
+  ],
+  "apparent_claim": "Masked image patches are encoded from visible positions, restored into a full order with learned mask tokens, decoded to pixels, and evaluated with an objective labelled Masked-patch MSE.",
+  "visible_support": ["Mask 75%", "four blue visible cells from a 4x4 grid", "Learned mask tokens x12", "Restore order", "Restore indices", "Binary mask", "Masked positions only", "Masked-patch MSE"],
+  "primary_regions": ["upper end-to-end forward pipeline", "lower-right dashed objective panel"],
+  "count_and_route_ambiguities": [
+    "The x12 glyph does not reveal whether it denotes copies of one learned token or twelve distinct tokens.",
+    "The loss-selection grid contains four white outlined cells and twelve yellow cells, but lacks a color legend saying which cells are included in loss.",
+    "Restore-index and binary-mask data formats and exact source semantics are unstated.",
+    "Loss normalization and aggregation are unstated."
+  ],
+  "paper_width_legibility": {
+    "readable": ["main upper labels", "Masked-patch MSE"],
+    "less_clear": ["compact lower-panel labels", "outlined-cell selection pattern", "thin dashed route endpoints"]
+  },
+  "comparison_with_own_prior_b_reading": {
+    "shared": "same scanable forward pipeline and compact lower-right objective construction",
+    "visible_c_distinction": "C's Masked-patch MSE label connects the loss more explicitly to masked selection",
+    "boundary": "communicability only; no claim about method differences, novelty, or correctness"
+  },
+  "limitations": "Pixel-only interpretation cannot establish omitted operations, factual correctness, implementation, provenance, novelty, or empirical performance."
+}

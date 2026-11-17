@@ -1,0 +1,59 @@
+
+> paperfigure-skill@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ vlm: complete exports, valid graph, native editability, zero layout errors (1130.785542ms)
+✔ tool-memory-agent: complete exports, valid graph, native editability, zero layout errors (58.21575ms)
+✔ physical-vln: complete exports, valid graph, native editability, zero layout errors (59.555958ms)
+✔ default is caption-free and footer-free, with metadata title retained (1.6205ms)
+✔ headings and legend are explicit opt-ins (1.494625ms)
+✔ global typography and per-node font override change native text (8.211417ms)
+✔ duplicate node id is rejected (0.33ms)
+✔ missing endpoint is rejected (0.154292ms)
+✔ fabricated evidence quote is rejected (0.115708ms)
+✔ wrong evidence source is rejected (0.124208ms)
+✔ phase mismatch is rejected (0.095917ms)
+✔ unmarked cycle is rejected (0.1115ms)
+✔ unjustified novelty highlighting is rejected (0.074334ms)
+✔ unknown layout node is rejected (0.087834ms)
+✔ group parent cycle is rejected (0.083541ms)
+✔ schema rejects unknown fields and invalid glyphs (0.07175ms)
+✔ node overlaps are detected (0.94175ms)
+✔ text overflow is detected without reducing fonts (1.1295ms)
+✔ edge through a module is detected (0.651792ms)
+✔ final publication size has an independent readability gate (0.724208ms)
+✔ crossing detector distinguishes crossing from shared endpoint (0.024666ms)
+✔ independent raster route metric catches displaced thin arrows (0.29175ms)
+✔ two routes sharing a segment are reported (0.809583ms)
+✔ automatic layout routes an unseen linear graph (0.38225ms)
+✔ SVG and PPTX are byte-reproducible for identical input (16.638292ms)
+✔ appearance candidates preserve the entire semantic graph (1.623542ms)
+✔ output source and existing user files are preserved (2.197625ms)
+✔ tampered SVG label is detected from actual output (9.993667ms)
+✔ missing native PPTX connector is detected (11.051209ms)
+✔ connector geometry corruption is detected (10.521958ms)
+✔ isolated skill installation refuses a second installation (502.430625ms)
+✔ CLI executes through a symlinked installation path (126.209583ms)
+✔ renderer can be imported by a stdin-driven generation script (119.140166ms)
+✔ installer rejects a recursive destination before making changes (59.456667ms)
+✔ mechanical success cannot imply visual acceptance (0.482625ms)
+✔ a rejected or stale review cannot approve delivery (9.388625ms)
+✔ reference-driven VLM preserves source semantics and native structure (748.453ms)
+✔ illustrations cannot escape asset roots or cover other modules (1.104583ms)
+✔ paper-grounded native reconstruction retains gradients, math and a cropped independent input (785.999541ms)
+✔ a corrupted native gradient is rejected (436.72125ms)
+✔ PDF math keeps embedded fonts and the Greek phi glyph (555.870708ms)
+✔ PDF downward arrowhead follows the final edge direction (1013.359792ms)
+✔ react-hotpotqa: pinned code, solid semantic colors, entirely native exports (287.88925ms)
+✔ reflexion-hotpotqa: pinned code, solid semantic colors, entirely native exports (272.209292ms)
+✔ voyager-agent: pinned code, solid semantic colors, entirely native exports (304.449375ms)
+✔ BLIP-2 solid revision preserves scientific graph and removes all gradients (593.21925ms)
+✔ Voyager refinement: large group labels, source examples and native solid exports (514.777458ms)
+ℹ tests 47
+ℹ suites 0
+ℹ pass 47
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7923.204708

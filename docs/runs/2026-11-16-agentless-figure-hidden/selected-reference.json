@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "path": "selected-reference.png",
+  "sha256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91",
+  "sizePx": [
+    1816,
+    866
+  ],
+  "reviewPath": "image-review-v3.json",
+  "reviewSHA256": "4c0bf8df70e160770cbfcc338fde3ccd77a8c4e6b73a1d9d0fd268050a1612b7",
+  "specPath": "spec.json",
+  "specSHA256": "91fc27a5e30c34d6a31172a17f2298e427686af4c57e065f0b298a9bf3af146f",
+  "semanticFreezePath": "semantic-freeze.json",
+  "semanticFreezeSHA256": "6770722469aec8e41607ba70037280d7128748a07f0d48bbfbb1ac424b7412a9",
+  "authorFiguresOpened": false,
+  "authorFigureCompared": false,
+  "nativeOrOfficeAccepted": false,
+  "notes": "Freeze exact accepted PNG; do not substitute a generic build. Parent width1817px vs selected1816px is retained in actual metadata, not silently resampled."
+}

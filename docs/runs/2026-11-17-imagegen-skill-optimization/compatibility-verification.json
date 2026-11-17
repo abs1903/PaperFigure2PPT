@@ -1,0 +1,36 @@
+{
+  "legacyPromptHashesUnchanged": [
+    {
+      "id": "lats",
+      "spec": "paperfigure/examples/lats-hotpotqa/spec-figure.json",
+      "brief": "paperfigure/examples/lats-hotpotqa/design-study/design-brief-v2.json",
+      "sha256": "4931ffff1d523222ebcafe6a0674315a0e5d50c833567f1b8edb174398a4cf44",
+      "characters": 5875
+    },
+    {
+      "id": "agentless",
+      "spec": "docs/runs/2026-11-17-agentless-contribution/spec.json",
+      "brief": "docs/runs/2026-11-17-agentless-contribution/design-brief.json",
+      "sha256": "68e52d89786c85046f60ca8c90b4c9397d063d8bee5c65dd21903aaf6b13c07d",
+      "characters": 9916
+    }
+  ],
+  "pairedCLIEqualsLibrary": true,
+  "acceptedNativeArtifactsUnchanged": [
+    "editable.svg",
+    "figure.pptx",
+    "preview.png",
+    "layout-scene.json",
+    "reference-contract.json",
+    "reference-layout-qa.json",
+    "layout-qa.json",
+    "native-audit.json",
+    "native-render/figure.pdf",
+    "native-render/preview.png",
+    "native-render/render-qa.json",
+    "typography-profile.json",
+    "typography-style-qa.json",
+    "typography-qa.json"
+  ],
+  "actualImageCalls": 0
+}

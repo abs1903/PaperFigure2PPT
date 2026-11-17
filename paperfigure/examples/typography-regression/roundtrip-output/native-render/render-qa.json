@@ -1,0 +1,103 @@
+{
+  "engine": "LibreOffice -> PDF -> MuPDF",
+  "pptxSHA256": "677c496cea43bb46c29242dc0506fbfa1e12f834ee8666cd9a89c29c18538cd7",
+  "pdfSHA256": "0dc82559ce4032b8acf9585de5121cbdb31fcd4ecc4609d74923f436c8609e92",
+  "requestedFonts": [
+    "Arial",
+    "Comic Sans MS",
+    "Times New Roman",
+    "Verdana"
+  ],
+  "renderedFonts": [
+    "BAAAAA+TimesNewRomanPS-BoldMT",
+    "CAAAAA+ComicSansMS",
+    "DAAAAA+Verdana-Bold",
+    "EAAAAA+ArialMT"
+  ],
+  "fontScope": "Conversion-process-only fontconfig; no fonts installed globally",
+  "errors": [],
+  "limits": [
+    "No interactive Microsoft PowerPoint editing test.",
+    "Port attachment and font appearance are verified through this independent rendering engine."
+  ],
+  "textChecks": [
+    {
+      "id": "label-block:sample-0",
+      "ink": [
+        185,
+        67,
+        230,
+        22
+      ],
+      "container": [
+        20,
+        20,
+        560,
+        115
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.0,
+      "dy": 0.5
+    },
+    {
+      "id": "label-block:sample-1",
+      "ink": [
+        167,
+        204,
+        266,
+        33
+      ],
+      "container": [
+        20,
+        160,
+        560,
+        115
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.0,
+      "dy": 3.0
+    },
+    {
+      "id": "label-block:sample-2",
+      "ink": [
+        165,
+        345,
+        268,
+        29
+      ],
+      "container": [
+        20,
+        300,
+        560,
+        115
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": -1.0,
+      "dy": 2.0
+    },
+    {
+      "id": "label-block:sample-3",
+      "ink": [
+        211,
+        486,
+        180,
+        28
+      ],
+      "container": [
+        20,
+        440,
+        560,
+        115
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 1.0,
+      "dy": 2.5
+    }
+  ],
+  "edgeChecks": [],
+  "passed": true
+}

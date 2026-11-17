@@ -1,0 +1,131 @@
+[
+  {
+    "round": 1,
+    "operation": "generate",
+    "tool": "built-in image_gen",
+    "promptPath": "prompt-v1.txt",
+    "promptSHA256": "ddc416a427395e1583bea1a68f4839ef3eb6784eea563e93fade54687a15e32d",
+    "inputImages": [],
+    "outputImage": {
+      "path": "candidate-v1.png",
+      "sha256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae"
+    },
+    "specSHA256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+    "briefSHA256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e",
+    "decision": "keep",
+    "nativeDeliveryReady": false,
+    "imageReviewPath": "image-review-v1.json",
+    "imageReviewSHA256": "8a492e240fed711f7876ae7fcac5cdb8edefb844bdb2d882f9f6f57e9ea7f94f",
+    "imageAcceptance": "revise",
+    "reason": "Retain as current working parent for style-only edit; not accepted for native reconstruction."
+  },
+  {
+    "round": 2,
+    "operation": "edit",
+    "tool": "built-in image_gen",
+    "parentImageSHA256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae",
+    "promptPath": "prompt-v2.txt",
+    "promptSHA256": "8f2d850e1bbd4874472a528cb16e7b1926d464d2761267a6be676280bbab05d8",
+    "inputImages": [
+      {
+        "path": "candidate-v1.png",
+        "sha256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae",
+        "role": "edit target, actual referenced_image_paths attachment"
+      }
+    ],
+    "outputImage": {
+      "path": "candidate-v2.png",
+      "sha256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132"
+    },
+    "specSHA256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+    "briefSHA256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e",
+    "defect": "flat-native visual modality",
+    "invariants": [
+      "text",
+      "topology",
+      "arrow routes/directions",
+      "semantic color ownership",
+      "relative hierarchy",
+      "no title/footer"
+    ],
+    "decision": "keep",
+    "nativeDeliveryReady": false,
+    "imageReviewPath": "image-review-v2.json",
+    "imageReviewSHA256": "1e9586085bf7a9be61d670d71efc26de734d1c43ef407cdca9d692f21a0097b8",
+    "imageAcceptance": "revise",
+    "reason": "Improved native-reconstructable motif geometry; kept as edit parent with a known palette regression, not accepted for native export."
+  },
+  {
+    "round": 3,
+    "operation": "edit",
+    "tool": "built-in image_gen",
+    "parentImageSHA256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132",
+    "promptPath": "prompt-v3.txt",
+    "promptSHA256": "917f3d8f2e95dee9e5f77727c35718d6db8e08f6b3943d99d4c12f1fbbcea221",
+    "inputImages": [
+      {
+        "path": "candidate-v2.png",
+        "sha256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132",
+        "role": "actual edit-target attachment"
+      }
+    ],
+    "outputImage": {
+      "path": "candidate-v3.png",
+      "sha256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda"
+    },
+    "specSHA256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+    "briefSHA256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e",
+    "defect": "semantic palette and uniform field fills",
+    "invariants": [
+      "text",
+      "topology",
+      "geometry",
+      "arrow routes/directions",
+      "relative hierarchy",
+      "native geometric illustrations"
+    ],
+    "decision": "keep",
+    "nativeDeliveryReady": false,
+    "imageReviewPath": "image-review-v3.json",
+    "imageReviewSHA256": "c4dedd779c11d57d9f23e0d60ce94283b0a145f65518354321c78537d6518c3f",
+    "imageAcceptance": "revise",
+    "reason": "Corrected ownership and feasible geometric artwork; final permitted edit replaces soft fields by white surfaces and consistent semantic heading ink."
+  },
+  {
+    "round": 4,
+    "operation": "edit",
+    "tool": "built-in image_gen",
+    "parentImageSHA256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda",
+    "promptPath": "prompt-v4.txt",
+    "promptSHA256": "701592bfb2a5079cdfe8a14a321ff0093ae7f66b060c4bc338fc93446c34ce06",
+    "inputImages": [
+      {
+        "path": "candidate-v3.png",
+        "sha256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda",
+        "role": "actual edit-target attachment"
+      }
+    ],
+    "outputImage": {
+      "path": "candidate-v4.png",
+      "sha256": "4e5729fc2ff80c88b54680500a47ab618541cd61a0ce5295494265eb05604e70"
+    },
+    "specSHA256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+    "briefPath": "design-brief-v4.json",
+    "briefSHA256": "6dd89bdeb872fceb3a7f4ba3fa276d1c7914d6c021a0ece0a521923a9583185e",
+    "defect": "replace persistent graded fields with white surfaces and consistent semantic heading ink",
+    "invariants": [
+      "exact text",
+      "source topology",
+      "object positions/sizes",
+      "arrow routes/directions",
+      "meaningful geometric motifs",
+      "role categories"
+    ],
+    "decision": "keep",
+    "nativeDeliveryReady": false,
+    "imageReviewPath": "image-review-v4.json",
+    "imageReviewSHA256": "112619bdb52c079988b761208e234ce8d8aca72dacf86c147ea96913b9e436b8",
+    "imageAcceptance": "accept",
+    "reason": "Independently accepted image design; full native reconstruction and Office delivery not claimed."
+  }
+]

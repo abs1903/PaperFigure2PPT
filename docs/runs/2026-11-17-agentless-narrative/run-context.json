@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-17",
+  "purpose": "Narrative-first Agentless paper-method redesign and comparison",
+  "figureHidden": false,
+  "authorFigurePreviouslySeen": true,
+  "sourceVersion": "arXiv:2407.01489v1",
+  "bounds": {
+    "initialGenerations": 1,
+    "maximumAttachedEdits": 3
+  },
+  "priorArtifacts": [
+    {
+      "path": "../2026-11-16-agentless-figure-hidden/comparison-after-freeze/paper-v1.pdf",
+      "sha256": "44d9d4254ab08687f2c6dd8f33359ffd6ef8078e5eb6e63888022850f43a2ea8"
+    },
+    {
+      "path": "../2026-11-16-agentless-figure-hidden/selected-reference.png",
+      "sha256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91"
+    },
+    {
+      "path": "../2026-11-16-agentless-figure-hidden/comparison-after-freeze/author-figure-1.png",
+      "sha256": "2115ac12019b5d66729e5b9a00f984c7d86241301eb3dec0f8be202f02bf0e8e"
+    }
+  ],
+  "scope": "Raster design and independent review/comparison only; no native reconstruction, Office render or benchmark execution."
+}

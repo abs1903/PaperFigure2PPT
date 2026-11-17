@@ -1,0 +1,34 @@
+{
+  "round": 3,
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "f2e23eb3c6ad5d5a351eab73a1a2da3e85d5b11884ac4e1624a7fc28be20e280",
+  "promptPath": "prompt-edit-v3.txt",
+  "promptSHA256": "8f0f032a72aa03cf06f07ea2e5e9c2f24ac26667f17420242d5cbbcd6beea649",
+  "inputImages": [
+    {
+      "path": "candidate-v2.png",
+      "sha256": "f2e23eb3c6ad5d5a351eab73a1a2da3e85d5b11884ac4e1624a7fc28be20e280",
+      "role": "actual referenced_image_paths edit target"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-v3.png",
+    "sha256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91",
+    "sizePx": [
+      1816,
+      866
+    ]
+  },
+  "specPath": "spec.json",
+  "specSHA256": "91fc27a5e30c34d6a31172a17f2298e427686af4c57e065f0b298a9bf3af146f",
+  "briefPath": "design-brief-reviewed.json",
+  "briefSHA256": "4a62139615c6fdc7e7909d0cd03203c9da6357d8eb4fa160c4584fa4fe815688",
+  "sourceManifestSHA256": "09de0c43d7d21ff1da7854fc3fdcbb1a5b38b237c8bdae30a82ee501f2afee14",
+  "semanticFreezeSHA256": "6770722469aec8e41607ba70037280d7128748a07f0d48bbfbb1ac424b7412a9",
+  "sourceFigureAccess": false,
+  "authorFigureCompared": false,
+  "defectClass": "selection-region publication-width typography/detail density",
+  "decision": "unreviewed",
+  "deliveryReady": false
+}

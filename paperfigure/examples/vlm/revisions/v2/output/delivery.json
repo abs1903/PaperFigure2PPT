@@ -1,0 +1,12 @@
+{
+  "deliveryReady": false,
+  "visualAcceptance": "needs-revision",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "independent_visual_review"
+  },
+  "reasons": [
+    "The user rejected this candidate; scoped agent acceptance cannot override user feedback"
+  ],
+  "scope": "Reference reconstruction review; not a venue-quality certification or a human user approval"
+}

@@ -1,0 +1,21 @@
+{
+  "actualImageCalls": 0,
+  "actualCandidateComparison": "unperformed",
+  "actualFirstReadingReview": "unperformed",
+  "results": [
+    {
+      "compositionId": "source-funnel",
+      "characters": 7878,
+      "narrativeDigest": "682a2220629cbee306f26b347881cac8a42c2175c1783b696ff6adbe35a9dd3c",
+      "semanticDigest": "4fa488bc1a4e61ca78f6743cb7e9db144c879769c5b1ca180a2986300031f579",
+      "compiledPromptSHA256": "b9c6b213e0c01af0a2ef046af5badec5aa7b53b85a01f72b90bb84249f9da0fc"
+    },
+    {
+      "compositionId": "nested-focus",
+      "characters": 7958,
+      "narrativeDigest": "682a2220629cbee306f26b347881cac8a42c2175c1783b696ff6adbe35a9dd3c",
+      "semanticDigest": "4fa488bc1a4e61ca78f6743cb7e9db144c879769c5b1ca180a2986300031f579",
+      "compiledPromptSHA256": "c644da3e356bbe6d2a8fd56dd01aee471012e6adf756f714ce2047c1c32419fb"
+    }
+  ]
+}

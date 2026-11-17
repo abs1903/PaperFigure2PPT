@@ -1,0 +1,63 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_figure_hidden_review"
+  },
+  "reviewKind": "isolated-image-stage-v3-comparison",
+  "verdict": "accept",
+  "scope": "raster image-stage acceptance only; no native/Office acceptance",
+  "contextIsolation": "Direct V2/V3 and paper-width-diagnostic pixel inspection under continuing author-figure/caption/README/web embargo.",
+  "authorFigureComparison": "not performed; prohibited",
+  "lineage": {
+    "parentImage": {
+      "path": "candidate-v2.png",
+      "sha256": "f2e23eb3c6ad5d5a351eab73a1a2da3e85d5b11884ac4e1624a7fc28be20e280"
+    },
+    "outputImage": {
+      "path": "candidate-v3.png",
+      "sha256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91",
+      "sizePx": [
+        1816,
+        866
+      ]
+    },
+    "paperWidthDiagnostic": {
+      "path": "candidate-v3-paper-width-diagnostic.png",
+      "sha256": "63a594156b577b224bd0bc18a612dafa4685457a6365642aeb2a016f4b8e7d4e",
+      "sizePx": [
+        672,
+        320
+      ]
+    },
+    "deltaPrompt": {
+      "path": "prompt-edit-v3.txt",
+      "sha256": "8f0f032a72aa03cf06f07ea2e5e9c2f24ac26667f17420242d5cbbcd6beea649"
+    },
+    "generationRecord": {
+      "path": "generation-record-v3.json",
+      "sha256": "0e21733bf11eb02a433414aae13327b82dc796c3f1ea419fc01aa1228b45b3cd"
+    }
+  },
+  "checks": {
+    "authorFigureHidden": "pass",
+    "semanticFidelity": "pass",
+    "normalizedKeyVsOriginalOutput": "pass",
+    "regressionAndConditionalFallback": "pass",
+    "twoPaperPhases": "pass",
+    "composition": "pass",
+    "typographyAt7In": "pass",
+    "semanticColors": "pass",
+    "noTitleOrFooter": "pass",
+    "nativeFeasibility": "unverified",
+    "officeRender": "unverified"
+  },
+  "frozenReference": {
+    "path": "candidate-v3.png",
+    "sha256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91"
+  },
+  "notes": [
+    "V3 is accepted only as a frozen raster design reference.",
+    "No author-figure comparison occurred.",
+    "Native reconstruction, editability, Office render parity, and delivery readiness require separate evidence and review."
+  ]
+}

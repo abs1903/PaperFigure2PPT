@@ -1,0 +1,6 @@
+{
+  "verdict": "revise",
+  "source": "User feedback in current conversation",
+  "reason": "New PNG-to-SVG result is visually strange and worse than prior examples. These candidates are not accepted reconstruction of the generated PNG.",
+  "scope": "Reject generic auto-layout and unbound recomposition for this target; not a rejection of all source understanding."
+}

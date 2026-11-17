@@ -1,0 +1,11 @@
+{
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "reasons": [
+    "No readable isolated fidelity review",
+    "Review does not inspect the selected target PNG",
+    "Measured layout/native editability failed",
+    "Measured/native/actual Office evidence missing"
+  ],
+  "scope": "Fidelity to this exact selected target plus declared deviations; not a venue certification or user approval"
+}

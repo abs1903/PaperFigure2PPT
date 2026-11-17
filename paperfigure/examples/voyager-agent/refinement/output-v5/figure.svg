@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1100" viewBox="0 0 2560 1100" lang="en"><title>Voyager: iterative code refinement and reusable skills</title><metadata>{&quot;specHash&quot;:&quot;92dc4872a11054ceb085b019fedffce5697dce85212f78c942633eca44d17663&quot;,&quot;semanticHash&quot;:&quot;99e376f7b5464e65ffe62235859b505b1a38c03c2e47b53c886322c9610bc44c&quot;}</metadata><rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#14344B" stroke-width="1.5"/></marker></defs>
+<defs></defs>
+<rect id="group:refinement-loop" x="798" y="128" width="994" height="874" rx="18" fill="#FBFCFD" stroke="#D1DBE3" stroke-width="1.4" />
+<path id="edge:task" data-from="curriculum" data-to="action" d="M 540 500 L 650 500 L 650 380 L 850 380" fill="none" stroke="#14344B" stroke-width="2.2"  marker-end="url(#arrow0)"/>
+<path id="edge:execute" data-from="action" data-to="world" d="M 938 480 L 938 710" fill="none" stroke="#14344B" stroke-width="4.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:verify" data-from="world" data-to="critic" d="M 1280 835 L 1410 835" fill="none" stroke="#14344B" stroke-width="4.2"  marker-end="url(#arrow0)"/>
+<path id="edge:success" data-from="critic" data-to="skills" d="M 1770 945 L 1960 945" fill="none" stroke="#14344B" stroke-width="2.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:retrieved-code" data-from="skills" data-to="action" d="M 1960 380 L 1730 380" fill="none" stroke="#14344B" stroke-width="2.2"  marker-end="url(#arrow0)"/>
+<path id="edge:query" data-from="action" data-to="skills" d="M 1730 440 L 1960 440" fill="none" stroke="#14344B" stroke-width="2.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:latest" data-from="world" data-to="state" d="M 820 835 L 540 835" fill="none" stroke="#14344B" stroke-width="2.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:outcome" data-from="critic" data-to="state" d="M 1590 980 L 1590 1040 L 300 1040 L 300 910" fill="none" stroke="#14344B" stroke-width="2.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:next-task" data-from="state" data-to="curriculum" d="M 300 700 L 300 560" fill="none" stroke="#14344B" stroke-width="2.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:runtime-context" data-from="world" data-to="feedback" d="M 1142 710 L 1142 665" fill="none" stroke="#14344B" stroke-width="2.2"  marker-end="url(#arrow0)"/>
+<path id="edge:critic-context" data-from="critic" data-to="feedback" d="M 1590 760 L 1590 665" fill="none" stroke="#14344B" stroke-width="4.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:refine" data-from="feedback" data-to="action" d="M 1395 540 L 1395 480" fill="none" stroke="#14344B" stroke-width="4.2" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<rect id="node:curriculum" x="60" y="260" width="480" height="300" rx="17" fill="#FFFFFF" stroke="none" stroke-width="2.2"/>
+<rect id="node:action" x="850" y="180" width="880" height="300" rx="17" fill="#FFFFFF" stroke="#587A96" stroke-width="2.2"/>
+<rect id="node:world" x="820" y="710" width="460" height="250" rx="17" fill="#FFFFFF" stroke="#839099" stroke-width="2.2"/>
+<rect id="node:critic" x="1410" y="760" width="360" height="220" rx="17" fill="#FFFFFF" stroke="#587A96" stroke-width="2.2"/>
+<rect id="node:skills" x="1960" y="220" width="550" height="810" rx="17" fill="#FFFFFF" stroke="none" stroke-width="2.2"/>
+<rect id="node:state" x="60" y="700" width="480" height="210" rx="17" fill="#FFFFFF" stroke="none" stroke-width="2.2"/>
+<rect id="node:feedback" x="1020" y="540" width="750" height="125" rx="10" fill="#FFFFFF" stroke="#839099" stroke-width="1.8"/>
+<rect id="art:curriculum-header" fill="#E8F0F7" stroke="none" stroke-width="1.5" x="61.5" y="261.5" width="477" height="130" rx="14"/>
+<line id="art:curriculum-head-rule" fill="none" stroke="#587A96" stroke-width="1.4" x1="60" y1="390" x2="540" y2="390"/>
+<rect id="art:task-slip" fill="#F7F9FA" stroke="#839099" stroke-width="1.5" x="86" y="470" width="428" height="70" rx="8"/>
+<rect id="art:action-header" fill="#E8F0F7" stroke="none" stroke-width="1.5" x="851.5" y="181.5" width="877" height="75" rx="14"/>
+<line id="art:action-head-rule" fill="none" stroke="#587A96" stroke-width="1.4" x1="850" y1="255" x2="1730" y2="255"/>
+<rect id="art:world-header" fill="#F7F9FA" stroke="none" stroke-width="1.5" x="821.5" y="711.5" width="457" height="76" rx="14"/>
+<line id="art:world-head-rule" fill="none" stroke="#839099" stroke-width="1.4" x1="820" y1="786" x2="1280" y2="786"/>
+<rect id="art:ground-0" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="842" y="920" width="24" height="14" rx="0"/>
+<rect id="art:ground-1" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="866" y="920" width="24" height="14" rx="0"/>
+<rect id="art:ground-2" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="890" y="920" width="24" height="14" rx="0"/>
+<rect id="art:ground-3" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="914" y="920" width="24" height="14" rx="0"/>
+<rect id="art:ground-4" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="938" y="920" width="24" height="14" rx="0"/>
+<rect id="art:ground-5" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="962" y="920" width="24" height="14" rx="0"/>
+<rect id="art:tree-trunk" fill="#C0C9CF" stroke="#839099" stroke-width="1.5" x="939" y="856" width="20" height="64" rx="0"/>
+<rect id="art:tree-crown-top" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="920" y="807" width="58" height="22" rx="0"/>
+<rect id="art:tree-crown" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="908" y="829" width="82" height="28" rx="0"/>
+<rect id="art:avatar-head" fill="#B3BEC6" stroke="#839099" stroke-width="1.5" x="857" y="854" width="18" height="18" rx="0"/>
+<rect id="art:avatar-body" fill="#D0D7DC" stroke="#839099" stroke-width="1.5" x="853" y="874" width="22" height="29" rx="0"/>
+<line id="art:avatar-leg-1" fill="none" stroke="#839099" stroke-width="3" x1="859" y1="903" x2="851" y2="920"/>
+<line id="art:avatar-leg-2" fill="none" stroke="#839099" stroke-width="3" x1="868" y1="903" x2="878" y2="920"/>
+<line id="art:avatar-arm" fill="none" stroke="#839099" stroke-width="3" x1="874" y1="879" x2="894" y2="868"/>
+<line id="art:pick-handle" fill="none" stroke="#839099" stroke-width="3" x1="889" y1="881" x2="905" y2="856"/>
+<line id="art:pick-head" fill="none" stroke="#839099" stroke-width="3" x1="895" y1="853" x2="917" y2="865"/>
+<rect id="art:critic-header" fill="#E8F0F7" stroke="none" stroke-width="1.5" x="1411.5" y="761.5" width="357" height="74" rx="14"/>
+<line id="art:critic-head-rule" fill="none" stroke="#587A96" stroke-width="1.4" x1="1410" y1="834" x2="1770" y2="834"/>
+<rect id="art:skills-header" fill="#E8F3EF" stroke="none" stroke-width="1.5" x="1961.5" y="221.5" width="547" height="80" rx="14"/>
+<line id="art:skills-head-rule" fill="none" stroke="#507E71" stroke-width="1.4" x1="1960" y1="300" x2="2510" y2="300"/>
+<rect id="art:skill-back-1" fill="#FFFFFF" stroke="#507E71" stroke-width="1.5" x="2020" y="322" width="484" height="375" rx="8"/>
+<rect id="art:skill-back-2" fill="#FFFFFF" stroke="#507E71" stroke-width="1.5" x="2008" y="334" width="484" height="375" rx="8"/>
+<rect id="art:skill-front" fill="#FFFFFF" stroke="#507E71" stroke-width="1.5" x="1996" y="346" width="484" height="375" rx="8"/>
+<line id="art:skill-separator-0" fill="none" stroke="#507E71" stroke-width="1.5" x1="2022" y1="470" x2="2454" y2="470"/>
+<line id="art:skill-separator-1" fill="none" stroke="#507E71" stroke-width="1.5" x1="2022" y1="584" x2="2454" y2="584"/>
+<rect id="art:state-header" fill="#E8F3EF" stroke="none" stroke-width="1.5" x="61.5" y="701.5" width="477" height="66" rx="14"/>
+<line id="art:state-head-rule" fill="none" stroke="#507E71" stroke-width="1.4" x1="60" y1="766" x2="540" y2="766"/>
+<rect id="art:register-port" fill="#E8F3EF" stroke="#507E71" stroke-width="1.5" x="1961.5" y="920" width="547" height="69" rx="9"/>
+<text id="group-label:refinement-loop" x="812" y="173.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="bold"  fill="#526477" text-anchor="start">Iterative code refinement</text>
+<text id="text:curriculum:label:0" x="82" y="319.56" font-family="Times New Roman, Helvetica, sans-serif" font-size="43" font-weight="bold"  fill="#172B42" text-anchor="start">Automatic</text>
+<text id="text:curriculum:label:1" x="82" y="370.3" font-family="Times New Roman, Helvetica, sans-serif" font-size="43" font-weight="bold"  fill="#172B42" text-anchor="start">curriculum</text>
+<text id="text:action:label:0" x="872" y="234.48" font-family="Times New Roman, Helvetica, sans-serif" font-size="44" font-weight="bold"  fill="#172B42" text-anchor="start">Program generation</text>
+<text id="text:world:label:0" x="842" y="763.8" font-family="Times New Roman, Helvetica, sans-serif" font-size="40" font-weight="bold"  fill="#172B42" text-anchor="start">Execute program</text>
+<text id="text:critic:label:0" x="1432" y="813.8" font-family="Times New Roman, Helvetica, sans-serif" font-size="40" font-weight="bold"  fill="#172B42" text-anchor="start">Verify task</text>
+<text id="text:skills:label:0" x="1982" y="276.48" font-family="Times New Roman, Helvetica, sans-serif" font-size="44" font-weight="bold"  fill="#172B42" text-anchor="start">Skill library</text>
+<text id="text:state:label:0" x="82" y="747.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="bold"  fill="#172B42" text-anchor="start">Exploration state</text>
+<text id="text:feedback:label:0" x="1040" y="588.8" font-family="Times New Roman, Helvetica, sans-serif" font-size="40" font-weight="bold"  fill="#172B42" text-anchor="start">Refine prompt</text>
+<text id="edge-label:task" x="707.858" y="353.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Task + context</text>
+<text id="edge-label:retrieved-code" x="1835.876" y="353.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Top-k code</text>
+<text id="edge-label:query" x="1847.554" y="418.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Query</text>
+<text id="edge-label:latest" x="677.576" y="763.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Events</text>
+<text id="edge-label:outcome" x="1178.88" y="1014.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Task outcome</text>
+<text id="art:task-context" x="86" y="444.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#14344B" text-anchor="start">Example task</text>
+<text id="art:task-example" x="106" y="518.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">Craft wooden pickaxe</text>
+<text id="art:action-type" x="1530" y="231.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Action LM</text>
+<text id="art:code-0" x="890" y="300.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">craftWoodenPickaxe.js  (excerpt)</text>
+<text id="art:code-1" x="890" y="350.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">if (craftingTableCount === 0) {</text>
+<text id="art:code-2" x="890" y="400.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">  await craftCraftingTable(bot);</text>
+<text id="art:code-3" x="890" y="450.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">}</text>
+<text id="art:execute" x="1018" y="834.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="bold"  fill="#14344B" text-anchor="start">Minecraft</text>
+<text id="art:all-code" x="1018" y="886.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">All saved code</text>
+<text id="art:primitives" x="1018" y="938.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">+ primitives</text>
+<text id="art:critic-output" x="1430" y="893.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Critique: refine</text>
+<text id="art:skill-name-0" x="2022" y="398.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">mineWoodLog</text>
+<text id="art:skill-desc-0" x="2022" y="450.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">Mine a wood log</text>
+<text id="art:skill-name-1" x="2022" y="512.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">craftCraftingTable</text>
+<text id="art:skill-desc-1" x="2022" y="564.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">Craft a crafting table</text>
+<text id="art:skill-name-2" x="2022" y="626.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">craftWoodenPickaxe</text>
+<text id="art:skill-desc-2" x="2022" y="678.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">Craft a wooden pickaxe</text>
+<text id="art:query-initial" x="1996" y="768.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Initial: context</text>
+<text id="art:query-refine" x="1996" y="820.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Refine: + filtered chat</text>
+<text id="art:state-events" x="86" y="823.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Latest events</text>
+<text id="art:state-history" x="86" y="875.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Task history</text>
+<text id="art:eligible-port" x="1590" y="953.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="middle">Eligible success</text>
+<text id="art:register-label" x="2235" y="971.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="bold"  fill="#14344B" text-anchor="middle">Register reusable skill</text>
+<text id="art:feedback-payload" x="1395" y="638.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="middle">Events + critique; bounded retries</text>
+</svg>

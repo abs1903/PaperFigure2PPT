@@ -1,0 +1,173 @@
+{
+  "version": "1.0",
+  "semanticSHA256": "b6a1e80a8b04f65bdf3b8011bb2ad64e9af490605e005804925c94883b4a120e",
+  "message": "An embodied agent turns bounded code-execution feedback into reusable skills, while an automatic curriculum selects the next task from exploration state.",
+  "scope": "Pinned MineDojo/Voyager commit55e45a880755d0c8c66ca7fb5fe7962ac8974f89, automatic learn() overview. Task/skill illustrations are source-supported examples, not an observed run or fixed curriculum order.",
+  "sourceReview": "source-audit.md (independent raw-code and brief audit must complete before generation)",
+  "composition": "Original wide scientific editorial figure, about2.2:1. Three unequal regions: a quiet left curriculum/state rail; a dominant central embodied code-refinement scene with an obvious bounded loop; a compact right reusable-code library. Let mechanism, generous whitespace and a few meaningful voxel/task illustrations organize the story. Avoid equal-size card grids and heavy enclosing frames. Do not copy the previous native-layout coordinates. The central world/action-result loop should be visually memorable, not a collection of API boxes. No overall title/footer.",
+  "mechanism": "The left rail shows three small illustrated task examples without fixed-order arrows, and a separate exploration-state record. The central program sheet sits above a simple geometric Minecraft-like world vignette. Code goes down into Execute; execution results reach Verify, then feedback goes through Refine prompt back into Generate code only while not done. The right library contains three concise named code entries with small meaningful log/table/pickaxe symbols. Prompt retrieval and success-conditioned storage must have distinct, legible routes; outer quiet event/outcome paths return to left state. Describe fixed runtime dependencies beside Execute instead of another long crossing wire.",
+  "typography": "Clear Arial/Helvetica-style sans-serif labels with one monospaced code excerpt; bold short headings, generous spacing. At7-inch publication width target9pt body and11pt key headings, with every label legible. Prefer fewer labels over tiny text. Exact labels below are the only printed text; no printed IDs or provenance.",
+  "publicationWidthIn": 7,
+  "maxVisibleWords": 100,
+  "blocks": [
+    {
+      "id": "curriculum-rail",
+      "label": "Automatic curriculum",
+      "nodes": [
+        "curriculum",
+        "state"
+      ],
+      "representation": "Lightly structured rail with small flat voxel task illustrations, a task-selection output and a retained exploration-state strip; no full framed card around every state variable."
+    },
+    {
+      "id": "embodied-refinement",
+      "label": "Iterative prompting",
+      "nodes": [
+        "action",
+        "world",
+        "critic",
+        "feedback"
+      ],
+      "representation": "Large central source-code sheet plus geometric Minecraft-like execution scene; a clearly directed local Generate/Execute/Verify/Refine loop, not four equal generic cards. Self-verification is visible. The scene and tool silhouettes are meaningful illustrative content, not decorative emoji or measured screenshots."
+    },
+    {
+      "id": "reusable-library",
+      "label": "Skill library",
+      "nodes": [
+        "skills"
+      ],
+      "representation": "Compact native-reconstructable code catalog with log/table/pickaxe silhouettes, three exact released skill names, a prompt-retrieval path and separate eligible-success storage inlet."
+    }
+  ],
+  "relations": [
+    {
+      "edge": "task",
+      "mode": "arrow",
+      "display": "Task + context from curriculum to code generation"
+    },
+    {
+      "edge": "execute",
+      "mode": "internal",
+      "display": "Generated code flows into world execution; explicit downward direction"
+    },
+    {
+      "edge": "verify",
+      "mode": "internal",
+      "display": "World execution results go to self-verification"
+    },
+    {
+      "edge": "success",
+      "mode": "arrow",
+      "display": "Eligible success flows from verification to skill storage; never store failures"
+    },
+    {
+      "edge": "retrieved-code",
+      "mode": "arrow",
+      "display": "Top-k code from library into the generation prompt"
+    },
+    {
+      "edge": "query",
+      "mode": "arrow",
+      "display": "Task context initially; task context plus filtered chat summary during refinement queries library"
+    },
+    {
+      "edge": "latest",
+      "mode": "arrow",
+      "display": "Latest world events update exploration state"
+    },
+    {
+      "edge": "outcome",
+      "mode": "arrow",
+      "display": "Task outcome updates task history"
+    },
+    {
+      "edge": "next-task",
+      "mode": "internal",
+      "display": "Exploration state informs automatic curriculum"
+    },
+    {
+      "edge": "runtime-context",
+      "mode": "internal",
+      "display": "Execution events enter prompt refinement"
+    },
+    {
+      "edge": "critic-context",
+      "mode": "internal",
+      "display": "Critique enters prompt refinement"
+    },
+    {
+      "edge": "refine",
+      "mode": "internal",
+      "display": "Refined prompt returns to generation only if not done; task loop stops on success or retry cap"
+    }
+  ],
+  "labels": [
+    "Automatic curriculum",
+    "Task examples",
+    "Mine a wood log",
+    "Craft a crafting table",
+    "Craft a wooden pickaxe",
+    "Exploration state",
+    "Latest events",
+    "Task history",
+    "Task + context",
+    "Generate code",
+    "craftWoodenPickaxe.js",
+    "await craftCraftingTable(bot);",
+    "Execute",
+    "Minecraft",
+    "All skills + primitives",
+    "Verify",
+    "Refine prompt",
+    "Events + critique",
+    "If not done",
+    "Skill library",
+    "mineWoodLog",
+    "craftCraftingTable",
+    "craftWoodenPickaxe",
+    "Top-k code",
+    "Query",
+    "Context + chat summary",
+    "Eligible success",
+    "Store skill",
+    "Task outcome",
+    "Bounded retries"
+  ],
+  "palette": [
+    {
+      "color": "#DDEBF8",
+      "meaning": "LM computation only; curriculum, program generation and verifier. No arbitrary per-module identity colors.",
+      "nodes": [
+        "curriculum",
+        "action",
+        "critic"
+      ]
+    },
+    {
+      "color": "#DDEFE5",
+      "meaning": "Retained exploration state and reusable skill memory",
+      "nodes": [
+        "state",
+        "skills"
+      ]
+    },
+    {
+      "color": "#F3F5F7",
+      "meaning": "World execution and parameter-free prompt assembly/data interfaces",
+      "nodes": [
+        "world",
+        "feedback"
+      ]
+    }
+  ],
+  "forbidden": [
+    "No optimizer/gradient/weight-training arrows",
+    "No task-outcome-to-library edge that stores failures",
+    "No claim that retrieved top-k snippets are the whole executor program bundle",
+    "No extra model for prompt assembly or retrieval-query construction",
+    "No unconditional infinite refinement",
+    "No claim that illustrated task examples form a fixed actual curriculum or measured successful rollout",
+    "No photo/screenshots, logos, decorative emoji, gradients, title, footer or tiny explanatory footnotes",
+    "Do not print semantic node IDs, metadata, source citations or this brief inside the figure"
+  ]
+}

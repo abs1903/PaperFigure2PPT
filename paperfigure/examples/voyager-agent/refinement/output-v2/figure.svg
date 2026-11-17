@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1080" viewBox="0 0 2560 1080" lang="en"><title>Voyager: iterative code refinement and reusable skills</title><metadata>{&quot;specHash&quot;:&quot;96346d764e6d5764b4083aa85610f6da0540508edc1485cda9516cdf120724f0&quot;,&quot;semanticHash&quot;:&quot;c2732438cd161443b13685f055c4c4ebb67bfbd032606c265ba3c8648668dfbe&quot;}</metadata><rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#14344B" stroke-width="1.5"/></marker></defs>
+<defs></defs>
+<path id="edge:task" data-from="curriculum" data-to="action" d="M 530 590 L 610 590 L 610 430 L 700 430" fill="none" stroke="#14344B" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:execute" data-from="action" data-to="world" d="M 990 600 L 990 715" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:verify" data-from="world" data-to="critic" d="M 1220 785 L 1370 785" fill="none" stroke="#14344B" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:runtime-feedback" data-from="world" data-to="action" d="M 861.2 715 L 861.2 640 L 800 640 L 800 600" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:critique" data-from="critic" data-to="action" d="M 1550 740 L 1550 600" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:success" data-from="critic" data-to="skills" d="M 1730 830 L 1815 830 L 1815 590 L 1900 590" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:retrieved-code" data-from="skills" data-to="action" d="M 1900 355 L 1700 355" fill="none" stroke="#14344B" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:query" data-from="action" data-to="skills" d="M 1700 455 L 1900 455" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:context-query" data-from="curriculum" data-to="skills" d="M 389 190 L 389 85 L 2112.4 85 L 2112.4 170" fill="none" stroke="#14344B" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:latest" data-from="world" data-to="state" d="M 760 835 L 530 835" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:outcome" data-from="critic" data-to="state" d="M 1550 920 L 1550 1040 L 295 1040 L 295 1020" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:next-task" data-from="state" data-to="curriculum" d="M 295 810 L 295 690" fill="none" stroke="#14344B" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<rect id="node:curriculum" x="60" y="190" width="470" height="500" rx="17" fill="#FFFFFF" stroke="#587A96" stroke-width="2.2"/>
+<rect id="node:action" x="700" y="160" width="1000" height="440" rx="17" fill="#FFFFFF" stroke="#587A96" stroke-width="2.2"/>
+<rect id="node:world" x="760" y="715" width="460" height="260" rx="17" fill="#FFFFFF" stroke="#839099" stroke-width="2.2"/>
+<rect id="node:critic" x="1370" y="740" width="360" height="180" rx="17" fill="#FFFFFF" stroke="#587A96" stroke-width="2.2"/>
+<rect id="node:skills" x="1900" y="170" width="590" height="600" rx="17" fill="#FFFFFF" stroke="#507E71" stroke-width="2.2"/>
+<rect id="node:state" x="60" y="810" width="470" height="210" rx="17" fill="#FFFFFF" stroke="#507E71" stroke-width="2.2"/>
+<rect id="art:curriculum-header" fill="#E8F0F7" stroke="none" stroke-width="1.5" x="61.5" y="191.5" width="467" height="130" rx="14"/>
+<line id="art:curriculum-head-rule" fill="none" stroke="#587A96" stroke-width="1.4" x1="60" y1="320" x2="530" y2="320"/>
+<line id="art:curriculum-context-rule" fill="none" stroke="#839099" stroke-width="1.5" x1="86" y1="464" x2="504" y2="464"/>
+<rect id="art:task-slip" fill="#F7F9FA" stroke="#839099" stroke-width="1.5" x="86" y="548" width="418" height="103" rx="8"/>
+<rect id="art:action-header" fill="#E8F0F7" stroke="none" stroke-width="1.5" x="701.5" y="161.5" width="997" height="105" rx="14"/>
+<line id="art:action-head-rule" fill="none" stroke="#587A96" stroke-width="1.4" x1="700" y1="265" x2="1700" y2="265"/>
+<line id="art:code-rule" fill="none" stroke="#839099" stroke-width="1.5" x1="730" y1="514" x2="1670" y2="514"/>
+<rect id="art:world-header" fill="#F7F9FA" stroke="none" stroke-width="1.5" x="761.5" y="716.5" width="457" height="76" rx="14"/>
+<line id="art:world-head-rule" fill="none" stroke="#839099" stroke-width="1.4" x1="760" y1="791" x2="1220" y2="791"/>
+<rect id="art:world-block-0" fill="#B8C2C9" stroke="#839099" stroke-width="1.5" x="792" y="924" width="135" height="14" rx="0"/>
+<rect id="art:world-block-1" fill="#C9D0D5" stroke="#839099" stroke-width="1.5" x="841" y="872" width="30" height="52" rx="0"/>
+<rect id="art:world-block-2" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="805" y="834" width="102" height="38" rx="0"/>
+<rect id="art:world-block-3" fill="#D8DEE2" stroke="#839099" stroke-width="1.5" x="821" y="812" width="70" height="22" rx="0"/>
+<line id="art:tree-detail-0" fill="none" stroke="#839099" stroke-width="1.5" x1="850" y1="880" x2="862" y2="880"/>
+<line id="art:tree-detail-1" fill="none" stroke="#839099" stroke-width="1.5" x1="850" y1="892" x2="862" y2="892"/>
+<line id="art:tree-detail-2" fill="none" stroke="#839099" stroke-width="1.5" x1="850" y1="904" x2="862" y2="904"/>
+<rect id="art:critic-header" fill="#E8F0F7" stroke="none" stroke-width="1.5" x="1371.5" y="741.5" width="357" height="74" rx="14"/>
+<line id="art:critic-head-rule" fill="none" stroke="#587A96" stroke-width="1.4" x1="1370" y1="814" x2="1730" y2="814"/>
+<rect id="art:skills-header" fill="#E8F3EF" stroke="none" stroke-width="1.5" x="1901.5" y="171.5" width="587" height="104" rx="14"/>
+<line id="art:skills-head-rule" fill="none" stroke="#507E71" stroke-width="1.4" x1="1900" y1="274" x2="2490" y2="274"/>
+<rect id="art:skill-back-1" fill="#FFFFFF" stroke="#507E71" stroke-width="1.5" x="1960" y="309" width="484" height="331" rx="8"/>
+<rect id="art:skill-back-2" fill="#FFFFFF" stroke="#507E71" stroke-width="1.5" x="1948" y="321" width="484" height="331" rx="8"/>
+<rect id="art:skill-front" fill="#FFFFFF" stroke="#507E71" stroke-width="1.5" x="1936" y="333" width="484" height="331" rx="8"/>
+<line id="art:stored-name-rule" fill="none" stroke="#507E71" stroke-width="1.5" x1="1962" y1="416" x2="2394" y2="416"/>
+<line id="art:stored-fields-rule" fill="none" stroke="#507E71" stroke-width="1.5" x1="1962" y1="499" x2="2394" y2="499"/>
+<rect id="art:state-header" fill="#E8F3EF" stroke="none" stroke-width="1.5" x="61.5" y="811.5" width="467" height="74" rx="14"/>
+<line id="art:state-head-rule" fill="none" stroke="#507E71" stroke-width="1.4" x1="60" y1="884" x2="530" y2="884"/>
+<text id="text:curriculum:label:0" x="82" y="249.56" font-family="Times New Roman, Helvetica, sans-serif" font-size="43" font-weight="bold"  fill="#172B42" text-anchor="start">Automatic</text>
+<text id="text:curriculum:label:1" x="82" y="300.3" font-family="Times New Roman, Helvetica, sans-serif" font-size="43" font-weight="bold"  fill="#172B42" text-anchor="start">curriculum</text>
+<text id="text:action:label:0" x="722" y="224.16" font-family="Times New Roman, Helvetica, sans-serif" font-size="48" font-weight="bold"  fill="#172B42" text-anchor="start">Program generation</text>
+<text id="text:world:label:0" x="782" y="773.64" font-family="Times New Roman, Helvetica, sans-serif" font-size="42" font-weight="bold"  fill="#172B42" text-anchor="start">Minecraft</text>
+<text id="text:critic:label:0" x="1392" y="800.48" font-family="Times New Roman, Helvetica, sans-serif" font-size="44" font-weight="bold"  fill="#172B42" text-anchor="start">Critic</text>
+<text id="text:skills:label:0" x="1922" y="233.24" font-family="Times New Roman, Helvetica, sans-serif" font-size="47" font-weight="bold"  fill="#172B42" text-anchor="start">Skill library</text>
+<text id="text:state:label:0" x="82" y="866.8" font-family="Times New Roman, Helvetica, sans-serif" font-size="40" font-weight="bold"  fill="#172B42" text-anchor="start">Exploration state</text>
+<text id="edge-label:execute" x="1102.494" y="676.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Execute</text>
+<text id="edge-label:verify" x="1302.576" y="754.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Events</text>
+<text id="edge-label:runtime-feedback" x="692.162" y="683.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Runtime feedback</text>
+<text id="edge-label:critique" x="1380.31" y="660.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Critique / refine</text>
+<text id="edge-label:success" x="1878.252" y="888.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Save on success</text>
+<text id="edge-label:retrieved-code" x="1799.876" y="333.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Top-k code</text>
+<text id="edge-label:query" x="1801.554" y="430.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Query</text>
+<text id="edge-label:context-query" x="1020.05" y="57.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Context query</text>
+<text id="edge-label:latest" x="642.576" y="808.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Events</text>
+<text id="edge-label:outcome" x="1168.88" y="1011.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Task outcome</text>
+<text id="edge-label:next-task" x="427.484" y="757.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#526477" text-anchor="middle">Next task</text>
+<text id="art:latest" x="86" y="374.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="normal"  fill="#14344B" text-anchor="start">Latest observations</text>
+<text id="art:history" x="86" y="430.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Completed / failed tasks</text>
+<text id="art:task-context" x="86" y="523.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#14344B" text-anchor="start">Task + context</text>
+<text id="art:task-example" x="106" y="612.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">Mine 1 wood log</text>
+<text id="art:action-type" x="1455" y="227.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Action LM</text>
+<text id="art:code-0" x="745" y="333.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">async function skill(bot) {</text>
+<text id="art:code-1" x="745" y="385.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">  /* generated body */</text>
+<text id="art:code-2" x="745" y="437.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">}</text>
+<text id="art:code-3" x="745" y="489.12" font-family="Courier New, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">await skill(bot);</text>
+<text id="art:retry-limit" x="745" y="571.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">Refine until success or retry cap</text>
+<text id="art:execute" x="958" y="839.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="bold"  fill="#14344B" text-anchor="start">Execute JS</text>
+<text id="art:all-code" x="958" y="891.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">All saved code</text>
+<text id="art:primitives" x="958" y="943.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">+ primitives</text>
+<text id="art:critic-output" x="1390" y="875.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Success + critique</text>
+<text id="art:stored-name" x="1962" y="394.8" font-family="Times New Roman, Helvetica, sans-serif" font-size="40" font-weight="bold" font-style="italic" fill="#14344B" text-anchor="start">program_name</text>
+<text id="art:stored-code" x="1962" y="472.04" font-family="Courier New, Helvetica, sans-serif" font-size="37" font-weight="normal"  fill="#14344B" text-anchor="start">program_code</text>
+<text id="art:stored-description" x="1962" y="555.04" font-family="Courier New, Helvetica, sans-serif" font-size="37" font-weight="normal"  fill="#14344B" text-anchor="start">description</text>
+<text id="art:reuse" x="1962" y="618.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal" font-style="italic" fill="#14344B" text-anchor="start">Reusable behavior</text>
+<text id="art:retrieval-mode" x="1936" y="735.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="normal"  fill="#14344B" text-anchor="start">Retrieve top-k code</text>
+<text id="art:state-events" x="86" y="938.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Latest events</text>
+<text id="art:state-history" x="86" y="993.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="normal"  fill="#14344B" text-anchor="start">Completed / failed tasks</text>
+</svg>

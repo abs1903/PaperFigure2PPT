@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+.paperfigure-tmp/
+dist/
+
+# Local Python runtime caches
+__pycache__/
+*.py[cod]
+.venv/

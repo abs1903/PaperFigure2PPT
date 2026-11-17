@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-16",
+  "supersedes": "AgeMem output-v12 appearance only; frozen two-paper test remains intact",
+  "mechanical": {
+    "passed": true,
+    "nativeContentRatio": 1,
+    "icons": 12,
+    "parts": 157,
+    "unchangedArchitecture": true,
+    "unchangedNonIconPrimitives": true,
+    "byteReproducible": true,
+    "regressionTests": {
+      "passed": 86,
+      "total": 86,
+      "skipped": 0
+    }
+  },
+  "isolatedReview": {
+    "verdict": "PASS",
+    "file": "docs/AGEMEM_ICON_REFINEMENT_REVIEW_V15.md",
+    "scope": "Original source fidelity and SVG versus actual LibreOffice-rendered PPTX, all 12 icons and full view"
+  },
+  "sha256": {
+    "editable.svg": "349bc0072ad974bc0bd394681fd94ca81257abd561ad04c4ebfa7dfa59730367",
+    "preview.png": "532041926ff3f44c3d61c03cc8f150c3ca5fcf469a8335cf03296650af7c6b46",
+    "figure.pptx": "c96f52038759c7d0d7e49eef7c5416bd0e8199c1a5f0b822bc437ea5073d2cd5",
+    "layout-scene.json": "6e2a146891c0c563e2628f758144f2c1c0f57eeeddc700a5bce2012fb150c2d6",
+    "icon-changes.json": "a8b7f513796512ba1711c24a5fd06cdf61d517d28599c0b9ce100b98c7f7ab15",
+    "layout-qa.json": "701286b392591e2ac06e5cd2308af1d8ae8ac4ea02a7426a9f665f5b99c2eb52",
+    "native-audit.json": "18912894a9510d81799f883f673c33af8dc6d61b49f9de255c05edc9dd98f0e0",
+    "native-render/preview.png": "60c35a2d12424a3abf482b772fb98e1bafb0f7dec8229af7bc3546a08dd3f9d6",
+    "native-render/render-qa.json": "a5976b1f6067dd869c2a6b28b531c07306a718f3069837e853e237265bfee5cf",
+    "icon-detail-r2/contact-sheet.png": "4ff2c9ae9ed46daaa495bd40b5daeb730a8610c63db872e3896c80f02012197f",
+    "icon-detail-r2/icon-detail-qa.json": "4ec2d9be829a4a95935ad80fb69de18fd847baa6f061691651fe7738178dcfef",
+    "comparison-original-svg.png": "1dfc1dd3dd16f074a2f6afb3920f47a0706ff0c305caf5c3c2690cb753ef641e",
+    "comparison-svg-pptx.png": "d14855834ba1e1c0c27aafcea7aa85c9009f7f7b1c3b406e8e07986a8e877788",
+    "icon-detail-r2/selected-comparison.png": "fc44c722c39a89f0a7a0778d4bb10d05d5a0b04c1ddabc8e2056fe3e0ac4605d"
+  },
+  "evidenceSHA256": {
+    "docs/AGEMEM_ICON_REFINEMENT_REVIEW_V15.md": "9a65b267317a97bde8ac5c5d9f03bdb83a8e92fb01bd94f3e99ee4fda68363e4",
+    "docs/test-results-agemem-icons.txt": "a06a9dcc0f7eebe528bd4eacaf8915d783f629235e764785e21d3bd10f7b0c66",
+    "docs/AGEMEM_ICON_REFINEMENT.md": "657fc4189001e7eccee66b79ff4828fc94e2abe3c45339b7e148b0362acc34b8",
+    "paperfigure/references/detail-fidelity.md": "cee89cc9637244db377dad85e9b8635127a55a15f2fec95c715ef51f8c4e5b75",
+    "paperfigure/scripts/layout-export.mjs": "9b9fb36326e0dd4e89d49f33768146096b35e3c2f12b9f3e09617b1d1b8117fc",
+    "paperfigure/scripts/layout-scene.mjs": "48e6a35f7e17a1a638dbaf282c2edccb6d02bc628b339c8b0dd93d4bf3a4e2b8",
+    "paperfigure/scripts/icon-detail-check.mjs": "d48ee611bb6066936bb7e0dd6a06b7bf3d9474a19bcdccba1179ba523561edfc",
+    "paperfigure/references/layout-constraints.schema.json": "aec0c5abfcf4e9a162ae565c324335b9e2ab78f52bf9cdd0aac741472d624d93",
+    "paperfigure/examples/agentic-2026-layout/agemem/icon-refinement/icons.mjs": "b1fbde9e493492eae7c9f45ee294e0597a5f8a2063340930e727623c7b00ded1",
+    "paperfigure/examples/agentic-2026-layout/agemem/icon-refinement/refine.mjs": "57c570f14cba9670d518f4848e1403cf83b8e57843d8345ba83327e96bb7d55a",
+    "paperfigure/examples/agentic-2026-layout/agemem/icon-refinement/verify.mjs": "31352480e812f971b92d98bcf43c9d577b6542eb41471c22bb737041b04a85a4"
+  },
+  "limits": [
+    "Source-guided smooth vector approximation, not original icon artwork files.",
+    "No interactive Microsoft PowerPoint test.",
+    "No claim of venue-level publication acceptance."
+  ]
+}

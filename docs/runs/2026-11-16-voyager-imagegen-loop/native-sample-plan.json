@@ -1,0 +1,39 @@
+{
+  "reference": "selected-reference.png",
+  "referenceSHA256": "4e5729fc2ff80c88b54680500a47ab618541cd61a0ce5295494265eb05604e70",
+  "scope": "Three source-registered partial samples only, not the complete figure",
+  "regions": [
+    {
+      "id": "log-icon",
+      "box": [
+        75,
+        140,
+        110,
+        122
+      ],
+      "purpose": "Recurring flat geometric icon as grouped native colored polygons"
+    },
+    {
+      "id": "code-label",
+      "box": [
+        710,
+        210,
+        465,
+        32
+      ],
+      "purpose": "Small monospaced literal code, real native text"
+    },
+    {
+      "id": "feedback-junction",
+      "box": [
+        654,
+        670,
+        1149,
+        138
+      ],
+      "purpose": "Refine/Verify/Store labels, bound native arrows, a conditional-return polyline and diamond"
+    }
+  ],
+  "fontRecovery": "Arial/Courier New are approximate appearance fits from pixels; not identified original fonts. Source registration is manual and approximate.",
+  "acceptance": "Measure SVG, audit actual native XML, render partial PPTX through Office; record limitations. This cannot grant complete-figure fidelity or delivery readiness."
+}

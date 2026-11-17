@@ -1,0 +1,8332 @@
+[
+  {
+    "id": 55,
+    "name": "icon-31-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.7192,
+      501.1553,
+      36.0458000000001,
+      304.4809
+    ]
+  },
+  {
+    "id": 56,
+    "name": "icon-32-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.7192,
+      501.1553,
+      36.0458000000001,
+      304.4809
+    ]
+  },
+  {
+    "id": 62,
+    "name": "icon-27-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1061.5437,
+      250.9075,
+      57.36720000000014,
+      229.47279999999998
+    ]
+  },
+  {
+    "id": 63,
+    "name": "icon-28-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1061.5437,
+      250.9075,
+      57.36720000000014,
+      229.47279999999998
+    ]
+  },
+  {
+    "id": 84,
+    "name": "icon-29-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      307.0379,
+      127.2536,
+      50.29240000000004,
+      90.27969999999999
+    ]
+  },
+  {
+    "id": 85,
+    "name": "icon-30-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      307.0379,
+      127.2536,
+      50.29240000000004,
+      90.27969999999999
+    ]
+  },
+  {
+    "id": 344,
+    "name": "text-191",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Read Skills",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1032.7748,
+      351.0508686382294,
+      133.5093,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 416,
+    "name": "text-242",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Read Hard Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1504.9813500000002,
+      640.0916186382293,
+      208.3662,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 417,
+    "name": "text-243",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Evolve Skills",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1534.82985,
+      239.44131863822935,
+      148.907,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 429,
+    "name": "icon-33-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.3425,
+      128.6466,
+      36.0458000000001,
+      243.7254
+    ]
+  },
+  {
+    "id": 430,
+    "name": "icon-34-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.3425,
+      128.6466,
+      36.0458000000001,
+      243.7254
+    ]
+  },
+  {
+    "id": 72,
+    "name": "path-83",
+    "type": "shape",
+    "owner": "interaction-traces",
+    "bbox": [
+      20.6367,
+      9.5345,
+      306.50559999999996,
+      798.3076
+    ]
+  },
+  {
+    "id": 73,
+    "name": "path-84",
+    "type": "shape",
+    "owner": "interaction-traces",
+    "bbox": [
+      19.2435,
+      8.1414,
+      309.29200000000003,
+      801.0938
+    ]
+  },
+  {
+    "id": 146,
+    "name": "text-31",
+    "type": "text",
+    "owner": "interaction-traces",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      164.39875,
+      602.6214830352783,
+      55.7616,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 164,
+    "name": "text-33",
+    "type": "text",
+    "owner": "interaction-traces",
+    "text": "Interaction",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      85.2141,
+      21.376933367919918,
+      178.0465,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 165,
+    "name": "text-34",
+    "type": "text",
+    "owner": "interaction-traces",
+    "text": "Traces",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      119.032,
+      63.17283336791992,
+      110.3705,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 74,
+    "name": "path-85",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      41.5349,
+      120.991,
+      271.6753,
+      55.72850000000001
+    ]
+  },
+  {
+    "id": 75,
+    "name": "path-86",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      41.5349,
+      176.7195,
+      271.6753,
+      55.72809999999998
+    ]
+  },
+  {
+    "id": 76,
+    "name": "path-88",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      34.5688,
+      114.0252,
+      271.67539999999997,
+      55.727999999999994
+    ]
+  },
+  {
+    "id": 77,
+    "name": "path-89",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      34.5688,
+      169.7532,
+      271.67539999999997,
+      55.7286
+    ]
+  },
+  {
+    "id": 78,
+    "name": "icon-12-tone-0",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      49.8963,
+      187.7546,
+      240.56150000000002,
+      17.18289999999999
+    ]
+  },
+  {
+    "id": 79,
+    "name": "icon-12-tone-3",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      47.6353,
+      185.4937,
+      245.53560000000002,
+      21.704700000000003
+    ]
+  },
+  {
+    "id": 80,
+    "name": "icon-12-tone-5",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      46.2788,
+      183.685,
+      247.7964,
+      25.322100000000006
+    ]
+  },
+  {
+    "id": 81,
+    "name": "icon-12-tone-9",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      47.6353,
+      190.4677,
+      236.0397,
+      17.18289999999999
+    ]
+  },
+  {
+    "id": 82,
+    "name": "text-27",
+    "type": "text",
+    "owner": "trace-input",
+    "text": "Trace 1",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      128.09628809814453,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 83,
+    "name": "icon-13-tone-0",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      265.7817,
+      129.3606,
+      24.228400000000022,
+      24.639099999999985
+    ]
+  },
+  {
+    "id": 86,
+    "name": "icon-13-tone-1",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      271.1201,
+      147.4293,
+      1.6427000000000476,
+      0.8212999999999795
+    ]
+  },
+  {
+    "id": 87,
+    "name": "icon-13-tone-3",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      261.2645,
+      125.2541,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 88,
+    "name": "icon-13-tone-7",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      263.3178,
+      126.8967,
+      28.745600000000024,
+      29.1563
+    ]
+  },
+  {
+    "id": 89,
+    "name": "icon-13-tone-9",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      261.2645,
+      125.2541,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 90,
+    "name": "icon-14-tone-0",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      220.1518,
+      129.8253,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 91,
+    "name": "icon-14-tone-2",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      215.6858,
+      124.4668,
+      35.72810000000001,
+      34.383700000000005
+    ]
+  },
+  {
+    "id": 92,
+    "name": "icon-14-tone-4",
+    "type": "shape",
+    "owner": "trace-input",
+    "bbox": [
+      217.9188,
+      127.5926,
+      32.6019,
+      28.578599999999994
+    ]
+  },
+  {
+    "id": 467,
+    "name": "port-1-trace-input",
+    "type": "port-helper",
+    "owner": "trace-input",
+    "point": [
+      306,
+      146.03199999999998
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 469,
+    "name": "port-3-trace-input",
+    "type": "port-helper",
+    "owner": "trace-input",
+    "point": [
+      306,
+      202.032
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 541,
+    "name": "trace-input",
+    "type": "group",
+    "owner": "interaction-traces"
+  },
+  {
+    "id": 93,
+    "name": "path-91",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      41.5349,
+      246.7278,
+      271.6753,
+      55.72859999999997
+    ]
+  },
+  {
+    "id": 94,
+    "name": "path-92",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      41.5349,
+      302.4564,
+      271.6753,
+      55.72800000000001
+    ]
+  },
+  {
+    "id": 95,
+    "name": "path-94",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      34.5688,
+      239.4139,
+      271.67539999999997,
+      55.72800000000001
+    ]
+  },
+  {
+    "id": 96,
+    "name": "path-95",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      34.5688,
+      295.1419,
+      271.67539999999997,
+      55.7285
+    ]
+  },
+  {
+    "id": 97,
+    "name": "icon-15-tone-1",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      49.2882,
+      312.4457,
+      240.42899999999997,
+      17.630300000000034
+    ]
+  },
+  {
+    "id": 98,
+    "name": "icon-15-tone-2",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      47.0285,
+      310.1853,
+      245.40030000000002,
+      22.151100000000042
+    ]
+  },
+  {
+    "id": 99,
+    "name": "icon-15-tone-5",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      45.6727,
+      308.3771,
+      249.01579999999998,
+      25.31540000000001
+    ]
+  },
+  {
+    "id": 100,
+    "name": "icon-15-tone-9",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      244.0718,
+      315.6101,
+      5.4232000000000085,
+      5.42470000000003
+    ]
+  },
+  {
+    "id": 101,
+    "name": "text-28",
+    "type": "text",
+    "owner": "trace-2",
+    "text": "Trace 2",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      253.4848880981445,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 102,
+    "name": "icon-16-tone-0",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      265.7817,
+      254.7493,
+      24.228400000000022,
+      24.639099999999985
+    ]
+  },
+  {
+    "id": 103,
+    "name": "icon-16-tone-1",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      271.1201,
+      272.818,
+      1.6427000000000476,
+      0.8213000000000079
+    ]
+  },
+  {
+    "id": 104,
+    "name": "icon-16-tone-3",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      261.2645,
+      250.6428,
+      32.85210000000001,
+      32.85209999999998
+    ]
+  },
+  {
+    "id": 105,
+    "name": "icon-16-tone-7",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      263.3178,
+      252.2854,
+      28.745600000000024,
+      29.156300000000016
+    ]
+  },
+  {
+    "id": 106,
+    "name": "icon-16-tone-9",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      261.2645,
+      250.6428,
+      32.85210000000001,
+      32.85209999999998
+    ]
+  },
+  {
+    "id": 107,
+    "name": "icon-17-tone-0",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      220.1518,
+      255.214,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 108,
+    "name": "icon-17-tone-2",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      215.6858,
+      249.8555,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 109,
+    "name": "icon-17-tone-4",
+    "type": "shape",
+    "owner": "trace-2",
+    "bbox": [
+      217.9188,
+      252.9813,
+      32.6019,
+      28.578600000000023
+    ]
+  },
+  {
+    "id": 542,
+    "name": "trace-2",
+    "type": "group",
+    "owner": "interaction-traces"
+  },
+  {
+    "id": 110,
+    "name": "path-97",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      41.5349,
+      371.7684,
+      271.6753,
+      55.72800000000001
+    ]
+  },
+  {
+    "id": 111,
+    "name": "path-98",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      41.5349,
+      427.4964,
+      271.6753,
+      55.7285
+    ]
+  },
+  {
+    "id": 112,
+    "name": "path-100",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      34.5688,
+      364.8021,
+      271.67539999999997,
+      55.7285
+    ]
+  },
+  {
+    "id": 113,
+    "name": "path-101",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      34.5688,
+      420.5306,
+      271.67539999999997,
+      55.7285
+    ]
+  },
+  {
+    "id": 114,
+    "name": "icon-18-tone-0",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      48.6589,
+      438.1495,
+      242.12989999999996,
+      17.749300000000005
+    ]
+  },
+  {
+    "id": 115,
+    "name": "icon-18-tone-1",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      46.3833,
+      435.8739,
+      247.1362,
+      21.845399999999984
+    ]
+  },
+  {
+    "id": 116,
+    "name": "icon-18-tone-4",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      135.1339,
+      443.1557,
+      14.10899999999998,
+      10.922699999999963
+    ]
+  },
+  {
+    "id": 117,
+    "name": "icon-18-tone-7",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      288.058,
+      434.9637,
+      7.282100000000014,
+      24.120900000000006
+    ]
+  },
+  {
+    "id": 118,
+    "name": "icon-18-tone-9",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      82.7938,
+      438.6046,
+      201.16799999999998,
+      18.65949999999998
+    ]
+  },
+  {
+    "id": 119,
+    "name": "text-29",
+    "type": "text",
+    "owner": "trace-3",
+    "text": "Trace 3",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      378.8735880981445,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 120,
+    "name": "icon-19-tone-0",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      265.7817,
+      380.1374,
+      24.228400000000022,
+      24.639099999999985
+    ]
+  },
+  {
+    "id": 121,
+    "name": "icon-19-tone-1",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      271.1201,
+      398.2061,
+      1.6427000000000476,
+      0.8213000000000079
+    ]
+  },
+  {
+    "id": 122,
+    "name": "icon-19-tone-3",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      261.2645,
+      376.0309,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 123,
+    "name": "icon-19-tone-7",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      263.3178,
+      377.6735,
+      28.745600000000024,
+      29.156299999999987
+    ]
+  },
+  {
+    "id": 124,
+    "name": "icon-19-tone-9",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      261.2645,
+      376.0309,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 125,
+    "name": "icon-20-tone-0",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      220.1518,
+      380.6026,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 126,
+    "name": "icon-20-tone-2",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      215.6858,
+      375.2441,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 127,
+    "name": "icon-20-tone-4",
+    "type": "shape",
+    "owner": "trace-3",
+    "bbox": [
+      217.9188,
+      378.3699,
+      32.6019,
+      28.57860000000005
+    ]
+  },
+  {
+    "id": 543,
+    "name": "trace-3",
+    "type": "group",
+    "owner": "interaction-traces"
+  },
+  {
+    "id": 128,
+    "name": "path-103",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      41.5349,
+      497.157,
+      271.6753,
+      55.72809999999998
+    ]
+  },
+  {
+    "id": 129,
+    "name": "path-104",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      41.5349,
+      552.8851,
+      271.6753,
+      55.728500000000054
+    ]
+  },
+  {
+    "id": 130,
+    "name": "path-106",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      34.5688,
+      490.1907,
+      271.67539999999997,
+      55.72860000000003
+    ]
+  },
+  {
+    "id": 131,
+    "name": "path-107",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      34.5688,
+      545.9193,
+      271.67539999999997,
+      55.72799999999995
+    ]
+  },
+  {
+    "id": 132,
+    "name": "icon-21-tone-0",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      49.8963,
+      563.016,
+      240.56150000000002,
+      17.6336
+    ]
+  },
+  {
+    "id": 133,
+    "name": "icon-21-tone-3",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      47.6353,
+      561.2074,
+      245.53560000000002,
+      21.702999999999975
+    ]
+  },
+  {
+    "id": 134,
+    "name": "icon-21-tone-6",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      46.2788,
+      559.851,
+      247.7964,
+      23.963700000000017
+    ]
+  },
+  {
+    "id": 135,
+    "name": "icon-21-tone-7",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      143.4982,
+      567.0853,
+      140.17680000000001,
+      10.851499999999987
+    ]
+  },
+  {
+    "id": 136,
+    "name": "icon-21-tone-9",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      50.3484,
+      563.016,
+      237.39630000000002,
+      17.6336
+    ]
+  },
+  {
+    "id": 137,
+    "name": "text-30",
+    "type": "text",
+    "owner": "trace-4",
+    "text": "Trace 4",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      504.2622880981445,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 138,
+    "name": "icon-22-tone-0",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      265.7817,
+      505.5261,
+      24.228400000000022,
+      24.63910000000004
+    ]
+  },
+  {
+    "id": 139,
+    "name": "icon-22-tone-1",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      271.1201,
+      523.5948,
+      1.6427000000000476,
+      0.8213000000000648
+    ]
+  },
+  {
+    "id": 140,
+    "name": "icon-22-tone-3",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      261.2645,
+      501.4196,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 141,
+    "name": "icon-22-tone-7",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      263.3178,
+      503.0622,
+      28.745600000000024,
+      29.15629999999993
+    ]
+  },
+  {
+    "id": 142,
+    "name": "icon-22-tone-9",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      261.2645,
+      501.4196,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 143,
+    "name": "icon-23-tone-0",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      220.1518,
+      505.9913,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 144,
+    "name": "icon-23-tone-2",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      215.6858,
+      500.6328,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 145,
+    "name": "icon-23-tone-4",
+    "type": "shape",
+    "owner": "trace-4",
+    "bbox": [
+      217.9188,
+      503.7586,
+      32.6019,
+      28.57860000000005
+    ]
+  },
+  {
+    "id": 544,
+    "name": "trace-4",
+    "type": "group",
+    "owner": "interaction-traces"
+  },
+  {
+    "id": 147,
+    "name": "path-109",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      41.5349,
+      682.4534,
+      271.6753,
+      55.728500000000054
+    ]
+  },
+  {
+    "id": 148,
+    "name": "path-110",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      41.5349,
+      738.1819,
+      271.6753,
+      55.72809999999993
+    ]
+  },
+  {
+    "id": 149,
+    "name": "path-112",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      34.5688,
+      675.4876,
+      271.67539999999997,
+      55.72799999999995
+    ]
+  },
+  {
+    "id": 150,
+    "name": "path-113",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      34.5688,
+      731.2156,
+      271.67539999999997,
+      55.72860000000003
+    ]
+  },
+  {
+    "id": 151,
+    "name": "icon-24-tone-0",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      49.8963,
+      749.2172,
+      240.56150000000002,
+      17.182999999999993
+    ]
+  },
+  {
+    "id": 152,
+    "name": "icon-24-tone-3",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      47.6353,
+      746.9563,
+      245.53560000000002,
+      21.704799999999977
+    ]
+  },
+  {
+    "id": 153,
+    "name": "icon-24-tone-5",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      46.2788,
+      745.1476,
+      247.7964,
+      25.322199999999953
+    ]
+  },
+  {
+    "id": 154,
+    "name": "icon-24-tone-9",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      47.6353,
+      751.9303,
+      236.0397,
+      17.182999999999993
+    ]
+  },
+  {
+    "id": 155,
+    "name": "text-32",
+    "type": "text",
+    "owner": "trace-E",
+    "text": "Trace E",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      689.5586880981446,
+      107.6534,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 156,
+    "name": "icon-25-tone-0",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      265.7817,
+      690.8231,
+      24.228400000000022,
+      24.6391000000001
+    ]
+  },
+  {
+    "id": 157,
+    "name": "icon-25-tone-1",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      271.1201,
+      708.8918,
+      1.6427000000000476,
+      0.8213000000000648
+    ]
+  },
+  {
+    "id": 158,
+    "name": "icon-25-tone-3",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      261.2645,
+      686.7166,
+      32.85210000000001,
+      32.852100000000064
+    ]
+  },
+  {
+    "id": 159,
+    "name": "icon-25-tone-7",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      263.3178,
+      688.3592,
+      28.745600000000024,
+      29.156299999999987
+    ]
+  },
+  {
+    "id": 160,
+    "name": "icon-25-tone-9",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      261.2645,
+      686.7166,
+      32.85210000000001,
+      32.852100000000064
+    ]
+  },
+  {
+    "id": 161,
+    "name": "icon-26-tone-0",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      220.1518,
+      691.2878,
+      27.689300000000003,
+      23.666700000000105
+    ]
+  },
+  {
+    "id": 162,
+    "name": "icon-26-tone-2",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      215.6858,
+      685.9293,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 163,
+    "name": "icon-26-tone-4",
+    "type": "shape",
+    "owner": "trace-E",
+    "bbox": [
+      217.9188,
+      689.0551,
+      32.6019,
+      28.578599999999938
+    ]
+  },
+  {
+    "id": 545,
+    "name": "trace-E",
+    "type": "group",
+    "owner": "interaction-traces"
+  },
+  {
+    "id": 546,
+    "name": "interaction-traces",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 2,
+    "name": "path-1",
+    "type": "shape",
+    "owner": "learning",
+    "bbox": [
+      350.6387,
+      9.5345,
+      734.9377,
+      798.3076
+    ]
+  },
+  {
+    "id": 3,
+    "name": "path-2",
+    "type": "shape",
+    "owner": "learning",
+    "bbox": [
+      349.2456,
+      8.1414,
+      737.7239999999999,
+      801.0938
+    ]
+  },
+  {
+    "id": 4,
+    "name": "text-1",
+    "type": "text",
+    "owner": "learning",
+    "text": "Learning to Use Memory Skills",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      464.7324,
+      17.89353336791992,
+      507.1326,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 5,
+    "name": "text-2",
+    "type": "text",
+    "owner": "learning",
+    "text": "(Controller & Executor)",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      526.6975,
+      59.68993336791992,
+      383.1671,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 21,
+    "name": "text-4",
+    "type": "text",
+    "owner": "learning",
+    "text": "Segmenter",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      645.7296,
+      133.44638823547362,
+      128.3846,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 22,
+    "name": "text-5",
+    "type": "text",
+    "owner": "learning",
+    "text": "Text Span",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      652.5868,
+      189.17438823547363,
+      121.6631,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 25,
+    "name": "text-6",
+    "type": "text",
+    "owner": "learning",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 44.5826301574707,
+    "bbox": [
+      910.4281,
+      176.10638025512696,
+      37.1744,
+      55.72828769683838
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 26,
+    "name": "text-7",
+    "type": "text",
+    "owner": "learning",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 44.5826301574707,
+    "bbox": [
+      983.5714,
+      176.10638025512696,
+      37.1744,
+      55.72828769683838
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 32,
+    "name": "text-9",
+    "type": "text",
+    "owner": "learning",
+    "text": "Sequential Process",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      819.6301,
+      107.67198823547365,
+      219.4507,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 70,
+    "name": "text-25",
+    "type": "text",
+    "owner": "learning",
+    "text": "Optimize Controller",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      730.0078,
+      641.9668882354737,
+      231.5043,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 348,
+    "name": "text-193",
+    "type": "text",
+    "owner": "learning",
+    "text": "Record Recently Observed Failure Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      493.9462,
+      739.4912882354737,
+      473.7389,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 538,
+    "name": "port-72-learning",
+    "type": "port-helper",
+    "owner": "learning",
+    "point": [
+      712,
+      808
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 6,
+    "name": "path-3",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      361.1087,
+      118.2044,
+      271.67539999999997,
+      55.72849999999998
+    ]
+  },
+  {
+    "id": 7,
+    "name": "path-4",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      361.1087,
+      173.9329,
+      271.67539999999997,
+      55.72810000000001
+    ]
+  },
+  {
+    "id": 8,
+    "name": "icon-0-tone-0",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      376.4362,
+      191.9343,
+      240.56150000000002,
+      17.18289999999999
+    ]
+  },
+  {
+    "id": 9,
+    "name": "icon-0-tone-3",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      374.1752,
+      189.6734,
+      245.53559999999993,
+      21.704700000000003
+    ]
+  },
+  {
+    "id": 10,
+    "name": "icon-0-tone-5",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      372.8187,
+      187.8647,
+      247.7964,
+      25.322100000000006
+    ]
+  },
+  {
+    "id": 11,
+    "name": "icon-0-tone-9",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      374.1752,
+      194.6474,
+      236.03969999999993,
+      17.18289999999999
+    ]
+  },
+  {
+    "id": 12,
+    "name": "text-3",
+    "type": "text",
+    "owner": "selected-trace",
+    "text": "Trace 1",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      373.1182,
+      132.27598809814452,
+      107.2589,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 13,
+    "name": "icon-1-tone-0",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      592.3216,
+      133.5399,
+      24.228399999999965,
+      24.639100000000013
+    ]
+  },
+  {
+    "id": 14,
+    "name": "icon-1-tone-1",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      597.66,
+      151.6086,
+      1.6426999999999907,
+      0.8213000000000079
+    ]
+  },
+  {
+    "id": 15,
+    "name": "icon-1-tone-3",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      587.8044,
+      129.4334,
+      32.852100000000064,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 16,
+    "name": "icon-1-tone-7",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      589.8577,
+      131.076,
+      28.745599999999968,
+      29.156300000000016
+    ]
+  },
+  {
+    "id": 17,
+    "name": "icon-1-tone-9",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      587.8044,
+      129.4334,
+      32.852100000000064,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 18,
+    "name": "icon-2-tone-0",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      546.6917,
+      134.0051,
+      27.689200000000028,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 19,
+    "name": "icon-2-tone-2",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      542.2257,
+      128.6466,
+      35.728000000000065,
+      34.383700000000005
+    ]
+  },
+  {
+    "id": 20,
+    "name": "icon-2-tone-4",
+    "type": "shape",
+    "owner": "selected-trace",
+    "bbox": [
+      544.4587,
+      131.7724,
+      32.601800000000026,
+      28.578599999999994
+    ]
+  },
+  {
+    "id": 468,
+    "name": "port-2-selected-trace",
+    "type": "port-helper",
+    "owner": "selected-trace",
+    "point": [
+      360,
+      145.75
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 470,
+    "name": "port-4-selected-trace",
+    "type": "port-helper",
+    "owner": "selected-trace",
+    "point": [
+      360,
+      202.027
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 471,
+    "name": "port-5-selected-trace",
+    "type": "port-helper",
+    "owner": "selected-trace",
+    "point": [
+      633,
+      173.05599999999998
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 547,
+    "name": "selected-trace",
+    "type": "group",
+    "owner": "learning"
+  },
+  {
+    "id": 27,
+    "name": "path-23",
+    "type": "shape",
+    "owner": "span-sequence",
+    "bbox": [
+      811.1145,
+      142.1537,
+      269.0795999999999,
+      55.72830000000002
+    ]
+  },
+  {
+    "id": 28,
+    "name": "path-24",
+    "type": "line-decoration",
+    "owner": "span-sequence",
+    "bbox": [
+      866.411,
+      142.1536,
+      0.1,
+      55.7217
+    ]
+  },
+  {
+    "id": 29,
+    "name": "path-25",
+    "type": "line-decoration",
+    "owner": "span-sequence",
+    "bbox": [
+      920.0494,
+      142.1536,
+      0.1,
+      55.7285
+    ]
+  },
+  {
+    "id": 30,
+    "name": "path-26",
+    "type": "line-decoration",
+    "owner": "span-sequence",
+    "bbox": [
+      1008.1698,
+      142.1536,
+      0.1,
+      55.7285
+    ]
+  },
+  {
+    "id": 31,
+    "name": "text-8",
+    "type": "text",
+    "owner": "span-sequence",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      935.2664,
+      118.67846862792967,
+      55.7616,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 438,
+    "name": "math-3-base",
+    "type": "text",
+    "owner": "span-sequence",
+    "text": "x",
+    "font": "Times New Roman",
+    "fontSize": 40.81398000000001,
+    "bbox": [
+      816.6875,
+      139.17705839999996,
+      36.73258200000001,
+      51.01747500000001
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 439,
+    "name": "math-3-sub",
+    "type": "text",
+    "owner": "span-sequence",
+    "text": "1",
+    "font": "Times New Roman",
+    "fontSize": 23.672108400000003,
+    "bbox": [
+      837.09449,
+      162.847060272,
+      21.304897560000004,
+      29.590135500000002
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 440,
+    "name": "math-4-base",
+    "type": "text",
+    "owner": "span-sequence",
+    "text": "x",
+    "font": "Times New Roman",
+    "fontSize": 42.679746,
+    "bbox": [
+      868.7516,
+      138.00202768,
+      38.4117714,
+      53.3496825
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 441,
+    "name": "math-4-sub",
+    "type": "text",
+    "owner": "span-sequence",
+    "text": "2",
+    "font": "Times New Roman",
+    "fontSize": 24.75425268,
+    "bbox": [
+      890.0914730000001,
+      162.75407753439998,
+      22.278827412000002,
+      30.942815850000002
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 442,
+    "name": "math-5-base",
+    "type": "text",
+    "owner": "span-sequence",
+    "text": "x",
+    "font": "Times New Roman",
+    "fontSize": 37.898709000000004,
+    "bbox": [
+      1017.7481,
+      141.01258872,
+      34.10883810000001,
+      47.37338625
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 443,
+    "name": "math-5-sub",
+    "type": "text",
+    "owner": "span-sequence",
+    "text": "T",
+    "font": "Times New Roman",
+    "fontSize": 21.98125122,
+    "bbox": [
+      1036.6974545,
+      162.99188387759997,
+      19.783126098,
+      27.476564025000002
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 472,
+    "name": "port-6-span-sequence",
+    "type": "port-helper",
+    "owner": "span-sequence",
+    "point": [
+      810,
+      173.024
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 473,
+    "name": "port-7-span-sequence",
+    "type": "port-helper",
+    "owner": "span-sequence",
+    "point": [
+      839,
+      198
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 475,
+    "name": "port-9-span-sequence",
+    "type": "port-helper",
+    "owner": "span-sequence",
+    "point": [
+      889,
+      198
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 477,
+    "name": "port-11-span-sequence",
+    "type": "port-helper",
+    "owner": "span-sequence",
+    "point": [
+      965,
+      198
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 479,
+    "name": "port-13-span-sequence",
+    "type": "port-helper",
+    "owner": "span-sequence",
+    "point": [
+      1040,
+      198
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 548,
+    "name": "span-sequence",
+    "type": "group",
+    "owner": "learning"
+  },
+  {
+    "id": 23,
+    "name": "path-9",
+    "type": "shape",
+    "owner": "step-loop",
+    "bbox": [
+      363.1985,
+      243.5931,
+      708.4458999999999,
+      383.13230000000004
+    ]
+  },
+  {
+    "id": 24,
+    "name": "path-10",
+    "type": "shape",
+    "owner": "step-loop",
+    "bbox": [
+      361.8053,
+      242.2,
+      711.2323000000001,
+      385.91850000000005
+    ]
+  },
+  {
+    "id": 42,
+    "name": "text-11",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "Input",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      513.6797,
+      307.5972882354736,
+      65.0815,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 444,
+    "name": "math-7-base",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "M",
+    "font": "Times New Roman",
+    "fontSize": 38.870466,
+    "bbox": [
+      796.486,
+      295.74324528,
+      34.9834194,
+      48.5880825
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 445,
+    "name": "math-7-sub",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "t",
+    "font": "Times New Roman",
+    "fontSize": 22.544870279999998,
+    "bbox": [
+      815.921233,
+      318.28610934240004,
+      20.290383251999998,
+      28.181087849999997
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 47,
+    "name": "text-14",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "Retrieve",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      617.2715999999999,
+      429.43921863822936,
+      100.0314,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 448,
+    "name": "math-10-base",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "M",
+    "font": "Times New Roman",
+    "fontSize": 38.870466,
+    "bbox": [
+      993.0326,
+      488.00594528000005,
+      34.9834194,
+      48.5880825
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 449,
+    "name": "math-10-sub",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "t",
+    "font": "Times New Roman",
+    "fontSize": 22.544870279999998,
+    "bbox": [
+      1012.467833,
+      510.5488093424,
+      20.290383251999998,
+      28.181087849999997
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 450,
+    "name": "math-11-base",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "x",
+    "font": "Times New Roman",
+    "fontSize": 36.279114,
+    "bbox": [
+      878.2533,
+      488.24446112000004,
+      32.6512026,
+      45.3488925
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 451,
+    "name": "math-11-sub",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "t",
+    "font": "Times New Roman",
+    "fontSize": 21.041886119999997,
+    "bbox": [
+      896.3928569999999,
+      509.2844747696,
+      18.937697508,
+      26.302357649999998
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 452,
+    "name": "math-11-base2",
+    "type": "text",
+    "owner": "step-loop",
+    "text": ", A",
+    "font": "Times New Roman",
+    "fontSize": 36.279114,
+    "bbox": [
+      919.34595,
+      488.24446112000004,
+      32.6512026,
+      45.3488925
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 453,
+    "name": "math-11-sub2",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "t",
+    "font": "Times New Roman",
+    "fontSize": 21.041886119999997,
+    "bbox": [
+      951.9971526,
+      509.2844747696,
+      18.937697508,
+      26.302357649999998
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 64,
+    "name": "text-21",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "Memory",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      768.9849,
+      523.5444882354736,
+      93.653,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 65,
+    "name": "text-22",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "Update",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      773.306,
+      579.2725882354737,
+      85.0098,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 387,
+    "name": "text-222",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "Retrieved",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      754.9331,
+      423.92978823547367,
+      114.7657,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 388,
+    "name": "text-223",
+    "type": "text",
+    "owner": "step-loop",
+    "text": "Memory",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      765.5019,
+      454.58068823547364,
+      93.6529,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 389,
+    "name": "path-192",
+    "type": "shape",
+    "owner": "step-loop",
+    "bbox": [
+      816.6596,
+      407.3367,
+      11.145600000000059,
+      11.146000000000015
+    ]
+  },
+  {
+    "id": 390,
+    "name": "path-193",
+    "type": "shape",
+    "owner": "step-loop",
+    "bbox": [
+      816.6596,
+      407.3367,
+      11.145600000000059,
+      11.146000000000015
+    ]
+  },
+  {
+    "id": 474,
+    "name": "port-8-step-loop",
+    "type": "port-helper",
+    "owner": "step-loop",
+    "point": [
+      839,
+      243
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 476,
+    "name": "port-10-step-loop",
+    "type": "port-helper",
+    "owner": "step-loop",
+    "point": [
+      889,
+      243
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 478,
+    "name": "port-12-step-loop",
+    "type": "port-helper",
+    "owner": "step-loop",
+    "point": [
+      965,
+      243
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 480,
+    "name": "port-14-step-loop",
+    "type": "port-helper",
+    "owner": "step-loop",
+    "point": [
+      1040,
+      243
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 48,
+    "name": "path-45",
+    "type": "shape",
+    "owner": "current-span",
+    "bbox": [
+      375.7095,
+      292.3553,
+      118.84750000000003,
+      104.4907
+    ]
+  },
+  {
+    "id": 49,
+    "name": "text-15",
+    "type": "text",
+    "owner": "current-span",
+    "text": "Current",
+    "font": "Comic Sans MS",
+    "fontSize": 22.29131507873535,
+    "bbox": [
+      394.7455,
+      302.4981901275635,
+      81.4122,
+      27.86414384841919
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 50,
+    "name": "text-16",
+    "type": "text",
+    "owner": "current-span",
+    "text": "Text Span",
+    "font": "Comic Sans MS",
+    "fontSize": 22.29131507873535,
+    "bbox": [
+      379.1046,
+      329.6655901275635,
+      112.7369,
+      27.86414384841919
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 446,
+    "name": "math-8-base",
+    "type": "text",
+    "owner": "current-span",
+    "text": "x",
+    "font": "Times New Roman",
+    "fontSize": 42.679746,
+    "bbox": [
+      412.6365,
+      344.15502768,
+      38.4117714,
+      53.3496825
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 447,
+    "name": "math-8-sub",
+    "type": "text",
+    "owner": "current-span",
+    "text": "t",
+    "font": "Times New Roman",
+    "fontSize": 24.75425268,
+    "bbox": [
+      433.976373,
+      368.9070775344,
+      22.278827412000002,
+      30.942815850000002
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 481,
+    "name": "port-15-current-span",
+    "type": "port-helper",
+    "owner": "current-span",
+    "point": [
+      494,
+      345
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 483,
+    "name": "port-17-current-span",
+    "type": "port-helper",
+    "owner": "current-span",
+    "point": [
+      433.31,
+      292
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 549,
+    "name": "current-span",
+    "type": "group",
+    "owner": "step-loop"
+  },
+  {
+    "id": 45,
+    "name": "path-38",
+    "type": "shape",
+    "owner": "retriever",
+    "bbox": [
+      611.4611,
+      309.7708,
+      178.33050000000003,
+      69.66019999999997
+    ]
+  },
+  {
+    "id": 455,
+    "name": "label-block:retriever",
+    "type": "text-block",
+    "owner": "retriever",
+    "sourceTextIds": [
+      "text-13"
+    ],
+    "text": "Retriever",
+    "bbox": [
+      611,
+      309,
+      179,
+      71
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 482,
+    "name": "port-16-retriever",
+    "type": "port-helper",
+    "owner": "retriever",
+    "point": [
+      611,
+      344.5
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 485,
+    "name": "port-19-retriever",
+    "type": "port-helper",
+    "owner": "retriever",
+    "point": [
+      790,
+      344.5
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 488,
+    "name": "port-22-retriever",
+    "type": "port-helper",
+    "owner": "retriever",
+    "point": [
+      699,
+      380
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 489,
+    "name": "port-23-retriever",
+    "type": "port-helper",
+    "owner": "retriever",
+    "point": [
+      632,
+      380
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 550,
+    "name": "retriever",
+    "type": "group",
+    "owner": "step-loop"
+  },
+  {
+    "id": 41,
+    "name": "path-27",
+    "type": "shape",
+    "owner": "controller",
+    "bbox": [
+      878.2533,
+      250.5594,
+      184.60000000000002,
+      236.8452
+    ]
+  },
+  {
+    "id": 43,
+    "name": "path-31",
+    "type": "shape",
+    "owner": "controller",
+    "bbox": [
+      905.2145,
+      282.6028,
+      131.88660000000004,
+      2.786699999999996
+    ]
+  },
+  {
+    "id": 44,
+    "name": "text-12",
+    "type": "text",
+    "owner": "controller",
+    "text": "Controller",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      905.2145,
+      255.5747880981445,
+      131.8661,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 433,
+    "name": "icon-37-tone-0",
+    "type": "shape",
+    "owner": "controller",
+    "bbox": [
+      957.8403,
+      290.091,
+      25.25190000000009,
+      32.39209999999997
+    ]
+  },
+  {
+    "id": 434,
+    "name": "icon-37-tone-1",
+    "type": "shape",
+    "owner": "controller",
+    "bbox": [
+      964.458,
+      307.5061,
+      9.926600000000008,
+      15.32529999999997
+    ]
+  },
+  {
+    "id": 484,
+    "name": "port-18-controller",
+    "type": "port-helper",
+    "owner": "controller",
+    "point": [
+      878,
+      271
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 486,
+    "name": "port-20-controller",
+    "type": "port-helper",
+    "owner": "controller",
+    "point": [
+      878,
+      345
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 491,
+    "name": "port-25-controller",
+    "type": "port-helper",
+    "owner": "controller",
+    "point": [
+      972,
+      488
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 506,
+    "name": "port-40-controller",
+    "type": "port-helper",
+    "owner": "controller",
+    "point": [
+      1066,
+      471
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 518,
+    "name": "port-52-controller",
+    "type": "port-helper",
+    "owner": "controller",
+    "point": [
+      1066,
+      286
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 520,
+    "name": "port-54-controller",
+    "type": "port-helper",
+    "owner": "controller",
+    "point": [
+      1066,
+      450
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 59,
+    "name": "path-48",
+    "type": "shape",
+    "owner": "state-skill-encoder",
+    "bbox": [
+      885.8742,
+      327.8821,
+      169.35130000000004,
+      69.66070000000002
+    ]
+  },
+  {
+    "id": 456,
+    "name": "label-block:state-skill-encoder",
+    "type": "text-block",
+    "owner": "state-skill-encoder",
+    "sourceTextIds": [
+      "text-19",
+      "text-20"
+    ],
+    "text": "State/Skill\nEncoder",
+    "bbox": [
+      885,
+      328,
+      174,
+      69
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 551,
+    "name": "state-skill-encoder",
+    "type": "group",
+    "owner": "controller"
+  },
+  {
+    "id": 435,
+    "name": "path-241",
+    "type": "shape",
+    "owner": "skill-selection",
+    "bbox": [
+      885.8742,
+      406.5985,
+      169.35130000000004,
+      69.66059999999999
+    ]
+  },
+  {
+    "id": 457,
+    "name": "label-block:skill-selection",
+    "type": "text-block",
+    "owner": "skill-selection",
+    "sourceTextIds": [
+      "text-245",
+      "text-246"
+    ],
+    "text": "Top-K Skill\nSelection",
+    "bbox": [
+      885,
+      407,
+      174,
+      69
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 552,
+    "name": "skill-selection",
+    "type": "group",
+    "owner": "controller"
+  },
+  {
+    "id": 553,
+    "name": "controller",
+    "type": "group",
+    "owner": "step-loop"
+  },
+  {
+    "id": 51,
+    "name": "path-46",
+    "type": "shape",
+    "owner": "executor",
+    "bbox": [
+      876.5953,
+      536.1668,
+      188.08310000000006,
+      83.59230000000002
+    ]
+  },
+  {
+    "id": 52,
+    "name": "path-47",
+    "type": "shape",
+    "owner": "executor",
+    "bbox": [
+      911.4512,
+      573.0867,
+      119.4022,
+      2.786699999999996
+    ]
+  },
+  {
+    "id": 57,
+    "name": "icon-9-tone-1",
+    "type": "shape",
+    "owner": "executor",
+    "bbox": [
+      1032.0251,
+      582.4349,
+      29.97829999999999,
+      34.346000000000004
+    ]
+  },
+  {
+    "id": 58,
+    "name": "icon-9-tone-8",
+    "type": "shape",
+    "owner": "executor",
+    "bbox": [
+      1032.6207,
+      584.4202,
+      28.78710000000001,
+      30.57389999999998
+    ]
+  },
+  {
+    "id": 458,
+    "name": "label-block:executor",
+    "type": "text-block",
+    "owner": "executor",
+    "sourceTextIds": [
+      "text-17",
+      "text-18"
+    ],
+    "text": "Executor\n(LLM)",
+    "bbox": [
+      876,
+      536,
+      190,
+      84
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 492,
+    "name": "port-26-executor",
+    "type": "port-helper",
+    "owner": "executor",
+    "point": [
+      971,
+      536
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 493,
+    "name": "port-27-executor",
+    "type": "port-helper",
+    "owner": "executor",
+    "point": [
+      876,
+      563.972
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 554,
+    "name": "executor",
+    "type": "group",
+    "owner": "step-loop"
+  },
+  {
+    "id": 33,
+    "name": "icon-6-tone-0",
+    "type": "shape",
+    "owner": "memory-bank",
+    "bbox": [
+      374.1865,
+      487.9992,
+      357.27969999999993,
+      122.37480000000005
+    ]
+  },
+  {
+    "id": 34,
+    "name": "icon-6-tone-1",
+    "type": "shape",
+    "owner": "memory-bank",
+    "bbox": [
+      492.342,
+      525.9776,
+      235.60770000000002,
+      55.56099999999992
+    ]
+  },
+  {
+    "id": 35,
+    "name": "icon-6-tone-3",
+    "type": "shape",
+    "owner": "memory-bank",
+    "bbox": [
+      378.4064,
+      492.219,
+      347.43339999999995,
+      70.3304
+    ]
+  },
+  {
+    "id": 36,
+    "name": "icon-6-tone-4",
+    "type": "shape",
+    "owner": "memory-bank",
+    "bbox": [
+      492.342,
+      533.0106,
+      234.2011,
+      51.34120000000007
+    ]
+  },
+  {
+    "id": 37,
+    "name": "icon-6-tone-6",
+    "type": "shape",
+    "owner": "memory-bank",
+    "bbox": [
+      378.4064,
+      573.0989,
+      108.30919999999998,
+      33.7586
+    ]
+  },
+  {
+    "id": 38,
+    "name": "icon-6-tone-8",
+    "type": "shape",
+    "owner": "memory-bank",
+    "bbox": [
+      374.1865,
+      487.9992,
+      356.5763999999999,
+      122.37480000000005
+    ]
+  },
+  {
+    "id": 39,
+    "name": "icon-6-tone-9",
+    "type": "shape",
+    "owner": "memory-bank",
+    "bbox": [
+      378.4064,
+      517.5379,
+      108.30919999999998,
+      61.18739999999991
+    ]
+  },
+  {
+    "id": 40,
+    "name": "text-10",
+    "type": "text",
+    "owner": "memory-bank",
+    "text": "Memory Bank",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      534.2295,
+      589.0342880981445,
+      180.0313,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 487,
+    "name": "port-21-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      699,
+      520
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 490,
+    "name": "port-24-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      632,
+      520
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 494,
+    "name": "port-28-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      735,
+      564
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 495,
+    "name": "port-29-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      405,
+      627
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 497,
+    "name": "port-31-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      509,
+      627
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 499,
+    "name": "port-33-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      610,
+      627
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 501,
+    "name": "port-35-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      709,
+      627
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 540,
+    "name": "port-74-memory-bank",
+    "type": "port-helper",
+    "owner": "memory-bank",
+    "point": [
+      510,
+      520
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 555,
+    "name": "memory-bank",
+    "type": "group",
+    "owner": "step-loop"
+  },
+  {
+    "id": 459,
+    "name": "label-block:reset-event",
+    "type": "text-block",
+    "owner": "reset-event",
+    "sourceTextIds": [
+      "text-26"
+    ],
+    "text": "Reset Every Trace",
+    "bbox": [
+      384,
+      426,
+      220,
+      34
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 539,
+    "name": "port-73-reset-event",
+    "type": "port-helper",
+    "owner": "reset-event",
+    "point": [
+      510,
+      460
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 556,
+    "name": "reset-event",
+    "type": "group",
+    "owner": "step-loop"
+  },
+  {
+    "id": 557,
+    "name": "step-loop",
+    "type": "group",
+    "owner": "learning"
+  },
+  {
+    "id": 66,
+    "name": "path-70",
+    "type": "shape",
+    "owner": "evaluation",
+    "bbox": [
+      368.0747,
+      675.4876,
+      374.0762,
+      48.76220000000001
+    ]
+  },
+  {
+    "id": 460,
+    "name": "label-block:evaluation",
+    "type": "text-block",
+    "owner": "evaluation",
+    "sourceTextIds": [
+      "text-23"
+    ],
+    "text": "Evaluation on Training Data",
+    "bbox": [
+      367,
+      675,
+      375,
+      50
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 496,
+    "name": "port-30-evaluation",
+    "type": "port-helper",
+    "owner": "evaluation",
+    "point": [
+      405,
+      675
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 498,
+    "name": "port-32-evaluation",
+    "type": "port-helper",
+    "owner": "evaluation",
+    "point": [
+      509,
+      675
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 500,
+    "name": "port-34-evaluation",
+    "type": "port-helper",
+    "owner": "evaluation",
+    "point": [
+      610,
+      675
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 502,
+    "name": "port-36-evaluation",
+    "type": "port-helper",
+    "owner": "evaluation",
+    "point": [
+      709,
+      675
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 503,
+    "name": "port-37-evaluation",
+    "type": "port-helper",
+    "owner": "evaluation",
+    "point": [
+      742,
+      700
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 507,
+    "name": "port-41-evaluation",
+    "type": "port-helper",
+    "owner": "evaluation",
+    "point": [
+      406,
+      725
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 558,
+    "name": "evaluation",
+    "type": "group",
+    "owner": "learning"
+  },
+  {
+    "id": 68,
+    "name": "path-74",
+    "type": "shape",
+    "owner": "task-reward",
+    "bbox": [
+      883.5614,
+      675.4876,
+      188.08299999999986,
+      48.76220000000001
+    ]
+  },
+  {
+    "id": 461,
+    "name": "label-block:task-reward",
+    "type": "text-block",
+    "owner": "task-reward",
+    "sourceTextIds": [
+      "text-24"
+    ],
+    "text": "Task Reward",
+    "bbox": [
+      882,
+      675,
+      190,
+      50
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 504,
+    "name": "port-38-task-reward",
+    "type": "port-helper",
+    "owner": "task-reward",
+    "point": [
+      882,
+      700
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 505,
+    "name": "port-39-task-reward",
+    "type": "port-helper",
+    "owner": "task-reward",
+    "point": [
+      1072,
+      700
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 559,
+    "name": "task-reward",
+    "type": "group",
+    "owner": "learning"
+  },
+  {
+    "id": 560,
+    "name": "learning",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 166,
+    "name": "path-115",
+    "type": "shape",
+    "owner": "skill-bank",
+    "bbox": [
+      1113.4406,
+      9.5345,
+      477.1246000000001,
+      491.8022
+    ]
+  },
+  {
+    "id": 167,
+    "name": "path-116",
+    "type": "shape",
+    "owner": "skill-bank",
+    "bbox": [
+      1112.0474,
+      8.1414,
+      479.91110000000003,
+      494.58840000000004
+    ]
+  },
+  {
+    "id": 168,
+    "name": "text-35",
+    "type": "text",
+    "owner": "skill-bank",
+    "text": "Skill Bank",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1268.9503,
+      18.590333367919918,
+      166.4935,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 169,
+    "name": "text-36",
+    "type": "text",
+    "owner": "skill-bank",
+    "text": "(Shared Across Training)",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1145.7495,
+      60.386733367919916,
+      412.9117,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 170,
+    "name": "text-37",
+    "type": "text",
+    "owner": "skill-bank",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 41.79621505737305,
+    "bbox": [
+      1320.8364,
+      418.30118214721676,
+      69.709,
+      52.24526882171631
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 343,
+    "name": "text-190",
+    "type": "text",
+    "owner": "skill-bank",
+    "text": "Refines and Evolves Over Training",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1144.106,
+      467.11918823547364,
+      416.1089,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 514,
+    "name": "port-48-skill-bank",
+    "type": "port-helper",
+    "owner": "skill-bank",
+    "point": [
+      1591,
+      165
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 516,
+    "name": "port-50-skill-bank",
+    "type": "port-helper",
+    "owner": "skill-bank",
+    "point": [
+      1591,
+      345
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 517,
+    "name": "port-51-skill-bank",
+    "type": "port-helper",
+    "owner": "skill-bank",
+    "point": [
+      1114,
+      286
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 519,
+    "name": "port-53-skill-bank",
+    "type": "port-helper",
+    "owner": "skill-bank",
+    "point": [
+      1114,
+      450
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 171,
+    "name": "path-117",
+    "type": "shape",
+    "owner": "skip",
+    "bbox": [
+      1123.8408,
+      125.1707,
+      208.98119999999994,
+      215.94729999999998
+    ]
+  },
+  {
+    "id": 172,
+    "name": "path-118",
+    "type": "shape",
+    "owner": "skip",
+    "bbox": [
+      1132.416,
+      188.5613,
+      107.16820000000007,
+      1.3936000000000206
+    ]
+  },
+  {
+    "id": 173,
+    "name": "text-38",
+    "type": "text",
+    "owner": "skip",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1132.416,
+      171.7872921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 174,
+    "name": "text-39",
+    "type": "text",
+    "owner": "skip",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1239.5842,
+      171.7872921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 175,
+    "name": "text-41",
+    "type": "text",
+    "owner": "skip",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1252.025,
+      171.7872921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 176,
+    "name": "text-42",
+    "type": "text",
+    "owner": "skip",
+    "text": "Skip",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1198.169,
+      136.23248823547362,
+      60.7437,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 177,
+    "name": "text-43",
+    "type": "text",
+    "owner": "skip",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      227.51579215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 178,
+    "name": "path-119",
+    "type": "shape",
+    "owner": "skip",
+    "bbox": [
+      1169.5864,
+      244.2899,
+      76.67000000000007,
+      1.3930000000000007
+    ]
+  },
+  {
+    "id": 179,
+    "name": "text-45",
+    "type": "text",
+    "owner": "skip",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      227.51579215698243,
+      76.6554,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 180,
+    "name": "text-46",
+    "type": "text",
+    "owner": "skip",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1246.2564,
+      227.51579215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 181,
+    "name": "text-48",
+    "type": "text",
+    "owner": "skip",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1258.6973,
+      227.51579215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 182,
+    "name": "text-49",
+    "type": "text",
+    "owner": "skip",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      255.37959215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 183,
+    "name": "path-120",
+    "type": "shape",
+    "owner": "skip",
+    "bbox": [
+      1169.5864,
+      272.1541,
+      117.24710000000005,
+      1.3930999999999472
+    ]
+  },
+  {
+    "id": 184,
+    "name": "text-51",
+    "type": "text",
+    "owner": "skip",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      255.37959215698243,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 185,
+    "name": "text-52",
+    "type": "text",
+    "owner": "skip",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1286.8335,
+      255.37959215698243,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 186,
+    "name": "text-53",
+    "type": "text",
+    "owner": "skip",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1299.2744,
+      255.37959215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 187,
+    "name": "text-54",
+    "type": "text",
+    "owner": "skip",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      283.2437921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 188,
+    "name": "path-121",
+    "type": "shape",
+    "owner": "skip",
+    "bbox": [
+      1169.5864,
+      300.0184,
+      123.52740000000017,
+      1.393000000000029
+    ]
+  },
+  {
+    "id": 189,
+    "name": "text-55",
+    "type": "text",
+    "owner": "skip",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      283.2437921569824,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 190,
+    "name": "text-56",
+    "type": "text",
+    "owner": "skip",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1293.1138,
+      283.2437921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 191,
+    "name": "text-57",
+    "type": "text",
+    "owner": "skip",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1305.5547,
+      283.2437921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 192,
+    "name": "text-58",
+    "type": "text",
+    "owner": "skip",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      311.1080921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 193,
+    "name": "path-122",
+    "type": "shape",
+    "owner": "skip",
+    "bbox": [
+      1169.5864,
+      327.8821,
+      107.65790000000015,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 194,
+    "name": "text-59",
+    "type": "text",
+    "owner": "skip",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      311.1080921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 195,
+    "name": "text-60",
+    "type": "text",
+    "owner": "skip",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1277.2443,
+      311.1080921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 196,
+    "name": "text-61",
+    "type": "text",
+    "owner": "skip",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1289.6852,
+      311.1080921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 197,
+    "name": "path-123",
+    "type": "shape",
+    "owner": "skip",
+    "bbox": [
+      1132.416,
+      216.4256,
+      80.45780000000013,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 198,
+    "name": "text-62",
+    "type": "text",
+    "owner": "skip",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1132.416,
+      199.6514921569824,
+      80.4719,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 561,
+    "name": "skip",
+    "type": "group",
+    "owner": "skill-bank"
+  },
+  {
+    "id": 227,
+    "name": "path-131",
+    "type": "shape",
+    "owner": "update",
+    "bbox": [
+      1130.8069,
+      170.45,
+      208.98109999999997,
+      215.9468
+    ]
+  },
+  {
+    "id": 228,
+    "name": "path-132",
+    "type": "shape",
+    "owner": "update",
+    "bbox": [
+      1139.3821,
+      233.8406,
+      107.16809999999987,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 229,
+    "name": "text-88",
+    "type": "text",
+    "owner": "update",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1139.3821,
+      217.0665921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 230,
+    "name": "text-89",
+    "type": "text",
+    "owner": "update",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1246.5502,
+      217.0665921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 231,
+    "name": "text-91",
+    "type": "text",
+    "owner": "update",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1258.9911,
+      217.0665921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 232,
+    "name": "text-92",
+    "type": "text",
+    "owner": "update",
+    "text": "Update",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1185.3796,
+      181.51178823547363,
+      100.2623,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 233,
+    "name": "text-93",
+    "type": "text",
+    "owner": "update",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      272.79509215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 234,
+    "name": "path-133",
+    "type": "shape",
+    "owner": "update",
+    "bbox": [
+      1176.5525,
+      289.5692,
+      76.6699000000001,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 235,
+    "name": "text-95",
+    "type": "text",
+    "owner": "update",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      272.79509215698243,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 236,
+    "name": "text-96",
+    "type": "text",
+    "owner": "update",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1253.2224,
+      272.79509215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 237,
+    "name": "text-98",
+    "type": "text",
+    "owner": "update",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1265.6633,
+      272.79509215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 238,
+    "name": "text-99",
+    "type": "text",
+    "owner": "update",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      300.6588921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 239,
+    "name": "path-134",
+    "type": "shape",
+    "owner": "update",
+    "bbox": [
+      1176.5525,
+      317.4334,
+      117.24710000000005,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 240,
+    "name": "text-101",
+    "type": "text",
+    "owner": "update",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      300.6588921569824,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 241,
+    "name": "text-102",
+    "type": "text",
+    "owner": "update",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1293.7996,
+      300.6588921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 242,
+    "name": "text-103",
+    "type": "text",
+    "owner": "update",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1306.2405,
+      300.6588921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 243,
+    "name": "text-104",
+    "type": "text",
+    "owner": "update",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      328.52309215698244,
+      35.7576,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 244,
+    "name": "path-135",
+    "type": "shape",
+    "owner": "update",
+    "bbox": [
+      1176.5525,
+      345.2972,
+      123.52729999999997,
+      1.3935000000000173
+    ]
+  },
+  {
+    "id": 245,
+    "name": "text-105",
+    "type": "text",
+    "owner": "update",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      328.52309215698244,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 246,
+    "name": "text-106",
+    "type": "text",
+    "owner": "update",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1300.0798,
+      328.52309215698244,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 247,
+    "name": "text-107",
+    "type": "text",
+    "owner": "update",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1312.5208,
+      328.52309215698244,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 248,
+    "name": "text-108",
+    "type": "text",
+    "owner": "update",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      356.3873921569824,
+      35.7576,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 249,
+    "name": "path-136",
+    "type": "shape",
+    "owner": "update",
+    "bbox": [
+      1176.5525,
+      373.1614,
+      107.65779999999995,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 250,
+    "name": "text-109",
+    "type": "text",
+    "owner": "update",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      356.3873921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 251,
+    "name": "text-110",
+    "type": "text",
+    "owner": "update",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1284.2103,
+      356.3873921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 252,
+    "name": "text-111",
+    "type": "text",
+    "owner": "update",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1296.6513,
+      356.3873921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 253,
+    "name": "path-137",
+    "type": "shape",
+    "owner": "update",
+    "bbox": [
+      1139.3821,
+      261.7049,
+      80.4577999999999,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 254,
+    "name": "text-112",
+    "type": "text",
+    "owner": "update",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1139.3821,
+      244.93079215698242,
+      80.4718,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 562,
+    "name": "update",
+    "type": "group",
+    "owner": "skill-bank"
+  },
+  {
+    "id": 283,
+    "name": "path-145",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1137.773,
+      215.7293,
+      208.981,
+      215.94680000000002
+    ]
+  },
+  {
+    "id": 284,
+    "name": "path-146",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1146.3482,
+      279.1199,
+      107.16800000000012,
+      1.393600000000049
+    ]
+  },
+  {
+    "id": 285,
+    "name": "text-138",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1146.3482,
+      262.3458921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 286,
+    "name": "text-139",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1253.5162,
+      262.3458921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 287,
+    "name": "text-141",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1265.9572,
+      262.3458921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 288,
+    "name": "text-142",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "New Skill 1",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1163.5891,
+      226.7910882354736,
+      157.7875,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 289,
+    "name": "text-143",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      318.0738921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 290,
+    "name": "path-147",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1183.5184,
+      334.8485,
+      76.67000000000007,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 291,
+    "name": "text-145",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      318.0738921569824,
+      76.6554,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 292,
+    "name": "text-146",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1260.1884,
+      318.0738921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 293,
+    "name": "text-148",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1272.6293,
+      318.0738921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 294,
+    "name": "text-149",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      345.93819215698244,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 295,
+    "name": "path-148",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1183.5184,
+      362.7127,
+      117.24720000000002,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 296,
+    "name": "text-151",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      345.93819215698244,
+      117.2312,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 297,
+    "name": "text-152",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1300.7656,
+      345.93819215698244,
+      12.4351,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 298,
+    "name": "text-153",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1313.2064,
+      345.93819215698244,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 299,
+    "name": "text-154",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      373.8023921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 300,
+    "name": "path-149",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1183.5184,
+      390.5765,
+      123.52750000000015,
+      1.3935000000000173
+    ]
+  },
+  {
+    "id": 301,
+    "name": "text-155",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      373.8023921569824,
+      123.531,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 302,
+    "name": "text-156",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1307.0459,
+      373.8023921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 303,
+    "name": "text-157",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1319.4868,
+      373.8023921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 304,
+    "name": "text-158",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      401.66669215698244,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 305,
+    "name": "path-150",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1183.5184,
+      418.4407,
+      107.65800000000013,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 306,
+    "name": "text-159",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      401.66669215698244,
+      107.6715,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 307,
+    "name": "text-160",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1291.1764,
+      401.66669215698244,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 308,
+    "name": "text-161",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1303.6173,
+      401.66669215698244,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 309,
+    "name": "path-151",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1146.3482,
+      306.9842,
+      80.45770000000016,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 310,
+    "name": "text-162",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1146.3482,
+      290.2100921569824,
+      80.4718,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 311,
+    "name": "path-152",
+    "type": "shape",
+    "owner": "new-skill-1",
+    "bbox": [
+      1286.6301,
+      271.4573,
+      48.06569999999988,
+      48.06600000000003
+    ]
+  },
+  {
+    "id": 312,
+    "name": "text-163",
+    "type": "text",
+    "owner": "new-skill-1",
+    "text": "+",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      1290.8716,
+      257.99926862792967,
+      39.0533,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 563,
+    "name": "new-skill-1",
+    "type": "group",
+    "owner": "skill-bank"
+  },
+  {
+    "id": 199,
+    "name": "path-124",
+    "type": "shape",
+    "owner": "delete",
+    "bbox": [
+      1353.7201,
+      125.1707,
+      208.98109999999997,
+      215.94729999999998
+    ]
+  },
+  {
+    "id": 200,
+    "name": "path-125",
+    "type": "shape",
+    "owner": "delete",
+    "bbox": [
+      1362.2952,
+      188.5613,
+      107.16820000000007,
+      1.3936000000000206
+    ]
+  },
+  {
+    "id": 201,
+    "name": "text-63",
+    "type": "text",
+    "owner": "delete",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1362.2952,
+      171.7872921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 202,
+    "name": "text-64",
+    "type": "text",
+    "owner": "delete",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1469.4634,
+      171.7872921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 203,
+    "name": "text-66",
+    "type": "text",
+    "owner": "delete",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1481.9043,
+      171.7872921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 204,
+    "name": "text-67",
+    "type": "text",
+    "owner": "delete",
+    "text": "Delete",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1413.0385,
+      136.23248823547362,
+      90.783,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 205,
+    "name": "text-68",
+    "type": "text",
+    "owner": "delete",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      227.51579215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 206,
+    "name": "path-126",
+    "type": "shape",
+    "owner": "delete",
+    "bbox": [
+      1399.4656,
+      244.2899,
+      76.6699000000001,
+      1.3930000000000007
+    ]
+  },
+  {
+    "id": 207,
+    "name": "text-70",
+    "type": "text",
+    "owner": "delete",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      227.51579215698243,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 208,
+    "name": "text-71",
+    "type": "text",
+    "owner": "delete",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1476.1355,
+      227.51579215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 209,
+    "name": "text-73",
+    "type": "text",
+    "owner": "delete",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1488.5764,
+      227.51579215698243,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 210,
+    "name": "text-74",
+    "type": "text",
+    "owner": "delete",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      255.37959215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 211,
+    "name": "path-127",
+    "type": "shape",
+    "owner": "delete",
+    "bbox": [
+      1399.4656,
+      272.1541,
+      117.24710000000005,
+      1.3930999999999472
+    ]
+  },
+  {
+    "id": 212,
+    "name": "text-76",
+    "type": "text",
+    "owner": "delete",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      255.37959215698243,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 213,
+    "name": "text-77",
+    "type": "text",
+    "owner": "delete",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1516.7127,
+      255.37959215698243,
+      12.4353,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 214,
+    "name": "text-78",
+    "type": "text",
+    "owner": "delete",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1529.1536,
+      255.37959215698243,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 215,
+    "name": "text-79",
+    "type": "text",
+    "owner": "delete",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      283.2437921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 216,
+    "name": "path-128",
+    "type": "shape",
+    "owner": "delete",
+    "bbox": [
+      1399.4656,
+      300.0184,
+      123.52729999999997,
+      1.393000000000029
+    ]
+  },
+  {
+    "id": 217,
+    "name": "text-80",
+    "type": "text",
+    "owner": "delete",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      283.2437921569824,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 218,
+    "name": "text-81",
+    "type": "text",
+    "owner": "delete",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1522.9929,
+      283.2437921569824,
+      12.4353,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 219,
+    "name": "text-82",
+    "type": "text",
+    "owner": "delete",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1535.4338,
+      283.2437921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 220,
+    "name": "text-83",
+    "type": "text",
+    "owner": "delete",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      311.1080921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 221,
+    "name": "path-129",
+    "type": "shape",
+    "owner": "delete",
+    "bbox": [
+      1399.4656,
+      327.8821,
+      107.65789999999993,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 222,
+    "name": "text-84",
+    "type": "text",
+    "owner": "delete",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      311.1080921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 223,
+    "name": "text-85",
+    "type": "text",
+    "owner": "delete",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1507.1235,
+      311.1080921569824,
+      12.4351,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 224,
+    "name": "text-86",
+    "type": "text",
+    "owner": "delete",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1519.5645,
+      311.1080921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 225,
+    "name": "path-130",
+    "type": "shape",
+    "owner": "delete",
+    "bbox": [
+      1362.2952,
+      216.4256,
+      80.45769999999993,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 226,
+    "name": "text-87",
+    "type": "text",
+    "owner": "delete",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1362.2952,
+      199.6514921569824,
+      80.4719,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 564,
+    "name": "delete",
+    "type": "group",
+    "owner": "skill-bank"
+  },
+  {
+    "id": 255,
+    "name": "path-138",
+    "type": "shape",
+    "owner": "insert",
+    "bbox": [
+      1360.686,
+      170.45,
+      208.98120000000017,
+      215.9468
+    ]
+  },
+  {
+    "id": 256,
+    "name": "path-139",
+    "type": "shape",
+    "owner": "insert",
+    "bbox": [
+      1369.2612,
+      233.8406,
+      107.16830000000004,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 257,
+    "name": "text-113",
+    "type": "text",
+    "owner": "insert",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1369.2612,
+      217.0665921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 258,
+    "name": "text-114",
+    "type": "text",
+    "owner": "insert",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1476.4295,
+      217.0665921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 259,
+    "name": "text-116",
+    "type": "text",
+    "owner": "insert",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1488.8704,
+      217.0665921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 260,
+    "name": "text-117",
+    "type": "text",
+    "owner": "insert",
+    "text": "Insert",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1421.8984,
+      181.51178823547363,
+      86.9587,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 261,
+    "name": "text-118",
+    "type": "text",
+    "owner": "insert",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      272.79509215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 262,
+    "name": "path-140",
+    "type": "shape",
+    "owner": "insert",
+    "bbox": [
+      1406.4317,
+      289.5692,
+      76.66989999999987,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 263,
+    "name": "text-120",
+    "type": "text",
+    "owner": "insert",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      272.79509215698243,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 264,
+    "name": "text-121",
+    "type": "text",
+    "owner": "insert",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1483.1016,
+      272.79509215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 265,
+    "name": "text-123",
+    "type": "text",
+    "owner": "insert",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1495.5425,
+      272.79509215698243,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 266,
+    "name": "text-124",
+    "type": "text",
+    "owner": "insert",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      300.6588921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 267,
+    "name": "path-141",
+    "type": "shape",
+    "owner": "insert",
+    "bbox": [
+      1406.4317,
+      317.4334,
+      117.24699999999984,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 268,
+    "name": "text-126",
+    "type": "text",
+    "owner": "insert",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      300.6588921569824,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 269,
+    "name": "text-127",
+    "type": "text",
+    "owner": "insert",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1523.6787,
+      300.6588921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 270,
+    "name": "text-128",
+    "type": "text",
+    "owner": "insert",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1536.1196,
+      300.6588921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 271,
+    "name": "text-129",
+    "type": "text",
+    "owner": "insert",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      328.52309215698244,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 272,
+    "name": "path-142",
+    "type": "shape",
+    "owner": "insert",
+    "bbox": [
+      1406.4317,
+      345.2972,
+      123.52729999999997,
+      1.3935000000000173
+    ]
+  },
+  {
+    "id": 273,
+    "name": "text-130",
+    "type": "text",
+    "owner": "insert",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      328.52309215698244,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 274,
+    "name": "text-131",
+    "type": "text",
+    "owner": "insert",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1529.959,
+      328.52309215698244,
+      12.4353,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 275,
+    "name": "text-132",
+    "type": "text",
+    "owner": "insert",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1542.3999,
+      328.52309215698244,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 276,
+    "name": "text-133",
+    "type": "text",
+    "owner": "insert",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      356.3873921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 277,
+    "name": "path-143",
+    "type": "shape",
+    "owner": "insert",
+    "bbox": [
+      1406.4317,
+      373.1614,
+      107.65789999999993,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 278,
+    "name": "text-134",
+    "type": "text",
+    "owner": "insert",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      356.3873921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 279,
+    "name": "text-135",
+    "type": "text",
+    "owner": "insert",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1514.0896,
+      356.3873921569824,
+      12.4351,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 280,
+    "name": "text-136",
+    "type": "text",
+    "owner": "insert",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1526.5304,
+      356.3873921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 281,
+    "name": "path-144",
+    "type": "shape",
+    "owner": "insert",
+    "bbox": [
+      1369.2612,
+      261.7049,
+      80.45780000000013,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 282,
+    "name": "text-137",
+    "type": "text",
+    "owner": "insert",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1369.2612,
+      244.93079215698242,
+      80.4719,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 565,
+    "name": "insert",
+    "type": "group",
+    "owner": "skill-bank"
+  },
+  {
+    "id": 313,
+    "name": "path-153",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1367.4292,
+      212.2459,
+      208.98109999999997,
+      215.94729999999998
+    ]
+  },
+  {
+    "id": 314,
+    "name": "path-154",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1376.2273,
+      275.637,
+      107.1681000000001,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 315,
+    "name": "text-164",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1376.2273,
+      258.86299215698244,
+      107.1721,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 316,
+    "name": "text-165",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1483.3954,
+      258.86299215698244,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 317,
+    "name": "text-167",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1495.8363,
+      258.86299215698244,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 318,
+    "name": "text-168",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "New Skill 2",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1392.7716,
+      223.30818823547364,
+      157.7876,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 319,
+    "name": "text-169",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      314.5909921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 320,
+    "name": "path-155",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1413.3977,
+      331.3655,
+      76.6699000000001,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 321,
+    "name": "text-171",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      314.5909921569824,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 322,
+    "name": "text-172",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1490.0676,
+      314.5909921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 323,
+    "name": "text-174",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1502.5086,
+      314.5909921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 324,
+    "name": "text-175",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      342.45519215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 325,
+    "name": "path-156",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1413.3977,
+      359.2293,
+      117.24710000000005,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 326,
+    "name": "text-177",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      342.45519215698243,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 327,
+    "name": "text-178",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1530.6448,
+      342.45519215698243,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 328,
+    "name": "text-179",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1543.0857,
+      342.45519215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 329,
+    "name": "text-180",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      370.3194921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 330,
+    "name": "path-157",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1413.3977,
+      387.0936,
+      123.52739999999994,
+      1.393000000000029
+    ]
+  },
+  {
+    "id": 331,
+    "name": "text-181",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      370.3194921569824,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 332,
+    "name": "text-182",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1536.9251,
+      370.3194921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 333,
+    "name": "text-183",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1549.366,
+      370.3194921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 334,
+    "name": "text-184",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      398.1837921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 335,
+    "name": "path-158",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1413.3977,
+      414.9578,
+      107.65789999999993,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 336,
+    "name": "text-185",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      398.1837921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 337,
+    "name": "text-186",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1521.0556,
+      398.1837921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 338,
+    "name": "text-187",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1533.4965,
+      398.1837921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 339,
+    "name": "path-159",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1376.2273,
+      303.5013,
+      80.4577999999999,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 340,
+    "name": "text-188",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1376.2273,
+      286.72669215698244,
+      80.4718,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 341,
+    "name": "path-160",
+    "type": "shape",
+    "owner": "new-skill-2",
+    "bbox": [
+      1516.2864,
+      271.8055,
+      48.065700000000106,
+      48.0659
+    ]
+  },
+  {
+    "id": 342,
+    "name": "text-189",
+    "type": "text",
+    "owner": "new-skill-2",
+    "text": "+",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      1520.7507,
+      257.99926862792967,
+      39.0533,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 566,
+    "name": "new-skill-2",
+    "type": "group",
+    "owner": "skill-bank"
+  },
+  {
+    "id": 567,
+    "name": "skill-bank",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 345,
+    "name": "path-167",
+    "type": "shape",
+    "owner": "hard-cases",
+    "bbox": [
+      1113.4406,
+      515.2689,
+      477.1246000000001,
+      292.57319999999993
+    ]
+  },
+  {
+    "id": 346,
+    "name": "path-168",
+    "type": "shape",
+    "owner": "hard-cases",
+    "bbox": [
+      1112.0474,
+      513.8753,
+      479.91110000000003,
+      295.3598999999999
+    ]
+  },
+  {
+    "id": 347,
+    "name": "text-192",
+    "type": "text",
+    "owner": "hard-cases",
+    "text": "Hard Case Buffer",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1209.9349,
+      527.1108333679199,
+      284.4985,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 381,
+    "name": "text-218",
+    "type": "text",
+    "owner": "hard-cases",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 41.79621505737305,
+    "bbox": [
+      1514.4922,
+      557.6219821472167,
+      69.709,
+      52.24526882171631
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 382,
+    "name": "text-219",
+    "type": "text",
+    "owner": "hard-cases",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 41.79621505737305,
+    "bbox": [
+      1120.9113,
+      752.6712821472167,
+      69.709,
+      52.24526882171631
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 508,
+    "name": "port-42-hard-cases",
+    "type": "port-helper",
+    "owner": "hard-cases",
+    "point": [
+      1114,
+      780
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 509,
+    "name": "port-43-hard-cases",
+    "type": "port-helper",
+    "owner": "hard-cases",
+    "point": [
+      1591,
+      535
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 511,
+    "name": "port-45-hard-cases",
+    "type": "port-helper",
+    "owner": "hard-cases",
+    "point": [
+      1591,
+      775
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 349,
+    "name": "path-169",
+    "type": "shape",
+    "owner": "failure-1",
+    "bbox": [
+      1120.4066,
+      577.9632,
+      215.94720000000007,
+      41.79589999999996
+    ]
+  },
+  {
+    "id": 350,
+    "name": "path-170",
+    "type": "shape",
+    "owner": "failure-1",
+    "bbox": [
+      1120.4066,
+      619.7591,
+      215.94720000000007,
+      139.32079999999996
+    ]
+  },
+  {
+    "id": 351,
+    "name": "text-194",
+    "type": "text",
+    "owner": "failure-1",
+    "text": "Failure Case 1",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1142.8434,
+      586.2388882354736,
+      174.9259,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 352,
+    "name": "text-195",
+    "type": "text",
+    "owner": "failure-1",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1146.8923,
+      627.0040410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 353,
+    "name": "text-196",
+    "type": "text",
+    "owner": "failure-1",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1160.9768,
+      654.8678410736085,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 354,
+    "name": "text-197",
+    "type": "text",
+    "owner": "failure-1",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1162.5986,
+      682.7320410736085,
+      132.5699,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 355,
+    "name": "text-198",
+    "type": "text",
+    "owner": "failure-1",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1180.6776,
+      710.5963410736084,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 356,
+    "name": "text-199",
+    "type": "text",
+    "owner": "failure-1",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1199.867,
+      715.19383336792,
+      58.0907,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 568,
+    "name": "failure-1",
+    "type": "group",
+    "owner": "hard-cases"
+  },
+  {
+    "id": 357,
+    "name": "path-172",
+    "type": "shape",
+    "owner": "failure-2",
+    "bbox": [
+      1202.2297,
+      591.8948,
+      215.94709999999986,
+      41.79639999999995
+    ]
+  },
+  {
+    "id": 358,
+    "name": "path-173",
+    "type": "shape",
+    "owner": "failure-2",
+    "bbox": [
+      1202.2297,
+      633.6912,
+      215.94709999999986,
+      139.32079999999996
+    ]
+  },
+  {
+    "id": 359,
+    "name": "text-200",
+    "type": "text",
+    "owner": "failure-2",
+    "text": "Failure Case 2",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1225.0426,
+      600.1704882354736,
+      174.926,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 360,
+    "name": "text-201",
+    "type": "text",
+    "owner": "failure-2",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1228.395,
+      640.9361410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 361,
+    "name": "text-202",
+    "type": "text",
+    "owner": "failure-2",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1242.4795,
+      668.7999410736085,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 362,
+    "name": "text-203",
+    "type": "text",
+    "owner": "failure-2",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1244.1012,
+      696.6641410736084,
+      132.5699,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 363,
+    "name": "text-204",
+    "type": "text",
+    "owner": "failure-2",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1262.1802,
+      724.5284410736084,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 364,
+    "name": "text-205",
+    "type": "text",
+    "owner": "failure-2",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1281.3695,
+      729.12593336792,
+      58.0908,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 569,
+    "name": "failure-2",
+    "type": "group",
+    "owner": "hard-cases"
+  },
+  {
+    "id": 365,
+    "name": "path-175",
+    "type": "shape",
+    "owner": "failure-3",
+    "bbox": [
+      1283.6836,
+      605.827,
+      215.9469999999999,
+      41.79639999999995
+    ]
+  },
+  {
+    "id": 366,
+    "name": "path-176",
+    "type": "shape",
+    "owner": "failure-3",
+    "bbox": [
+      1283.6836,
+      647.6234,
+      215.9469999999999,
+      139.32080000000008
+    ]
+  },
+  {
+    "id": 367,
+    "name": "text-206",
+    "type": "text",
+    "owner": "failure-3",
+    "text": "Failure Case 3",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1306.5452,
+      614.1025882354736,
+      174.9261,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 368,
+    "name": "text-207",
+    "type": "text",
+    "owner": "failure-3",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1309.8976,
+      654.8678410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 369,
+    "name": "text-208",
+    "type": "text",
+    "owner": "failure-3",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1323.9821,
+      682.7320410736085,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 370,
+    "name": "text-209",
+    "type": "text",
+    "owner": "failure-3",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1325.6038,
+      710.5963410736084,
+      132.5702,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 371,
+    "name": "text-210",
+    "type": "text",
+    "owner": "failure-3",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1343.6829,
+      738.4605410736084,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 372,
+    "name": "text-211",
+    "type": "text",
+    "owner": "failure-3",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1362.8721,
+      743.0581333679199,
+      58.0909,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 570,
+    "name": "failure-3",
+    "type": "group",
+    "owner": "hard-cases"
+  },
+  {
+    "id": 373,
+    "name": "path-178",
+    "type": "shape",
+    "owner": "failure-N",
+    "bbox": [
+      1367.7009,
+      619.7591,
+      215.94709999999986,
+      41.79640000000006
+    ]
+  },
+  {
+    "id": 374,
+    "name": "path-179",
+    "type": "shape",
+    "owner": "failure-N",
+    "bbox": [
+      1367.7009,
+      661.5555,
+      215.94709999999986,
+      139.32079999999996
+    ]
+  },
+  {
+    "id": 375,
+    "name": "text-212",
+    "type": "text",
+    "owner": "failure-N",
+    "text": "Failure Case N",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1387.5907,
+      628.0347882354737,
+      180.0077,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 376,
+    "name": "text-213",
+    "type": "text",
+    "owner": "failure-N",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1394.1867,
+      668.7999410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 377,
+    "name": "text-214",
+    "type": "text",
+    "owner": "failure-N",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1408.2711,
+      696.6641410736084,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 378,
+    "name": "text-215",
+    "type": "text",
+    "owner": "failure-N",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1409.8928,
+      724.5284410736084,
+      132.5701,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 379,
+    "name": "text-216",
+    "type": "text",
+    "owner": "failure-N",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1427.9719,
+      752.3927410736085,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 380,
+    "name": "text-217",
+    "type": "text",
+    "owner": "failure-N",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1447.1611,
+      756.9902333679199,
+      58.0909,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 571,
+    "name": "failure-N",
+    "type": "group",
+    "owner": "hard-cases"
+  },
+  {
+    "id": 572,
+    "name": "hard-cases",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 383,
+    "name": "path-181",
+    "type": "shape",
+    "owner": "designer",
+    "bbox": [
+      1618.7498,
+      9.5345,
+      303.61469999999986,
+      798.3076
+    ]
+  },
+  {
+    "id": 384,
+    "name": "path-182",
+    "type": "shape",
+    "owner": "designer",
+    "bbox": [
+      1617.3567,
+      8.1414,
+      306.40110000000004,
+      801.0938
+    ]
+  },
+  {
+    "id": 385,
+    "name": "text-220",
+    "type": "text",
+    "owner": "designer",
+    "text": "Skill Evolution",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1650.8742,
+      17.89353336791992,
+      240.0094,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 386,
+    "name": "text-221",
+    "type": "text",
+    "owner": "designer",
+    "text": "(Designer)",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1684.7356,
+      59.68993336791992,
+      172.2356,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 391,
+    "name": "text-224",
+    "type": "text",
+    "owner": "designer",
+    "text": "Trigger P",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1652.8877,
+      774.3213882354737,
+      113.4446,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 392,
+    "name": "text-225",
+    "type": "text",
+    "owner": "designer",
+    "text": "eriodically",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1766.3472,
+      774.3213882354737,
+      122.4478,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 431,
+    "name": "icon-36-tone-1",
+    "type": "shape",
+    "owner": "designer",
+    "bbox": [
+      1864.6823,
+      66.2517,
+      29.978200000000015,
+      34.346000000000004
+    ]
+  },
+  {
+    "id": 432,
+    "name": "icon-36-tone-8",
+    "type": "shape",
+    "owner": "designer",
+    "bbox": [
+      1865.2779,
+      68.237,
+      28.787000000000035,
+      30.57390000000001
+    ]
+  },
+  {
+    "id": 510,
+    "name": "port-44-designer",
+    "type": "port-helper",
+    "owner": "designer",
+    "point": [
+      1618,
+      535
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 512,
+    "name": "port-46-designer",
+    "type": "port-helper",
+    "owner": "designer",
+    "point": [
+      1618,
+      775
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 513,
+    "name": "port-47-designer",
+    "type": "port-helper",
+    "owner": "designer",
+    "point": [
+      1618,
+      165
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 515,
+    "name": "port-49-designer",
+    "type": "port-helper",
+    "owner": "designer",
+    "point": [
+      1618,
+      345
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 537,
+    "name": "port-71-designer",
+    "type": "port-helper",
+    "owner": "designer",
+    "point": [
+      1778,
+      809
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 408,
+    "name": "path-216",
+    "type": "shape",
+    "owner": "designer-evolution",
+    "bbox": [
+      1627.8613,
+      125.1707,
+      285.6077,
+      244.50779999999997
+    ]
+  },
+  {
+    "id": 409,
+    "name": "text-237",
+    "type": "text",
+    "owner": "designer-evolution",
+    "text": "Two-stage Skill Evolusion",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1642.3734,
+      335.1270410736084,
+      256.9725,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 412,
+    "name": "text-239",
+    "type": "text",
+    "owner": "designer-evolution",
+    "text": "LLM-based Feedback",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1667.6688,
+      235.5128410736084,
+      206.4115,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 413,
+    "name": "path-224",
+    "type": "shape",
+    "owner": "refine-skills",
+    "bbox": [
+      1642.7339,
+      138.0579,
+      256.08540000000016,
+      79.4126
+    ]
+  },
+  {
+    "id": 462,
+    "name": "label-block:refine-skills",
+    "type": "text-block",
+    "owner": "refine-skills",
+    "sourceTextIds": [
+      "text-240",
+      "text-241"
+    ],
+    "text": "Refine Existing Skills\nPropose New Skills",
+    "bbox": [
+      1643,
+      138,
+      254,
+      80
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 534,
+    "name": "port-68-refine-skills",
+    "type": "port-helper",
+    "owner": "refine-skills",
+    "point": [
+      1655.7,
+      218
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 536,
+    "name": "port-70-refine-skills",
+    "type": "port-helper",
+    "owner": "refine-skills",
+    "point": [
+      1884.3,
+      218
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 573,
+    "name": "refine-skills",
+    "type": "group",
+    "owner": "designer-evolution"
+  },
+  {
+    "id": 410,
+    "name": "path-217",
+    "type": "shape",
+    "owner": "analyze-failures",
+    "bbox": [
+      1644.2595,
+      267.9744,
+      252.8184000000001,
+      52.941899999999976
+    ]
+  },
+  {
+    "id": 463,
+    "name": "label-block:analyze-failures",
+    "type": "text-block",
+    "owner": "analyze-failures",
+    "sourceTextIds": [
+      "text-238"
+    ],
+    "text": "Analyze Failures",
+    "bbox": [
+      1643,
+      269,
+      254,
+      52
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 530,
+    "name": "port-64-analyze-failures",
+    "type": "port-helper",
+    "owner": "analyze-failures",
+    "point": [
+      1643,
+      295
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 532,
+    "name": "port-66-analyze-failures",
+    "type": "port-helper",
+    "owner": "analyze-failures",
+    "point": [
+      1897,
+      295
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 533,
+    "name": "port-67-analyze-failures",
+    "type": "port-helper",
+    "owner": "analyze-failures",
+    "point": [
+      1655.7,
+      269
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 535,
+    "name": "port-69-analyze-failures",
+    "type": "port-helper",
+    "owner": "analyze-failures",
+    "point": [
+      1884.3,
+      269
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 574,
+    "name": "analyze-failures",
+    "type": "group",
+    "owner": "designer-evolution"
+  },
+  {
+    "id": 575,
+    "name": "designer-evolution",
+    "type": "group",
+    "owner": "designer"
+  },
+  {
+    "id": 393,
+    "name": "path-194",
+    "type": "shape",
+    "owner": "designer-selection",
+    "bbox": [
+      1627.6455,
+      394.4984,
+      285.82349999999997,
+      373.90180000000004
+    ]
+  },
+  {
+    "id": 395,
+    "name": "text-226",
+    "type": "text",
+    "owner": "designer-selection",
+    "text": "Select Representative",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1659.3532,
+      714.0792410736085,
+      222.9637,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 396,
+    "name": "text-227",
+    "type": "text",
+    "owner": "designer-selection",
+    "text": "Hard Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1713.046,
+      739.1568410736085,
+      115.6256,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 398,
+    "name": "text-229",
+    "type": "text",
+    "owner": "designer-selection",
+    "text": "Filter by ",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1689.22,
+      493.95274107360837,
+      91.3629,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 399,
+    "name": "text-230",
+    "type": "text",
+    "owner": "designer-selection",
+    "text": "Reward",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1780.5947,
+      493.95274107360837,
+      71.877,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 400,
+    "name": "text-231",
+    "type": "text",
+    "owner": "designer-selection",
+    "text": "Score ",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1670.575,
+      519.0304410736085,
+      63.9447,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 401,
+    "name": "text-232",
+    "type": "text",
+    "owner": "designer-selection",
+    "text": "and Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1734.532,
+      519.0304410736085,
+      136.5938,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 402,
+    "name": "text-233",
+    "type": "text",
+    "owner": "designer-selection",
+    "text": "Divided by Groups",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1682.7656,
+      616.5548410736085,
+      176.1672,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 405,
+    "name": "path-209",
+    "type": "shape",
+    "owner": "aggregate-cases",
+    "bbox": [
+      1640.9297,
+      411.2171,
+      252.8184000000001,
+      73.83979999999997
+    ]
+  },
+  {
+    "id": 464,
+    "name": "label-block:aggregate-cases",
+    "type": "text-block",
+    "owner": "aggregate-cases",
+    "sourceTextIds": [
+      "text-235",
+      "text-236"
+    ],
+    "text": "Aggregate Cases\nfrom Each Cluster",
+    "bbox": [
+      1643,
+      412,
+      254,
+      75
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 526,
+    "name": "port-60-aggregate-cases",
+    "type": "port-helper",
+    "owner": "aggregate-cases",
+    "point": [
+      1655.7,
+      487
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 528,
+    "name": "port-62-aggregate-cases",
+    "type": "port-helper",
+    "owner": "aggregate-cases",
+    "point": [
+      1884.3,
+      487
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 529,
+    "name": "port-63-aggregate-cases",
+    "type": "port-helper",
+    "owner": "aggregate-cases",
+    "point": [
+      1643,
+      449.5
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 531,
+    "name": "port-65-aggregate-cases",
+    "type": "port-helper",
+    "owner": "aggregate-cases",
+    "point": [
+      1897,
+      449.5
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 576,
+    "name": "aggregate-cases",
+    "type": "group",
+    "owner": "designer-selection"
+  },
+  {
+    "id": 403,
+    "name": "path-202",
+    "type": "shape",
+    "owner": "difficulty-filtering",
+    "bbox": [
+      1641.5775,
+      548.2737,
+      252.8182999999999,
+      52.94190000000003
+    ]
+  },
+  {
+    "id": 465,
+    "name": "label-block:difficulty-filtering",
+    "type": "text-block",
+    "owner": "difficulty-filtering",
+    "sourceTextIds": [
+      "text-234"
+    ],
+    "text": "Difficulty Filtering",
+    "bbox": [
+      1643,
+      549,
+      254,
+      52
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 522,
+    "name": "port-56-difficulty-filtering",
+    "type": "port-helper",
+    "owner": "difficulty-filtering",
+    "point": [
+      1655.7,
+      601
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 524,
+    "name": "port-58-difficulty-filtering",
+    "type": "port-helper",
+    "owner": "difficulty-filtering",
+    "point": [
+      1884.3,
+      601
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 525,
+    "name": "port-59-difficulty-filtering",
+    "type": "port-helper",
+    "owner": "difficulty-filtering",
+    "point": [
+      1655.7,
+      549
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 527,
+    "name": "port-61-difficulty-filtering",
+    "type": "port-helper",
+    "owner": "difficulty-filtering",
+    "point": [
+      1884.3,
+      549
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 577,
+    "name": "difficulty-filtering",
+    "type": "group",
+    "owner": "designer-selection"
+  },
+  {
+    "id": 394,
+    "name": "path-195",
+    "type": "shape",
+    "owner": "cluster-cases",
+    "bbox": [
+      1644.0435,
+      652.764,
+      252.8182999999999,
+      52.94190000000003
+    ]
+  },
+  {
+    "id": 466,
+    "name": "label-block:cluster-cases",
+    "type": "text-block",
+    "owner": "cluster-cases",
+    "sourceTextIds": [
+      "text-228"
+    ],
+    "text": "Cluster Hard Cases",
+    "bbox": [
+      1643,
+      654,
+      254,
+      52
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 521,
+    "name": "port-55-cluster-cases",
+    "type": "port-helper",
+    "owner": "cluster-cases",
+    "point": [
+      1655.7,
+      654
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 523,
+    "name": "port-57-cluster-cases",
+    "type": "port-helper",
+    "owner": "cluster-cases",
+    "point": [
+      1884.3,
+      654
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 578,
+    "name": "cluster-cases",
+    "type": "group",
+    "owner": "designer-selection"
+  },
+  {
+    "id": 579,
+    "name": "designer-selection",
+    "type": "group",
+    "owner": "designer"
+  },
+  {
+    "id": 580,
+    "name": "designer",
+    "type": "group",
+    "owner": "source-context"
+  },
+  {
+    "id": 581,
+    "name": "source-context",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 582,
+    "name": "trace-selection-a",
+    "type": "connector",
+    "owner": null,
+    "edge": "trace-selection-a",
+    "fromBinding": "port-1-trace-input",
+    "toBinding": "port-2-selected-trace",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 583,
+    "name": "trace-selection-b",
+    "type": "connector",
+    "owner": null,
+    "edge": "trace-selection-b",
+    "fromBinding": "port-3-trace-input",
+    "toBinding": "port-4-selected-trace",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 584,
+    "name": "segmentation",
+    "type": "connector",
+    "owner": null,
+    "edge": "segmentation",
+    "fromBinding": "port-5-selected-trace",
+    "toBinding": "port-6-span-sequence",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 585,
+    "name": "span-step-1",
+    "type": "connector",
+    "owner": null,
+    "edge": "span-step-1",
+    "fromBinding": "port-7-span-sequence",
+    "toBinding": "port-8-step-loop",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 586,
+    "name": "span-step-2",
+    "type": "connector",
+    "owner": null,
+    "edge": "span-step-2",
+    "fromBinding": "port-9-span-sequence",
+    "toBinding": "port-10-step-loop",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 587,
+    "name": "span-step-3",
+    "type": "connector",
+    "owner": null,
+    "edge": "span-step-3",
+    "fromBinding": "port-11-span-sequence",
+    "toBinding": "port-12-step-loop",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 588,
+    "name": "span-step-4",
+    "type": "connector",
+    "owner": null,
+    "edge": "span-step-4",
+    "fromBinding": "port-13-span-sequence",
+    "toBinding": "port-14-step-loop",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 589,
+    "name": "current-to-retriever",
+    "type": "connector",
+    "owner": null,
+    "edge": "current-to-retriever",
+    "fromBinding": "port-15-current-span",
+    "toBinding": "port-16-retriever",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 590,
+    "name": "current-to-controller:segment:0",
+    "type": "connector",
+    "owner": "group-current-to-controller",
+    "edge": "current-to-controller",
+    "fromBinding": "port-17-current-span",
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 591,
+    "name": "current-to-controller:segment:1",
+    "type": "connector",
+    "owner": "group-current-to-controller",
+    "edge": "current-to-controller",
+    "fromBinding": null,
+    "toBinding": "port-18-controller",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 592,
+    "name": "group-current-to-controller",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 593,
+    "name": "retrieved-to-controller",
+    "type": "connector",
+    "owner": null,
+    "edge": "retrieved-to-controller",
+    "fromBinding": "port-19-retriever",
+    "toBinding": "port-20-controller",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 594,
+    "name": "retrieve-memory",
+    "type": "connector",
+    "owner": null,
+    "edge": "retrieve-memory",
+    "fromBinding": "port-21-memory-bank",
+    "toBinding": "port-22-retriever",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 595,
+    "name": "memory-query",
+    "type": "connector",
+    "owner": null,
+    "edge": "memory-query",
+    "fromBinding": "port-23-retriever",
+    "toBinding": "port-24-memory-bank",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 596,
+    "name": "selected-skills-to-executor",
+    "type": "connector",
+    "owner": null,
+    "edge": "selected-skills-to-executor",
+    "fromBinding": "port-25-controller",
+    "toBinding": "port-26-executor",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 597,
+    "name": "memory-update",
+    "type": "connector",
+    "owner": null,
+    "edge": "memory-update",
+    "fromBinding": "port-27-executor",
+    "toBinding": "port-28-memory-bank",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 598,
+    "name": "evaluate-1",
+    "type": "connector",
+    "owner": null,
+    "edge": "evaluate-1",
+    "fromBinding": "port-29-memory-bank",
+    "toBinding": "port-30-evaluation",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 599,
+    "name": "evaluate-2",
+    "type": "connector",
+    "owner": null,
+    "edge": "evaluate-2",
+    "fromBinding": "port-31-memory-bank",
+    "toBinding": "port-32-evaluation",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 600,
+    "name": "evaluate-3",
+    "type": "connector",
+    "owner": null,
+    "edge": "evaluate-3",
+    "fromBinding": "port-33-memory-bank",
+    "toBinding": "port-34-evaluation",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 601,
+    "name": "evaluate-4",
+    "type": "connector",
+    "owner": null,
+    "edge": "evaluate-4",
+    "fromBinding": "port-35-memory-bank",
+    "toBinding": "port-36-evaluation",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 602,
+    "name": "evaluation-to-reward",
+    "type": "connector",
+    "owner": null,
+    "edge": "evaluation-to-reward",
+    "fromBinding": "port-37-evaluation",
+    "toBinding": "port-38-task-reward",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 603,
+    "name": "optimize-controller:segment:0",
+    "type": "connector",
+    "owner": "group-optimize-controller",
+    "edge": "optimize-controller",
+    "fromBinding": "port-39-task-reward",
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 604,
+    "name": "optimize-controller:segment:1",
+    "type": "connector",
+    "owner": "group-optimize-controller",
+    "edge": "optimize-controller",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 605,
+    "name": "optimize-controller:segment:2",
+    "type": "connector",
+    "owner": "group-optimize-controller",
+    "edge": "optimize-controller",
+    "fromBinding": null,
+    "toBinding": "port-40-controller",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 606,
+    "name": "group-optimize-controller",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 607,
+    "name": "record-failures:segment:0",
+    "type": "connector",
+    "owner": "group-record-failures",
+    "edge": "record-failures",
+    "fromBinding": "port-41-evaluation",
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 608,
+    "name": "record-failures:segment:1",
+    "type": "connector",
+    "owner": "group-record-failures",
+    "edge": "record-failures",
+    "fromBinding": null,
+    "toBinding": "port-42-hard-cases",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 609,
+    "name": "group-record-failures",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 610,
+    "name": "read-hard-cases-535",
+    "type": "connector",
+    "owner": null,
+    "edge": "read-hard-cases-535",
+    "fromBinding": "port-43-hard-cases",
+    "toBinding": "port-44-designer",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 611,
+    "name": "read-hard-cases-775",
+    "type": "connector",
+    "owner": null,
+    "edge": "read-hard-cases-775",
+    "fromBinding": "port-45-hard-cases",
+    "toBinding": "port-46-designer",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 612,
+    "name": "evolve-skills-165",
+    "type": "connector",
+    "owner": null,
+    "edge": "evolve-skills-165",
+    "fromBinding": "port-47-designer",
+    "toBinding": "port-48-skill-bank",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 613,
+    "name": "evolve-skills-345",
+    "type": "connector",
+    "owner": null,
+    "edge": "evolve-skills-345",
+    "fromBinding": "port-49-designer",
+    "toBinding": "port-50-skill-bank",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 614,
+    "name": "read-skills-286",
+    "type": "connector",
+    "owner": null,
+    "edge": "read-skills-286",
+    "fromBinding": "port-51-skill-bank",
+    "toBinding": "port-52-controller",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 615,
+    "name": "read-skills-450",
+    "type": "connector",
+    "owner": null,
+    "edge": "read-skills-450",
+    "fromBinding": "port-53-skill-bank",
+    "toBinding": "port-54-controller",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 616,
+    "name": "cluster-to-filter",
+    "type": "connector",
+    "owner": null,
+    "edge": "cluster-to-filter",
+    "fromBinding": "port-55-cluster-cases",
+    "toBinding": "port-56-difficulty-filtering",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 617,
+    "name": "cluster-to-filter-b",
+    "type": "connector",
+    "owner": null,
+    "edge": "cluster-to-filter-b",
+    "fromBinding": "port-57-cluster-cases",
+    "toBinding": "port-58-difficulty-filtering",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 618,
+    "name": "filter-to-aggregate",
+    "type": "connector",
+    "owner": null,
+    "edge": "filter-to-aggregate",
+    "fromBinding": "port-59-difficulty-filtering",
+    "toBinding": "port-60-aggregate-cases",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 619,
+    "name": "filter-to-aggregate-b",
+    "type": "connector",
+    "owner": null,
+    "edge": "filter-to-aggregate-b",
+    "fromBinding": "port-61-difficulty-filtering",
+    "toBinding": "port-62-aggregate-cases",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 620,
+    "name": "aggregate-to-analysis:segment:0",
+    "type": "connector",
+    "owner": "group-aggregate-to-analysis",
+    "edge": "aggregate-to-analysis",
+    "fromBinding": "port-63-aggregate-cases",
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 621,
+    "name": "aggregate-to-analysis:segment:1",
+    "type": "connector",
+    "owner": "group-aggregate-to-analysis",
+    "edge": "aggregate-to-analysis",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 622,
+    "name": "aggregate-to-analysis:segment:2",
+    "type": "connector",
+    "owner": "group-aggregate-to-analysis",
+    "edge": "aggregate-to-analysis",
+    "fromBinding": null,
+    "toBinding": "port-64-analyze-failures",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 623,
+    "name": "group-aggregate-to-analysis",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 624,
+    "name": "aggregate-to-analysis-b:segment:0",
+    "type": "connector",
+    "owner": "group-aggregate-to-analysis-b",
+    "edge": "aggregate-to-analysis-b",
+    "fromBinding": "port-65-aggregate-cases",
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 625,
+    "name": "aggregate-to-analysis-b:segment:1",
+    "type": "connector",
+    "owner": "group-aggregate-to-analysis-b",
+    "edge": "aggregate-to-analysis-b",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 626,
+    "name": "aggregate-to-analysis-b:segment:2",
+    "type": "connector",
+    "owner": "group-aggregate-to-analysis-b",
+    "edge": "aggregate-to-analysis-b",
+    "fromBinding": null,
+    "toBinding": "port-66-analyze-failures",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 627,
+    "name": "group-aggregate-to-analysis-b",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 628,
+    "name": "analysis-to-refine",
+    "type": "connector",
+    "owner": null,
+    "edge": "analysis-to-refine",
+    "fromBinding": "port-67-analyze-failures",
+    "toBinding": "port-68-refine-skills",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 629,
+    "name": "analysis-to-refine-b",
+    "type": "connector",
+    "owner": null,
+    "edge": "analysis-to-refine-b",
+    "fromBinding": "port-69-analyze-failures",
+    "toBinding": "port-70-refine-skills",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 630,
+    "name": "closed-loop:segment:0",
+    "type": "connector",
+    "owner": "group-closed-loop",
+    "edge": "closed-loop",
+    "fromBinding": "port-71-designer",
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 4.5,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 631,
+    "name": "closed-loop:segment:1",
+    "type": "connector",
+    "owner": "group-closed-loop",
+    "edge": "closed-loop",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#000000",
+    "width": 4.5,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 632,
+    "name": "closed-loop:segment:2",
+    "type": "connector",
+    "owner": "group-closed-loop",
+    "edge": "closed-loop",
+    "fromBinding": null,
+    "toBinding": "port-72-learning",
+    "stroke": "#000000",
+    "width": 4.5,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 633,
+    "name": "group-closed-loop",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 634,
+    "name": "reset-every-trace",
+    "type": "connector",
+    "owner": null,
+    "edge": "reset-every-trace",
+    "fromBinding": "port-73-reset-event",
+    "toBinding": "port-74-memory-bank",
+    "stroke": "#000000",
+    "width": 3.4,
+    "dashed": false,
+    "startArrow": "triangle",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 454,
+    "name": "loop-label-whiteplate",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1004,
+      815,
+      490,
+      43
+    ]
+  },
+  {
+    "id": 418,
+    "name": "text-244",
+    "type": "text",
+    "owner": "loop-label",
+    "text": "Closed-loop Optimization",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1056.9978,
+      815.5048333679199,
+      421.8575,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 419,
+    "name": "icon-35-tone-0",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1008.142,
+      814.8076,
+      37.13319999999999,
+      40.2722
+    ]
+  },
+  {
+    "id": 420,
+    "name": "icon-35-tone-1",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1009.2534,
+      816.2459,
+      34.77970000000005,
+      37.65719999999999
+    ]
+  },
+  {
+    "id": 421,
+    "name": "icon-35-tone-2",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1008.9265,
+      815.7229,
+      35.498800000000074,
+      38.76859999999999
+    ]
+  },
+  {
+    "id": 422,
+    "name": "icon-35-tone-3",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1008.142,
+      814.8076,
+      37.13319999999999,
+      40.2722
+    ]
+  },
+  {
+    "id": 423,
+    "name": "icon-35-tone-4",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1009.1226,
+      816.0498,
+      35.0412,
+      38.114799999999946
+    ]
+  },
+  {
+    "id": 424,
+    "name": "icon-35-tone-5",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1008.5996,
+      815.396,
+      36.08719999999994,
+      39.29160000000002
+    ]
+  },
+  {
+    "id": 425,
+    "name": "icon-35-tone-6",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1009.3188,
+      816.7035,
+      34.58349999999996,
+      36.93810000000008
+    ]
+  },
+  {
+    "id": 426,
+    "name": "icon-35-tone-7",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1008.7304,
+      815.5267,
+      35.82569999999998,
+      39.095500000000015
+    ]
+  },
+  {
+    "id": 427,
+    "name": "icon-35-tone-8",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1008.9919,
+      815.919,
+      35.30269999999996,
+      38.44169999999997
+    ]
+  },
+  {
+    "id": 428,
+    "name": "icon-35-tone-9",
+    "type": "shape",
+    "owner": "loop-label",
+    "bbox": [
+      1008.4035,
+      815.1999,
+      36.414100000000076,
+      39.68380000000002
+    ]
+  },
+  {
+    "id": 635,
+    "name": "loop-label",
+    "type": "group",
+    "owner": null
+  }
+]

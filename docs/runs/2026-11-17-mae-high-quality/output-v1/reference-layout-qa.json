@@ -1,0 +1,421 @@
+{
+  "passed": true,
+  "errors": [],
+  "regions": [
+    {
+      "id": "image",
+      "reference": [
+        20,
+        225,
+        226,
+        222
+      ],
+      "expected": [
+        20,
+        225,
+        226,
+        222
+      ],
+      "actual": [
+        20,
+        225,
+        226,
+        222
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "visible",
+      "reference": [
+        391,
+        227,
+        45,
+        218
+      ],
+      "expected": [
+        391,
+        227,
+        45,
+        218
+      ],
+      "actual": [
+        391,
+        227,
+        45,
+        218
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "encoder",
+      "reference": [
+        484,
+        208,
+        181,
+        262
+      ],
+      "expected": [
+        484,
+        208,
+        181,
+        262
+      ],
+      "actual": [
+        484,
+        208,
+        181,
+        262
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "latents",
+      "reference": [
+        720,
+        227,
+        45,
+        218
+      ],
+      "expected": [
+        720,
+        227,
+        45,
+        218
+      ],
+      "actual": [
+        720,
+        227,
+        45,
+        218
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "masktokens",
+      "reference": [
+        890,
+        59,
+        60,
+        60
+      ],
+      "expected": [
+        890,
+        59,
+        60,
+        60
+      ],
+      "actual": [
+        890,
+        59,
+        60,
+        60
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "restore",
+      "reference": [
+        835,
+        283,
+        167,
+        118
+      ],
+      "expected": [
+        835,
+        283,
+        167,
+        118
+      ],
+      "actual": [
+        835,
+        283,
+        167,
+        118
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "restored",
+      "reference": [
+        1045,
+        223,
+        210,
+        225
+      ],
+      "expected": [
+        1045,
+        223,
+        210,
+        225
+      ],
+      "actual": [
+        1045,
+        223,
+        210,
+        225
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "decoder",
+      "reference": [
+        1312,
+        283,
+        185,
+        118
+      ],
+      "expected": [
+        1312,
+        283,
+        185,
+        118
+      ],
+      "actual": [
+        1312,
+        283,
+        185,
+        118
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "pred",
+      "reference": [
+        1545,
+        225,
+        211,
+        222
+      ],
+      "expected": [
+        1545,
+        225,
+        211,
+        222
+      ],
+      "actual": [
+        1545,
+        225,
+        211,
+        222
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "objective",
+      "reference": [
+        730,
+        626,
+        979,
+        251
+      ],
+      "expected": [
+        730,
+        626,
+        979,
+        251
+      ],
+      "actual": [
+        730,
+        626,
+        979,
+        251
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "target",
+      "reference": [
+        774,
+        695,
+        164,
+        148
+      ],
+      "expected": [
+        774,
+        695,
+        164,
+        148
+      ],
+      "actual": [
+        774,
+        695,
+        164,
+        148
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "selector",
+      "reference": [
+        1025,
+        678,
+        143,
+        125
+      ],
+      "expected": [
+        1025,
+        678,
+        143,
+        125
+      ],
+      "actual": [
+        1025,
+        678,
+        143,
+        125
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "loss",
+      "reference": [
+        1237,
+        723,
+        214,
+        82
+      ],
+      "expected": [
+        1237,
+        723,
+        214,
+        82
+      ],
+      "actual": [
+        1237,
+        723,
+        214,
+        82
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "pred-loss",
+      "reference": [
+        1510,
+        694,
+        165,
+        149
+      ],
+      "expected": [
+        1510,
+        694,
+        165,
+        149
+      ],
+      "actual": [
+        1510,
+        694,
+        165,
+        149
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "selector-caption",
+      "reference": [
+        996,
+        809,
+        201,
+        60
+      ],
+      "expected": [
+        996,
+        809,
+        201,
+        60
+      ],
+      "actual": [
+        996,
+        809,
+        201,
+        60
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    }
+  ],
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-17-mae-high-quality/selected-reference.png",
+    "sha256": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "width": 1774,
+    "height": 887
+  },
+  "contractSHA256": "d0de7e1bc26031c04de1cf3b6002322d3f38c80c4bbb17cb37cc7326e50057a0",
+  "svgSHA256": "f4e475436fd316c4b0df603365692085acb771fe246ffde52710caa896725cff",
+  "sceneSHA256": "8af924a24efdba0a93a30c407f058b751382a305b6007ca49e7b854eeee19e7b",
+  "scope": "Actual SVG anchor geometry versus frozen PNG regions; colors, text, arrow routes and aesthetics still require region comparisons and isolated fidelity review."
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "audit_type": "author-informed source semantics; no proposal acceptance",
+  "status": "ready_for_pending_plan_review",
+  "pinned_commit": "efb2a8062c206524e35e47d04501ed4f544c0ae8",
+  "artifacts": {
+    "paper_pdf": {"path": "source/paper-cvpr2022.pdf", "sha256": "81bbc64bc197a64362927010470e46601a0f0311aa4c2014a355dfff0e5b3b6c", "locator": "source/paper-provenance.json"},
+    "paper_text": {"path": "source/paper-text.txt", "sha256": "cc04fcfeeb544ad0c11b26a61e382d187b4fcef77e5fed1ea5d0d0cd2f90ac61"},
+    "method_pages": {"path": "source/method-pages.txt", "sha256": "157bc873bec27fda493eafcf3ea9e15e7a6132ff3a161de6315eeb80ce221e3f"},
+    "official_model": {"path": "source/models_mae.py", "sha256": "973c01f31fdf15febb5976baecd639b83a5cc011161af852e54ca68c6c2bafb4"},
+    "author_figure": {"path": "source/author-figure-1.png", "sha256": "59c7196892746b5a81267ca28f2c1eb52a9a7d779275ebf9cf50873cd96cbad1", "use": "inspection only; not a composition template"},
+    "license": {"path": "source/LICENSE", "sha256": "ffe3b1e0b58c1f1250ce48f84d8c37328f9a1ff59bb77b63bc97480cf2778b64", "title_locator": "source/LICENSE:2"}
+  },
+  "semantic_requirements": [
+    {"id": "random-removal", "requirement": "Patch masking removes uniformly sampled patches; encoder receives only visible tokens and no mask tokens.", "evidence": ["source/method-pages.txt:27-32", "source/method-pages.txt:41-50", "source/models_mae.py:123-170"]},
+    {"id": "post-encoder-mask-tokens", "requirement": "Decoder full sequence combines encoded visible tokens with shared learned mask tokens after the encoder and restored ordering.", "evidence": ["source/method-pages.txt:51-54", "source/method-pages.txt:64-71", "source/models_mae.py:172-184"]},
+    {"id": "positions", "requirement": "Decoder positional embeddings provide mask-token locations; implementation has fixed separate 2-D sin-cos embeddings.", "evidence": ["source/method-pages.txt:64-71", "source/models_mae.py:36-37", "source/models_mae.py:49-52", "source/models_mae.py:65-72", "source/models_mae.py:182-184"]},
+    {"id": "class-token", "requirement": "Implementation prepends class token after masking, carries it through decoder, then removes it before output; omission is safer in a conceptual graphic.", "evidence": ["source/models_mae.py:160-170", "source/models_mae.py:178-196"]},
+    {"id": "prediction-vs-loss", "requirement": "Predictions cover restored patch positions; pixel MSE is computed only over removed patches.", "evidence": ["source/method-pages.txt:91-100", "source/models_mae.py:190-214"]},
+    {"id": "target-variant", "requirement": "Normalized per-patch targets are a variant and code-controlled option, not a universal MAE fact.", "evidence": ["source/method-pages.txt:101-106", "source/models_mae.py:204-209"]},
+    {"id": "pretrain-vs-downstream", "requirement": "Decoder is pre-training only; downstream recognition uses encoder on uncorrupted patch sets.", "evidence": ["source/paper-text.txt:22-29", "source/method-pages.txt:73-80"]}
+  ],
+  "hard_rejections": [
+    "mask tokens in encoder",
+    "full-image loss rather than masked-only loss",
+    "decoder predicts only missing positions",
+    "raw original image as decoder token input",
+    "location-specific learned mask token",
+    "non-random or semantic masking",
+    "class token as a patch target",
+    "reuse of author figure layout or assets as the new composition",
+    "uncited performance or configuration claims"
+  ],
+  "pending_plan_gate": [
+    "visible subset and full decoder positions are visually distinct",
+    "mask-token insertion and restoration occur after encoder",
+    "loss scope is visibly masked-only",
+    "positional/class-token/normalized-target details are correct if shown, otherwise omitted",
+    "any downstream branch is encoder-only",
+    "composition is original"
+  ]
+}

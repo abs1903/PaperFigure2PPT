@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/source/reference.png",
+    "sha256": "8a2ab882b9a3a73615d237e1cb0aa1ffffa181cced23ec9e9dc990bd552e0c68",
+    "width": 598,
+    "height": 787
+  },
+  "typography": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/assets/typography/agemem-accepted.json",
+    "sha256": "ceeacf6432799111fb4e12ce9159c5daae636530c3fc224937da34859f0e8a7b"
+  },
+  "centerTolerancePx": 6,
+  "sizeTolerancePx": 10,
+  "regions": [
+    {
+      "module": "source-context",
+      "box": [
+        3.2133,
+        3.3438,
+        590.4838,
+        780.309
+      ],
+      "sourceLocator": "source-primitives.json:path-1",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "query",
+      "box": [
+        43.1602,
+        19.9714,
+        231.3673,
+        153.5014
+      ],
+      "sourceLocator": "source-primitives.json:path-93",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "session-content",
+      "box": [
+        312.6189,
+        22.9421,
+        232.3696,
+        154.6674
+      ],
+      "sourceLocator": "source-primitives.json:path-96",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "memory-manager",
+      "box": [
+        42.9573,
+        236.3334,
+        506.9399,
+        162.8292
+      ],
+      "sourceLocator": "source-primitives.json:path-3",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "short-term-tools",
+      "box": [
+        65.2948,
+        313.2531,
+        224.1722,
+        66.6694
+      ],
+      "sourceLocator": "source-primitives.json:path-99",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "long-term-tools",
+      "box": [
+        312.5345,
+        311.4788,
+        218.1735,
+        68.5281
+      ],
+      "sourceLocator": "source-primitives.json:path-100",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "agentic-context",
+      "box": [
+        42.2256,
+        465.4348,
+        247.3259,
+        65.7383
+      ],
+      "sourceLocator": "source-primitives.json:path-101",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "agentic-memory",
+      "box": [
+        312.7034,
+        463.4053,
+        238.115,
+        67.7677
+      ],
+      "sourceLocator": "source-primitives.json:path-102",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "llm-answer",
+      "box": [
+        43.1602,
+        583.8915,
+        231.6039,
+        156.9485
+      ],
+      "sourceLocator": "source-primitives.json:path-110",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "construction",
+      "box": [
+        309.155,
+        554.2861,
+        271.4073,
+        204.1955
+      ],
+      "sourceLocator": "source-primitives.json:path-114",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "construction-agent",
+      "box": [
+        417.3968,
+        560.8324,
+        59.7395,
+        59.7395
+      ],
+      "sourceLocator": "source-primitives.json:icon-62",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "stm-instance",
+      "box": [
+        339.9128,
+        664.9342,
+        44.3606,
+        44.3607
+      ],
+      "sourceLocator": "source-primitives.json:icon-63",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    },
+    {
+      "module": "ltm-instance",
+      "box": [
+        505.1904,
+        665.1877,
+        42.1639,
+        42.1639
+      ],
+      "sourceLocator": "source-primitives.json:icon-64",
+      "scope": "Source PDF vector boundary or original icon viewport; front panel anchor for stacked cards, with rear layers retained."
+    }
+  ],
+  "geometryChanges": [],
+  "contentChanges": [
+    {
+      "objects": [
+        "all-arrows"
+      ],
+      "reason": "Retain existing flat solid-arrow version while preserving target routes and regions.",
+      "evidence": "Existing attributed case README: Intentional differences and limits; this rerun preserves output-v15 geometry."
+    },
+    {
+      "objects": [
+        "icon-62",
+        "icon-63",
+        "icon-64",
+        "other-icon-groups"
+      ],
+      "reason": "Existing source-guided native icon redraws, approximate artwork; retain native labels and source module positions.",
+      "evidence": "agemem/icon-refinement/README.md; output-v15/layout-scene.json; no new geometry authored."
+    }
+  ],
+  "provenance": {
+    "source": "AgeMem Figure1(c), arXiv2601.01885v1, CC BY4.0",
+    "regionSource": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/source-primitives.json",
+    "sceneBase": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/layout-scene.json",
+    "metadataChanges": "Bind source-context to its actual background; replace three removed pre-refinement anchor IDs by existing visible semantic icon groups. Geometry, text and topology unchanged."
+  }
+}

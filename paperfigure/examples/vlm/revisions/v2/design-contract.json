@@ -1,0 +1,20 @@
+{
+  "reference": "../../design-reference/imagegen-v1.png",
+  "referenceSha256": "c10dcce0a77ff07fbdf8857eff1a30eb8eca44e0fa8118e150a087d4b6946809",
+  "preserve": [
+    "compact two-stream composition",
+    "dominant language-model region",
+    "teal visual-token and lavender text-token motifs",
+    "lightweight dashed visual-tokenization enclosure",
+    "small independent illustrated input",
+    "restrained supervision endpoint"
+  ],
+  "allowedDeviations": [
+    "no visible heading or footer",
+    "no unsupported attention or FFN internals",
+    "no fixed token/layer count",
+    "no invented concrete question or answer"
+  ],
+  "semanticSource": "../../spec.json",
+  "reviewStatus": "unreviewed"
+}

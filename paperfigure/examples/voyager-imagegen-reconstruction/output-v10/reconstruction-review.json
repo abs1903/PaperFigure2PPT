@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "candidateVersion": "output-v10",
+  "reviewer": {"identity": "/root/voyager_png_fidelity_review", "isolation": "fork_turns:none"},
+  "authorizedDeviations": ["flat-fill replacement"],
+  "unresolvedExceptions": ["unknown original font", "fine Minecraft texture simplification", "no interactive Microsoft PowerPoint test"],
+  "verdicts": {
+    "referenceFidelity": {"verdict": "pass", "scope": "SVG preview and independent PPTX render", "summary": "No remaining material discrepancy outside the authorized solid-fill simplification."},
+    "svgNativeEditability": {"verdict": "pass", "scope": "structural SVG representation"},
+    "pptxNativeEditability": {"verdict": "pass", "scope": "structural OOXML representation"}
+  },
+  "findings": [
+    {"id": "V10-F01", "severity": "pass", "region": "program-document line 2", "finding": "Native dark-pixel bounds: source [608,463,893,479], SVG [609,462,893,477], PPTX [609,464,894,479]. Horizontal extent now matches at one-pixel precision and height differs only by ordinary renderer rasterization."},
+    {"id": "V10-F02", "severity": "pass", "region": "whole figure", "finding": "SVG and PPTX retain source composition, labels, modules, arrows, semantic icon/scene interiors, and authorized flat-fill conversion."}
+  ],
+  "structuralEvidence": {"svgTextElements": 69, "svgVectorElements": 123, "svgRasterElements": 0, "svgGradients": 0, "svgSemanticGroups": 56, "pptxShapes": 159, "pptxConnectors": 32, "pptxGroups": 56, "pptxTextRuns": 74, "pptxPictures": 0, "pptxBlips": 0, "pptxMediaPayloads": 0, "pptxGradientFills": 0},
+  "limitations": ["Source font family/provenance remains unknown; pass is glyph-compatibility and geometry, not exact-font certification", "LibreOffice PDF render, not Microsoft PowerPoint", "No scientific-source validity or NeurIPS-quality certification"],
+  "sha256": {"reference": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f", "inventory": "42583ff7ff3b1755d34c9cc4fcdb22131129ceb4d4fc15d762663ec15acf2afb", "svg": "d7ef2fd4b0956dea80db2ea4ae27abec0c57990cf64db9beab4c9c63953ca8ee", "svgPreview": "1a22b8fe3c33c7e9bb52233658ca12252fd9167af0928038c16da937d6014d74", "pptx": "3f4db1ffe169fed1ed227e80bd25c85b4b927e8f09bf9ea0c3e8a35ce17ea5f0", "pptxRender": "39129544e05a9fd5a8e34d3d611989c9405d934348a706a6ebeba944ed8b8bb2", "objectMap": "c7b613e7185f7df33440d647099e5341f93fd03a79ac28270b99d301b7001595", "nativeAudit": "7745da1fa1ba3376ad6e54f036959fb3bcda95b6c1aa5737acf3765ca775f2af", "codeMetrics": "dee807418baa14ae6222d3b482f3ea9e87b89827d3e98fc257788d1eab26c32b"}
+}

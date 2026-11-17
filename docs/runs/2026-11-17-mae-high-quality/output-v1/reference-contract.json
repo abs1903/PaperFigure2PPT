@@ -1,0 +1,175 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "width": 1774,
+    "height": 887
+  },
+  "centerTolerancePx": 4,
+  "sizeTolerancePx": 6,
+  "regions": [
+    {
+      "module": "image",
+      "box": [
+        20,
+        225,
+        226,
+        222
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "visible",
+      "box": [
+        391,
+        227,
+        45,
+        218
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "encoder",
+      "box": [
+        484,
+        208,
+        181,
+        262
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "latents",
+      "box": [
+        720,
+        227,
+        45,
+        218
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "masktokens",
+      "box": [
+        890,
+        59,
+        60,
+        60
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "restore",
+      "box": [
+        835,
+        283,
+        167,
+        118
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "restored",
+      "box": [
+        1045,
+        223,
+        210,
+        225
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "decoder",
+      "box": [
+        1312,
+        283,
+        185,
+        118
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "pred",
+      "box": [
+        1545,
+        225,
+        211,
+        222
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "objective",
+      "box": [
+        730,
+        626,
+        979,
+        251
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "target",
+      "box": [
+        774,
+        695,
+        164,
+        148
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "selector",
+      "box": [
+        1025,
+        678,
+        143,
+        125
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "loss",
+      "box": [
+        1237,
+        723,
+        214,
+        82
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "pred-loss",
+      "box": [
+        1510,
+        694,
+        165,
+        149
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    },
+    {
+      "module": "selector-caption",
+      "box": [
+        996,
+        809,
+        201,
+        60
+      ],
+      "anchorMeaning": "Manually inspected source PNG visible geometry before native authoring."
+    }
+  ],
+  "geometryChanges": [],
+  "contentChanges": [],
+  "typography": {
+    "path": "typography-profile.json",
+    "sha256": "5cdfe81d919ace655937a6cd50f7e54d182a39b32624cb30350e583b897df22e"
+  },
+  "appearanceApproximations": [
+    "Mild tonal shading replaced by solid source-color native fills, following independent B2 review.",
+    "Unknown raster typeface approximated using measured Arial bold. Anti-aliasing and mountain contour microdetail approximate."
+  ],
+  "reviewRequired": "Independent reference comparison, grid counts, text, SVG and actual Office render plus native object-map/XML."
+}

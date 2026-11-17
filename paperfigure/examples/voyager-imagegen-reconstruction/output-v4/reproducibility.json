@@ -1,0 +1,11 @@
+{
+  "figure.svg": true,
+  "object-tree.json": true,
+  "inventory.json": true,
+  "pptx-object-map.json": true,
+  "pptxDifferentParts": [
+    "docProps/core.xml"
+  ],
+  "pptxSlideXMLIdentical": true,
+  "scope": "SVG/tree/ledger/native slide reproducibility; container creation metadata may differ"
+}

@@ -1,0 +1,32 @@
+{
+  "repo": "noahshinn/reflexion",
+  "commit": "218cf0ef1df84b05ce379dd4a8e47f17766733a0",
+  "files": {
+    "hotpotqa_runs/agents.py": {
+      "sha256": "19be4a1a8639245ed344470873a534ea684898954c062378e2b0e32d429c874a",
+      "bytes": 15784,
+      "url": "https://raw.githubusercontent.com/noahshinn/reflexion/218cf0ef1df84b05ce379dd4a8e47f17766733a0/hotpotqa_runs/agents.py"
+    },
+    "hotpotqa_runs/environment.py": {
+      "sha256": "615bd3f8090badad163ade9c076674726ef5c4763de57222ba482c9caa0b8402",
+      "bytes": 2992,
+      "url": "https://raw.githubusercontent.com/noahshinn/reflexion/218cf0ef1df84b05ce379dd4a8e47f17766733a0/hotpotqa_runs/environment.py"
+    },
+    "hotpotqa_runs/react.py": {
+      "sha256": "38306dc47ccfff4845d8264375c71ba2394b8c660d7792fe81a34d46be367e10",
+      "bytes": 6206,
+      "url": "https://raw.githubusercontent.com/noahshinn/reflexion/218cf0ef1df84b05ce379dd4a8e47f17766733a0/hotpotqa_runs/react.py"
+    },
+    "hotpotqa_runs/prompts.py": {
+      "sha256": "6f239cfdb564d400db97f019c7fef5925127aee4519a1d0281aab57ea7616cdf",
+      "bytes": 7809,
+      "url": "https://raw.githubusercontent.com/noahshinn/reflexion/218cf0ef1df84b05ce379dd4a8e47f17766733a0/hotpotqa_runs/prompts.py"
+    },
+    "LICENSE": {
+      "sha256": "6e9db9e62fe5597c3f04a620136eadb7eb8e8f77ebb0e820f7098546fb8a08e6",
+      "bytes": 1067,
+      "url": "https://raw.githubusercontent.com/noahshinn/reflexion/218cf0ef1df84b05ce379dd4a8e47f17766733a0/LICENSE"
+    }
+  },
+  "note": "Selected source snapshot; code not executed. No external model calls, environments or weights."
+}

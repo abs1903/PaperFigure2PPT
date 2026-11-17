@@ -1,0 +1,297 @@
+{
+  "allPass": true,
+  "reviewHashReferences": 34,
+  "localLinks": 94,
+  "sourceFreezeUnchanged": true,
+  "selectedImageExact": true,
+  "checks": [
+    {
+      "record": "image-review-v1.json",
+      "field": "generation-record-v1.json",
+      "sha256": "dfb9ebbe4398d41a669fd252794140e4c33d3bd9a2cc856d4781c05674e9b933",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/generation-record-v1.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "field": "spec.json",
+      "sha256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/spec.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "field": "narrative-plan.json",
+      "sha256": "776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/narrative-plan.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "field": "design-brief.json",
+      "sha256": "e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/design-brief.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "field": "candidate-v1.png",
+      "sha256": "147845dfbea55fd8bf1aa1fe229477a6bddb28e3eefbc65eba74f5b0276e44e7",
+      "pass": true
+    },
+    {
+      "record": "image-review-v1.json",
+      "field": "candidate-v1-paper-width.png",
+      "sha256": "d8232c1a476f0cfbf5da9994448225ac620ed51c17f3fca8778433791ddd3538",
+      "pass": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "field": "prompt-edit-v2.txt",
+      "sha256": "34ea70456645d36d16d70d45b62fc5436956f2c140444a00ba2a5b34df1e69a3",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/prompt-edit-v2.txt"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "field": "generation-record-v2.json",
+      "sha256": "69a4d5ae6fe383fb13b0b1ccd203b7bae31d10c7fde2b60c54de4d534c73e680",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/generation-record-v2.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "field": "spec.json",
+      "sha256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/spec.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "field": "narrative-plan.json",
+      "sha256": "776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/narrative-plan.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "field": "design-brief.json",
+      "sha256": "e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/design-brief.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "field": "candidate-v2.png",
+      "sha256": "b8f1d68ac98dd947a97368a97d57d4473d2861e9393303dfb2908fabd32723c6",
+      "pass": true
+    },
+    {
+      "record": "image-review-v2.json",
+      "field": "candidate-v2-paper-width.png",
+      "sha256": "8cec9627b72be378b6476dc56480c3d0ec72f2198f0bb0c8d767f209077b41ba",
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "prompt-edit-v3.txt",
+      "sha256": "69b826b42754d8bb1e705cca1edf275d11b4c431f738fdb686660d357b4b871e",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/prompt-edit-v3.txt"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "generation-record-v3.json",
+      "sha256": "954c0013b681c5c2d491db175422077815078dc2dfe264840c76fb1017e1f8a9",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/generation-record-v3.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "spec.json",
+      "sha256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/spec.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "narrative-plan.json",
+      "sha256": "776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/narrative-plan.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "design-brief.json",
+      "sha256": "e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/design-brief.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "author-figure-1.png",
+      "sha256": "2115ac12019b5d66729e5b9a00f984c7d86241301eb3dec0f8be202f02bf0e8e",
+      "retainedMatches": [
+        "docs/runs/2026-11-16-agentless-figure-hidden/comparison-after-freeze/author-figure-1.png"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "prior-v4-paper-width.png",
+      "sha256": "009194c9df89915577dc0d758c0790ba82bf771e5244ada45d130e21c8db3563",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-narrative/candidate-v4-paper-width.png"
+      ],
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "candidate-v3.png",
+      "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+      "pass": true
+    },
+    {
+      "record": "image-review-v3.json",
+      "field": "candidate-v3-paper-width.png",
+      "sha256": "91f6b531de070ee739c4ba0161fc8607bc9aebc00ca15a0eaada831da1ca05c6",
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review-v2.json",
+      "field": "paper-introduction-source.txt",
+      "sha256": "e1d5159bcc58a1c8e6dfd329829728746db2cbaa5233e9dd609e762c2b9ecec6",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/paper-introduction-source.txt"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review-v2.json",
+      "field": "paper-method-source.txt",
+      "sha256": "b0a9c15af53234d86bae255aca4dbc0751122ddf4ce845eda1d2eb97255a5622",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/paper-method-source.txt"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review-v2.json",
+      "field": "spec.json",
+      "sha256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/spec.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review-v2.json",
+      "field": "narrative-plan.json",
+      "sha256": "776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/narrative-plan.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review-v2.json",
+      "field": "design-brief.json",
+      "sha256": "e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/design-brief.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review.json",
+      "field": "paper-introduction-source.txt",
+      "sha256": "e1d5159bcc58a1c8e6dfd329829728746db2cbaa5233e9dd609e762c2b9ecec6",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/paper-introduction-source.txt"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review.json",
+      "field": "paper-method-source.txt",
+      "sha256": "b0a9c15af53234d86bae255aca4dbc0751122ddf4ce845eda1d2eb97255a5622",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/paper-method-source.txt"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review.json",
+      "field": "spec.json",
+      "sha256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/spec.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review.json",
+      "field": "narrative-plan.json",
+      "sha256": "f268a962ff9da31931ad02c81768119206d9a9010b060a384a678d701512369e",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/narrative-plan-draft-v1.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review.json",
+      "field": "design-brief.json",
+      "sha256": "d27349b3e9c304681bada90d52fb25a24622505a844f037582d7fc9d69588234",
+      "retainedMatches": [
+        "docs/runs/2026-11-17-agentless-contribution/design-brief-draft-v1.json"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review.json",
+      "field": "paper-narrative.md",
+      "sha256": "812c4112a6e07d15908926b59bba19fc1e55676c6db6f228c149ef7b189b4737",
+      "retainedMatches": [
+        "paperfigure/references/paper-narrative.md"
+      ],
+      "pass": true
+    },
+    {
+      "record": "source-contribution-review.json",
+      "field": "visual-review.md",
+      "sha256": "e9c4b50a9d73e12e2d5df7e826324ed06f92a2310eef248cbba932a164cf8ca6",
+      "retainedMatches": [
+        "paperfigure/references/visual-review.md"
+      ],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PaperFigure"
+  short_description: "Editable architecture figures for AI research papers"
+  default_prompt: "Use $paperfigure to design an editable, source-grounded method overview for my AI paper."

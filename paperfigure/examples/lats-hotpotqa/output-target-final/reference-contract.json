@@ -1,0 +1,171 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "reference": {
+    "path": "../design-study/initial.png",
+    "sha256": "fc12b3fc8bd7a3f54088ad4e5feabb33e1fabec2f42d37062ab7a249e741648e",
+    "width": 1752,
+    "height": 897
+  },
+  "centerTolerancePx": 6,
+  "sizeTolerancePx": 10,
+  "regions": [
+    {
+      "module": "question",
+      "box": [
+        4,
+        174,
+        152,
+        70
+      ]
+    },
+    {
+      "module": "tree",
+      "box": [
+        186,
+        101,
+        338,
+        554
+      ]
+    },
+    {
+      "module": "select",
+      "box": [
+        570,
+        137,
+        147,
+        85
+      ]
+    },
+    {
+      "module": "policy",
+      "box": [
+        782,
+        135,
+        205,
+        87
+      ]
+    },
+    {
+      "module": "tools",
+      "box": [
+        1055,
+        118,
+        374,
+        140
+      ]
+    },
+    {
+      "module": "failed",
+      "box": [
+        889,
+        377,
+        175,
+        69
+      ]
+    },
+    {
+      "module": "reflect",
+      "box": [
+        1102,
+        376,
+        196,
+        71
+      ]
+    },
+    {
+      "module": "context",
+      "box": [
+        1335,
+        358,
+        176,
+        109
+      ]
+    },
+    {
+      "module": "value",
+      "box": [
+        570,
+        589,
+        152,
+        72
+      ]
+    },
+    {
+      "module": "rollout",
+      "box": [
+        744,
+        532,
+        658,
+        190
+      ]
+    },
+    {
+      "module": "backup",
+      "box": [
+        1560,
+        572,
+        166,
+        106
+      ]
+    },
+    {
+      "module": "result",
+      "box": [
+        1263,
+        811,
+        288,
+        79
+      ]
+    }
+  ],
+  "geometryChanges": [],
+  "contentChanges": [
+    {
+      "objects": [
+        "policy-feedback",
+        "value"
+      ],
+      "reason": "Remove unsupported reflection-to-value feedback",
+      "evidence": "hotpotqa.py175-207; LATS_CODE_SOURCE_AUDIT.md; intake-corrections.json records author prompt error"
+    },
+    {
+      "objects": [
+        "tools"
+      ],
+      "reason": "Exact-match reward is from HotPotQAWrapper, not WikiEnv alone",
+      "evidence": "wrappers.py109-134"
+    },
+    {
+      "objects": [
+        "rollout"
+      ],
+      "reason": "Remove UCT inside rollout; show reused sample/tool/value routines and greedy continuation. Rollout nodes not ordinary retained children.",
+      "evidence": "lats.py271-300"
+    },
+    {
+      "objects": [
+        "return-tree",
+        "return-rollout",
+        "result"
+      ],
+      "reason": "Fallback can select either retained tree nodes or separately retained rollout endpoints",
+      "evidence": "lats.py222-232"
+    },
+    {
+      "objects": [
+        "reflect"
+      ],
+      "reason": "Show conditional new distinct-failure count1-3; not unconditional every step",
+      "evidence": "lats.py58-68"
+    },
+    {
+      "objects": [
+        "all"
+      ],
+      "reason": "Replace generated gradients with user-required flat semantic fills; rewrap local field text as needed for >=7pt at7in without moving moduleboxes",
+      "evidence": "User constraint solid meaningful colors and readable editable text"
+    }
+  ],
+  "reviewRequirement": "Inspect actual reference and exported SVG/PPTX. Geometry pass alone is not fidelity or aesthetic acceptance."
+}

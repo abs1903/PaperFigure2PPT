@@ -1,0 +1,37 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/voyager_e2e_review"
+  },
+  "verdict": "revise",
+  "checks": {
+    "referenceComparison": "pass",
+    "semanticFidelity": "pass",
+    "composition": "fail",
+    "modalityIdentity": "pass",
+    "typography": "fail",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "pass"
+  },
+  "reference": {
+    "path": "../../../../../paperfigure/examples/voyager-agent/refinement/design-study.png",
+    "sha256": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f"
+  },
+  "artifacts": {
+    "spec.json": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+    "figure.svg": "b54282785509f0d12f5f5d2d683a9e6b6f3d225780051ecdf75940ae592975bf",
+    "figure.pptx": "7248f1131d6e2ca12927b7a35db16efc6ad84f0858af5b71e727766c63a48cb5",
+    "figure.pdf": "c72b273fb26ae262d14ed5878af85435e315f2f8ddb85bb4a60be155efac6abd",
+    "figure.png": "04f10a95e610c6298006f486d96242c280f1c85efe67b24c00e35782c9195d0f",
+    "rendered-pptx/figure.png": "b4bcf49d8788a93992123eeb192a5510a914d598965f3431e71f56d3a6535a02",
+    "rendered-pdf/figure.png": "1d2ff5629a260d4a2aca0c95254bf8b4facd2a449e59e97ee29ab22889c185ec"
+  },
+  "notes": [
+    "Inspected design PNG, independent LibreOffice PPTX raster, and PDF raster directly; hashes bind this review to those files.",
+    "Exploratory design-study reference comparison passed as scoped comparison, not exact reconstruction; author Figure 2 crop was also visually inspected and discussed in the attributed report.",
+    "Semantic overview passes: runtime bundle, bounded retry, and retained-state abstraction are visibly distinguished. Visual revision is still required because microcopy is too small at 7-inch width and quiet routes are too dense.",
+    "Native-object evidence is structural; manual Microsoft PowerPoint editing/reflow remains unverified."
+  ]
+}

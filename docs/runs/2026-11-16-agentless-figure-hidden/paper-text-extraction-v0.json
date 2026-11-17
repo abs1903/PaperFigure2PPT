@@ -1,0 +1,21 @@
+{
+  "url": "https://arxiv.org/html/2407.01489v1",
+  "rawHTMLSHA256": "a396924132e609f916a7feb8dda94e78f5dd274c641df2c00d59d61fea38e5d8",
+  "rawHTMLRendered": false,
+  "imageAssetsFetched": false,
+  "excludedElements": {
+    "figure": 16,
+    "figcaption": 0,
+    "img": 11,
+    "svg": 18,
+    "table": 1,
+    "script": 4,
+    "style": 1
+  },
+  "figureReferencingParagraphsExcluded": 1,
+  "retainedSectionHeaders": [
+    "Agentless :Demystifying LLM-based Software Engineering Agents"
+  ],
+  "textSHA256": "dac573168aeeec72abb3d9b3ddc5a01fe84135239b053ee66cabbe86525e9d94",
+  "limitation": "Only sanitized method prose was retained/read; excludes figures, captions, tables and figure-referencing paragraphs. Code is the primary authority for the chosen pinned route."
+}

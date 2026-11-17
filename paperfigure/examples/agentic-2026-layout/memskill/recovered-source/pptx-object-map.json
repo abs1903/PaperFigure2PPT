@@ -1,0 +1,8102 @@
+[
+  {
+    "id": 2,
+    "name": "path-1",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      350.6387,
+      9.5345,
+      734.9377,
+      798.3076
+    ]
+  },
+  {
+    "id": 3,
+    "name": "path-2",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      349.2456,
+      8.1414,
+      737.7239999999999,
+      801.0938
+    ]
+  },
+  {
+    "id": 4,
+    "name": "text-1",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Learning to Use Memory Skills",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      464.7324,
+      17.89353336791992,
+      507.1326,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 5,
+    "name": "text-2",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(Controller & Executor)",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      526.6975,
+      59.68993336791992,
+      383.1671,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 6,
+    "name": "path-3",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      361.1087,
+      118.2044,
+      271.67539999999997,
+      55.72849999999998
+    ]
+  },
+  {
+    "id": 7,
+    "name": "path-4",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      361.1087,
+      173.9329,
+      271.67539999999997,
+      55.72810000000001
+    ]
+  },
+  {
+    "id": 8,
+    "name": "icon-0-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      372.8187,
+      187.8647,
+      247.7964,
+      25.322100000000006
+    ]
+  },
+  {
+    "id": 9,
+    "name": "icon-0-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      376.4362,
+      191.4821,
+      241.0136,
+      17.635099999999994
+    ]
+  },
+  {
+    "id": 10,
+    "name": "icon-0-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      376.4362,
+      191.9343,
+      240.56150000000002,
+      17.18289999999999
+    ]
+  },
+  {
+    "id": 11,
+    "name": "icon-0-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      374.1752,
+      189.6734,
+      245.53559999999993,
+      22.156900000000007
+    ]
+  },
+  {
+    "id": 12,
+    "name": "text-3",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Trace 1",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      373.1182,
+      132.27598809814452,
+      107.2589,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 13,
+    "name": "icon-1-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      610.8009,
+      135.5932,
+      2.0533000000000357,
+      1.6426000000000158
+    ]
+  },
+  {
+    "id": 14,
+    "name": "icon-1-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      591.9109,
+      133.5399,
+      24.639099999999985,
+      24.639100000000013
+    ]
+  },
+  {
+    "id": 15,
+    "name": "icon-1-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      589.8577,
+      131.076,
+      28.745599999999968,
+      29.566900000000004
+    ]
+  },
+  {
+    "id": 16,
+    "name": "icon-1-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      592.3216,
+      134.3612,
+      23.817800000000034,
+      21.7646
+    ]
+  },
+  {
+    "id": 17,
+    "name": "icon-1-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      587.8044,
+      129.4334,
+      32.852100000000064,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 18,
+    "name": "icon-2-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      546.6917,
+      134.0051,
+      27.689200000000028,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 19,
+    "name": "icon-2-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      544.4587,
+      131.7724,
+      32.601800000000026,
+      28.578599999999994
+    ]
+  },
+  {
+    "id": 20,
+    "name": "icon-2-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      546.6917,
+      134.4516,
+      26.79600000000005,
+      22.327099999999973
+    ]
+  },
+  {
+    "id": 21,
+    "name": "icon-2-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      542.2257,
+      128.6466,
+      35.728000000000065,
+      34.383700000000005
+    ]
+  },
+  {
+    "id": 22,
+    "name": "path-6",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      636.2671,
+      173.5779,
+      153.99119999999994,
+      0.522500000000008
+    ]
+  },
+  {
+    "id": 23,
+    "name": "path-7",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      786.7474,
+      166.6253,
+      13.960000000000036,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 24,
+    "name": "path-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      786.7474,
+      166.6253,
+      13.960000000000036,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 25,
+    "name": "text-4",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Segmenter",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      645.7296,
+      133.44638823547362,
+      128.3846,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 26,
+    "name": "text-5",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Text Span",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      652.5868,
+      189.17438823547363,
+      121.6631,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 27,
+    "name": "path-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      363.1985,
+      243.5931,
+      708.4458999999999,
+      383.13230000000004
+    ]
+  },
+  {
+    "id": 28,
+    "name": "path-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      361.8053,
+      242.2,
+      711.2323000000001,
+      385.91850000000005
+    ]
+  },
+  {
+    "id": 29,
+    "name": "path-12",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      834.7991,
+      226.22,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 30,
+    "name": "path-13",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      834.7991,
+      226.22,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 31,
+    "name": "path-15",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      887.741,
+      226.22,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 32,
+    "name": "path-16",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      887.741,
+      226.22,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 33,
+    "name": "path-18",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      957.4083,
+      226.22,
+      11.14569999999992,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 34,
+    "name": "path-19",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      957.4083,
+      226.22,
+      11.14569999999992,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 35,
+    "name": "path-21",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1034.4457,
+      226.22,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 36,
+    "name": "path-22",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1034.4457,
+      226.22,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 37,
+    "name": "text-6",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 44.5826301574707,
+    "bbox": [
+      910.4281,
+      176.10638025512696,
+      37.1744,
+      55.72828769683838
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 38,
+    "name": "text-7",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 44.5826301574707,
+    "bbox": [
+      983.5714,
+      176.10638025512696,
+      37.1744,
+      55.72828769683838
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 39,
+    "name": "path-23",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      811.1145,
+      142.1537,
+      269.0795999999999,
+      55.72830000000002
+    ]
+  },
+  {
+    "id": 40,
+    "name": "path-24",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      866.411,
+      142.1536,
+      0.06260000000008858,
+      55.7217
+    ]
+  },
+  {
+    "id": 41,
+    "name": "path-25",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      920.0494,
+      142.1536,
+      0.06280000000003838,
+      55.7285
+    ]
+  },
+  {
+    "id": 42,
+    "name": "path-26",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1008.1698,
+      142.1536,
+      0.06280000000003838,
+      55.7285
+    ]
+  },
+  {
+    "id": 43,
+    "name": "text-8",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      935.2664,
+      118.67846862792967,
+      55.7616,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 44,
+    "name": "icon-3-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      822.2261,
+      159.1247,
+      33.657800000000066,
+      25.138500000000022
+    ]
+  },
+  {
+    "id": 45,
+    "name": "icon-4-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      874.5441,
+      158.8615,
+      35.20060000000001,
+      26.287800000000004
+    ]
+  },
+  {
+    "id": 46,
+    "name": "icon-5-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1022.8917,
+      159.5354,
+      33.63099999999997,
+      23.342899999999986
+    ]
+  },
+  {
+    "id": 47,
+    "name": "text-9",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Sequential Process",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      819.6301,
+      107.67198823547365,
+      219.4507,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 48,
+    "name": "icon-6-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      535.947,
+      547.0767,
+      173.01340000000005,
+      17.58260000000007
+    ]
+  },
+  {
+    "id": 49,
+    "name": "icon-6-tone-1",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      454.3635,
+      517.5379,
+      276.39939999999996,
+      82.28649999999993
+    ]
+  },
+  {
+    "id": 50,
+    "name": "icon-6-tone-3",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      375.5931,
+      487.2959,
+      355.16979999999995,
+      123.78140000000002
+    ]
+  },
+  {
+    "id": 51,
+    "name": "icon-6-tone-4",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      374.1865,
+      490.1091,
+      356.5763999999999,
+      120.26490000000001
+    ]
+  },
+  {
+    "id": 52,
+    "name": "icon-6-tone-5",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      492.342,
+      533.0106,
+      234.2011,
+      51.34120000000007
+    ]
+  },
+  {
+    "id": 53,
+    "name": "icon-6-tone-6",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      377.7031,
+      516.8346,
+      109.01249999999999,
+      61.890699999999924
+    ]
+  },
+  {
+    "id": 54,
+    "name": "icon-6-tone-7",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      377.7031,
+      572.3956,
+      109.01249999999999,
+      34.461900000000014
+    ]
+  },
+  {
+    "id": 55,
+    "name": "icon-6-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      378.4064,
+      518.2412,
+      107.60589999999996,
+      59.7808
+    ]
+  },
+  {
+    "id": 56,
+    "name": "icon-6-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      378.4064,
+      492.219,
+      347.43339999999995,
+      70.3304
+    ]
+  },
+  {
+    "id": 57,
+    "name": "icon-6-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      492.342,
+      525.9776,
+      234.9044,
+      55.56099999999992
+    ]
+  },
+  {
+    "id": 58,
+    "name": "icon-6-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      373.4832,
+      487.9992,
+      358.68629999999996,
+      123.07810000000006
+    ]
+  },
+  {
+    "id": 59,
+    "name": "text-10",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Memory Bank",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      534.2295,
+      592.0342880981445,
+      180.0313,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 60,
+    "name": "path-27",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      878.2533,
+      250.5594,
+      184.60000000000002,
+      236.8452
+    ]
+  },
+  {
+    "id": 61,
+    "name": "path-29",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      591.3014,
+      337.6346,
+      13.932000000000016,
+      13.932100000000048
+    ]
+  },
+  {
+    "id": 62,
+    "name": "path-30",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      591.3014,
+      337.6346,
+      13.932000000000016,
+      13.932100000000048
+    ]
+  },
+  {
+    "id": 63,
+    "name": "text-11",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Input",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      513.6797,
+      307.5972882354736,
+      65.0815,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 64,
+    "name": "path-31",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      905.2145,
+      282.6028,
+      131.88660000000004,
+      2.786699999999996
+    ]
+  },
+  {
+    "id": 65,
+    "name": "text-12",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Controller",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      905.2145,
+      255.5747880981445,
+      131.8661,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 66,
+    "name": "path-32",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      789.7916,
+      344.5799,
+      70.67740000000003,
+      0.021000000000015007
+    ]
+  },
+  {
+    "id": 67,
+    "name": "path-33",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      856.979,
+      337.6141,
+      13.938999999999965,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 68,
+    "name": "path-34",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      856.979,
+      337.6141,
+      13.938999999999965,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 69,
+    "name": "icon-7-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      802.1672,
+      308.6541,
+      40.17399999999998,
+      30.028399999999976
+    ]
+  },
+  {
+    "id": 70,
+    "name": "path-35",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      629.1757,
+      379.4256,
+      5.796299999999974,
+      117.04000000000002
+    ]
+  },
+  {
+    "id": 71,
+    "name": "path-36",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      625.226,
+      499.9715,
+      13.932000000000016,
+      13.945799999999963
+    ]
+  },
+  {
+    "id": 72,
+    "name": "path-37",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      625.226,
+      499.9715,
+      13.932000000000016,
+      13.945799999999963
+    ]
+  },
+  {
+    "id": 73,
+    "name": "path-38",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      611.4611,
+      309.7708,
+      178.33050000000003,
+      69.66019999999997
+    ]
+  },
+  {
+    "id": 74,
+    "name": "text-13",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Retriever",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      637.9473,
+      330.1113880981445,
+      125.7918,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 75,
+    "name": "path-39",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      970.3095,
+      487.4046,
+      0.23680000000001655,
+      34.175299999999936
+    ]
+  },
+  {
+    "id": 76,
+    "name": "path-40",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      964.9525,
+      518.7518,
+      11.145800000000008,
+      11.1875
+    ]
+  },
+  {
+    "id": 77,
+    "name": "path-41",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      964.9525,
+      518.7518,
+      11.145800000000008,
+      11.1875
+    ]
+  },
+  {
+    "id": 78,
+    "name": "text-14",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Retrieve",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      674.5803,
+      472.0569882354736,
+      25.0778,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 79,
+    "name": "path-42",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      434.2799,
+      271.4573,
+      425.63879999999995,
+      20.898000000000025
+    ]
+  },
+  {
+    "id": 80,
+    "name": "path-43",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      856.4357,
+      264.4915,
+      13.932000000000016,
+      13.932100000000048
+    ]
+  },
+  {
+    "id": 81,
+    "name": "path-44",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      856.4357,
+      264.4915,
+      13.932000000000016,
+      13.932100000000048
+    ]
+  },
+  {
+    "id": 82,
+    "name": "path-45",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      375.7095,
+      292.3553,
+      118.84750000000003,
+      104.4907
+    ]
+  },
+  {
+    "id": 83,
+    "name": "text-15",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Current",
+    "font": "Comic Sans MS",
+    "fontSize": 22.29131507873535,
+    "bbox": [
+      394.7455,
+      302.4981901275635,
+      81.4122,
+      27.86414384841919
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 84,
+    "name": "text-16",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Text Span",
+    "font": "Comic Sans MS",
+    "fontSize": 22.29131507873535,
+    "bbox": [
+      379.1046,
+      329.6655901275635,
+      112.7369,
+      27.86414384841919
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 85,
+    "name": "icon-8-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      418.4286,
+      365.0145,
+      32.07959999999997,
+      26.287800000000004
+    ]
+  },
+  {
+    "id": 86,
+    "name": "path-46",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      876.5953,
+      536.1668,
+      188.08310000000006,
+      83.59230000000002
+    ]
+  },
+  {
+    "id": 87,
+    "name": "path-47",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      911.4512,
+      573.0867,
+      119.4022,
+      2.786699999999996
+    ]
+  },
+  {
+    "id": 88,
+    "name": "text-17",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Executor",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      911.4512,
+      546.0586880981446,
+      119.4109,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 89,
+    "name": "text-18",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(LLM)",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      933.2963,
+      580.8886880981445,
+      75.7128,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 90,
+    "name": "icon-31-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.7192,
+      501.1553,
+      36.0458000000001,
+      304.4809
+    ]
+  },
+  {
+    "id": 91,
+    "name": "icon-32-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.7192,
+      501.1553,
+      36.0458000000001,
+      304.4809
+    ]
+  },
+  {
+    "id": 92,
+    "name": "icon-9-tone-7",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1047.7091,
+      601.0969,
+      0.3970999999999094,
+      1.1911999999999807
+    ]
+  },
+  {
+    "id": 93,
+    "name": "icon-9-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1032.6207,
+      584.6187,
+      28.588600000000042,
+      30.176900000000046
+    ]
+  },
+  {
+    "id": 94,
+    "name": "icon-9-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1032.0251,
+      582.6334,
+      29.779800000000023,
+      33.948999999999955
+    ]
+  },
+  {
+    "id": 95,
+    "name": "path-48",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      885.8742,
+      327.8821,
+      169.35130000000004,
+      69.66070000000002
+    ]
+  },
+  {
+    "id": 96,
+    "name": "text-19",
+    "type": "text",
+    "owner": "source-context",
+    "text": "State/Skill",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      905.0947,
+      334.76468823547367,
+      132.1075,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 97,
+    "name": "text-20",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Encoder",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      923.4677,
+      365.41508823547366,
+      95.3823,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 98,
+    "name": "icon-10-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      998.7138,
+      500.9168,
+      40.17399999999998,
+      30.028399999999976
+    ]
+  },
+  {
+    "id": 99,
+    "name": "icon-27-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1061.5437,
+      250.9075,
+      57.36720000000014,
+      229.47279999999998
+    ]
+  },
+  {
+    "id": 100,
+    "name": "icon-28-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1061.5437,
+      250.9075,
+      57.36720000000014,
+      229.47279999999998
+    ]
+  },
+  {
+    "id": 101,
+    "name": "icon-11-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      883.1768,
+      500.2946,
+      71.20210000000009,
+      28.0265
+    ]
+  },
+  {
+    "id": 102,
+    "name": "path-50",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      739.5943,
+      557.0648,
+      13.932099999999991,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 103,
+    "name": "path-51",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      739.5943,
+      557.0648,
+      13.932099999999991,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 104,
+    "name": "text-21",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Memory",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      768.9849,
+      523.5444882354736,
+      93.653,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 105,
+    "name": "text-22",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Update",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      773.306,
+      579.2725882354737,
+      85.0098,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 106,
+    "name": "path-52",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      696.2098,
+      396.1024,
+      5.796299999999974,
+      117.03949999999998
+    ]
+  },
+  {
+    "id": 107,
+    "name": "path-53",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      692.0372,
+      385.6585,
+      13.932000000000016,
+      13.946300000000008
+    ]
+  },
+  {
+    "id": 108,
+    "name": "path-54",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      692.0372,
+      385.6585,
+      13.932000000000016,
+      13.946300000000008
+    ]
+  },
+  {
+    "id": 109,
+    "name": "path-56",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      972.03,
+      632.9529,
+      11.145700000000033,
+      11.145999999999958
+    ]
+  },
+  {
+    "id": 110,
+    "name": "path-57",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      972.03,
+      632.9529,
+      11.145700000000033,
+      11.145999999999958
+    ]
+  },
+  {
+    "id": 111,
+    "name": "path-59",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      400.8151,
+      655.3275,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 112,
+    "name": "path-60",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      400.8151,
+      655.3275,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 113,
+    "name": "path-62",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      502.7073,
+      655.3275,
+      11.145699999999977,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 114,
+    "name": "path-63",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      502.7073,
+      655.3275,
+      11.145699999999977,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 115,
+    "name": "path-65",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      604.8154,
+      655.3275,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 116,
+    "name": "path-66",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      604.8154,
+      655.3275,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 117,
+    "name": "path-68",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      703.3013,
+      655.3275,
+      11.145600000000059,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 118,
+    "name": "path-69",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      703.3013,
+      655.3275,
+      11.145600000000059,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 119,
+    "name": "path-70",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      368.0747,
+      675.4876,
+      374.0762,
+      48.76220000000001
+    ]
+  },
+  {
+    "id": 120,
+    "name": "text-23",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Evaluation on Training Data",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      380.4216,
+      686.0757880981445,
+      353.8947,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 121,
+    "name": "path-71",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      744.2407,
+      699.3597,
+      122.6441000000001,
+      0.44630000000006476
+    ]
+  },
+  {
+    "id": 122,
+    "name": "path-72",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      863.3738,
+      692.8255,
+      13.960000000000036,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 123,
+    "name": "path-73",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      863.3738,
+      692.8255,
+      13.960000000000036,
+      13.932099999999991
+    ]
+  },
+  {
+    "id": 124,
+    "name": "path-74",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      883.5614,
+      675.4876,
+      188.08299999999986,
+      48.76220000000001
+    ]
+  },
+  {
+    "id": 125,
+    "name": "text-24",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Task Reward",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      895.1245,
+      686.0757880981445,
+      165.9979,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 126,
+    "name": "path-75",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      406.4019,
+      724.2498,
+      690.3619999999999,
+      55.72799999999995
+    ]
+  },
+  {
+    "id": 127,
+    "name": "path-76",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1093.2809,
+      773.012,
+      13.932000000000016,
+      13.93220000000008
+    ]
+  },
+  {
+    "id": 128,
+    "name": "path-77",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1093.2809,
+      773.012,
+      13.932000000000016,
+      13.93220000000008
+    ]
+  },
+  {
+    "id": 129,
+    "name": "text-25",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Optimize Controller",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      730.0078,
+      641.9668882354737,
+      231.5043,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 130,
+    "name": "text-26",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Reset Every Trace",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      385.2325,
+      425.3232882354736,
+      217.5206,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 131,
+    "name": "path-79",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      505.0061,
+      464.723,
+      11.145600000000002,
+      11.146000000000015
+    ]
+  },
+  {
+    "id": 132,
+    "name": "path-80",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      505.0061,
+      464.723,
+      11.145600000000002,
+      11.146000000000015
+    ]
+  },
+  {
+    "id": 133,
+    "name": "path-81",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      505.0061,
+      494.0643,
+      11.145600000000002,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 134,
+    "name": "path-82",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      505.0061,
+      494.0643,
+      11.145600000000002,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 135,
+    "name": "path-83",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      20.6367,
+      9.5345,
+      306.50559999999996,
+      798.3076
+    ]
+  },
+  {
+    "id": 136,
+    "name": "path-84",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      19.2435,
+      8.1414,
+      309.29200000000003,
+      801.0938
+    ]
+  },
+  {
+    "id": 137,
+    "name": "path-85",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      120.991,
+      271.6753,
+      55.72850000000001
+    ]
+  },
+  {
+    "id": 138,
+    "name": "path-86",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      176.7195,
+      271.6753,
+      55.72809999999998
+    ]
+  },
+  {
+    "id": 139,
+    "name": "path-88",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      114.0252,
+      271.67539999999997,
+      55.727999999999994
+    ]
+  },
+  {
+    "id": 140,
+    "name": "path-89",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      169.7532,
+      271.67539999999997,
+      55.7286
+    ]
+  },
+  {
+    "id": 141,
+    "name": "icon-12-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      46.2788,
+      183.685,
+      247.7964,
+      25.322100000000006
+    ]
+  },
+  {
+    "id": 142,
+    "name": "icon-12-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.8963,
+      187.3024,
+      241.0136,
+      17.635099999999994
+    ]
+  },
+  {
+    "id": 143,
+    "name": "icon-12-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.8963,
+      187.7546,
+      240.56150000000002,
+      17.18289999999999
+    ]
+  },
+  {
+    "id": 144,
+    "name": "icon-12-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      47.6353,
+      185.4937,
+      245.53560000000002,
+      22.156900000000007
+    ]
+  },
+  {
+    "id": 145,
+    "name": "text-27",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Trace 1",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      128.09628809814453,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 146,
+    "name": "icon-13-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      284.261,
+      131.4139,
+      2.053299999999979,
+      1.6425999999999874
+    ]
+  },
+  {
+    "id": 147,
+    "name": "icon-29-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      307.0379,
+      127.2536,
+      50.29240000000004,
+      90.27969999999999
+    ]
+  },
+  {
+    "id": 148,
+    "name": "icon-30-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      307.0379,
+      127.2536,
+      50.29240000000004,
+      90.27969999999999
+    ]
+  },
+  {
+    "id": 149,
+    "name": "icon-13-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.371,
+      129.3606,
+      24.63910000000004,
+      24.639099999999985
+    ]
+  },
+  {
+    "id": 150,
+    "name": "icon-13-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      263.3178,
+      126.8967,
+      28.745600000000024,
+      29.566900000000018
+    ]
+  },
+  {
+    "id": 151,
+    "name": "icon-13-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.7817,
+      130.1819,
+      23.817799999999977,
+      21.764599999999973
+    ]
+  },
+  {
+    "id": 152,
+    "name": "icon-13-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      261.2645,
+      125.2541,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 153,
+    "name": "icon-14-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      129.8253,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 154,
+    "name": "icon-14-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      217.9188,
+      127.5926,
+      32.6019,
+      28.578599999999994
+    ]
+  },
+  {
+    "id": 155,
+    "name": "icon-14-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      130.2718,
+      26.796099999999996,
+      22.327099999999973
+    ]
+  },
+  {
+    "id": 156,
+    "name": "icon-14-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      215.6858,
+      124.4668,
+      35.72810000000001,
+      34.383700000000005
+    ]
+  },
+  {
+    "id": 157,
+    "name": "path-91",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      246.7278,
+      271.6753,
+      55.72859999999997
+    ]
+  },
+  {
+    "id": 158,
+    "name": "path-92",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      302.4564,
+      271.6753,
+      55.72800000000001
+    ]
+  },
+  {
+    "id": 159,
+    "name": "path-94",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      239.4139,
+      271.67539999999997,
+      55.72800000000001
+    ]
+  },
+  {
+    "id": 160,
+    "name": "path-95",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      295.1419,
+      271.67539999999997,
+      55.7285
+    ]
+  },
+  {
+    "id": 161,
+    "name": "icon-15-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      45.6727,
+      308.3771,
+      249.01579999999998,
+      25.31540000000001
+    ]
+  },
+  {
+    "id": 162,
+    "name": "icon-15-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.2882,
+      312.8977,
+      240.8809,
+      17.178300000000036
+    ]
+  },
+  {
+    "id": 163,
+    "name": "icon-15-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      47.0285,
+      310.1853,
+      245.40030000000002,
+      22.151100000000042
+    ]
+  },
+  {
+    "id": 164,
+    "name": "icon-15-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.2882,
+      312.8977,
+      239.07319999999999,
+      16.726300000000037
+    ]
+  },
+  {
+    "id": 165,
+    "name": "text-28",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Trace 2",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      253.4848880981445,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 166,
+    "name": "icon-16-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      284.261,
+      256.8026,
+      2.053299999999979,
+      1.6426000000000158
+    ]
+  },
+  {
+    "id": 167,
+    "name": "icon-16-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.371,
+      254.7493,
+      24.63910000000004,
+      24.639099999999985
+    ]
+  },
+  {
+    "id": 168,
+    "name": "icon-16-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      263.3178,
+      252.2854,
+      28.745600000000024,
+      29.566900000000004
+    ]
+  },
+  {
+    "id": 169,
+    "name": "icon-16-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.7817,
+      255.5706,
+      23.817799999999977,
+      21.764599999999973
+    ]
+  },
+  {
+    "id": 170,
+    "name": "icon-16-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      261.2645,
+      250.6428,
+      32.85210000000001,
+      32.85209999999998
+    ]
+  },
+  {
+    "id": 171,
+    "name": "icon-17-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      255.214,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 172,
+    "name": "icon-17-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      217.9188,
+      252.9813,
+      32.6019,
+      28.578600000000023
+    ]
+  },
+  {
+    "id": 173,
+    "name": "icon-17-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      255.6605,
+      26.796099999999996,
+      22.327099999999973
+    ]
+  },
+  {
+    "id": 174,
+    "name": "icon-17-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      215.6858,
+      249.8555,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 175,
+    "name": "path-97",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      371.7684,
+      271.6753,
+      55.72800000000001
+    ]
+  },
+  {
+    "id": 176,
+    "name": "path-98",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      427.4964,
+      271.6753,
+      55.7285
+    ]
+  },
+  {
+    "id": 177,
+    "name": "path-100",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      364.8021,
+      271.67539999999997,
+      55.7285
+    ]
+  },
+  {
+    "id": 178,
+    "name": "path-101",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      420.5306,
+      271.67539999999997,
+      55.7285
+    ]
+  },
+  {
+    "id": 179,
+    "name": "icon-18-tone-7",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      45.0179,
+      434.9637,
+      250.3222,
+      24.120900000000006
+    ]
+  },
+  {
+    "id": 180,
+    "name": "icon-18-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      48.6589,
+      438.1495,
+      242.12989999999996,
+      17.749300000000005
+    ]
+  },
+  {
+    "id": 181,
+    "name": "icon-18-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      46.3833,
+      435.8739,
+      247.1362,
+      21.845399999999984
+    ]
+  },
+  {
+    "id": 182,
+    "name": "icon-18-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      48.6589,
+      438.1495,
+      240.3093,
+      17.29419999999999
+    ]
+  },
+  {
+    "id": 183,
+    "name": "text-29",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Trace 3",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      378.8735880981445,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 184,
+    "name": "icon-19-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      284.261,
+      382.1907,
+      2.053299999999979,
+      1.6426000000000158
+    ]
+  },
+  {
+    "id": 185,
+    "name": "icon-19-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.371,
+      380.1374,
+      24.63910000000004,
+      24.639099999999985
+    ]
+  },
+  {
+    "id": 186,
+    "name": "icon-19-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      263.3178,
+      377.6735,
+      28.745600000000024,
+      29.566900000000032
+    ]
+  },
+  {
+    "id": 187,
+    "name": "icon-19-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.7817,
+      380.9587,
+      23.817799999999977,
+      21.764599999999973
+    ]
+  },
+  {
+    "id": 188,
+    "name": "icon-19-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      261.2645,
+      376.0309,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 189,
+    "name": "icon-20-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      380.6026,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 190,
+    "name": "icon-20-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      217.9188,
+      378.3699,
+      32.6019,
+      28.57860000000005
+    ]
+  },
+  {
+    "id": 191,
+    "name": "icon-20-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      381.0491,
+      26.796099999999996,
+      22.327099999999973
+    ]
+  },
+  {
+    "id": 192,
+    "name": "icon-20-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      215.6858,
+      375.2441,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 193,
+    "name": "path-103",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      497.157,
+      271.6753,
+      55.72809999999998
+    ]
+  },
+  {
+    "id": 194,
+    "name": "path-104",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      552.8851,
+      271.6753,
+      55.728500000000054
+    ]
+  },
+  {
+    "id": 195,
+    "name": "path-106",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      490.1907,
+      271.67539999999997,
+      55.72860000000003
+    ]
+  },
+  {
+    "id": 196,
+    "name": "path-107",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      545.9193,
+      271.67539999999997,
+      55.72799999999995
+    ]
+  },
+  {
+    "id": 197,
+    "name": "icon-21-tone-3",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      46.2788,
+      559.851,
+      247.7964,
+      23.963700000000017
+    ]
+  },
+  {
+    "id": 198,
+    "name": "icon-21-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.8963,
+      563.016,
+      240.56150000000002,
+      17.6336
+    ]
+  },
+  {
+    "id": 199,
+    "name": "icon-21-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      47.6353,
+      560.7553,
+      245.53560000000002,
+      22.155099999999948
+    ]
+  },
+  {
+    "id": 200,
+    "name": "icon-21-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.8963,
+      563.016,
+      240.56150000000002,
+      17.6336
+    ]
+  },
+  {
+    "id": 201,
+    "name": "text-30",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Trace 4",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      504.2622880981445,
+      107.2588,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 202,
+    "name": "icon-22-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      284.261,
+      507.5794,
+      2.053299999999979,
+      1.642599999999959
+    ]
+  },
+  {
+    "id": 203,
+    "name": "icon-22-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.371,
+      505.5261,
+      24.63910000000004,
+      24.63910000000004
+    ]
+  },
+  {
+    "id": 204,
+    "name": "icon-22-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      263.3178,
+      503.0622,
+      28.745600000000024,
+      29.566899999999976
+    ]
+  },
+  {
+    "id": 205,
+    "name": "icon-22-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.7817,
+      506.3474,
+      23.817799999999977,
+      21.764599999999973
+    ]
+  },
+  {
+    "id": 206,
+    "name": "icon-22-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      261.2645,
+      501.4196,
+      32.85210000000001,
+      32.85210000000001
+    ]
+  },
+  {
+    "id": 207,
+    "name": "icon-23-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      505.9913,
+      27.689300000000003,
+      23.66669999999999
+    ]
+  },
+  {
+    "id": 208,
+    "name": "icon-23-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      217.9188,
+      503.7586,
+      32.6019,
+      28.57860000000005
+    ]
+  },
+  {
+    "id": 209,
+    "name": "icon-23-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      506.4378,
+      26.796099999999996,
+      22.32710000000003
+    ]
+  },
+  {
+    "id": 210,
+    "name": "icon-23-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      215.6858,
+      500.6328,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 211,
+    "name": "text-31",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      171.5276,
+      555.0128686279296,
+      66.8741,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 212,
+    "name": "path-109",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      682.4534,
+      271.6753,
+      55.728500000000054
+    ]
+  },
+  {
+    "id": 213,
+    "name": "path-110",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      41.5349,
+      738.1819,
+      271.6753,
+      55.72809999999993
+    ]
+  },
+  {
+    "id": 214,
+    "name": "path-112",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      675.4876,
+      271.67539999999997,
+      55.72799999999995
+    ]
+  },
+  {
+    "id": 215,
+    "name": "path-113",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      34.5688,
+      731.2156,
+      271.67539999999997,
+      55.72860000000003
+    ]
+  },
+  {
+    "id": 216,
+    "name": "icon-24-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      46.2788,
+      745.1476,
+      247.7964,
+      25.322199999999953
+    ]
+  },
+  {
+    "id": 217,
+    "name": "icon-24-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.8963,
+      748.7651,
+      241.0136,
+      17.63510000000008
+    ]
+  },
+  {
+    "id": 218,
+    "name": "icon-24-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      49.8963,
+      749.2172,
+      240.56150000000002,
+      17.182999999999993
+    ]
+  },
+  {
+    "id": 219,
+    "name": "icon-24-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      47.6353,
+      746.9563,
+      245.53560000000002,
+      22.156999999999925
+    ]
+  },
+  {
+    "id": 220,
+    "name": "text-32",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Trace E",
+    "font": "Comic Sans MS",
+    "fontSize": 27.86414337158203,
+    "bbox": [
+      46.4111,
+      689.5586880981446,
+      107.6534,
+      34.83017921447754
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 221,
+    "name": "icon-25-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      284.261,
+      692.8764,
+      2.053299999999979,
+      1.6426000000000158
+    ]
+  },
+  {
+    "id": 222,
+    "name": "icon-25-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.371,
+      690.8231,
+      24.63910000000004,
+      24.6391000000001
+    ]
+  },
+  {
+    "id": 223,
+    "name": "icon-25-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      263.3178,
+      688.3592,
+      28.745600000000024,
+      29.566900000000032
+    ]
+  },
+  {
+    "id": 224,
+    "name": "icon-25-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      265.7817,
+      691.6444,
+      23.817799999999977,
+      21.764599999999973
+    ]
+  },
+  {
+    "id": 225,
+    "name": "icon-25-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      261.2645,
+      686.7166,
+      32.85210000000001,
+      32.852100000000064
+    ]
+  },
+  {
+    "id": 226,
+    "name": "icon-26-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      691.2878,
+      27.689300000000003,
+      23.666700000000105
+    ]
+  },
+  {
+    "id": 227,
+    "name": "icon-26-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      217.9188,
+      689.0551,
+      32.6019,
+      28.578599999999938
+    ]
+  },
+  {
+    "id": 228,
+    "name": "icon-26-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      220.1518,
+      691.7343,
+      26.796099999999996,
+      22.327100000000087
+    ]
+  },
+  {
+    "id": 229,
+    "name": "icon-26-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      215.6858,
+      685.9293,
+      35.72810000000001,
+      34.383699999999976
+    ]
+  },
+  {
+    "id": 230,
+    "name": "text-33",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Interaction",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      85.2141,
+      21.376933367919918,
+      178.0465,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 231,
+    "name": "text-34",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Traces",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      119.032,
+      63.17283336791992,
+      110.3705,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 232,
+    "name": "path-115",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1113.4406,
+      9.5345,
+      477.1246000000001,
+      491.8022
+    ]
+  },
+  {
+    "id": 233,
+    "name": "path-116",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1112.0474,
+      8.1414,
+      479.91110000000003,
+      494.58840000000004
+    ]
+  },
+  {
+    "id": 234,
+    "name": "text-35",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Skill Bank",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1268.9503,
+      18.590333367919918,
+      166.4935,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 235,
+    "name": "text-36",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(Shared Across Training)",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1145.7495,
+      60.386733367919916,
+      412.9117,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 236,
+    "name": "text-37",
+    "type": "text",
+    "owner": "source-context",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 41.79621505737305,
+    "bbox": [
+      1320.8364,
+      418.30118214721676,
+      69.709,
+      52.24526882171631
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 237,
+    "name": "path-117",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1123.8408,
+      125.1707,
+      208.98119999999994,
+      215.94729999999998
+    ]
+  },
+  {
+    "id": 238,
+    "name": "path-118",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1132.416,
+      188.5613,
+      107.16820000000007,
+      1.3936000000000206
+    ]
+  },
+  {
+    "id": 239,
+    "name": "text-38",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1132.416,
+      171.7872921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 240,
+    "name": "text-39",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1239.5842,
+      171.7872921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 241,
+    "name": "text-40",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1246.3049,
+      171.7872921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 242,
+    "name": "text-41",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1252.025,
+      171.7872921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 243,
+    "name": "text-42",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Skip",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1198.169,
+      136.23248823547362,
+      60.7437,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 244,
+    "name": "text-43",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      227.51579215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 245,
+    "name": "text-44",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1163.8524,
+      227.51579215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 246,
+    "name": "path-119",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1169.5864,
+      244.2899,
+      76.67000000000007,
+      1.3930000000000007
+    ]
+  },
+  {
+    "id": 247,
+    "name": "text-45",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      227.51579215698243,
+      76.6554,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 248,
+    "name": "text-46",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1246.2564,
+      227.51579215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 249,
+    "name": "text-47",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1252.9772,
+      227.51579215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 250,
+    "name": "text-48",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1258.6973,
+      227.51579215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 251,
+    "name": "text-49",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      255.37959215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 252,
+    "name": "text-50",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1163.8524,
+      255.37959215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 253,
+    "name": "path-120",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1169.5864,
+      272.1541,
+      117.24710000000005,
+      1.3930999999999472
+    ]
+  },
+  {
+    "id": 254,
+    "name": "text-51",
+    "type": "text",
+    "owner": "source-context",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      255.37959215698243,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 255,
+    "name": "text-52",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1286.8335,
+      255.37959215698243,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 256,
+    "name": "text-53",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1299.2744,
+      255.37959215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 257,
+    "name": "text-54",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      283.2437921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 258,
+    "name": "path-121",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1169.5864,
+      300.0184,
+      123.52740000000017,
+      1.393000000000029
+    ]
+  },
+  {
+    "id": 259,
+    "name": "text-55",
+    "type": "text",
+    "owner": "source-context",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      283.2437921569824,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 260,
+    "name": "text-56",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1293.1138,
+      283.2437921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 261,
+    "name": "text-57",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1305.5547,
+      283.2437921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 262,
+    "name": "text-58",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1133.8093,
+      311.1080921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 263,
+    "name": "path-122",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1169.5864,
+      327.8821,
+      107.65790000000015,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 264,
+    "name": "text-59",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1169.5864,
+      311.1080921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 265,
+    "name": "text-60",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1277.2443,
+      311.1080921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 266,
+    "name": "text-61",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1289.6852,
+      311.1080921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 267,
+    "name": "path-123",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1132.416,
+      216.4256,
+      80.45780000000013,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 268,
+    "name": "text-62",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1132.416,
+      199.6514921569824,
+      80.4719,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 269,
+    "name": "path-124",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1353.7201,
+      125.1707,
+      208.98109999999997,
+      215.94729999999998
+    ]
+  },
+  {
+    "id": 270,
+    "name": "path-125",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1362.2952,
+      188.5613,
+      107.16820000000007,
+      1.3936000000000206
+    ]
+  },
+  {
+    "id": 271,
+    "name": "text-63",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1362.2952,
+      171.7872921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 272,
+    "name": "text-64",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1469.4634,
+      171.7872921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 273,
+    "name": "text-65",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1476.1842,
+      171.7872921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 274,
+    "name": "text-66",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1481.9043,
+      171.7872921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 275,
+    "name": "text-67",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Delete",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1413.0385,
+      136.23248823547362,
+      90.783,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 276,
+    "name": "text-68",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      227.51579215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 277,
+    "name": "text-69",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1393.7316,
+      227.51579215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 278,
+    "name": "path-126",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1399.4656,
+      244.2899,
+      76.6699000000001,
+      1.3930000000000007
+    ]
+  },
+  {
+    "id": 279,
+    "name": "text-70",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      227.51579215698243,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 280,
+    "name": "text-71",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1476.1355,
+      227.51579215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 281,
+    "name": "text-72",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1482.8563,
+      227.51579215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 282,
+    "name": "text-73",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1488.5764,
+      227.51579215698243,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 283,
+    "name": "text-74",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      255.37959215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 284,
+    "name": "text-75",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1393.7316,
+      255.37959215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 285,
+    "name": "path-127",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1399.4656,
+      272.1541,
+      117.24710000000005,
+      1.3930999999999472
+    ]
+  },
+  {
+    "id": 286,
+    "name": "text-76",
+    "type": "text",
+    "owner": "source-context",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      255.37959215698243,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 287,
+    "name": "text-77",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1516.7127,
+      255.37959215698243,
+      12.4353,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 288,
+    "name": "text-78",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1529.1536,
+      255.37959215698243,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 289,
+    "name": "text-79",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      283.2437921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 290,
+    "name": "path-128",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1399.4656,
+      300.0184,
+      123.52729999999997,
+      1.393000000000029
+    ]
+  },
+  {
+    "id": 291,
+    "name": "text-80",
+    "type": "text",
+    "owner": "source-context",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      283.2437921569824,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 292,
+    "name": "text-81",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1522.9929,
+      283.2437921569824,
+      12.4353,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 293,
+    "name": "text-82",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1535.4338,
+      283.2437921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 294,
+    "name": "text-83",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1363.6885,
+      311.1080921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 295,
+    "name": "path-129",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1399.4656,
+      327.8821,
+      107.65789999999993,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 296,
+    "name": "text-84",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1399.4656,
+      311.1080921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 297,
+    "name": "text-85",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1507.1235,
+      311.1080921569824,
+      12.4351,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 298,
+    "name": "text-86",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1519.5645,
+      311.1080921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 299,
+    "name": "path-130",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1362.2952,
+      216.4256,
+      80.45769999999993,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 300,
+    "name": "text-87",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1362.2952,
+      199.6514921569824,
+      80.4719,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 301,
+    "name": "path-131",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1130.8069,
+      170.45,
+      208.98109999999997,
+      215.9468
+    ]
+  },
+  {
+    "id": 302,
+    "name": "path-132",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1139.3821,
+      233.8406,
+      107.16809999999987,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 303,
+    "name": "text-88",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1139.3821,
+      217.0665921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 304,
+    "name": "text-89",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1246.5502,
+      217.0665921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 305,
+    "name": "text-90",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1253.271,
+      217.0665921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 306,
+    "name": "text-91",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1258.9911,
+      217.0665921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 307,
+    "name": "text-92",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Update",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1185.3796,
+      181.51178823547363,
+      100.2623,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 308,
+    "name": "text-93",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      272.79509215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 309,
+    "name": "text-94",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1170.8185,
+      272.79509215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 310,
+    "name": "path-133",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1176.5525,
+      289.5692,
+      76.6699000000001,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 311,
+    "name": "text-95",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      272.79509215698243,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 312,
+    "name": "text-96",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1253.2224,
+      272.79509215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 313,
+    "name": "text-97",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1259.9432,
+      272.79509215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 314,
+    "name": "text-98",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1265.6633,
+      272.79509215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 315,
+    "name": "text-99",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      300.6588921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 316,
+    "name": "text-100",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1170.8185,
+      300.6588921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 317,
+    "name": "path-134",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1176.5525,
+      317.4334,
+      117.24710000000005,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 318,
+    "name": "text-101",
+    "type": "text",
+    "owner": "source-context",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      300.6588921569824,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 319,
+    "name": "text-102",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1293.7996,
+      300.6588921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 320,
+    "name": "text-103",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1306.2405,
+      300.6588921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 321,
+    "name": "text-104",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      328.52309215698244,
+      35.7576,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 322,
+    "name": "path-135",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1176.5525,
+      345.2972,
+      123.52729999999997,
+      1.3935000000000173
+    ]
+  },
+  {
+    "id": 323,
+    "name": "text-105",
+    "type": "text",
+    "owner": "source-context",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      328.52309215698244,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 324,
+    "name": "text-106",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1300.0798,
+      328.52309215698244,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 325,
+    "name": "text-107",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1312.5208,
+      328.52309215698244,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 326,
+    "name": "text-108",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1140.7753,
+      356.3873921569824,
+      35.7576,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 327,
+    "name": "path-136",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1176.5525,
+      373.1614,
+      107.65779999999995,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 328,
+    "name": "text-109",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1176.5525,
+      356.3873921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 329,
+    "name": "text-110",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1284.2103,
+      356.3873921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 330,
+    "name": "text-111",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1296.6513,
+      356.3873921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 331,
+    "name": "path-137",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1139.3821,
+      261.7049,
+      80.4577999999999,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 332,
+    "name": "text-112",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1139.3821,
+      244.93079215698242,
+      80.4718,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 333,
+    "name": "path-138",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1360.686,
+      170.45,
+      208.98120000000017,
+      215.9468
+    ]
+  },
+  {
+    "id": 334,
+    "name": "path-139",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1369.2612,
+      233.8406,
+      107.16830000000004,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 335,
+    "name": "text-113",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1369.2612,
+      217.0665921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 336,
+    "name": "text-114",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1476.4295,
+      217.0665921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 337,
+    "name": "text-115",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1483.1503,
+      217.0665921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 338,
+    "name": "text-116",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1488.8704,
+      217.0665921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 339,
+    "name": "text-117",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Insert",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1421.8984,
+      181.51178823547363,
+      86.9587,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 340,
+    "name": "text-118",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      272.79509215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 341,
+    "name": "text-119",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1400.6976,
+      272.79509215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 342,
+    "name": "path-140",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1406.4317,
+      289.5692,
+      76.66989999999987,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 343,
+    "name": "text-120",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      272.79509215698243,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 344,
+    "name": "text-121",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1483.1016,
+      272.79509215698243,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 345,
+    "name": "text-122",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1489.8224,
+      272.79509215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 346,
+    "name": "text-123",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1495.5425,
+      272.79509215698243,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 347,
+    "name": "text-124",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      300.6588921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 348,
+    "name": "text-125",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1400.6976,
+      300.6588921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 349,
+    "name": "path-141",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1406.4317,
+      317.4334,
+      117.24699999999984,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 350,
+    "name": "text-126",
+    "type": "text",
+    "owner": "source-context",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      300.6588921569824,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 351,
+    "name": "text-127",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1523.6787,
+      300.6588921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 352,
+    "name": "text-128",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1536.1196,
+      300.6588921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 353,
+    "name": "text-129",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      328.52309215698244,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 354,
+    "name": "path-142",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1406.4317,
+      345.2972,
+      123.52729999999997,
+      1.3935000000000173
+    ]
+  },
+  {
+    "id": 355,
+    "name": "text-130",
+    "type": "text",
+    "owner": "source-context",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      328.52309215698244,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 356,
+    "name": "text-131",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1529.959,
+      328.52309215698244,
+      12.4353,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 357,
+    "name": "text-132",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1542.3999,
+      328.52309215698244,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 358,
+    "name": "text-133",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1370.6546,
+      356.3873921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 359,
+    "name": "path-143",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1406.4317,
+      373.1614,
+      107.65789999999993,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 360,
+    "name": "text-134",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1406.4317,
+      356.3873921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 361,
+    "name": "text-135",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1514.0896,
+      356.3873921569824,
+      12.4351,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 362,
+    "name": "text-136",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1526.5304,
+      356.3873921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 363,
+    "name": "path-144",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1369.2612,
+      261.7049,
+      80.45780000000013,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 364,
+    "name": "text-137",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1369.2612,
+      244.93079215698242,
+      80.4719,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 365,
+    "name": "path-145",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1137.773,
+      215.7293,
+      208.981,
+      215.94680000000002
+    ]
+  },
+  {
+    "id": 366,
+    "name": "path-146",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1146.3482,
+      279.1199,
+      107.16800000000012,
+      1.393600000000049
+    ]
+  },
+  {
+    "id": 367,
+    "name": "text-138",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1146.3482,
+      262.3458921569824,
+      107.1722,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 368,
+    "name": "text-139",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1253.5162,
+      262.3458921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 369,
+    "name": "text-140",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1260.2371,
+      262.3458921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 370,
+    "name": "text-141",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1265.9572,
+      262.3458921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 371,
+    "name": "text-142",
+    "type": "text",
+    "owner": "source-context",
+    "text": "New Skill 1",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1163.5891,
+      226.7910882354736,
+      157.7875,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 372,
+    "name": "text-143",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      318.0738921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 373,
+    "name": "text-144",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1177.7844,
+      318.0738921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 374,
+    "name": "path-147",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1183.5184,
+      334.8485,
+      76.67000000000007,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 375,
+    "name": "text-145",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      318.0738921569824,
+      76.6554,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 376,
+    "name": "text-146",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1260.1884,
+      318.0738921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 377,
+    "name": "text-147",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1266.9092,
+      318.0738921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 378,
+    "name": "text-148",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1272.6293,
+      318.0738921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 379,
+    "name": "text-149",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      345.93819215698244,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 380,
+    "name": "text-150",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1177.7844,
+      345.93819215698244,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 381,
+    "name": "path-148",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1183.5184,
+      362.7127,
+      117.24720000000002,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 382,
+    "name": "text-151",
+    "type": "text",
+    "owner": "source-context",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      345.93819215698244,
+      117.2312,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 383,
+    "name": "text-152",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1300.7656,
+      345.93819215698244,
+      12.4351,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 384,
+    "name": "text-153",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1313.2064,
+      345.93819215698244,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 385,
+    "name": "text-154",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      373.8023921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 386,
+    "name": "path-149",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1183.5184,
+      390.5765,
+      123.52750000000015,
+      1.3935000000000173
+    ]
+  },
+  {
+    "id": 387,
+    "name": "text-155",
+    "type": "text",
+    "owner": "source-context",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      373.8023921569824,
+      123.531,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 388,
+    "name": "text-156",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1307.0459,
+      373.8023921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 389,
+    "name": "text-157",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1319.4868,
+      373.8023921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 390,
+    "name": "text-158",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1147.7413,
+      401.66669215698244,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 391,
+    "name": "path-150",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1183.5184,
+      418.4407,
+      107.65800000000013,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 392,
+    "name": "text-159",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1183.5184,
+      401.66669215698244,
+      107.6715,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 393,
+    "name": "text-160",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1291.1764,
+      401.66669215698244,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 394,
+    "name": "text-161",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1303.6173,
+      401.66669215698244,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 395,
+    "name": "path-151",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1146.3482,
+      306.9842,
+      80.45770000000016,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 396,
+    "name": "text-162",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1146.3482,
+      290.2100921569824,
+      80.4718,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 397,
+    "name": "path-152",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1286.6301,
+      271.4573,
+      48.06569999999988,
+      48.06600000000003
+    ]
+  },
+  {
+    "id": 398,
+    "name": "text-163",
+    "type": "text",
+    "owner": "source-context",
+    "text": "+",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      1290.8716,
+      257.99926862792967,
+      39.0533,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 399,
+    "name": "path-153",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1367.4292,
+      212.2459,
+      208.98109999999997,
+      215.94729999999998
+    ]
+  },
+  {
+    "id": 400,
+    "name": "path-154",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1376.2273,
+      275.637,
+      107.1681000000001,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 401,
+    "name": "text-164",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Description",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1376.2273,
+      258.86299215698244,
+      107.1721,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 402,
+    "name": "text-165",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1483.3954,
+      258.86299215698244,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 403,
+    "name": "text-166",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1490.1162,
+      258.86299215698244,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 404,
+    "name": "text-167",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1495.8363,
+      258.86299215698244,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 405,
+    "name": "text-168",
+    "type": "text",
+    "owner": "source-context",
+    "text": "New Skill 2",
+    "font": "Verdana-Bold",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1392.7716,
+      223.30818823547364,
+      157.7876,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 406,
+    "name": "text-169",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(1)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      314.5909921569824,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 407,
+    "name": "text-170",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1407.6636,
+      314.5909921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 408,
+    "name": "path-155",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1413.3977,
+      331.3655,
+      76.6699000000001,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 409,
+    "name": "text-171",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Purpose",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      314.5909921569824,
+      76.6553,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 410,
+    "name": "text-172",
+    "type": "text",
+    "owner": "source-context",
+    "text": ":",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1490.0676,
+      314.5909921569824,
+      6.7266,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 411,
+    "name": "text-173",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1496.7883,
+      314.5909921569824,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 412,
+    "name": "text-174",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1502.5086,
+      314.5909921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 413,
+    "name": "text-175",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(2)",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      342.45519215698243,
+      30.0508,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 414,
+    "name": "text-176",
+    "type": "text",
+    "owner": "source-context",
+    "text": " ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1407.6636,
+      342.45519215698243,
+      5.7144,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 415,
+    "name": "path-156",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1413.3977,
+      359.2293,
+      117.24710000000005,
+      1.3935999999999922
+    ]
+  },
+  {
+    "id": 416,
+    "name": "text-177",
+    "type": "text",
+    "owner": "source-context",
+    "text": "When to use",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      342.45519215698243,
+      117.2311,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 417,
+    "name": "text-178",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1530.6448,
+      342.45519215698243,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 418,
+    "name": "text-179",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1543.0857,
+      342.45519215698243,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 419,
+    "name": "text-180",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(3) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      370.3194921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 420,
+    "name": "path-157",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1413.3977,
+      387.0936,
+      123.52739999999994,
+      1.393000000000029
+    ]
+  },
+  {
+    "id": 421,
+    "name": "text-181",
+    "type": "text",
+    "owner": "source-context",
+    "text": "How to apply",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      370.3194921569824,
+      123.5309,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 422,
+    "name": "text-182",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1536.9251,
+      370.3194921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 423,
+    "name": "text-183",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1549.366,
+      370.3194921569824,
+      18.2528,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 424,
+    "name": "text-184",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(4) ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1377.6205,
+      398.1837921569824,
+      35.7574,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 425,
+    "name": "path-158",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1413.3977,
+      414.9578,
+      107.65789999999993,
+      1.393100000000004
+    ]
+  },
+  {
+    "id": 426,
+    "name": "text-185",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Constraints",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1413.3977,
+      398.1837921569824,
+      107.6714,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 427,
+    "name": "text-186",
+    "type": "text",
+    "owner": "source-context",
+    "text": ": ",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1521.0556,
+      398.1837921569824,
+      12.4352,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 428,
+    "name": "text-187",
+    "type": "text",
+    "owner": "source-context",
+    "text": "...",
+    "font": "Verdana",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1533.4965,
+      398.1837921569824,
+      18.2527,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 429,
+    "name": "path-159",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1376.2273,
+      303.5013,
+      80.4577999999999,
+      1.3929999999999723
+    ]
+  },
+  {
+    "id": 430,
+    "name": "text-188",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Content:",
+    "font": "Verdana-Bold",
+    "fontSize": 16.718486785888672,
+    "bbox": [
+      1376.2273,
+      286.72669215698244,
+      80.4718,
+      20.89810848236084
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 431,
+    "name": "path-160",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1516.2864,
+      271.8055,
+      48.065700000000106,
+      48.0659
+    ]
+  },
+  {
+    "id": 432,
+    "name": "text-189",
+    "type": "text",
+    "owner": "source-context",
+    "text": "+",
+    "font": "Arial",
+    "fontSize": 66.87394714355469,
+    "bbox": [
+      1520.7507,
+      257.99926862792967,
+      39.0533,
+      83.59243392944336
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 433,
+    "name": "text-190",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Refines and Evolves Over Training",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1144.106,
+      467.11918823547364,
+      416.1089,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 434,
+    "name": "path-162",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1077.872,
+      279.8167,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 435,
+    "name": "path-163",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1077.872,
+      279.8167,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 436,
+    "name": "path-165",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1079.6135,
+      445.6224,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 437,
+    "name": "path-166",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1079.6135,
+      445.6224,
+      11.145700000000033,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 438,
+    "name": "text-191",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Read Skills",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1106.8225,
+      410.40758823547367,
+      25.0779,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 439,
+    "name": "path-167",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1113.4406,
+      515.2689,
+      477.1246000000001,
+      292.57319999999993
+    ]
+  },
+  {
+    "id": 440,
+    "name": "path-168",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1112.0474,
+      513.8753,
+      479.91110000000003,
+      295.3598999999999
+    ]
+  },
+  {
+    "id": 441,
+    "name": "text-192",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Hard Case Buffer",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1209.9349,
+      527.1108333679199,
+      284.4985,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 442,
+    "name": "text-193",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Record Recently Observed Failure Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      493.9462,
+      739.4912882354737,
+      473.7389,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 443,
+    "name": "path-169",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1120.4066,
+      577.9632,
+      215.94720000000007,
+      41.79589999999996
+    ]
+  },
+  {
+    "id": 444,
+    "name": "path-170",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1120.4066,
+      619.7591,
+      215.94720000000007,
+      139.32079999999996
+    ]
+  },
+  {
+    "id": 445,
+    "name": "text-194",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Failure Case 1",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1142.8434,
+      586.2388882354736,
+      174.9259,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 446,
+    "name": "text-195",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1146.8923,
+      627.0040410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 447,
+    "name": "text-196",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1160.9768,
+      654.8678410736085,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 448,
+    "name": "text-197",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1162.5986,
+      682.7320410736085,
+      132.5699,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 449,
+    "name": "text-198",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1180.6776,
+      710.5963410736084,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 450,
+    "name": "text-199",
+    "type": "text",
+    "owner": "source-context",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1199.867,
+      715.19383336792,
+      58.0907,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 451,
+    "name": "path-172",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1202.2297,
+      591.8948,
+      215.94709999999986,
+      41.79639999999995
+    ]
+  },
+  {
+    "id": 452,
+    "name": "path-173",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1202.2297,
+      633.6912,
+      215.94709999999986,
+      139.32079999999996
+    ]
+  },
+  {
+    "id": 453,
+    "name": "text-200",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Failure Case 2",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1225.0426,
+      600.1704882354736,
+      174.926,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 454,
+    "name": "text-201",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1228.395,
+      640.9361410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 455,
+    "name": "text-202",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1242.4795,
+      668.7999410736085,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 456,
+    "name": "text-203",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1244.1012,
+      696.6641410736084,
+      132.5699,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 457,
+    "name": "text-204",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1262.1802,
+      724.5284410736084,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 458,
+    "name": "text-205",
+    "type": "text",
+    "owner": "source-context",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1281.3695,
+      729.12593336792,
+      58.0908,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 459,
+    "name": "path-175",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1283.6836,
+      605.827,
+      215.9469999999999,
+      41.79639999999995
+    ]
+  },
+  {
+    "id": 460,
+    "name": "path-176",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1283.6836,
+      647.6234,
+      215.9469999999999,
+      139.32080000000008
+    ]
+  },
+  {
+    "id": 461,
+    "name": "text-206",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Failure Case 3",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1306.5452,
+      614.1025882354736,
+      174.9261,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 462,
+    "name": "text-207",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1309.8976,
+      654.8678410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 463,
+    "name": "text-208",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1323.9821,
+      682.7320410736085,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 464,
+    "name": "text-209",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1325.6038,
+      710.5963410736084,
+      132.5702,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 465,
+    "name": "text-210",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1343.6829,
+      738.4605410736084,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 466,
+    "name": "text-211",
+    "type": "text",
+    "owner": "source-context",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1362.8721,
+      743.0581333679199,
+      58.0909,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 467,
+    "name": "path-178",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1367.7009,
+      619.7591,
+      215.94709999999986,
+      41.79640000000006
+    ]
+  },
+  {
+    "id": 468,
+    "name": "path-179",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1367.7009,
+      661.5555,
+      215.94709999999986,
+      139.32079999999996
+    ]
+  },
+  {
+    "id": 469,
+    "name": "text-212",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Failure Case N",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1387.5907,
+      628.0347882354737,
+      180.0077,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 470,
+    "name": "text-213",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Model Prediction",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1394.1867,
+      668.7999410736085,
+      163.9966,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 471,
+    "name": "text-214",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Reward Score",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1408.2711,
+      696.6641410736084,
+      135.8137,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 472,
+    "name": "text-215",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Ground Truth",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1409.8928,
+      724.5284410736084,
+      132.5701,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 473,
+    "name": "text-216",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1427.9719,
+      752.3927410736085,
+      96.4489,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 474,
+    "name": "text-217",
+    "type": "text",
+    "owner": "source-context",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1447.1611,
+      756.9902333679199,
+      58.0909,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 475,
+    "name": "text-218",
+    "type": "text",
+    "owner": "source-context",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 41.79621505737305,
+    "bbox": [
+      1514.4922,
+      557.6219821472167,
+      69.709,
+      52.24526882171631
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 476,
+    "name": "text-219",
+    "type": "text",
+    "owner": "source-context",
+    "text": "......",
+    "font": "Arial",
+    "fontSize": 41.79621505737305,
+    "bbox": [
+      1120.9113,
+      752.6712821472167,
+      69.709,
+      52.24526882171631
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 477,
+    "name": "path-181",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1618.7498,
+      9.5345,
+      303.61469999999986,
+      798.3076
+    ]
+  },
+  {
+    "id": 478,
+    "name": "path-182",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1617.3567,
+      8.1414,
+      306.40110000000004,
+      801.0938
+    ]
+  },
+  {
+    "id": 479,
+    "name": "text-220",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Skill Evolution",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1650.8742,
+      17.89353336791992,
+      240.0094,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 480,
+    "name": "text-221",
+    "type": "text",
+    "owner": "source-context",
+    "text": "(Designer)",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1684.7356,
+      59.68993336791992,
+      172.2356,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 481,
+    "name": "path-184",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      344.6201,
+      140.3426,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 482,
+    "name": "path-185",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      344.6201,
+      140.3426,
+      11.145700000000033,
+      11.145499999999998
+    ]
+  },
+  {
+    "id": 483,
+    "name": "path-187",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      343.7354,
+      196.3914,
+      11.145699999999977,
+      11.145999999999987
+    ]
+  },
+  {
+    "id": 484,
+    "name": "path-188",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      343.7354,
+      196.3914,
+      11.145699999999977,
+      11.145999999999987
+    ]
+  },
+  {
+    "id": 485,
+    "name": "text-222",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Retrieved",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      754.9331,
+      423.92978823547367,
+      114.7657,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 486,
+    "name": "text-223",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Memory",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      765.5019,
+      454.58068823547364,
+      93.6529,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 487,
+    "name": "path-190",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      816.6596,
+      357.098,
+      11.145600000000059,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 488,
+    "name": "path-191",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      816.6596,
+      357.098,
+      11.145600000000059,
+      11.14549999999997
+    ]
+  },
+  {
+    "id": 489,
+    "name": "path-192",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      816.6596,
+      407.3367,
+      11.145600000000059,
+      11.146000000000015
+    ]
+  },
+  {
+    "id": 490,
+    "name": "path-193",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      816.6596,
+      407.3367,
+      11.145600000000059,
+      11.146000000000015
+    ]
+  },
+  {
+    "id": 491,
+    "name": "text-224",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Trigger P",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1652.8877,
+      774.3213882354737,
+      113.4446,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 492,
+    "name": "text-225",
+    "type": "text",
+    "owner": "source-context",
+    "text": "eriodically",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1766.3472,
+      774.3213882354737,
+      122.4478,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 493,
+    "name": "path-194",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1627.6455,
+      394.4984,
+      285.82349999999997,
+      373.90180000000004
+    ]
+  },
+  {
+    "id": 494,
+    "name": "path-195",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1644.0435,
+      652.764,
+      252.8182999999999,
+      52.94190000000003
+    ]
+  },
+  {
+    "id": 495,
+    "name": "text-226",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Select Representative",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1659.3532,
+      714.0792410736085,
+      222.9637,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 496,
+    "name": "text-227",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Hard Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1713.046,
+      739.1568410736085,
+      115.6256,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 497,
+    "name": "text-228",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Cluster Hard Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1658.4607,
+      666.3481882354737,
+      224.8171,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 498,
+    "name": "text-229",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Filter by ",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1689.22,
+      493.95274107360837,
+      91.3629,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 499,
+    "name": "text-230",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Reward",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1780.5947,
+      493.95274107360837,
+      71.877,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 500,
+    "name": "text-231",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Score ",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1670.575,
+      519.0304410736085,
+      63.9447,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 501,
+    "name": "text-232",
+    "type": "text",
+    "owner": "source-context",
+    "text": "and Fail Count",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1734.532,
+      519.0304410736085,
+      136.5938,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 502,
+    "name": "path-196",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1657.6133,
+      617.1961,
+      0.03490000000010696,
+      34.174800000000005
+    ]
+  },
+  {
+    "id": 503,
+    "name": "path-197",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1652.0405,
+      608.8367,
+      11.145800000000008,
+      11.152400000000057
+    ]
+  },
+  {
+    "id": 504,
+    "name": "path-198",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1652.0405,
+      608.8367,
+      11.145800000000008,
+      11.152400000000057
+    ]
+  },
+  {
+    "id": 505,
+    "name": "path-199",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1882.6162,
+      618.5892,
+      0.03490000000010696,
+      34.174800000000005
+    ]
+  },
+  {
+    "id": 506,
+    "name": "path-200",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1877.0435,
+      610.2298,
+      11.145700000000033,
+      11.152300000000082
+    ]
+  },
+  {
+    "id": 507,
+    "name": "path-201",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1877.0435,
+      610.2298,
+      11.145700000000033,
+      11.152300000000082
+    ]
+  },
+  {
+    "id": 508,
+    "name": "text-233",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Divided by Groups",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1682.7656,
+      616.5548410736085,
+      176.1672,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 509,
+    "name": "path-202",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1641.5775,
+      548.2737,
+      252.8182999999999,
+      52.94190000000003
+    ]
+  },
+  {
+    "id": 510,
+    "name": "text-234",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Difficulty Filtering",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1656.5667,
+      561.8574882354736,
+      222.9602,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 511,
+    "name": "path-203",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1652.0405,
+      499.6439,
+      0.03489999999987958,
+      48.62979999999999
+    ]
+  },
+  {
+    "id": 512,
+    "name": "path-204",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1646.4678,
+      491.2845,
+      11.145500000000084,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 513,
+    "name": "path-205",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1646.4678,
+      491.2845,
+      11.145500000000084,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 514,
+    "name": "path-206",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1878.4368,
+      499.6439,
+      0.03459999999995489,
+      48.62979999999999
+    ]
+  },
+  {
+    "id": 515,
+    "name": "path-207",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1872.8638,
+      491.2845,
+      11.145699999999806,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 516,
+    "name": "path-208",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1872.8638,
+      491.2845,
+      11.145699999999806,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 517,
+    "name": "path-209",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1640.9297,
+      411.2171,
+      252.8184000000001,
+      73.83979999999997
+    ]
+  },
+  {
+    "id": 518,
+    "name": "text-235",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Aggregate Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1669.345,
+      420.44688823547364,
+      196.0784,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 519,
+    "name": "text-236",
+    "type": "text",
+    "owner": "source-context",
+    "text": "from Each Cluster",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1660.8008,
+      451.0977882354737,
+      213.1978,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 520,
+    "name": "path-211",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1648.8711,
+      375.9061,
+      11.145499999999856,
+      11.145500000000027
+    ]
+  },
+  {
+    "id": 521,
+    "name": "path-212",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1648.8711,
+      375.9061,
+      11.145499999999856,
+      11.145500000000027
+    ]
+  },
+  {
+    "id": 522,
+    "name": "path-214",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1877.7888,
+      375.9061,
+      11.145800000000008,
+      11.145500000000027
+    ]
+  },
+  {
+    "id": 523,
+    "name": "path-215",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1877.7888,
+      375.9061,
+      11.145800000000008,
+      11.145500000000027
+    ]
+  },
+  {
+    "id": 524,
+    "name": "path-216",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1627.8613,
+      125.1707,
+      285.6077,
+      244.50779999999997
+    ]
+  },
+  {
+    "id": 525,
+    "name": "text-237",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Two-stage Skill Evolusion",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1642.3734,
+      335.1270410736084,
+      256.9725,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 526,
+    "name": "path-217",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1644.2595,
+      267.9744,
+      252.8184000000001,
+      52.941899999999976
+    ]
+  },
+  {
+    "id": 527,
+    "name": "text-238",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Analyze Failures",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1674.8853,
+      281.82278823547364,
+      191.9404,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 528,
+    "name": "path-218",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1657.7805,
+      233.7991,
+      0.03489999999987958,
+      34.17529999999999
+    ]
+  },
+  {
+    "id": 529,
+    "name": "path-219",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1652.2078,
+      225.4398,
+      11.145600000000059,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 530,
+    "name": "path-220",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1652.2078,
+      225.4398,
+      11.145600000000059,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 531,
+    "name": "text-239",
+    "type": "text",
+    "owner": "source-context",
+    "text": "LLM-based Feedback",
+    "font": "Comic Sans MS",
+    "fontSize": 20.898107528686523,
+    "bbox": [
+      1667.6688,
+      235.5128410736084,
+      206.4115,
+      26.122634410858154
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 532,
+    "name": "path-221",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1883.4871,
+      233.7991,
+      0.03489999999987958,
+      34.17529999999999
+    ]
+  },
+  {
+    "id": 533,
+    "name": "path-222",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1877.9143,
+      225.4398,
+      11.145500000000084,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 534,
+    "name": "path-223",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1877.9143,
+      225.4398,
+      11.145500000000084,
+      11.152800000000013
+    ]
+  },
+  {
+    "id": 535,
+    "name": "path-224",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1642.7339,
+      138.0579,
+      256.08540000000016,
+      79.4126
+    ]
+  },
+  {
+    "id": 536,
+    "name": "text-240",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Refine Existing Skills",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1645.8456,
+      150.16458823547362,
+      249.9703,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 537,
+    "name": "text-241",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Propose New Skills",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1660.5504,
+      180.81548823547362,
+      220.6293,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 538,
+    "name": "path-226",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1611.0245,
+      531.6873,
+      8.359300000000076,
+      8.359399999999937
+    ]
+  },
+  {
+    "id": 539,
+    "name": "path-227",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1611.0245,
+      531.6873,
+      8.359300000000076,
+      8.359399999999937
+    ]
+  },
+  {
+    "id": 540,
+    "name": "path-229",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1611.0245,
+      772.0159,
+      8.359300000000076,
+      8.35940000000005
+    ]
+  },
+  {
+    "id": 541,
+    "name": "path-230",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1611.0245,
+      772.0159,
+      8.359300000000076,
+      8.35940000000005
+    ]
+  },
+  {
+    "id": 542,
+    "name": "text-242",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Read Hard Cases",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1616.4575,
+      736.8768882354736,
+      25.0779,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 543,
+    "name": "path-232",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1596.6327,
+      158.6077,
+      8.359299999999848,
+      8.359399999999994
+    ]
+  },
+  {
+    "id": 544,
+    "name": "path-233",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1596.6327,
+      158.6077,
+      8.359299999999848,
+      8.359399999999994
+    ]
+  },
+  {
+    "id": 545,
+    "name": "path-235",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1596.6327,
+      340.1844,
+      8.359299999999848,
+      8.359399999999994
+    ]
+  },
+  {
+    "id": 546,
+    "name": "path-236",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1596.6327,
+      340.1844,
+      8.359299999999848,
+      8.359399999999994
+    ]
+  },
+  {
+    "id": 547,
+    "name": "text-243",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Evolve Skills",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      1616.5764,
+      306.49688823547365,
+      25.0779,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 548,
+    "name": "path-237",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      710.2743,
+      810.6287,
+      292.57349999999997,
+      27.86379999999997
+    ]
+  },
+  {
+    "id": 549,
+    "name": "path-238",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      707.4879,
+      805.056,
+      5.572800000000029,
+      5.572699999999941
+    ]
+  },
+  {
+    "id": 550,
+    "name": "text-244",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Closed-loop Optimization",
+    "font": "Arial",
+    "fontSize": 34.83018112182617,
+    "bbox": [
+      1056.9978,
+      815.5048333679199,
+      421.8575,
+      43.537726402282715
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 551,
+    "name": "path-239",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1483.5043,
+      810.6287,
+      294.4541999999999,
+      27.86379999999997
+    ]
+  },
+  {
+    "id": 552,
+    "name": "path-240",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1775.1443,
+      805.056,
+      5.572900000000118,
+      5.572699999999941
+    ]
+  },
+  {
+    "id": 553,
+    "name": "icon-35-tone-1",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1034.619,
+      843.5081,
+      3.0072999999999865,
+      2.8765999999999394
+    ]
+  },
+  {
+    "id": 554,
+    "name": "icon-35-tone-2",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1023.0476,
+      817.7496,
+      15.36320000000012,
+      31.577099999999973
+    ]
+  },
+  {
+    "id": 555,
+    "name": "icon-35-tone-3",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1008.4689,
+      820.953,
+      31.05330000000015,
+      27.981400000000008
+    ]
+  },
+  {
+    "id": 556,
+    "name": "icon-35-tone-4",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1008.7958,
+      815.5921,
+      35.694900000000075,
+      38.96469999999999
+    ]
+  },
+  {
+    "id": 557,
+    "name": "icon-35-tone-5",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1008.665,
+      815.4614,
+      35.956500000000005,
+      39.22619999999995
+    ]
+  },
+  {
+    "id": 558,
+    "name": "icon-35-tone-6",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1009.0573,
+      815.919,
+      35.23729999999989,
+      38.44169999999997
+    ]
+  },
+  {
+    "id": 559,
+    "name": "icon-35-tone-7",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1008.9265,
+      815.7883,
+      35.498800000000074,
+      38.63779999999997
+    ]
+  },
+  {
+    "id": 560,
+    "name": "icon-35-tone-8",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1008.4689,
+      815.2652,
+      36.28329999999994,
+      39.55309999999997
+    ]
+  },
+  {
+    "id": 561,
+    "name": "icon-35-tone-9",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1009.1226,
+      816.0498,
+      35.0412,
+      38.114799999999946
+    ]
+  },
+  {
+    "id": 562,
+    "name": "icon-35-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1009.2534,
+      816.3113,
+      34.77970000000005,
+      37.52640000000008
+    ]
+  },
+  {
+    "id": 563,
+    "name": "icon-35-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1008.142,
+      814.8076,
+      37.13319999999999,
+      40.2722
+    ]
+  },
+  {
+    "id": 564,
+    "name": "icon-33-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.3425,
+      128.6466,
+      36.0458000000001,
+      243.7254
+    ]
+  },
+  {
+    "id": 565,
+    "name": "icon-34-tone-0",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1588.3425,
+      128.6466,
+      36.0458000000001,
+      243.7254
+    ]
+  },
+  {
+    "id": 566,
+    "name": "icon-36-tone-7",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1880.3663,
+      84.9137,
+      0.3970000000001619,
+      1.191199999999995
+    ]
+  },
+  {
+    "id": 567,
+    "name": "icon-36-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1865.2779,
+      68.4355,
+      28.588500000000067,
+      30.17689999999999
+    ]
+  },
+  {
+    "id": 568,
+    "name": "icon-36-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      1864.6823,
+      66.4502,
+      29.779700000000048,
+      33.949
+    ]
+  },
+  {
+    "id": 569,
+    "name": "icon-37-tone-10",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      964.458,
+      307.5061,
+      9.926600000000008,
+      15.151099999999985
+    ]
+  },
+  {
+    "id": 570,
+    "name": "icon-37-tone-11",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      957.8403,
+      290.2652,
+      25.25190000000009,
+      32.0437
+    ]
+  },
+  {
+    "id": 571,
+    "name": "path-241",
+    "type": "shape",
+    "owner": "source-context",
+    "bbox": [
+      885.8742,
+      406.5985,
+      169.35130000000004,
+      69.66059999999999
+    ]
+  },
+  {
+    "id": 572,
+    "name": "text-245",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Top-K Skill",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      906.858,
+      413.48108823547363,
+      128.6217,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 573,
+    "name": "text-246",
+    "type": "text",
+    "owner": "source-context",
+    "text": "Selection",
+    "font": "Comic Sans MS",
+    "fontSize": 25.077730178833008,
+    "bbox": [
+      916.2621,
+      444.13138823547365,
+      109.7762,
+      31.34716272354126
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 574,
+    "name": "source-context",
+    "type": "group",
+    "owner": null
+  }
+]

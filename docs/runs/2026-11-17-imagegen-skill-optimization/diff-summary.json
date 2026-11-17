@@ -1,0 +1,47 @@
+[
+  {
+    "file": "paperfigure/SKILL.md",
+    "addedLines": 6,
+    "removedLines": 3
+  },
+  {
+    "file": "paperfigure/scripts/design-prompt.mjs",
+    "addedLines": 85,
+    "removedLines": 5
+  },
+  {
+    "file": "paperfigure/scripts/paperfigure.mjs",
+    "addedLines": 6,
+    "removedLines": 1
+  },
+  {
+    "file": "paperfigure/references/image-reference.md",
+    "addedLines": 63,
+    "removedLines": 21
+  },
+  {
+    "file": "paperfigure/references/paper-narrative.md",
+    "addedLines": 58,
+    "removedLines": 3
+  },
+  {
+    "file": "paperfigure/references/visual-review.md",
+    "addedLines": 48,
+    "removedLines": 3
+  },
+  {
+    "file": "paperfigure/tests/design-prompt.test.mjs",
+    "addedLines": 97,
+    "removedLines": 1
+  },
+  {
+    "file": "README.md",
+    "addedLines": 7,
+    "removedLines": 0
+  },
+  {
+    "file": "paperfigure/references/case-guide.md",
+    "addedLines": 2,
+    "removedLines": 1
+  }
+]

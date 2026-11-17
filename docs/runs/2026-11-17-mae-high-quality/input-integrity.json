@@ -1,0 +1,23 @@
+{
+  "notes": "Brief binding uses semanticSnapshot/spec and parsed-object/narrative digests. File-byte hashes are separate artifact identities; different values are expected.",
+  "checks": [
+    {
+      "composition": "sparse-full-columns",
+      "semanticSnapshotDigest": "78d2903cdc6e471d931efe6614098d735e18f651265e85c0ef144c92bf351116",
+      "narrativeParsedObjectDigest": "7ec165808468308cea93040ec0e2166f23e0a2a28a65401cf31540b5a695b1ad",
+      "specFileDigest": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+      "narrativeFileDigest": "eeb7d7e8d2e0c66065fbba1d93d317b815a57109dabfd9f672c039c67bb5dcc1",
+      "bindingsPass": true,
+      "promptCharacters": 9440
+    },
+    {
+      "composition": "horizontal-bottleneck",
+      "semanticSnapshotDigest": "78d2903cdc6e471d931efe6614098d735e18f651265e85c0ef144c92bf351116",
+      "narrativeParsedObjectDigest": "7ec165808468308cea93040ec0e2166f23e0a2a28a65401cf31540b5a695b1ad",
+      "specFileDigest": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+      "narrativeFileDigest": "eeb7d7e8d2e0c66065fbba1d93d317b815a57109dabfd9f672c039c67bb5dcc1",
+      "bindingsPass": true,
+      "promptCharacters": 9438
+    }
+  ]
+}

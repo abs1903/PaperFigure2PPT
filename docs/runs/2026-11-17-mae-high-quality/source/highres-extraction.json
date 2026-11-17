@@ -1,0 +1,12 @@
+{
+  "source": "paper-cvpr2022.pdf",
+  "page": 1,
+  "cropPDFPoints": [
+    307.86301369863014,
+    198.93176470588233,
+    548.6575342465753,
+    334.0376470588235
+  ],
+  "matrixScale": 4,
+  "scope": "Diagnostic higher-resolution crop of original Figure 1; not reconstructed/redesigned."
+}

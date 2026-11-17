@@ -1,0 +1,790 @@
+{
+  "version": "1.0",
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "width": 1774,
+    "height": 887
+  },
+  "expectedCounts": {
+    "modules": 15,
+    "edges": 15,
+    "labels": 25,
+    "primitives": 172
+  },
+  "labels": [
+    {
+      "id": "image-caption",
+      "owner": "image",
+      "text": "Image patches",
+      "referenceRegion": [
+        24,
+        142,
+        230,
+        38
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "visible-caption-1",
+      "owner": "visible",
+      "text": "Visible",
+      "referenceRegion": [
+        357,
+        123,
+        119,
+        37
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "visible-caption-2",
+      "owner": "visible",
+      "text": "patches",
+      "referenceRegion": [
+        355,
+        157,
+        125,
+        37
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "mask-1",
+      "owner": "visible",
+      "text": "Mask",
+      "referenceRegion": [
+        271,
+        277,
+        93,
+        35
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "mask-2",
+      "owner": "visible",
+      "text": "75%",
+      "referenceRegion": [
+        277,
+        313,
+        82,
+        35
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "text-encoder-0",
+      "owner": "encoder",
+      "text": "Encoder",
+      "referenceRegion": [
+        484,
+        208,
+        181,
+        262
+      ],
+      "font": "Arial",
+      "size": 38,
+      "bold": true
+    },
+    {
+      "id": "latent-caption-0",
+      "owner": "latents",
+      "text": "Encoded",
+      "referenceRegion": [
+        681,
+        123,
+        134,
+        37
+      ],
+      "font": "Arial",
+      "size": 31.734,
+      "bold": true
+    },
+    {
+      "id": "latent-caption-1",
+      "owner": "latents",
+      "text": "visible",
+      "referenceRegion": [
+        681,
+        153,
+        134,
+        37
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "latent-caption-2",
+      "owner": "latents",
+      "text": "patches",
+      "referenceRegion": [
+        681,
+        183,
+        134,
+        37
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "masktokens-caption",
+      "owner": "masktokens",
+      "text": "Learned mask tokens",
+      "referenceRegion": [
+        785,
+        12,
+        340,
+        40
+      ],
+      "font": "Arial",
+      "size": 33.247,
+      "bold": true
+    },
+    {
+      "id": "masktokens-count",
+      "owner": "masktokens",
+      "text": "×12",
+      "referenceRegion": [
+        967,
+        71,
+        88,
+        40
+      ],
+      "font": "Arial",
+      "size": 36,
+      "bold": true
+    },
+    {
+      "id": "text-restore-0",
+      "owner": "restore",
+      "text": "Restore",
+      "referenceRegion": [
+        835,
+        283,
+        167,
+        118
+      ],
+      "font": "Arial",
+      "size": 34,
+      "bold": true
+    },
+    {
+      "id": "text-restore-1",
+      "owner": "restore",
+      "text": "order",
+      "referenceRegion": [
+        835,
+        283,
+        167,
+        118
+      ],
+      "font": "Arial",
+      "size": 34,
+      "bold": true
+    },
+    {
+      "id": "text-decoder-0",
+      "owner": "decoder",
+      "text": "Lightweight",
+      "referenceRegion": [
+        1312,
+        283,
+        185,
+        118
+      ],
+      "font": "Arial",
+      "size": 31.552,
+      "bold": true
+    },
+    {
+      "id": "text-decoder-1",
+      "owner": "decoder",
+      "text": "decoder",
+      "referenceRegion": [
+        1312,
+        283,
+        185,
+        118
+      ],
+      "font": "Arial",
+      "size": 31.552,
+      "bold": true
+    },
+    {
+      "id": "pred-caption-1",
+      "owner": "pred",
+      "text": "Pixel",
+      "referenceRegion": [
+        1607,
+        123,
+        87,
+        37
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "pred-caption-2",
+      "owner": "pred",
+      "text": "predictions",
+      "referenceRegion": [
+        1559,
+        157,
+        183,
+        37
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    {
+      "id": "indices-label",
+      "owner": "visible",
+      "text": "Restore indices",
+      "referenceRegion": [
+        586,
+        485,
+        221,
+        35
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true
+    },
+    {
+      "id": "mask-label",
+      "owner": "visible",
+      "text": "Binary mask",
+      "referenceRegion": [
+        529,
+        569,
+        183,
+        35
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true
+    },
+    {
+      "id": "target-caption-1",
+      "owner": "target",
+      "text": "Original",
+      "referenceRegion": [
+        803,
+        636,
+        116,
+        31
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true
+    },
+    {
+      "id": "target-caption-2",
+      "owner": "target",
+      "text": "target",
+      "referenceRegion": [
+        812,
+        663,
+        98,
+        30
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true
+    },
+    {
+      "id": "text-selector-caption-0",
+      "owner": "selector-caption",
+      "text": "Masked",
+      "referenceRegion": [
+        996,
+        809,
+        201,
+        60
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": true
+    },
+    {
+      "id": "text-selector-caption-1",
+      "owner": "selector-caption",
+      "text": "positions only",
+      "referenceRegion": [
+        996,
+        809,
+        201,
+        60
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": true
+    },
+    {
+      "id": "text-loss-0",
+      "owner": "loss",
+      "text": "Masked-patch",
+      "referenceRegion": [
+        1237,
+        723,
+        214,
+        82
+      ],
+      "font": "Arial",
+      "size": 30.892,
+      "bold": true
+    },
+    {
+      "id": "text-loss-1",
+      "owner": "loss",
+      "text": "MSE",
+      "referenceRegion": [
+        1237,
+        723,
+        214,
+        82
+      ],
+      "font": "Arial",
+      "size": 30.892,
+      "bold": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "image",
+      "anchorShapeId": "image-anchor",
+      "referenceRegion": [
+        20,
+        225,
+        226,
+        222
+      ]
+    },
+    {
+      "id": "visible",
+      "anchorShapeId": "visible-anchor",
+      "referenceRegion": [
+        391,
+        227,
+        45,
+        218
+      ]
+    },
+    {
+      "id": "encoder",
+      "anchorShapeId": "encoder-anchor",
+      "referenceRegion": [
+        484,
+        208,
+        181,
+        262
+      ]
+    },
+    {
+      "id": "latents",
+      "anchorShapeId": "latents-anchor",
+      "referenceRegion": [
+        720,
+        227,
+        45,
+        218
+      ]
+    },
+    {
+      "id": "masktokens",
+      "anchorShapeId": "masktokens-anchor",
+      "referenceRegion": [
+        890,
+        59,
+        60,
+        60
+      ]
+    },
+    {
+      "id": "restore",
+      "anchorShapeId": "restore-anchor",
+      "referenceRegion": [
+        835,
+        283,
+        167,
+        118
+      ]
+    },
+    {
+      "id": "restored",
+      "anchorShapeId": "restored-anchor",
+      "referenceRegion": [
+        1045,
+        223,
+        210,
+        225
+      ]
+    },
+    {
+      "id": "decoder",
+      "anchorShapeId": "decoder-anchor",
+      "referenceRegion": [
+        1312,
+        283,
+        185,
+        118
+      ]
+    },
+    {
+      "id": "pred",
+      "anchorShapeId": "pred-anchor",
+      "referenceRegion": [
+        1545,
+        225,
+        211,
+        222
+      ]
+    },
+    {
+      "id": "objective",
+      "anchorShapeId": "objective-anchor",
+      "referenceRegion": [
+        730,
+        626,
+        979,
+        251
+      ]
+    },
+    {
+      "id": "target",
+      "parent": "objective",
+      "anchorShapeId": "target-anchor",
+      "referenceRegion": [
+        774,
+        695,
+        164,
+        148
+      ]
+    },
+    {
+      "id": "selector",
+      "parent": "objective",
+      "anchorShapeId": "selector-anchor",
+      "referenceRegion": [
+        1025,
+        678,
+        143,
+        125
+      ]
+    },
+    {
+      "id": "loss",
+      "parent": "objective",
+      "anchorShapeId": "loss-anchor",
+      "referenceRegion": [
+        1237,
+        723,
+        214,
+        82
+      ]
+    },
+    {
+      "id": "pred-loss",
+      "parent": "objective",
+      "anchorShapeId": "pred-loss-anchor",
+      "referenceRegion": [
+        1510,
+        694,
+        165,
+        149
+      ]
+    },
+    {
+      "id": "selector-caption",
+      "parent": "objective",
+      "anchorShapeId": "selector-caption-anchor",
+      "referenceRegion": [
+        996,
+        809,
+        201,
+        60
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "image-to-visible",
+      "from": "image",
+      "to": "visible",
+      "sourceRoute": [
+        [
+          266,
+          352
+        ],
+        [
+          374,
+          352
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "visible-to-encoder",
+      "from": "visible",
+      "to": "encoder",
+      "sourceRoute": [
+        [
+          443,
+          344
+        ],
+        [
+          481,
+          344
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "encoder-to-latents",
+      "from": "encoder",
+      "to": "latents",
+      "sourceRoute": [
+        [
+          667,
+          344
+        ],
+        [
+          708,
+          344
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "latents-to-restore",
+      "from": "latents",
+      "to": "restore",
+      "sourceRoute": [
+        [
+          773,
+          344
+        ],
+        [
+          830,
+          344
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "learned-to-restore",
+      "from": "masktokens",
+      "to": "restore",
+      "sourceRoute": [
+        [
+          918,
+          126
+        ],
+        [
+          918,
+          277
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "restore-to-full",
+      "from": "restore",
+      "to": "restored",
+      "sourceRoute": [
+        [
+          1005,
+          344
+        ],
+        [
+          1040,
+          344
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "full-to-decoder",
+      "from": "restored",
+      "to": "decoder",
+      "sourceRoute": [
+        [
+          1260,
+          344
+        ],
+        [
+          1309,
+          344
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "decoder-to-pred",
+      "from": "decoder",
+      "to": "pred",
+      "sourceRoute": [
+        [
+          1499,
+          344
+        ],
+        [
+          1540,
+          344
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "indices-to-restore",
+      "from": "visible",
+      "to": "restore",
+      "sourceRoute": [
+        [
+          427,
+          461
+        ],
+        [
+          427,
+          527
+        ],
+        [
+          918,
+          527
+        ],
+        [
+          918,
+          408
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "binary-to-selector",
+      "from": "visible",
+      "to": "selector",
+      "sourceRoute": [
+        [
+          407,
+          460
+        ],
+        [
+          407,
+          613
+        ],
+        [
+          1095,
+          613
+        ],
+        [
+          1095,
+          665
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "original-to-target",
+      "from": "image",
+      "to": "target",
+      "sourceRoute": [
+        [
+          136,
+          455
+        ],
+        [
+          136,
+          770
+        ],
+        [
+          726,
+          770
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "pred-to-inset",
+      "from": "pred",
+      "to": "pred-loss",
+      "sourceRoute": [
+        [
+          1579,
+          455
+        ],
+        [
+          1582,
+          679
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "target-to-selector",
+      "from": "target",
+      "to": "selector",
+      "sourceRoute": [
+        [
+          949,
+          767
+        ],
+        [
+          1020,
+          767
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "selector-to-loss",
+      "from": "selector",
+      "to": "loss",
+      "sourceRoute": [
+        [
+          1173,
+          767
+        ],
+        [
+          1233,
+          767
+        ]
+      ],
+      "arrowhead": "triangle"
+    },
+    {
+      "id": "prediction-to-loss",
+      "from": "pred-loss",
+      "to": "loss",
+      "sourceRoute": [
+        [
+          1502,
+          767
+        ],
+        [
+          1457,
+          767
+        ]
+      ],
+      "arrowhead": "triangle"
+    }
+  ],
+  "notes": [
+    "Frozen reference-inspection.md records independent pre-authoring source inventory. Count records do not self-certify completeness.",
+    "Sixteen-cell landscape grids are schematic editable geometry, not actual reconstruction outputs."
+  ]
+}

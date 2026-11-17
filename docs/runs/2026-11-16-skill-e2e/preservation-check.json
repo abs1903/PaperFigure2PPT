@@ -1,0 +1,85 @@
+{
+  "acceptedArtifactChecks": [
+    {
+      "case": "agemem",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/layout-scene.json",
+      "unchanged": true
+    },
+    {
+      "case": "agemem",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/editable.svg",
+      "unchanged": true
+    },
+    {
+      "case": "agemem",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/figure.pptx",
+      "unchanged": true
+    },
+    {
+      "case": "agemem",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/preview.png",
+      "unchanged": true
+    },
+    {
+      "case": "agemem",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/native-render/preview.png",
+      "unchanged": true
+    },
+    {
+      "case": "memskill",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/layout-scene.json",
+      "unchanged": true
+    },
+    {
+      "case": "memskill",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/editable.svg",
+      "unchanged": true
+    },
+    {
+      "case": "memskill",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/figure.pptx",
+      "unchanged": true
+    },
+    {
+      "case": "memskill",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/preview.png",
+      "unchanged": true
+    },
+    {
+      "case": "memskill",
+      "file": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/native-render/preview.png",
+      "unchanged": true
+    }
+  ],
+  "acceptedArtifactsUnchanged": true,
+  "reconstructionContentUnchanged": {
+    "primitives": true,
+    "edges": true,
+    "labels": true,
+    "exceptions": true,
+    "operations": true,
+    "removedPrimitiveIds": true
+  },
+  "moduleChanges": [
+    {
+      "id": "source-context",
+      "beforeAnchor": null,
+      "afterAnchor": "path-1"
+    },
+    {
+      "id": "construction-agent",
+      "beforeAnchor": "icon-62-tone-7",
+      "afterAnchor": "icon-62"
+    },
+    {
+      "id": "stm-instance",
+      "beforeAnchor": "icon-63-tone-3",
+      "afterAnchor": "icon-63"
+    },
+    {
+      "id": "ltm-instance",
+      "beforeAnchor": "icon-64-tone-1",
+      "afterAnchor": "icon-64"
+    }
+  ]
+}

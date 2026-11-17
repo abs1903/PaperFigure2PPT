@@ -1,0 +1,41 @@
+32 Learned Queries
+
+EVA-CLIP-G
+ViT encoder
+
+Layer
+Norm
+
+(frozen)
+
+affine
+
+Q-Former
+
+opt_proj
+
+Query-to-image
+attention
+
+linear
+
+OPT-2.7B
+Language Model
+(frozen)
+
+Visual (32)
+
+Prompt
+
+Autoregressive generation
+
+Optional prompt
+
+Tokenize + embed
+
+empty by default
+
+Frozen OPT table
+
+Decoded
+caption

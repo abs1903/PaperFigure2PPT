@@ -1,0 +1,347 @@
+{
+  "version": "1.0",
+  "title": "Vision-language model overview",
+  "subtitle": "Project visual features into a language model; distinguish training supervision from inference.",
+  "sources": [
+    {
+      "id": "method",
+      "kind": "user-description",
+      "locator": "method.md",
+      "text": "# Vision-language model overview\n\nThis is an original illustrative architecture specification for testing PaperFigure, not a reproduction or a claim of research novelty.\n\nThe image is processed by a frozen vision encoder, which sends visual features to a trainable projector.\n\nThe projector maps visual features into visual tokens consumed by a decoder-only language model.\n\nThe text prompt is consumed by the same decoder-only language model.\n\nAt inference, the language model produces an answer.\n\nDuring training only, the language model predictions are consumed by a supervised loss. The loss is a supervision path, not an inference module.\n"
+    }
+  ],
+  "claims": {
+    "summary": "Project visual features into a language model; distinguish training supervision from inference.",
+    "innovation": null,
+    "baseline": null,
+    "scope": "Illustrative system-level overview. Internal transformer layers, optimization details, and performance claims are outside scope."
+  },
+  "assumptions": [
+    "All modules and relations are defined by method.md; no empirical performance or paper-level novelty is claimed."
+  ],
+  "nodes": [
+    {
+      "id": "image",
+      "label": "Image",
+      "detail": "RGB input",
+      "role": "input",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "Vision encoder",
+      "detail": "Frozen weights",
+      "role": "encoder",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ]
+    },
+    {
+      "id": "projector",
+      "label": "Projector",
+      "detail": "Trainable mapping",
+      "role": "core",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ]
+    },
+    {
+      "id": "prompt",
+      "label": "Text prompt",
+      "detail": "Instruction tokens",
+      "role": "input",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The text prompt is consumed by the same decoder-only language model."
+        }
+      ]
+    },
+    {
+      "id": "lm",
+      "label": "Language model",
+      "detail": "Decoder-only",
+      "role": "core",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "label": "Answer",
+      "detail": "Text output",
+      "role": "output",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "At inference, the language model produces an answer."
+        }
+      ]
+    },
+    {
+      "id": "loss",
+      "label": "Supervised loss",
+      "detail": "Training only",
+      "role": "loss",
+      "phase": "train",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "During training only, the language model predictions are consumed by a supervised loss. The loss is a supervision path, not an inference module."
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "image",
+      "to": "vision",
+      "label": "",
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "from": "vision",
+      "to": "projector",
+      "label": "",
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "from": "projector",
+      "to": "lm",
+      "label": "Visual tokens",
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "from": "prompt",
+      "to": "lm",
+      "label": "Text tokens",
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The text prompt is consumed by the same decoder-only language model."
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "from": "lm",
+      "to": "answer",
+      "label": "",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "At inference, the language model produces an answer."
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "from": "lm",
+      "to": "loss",
+      "label": "",
+      "kind": "data",
+      "phase": "train",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "During training only, the language model predictions are consumed by a supervised loss. The loss is a supervision path, not an inference module."
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "visual",
+      "label": "Visual tokenization",
+      "members": [
+        "vision",
+        "projector"
+      ]
+    }
+  ],
+  "layout": {
+    "canvas": {
+      "width": 1600,
+      "height": 650
+    },
+    "direction": "LR",
+    "nodes": {
+      "image": {
+        "x": 40,
+        "y": 90,
+        "w": 180,
+        "h": 180
+      },
+      "vision": {
+        "x": 290,
+        "y": 105,
+        "w": 210,
+        "h": 150
+      },
+      "projector": {
+        "x": 610,
+        "y": 105,
+        "w": 190,
+        "h": 150
+      },
+      "prompt": {
+        "x": 290,
+        "y": 380,
+        "w": 400,
+        "h": 120
+      },
+      "lm": {
+        "x": 970,
+        "y": 90,
+        "w": 300,
+        "h": 360
+      },
+      "answer": {
+        "x": 1380,
+        "y": 115,
+        "w": 180,
+        "h": 110
+      },
+      "loss": {
+        "x": 1380,
+        "y": 385,
+        "w": 180,
+        "h": 130
+      }
+    },
+    "edges": {
+      "e3": {
+        "fromPort": "right",
+        "toPort": "left",
+        "toFraction": 0.25,
+        "label": {
+          "x": 810,
+          "y": 140
+        }
+      },
+      "e4": {
+        "fromPort": "right",
+        "toPort": "left",
+        "toFraction": 0.75,
+        "via": [
+          [
+            850,
+            440
+          ],
+          [
+            850,
+            360
+          ]
+        ],
+        "label": {
+          "x": 730,
+          "y": 325
+        }
+      },
+      "e5": {
+        "fromPort": "right",
+        "fromFraction": 0.2222222222222222,
+        "toPort": "left"
+      },
+      "e6": {
+        "fromPort": "right",
+        "fromFraction": 0.9,
+        "toPort": "left",
+        "via": [
+          [
+            1320,
+            414
+          ],
+          [
+            1320,
+            450
+          ]
+        ],
+        "label": {
+          "x": 1280,
+          "y": 535
+        }
+      }
+    }
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 7,
+    "showTitle": false,
+    "showSubtitle": false,
+    "typography": {
+      "fontFamily": "Arial",
+      "moduleSize": 26,
+      "detailSize": 23,
+      "annotationSize": 23
+    },
+    "nodeGlyphs": {
+      "image": "image",
+      "lm": "stack"
+    },
+    "showLegend": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-17",
+  "authorization": "User explicitly requested comparison with author figure after the generated image was frozen.",
+  "sourceURL": "https://arxiv.org/html/2407.01489v1",
+  "rawHTMLSHA256": "a396924132e609f916a7feb8dda94e78f5dd274c641df2c00d59d61fea38e5d8",
+  "preUnblindingGeneratedImageSHA256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91",
+  "previousFigureHiddenResults": "Retained unchanged. This separate comparison is after unblinding; future work is no longer author-figure-hidden.",
+  "authorImages": [
+    {
+      "file": "author-figure-1.png",
+      "source": "paper-v1.pdf",
+      "page": 3,
+      "figure": 1,
+      "pageRender": "paper-page-3.png",
+      "cropPixels": [
+        268,
+        202,
+        1284,
+        820
+      ],
+      "sha256": "2115ac12019b5d66729e5b9a00f984c7d86241301eb3dec0f8be202f02bf0e8e"
+    }
+  ],
+  "pdfURL": "https://arxiv.org/pdf/2407.01489v1",
+  "pdfSHA256": "44d9d4254ab08687f2c6dd8f33359ffd6ef8078e5eb6e63888022850f43a2ea8",
+  "postComparisonGeneratedImageSHA256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91"
+}

@@ -1,0 +1,2658 @@
+{
+  "version": "1.0",
+  "reference": {
+    "width": 2061,
+    "height": 763,
+    "sha256": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f"
+  },
+  "expectedCounts": {
+    "modules": 20,
+    "edges": 14,
+    "icons": 23,
+    "labels": 69
+  },
+  "labels": [
+    {
+      "id": "curriculum-panel-2",
+      "text": "Automatic Curriculum",
+      "owner": "curriculum-panel",
+      "referenceRegion": [
+        88,
+        52.1,
+        400,
+        39.44
+      ]
+    },
+    {
+      "id": "generation-panel-4",
+      "text": "Program Generation & Iterative Refinement",
+      "owner": "generation-panel",
+      "referenceRegion": [
+        604,
+        19,
+        950,
+        46.4
+      ]
+    },
+    {
+      "id": "library-panel-6",
+      "text": "Reusable Skill Library",
+      "owner": "library-panel",
+      "referenceRegion": [
+        1731,
+        59.8,
+        325,
+        37.12
+      ]
+    },
+    {
+      "id": "library-panel-7",
+      "text": "(Persistent, Growing)",
+      "owner": "library-panel",
+      "referenceRegion": [
+        1731,
+        96.05,
+        325,
+        31.319999999999997
+      ]
+    },
+    {
+      "id": "world-observations-63",
+      "text": "World",
+      "owner": "world-observations",
+      "referenceRegion": [
+        100,
+        127.45,
+        130,
+        26.68
+      ]
+    },
+    {
+      "id": "world-observations-64",
+      "text": "Observations",
+      "owner": "world-observations",
+      "referenceRegion": [
+        100,
+        151.3,
+        130,
+        25.52
+      ]
+    },
+    {
+      "id": "world-observations-65",
+      "text": "(latest)",
+      "owner": "world-observations",
+      "referenceRegion": [
+        100,
+        174.45,
+        130,
+        26.68
+      ]
+    },
+    {
+      "id": "task-history-67",
+      "text": "Task History",
+      "owner": "task-history",
+      "referenceRegion": [
+        100,
+        233.45,
+        130,
+        26.68
+      ]
+    },
+    {
+      "id": "task-history-68",
+      "text": "(completed)",
+      "owner": "task-history",
+      "referenceRegion": [
+        100,
+        258.45,
+        130,
+        26.68
+      ]
+    },
+    {
+      "id": "curriculum-controller-71",
+      "text": "Curriculum",
+      "owner": "curriculum-controller",
+      "referenceRegion": [
+        340,
+        143.9,
+        142,
+        30.159999999999997
+      ]
+    },
+    {
+      "id": "curriculum-controller-72",
+      "text": "Propose Task",
+      "owner": "curriculum-controller",
+      "referenceRegion": [
+        384,
+        195.45,
+        190,
+        26.68
+      ]
+    },
+    {
+      "id": "curriculum-controller-73",
+      "text": "+ Context",
+      "owner": "curriculum-controller",
+      "referenceRegion": [
+        384,
+        221.45,
+        170,
+        26.68
+      ]
+    },
+    {
+      "id": "task-context-76",
+      "text": "Task:",
+      "owner": "task-context",
+      "referenceRegion": [
+        179,
+        333.6,
+        200,
+        27.839999999999996
+      ]
+    },
+    {
+      "id": "task-context-78",
+      "text": "Mine 1 wood log",
+      "owner": "task-context",
+      "referenceRegion": [
+        191,
+        367.75,
+        210,
+        28.999999999999996
+      ]
+    },
+    {
+      "id": "task-context-79",
+      "text": "Context:",
+      "owner": "task-context",
+      "referenceRegion": [
+        179,
+        407.45,
+        220,
+        26.68
+      ]
+    },
+    {
+      "id": "task-context-80",
+      "text": "•  Retrieved code (top-k)",
+      "owner": "task-context",
+      "referenceRegion": [
+        185,
+        434.45,
+        274,
+        26.68
+      ]
+    },
+    {
+      "id": "task-context-81",
+      "text": "•  Recent events (filtered)",
+      "owner": "task-context",
+      "referenceRegion": [
+        185,
+        460.45,
+        274,
+        26.68
+      ]
+    },
+    {
+      "id": "retained-state-83",
+      "text": "State (Retained)",
+      "owner": "retained-state",
+      "referenceRegion": [
+        100,
+        550.05,
+        270,
+        31.319999999999997
+      ]
+    },
+    {
+      "id": "retained-state-86",
+      "text": "Latest world observations",
+      "owner": "retained-state",
+      "referenceRegion": [
+        100,
+        598.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "retained-state-87",
+      "text": "Runtime events (recent)",
+      "owner": "retained-state",
+      "referenceRegion": [
+        100,
+        641.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "retained-state-88",
+      "text": "</>",
+      "owner": "retained-state",
+      "referenceRegion": [
+        46,
+        641.6,
+        35,
+        27.839999999999996
+      ]
+    },
+    {
+      "id": "retrieved-code-90",
+      "text": "Retrieved Code (top-k)",
+      "owner": "retrieved-code",
+      "referenceRegion": [
+        635,
+        88.6,
+        275,
+        27.839999999999996
+      ]
+    },
+    {
+      "id": "retrieved-code-91",
+      "text": "• chopTree()",
+      "owner": "retrieved-code",
+      "referenceRegion": [
+        639,
+        121.7,
+        260,
+        20.88
+      ]
+    },
+    {
+      "id": "retrieved-code-92",
+      "text": "• placeBlock()",
+      "owner": "retrieved-code",
+      "referenceRegion": [
+        639,
+        143.7,
+        260,
+        20.88
+      ]
+    },
+    {
+      "id": "retrieved-code-93",
+      "text": "• ...",
+      "owner": "retrieved-code",
+      "referenceRegion": [
+        639,
+        165.7,
+        230,
+        20.88
+      ]
+    },
+    {
+      "id": "task-chat-context-95",
+      "text": "Context (task + filtered chat log)",
+      "owner": "task-chat-context",
+      "referenceRegion": [
+        1021,
+        102.45,
+        332,
+        26.68
+      ]
+    },
+    {
+      "id": "action-generator-97",
+      "text": "Action LM (Code Generator)",
+      "owner": "action-generator",
+      "referenceRegion": [
+        666,
+        254.2,
+        376,
+        32.48
+      ]
+    },
+    {
+      "id": "action-generator-99",
+      "text": "Generate / Refine JavaScript (bounded)",
+      "owner": "action-generator",
+      "referenceRegion": [
+        652,
+        293.45,
+        390,
+        26.68
+      ]
+    },
+    {
+      "id": "refine-caption-100",
+      "text": "Refine",
+      "owner": "refine-caption",
+      "referenceRegion": [
+        1347,
+        212.9,
+        185,
+        30.159999999999997
+      ]
+    },
+    {
+      "id": "refine-caption-101",
+      "text": "(with feedback)",
+      "owner": "refine-caption",
+      "referenceRegion": [
+        1347,
+        239.75,
+        220,
+        28.999999999999996
+      ]
+    },
+    {
+      "id": "program-document-104",
+      "text": "</>",
+      "owner": "program-document",
+      "referenceRegion": [
+        554,
+        384.45,
+        45,
+        26.68
+      ]
+    },
+    {
+      "id": "program-document-105",
+      "text": "program.js",
+      "owner": "program-document",
+      "referenceRegion": [
+        600,
+        382.6,
+        252,
+        27.839999999999996
+      ]
+    },
+    {
+      "id": "program-document-107",
+      "text": "1",
+      "owner": "program-document",
+      "referenceRegion": [
+        555,
+        433.7,
+        24,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-108",
+      "text": "2",
+      "owner": "program-document",
+      "referenceRegion": [
+        555,
+        461.7,
+        24,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-109",
+      "text": "3",
+      "owner": "program-document",
+      "referenceRegion": [
+        555,
+        489.7,
+        24,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-110",
+      "text": "4",
+      "owner": "program-document",
+      "referenceRegion": [
+        555,
+        517.7,
+        24,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-111",
+      "text": "5",
+      "owner": "program-document",
+      "referenceRegion": [
+        555,
+        545.7,
+        24,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-112",
+      "text": "async function main() {",
+      "owner": "program-document",
+      "referenceRegion": [
+        589,
+        433.7,
+        317,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-113",
+      "text": "const tree = await findBlock(",
+      "owner": "program-document",
+      "referenceRegion": [
+        607,
+        461.7,
+        299,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-114",
+      "text": "\"oak_log\");",
+      "owner": "program-document",
+      "referenceRegion": [
+        623,
+        489.7,
+        317,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-115",
+      "text": "await mineBlock(tree);",
+      "owner": "program-document",
+      "referenceRegion": [
+        607,
+        517.7,
+        317,
+        20.88
+      ]
+    },
+    {
+      "id": "program-document-116",
+      "text": "}",
+      "owner": "program-document",
+      "referenceRegion": [
+        589,
+        545.7,
+        317,
+        20.88
+      ]
+    },
+    {
+      "id": "runtime-execution-119",
+      "text": "Execute JS",
+      "owner": "runtime-execution",
+      "referenceRegion": [
+        1000,
+        375.6,
+        227,
+        27.839999999999996
+      ]
+    },
+    {
+      "id": "runtime-execution-121",
+      "text": "Runtime",
+      "owner": "runtime-execution",
+      "referenceRegion": [
+        1088,
+        601.45,
+        240,
+        26.68
+      ]
+    },
+    {
+      "id": "runtime-execution-122",
+      "text": "(all saved programs + primitives)",
+      "owner": "runtime-execution",
+      "referenceRegion": [
+        1088,
+        627,
+        280,
+        23.2
+      ]
+    },
+    {
+      "id": "critic-125",
+      "text": "Critic",
+      "owner": "critic",
+      "referenceRegion": [
+        1345,
+        373.35,
+        100,
+        33.64
+      ]
+    },
+    {
+      "id": "critic-126",
+      "text": "Verify",
+      "owner": "critic",
+      "referenceRegion": [
+        1361,
+        420.3,
+        150,
+        25.52
+      ]
+    },
+    {
+      "id": "critic-127",
+      "text": "(+ critique)",
+      "owner": "critic",
+      "referenceRegion": [
+        1361,
+        444.3,
+        170,
+        25.52
+      ]
+    },
+    {
+      "id": "feedback-129",
+      "text": "Feedback",
+      "owner": "feedback",
+      "referenceRegion": [
+        1269,
+        513.6,
+        185,
+        27.839999999999996
+      ]
+    },
+    {
+      "id": "feedback-133",
+      "text": "Success: Yes",
+      "owner": "feedback",
+      "referenceRegion": [
+        1308,
+        550.3,
+        145,
+        25.52
+      ]
+    },
+    {
+      "id": "feedback-134",
+      "text": "Critique:",
+      "owner": "feedback",
+      "referenceRegion": [
+        1308,
+        590.15,
+        145,
+        24.36
+      ]
+    },
+    {
+      "id": "feedback-135",
+      "text": "(clear and reusable)",
+      "owner": "feedback",
+      "referenceRegion": [
+        1308,
+        615.7,
+        150,
+        20.88
+      ]
+    },
+    {
+      "id": "success-filter-137",
+      "text": "Success only",
+      "owner": "success-filter",
+      "referenceRegion": [
+        1557,
+        399,
+        125,
+        23.2
+      ]
+    },
+    {
+      "id": "failure-filter-139",
+      "text": "Failure",
+      "owner": "failure-filter",
+      "referenceRegion": [
+        1561,
+        518.3,
+        114,
+        25.52
+      ]
+    },
+    {
+      "id": "failure-filter-140",
+      "text": "(not saved)",
+      "owner": "failure-filter",
+      "referenceRegion": [
+        1561,
+        542.3,
+        114,
+        25.52
+      ]
+    },
+    {
+      "id": "skill-card-1-142",
+      "text": "chopTree()",
+      "owner": "skill-card-1",
+      "referenceRegion": [
+        1725,
+        174.75,
+        311,
+        28.999999999999996
+      ]
+    },
+    {
+      "id": "skill-card-1-143",
+      "text": "Chop an entire tree and",
+      "owner": "skill-card-1",
+      "referenceRegion": [
+        1724,
+        208.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "skill-card-1-144",
+      "text": "collect the wood logs.",
+      "owner": "skill-card-1",
+      "referenceRegion": [
+        1724,
+        232.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "skill-card-1-146",
+      "text": "</>",
+      "owner": "skill-card-1",
+      "referenceRegion": [
+        1998,
+        204.2,
+        55,
+        32.48
+      ]
+    },
+    {
+      "id": "skill-card-2-148",
+      "text": "mineBlock(type)",
+      "owner": "skill-card-2",
+      "referenceRegion": [
+        1725,
+        293.75,
+        311,
+        28.999999999999996
+      ]
+    },
+    {
+      "id": "skill-card-2-149",
+      "text": "Mine a block of the given",
+      "owner": "skill-card-2",
+      "referenceRegion": [
+        1724,
+        327.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "skill-card-2-150",
+      "text": "type (e.g., \"oak_log\").",
+      "owner": "skill-card-2",
+      "referenceRegion": [
+        1724,
+        351.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "skill-card-2-152",
+      "text": "</>",
+      "owner": "skill-card-2",
+      "referenceRegion": [
+        1998,
+        323.2,
+        55,
+        32.48
+      ]
+    },
+    {
+      "id": "skill-card-3-154",
+      "text": "placeBlock(type, pos)",
+      "owner": "skill-card-3",
+      "referenceRegion": [
+        1725,
+        406.75,
+        311,
+        28.999999999999996
+      ]
+    },
+    {
+      "id": "skill-card-3-155",
+      "text": "Place a block of the given",
+      "owner": "skill-card-3",
+      "referenceRegion": [
+        1724,
+        440.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "skill-card-3-156",
+      "text": "type at the target position.",
+      "owner": "skill-card-3",
+      "referenceRegion": [
+        1724,
+        464.3,
+        250,
+        25.52
+      ]
+    },
+    {
+      "id": "skill-card-3-158",
+      "text": "</>",
+      "owner": "skill-card-3",
+      "referenceRegion": [
+        1998,
+        436.2,
+        55,
+        32.48
+      ]
+    },
+    {
+      "id": "library-continuation-160",
+      "text": "•••",
+      "owner": "library-continuation",
+      "referenceRegion": [
+        1859,
+        532.65,
+        150,
+        35.96
+      ]
+    },
+    {
+      "id": "next-task-label-162",
+      "text": "Next task",
+      "owner": "next-task-label",
+      "referenceRegion": [
+        1031,
+        718.9,
+        170,
+        30.159999999999997
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "curriculum-panel",
+      "role": "container",
+      "referenceRegion": [
+        3,
+        40,
+        496,
+        474
+      ]
+    },
+    {
+      "id": "generation-panel",
+      "role": "container",
+      "referenceRegion": [
+        517,
+        7,
+        1071,
+        673
+      ]
+    },
+    {
+      "id": "library-panel",
+      "role": "container",
+      "referenceRegion": [
+        1646,
+        48,
+        413,
+        571
+      ]
+    },
+    {
+      "id": "observations-to-curriculum",
+      "role": "edge",
+      "referenceRegion": [
+        223,
+        151,
+        69,
+        66
+      ]
+    },
+    {
+      "id": "history-to-curriculum",
+      "role": "edge",
+      "referenceRegion": [
+        223,
+        197,
+        69,
+        71
+      ]
+    },
+    {
+      "id": "curriculum-to-task",
+      "role": "edge",
+      "referenceRegion": [
+        373,
+        253,
+        20,
+        82
+      ]
+    },
+    {
+      "id": "retained-to-curriculum",
+      "role": "edge",
+      "referenceRegion": [
+        363,
+        503,
+        87,
+        122
+      ]
+    },
+    {
+      "id": "context-to-generator",
+      "role": "edge",
+      "referenceRegion": [
+        861,
+        138,
+        315,
+        110
+      ]
+    },
+    {
+      "id": "generator-to-program",
+      "role": "edge",
+      "referenceRegion": [
+        710,
+        323,
+        20,
+        58
+      ]
+    },
+    {
+      "id": "program-to-runtime",
+      "role": "edge",
+      "referenceRegion": [
+        899,
+        499,
+        57,
+        20
+      ]
+    },
+    {
+      "id": "runtime-to-critic",
+      "role": "edge",
+      "referenceRegion": [
+        1221,
+        432,
+        58,
+        20
+      ]
+    },
+    {
+      "id": "critic-to-feedback",
+      "role": "edge",
+      "referenceRegion": [
+        1349,
+        470,
+        20,
+        46
+      ]
+    },
+    {
+      "id": "feedback-refinement-upper",
+      "role": "edge",
+      "referenceRegion": [
+        1037,
+        266,
+        311,
+        106
+      ]
+    },
+    {
+      "id": "feedback-refinement-outer",
+      "role": "edge",
+      "referenceRegion": [
+        1037,
+        265,
+        509,
+        257
+      ]
+    },
+    {
+      "id": "critic-success-to-library",
+      "role": "edge",
+      "referenceRegion": [
+        1439,
+        399,
+        216,
+        20
+      ]
+    },
+    {
+      "id": "critic-failure",
+      "role": "edge",
+      "referenceRegion": [
+        1439,
+        425,
+        72,
+        129
+      ]
+    },
+    {
+      "id": "next-task-return",
+      "role": "edge",
+      "referenceRegion": [
+        184,
+        609,
+        1772,
+        133
+      ]
+    },
+    {
+      "id": "world-observations",
+      "role": "module",
+      "referenceRegion": [
+        18,
+        118,
+        215,
+        91
+      ]
+    },
+    {
+      "id": "task-history",
+      "role": "module",
+      "referenceRegion": [
+        19,
+        223,
+        214,
+        71
+      ]
+    },
+    {
+      "id": "curriculum-controller",
+      "role": "module",
+      "referenceRegion": [
+        282,
+        130,
+        203,
+        133
+      ]
+    },
+    {
+      "id": "task-context",
+      "role": "module",
+      "referenceRegion": [
+        149,
+        325,
+        315,
+        175
+      ]
+    },
+    {
+      "id": "retained-state",
+      "role": "module",
+      "referenceRegion": [
+        13,
+        537,
+        360,
+        152
+      ]
+    },
+    {
+      "id": "retrieved-code",
+      "role": "module",
+      "referenceRegion": [
+        544,
+        77,
+        371,
+        122
+      ]
+    },
+    {
+      "id": "task-chat-context",
+      "role": "module",
+      "referenceRegion": [
+        942,
+        84,
+        414,
+        64
+      ]
+    },
+    {
+      "id": "action-generator",
+      "role": "module",
+      "referenceRegion": [
+        558,
+        238,
+        489,
+        95
+      ]
+    },
+    {
+      "id": "refine-caption",
+      "role": "module",
+      "referenceRegion": [
+        1265,
+        213,
+        177,
+        52
+      ]
+    },
+    {
+      "id": "program-document",
+      "role": "module",
+      "referenceRegion": [
+        537,
+        371,
+        373,
+        263
+      ]
+    },
+    {
+      "id": "runtime-execution",
+      "role": "module",
+      "referenceRegion": [
+        946,
+        365,
+        286,
+        290
+      ]
+    },
+    {
+      "id": "critic",
+      "role": "module",
+      "referenceRegion": [
+        1269,
+        362,
+        180,
+        118
+      ]
+    },
+    {
+      "id": "feedback",
+      "role": "module",
+      "referenceRegion": [
+        1254,
+        506,
+        206,
+        141
+      ]
+    },
+    {
+      "id": "success-filter",
+      "role": "module",
+      "referenceRegion": [
+        1491,
+        389,
+        132,
+        42
+      ]
+    },
+    {
+      "id": "failure-filter",
+      "role": "module",
+      "referenceRegion": [
+        1501,
+        512,
+        120,
+        62
+      ]
+    },
+    {
+      "id": "skill-card-1",
+      "role": "module",
+      "referenceRegion": [
+        1674,
+        164,
+        368,
+        106
+      ]
+    },
+    {
+      "id": "skill-card-2",
+      "role": "module",
+      "referenceRegion": [
+        1674,
+        283,
+        368,
+        100
+      ]
+    },
+    {
+      "id": "skill-card-3",
+      "role": "module",
+      "referenceRegion": [
+        1674,
+        396,
+        368,
+        106
+      ]
+    },
+    {
+      "id": "library-continuation",
+      "role": "module",
+      "referenceRegion": [
+        1675,
+        521,
+        367,
+        51
+      ]
+    },
+    {
+      "id": "next-task-label",
+      "role": "module",
+      "referenceRegion": [
+        938,
+        710,
+        186,
+        45
+      ]
+    },
+    {
+      "id": "curriculum-mark",
+      "role": "icon",
+      "referenceRegion": [
+        25,
+        52,
+        49,
+        46
+      ]
+    },
+    {
+      "id": "generation-mark",
+      "role": "icon",
+      "referenceRegion": [
+        536,
+        17,
+        56,
+        53
+      ]
+    },
+    {
+      "id": "controller-mark",
+      "role": "icon",
+      "referenceRegion": [
+        297,
+        140,
+        35,
+        35
+      ]
+    },
+    {
+      "id": "action-mark",
+      "role": "icon",
+      "referenceRegion": [
+        595,
+        243,
+        54,
+        53
+      ]
+    },
+    {
+      "id": "critic-mark",
+      "role": "icon",
+      "referenceRegion": [
+        1288,
+        371,
+        39,
+        38
+      ]
+    },
+    {
+      "id": "world-icon",
+      "role": "icon",
+      "referenceRegion": [
+        34,
+        137,
+        53,
+        47
+      ]
+    },
+    {
+      "id": "history-icon",
+      "role": "icon",
+      "referenceRegion": [
+        35,
+        235,
+        48,
+        43
+      ]
+    },
+    {
+      "id": "retrieved-icon",
+      "role": "icon",
+      "referenceRegion": [
+        569,
+        86,
+        48,
+        54
+      ]
+    },
+    {
+      "id": "context-icon",
+      "role": "icon",
+      "referenceRegion": [
+        958,
+        93,
+        49,
+        44
+      ]
+    },
+    {
+      "id": "edit-icon",
+      "role": "icon",
+      "referenceRegion": [
+        869,
+        381,
+        28,
+        28
+      ]
+    },
+    {
+      "id": "cube-icon",
+      "role": "icon",
+      "referenceRegion": [
+        960,
+        371,
+        32,
+        34
+      ]
+    },
+    {
+      "id": "state-database",
+      "role": "icon",
+      "referenceRegion": [
+        39,
+        544,
+        43,
+        44
+      ]
+    },
+    {
+      "id": "state-globe",
+      "role": "icon",
+      "referenceRegion": [
+        47,
+        595,
+        33,
+        32
+      ]
+    },
+    {
+      "id": "library-database",
+      "role": "icon",
+      "referenceRegion": [
+        1665,
+        64,
+        53,
+        58
+      ]
+    },
+    {
+      "id": "skill-document-1",
+      "role": "icon",
+      "referenceRegion": [
+        1682,
+        174,
+        29,
+        34
+      ]
+    },
+    {
+      "id": "skill-document-2",
+      "role": "icon",
+      "referenceRegion": [
+        1682,
+        292,
+        29,
+        36
+      ]
+    },
+    {
+      "id": "skill-document-3",
+      "role": "icon",
+      "referenceRegion": [
+        1682,
+        405,
+        29,
+        36
+      ]
+    },
+    {
+      "id": "feedback-bubble",
+      "role": "icon",
+      "referenceRegion": [
+        1268,
+        590,
+        31,
+        30
+      ]
+    },
+    {
+      "id": "minecraft-tone-208",
+      "role": "icon",
+      "referenceRegion": [
+        947,
+        412,
+        283,
+        185
+      ]
+    },
+    {
+      "id": "minecraft-tone-177",
+      "role": "icon",
+      "referenceRegion": [
+        947,
+        412,
+        283,
+        185
+      ]
+    },
+    {
+      "id": "minecraft-tone-144",
+      "role": "icon",
+      "referenceRegion": [
+        947,
+        412,
+        283,
+        185
+      ]
+    },
+    {
+      "id": "minecraft-tone-106",
+      "role": "icon",
+      "referenceRegion": [
+        947,
+        412,
+        283,
+        185
+      ]
+    },
+    {
+      "id": "minecraft-tone-67",
+      "role": "icon",
+      "referenceRegion": [
+        947,
+        412,
+        283,
+        185
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "curriculum-panel-1",
+      "kind": "shape",
+      "owner": "curriculum-panel",
+      "referenceRegion": [
+        3,
+        40,
+        496,
+        474
+      ]
+    },
+    {
+      "id": "generation-panel-3",
+      "kind": "shape",
+      "owner": "generation-panel",
+      "referenceRegion": [
+        517,
+        7,
+        1071,
+        673
+      ]
+    },
+    {
+      "id": "library-panel-5",
+      "kind": "shape",
+      "owner": "library-panel",
+      "referenceRegion": [
+        1646,
+        48,
+        413,
+        571
+      ]
+    },
+    {
+      "id": "observations-to-curriculum-8",
+      "kind": "connector",
+      "owner": "observations-to-curriculum",
+      "referenceRegion": [
+        233,
+        161,
+        13,
+        1
+      ]
+    },
+    {
+      "id": "observations-to-curriculum-9",
+      "kind": "connector",
+      "owner": "observations-to-curriculum",
+      "referenceRegion": [
+        246,
+        161,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "observations-to-curriculum-10",
+      "kind": "connector",
+      "owner": "observations-to-curriculum",
+      "referenceRegion": [
+        256,
+        171,
+        1,
+        26
+      ]
+    },
+    {
+      "id": "observations-to-curriculum-11",
+      "kind": "connector",
+      "owner": "observations-to-curriculum",
+      "referenceRegion": [
+        256,
+        197,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "observations-to-curriculum-12",
+      "kind": "connector",
+      "owner": "observations-to-curriculum",
+      "referenceRegion": [
+        266,
+        207,
+        16,
+        1
+      ]
+    },
+    {
+      "id": "observations-to-curriculum-13",
+      "kind": "decoration",
+      "owner": "observations-to-curriculum",
+      "referenceRegion": [
+        266,
+        200,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "history-to-curriculum-14",
+      "kind": "connector",
+      "owner": "history-to-curriculum",
+      "referenceRegion": [
+        233,
+        258,
+        13,
+        1
+      ]
+    },
+    {
+      "id": "history-to-curriculum-15",
+      "kind": "connector",
+      "owner": "history-to-curriculum",
+      "referenceRegion": [
+        246,
+        248,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "history-to-curriculum-16",
+      "kind": "connector",
+      "owner": "history-to-curriculum",
+      "referenceRegion": [
+        256,
+        217,
+        1,
+        31
+      ]
+    },
+    {
+      "id": "history-to-curriculum-17",
+      "kind": "connector",
+      "owner": "history-to-curriculum",
+      "referenceRegion": [
+        256,
+        207,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "history-to-curriculum-18",
+      "kind": "connector",
+      "owner": "history-to-curriculum",
+      "referenceRegion": [
+        266,
+        207,
+        16,
+        1
+      ]
+    },
+    {
+      "id": "history-to-curriculum-19",
+      "kind": "decoration",
+      "owner": "history-to-curriculum",
+      "referenceRegion": [
+        266,
+        200,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "curriculum-to-task-20",
+      "kind": "connector",
+      "owner": "curriculum-to-task",
+      "referenceRegion": [
+        383,
+        263,
+        1,
+        62
+      ]
+    },
+    {
+      "id": "curriculum-to-task-21",
+      "kind": "decoration",
+      "owner": "curriculum-to-task",
+      "referenceRegion": [
+        376,
+        309,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "retained-to-curriculum-22",
+      "kind": "connector",
+      "owner": "retained-to-curriculum",
+      "referenceRegion": [
+        373,
+        615,
+        57,
+        1
+      ]
+    },
+    {
+      "id": "retained-to-curriculum-23",
+      "kind": "connector",
+      "owner": "retained-to-curriculum",
+      "referenceRegion": [
+        430,
+        605,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "retained-to-curriculum-24",
+      "kind": "connector",
+      "owner": "retained-to-curriculum",
+      "referenceRegion": [
+        440,
+        513,
+        1,
+        92
+      ]
+    },
+    {
+      "id": "retained-to-curriculum-25",
+      "kind": "decoration",
+      "owner": "retained-to-curriculum",
+      "referenceRegion": [
+        433,
+        513,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "context-to-generator-26",
+      "kind": "connector",
+      "owner": "context-to-generator",
+      "referenceRegion": [
+        1166,
+        148,
+        1,
+        49
+      ]
+    },
+    {
+      "id": "context-to-generator-27",
+      "kind": "connector",
+      "owner": "context-to-generator",
+      "referenceRegion": [
+        1156,
+        197,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "context-to-generator-28",
+      "kind": "connector",
+      "owner": "context-to-generator",
+      "referenceRegion": [
+        881,
+        207,
+        275,
+        1
+      ]
+    },
+    {
+      "id": "context-to-generator-29",
+      "kind": "connector",
+      "owner": "context-to-generator",
+      "referenceRegion": [
+        871,
+        207,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "context-to-generator-30",
+      "kind": "connector",
+      "owner": "context-to-generator",
+      "referenceRegion": [
+        871,
+        217,
+        1,
+        21
+      ]
+    },
+    {
+      "id": "context-to-generator-31",
+      "kind": "decoration",
+      "owner": "context-to-generator",
+      "referenceRegion": [
+        864,
+        222,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "generator-to-program-32",
+      "kind": "connector",
+      "owner": "generator-to-program",
+      "referenceRegion": [
+        720,
+        333,
+        1,
+        38
+      ]
+    },
+    {
+      "id": "generator-to-program-33",
+      "kind": "decoration",
+      "owner": "generator-to-program",
+      "referenceRegion": [
+        713,
+        355,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "program-to-runtime-34",
+      "kind": "connector",
+      "owner": "program-to-runtime",
+      "referenceRegion": [
+        909,
+        509,
+        37,
+        1
+      ]
+    },
+    {
+      "id": "program-to-runtime-35",
+      "kind": "decoration",
+      "owner": "program-to-runtime",
+      "referenceRegion": [
+        930,
+        502,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "runtime-to-critic-36",
+      "kind": "connector",
+      "owner": "runtime-to-critic",
+      "referenceRegion": [
+        1231,
+        442,
+        38,
+        1
+      ]
+    },
+    {
+      "id": "runtime-to-critic-37",
+      "kind": "decoration",
+      "owner": "runtime-to-critic",
+      "referenceRegion": [
+        1253,
+        435,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "critic-to-feedback-38",
+      "kind": "connector",
+      "owner": "critic-to-feedback",
+      "referenceRegion": [
+        1359,
+        480,
+        1,
+        26
+      ]
+    },
+    {
+      "id": "critic-to-feedback-39",
+      "kind": "decoration",
+      "owner": "critic-to-feedback",
+      "referenceRegion": [
+        1352,
+        490,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "feedback-refinement-upper-40",
+      "kind": "connector",
+      "owner": "feedback-refinement-upper",
+      "referenceRegion": [
+        1338,
+        286,
+        1,
+        76
+      ]
+    },
+    {
+      "id": "feedback-refinement-upper-41",
+      "kind": "connector",
+      "owner": "feedback-refinement-upper",
+      "referenceRegion": [
+        1328,
+        276,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "feedback-refinement-upper-42",
+      "kind": "connector",
+      "owner": "feedback-refinement-upper",
+      "referenceRegion": [
+        1047,
+        276,
+        281,
+        1
+      ]
+    },
+    {
+      "id": "feedback-refinement-upper-43",
+      "kind": "decoration",
+      "owner": "feedback-refinement-upper",
+      "referenceRegion": [
+        1047,
+        269,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "feedback-refinement-outer-44",
+      "kind": "connector",
+      "owner": "feedback-refinement-outer",
+      "referenceRegion": [
+        1536,
+        285,
+        1,
+        227
+      ]
+    },
+    {
+      "id": "feedback-refinement-outer-45",
+      "kind": "connector",
+      "owner": "feedback-refinement-outer",
+      "referenceRegion": [
+        1526,
+        275,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "feedback-refinement-outer-46",
+      "kind": "connector",
+      "owner": "feedback-refinement-outer",
+      "referenceRegion": [
+        1047,
+        275,
+        479,
+        1
+      ]
+    },
+    {
+      "id": "feedback-refinement-outer-47",
+      "kind": "decoration",
+      "owner": "feedback-refinement-outer",
+      "referenceRegion": [
+        1047,
+        268,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "critic-success-to-library-48",
+      "kind": "connector",
+      "owner": "critic-success-to-library",
+      "referenceRegion": [
+        1449,
+        409,
+        196,
+        1
+      ]
+    },
+    {
+      "id": "critic-success-to-library-49",
+      "kind": "decoration",
+      "owner": "critic-success-to-library",
+      "referenceRegion": [
+        1629,
+        402,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "critic-failure-50",
+      "kind": "connector",
+      "owner": "critic-failure",
+      "referenceRegion": [
+        1449,
+        435,
+        15,
+        1
+      ]
+    },
+    {
+      "id": "critic-failure-51",
+      "kind": "connector",
+      "owner": "critic-failure",
+      "referenceRegion": [
+        1464,
+        435,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "critic-failure-52",
+      "kind": "connector",
+      "owner": "critic-failure",
+      "referenceRegion": [
+        1474,
+        445,
+        1,
+        89
+      ]
+    },
+    {
+      "id": "critic-failure-53",
+      "kind": "connector",
+      "owner": "critic-failure",
+      "referenceRegion": [
+        1474,
+        534,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "critic-failure-54",
+      "kind": "connector",
+      "owner": "critic-failure",
+      "referenceRegion": [
+        1484,
+        544,
+        17,
+        1
+      ]
+    },
+    {
+      "id": "critic-failure-55",
+      "kind": "decoration",
+      "owner": "critic-failure",
+      "referenceRegion": [
+        1485,
+        537,
+        16,
+        14
+      ]
+    },
+    {
+      "id": "next-task-return-56",
+      "kind": "connector",
+      "owner": "next-task-return",
+      "referenceRegion": [
+        1946,
+        619,
+        1,
+        103
+      ]
+    },
+    {
+      "id": "next-task-return-57",
+      "kind": "connector",
+      "owner": "next-task-return",
+      "referenceRegion": [
+        1936,
+        722,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "next-task-return-58",
+      "kind": "connector",
+      "owner": "next-task-return",
+      "referenceRegion": [
+        204,
+        732,
+        1732,
+        1
+      ]
+    },
+    {
+      "id": "next-task-return-59",
+      "kind": "connector",
+      "owner": "next-task-return",
+      "referenceRegion": [
+        194,
+        722,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "next-task-return-60",
+      "kind": "connector",
+      "owner": "next-task-return",
+      "referenceRegion": [
+        194,
+        689,
+        1,
+        33
+      ]
+    },
+    {
+      "id": "next-task-return-61",
+      "kind": "decoration",
+      "owner": "next-task-return",
+      "referenceRegion": [
+        187,
+        689,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "world-observations-62",
+      "kind": "shape",
+      "owner": "world-observations",
+      "referenceRegion": [
+        18,
+        118,
+        215,
+        91
+      ]
+    },
+    {
+      "id": "task-history-66",
+      "kind": "shape",
+      "owner": "task-history",
+      "referenceRegion": [
+        19,
+        223,
+        214,
+        71
+      ]
+    },
+    {
+      "id": "curriculum-controller-69",
+      "kind": "shape",
+      "owner": "curriculum-controller",
+      "referenceRegion": [
+        282,
+        130,
+        203,
+        133
+      ]
+    },
+    {
+      "id": "curriculum-controller-70",
+      "kind": "shape",
+      "owner": "curriculum-controller",
+      "referenceRegion": [
+        282,
+        183,
+        203,
+        1
+      ]
+    },
+    {
+      "id": "task-context-74",
+      "kind": "shape",
+      "owner": "task-context",
+      "referenceRegion": [
+        149,
+        325,
+        315,
+        175
+      ]
+    },
+    {
+      "id": "task-context-75",
+      "kind": "shape",
+      "owner": "task-context",
+      "referenceRegion": [
+        441,
+        326,
+        23,
+        22
+      ]
+    },
+    {
+      "id": "task-context-77",
+      "kind": "shape",
+      "owner": "task-context",
+      "referenceRegion": [
+        179,
+        362,
+        205,
+        39
+      ]
+    },
+    {
+      "id": "retained-state-82",
+      "kind": "shape",
+      "owner": "retained-state",
+      "referenceRegion": [
+        13,
+        537,
+        360,
+        152
+      ]
+    },
+    {
+      "id": "retained-state-84",
+      "kind": "shape",
+      "owner": "retained-state",
+      "referenceRegion": [
+        32,
+        592,
+        323,
+        37
+      ]
+    },
+    {
+      "id": "retained-state-85",
+      "kind": "shape",
+      "owner": "retained-state",
+      "referenceRegion": [
+        32,
+        635,
+        323,
+        37
+      ]
+    },
+    {
+      "id": "retrieved-code-89",
+      "kind": "shape",
+      "owner": "retrieved-code",
+      "referenceRegion": [
+        544,
+        77,
+        371,
+        122
+      ]
+    },
+    {
+      "id": "task-chat-context-94",
+      "kind": "shape",
+      "owner": "task-chat-context",
+      "referenceRegion": [
+        942,
+        84,
+        414,
+        64
+      ]
+    },
+    {
+      "id": "action-generator-96",
+      "kind": "shape",
+      "owner": "action-generator",
+      "referenceRegion": [
+        558,
+        238,
+        489,
+        95
+      ]
+    },
+    {
+      "id": "action-generator-98",
+      "kind": "shape",
+      "owner": "action-generator",
+      "referenceRegion": [
+        666,
+        288,
+        357,
+        1
+      ]
+    },
+    {
+      "id": "program-document-102",
+      "kind": "shape",
+      "owner": "program-document",
+      "referenceRegion": [
+        537,
+        371,
+        373,
+        263
+      ]
+    },
+    {
+      "id": "program-document-103",
+      "kind": "shape",
+      "owner": "program-document",
+      "referenceRegion": [
+        538,
+        418,
+        371,
+        1
+      ]
+    },
+    {
+      "id": "program-document-106",
+      "kind": "shape",
+      "owner": "program-document",
+      "referenceRegion": [
+        540,
+        421,
+        41,
+        196
+      ]
+    },
+    {
+      "id": "runtime-execution-117",
+      "kind": "shape",
+      "owner": "runtime-execution",
+      "referenceRegion": [
+        946,
+        365,
+        286,
+        290
+      ]
+    },
+    {
+      "id": "runtime-execution-118",
+      "kind": "shape",
+      "owner": "runtime-execution",
+      "referenceRegion": [
+        947,
+        410,
+        284,
+        1
+      ]
+    },
+    {
+      "id": "runtime-execution-120",
+      "kind": "shape",
+      "owner": "runtime-execution",
+      "referenceRegion": [
+        948,
+        412,
+        282,
+        185
+      ]
+    },
+    {
+      "id": "critic-123",
+      "kind": "shape",
+      "owner": "critic",
+      "referenceRegion": [
+        1269,
+        362,
+        180,
+        118
+      ]
+    },
+    {
+      "id": "critic-124",
+      "kind": "shape",
+      "owner": "critic",
+      "referenceRegion": [
+        1270,
+        414,
+        178,
+        1
+      ]
+    },
+    {
+      "id": "feedback-128",
+      "kind": "shape",
+      "owner": "feedback",
+      "referenceRegion": [
+        1254,
+        506,
+        206,
+        141
+      ]
+    },
+    {
+      "id": "feedback-130",
+      "kind": "shape",
+      "owner": "feedback",
+      "referenceRegion": [
+        1265,
+        545,
+        184,
+        35
+      ]
+    },
+    {
+      "id": "feedback-131",
+      "kind": "shape",
+      "owner": "feedback",
+      "referenceRegion": [
+        1270,
+        551,
+        25,
+        24
+      ]
+    },
+    {
+      "id": "feedback-132",
+      "kind": "shape",
+      "owner": "feedback",
+      "referenceRegion": [
+        1275,
+        556,
+        16,
+        12
+      ]
+    },
+    {
+      "id": "success-filter-136",
+      "kind": "shape",
+      "owner": "success-filter",
+      "referenceRegion": [
+        1491,
+        389,
+        132,
+        42
+      ]
+    },
+    {
+      "id": "failure-filter-138",
+      "kind": "shape",
+      "owner": "failure-filter",
+      "referenceRegion": [
+        1501,
+        512,
+        120,
+        62
+      ]
+    },
+    {
+      "id": "skill-card-1-141",
+      "kind": "shape",
+      "owner": "skill-card-1",
+      "referenceRegion": [
+        1674,
+        164,
+        368,
+        106
+      ]
+    },
+    {
+      "id": "skill-card-1-145",
+      "kind": "shape",
+      "owner": "skill-card-1",
+      "referenceRegion": [
+        1966,
+        183,
+        64,
+        68
+      ]
+    },
+    {
+      "id": "skill-card-2-147",
+      "kind": "shape",
+      "owner": "skill-card-2",
+      "referenceRegion": [
+        1674,
+        283,
+        368,
+        100
+      ]
+    },
+    {
+      "id": "skill-card-2-151",
+      "kind": "shape",
+      "owner": "skill-card-2",
+      "referenceRegion": [
+        1966,
+        302,
+        64,
+        68
+      ]
+    },
+    {
+      "id": "skill-card-3-153",
+      "kind": "shape",
+      "owner": "skill-card-3",
+      "referenceRegion": [
+        1674,
+        396,
+        368,
+        106
+      ]
+    },
+    {
+      "id": "skill-card-3-157",
+      "kind": "shape",
+      "owner": "skill-card-3",
+      "referenceRegion": [
+        1966,
+        415,
+        64,
+        68
+      ]
+    },
+    {
+      "id": "library-continuation-159",
+      "kind": "shape",
+      "owner": "library-continuation",
+      "referenceRegion": [
+        1675,
+        521,
+        367,
+        51
+      ]
+    },
+    {
+      "id": "next-task-label-161",
+      "kind": "shape",
+      "owner": "next-task-label",
+      "referenceRegion": [
+        938,
+        710,
+        186,
+        45
+      ]
+    },
+    {
+      "id": "curriculum-mark-163",
+      "kind": "icon-part",
+      "owner": "curriculum-mark",
+      "referenceRegion": [
+        26,
+        53,
+        45,
+        44
+      ]
+    },
+    {
+      "id": "generation-mark-164",
+      "kind": "icon-part",
+      "owner": "generation-mark",
+      "referenceRegion": [
+        538,
+        18,
+        50,
+        50
+      ]
+    },
+    {
+      "id": "controller-mark-165",
+      "kind": "icon-part",
+      "owner": "controller-mark",
+      "referenceRegion": [
+        298,
+        141,
+        32,
+        33
+      ]
+    },
+    {
+      "id": "action-mark-166",
+      "kind": "icon-part",
+      "owner": "action-mark",
+      "referenceRegion": [
+        598,
+        246,
+        48,
+        48
+      ]
+    },
+    {
+      "id": "critic-mark-167",
+      "kind": "icon-part",
+      "owner": "critic-mark",
+      "referenceRegion": [
+        1289,
+        373,
+        34,
+        34
+      ]
+    },
+    {
+      "id": "world-icon-168",
+      "kind": "icon-part",
+      "owner": "world-icon",
+      "referenceRegion": [
+        35,
+        138,
+        51,
+        43
+      ]
+    },
+    {
+      "id": "history-icon-169",
+      "kind": "icon-part",
+      "owner": "history-icon",
+      "referenceRegion": [
+        38,
+        240,
+        43,
+        35
+      ]
+    },
+    {
+      "id": "retrieved-icon-170",
+      "kind": "icon-part",
+      "owner": "retrieved-icon",
+      "referenceRegion": [
+        571,
+        87,
+        43,
+        51
+      ]
+    },
+    {
+      "id": "context-icon-171",
+      "kind": "icon-part",
+      "owner": "context-icon",
+      "referenceRegion": [
+        961,
+        95,
+        42,
+        39
+      ]
+    },
+    {
+      "id": "edit-icon-172",
+      "kind": "icon-part",
+      "owner": "edit-icon",
+      "referenceRegion": [
+        871,
+        383,
+        23,
+        23
+      ]
+    },
+    {
+      "id": "cube-icon-173",
+      "kind": "icon-part",
+      "owner": "cube-icon",
+      "referenceRegion": [
+        961,
+        373,
+        26,
+        30
+      ]
+    },
+    {
+      "id": "state-database-174",
+      "kind": "icon-part",
+      "owner": "state-database",
+      "referenceRegion": [
+        41,
+        544,
+        38,
+        42
+      ]
+    },
+    {
+      "id": "state-globe-175",
+      "kind": "icon-part",
+      "owner": "state-globe",
+      "referenceRegion": [
+        49,
+        597,
+        27,
+        27
+      ]
+    },
+    {
+      "id": "library-database-176",
+      "kind": "icon-part",
+      "owner": "library-database",
+      "referenceRegion": [
+        1667,
+        66,
+        47,
+        52
+      ]
+    },
+    {
+      "id": "skill-document-1-177",
+      "kind": "icon-part",
+      "owner": "skill-document-1",
+      "referenceRegion": [
+        1684,
+        175,
+        24,
+        30
+      ]
+    },
+    {
+      "id": "skill-document-2-178",
+      "kind": "icon-part",
+      "owner": "skill-document-2",
+      "referenceRegion": [
+        1684,
+        294,
+        24,
+        30
+      ]
+    },
+    {
+      "id": "skill-document-3-179",
+      "kind": "icon-part",
+      "owner": "skill-document-3",
+      "referenceRegion": [
+        1684,
+        407,
+        24,
+        30
+      ]
+    },
+    {
+      "id": "feedback-bubble-180",
+      "kind": "icon-part",
+      "owner": "feedback-bubble",
+      "referenceRegion": [
+        1269,
+        591,
+        26,
+        26
+      ]
+    },
+    {
+      "id": "minecraft-tone-208-181",
+      "kind": "icon-part",
+      "owner": "minecraft-tone-208",
+      "referenceRegion": [
+        947,
+        415,
+        282,
+        181
+      ]
+    },
+    {
+      "id": "minecraft-tone-177-182",
+      "kind": "icon-part",
+      "owner": "minecraft-tone-177",
+      "referenceRegion": [
+        947,
+        415,
+        282,
+        181
+      ]
+    },
+    {
+      "id": "minecraft-tone-144-183",
+      "kind": "icon-part",
+      "owner": "minecraft-tone-144",
+      "referenceRegion": [
+        947,
+        415,
+        282,
+        181
+      ]
+    },
+    {
+      "id": "minecraft-tone-106-184",
+      "kind": "icon-part",
+      "owner": "minecraft-tone-106",
+      "referenceRegion": [
+        947,
+        416,
+        282,
+        180
+      ]
+    },
+    {
+      "id": "minecraft-tone-67-185",
+      "kind": "icon-part",
+      "owner": "minecraft-tone-67",
+      "referenceRegion": [
+        1015,
+        492,
+        169,
+        92
+      ]
+    }
+  ],
+  "backgroundIds": [
+    "canvas-background"
+  ]
+}

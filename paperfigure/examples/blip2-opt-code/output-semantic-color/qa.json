@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [],
+  "warnings": [
+    {
+      "code": "font-metrics",
+      "objects": [],
+      "message": "Text bounds use Helvetica estimates; independently render the selected font"
+    }
+  ],
+  "metrics": {
+    "nodes": 11,
+    "edges": 10,
+    "texts": 24,
+    "groups": 0,
+    "minFinalTextPt": 7.199999999999999,
+    "nativeShapes": 79,
+    "nativeConnectors": 15,
+    "logicalEdges": 10,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 24,
+    "pictures": 1,
+    "editableRatio": 0.9894736842105263
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

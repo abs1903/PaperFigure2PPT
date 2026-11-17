@@ -1,0 +1,30 @@
+Xv
+
+Zv
+CLIP
+ViT-L/14
+(frozen)
+
+Xq
+Describe the image
+in detail.
+
+Hv = W Zv
+
+Hv
+
+W
+Learned linear
+
+Hq
+
+Vicuna Language Model
+
+fφ
+
+Xa
+
+Autoregressive decoding
+
+p(Xa | Hv, Hq)
+Language response

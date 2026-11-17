@@ -1,0 +1,33 @@
+{
+  "round": 4,
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda",
+  "promptPath": "prompt-v4.txt",
+  "promptSHA256": "701592bfb2a5079cdfe8a14a321ff0093ae7f66b060c4bc338fc93446c34ce06",
+  "inputImages": [
+    {
+      "path": "candidate-v3.png",
+      "sha256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda",
+      "role": "actual edit-target attachment"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-v4.png",
+    "sha256": "4e5729fc2ff80c88b54680500a47ab618541cd61a0ce5295494265eb05604e70"
+  },
+  "specSHA256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+  "briefPath": "design-brief-v4.json",
+  "briefSHA256": "6dd89bdeb872fceb3a7f4ba3fa276d1c7914d6c021a0ece0a521923a9583185e",
+  "defect": "replace persistent graded fields with white surfaces and consistent semantic heading ink",
+  "invariants": [
+    "exact text",
+    "source topology",
+    "object positions/sizes",
+    "arrow routes/directions",
+    "meaningful geometric motifs",
+    "role categories"
+  ],
+  "decision": "unreviewed",
+  "nativeDeliveryReady": false
+}

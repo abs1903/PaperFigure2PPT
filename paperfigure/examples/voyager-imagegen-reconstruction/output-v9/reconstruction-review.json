@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "candidateVersion": "output-v9",
+  "reviewer": {"identity": "independent fidelity reviewer", "isolation": "Used native-resolution source/SVG/PPTX pixels, SVG markup, and OOXML; structural counts were not fidelity acceptance."},
+  "verdicts": {
+    "referenceFidelity": {"verdict": "FAIL", "scope": "SVG preview and independent PPTX render", "summary": "V9 code-font metrics materially diverge from both source and each other."},
+    "svgNativeEditability": {"verdict": "PASS", "scope": "structural SVG representation"},
+    "pptxNativeEditability": {"verdict": "PASS", "scope": "structural OOXML representation"}
+  },
+  "findings": [{"id": "V9-F01", "severity": "blocker", "region": "program-document code / retrieved-code monospace labels", "finding": "Native pixel crop x=590:908,y=456:480 gives source 287x18 px, SVG 154x18 px, PPTX 225x17 px. The SVG and PPTX differ materially from source and each other.", "repair": "Use a source-matched monospaced family and renderer-consistent metrics; verify native pixel bounds before acceptance. Preserve native text and all geometry."}],
+  "structuralEvidence": {"svgTextElements": 69, "svgRasterElements": 0, "svgGradients": 0, "pptxShapes": 159, "pptxConnectors": 32, "pptxGroups": 56, "pptxTextRuns": 74, "pptxPictures": 0, "pptxBlips": 0, "pptxMediaPayloads": 0, "pptxGradientFills": 0},
+  "limitations": ["LibreOffice PDF render, not Microsoft PowerPoint", "No scientific-source validity or original-font-provenance certification", "Structural counts are not a fidelity score"],
+  "sha256": {"reference": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f", "inventory": "42583ff7ff3b1755d34c9cc4fcdb22131129ceb4d4fc15d762663ec15acf2afb", "svg": "7cefaa64786817fab7738837da828f4bbfe8b9a7ee39bf3bedc3398388880f6e", "svgPreview": "81a2dba56c6a8ceb20454c64195fc032b5dcc348af5c09158efd79e5072f2885", "pptx": "69fa6493fec1902d6b9d0d9acd677ae3032ccada8855d49fcf2871ac9d6b35e4", "pptxRender": "7bd658a090e6bc84743db850f0d3b80c72cf4b295413de34c5b5cbdc04a0853f", "objectMap": "c7b613e7185f7df33440d647099e5341f93fd03a79ac28270b99d301b7001595", "nativeAudit": "faf06075a727a2e5d4f5c0ddf7a103e546847b7ef7c13370217e92b5f4be9471"}
+}

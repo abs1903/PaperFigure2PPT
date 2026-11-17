@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-17",
+  "skillChanged": [
+    "paperfigure/SKILL.md",
+    "paperfigure/references/paper-narrative.md",
+    "paperfigure/references/image-reference.md",
+    "paperfigure/references/design-workflow.md",
+    "paperfigure/references/visual-review.md"
+  ],
+  "case": "Agentless paper-v1 narrative-first redesign",
+  "figureHidden": false,
+  "sourceNarrativeReviews": {
+    "revise": 2,
+    "accept": 1
+  },
+  "imageReviews": {
+    "revise": 3,
+    "accept": 1
+  },
+  "actualImageCalls": {
+    "generate": 1,
+    "attachedEdit": 3
+  },
+  "selectedImage": "selected-reference.png",
+  "selectedImageSHA256": "81bea89ab5a2cfd8437c5ed5e194f66a81fa27852b98f372d9755e8e63ad6bcf",
+  "sourceNarrativeVerdict": "accept",
+  "rasterVerdict": "accept",
+  "authorComparison": {
+    "path": "author-comparison.json",
+    "sha256": "473d7abfccc62ea236ea10b4e47c615c10309fc9a14374fe1cb85198e91ab6b4",
+    "status": "qualitative-comparison-complete",
+    "conclusion": "V4 is clearer for first-pass sequence and role distinction; author is richer in concrete prompt/code grounding. Neither is universally superior."
+  },
+  "verification": {
+    "skillFormat": "pass (quick_validate.py)",
+    "specAndBriefCoverage": "pass",
+    "promptCompilation": "pass",
+    "reviewedHashReferences": 59,
+    "localLinks": 104,
+    "scopedWhitespaceCheck": "pass",
+    "historicalInputsUnchanged": true
+  },
+  "nativeOfficeDeliveryReady": false,
+  "limitations": [
+    "Author-informed, not figure-hidden",
+    "Raster design only; no SVG/PPTX, native sample or Office render",
+    "One case, qualitative agent review, no reader study or performance measurement",
+    "Author retains richer concrete issue/code grounding; new card system remains somewhat generic"
+  ],
+  "currentUserVerdict": "revise",
+  "historicalAgentRasterVerdict": "accept",
+  "userFeedback": "user-feedback.json",
+  "currentImageStagePassed": false,
+  "readyForNativePlanning": false,
+  "followUp": "../2026-11-17-agentless-contribution/REPORT.md"
+}

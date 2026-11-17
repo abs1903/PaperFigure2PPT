@@ -1,0 +1,41 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "voyager_image_stage_review",
+    "contextIsolation": "V3/V4 pixels, raw pinned sources/current source audits, amended appearance brief, current prompt, and immutable V4 lineage were inspected directly. Successful generation and prompt wording were not treated as review evidence."
+  },
+  "stage": "isolated-raster-review",
+  "verdict": "accept",
+  "acceptanceScope": "V4 image-design reference and suitability for a small native-feasibility sample only; not SVG/PPTX/PDF/Office delivery.",
+  "publicationWidthIn": 7,
+  "artifacts": {
+    "parentImage": {"path": "candidate-v3.png", "sha256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda"},
+    "image": {"path": "candidate-v4.png", "sha256": "4e5729fc2ff80c88b54680500a47ab618541cd61a0ce5295494265eb05604e70", "pixelWidth": 1860, "pixelHeight": 845},
+    "spec": {"path": "spec.json", "sha256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543"},
+    "appearanceBrief": {"path": "design-brief-v4.json", "sha256": "6dd89bdeb872fceb3a7f4ba3fa276d1c7914d6c021a0ece0a521923a9583185e"},
+    "prompt": {"path": "prompt-v4.txt", "sha256": "701592bfb2a5079cdfe8a14a321ff0093ae7f66b060c4bc338fc93446c34ce06"},
+    "generationRecord": {"path": "generation-record-v4.json", "sha256": "e57d179d2ff1f7cb82ea04a8c0c41062a2a38e5ca2254d4e1d5de5e48e1c2217", "round": 4, "parentImageSHA256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda"},
+    "sourceAudits": [
+      {"path": "source-audit.md", "sha256": "dc538a8e8496725dd2f60081ebf2a3939eb6b5e4a109b7aa31387263fe3f14cb"},
+      {"path": "source-audit-v2.md", "sha256": "acad436f5d0cdea3b88b6b1e59a777acb6b043abd838bffcfd7ccaf24d388acf"}
+    ]
+  },
+  "checks": {
+    "semanticFidelity": "pass",
+    "relationDirectionality": "pass",
+    "sourceBoundException": "pass",
+    "composition": "pass",
+    "typographyAtSevenInches": "pass",
+    "whiteFieldAppearanceAmendment": "pass",
+    "semanticHeadingInk": "pass",
+    "flatNativeModality": "pass",
+    "noTitleOrFooter": "pass",
+    "nativeFeasibilityReference": "pass",
+    "nativeArtifactOrOfficeRender": "unverified"
+  },
+  "nonblockingDeviations": [
+    {"class": "source-code excerpt marker", "region": "code sheet", "finding": "`...` is a conventional local excerpt marker outside the literal label whitelist, not an invented scientific mechanism."},
+    {"class": "deferred native layout refinement", "region": "lower condition/return band", "finding": "Compact but readable at 7 inches; reassess only during native reconstruction."}
+  ],
+  "limitations": ["No native feasibility sample exists yet.", "No SVG/PPTX/PDF/Office artifact or parity review was performed."]
+}

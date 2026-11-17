@@ -1,0 +1,32 @@
+{
+  "referenceSHA256": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f",
+  "svgSHA256": "4aad6e405f4a0b2312b2f108ac3a81bc59ac74c9bef37a87bb39ab0af2f21869",
+  "pptxSHA256": "0e16481ac1bac89d02228957e90898da8322656784385ac1c6a4a10d8b9aee63",
+  "checks": {
+    "wellFormedXML": true,
+    "uniqueNativeObjectIDs": true,
+    "allNativeObjectsMapped": true,
+    "textContentPreserved": true,
+    "semanticOwnersPreserved": true,
+    "svgNativeInventory": true,
+    "sourceDimensionsPreserved": true,
+    "noRasterElements": true,
+    "noGradients": true
+  },
+  "counts": {
+    "groups": 56,
+    "textBoxes": 69,
+    "connectors": 32,
+    "shapes": 90,
+    "pictures": 0
+  },
+  "editability": {
+    "nativeObjects": 191,
+    "nonGroupObjects": 191,
+    "ratio": 1,
+    "definition": "Native editable DrawingML objects / all non-group slide objects; path editability does not imply convenient fine-grained editing."
+  },
+  "svgPptxNormalizedRGBMAE": 0.02590173090396576,
+  "visualAcceptance": "requires independent source comparison",
+  "renderEngine": "LibreOffice headless -> PDF -> pdftoppm; not Microsoft PowerPoint"
+}

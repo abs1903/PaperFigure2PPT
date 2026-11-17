@@ -1,0 +1,22 @@
+{
+  "paper": {
+    "background": "#FFFFFF", "ink": "#172B42", "muted": "#526477", "line": "#65788B",
+    "roles": {
+      "input": ["#F0F4F8", "#6B8299"], "output": ["#EAF4ED", "#427855"],
+      "encoder": ["#EAF0FA", "#5579B0"], "core": ["#E9EDF8", "#657BB0"],
+      "proposed": ["#E2F3F0", "#237F78"], "memory": ["#F1ECF8", "#8568AA"],
+      "tool": ["#FFF2DF", "#AA7933"], "environment": ["#EDF3EE", "#5C8167"],
+      "loss": ["#FBECE8", "#B57362"], "neutral": ["#F1F4F7", "#788A9C"]
+    }
+  },
+  "mono": {
+    "background": "#FFFFFF", "ink": "#17212C", "muted": "#505B66", "line": "#59636E",
+    "roles": {
+      "input": ["#F4F4F4", "#737373"], "output": ["#EEEEEE", "#555555"],
+      "encoder": ["#EEEEEE", "#666666"], "core": ["#E7E7E7", "#505050"],
+      "proposed": ["#E0E0E0", "#222222"], "memory": ["#F0F0F0", "#606060"],
+      "tool": ["#F1F1F1", "#666666"], "environment": ["#F1F1F1", "#666666"],
+      "loss": ["#EEEEEE", "#666666"], "neutral": ["#F4F4F4", "#777777"]
+    }
+  }
+}

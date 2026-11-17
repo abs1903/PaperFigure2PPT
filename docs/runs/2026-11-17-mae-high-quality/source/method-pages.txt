@@ -1,0 +1,135 @@
+
+[PDF page 3]
+                                                                         Self-supervised learning approaches have seen significant
+                                                                         interest in computer vision, often focusing on different pre-
+                                                                         text tasks for pre-training [15, 61, 42, 70, 45, 17]. Re-
+                                                                         cently, contrastive learning [3, 22] has been popular, e.g.,
+                                                                         [62, 43, 23, 7], which models image similarity and dis-
+                                                                         similarity (or only similarity [21, 8]) between two or more
+                                                                         views. Contrastive and related methods strongly depend on
+                                                                         data augmentation [7, 21, 8]. Autoencoding pursues a con-
+                                                                         ceptually different direction, and it exhibits different behav-
+                                                                         iors as we will present.
+
+
+                                                                         3. Approach
+                                                                            Our masked autoencoder (MAE) is a simple autoencod-
+ original      mask 75%           mask 85%           mask 95%            ing approach that reconstructs the original signal given its
+Figure 4. Reconstructions of ImageNet validation images using            partial observation. Like all autoencoders, our approach
+an MAE pre-trained with a masking ratio of 75% but applied on            has an encoder that maps the observed signal to a latent
+inputs with higher masking ratios. The predictions differ plausibly      representation, and a decoder that reconstructs the origi-
+from the original images, showing that the method can generalize.        nal signal from the latent representation. Unlike classical
+                                                                         autoencoders, we adopt an asymmetric design that allows
+                                                                         the encoder to operate only on the partial, observed signal
+2. Related Work                                                          (without mask tokens) and a lightweight decoder that re-
+                                                                         constructs the full signal from the latent representation and
+Masked language modeling and its autoregressive coun-                    mask tokens. Figure 1 illustrates the idea, introduced next.
+terparts, e.g., BERT [14] and GPT [47, 48, 4], are highly                Masking. Following ViT [16], we divide an image into reg-
+successful methods for pre-training in NLP. These methods                ular non-overlapping patches. Then we sample a subset of
+hold out a portion of the input sequence and train models                patches and mask (i.e., remove) the remaining ones. Our
+to predict the missing content. These methods have been                  sampling strategy is straightforward: we sample random
+shown to scale excellently [4] and a large abundance of ev-              patches without replacement, following a uniform distribu-
+idence indicates that these pre-trained representations gen-             tion. We simply refer to this as “random sampling”.
+eralize well to various downstream tasks.                                    Random sampling with a high masking ratio (i.e., the ra-
+Autoencoding is a classical method for learning representa-              tio of removed patches) largely eliminates redundancy, thus
+tions. It has an encoder that maps an input to a latent repre-           creating a task that cannot be easily solved by extrapolation
+sentation and a decoder that reconstructs the input. For ex-             from visible neighboring patches (see Figures 2 – 4). The
+ample, PCA and k-means are autoencoders [29]. Denoising                  uniform distribution prevents a potential center bias (i.e.,
+autoencoders (DAE) [58] are a class of autoencoders that                 more masked patches near the image center). Finally, the
+corrupt an input signal and learn to reconstruct the origi-              highly sparse input creates an opportunity for designing an
+nal, uncorrupted signal. A series of methods can be thought              efficient encoder, introduced next.
+of as a generalized DAE under different corruptions, e.g.,               MAE encoder. Our encoder is a ViT [16] but applied only
+masking pixels [59, 46, 6] or removing color channels [70].              on visible, unmasked patches. Just as in a standard ViT, our
+Our MAE is a form of denoising autoencoding, but different               encoder embeds patches by a linear projection with added
+from the classical DAE in numerous ways.                                 positional embeddings, and then processes the resulting set
+Masked image encoding methods learn representations                      via a series of Transformer blocks. However, our encoder
+from images corrupted by masking. The pioneering work                    only operates on a small subset (e.g., 25%) of the full set.
+of [59] presents masking as a noise type in DAE. Context                 Masked patches are removed; no mask tokens are used.
+Encoder [46] inpaints large missing regions using convolu-               This allows us to train very large encoders with only a frac-
+tional networks. Motivated by the success in NLP, related                tion of compute and memory. The full set is handled by a
+recent methods [6, 16, 2] are based on Transformers [57].                lightweight decoder, described next.
+iGPT [6] operates on sequences of pixels and predicts un-                MAE decoder. The input to the MAE decoder is the full
+known pixels. The ViT paper [16] studies masked patch                    set of tokens consisting of (i) encoded visible patches, and
+prediction for self-supervised learning. Most recently, BEiT             (ii) mask tokens. See Figure 1. Each mask token [14] is a
+[2] proposes to predict discrete tokens [44, 50].                        shared, learned vector that indicates the presence of a miss-
+
+
+
+                                                                      16002
+
+[PDF page 4]
+                                                                                            fine-tuning                 84.9    85.0   84.9 84.9
+                                                                                    85                           84.7
+                                                                                                                                                   84.5
+ing patch to be predicted. We add positional embeddings to
+all tokens in this full set; without this, mask tokens would                        84
+                                                                                            83.4          83.4
+                                                                                     83.2
+have no information about their location in the image. The                          83
+                                                                                                                                                          83.0
+                                                                                      10    20            30     40      50      60    70          80     90
+decoder has another series of Transformer blocks.
+                                                                                                                 masking ratio (%)
+   The MAE decoder is only used during pre-training to                                      linear probing              69.9
+                                                                                                                                71.8   73.2 73.5 71.8
+                                                                                    70                           67.0
+perform the image reconstruction task (only the encoder                                                                                                   66.1
+                                                                                                          61.7
+is used to produce image representations for recognition).                          60      58.9
+                                                                                     54.6
+Therefore, the decoder architecture can be flexibly designed                        50
+in a manner that is independent of the encoder design. We                             10    20            30     40      50      60    70          80     90
+                                                                                                                 masking ratio (%)
+experiment with very small decoders, narrower and shal-
+lower than the encoder. For example, our default decoder                       Figure 5. Masking ratio. A high masking ratio (75%) works well
+                                                                               for both fine-tuning (top) and linear probing (bottom). The y-axes
+has <10% computation per token vs. the encoder. With this
+                                                                               are ImageNet-1K validation accuracy (%) in all plots in this paper.
+asymmetrical design, the full set of tokens are only pro-
+cessed by the lightweight decoder, which significantly re-
+duces pre-training time.                                                       4. ImageNet Experiments
+Reconstruction target. Our MAE reconstructs the input                             We do self-supervised pre-training on the ImageNet-1K
+by predicting the pixel values for each masked patch. Each                     (IN1K) [13] training set. Then we do supervised training to
+element in the decoder’s output is a vector of pixel values                    evaluate the representations with (i) end-to-end fine-tuning
+representing a patch. The last layer of the decoder is a lin-                  or (ii) linear probing. We report top-1 validation accuracy
+ear projection whose number of output channels equals the                      of a single 224×224 crop. Details are in Appendix A.1.
+number of pixel values in a patch. The decoder’s output is                     Baseline: ViT-Large. We use ViT-Large (ViT-L/16) [16]
+reshaped to form a reconstructed image. Our loss function                      as the backbone in our ablation study. ViT-L is very big (an
+computes the mean squared error (MSE) between the recon-                       order of magnitude bigger than ResNet-50 [25]) and tends
+structed and original images in the pixel space. We compute                    to overfit. The following is a comparison between ViT-L
+the loss only on masked patches, similar to BERT [14].1                        trained from scratch vs. fine-tuned from our baseline MAE:
+   We also study a variant whose reconstruction target is                           scratch, original [16]        scratch, our impl.    baseline MAE
+the normalized pixel values of each masked patch. Specif-                                    76.5                        82.5                84.9
+ically, we compute the mean and standard deviation of all                      We note that it is nontrivial to train supervised ViT-L from
+pixels in a patch and use them to normalize this patch. Us-                    scratch and a good recipe with strong regularization is
+ing normalized pixels as the reconstruction target improves                    needed (82.5%, see Appendix A.2). Even so, our MAE pre-
+representation quality in our experiments.                                     training contributes a big improvement. Here fine-tuning is
+                                                                               only for 50 epochs (vs. 200 from scratch), implying that the
+Simple implementation. Our MAE pre-training can be im-
+                                                                               fine-tuning accuracy heavily depends on pre-training.
+plemented efficiently, and importantly, does not require any
+specialized sparse operations. First we generate a token for                   4.1. Main Properties
+every input patch (by linear projection with an added po-
+sitional embedding). Next we randomly shuffle the list of                         We ablate our MAE using the default settings in Table 1
+tokens and remove the last portion of the list, based on the                   (see caption). Several intriguing properties are observed.
+masking ratio. This process produces a small subset of to-                     Masking ratio. Figure 5 shows the influence of the mask-
+kens for the encoder and is equivalent to sampling patches                     ing ratio. The optimal ratios are surprisingly high. The ra-
+without replacement. After encoding, we append a list of                       tio of 75% is good for both linear probing and fine-tuning.
+mask tokens to the list of encoded patches, and unshuffle                      This behavior is in contrast with BERT [14], whose typical
+this full list (inverting the random shuffle operation) to align               masking ratio is 15%. Our masking ratios are also much
+all tokens with their targets. The decoder is applied to this                  higher than those in related works [6, 16, 2] in computer
+full list (with positional embeddings added). As noted, no                     vision (20% to 50%).
+sparse operations are needed. This simple implementation                          The model infers missing patches to produce different,
+introduces negligible overhead as the shuffling and unshuf-                    yet plausible, outputs (Figure 4). It makes sense of the
+fling operations are fast.                                                     gestalt of objects and scenes, which cannot be simply com-
+                                                                               pleted by extending lines or textures. We hypothesize that
+   1 Computing the loss only on masked patches differs from traditional
+                                                                               this reasoning-like behavior is linked to the learning of use-
+denoising autoencoders [58] that compute the loss on all pixels. This
+                                                                               ful representations.
+choice is purely result-driven: computing the loss on all pixels leads to         Figure 5 also shows that linear probing and fine-tuning
+a slight decrease in accuracy (e.g., ∼0.5%).                                   results follow different trends. For linear probing, the ac-
+
+
+
+                                                                            16003

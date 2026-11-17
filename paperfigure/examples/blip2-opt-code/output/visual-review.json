@@ -1,0 +1,38 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/blip2_independent_audit"
+  },
+  "verdict": "revise",
+  "checks": {
+    "referenceComparison": "revise",
+    "semanticFidelity": "revise",
+    "composition": "pass",
+    "modalityIdentity": "pass",
+    "typography": "pass",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "revise"
+  },
+  "reference": {
+    "path": "../design-reference.png",
+    "sha256": "b2fc45bb52a0da9a23fff2a95653525557ac763b85a0be7d45ac479e4eb1bc51"
+  },
+  "artifacts": {
+    "spec.json": "ce445a31184aad616a1debc20e4127117cebeabf5b08dff0b9825a3d7d2748d4",
+    "figure.svg": "4c3abb355117097c5edf28e51f3c8b62673de1344c58a20fe4666af0a92de530",
+    "figure.pptx": "e39dee68ca428b0afd9db53c8e933d72898802acc0272c57546052bdef406350",
+    "figure.pdf": "3c7dada4e6997bd69d98bde3e93db1ff3fd7f4d4f07eeec015c3bc1d1560198b",
+    "figure.png": "937cd1277e3eeea5162abbd95798a1990d3f8ebbc692408c09bc6ef40ec09798",
+    "rendered-pptx/figure.png": "a837be5c8e1510fe47cf41365f08ece9dd05719571e44e27fb0a5afd09c16daa",
+    "rendered-pdf/figure.png": "7605745de835dfe3ee292bccda0214e9845b738c312ae3a219806ff892814d9f"
+  },
+  "notes": [
+    "Reviewed design-reference.png, native PNG, independently rendered PPTX PNG, and rendered PDF PNG directly; no author paper figure was inspected.",
+    "The visual-prefix and prompt-embedding edges terminate at the outer OPT container, not the ordered Visual (32) | Prompt strip. This makes the code-level [visual prefix; prompt embeddings] concatenation ambiguous and requires revision.",
+    "Magnified inspection of the frozen rendered-PDF image found the learned-query connector's downward arrowhead malformed/left-facing at the Q-Former boundary; PDF export requires a marker-orientation correction and re-render.",
+    "The reference-derived composition, modality encoding, type hierarchy, inference-only phase, and no-title/no-footer constraint otherwise pass.",
+    "This is an independent agent assessment, not user acceptance or a top-venue certification."
+  ]
+}

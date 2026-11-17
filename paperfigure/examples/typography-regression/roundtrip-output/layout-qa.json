@@ -1,0 +1,130 @@
+{
+  "qa": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "exceptions": [],
+    "metrics": {
+      "texts": 4,
+      "edges": 0,
+      "collisions": 0
+    },
+    "topologyHash": "0d129631584f76a49fe79f7ad4c10b50f2b704e252d79f06f22ddb23a88a1f64",
+    "visualAcceptance": "unreviewed",
+    "limits": [
+      "Text bounds come from the named actual rendering engine; fallback fonts may differ elsewhere.",
+      "Curves are sampled by the SVG measurement tool; unmeasured curves cannot be accepted.",
+      "Crossings can be intentional; each exception requires a specific source-based reason."
+    ]
+  },
+  "measured": {
+    "occlusions": [],
+    "engine": "Chromium actualBoundingBox glyph ink + SVG character positions/getCTM; DOM line boxes retained separately; curve samples <=1.5px",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "texts": {
+      "text-0": {
+        "bbox": {
+          "x": 185.07470703125,
+          "y": 67.10693359375,
+          "w": 229.8505859375,
+          "h": 20.7861328125
+        },
+        "layoutBBox": {
+          "x": 184.47412109375,
+          "y": 60.43896484375,
+          "w": 230.78125,
+          "h": 33
+        },
+        "naturalAdvance": 230.771484375,
+        "positionedAdvance": 230.7587890625,
+        "text": "Method Overview",
+        "paintIndex": 2,
+        "fontFamily": "\"Times New Roman\"",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-1": {
+        "bbox": {
+          "x": 167.3955078125,
+          "y": 201.6357421875,
+          "w": 265.208984375,
+          "h": 31.728515625
+        },
+        "layoutBBox": {
+          "x": 165.6962890625,
+          "y": 192.1025390625,
+          "w": 267.890625,
+          "h": 42
+        },
+        "naturalAdvance": 267.8759765625,
+        "positionedAdvance": 267.875,
+        "text": "Thought and action",
+        "paintIndex": 4,
+        "fontFamily": "\"Comic Sans MS\"",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-2": {
+        "bbox": {
+          "x": 166.56494140625,
+          "y": 343.0859375,
+          "w": 266.8701171875,
+          "h": 28.828125
+        },
+        "layoutBBox": {
+          "x": 164.96826171875,
+          "y": 335.87890625,
+          "w": 270.84375,
+          "h": 36.03515625
+        },
+        "naturalAdvance": 270.8349609375,
+        "positionedAdvance": 270.8251953125,
+        "text": "Skill description",
+        "paintIndex": 6,
+        "fontFamily": "Verdana",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-3": {
+        "bbox": {
+          "x": 210.62255859375,
+          "y": 483.59130859375,
+          "w": 178.7548828125,
+          "h": 27.8173828125
+        },
+        "layoutBBox": {
+          "x": 207.82470703125,
+          "y": 478.44677734375,
+          "w": 181.796875,
+          "h": 33
+        },
+        "naturalAdvance": 181.787109375,
+        "positionedAdvance": 181.7724609375,
+        "text": "Input / Output",
+        "paintIndex": 8,
+        "fontFamily": "Arial",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    },
+    "edges": {},
+    "unaccountedNativeTexts": [],
+    "nonNative": []
+  }
+}

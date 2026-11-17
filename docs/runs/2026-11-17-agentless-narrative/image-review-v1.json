@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "reviewType": "independent-raster-image-review",
+  "reviewer": {"kind": "independent-agent", "name": "/root/agentless_narrative_review", "isolation": {"method": "fork_turns:none", "notOpened": ["author diagram", "previous generated image", "previous image reports"]}},
+  "verdict": "revise",
+  "firstReading": "An issue report and code repository are narrowed through tree, files, elements, and edit locations; repair then generates patches, filters/ranks them, and returns one selected patch.",
+  "inspectedImages": [
+    {"path": "candidate-v1.png", "sha256": "c444f272b6c0c73d4f847c67b7786d1200253268c779f3f25a91182e01168101", "sizePx": [1684,934], "view": "native"},
+    {"path": "candidate-v1-paper-width.png", "sha256": "747496e068da7e3c4e9006c62177ff00407d3f021c0ec86d2e9e8d91d977c5dd", "sizePx": [672,373], "view": "7in-at-96dpi diagnostic"}
+  ],
+  "checks": {
+    "scientificFidelity": "fail",
+    "informationSelectionNarrative": "fail",
+    "modelDeterministicRoles": "pass",
+    "sourceContextTransformations": "fail",
+    "readingOrder": "pass",
+    "finalWidthTypography": "pass",
+    "flatSemanticPalette": "fail",
+    "searchReplaceFormat": "pass",
+    "nativeFeasibilityVisualInference": "pass",
+    "authorFigureComparison": "unverified",
+    "nativeOfficeEditabilityDelivery": "unverified"
+  },
+  "findings": [
+    {"id":"R1","severity":"blocking","region":"Step 4 Context windows","evidence":"Red-minus and green-plus replacement lines appear before Step 5 patch generation.","effect":"Collapses localization into repair and depicts an unsupported pre-generation patch.","requiredCorrection":"Show unchanged surrounding source and a neutral/yellow selected edit interval; reserve +/- diffs for Steps 5 and 7."},
+    {"id":"R2","severity":"non-blocking","region":"phase bands and cards","evidence":"Soft shadows and shaded/gradient-looking fills are visible.","effect":"Conflicts with the flat/no-shadow brief and adds native reconstruction complexity.","requiredCorrection":"Flatten fills/shadows without changing scientific topology."}
+  ],
+  "artifacts": {
+    "generation-record-v1.json":"1d7297e209ca953b3d661532eae7d3b9880a592620490402e8e59ce7adde4625",
+    "spec.json":"cdef0cf5d66b9709bc6e22e9f7564c5995041fff27ec8491d0e68e438344fa2e",
+    "narrative-plan.json":"1c878fe7157ed7473c968853e0edd1196e7f339817d369d403baf33441477378",
+    "design-brief.json":"985839e929f82bb333d48a2845fefdc07f9af77e9f47326badf4ec45d6a5bca5",
+    "source-narrative-review-v3.json":"86a51e7455efde8cb849ab8a5613db5d21e6c925c7c16ed632da46a766d02199"
+  }
+}

@@ -1,0 +1,57 @@
+Program generation
+
+Automatic
+curriculum
+
+craftWoodenPickaxe(bot)
+if (craftingTableCount === 0) {
+await craftCraftingTable(bot);
+}
+
+Latest observations
+Completed / failed tasks
+
+Example task
+
+Refine until success or retry cap
+Craft wooden pickaxe
+Execute
+
+Runtime feedback
+State context
+Events
+
+Exploration state
+Latest events
+Completed / failed tasks
+
+Critique / refine
+Events
+
+Minecraft
+
+Skill library
+
+Action LM
+
+Execute JS
+All saved code
++ primitives
+Task outcome
+
+Critic
+Success + critique
+
+Top-k code
+Query
+
+mineWoodLog
+Mine a wood log
+craftCraftingTable
+Craft a crafting table
+craftWoodenPickaxe
+Craft a wooden pickaxe
+Initial: context
+Refine: + filtered chat
+
+Eligible success

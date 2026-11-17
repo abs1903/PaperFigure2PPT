@@ -1,0 +1,607 @@
+{
+  "version": "1.0",
+  "title": "Reflexion: textual feedback across repeated attempts",
+  "subtitle": "ReactReflectAgent with REFLEXION strategy, same-question HotpotQA retries; exact-match gate, not an LLM evaluator.",
+  "sources": [
+    {
+      "id": "agent",
+      "kind": "code",
+      "locator": "https://github.com/noahshinn/reflexion/blob/218cf0ef1df84b05ce379dd4a8e47f17766733a0/hotpotqa_runs/agents.py",
+      "text": "import re, string, os\nfrom typing import List, Union, Literal\nfrom enum import Enum\nimport tiktoken\nfrom langchain import OpenAI, Wikipedia\nfrom langchain.llms.base import BaseLLM\nfrom langchain.chat_models import ChatOpenAI\nfrom langchain.chat_models.base import BaseChatModel\nfrom langchain.schema import (\n    SystemMessage,\n    HumanMessage,\n    AIMessage,\n)\nfrom langchain.agents.react.base import DocstoreExplorer\nfrom langchain.docstore.base import Docstore\nfrom langchain.prompts import PromptTemplate\nfrom llm import AnyOpenAILLM\nfrom prompts import reflect_prompt, react_agent_prompt, react_reflect_agent_prompt, REFLECTION_HEADER, LAST_TRIAL_HEADER, REFLECTION_AFTER_LAST_TRIAL_HEADER\nfrom prompts import cot_agent_prompt, cot_reflect_agent_prompt, cot_reflect_prompt, COT_INSTRUCTION, COT_REFLECT_INSTRUCTION\nfrom fewshots import WEBTHINK_SIMPLE6, REFLECTIONS, COT, COT_REFLECT\n\n\nclass ReflexionStrategy(Enum):\n    \"\"\"\n    NONE: No reflection\n    LAST_ATTEMPT: Use last reasoning trace in context \n    REFLEXION: Apply reflexion to the next reasoning trace \n    LAST_ATTEMPT_AND_REFLEXION: Use last reasoning trace in context and apply reflexion to the next reasoning trace \n    \"\"\"\n    NONE = 'base'\n    LAST_ATTEMPT = 'last_trial' \n    REFLEXION = 'reflexion'\n    LAST_ATTEMPT_AND_REFLEXION = 'last_trial_and_reflexion'\n\n\nclass CoTAgent:\n    def __init__(self,\n                    question: str,\n                    context: str,\n                    key: str,\n                    agent_prompt: PromptTemplate = cot_reflect_agent_prompt,\n                    reflect_prompt: PromptTemplate = cot_reflect_prompt,\n                    cot_examples: str = COT,\n                    reflect_examples: str = COT_REFLECT,\n                    self_reflect_llm: AnyOpenAILLM = AnyOpenAILLM(\n                                            temperature=0,\n                                            max_tokens=250,\n                                            model_name=\"gpt-3.5-turbo\",\n                                            model_kwargs={\"stop\": \"\\n\"},\n                                            openai_api_key=os.environ['OPENAI_API_KEY']),\n                    action_llm: AnyOpenAILLM = AnyOpenAILLM(\n                                            temperature=0,\n                                            max_tokens=250,\n                                            model_name=\"gpt-3.5-turbo\",\n                                            model_kwargs={\"stop\": \"\\n\"},\n                                            openai_api_key=os.environ['OPENAI_API_KEY']),\n                    ) -> None:\n        self.question = question\n        self.context = context\n        self.key = key\n        self.agent_prompt = agent_prompt\n        self.reflect_prompt = reflect_prompt\n        self.cot_examples = cot_examples \n        self.reflect_examples = reflect_examples\n        self.self_reflect_llm = self_reflect_llm\n        self.action_llm = action_llm\n        self.reflections: List[str] = []\n        self.reflections_str = ''\n        self.answer = ''\n        self.step_n: int = 0\n        self.reset()\n\n    def run(self,\n            reflexion_strategy: ReflexionStrategy = ReflexionStrategy.REFLEXION) -> None:\n        if self.step_n > 0 and not self.is_correct() and reflexion_strategy != ReflexionStrategy.NONE:\n            self.reflect(reflexion_strategy)\n        self.reset()\n        self.step()\n        self.step_n += 1\n\n    def step(self) -> None:\n        # Think\n        self.scratchpad += f'\\nThought:'\n        self.scratchpad += ' ' + self.prompt_agent()\n        print(self.scratchpad.split('\\n')[-1])\n\n        # Act\n        self.scratchpad += f'\\nAction:'\n        action = self.prompt_agent()\n        self.scratchpad += ' ' + action\n        action_type, argument = parse_action(action)\n        print(self.scratchpad.split('\\n')[-1])  \n\n        self.scratchpad += f'\\nObservation: '\n        if action_type == 'Finish':\n            self.answer = argument\n            if self.is_correct():\n                self.scratchpad += 'Answer is CORRECT'\n            else: \n                self.scratchpad += 'Answer is INCORRECT'\n            self.finished = True\n            return\n        else:\n            print('Invalid action type, please try again.')\n    \n    def reflect(self,\n                strategy: ReflexionStrategy) -> None:\n        print('Running Reflexion strategy...')\n        if strategy == ReflexionStrategy.LAST_ATTEMPT:\n            self.reflections = [self.scratchpad]\n            self.reflections_str = format_last_attempt(self.question , self.reflections[0])\n        elif strategy == ReflexionStrategy.REFLEXION:\n            self.reflections += [self.prompt_reflection()]\n            self.reflections_str = format_reflections(self.reflections)\n        elif strategy == ReflexionStrategy.LAST_ATTEMPT_AND_REFLEXION:\n            self.reflections_str = format_last_attempt(self.question , self.scratchpad)\n            self.reflections = [self.prompt_reflection()]\n            self.reflections_str += '\\n'+ format_reflections(self.reflections, header = REFLECTION_AFTER_LAST_TRIAL_HEADER)\n        else:\n            raise NotImplementedError(f'Unknown reflection strategy: {strategy}')\n        print(self.reflections_str)\n    \n    def prompt_reflection(self) -> str:\n        return format_step(self.self_reflect_llm(self._build_reflection_prompt()))\n\n    def reset(self) -> None:\n        \n        self.scratchpad: str = ''\n        self.finished = False\n\n    def prompt_agent(self) -> str:\n        return format_step(self.action_llm(self._build_agent_prompt()))\n    \n    def _build_agent_prompt(self) -> str:\n        return self.agent_prompt.format(\n                            examples = self.cot_examples,\n                            reflections = self.reflections_str,\n                            context = self.context,\n                            question = self.question,\n                            scratchpad = self.scratchpad)\n\n    def _build_reflection_prompt(self) -> str:\n        return self.reflect_prompt.format(\n                            examples = self.reflect_examples,\n                            context = self.context,\n                            question = self.question,\n                            scratchpad = self.scratchpad)\n \n    def is_finished(self) -> bool:\n        return self.finished\n\n    def is_correct(self) -> bool:\n        return EM(self.answer, self.key)   \n\nclass ReactAgent:\n    def __init__(self,\n                 question: str,\n                 key: str,\n                 max_steps: int = 6,\n                 agent_prompt: PromptTemplate = react_agent_prompt,\n                 docstore: Docstore = Wikipedia(),\n                 react_llm: AnyOpenAILLM = AnyOpenAILLM(\n                                            temperature=0,\n                                            max_tokens=100,\n                                            model_name=\"gpt-3.5-turbo\",\n                                            model_kwargs={\"stop\": \"\\n\"},\n                                            openai_api_key=os.environ['OPENAI_API_KEY']),\n                 ) -> None:\n        \n        self.question = question\n        self.answer = ''\n        self.key = key\n        self.max_steps = max_steps\n        self.agent_prompt = agent_prompt\n        self.react_examples = WEBTHINK_SIMPLE6\n\n        self.docstore = DocstoreExplorer(docstore) # Search, Lookup\n        self.llm = react_llm\n        \n        self.enc = tiktoken.encoding_for_model(\"text-davinci-003\")\n\n        self.__reset_agent()\n\n    def run(self, reset = True) -> None:\n        if reset:\n            self.__reset_agent()\n        \n        while not self.is_halted() and not self.is_finished():\n            self.step()\n    \n    def step(self) -> None:\n        # Think\n        self.scratchpad += f'\\nThought {self.step_n}:'\n        self.scratchpad += ' ' + self.prompt_agent()\n        print(self.scratchpad.split('\\n')[-1])\n\n        # Act\n        self.scratchpad += f'\\nAction {self.step_n}:'\n        action = self.prompt_agent()\n        self.scratchpad += ' ' + action\n        action_type, argument = parse_action(action)\n        print(self.scratchpad.split('\\n')[-1])\n\n        # Observe\n        self.scratchpad += f'\\nObservation {self.step_n}: '\n        \n        if action_type == 'Finish':\n            self.answer = argument\n            if self.is_correct():\n                self.scratchpad += 'Answer is CORRECT'\n            else: \n                self.scratchpad += 'Answer is INCORRECT'\n            self.finished = True\n            self.step_n += 1\n            return\n\n        if action_type == 'Search':\n            try:\n                self.scratchpad += format_step(self.docstore.search(argument))\n            except Exception as e:\n                print(e)\n                self.scratchpad += f'Could not find that page, please try again.'\n            \n        elif action_type == 'Lookup':\n            try:\n                self.scratchpad += format_step(self.docstore.lookup(argument))\n            except ValueError:\n                self.scratchpad += f'The last page Searched was not found, so you cannot Lookup a keyword in it. Please try one of the similar pages given.'\n\n        else:\n            self.scratchpad += 'Invalid Action. Valid Actions are Lookup[<topic>] Search[<topic>] and Finish[<answer>].'\n\n        print(self.scratchpad.split('\\n')[-1])\n\n        self.step_n += 1\n\n    def prompt_agent(self) -> str:\n        return format_step(self.llm(self._build_agent_prompt()))\n    \n    def _build_agent_prompt(self) -> str:\n        return self.agent_prompt.format(\n                            examples = self.react_examples,\n                            question = self.question,\n                            scratchpad = self.scratchpad)\n    \n    def is_finished(self) -> bool:\n        return self.finished\n\n    def is_correct(self) -> bool:\n        return EM(self.answer, self.key)\n\n    def is_halted(self) -> bool:\n        return ((self.step_n > self.max_steps) or (len(self.enc.encode(self._build_agent_prompt())) > 3896)) and not self.finished\n\n    def __reset_agent(self) -> None:\n        self.step_n = 1\n        self.finished = False\n        self.scratchpad: str = ''\n\n    def set_qa(self, question: str, key: str) -> None:\n        self.question = question\n        self.key = key\n\nclass ReactReflectAgent(ReactAgent):\n    def __init__(self,\n                 question: str,\n                 key: str,\n                 max_steps: int = 6,\n                 agent_prompt: PromptTemplate = react_reflect_agent_prompt,\n                 reflect_prompt: PromptTemplate = reflect_prompt,\n                 docstore: Docstore = Wikipedia(),\n                 react_llm: AnyOpenAILLM = AnyOpenAILLM(\n                                             temperature=0,\n                                             max_tokens=100,\n                                             model_name=\"gpt-3.5-turbo\",\n                                             model_kwargs={\"stop\": \"\\n\"},\n                                             openai_api_key=os.environ['OPENAI_API_KEY']),\n                 reflect_llm: AnyOpenAILLM = AnyOpenAILLM(\n                                               temperature=0,\n                                               max_tokens=250,\n                                               model_name=\"gpt-3.5-turbo\",\n                                               openai_api_key=os.environ['OPENAI_API_KEY']),\n                 ) -> None:\n        \n        super().__init__(question, key, max_steps, agent_prompt, docstore, react_llm)\n        self.reflect_llm = reflect_llm\n        self.reflect_prompt = reflect_prompt\n        self.reflect_examples = REFLECTIONS\n        self.reflections: List[str] = []\n        self.reflections_str: str = ''\n    \n    def run(self, reset = True, reflect_strategy: ReflexionStrategy = ReflexionStrategy.REFLEXION) -> None:\n        if (self.is_finished() or self.is_halted()) and not self.is_correct():\n            self.reflect(reflect_strategy)\n\n        ReactAgent.run(self, reset)\n    \n    def reflect(self,\n                strategy: ReflexionStrategy) -> None:\n        print('Reflecting...')\n        if strategy == ReflexionStrategy.LAST_ATTEMPT:\n            self.reflections = [self.scratchpad]\n            self.reflections_str = format_last_attempt(self.question, self.reflections[0])\n        elif strategy == ReflexionStrategy.REFLEXION: \n            self.reflections += [self.prompt_reflection()]\n            self.reflections_str = format_reflections(self.reflections)\n        elif strategy == ReflexionStrategy.LAST_ATTEMPT_AND_REFLEXION: \n            self.reflections_str = format_last_attempt(self.question, self.scratchpad)\n            self.reflections = [self.prompt_reflection()]\n            self.reflections_str += format_reflections(self.reflections, header = REFLECTION_AFTER_LAST_TRIAL_HEADER)\n        else:\n            raise NotImplementedError(f'Unknown reflection strategy: {strategy}')\n        print(self.reflections_str)\n    \n    def prompt_reflection(self) -> str:\n        return format_step(self.reflect_llm(self._build_reflection_prompt()))\n\n\n    def _build_reflection_prompt(self) -> str:\n        return self.reflect_prompt.format(\n                            examples = self.reflect_examples,\n                            question = self.question,\n                            scratchpad = truncate_scratchpad(self.scratchpad, tokenizer=self.enc))\n \n    def _build_agent_prompt(self) -> str:\n        return self.agent_prompt.format(\n                            examples = self.react_examples,\n                            reflections = self.reflections_str,\n                            question = self.question,\n                            scratchpad = self.scratchpad)\n   \n\n### String Stuff ###\ngpt2_enc = tiktoken.encoding_for_model(\"text-davinci-003\")\n\ndef parse_action(string):\n    pattern = r'^(\\w+)\\[(.+)\\]$'\n    match = re.match(pattern, string)\n    \n    if match:\n        action_type = match.group(1)\n        argument = match.group(2)\n        return action_type, argument\n    \n    else:\n        return None\n\ndef format_step(step: str) -> str:\n    return step.strip('\\n').strip().replace('\\n', '')\n\ndef format_reflections(reflections: List[str],\n                        header: str = REFLECTION_HEADER) -> str:\n    if reflections == []:\n        return ''\n    else:\n        return header + 'Reflections:\\n- ' + '\\n- '.join([r.strip() for r in reflections])\n\ndef format_last_attempt(question: str,\n                        scratchpad: str,\n                        header: str = LAST_TRIAL_HEADER):\n    return header + f'Question: {question}\\n' + truncate_scratchpad(scratchpad, tokenizer=gpt2_enc).strip('\\n').strip() + '\\n(END PREVIOUS TRIAL)\\n'\n\ndef truncate_scratchpad(scratchpad: str, n_tokens: int = 1600, tokenizer = gpt2_enc) -> str:\n    lines = scratchpad.split('\\n')\n    observations = filter(lambda x: x.startswith('Observation'), lines)\n    observations_by_tokens = sorted(observations, key=lambda x: len(tokenizer.encode(x)))\n    while len(gpt2_enc.encode('\\n'.join(lines))) > n_tokens:\n        largest_observation = observations_by_tokens.pop(-1)\n        ind = lines.index(largest_observation)\n        lines[ind] = largest_observation.split(':')[0] + ': [truncated wikipedia excerpt]'\n    return '\\n'.join(lines)\n\ndef normalize_answer(s):\n  def remove_articles(text):\n    return re.sub(r\"\\b(a|an|the)\\b\", \" \", text)\n  \n  def white_space_fix(text):\n      return \" \".join(text.split())\n\n  def remove_punc(text):\n      exclude = set(string.punctuation)\n      return \"\".join(ch for ch in text if ch not in exclude)\n\n  def lower(text):\n      return text.lower()\n\n  return white_space_fix(remove_articles(remove_punc(lower(s))))\n\ndef EM(answer, key) -> bool:\n    return normalize_answer(answer) == normalize_answer(key)\n\n\n\n"
+    }
+  ],
+  "claims": {
+    "summary": "Reflexion: textual feedback across repeated attempts",
+    "innovation": null,
+    "baseline": null,
+    "scope": "ReactReflectAgent with REFLEXION strategy, same-question HotpotQA retries; exact-match gate, not an LLM evaluator."
+  },
+  "assumptions": [
+    "A code-derived method overview, not a new method or a runtime reproduction.",
+    "Solid colors encode operation classes, not trainability: blue=language-model computation, green=retained state, gray-white=tools/runtime, parameter-free checks and I/O.",
+    "Feedback arrows indicate later steps or trials, never model gradient updates.",
+    "Layout is original; source-paper graphics are not embedded.",
+    "The caller must invoke run() again; this class does not automatically retry forever.",
+    "A stopped or halted incorrect prior trial triggers reflection before the next trial reset. Correct means normalized exact match, not general semantic correctness.",
+    "The reflection list is instance-local context across attempts, not a shared vector database.",
+    "Self-reflection takes the question and truncated prior scratchpad; it does not read the entire prior reflection list. Common task conditioning is shown once rather than duplicated as every prompt input.",
+    "The actor/tool observation loop is within one attempt; the reflection-memory loop connects later attempts."
+  ],
+  "nodes": [
+    {
+      "id": "question",
+      "label": "Question",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.question = question"
+        }
+      ]
+    },
+    {
+      "id": "actor",
+      "label": "ReAct actor",
+      "detail": "Thought + action loop",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "class ReactReflectAgent(ReactAgent):"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Wikipedia tools",
+      "detail": "Search / Lookup",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.docstore = DocstoreExplorer(docstore)"
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "label": "Exact-match check",
+      "detail": "Correct: stop",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "return EM(self.answer, self.key)"
+        }
+      ]
+    },
+    {
+      "id": "reflect",
+      "label": "Self-reflection LM",
+      "detail": "Truncated prior trace",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "return format_step(self.reflect_llm(self._build_reflection_prompt()))"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "label": "Reflection memory",
+      "detail": "Same-question retries",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.reflections += [self.prompt_reflection()]"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "question",
+      "to": "actor",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "question = self.question,"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "from": "actor",
+      "to": "tools",
+      "label": "Action",
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.docstore.search(argument)"
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "from": "tools",
+      "to": "actor",
+      "label": "Observation",
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.scratchpad += format_step(self.docstore.search(argument))"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "from": "actor",
+      "to": "check",
+      "label": "Finish / halt",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "if (self.is_finished() or self.is_halted()) and not self.is_correct():"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "from": "check",
+      "to": "reflect",
+      "label": "Incorrect",
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "if (self.is_finished() or self.is_halted()) and not self.is_correct():"
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "from": "actor",
+      "to": "reflect",
+      "label": "Prior trace",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "scratchpad = truncate_scratchpad(self.scratchpad, tokenizer=self.enc))"
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "from": "reflect",
+      "to": "memory",
+      "label": "Append",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.reflections += [self.prompt_reflection()]"
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "from": "memory",
+      "to": "actor",
+      "label": "Next run(): fresh attempt",
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "reflections = self.reflections_str,"
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "layout": {
+    "canvas": {
+      "width": 2240,
+      "height": 960
+    },
+    "direction": "LR",
+    "nodes": {
+      "question": {
+        "x": 65,
+        "y": 295,
+        "w": 260,
+        "h": 120,
+        "fontSize": 38
+      },
+      "actor": {
+        "x": 440,
+        "y": 240,
+        "w": 380,
+        "h": 230,
+        "fontSize": 40
+      },
+      "tools": {
+        "x": 990,
+        "y": 240,
+        "w": 350,
+        "h": 230,
+        "fontSize": 38
+      },
+      "check": {
+        "x": 1530,
+        "y": 240,
+        "w": 450,
+        "h": 230,
+        "fontSize": 37
+      },
+      "reflect": {
+        "x": 1530,
+        "y": 650,
+        "w": 450,
+        "h": 200,
+        "fontSize": 38
+      },
+      "memory": {
+        "x": 900,
+        "y": 650,
+        "w": 450,
+        "h": 200,
+        "fontSize": 38
+      }
+    },
+    "edges": {
+      "e1": {
+        "fromPort": "right",
+        "toPort": "left",
+        "fromFraction": 0.5,
+        "toFraction": 0.5
+      },
+      "e2": {
+        "fromPort": "right",
+        "toPort": "left",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "label": {
+          "x": 850,
+          "y": 297
+        }
+      },
+      "e3": {
+        "fromPort": "top",
+        "toPort": "top",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "via": [
+          [
+            1165,
+            170
+          ],
+          [
+            630,
+            170
+          ]
+        ],
+        "label": {
+          "x": 830,
+          "y": 108
+        }
+      },
+      "e4": {
+        "fromPort": "bottom",
+        "toPort": "bottom",
+        "fromFraction": 0.8,
+        "toFraction": 0.25,
+        "via": [
+          [
+            744,
+            540
+          ],
+          [
+            1642.5,
+            540
+          ]
+        ],
+        "label": {
+          "x": 1090,
+          "y": 484
+        }
+      },
+      "e5": {
+        "fromPort": "bottom",
+        "toPort": "top",
+        "fromFraction": 0.75,
+        "toFraction": 0.75,
+        "label": {
+          "x": 1680,
+          "y": 553
+        }
+      },
+      "e6": {
+        "fromPort": "bottom",
+        "toPort": "top",
+        "fromFraction": 0.25,
+        "toFraction": 0.25,
+        "via": [
+          [
+            535,
+            600
+          ],
+          [
+            1642.5,
+            600
+          ]
+        ],
+        "label": {
+          "x": 1030,
+          "y": 604
+        }
+      },
+      "e7": {
+        "fromPort": "left",
+        "toPort": "right",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "label": {
+          "x": 1374,
+          "y": 691
+        }
+      },
+      "e8": {
+        "fromPort": "left",
+        "toPort": "left",
+        "fromFraction": 0.5,
+        "toFraction": 0.7391304347826086,
+        "via": [
+          [
+            370,
+            750
+          ],
+          [
+            370,
+            410
+          ]
+        ],
+        "label": {
+          "x": 450,
+          "y": 688
+        }
+      }
+    }
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 7,
+    "showTitle": false,
+    "showSubtitle": false,
+    "showLegend": false,
+    "typography": {
+      "fontFamily": "Times New Roman",
+      "moduleSize": 38,
+      "detailSize": 32,
+      "annotationSize": 32,
+      "moduleBold": true
+    },
+    "nodeGlyphs": {},
+    "appearances": {
+      "nodes": {
+        "question": {
+          "fill": "#FAFBFC",
+          "stroke": "#839099",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 30,
+            "w": 224,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 54,
+            "w": 224,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "actor": {
+          "fill": "#E8F0F7",
+          "stroke": "#59778E",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 344,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 149,
+            "w": 344,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "tools": {
+          "fill": "#FAFBFC",
+          "stroke": "#839099",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 314,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 149,
+            "w": 314,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "check": {
+          "fill": "#FAFBFC",
+          "stroke": "#839099",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 414,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 149,
+            "w": 414,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "reflect": {
+          "fill": "#E8F0F7",
+          "stroke": "#59778E",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 414,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 128,
+            "w": 414,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "memory": {
+          "fill": "#E8F3EF",
+          "stroke": "#507E71",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 414,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 128,
+            "w": 414,
+            "align": "center",
+            "italic": false
+          }
+        }
+      },
+      "edges": {
+        "e1": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e2": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e3": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e4": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e5": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e6": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e7": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e8": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        }
+      }
+    },
+    "artwork": [
+      {
+        "id": "gate-key",
+        "owner": "check",
+        "type": "text",
+        "x": 1550,
+        "y": 329,
+        "w": 410,
+        "h": 43.2,
+        "text": "Answer vs. key",
+        "fontSize": 32,
+        "fontFamily": "Times New Roman",
+        "italic": false,
+        "fill": "#15354A",
+        "purpose": "Source-supported local operation/state description, not a new module."
+      }
+    ]
+  }
+}

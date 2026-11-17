@@ -1,0 +1,28 @@
+{
+  "reviewer": {"kind": "independent-agent", "name": "/root/agemem_e2e_review"},
+  "verdict": "accept",
+  "checks": {"referenceComparison": "pass", "semanticFidelity": "pass", "composition": "pass", "modalityIdentity": "pass", "typography": "pass", "phaseClarity": "pass", "editability": "pass", "noTitleOrFooter": "pass", "officeRender": "pass"},
+  "reference": {"path": "../../../../../paperfigure/examples/agentic-2026-layout/agemem/source/reference.png", "sha256": "8a2ab882b9a3a73615d237e1cb0aa1ffffa181cced23ec9e9dc990bd552e0c68"},
+  "artifacts": {
+    "editable.svg": "349bc0072ad974bc0bd394681fd94ca81257abd561ad04c4ebfa7dfa59730367",
+    "figure.pptx": "4e3fba6e5c88dca90192775e5d6644eb84a892ed2c9b98563176e46b2ed364b5",
+    "preview.png": "532041926ff3f44c3d61c03cc8f150c3ca5fcf469a8335cf03296650af7c6b46",
+    "layout-scene.json": "a4c6adc50f4aa4976a4d57304fd44e2e4a294d4f0f7f4407b4d5a7eaad1ec460",
+    "reference-contract.json": "0449d2b312349c1e96b3ad5e4587073a7530f8cfb668d91909cf809ec38ab6a4",
+    "reference-layout-qa.json": "dc0eb982eacbecbbd3ee8d3b054fe7d480fe097e5046156d4c732b77c58df1e4",
+    "layout-qa.json": "8be5068141e2289a39d6815160bdd01e34148f99a20d58b53d1b57aa7cb8a583",
+    "native-audit.json": "12660f6801a7d99efabbc0b1c28a0544ca6b11ec7203cc7bc473218ec1100dd6",
+    "native-render/figure.pdf": "672729871aedfa83fc820bdcbcb5fe41ba7f669c75ea412f6328c026f871186e",
+    "native-render/preview.png": "60c35a2d12424a3abf482b772fb98e1bafb0f7dec8229af7bc3546a08dd3f9d6",
+    "native-render/render-qa.json": "a2132fe19ec1c43881b005ed52013997440ae83ee456ee8935e275cd72f192ac",
+    "typography-profile.json": "ceeacf6432799111fb4e12ce9159c5daae636530c3fc224937da34859f0e8a7b",
+    "typography-style-qa.json": "bdb939006d056097790c3eb5b6b49ce5abdd339e960779fd6b6b35f229bd0bab",
+    "typography-qa.json": "3c8cac13d3d4cfe7f8f6b7b059054a6a739bb68b33445adc807b03db89dece29"
+  },
+  "notes": [
+    "Inspected selected reference, SVG preview, actual LibreOffice PPTX raster, and native PDF at normal size and the original 149.3 pt panel width.",
+    "Solid native arrows and source-guided native icon approximations are declared deviations; routes, colors, roles, and topology remain faithful.",
+    "At the original 2.0736 in panel width, fine labels are difficult to read in both source target and candidate; this is inherited, not a newly observed candidate regression.",
+    "PPTX is entirely native according to XML audit, but interactive Microsoft PowerPoint editing was not tested."
+  ]
+}

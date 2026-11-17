@@ -1,0 +1,1178 @@
+{
+  "width": 2240,
+  "height": 1030,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "curriculum",
+      "label": "Automatic curriculum",
+      "detail": "State + task history",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "task, context = self.curriculum_agent.propose_next_task("
+        }
+      ],
+      "x": 100,
+      "y": 270,
+      "w": 420,
+      "h": 250,
+      "fontSize": 38,
+      "fill": "#E8F0F7",
+      "stroke": "#59778E",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:curriculum:label:0",
+          "text": "Automatic",
+          "x": 118,
+          "y": 294,
+          "w": 384,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:curriculum:label:1",
+          "text": "curriculum",
+          "x": 118,
+          "y": 338.84,
+          "w": 384,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:curriculum:detail:0",
+          "text": "State + task history",
+          "x": 118,
+          "y": 444,
+          "w": 384,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "label": "Action agent",
+      "detail": "Generate / refine code",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "ai_message = self.action_agent.llm(self.messages)"
+        }
+      ],
+      "x": 920,
+      "y": 270,
+      "w": 430,
+      "h": 250,
+      "fontSize": 43,
+      "fill": "#E8F0F7",
+      "stroke": "#59778E",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:action:label:0",
+          "text": "Action agent",
+          "x": 938,
+          "y": 294,
+          "w": 394,
+          "h": 50.739999999999995,
+          "fontSize": 43,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:action:detail:0",
+          "text": "Generate / refine code",
+          "x": 938,
+          "y": 444,
+          "w": 394,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "label": "Minecraft runtime",
+      "detail": "Execute JS programs",
+      "role": "environment",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "events = self.env.step("
+        }
+      ],
+      "x": 1640,
+      "y": 270,
+      "w": 450,
+      "h": 250,
+      "fontSize": 39,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:world:label:0",
+          "text": "Minecraft runtime",
+          "x": 1658,
+          "y": 294,
+          "w": 414,
+          "h": 46.019999999999996,
+          "fontSize": 39,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:world:detail:0",
+          "text": "Execute JS programs",
+          "x": 1658,
+          "y": 444,
+          "w": 414,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "critic",
+      "label": "Critic",
+      "detail": "Success + critique",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "success, critique = self.critic_agent.check_task_success("
+        }
+      ],
+      "x": 1640,
+      "y": 690,
+      "w": 450,
+      "h": 210,
+      "fontSize": 42,
+      "fill": "#E8F0F7",
+      "stroke": "#59778E",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:critic:label:0",
+          "text": "Critic",
+          "x": 1658,
+          "y": 714,
+          "w": 414,
+          "h": 49.559999999999995,
+          "fontSize": 42,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:critic:detail:0",
+          "text": "Success + critique",
+          "x": 1658,
+          "y": 829,
+          "w": 414,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Skill library",
+      "detail": "Code + descriptions",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "skills",
+          "quote": "self.skills[program_name] = {"
+        }
+      ],
+      "x": 860,
+      "y": 55,
+      "w": 550,
+      "h": 160,
+      "fontSize": 39,
+      "fill": "#E8F3EF",
+      "stroke": "#507E71",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:skills:label:0",
+          "text": "Skill library",
+          "x": 878,
+          "y": 79,
+          "w": 514,
+          "h": 46.019999999999996,
+          "fontSize": 39,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:skills:detail:0",
+          "text": "Code + descriptions",
+          "x": 878,
+          "y": 153,
+          "w": 514,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "curriculum",
+      "to": "action",
+      "label": {
+        "id": "edge-label:e1",
+        "text": "Task + context",
+        "x": 605,
+        "y": 334,
+        "w": 220.192,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "task=task,\n                    context=context,"
+        }
+      ],
+      "points": [
+        [
+          520,
+          395
+        ],
+        [
+          920,
+          395
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "action",
+      "to": "world",
+      "label": {
+        "id": "edge-label:e2",
+        "text": "JavaScript",
+        "x": 1390,
+        "y": 334,
+        "w": 163.776,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "code = parsed_result[\"program_code\"] + \"\\n\" + parsed_result[\"exec_code\"]"
+        }
+      ],
+      "points": [
+        [
+          1350,
+          395
+        ],
+        [
+          1640,
+          395
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e3",
+      "from": "world",
+      "to": "critic",
+      "label": {
+        "id": "edge-label:e3",
+        "text": "Events + task",
+        "x": 1910,
+        "y": 580,
+        "w": 208.192,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "success, critique = self.critic_agent.check_task_success(\n                events=events,"
+        }
+      ],
+      "points": [
+        [
+          1865,
+          520
+        ],
+        [
+          1865,
+          690
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e4",
+      "from": "world",
+      "to": "action",
+      "label": {
+        "id": "edge-label:e4",
+        "text": "Runtime feedback",
+        "x": 1320,
+        "y": 525,
+        "w": 272.288,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "events=events,\n                code=parsed_result[\"program_code\"],"
+        }
+      ],
+      "points": [
+        [
+          1707.5,
+          520
+        ],
+        [
+          1707.5,
+          575
+        ],
+        [
+          1264,
+          575
+        ],
+        [
+          1264,
+          520
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "bottom",
+      "fromFraction": 0.15,
+      "toFraction": 0.8,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e5",
+      "from": "critic",
+      "to": "action",
+      "label": {
+        "id": "edge-label:e5",
+        "text": "Critique",
+        "x": 1180,
+        "y": 643,
+        "w": 126.72,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "critique=critique,"
+        }
+      ],
+      "points": [
+        [
+          1640,
+          795
+        ],
+        [
+          1490,
+          795
+        ],
+        [
+          1490,
+          625
+        ],
+        [
+          1100,
+          625
+        ],
+        [
+          1100,
+          520
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.4186046511627907,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e6",
+      "from": "critic",
+      "to": "skills",
+      "label": {
+        "id": "edge-label:e6",
+        "text": "Reusable success only",
+        "x": 1720,
+        "y": 53,
+        "w": 342.592,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "if info[\"success\"]:\n                self.skill_manager.add_new_skill(info)"
+        }
+      ],
+      "points": [
+        [
+          2090,
+          795
+        ],
+        [
+          2160,
+          795
+        ],
+        [
+          2160,
+          20
+        ],
+        [
+          1210,
+          20
+        ],
+        [
+          1210,
+          55
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.6363636363636364,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e7",
+      "from": "skills",
+      "to": "action",
+      "label": {
+        "id": "edge-label:e7",
+        "text": "Code",
+        "x": 1255,
+        "y": 220,
+        "w": 92.48,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "system_message = self.action_agent.render_system_message(skills=skills)"
+        }
+      ],
+      "points": [
+        [
+          1220,
+          215
+        ],
+        [
+          1220,
+          270
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.6545454545454545,
+      "toFraction": 0.6976744186046512,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e8",
+      "from": "curriculum",
+      "to": "skills",
+      "label": {
+        "id": "edge-label:e8",
+        "text": "Context query",
+        "x": 480,
+        "y": 80,
+        "w": 215.2,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "skills = self.skill_manager.retrieve_skills(query=self.context)"
+        }
+      ],
+      "points": [
+        [
+          310,
+          270
+        ],
+        [
+          310,
+          135
+        ],
+        [
+          860,
+          135
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e9",
+      "from": "action",
+      "to": "skills",
+      "label": {
+        "id": "edge-label:e9",
+        "text": "Query",
+        "x": 900,
+        "y": 220,
+        "w": 104.096,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "+ self.action_agent.summarize_chatlog(events)"
+        }
+      ],
+      "points": [
+        [
+          1027.5,
+          270
+        ],
+        [
+          1027.5,
+          215
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "bottom",
+      "fromFraction": 0.25,
+      "toFraction": 0.30454545454545456,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e10",
+      "from": "skills",
+      "to": "world",
+      "label": {
+        "id": "edge-label:e10",
+        "text": "Saved code + primitives",
+        "x": 1550,
+        "y": 151,
+        "w": 354.81600000000003,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "programs=self.skill_manager.programs,"
+        }
+      ],
+      "points": [
+        [
+          1410,
+          135
+        ],
+        [
+          1510,
+          135
+        ],
+        [
+          1510,
+          210
+        ],
+        [
+          1865,
+          210
+        ],
+        [
+          1865,
+          270
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e11",
+      "from": "critic",
+      "to": "curriculum",
+      "label": {
+        "id": "edge-label:e11",
+        "text": "Record task outcome",
+        "x": 550,
+        "y": 904,
+        "w": 318.336,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "self.curriculum_agent.update_exploration_progress(info)"
+        }
+      ],
+      "points": [
+        [
+          1865,
+          900
+        ],
+        [
+          1865,
+          965
+        ],
+        [
+          310,
+          965
+        ],
+        [
+          310,
+          520
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    }
+  ],
+  "groups": [],
+  "texts": [
+    {
+      "id": "text:curriculum:label:0",
+      "text": "Automatic",
+      "x": 118,
+      "y": 294,
+      "w": 384,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:curriculum:label:1",
+      "text": "curriculum",
+      "x": 118,
+      "y": 338.84,
+      "w": 384,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:curriculum:detail:0",
+      "text": "State + task history",
+      "x": 118,
+      "y": 444,
+      "w": 384,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:action:label:0",
+      "text": "Action agent",
+      "x": 938,
+      "y": 294,
+      "w": 394,
+      "h": 50.739999999999995,
+      "fontSize": 43,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:action:detail:0",
+      "text": "Generate / refine code",
+      "x": 938,
+      "y": 444,
+      "w": 394,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:world:label:0",
+      "text": "Minecraft runtime",
+      "x": 1658,
+      "y": 294,
+      "w": 414,
+      "h": 46.019999999999996,
+      "fontSize": 39,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:world:detail:0",
+      "text": "Execute JS programs",
+      "x": 1658,
+      "y": 444,
+      "w": 414,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:critic:label:0",
+      "text": "Critic",
+      "x": 1658,
+      "y": 714,
+      "w": 414,
+      "h": 49.559999999999995,
+      "fontSize": 42,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:critic:detail:0",
+      "text": "Success + critique",
+      "x": 1658,
+      "y": 829,
+      "w": 414,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:skills:label:0",
+      "text": "Skill library",
+      "x": 878,
+      "y": 79,
+      "w": 514,
+      "h": 46.019999999999996,
+      "fontSize": 39,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:skills:detail:0",
+      "text": "Code + descriptions",
+      "x": 878,
+      "y": 153,
+      "w": 514,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "edge-label:e1",
+      "text": "Task + context",
+      "x": 605,
+      "y": 334,
+      "w": 220.192,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e2",
+      "text": "JavaScript",
+      "x": 1390,
+      "y": 334,
+      "w": 163.776,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e3",
+      "text": "Events + task",
+      "x": 1910,
+      "y": 580,
+      "w": 208.192,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e4",
+      "text": "Runtime feedback",
+      "x": 1320,
+      "y": 525,
+      "w": 272.288,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e5",
+      "text": "Critique",
+      "x": 1180,
+      "y": 643,
+      "w": 126.72,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e6",
+      "text": "Reusable success only",
+      "x": 1720,
+      "y": 53,
+      "w": 342.592,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e7",
+      "text": "Code",
+      "x": 1255,
+      "y": 220,
+      "w": 92.48,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e8",
+      "text": "Context query",
+      "x": 480,
+      "y": 80,
+      "w": 215.2,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e9",
+      "text": "Query",
+      "x": 900,
+      "y": 220,
+      "w": 104.096,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e10",
+      "text": "Saved code + primitives",
+      "x": 1550,
+      "y": 151,
+      "w": 354.81600000000003,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e11",
+      "text": "Record task outcome",
+      "x": 550,
+      "y": 904,
+      "w": 318.336,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    }
+  ],
+  "decorations": [],
+  "assets": [],
+  "title": "Voyager: automatic curriculum and reusable executable skills",
+  "typography": {
+    "fontFamily": "Times New Roman",
+    "moduleSize": 38,
+    "detailSize": 32,
+    "annotationSize": 32,
+    "titleSize": 30,
+    "moduleBold": true
+  },
+  "specHash": "78753e070b5b25d4825ccd2f033e787a6f0fe48f44da224252a1036d773c23e6",
+  "semanticHash": "5552e6ad7f6bedf863248cea5eea58897b41fecd03d792da657d183fa0d56156",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

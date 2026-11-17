@@ -1,0 +1,54 @@
+{
+  "status": "rendered",
+  "renderer": "soffice",
+  "log": "convert /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/tool-memory-agent/output/figure.pptx as a Impress document -> /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/tool-memory-agent/output/rendered-pptx/figure.pdf using filter : impress_pdf_Export\nOverwriting: /Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/tool-memory-agent/output/rendered-pptx/figure.pdf",
+  "routeAlignmentPassed": true,
+  "routes": [
+    {
+      "edge": "e1",
+      "testedSamples": 28,
+      "matchedSamples": 28,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e2",
+      "testedSamples": 61,
+      "matchedSamples": 61,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e3",
+      "testedSamples": 58,
+      "matchedSamples": 58,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e4",
+      "testedSamples": 69,
+      "matchedSamples": 69,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e5",
+      "testedSamples": 60,
+      "matchedSamples": 60,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "e6",
+      "testedSamples": 109,
+      "matchedSamples": 109,
+      "coverage": 1,
+      "passed": true
+    }
+  ],
+  "normalizedPixelMAE": 0.005736264631124781,
+  "darkForegroundIoU": 0.6881961762261014,
+  "foregroundPixelRatio": 0.9727051966974259,
+  "limits": "Route ink alignment is an objective check with a 3px tolerance and 90% minimum per edge. Pixel similarity is diagnostic, not an aesthetic score. Inspect fonts, arrowheads, and wrapping."
+}

@@ -1,0 +1,8 @@
+{
+  "figure.svg": true,
+  "figure.pptx": true,
+  "object-tree.json": true,
+  "inventory.json": true,
+  "pptx-object-map.json": true,
+  "scope": "Exact byte reproduction after package timestamps and creation metadata normalization"
+}

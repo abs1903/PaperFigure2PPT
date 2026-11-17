@@ -1,0 +1,1068 @@
+{
+  "width": 1600,
+  "height": 650,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "image",
+      "label": "Image",
+      "detail": "RGB input",
+      "role": "input",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "x": 40,
+      "y": 90,
+      "w": 180,
+      "h": 180,
+      "fill": "#F0F4F8",
+      "stroke": "#6B8299",
+      "texts": [
+        {
+          "id": "text:image:label:0",
+          "text": "Image",
+          "x": 54,
+          "y": 190.18,
+          "w": 152,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:image:detail:0",
+          "text": "RGB input",
+          "x": 54,
+          "y": 228.86,
+          "w": 152,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ],
+      "glyph": "image"
+    },
+    {
+      "id": "vision",
+      "label": "Vision encoder",
+      "detail": "Frozen weights",
+      "role": "encoder",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "x": 290,
+      "y": 105,
+      "w": 210,
+      "h": 150,
+      "fill": "#EAF0FA",
+      "stroke": "#5579B0",
+      "texts": [
+        {
+          "id": "text:vision:label:0",
+          "text": "Vision",
+          "x": 304,
+          "y": 131.75,
+          "w": 182,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:vision:label:1",
+          "text": "encoder",
+          "x": 304,
+          "y": 162.43,
+          "w": 182,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:vision:detail:0",
+          "text": "Frozen weights",
+          "x": 304,
+          "y": 201.11,
+          "w": 182,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "projector",
+      "label": "Projector",
+      "detail": "Trainable mapping",
+      "role": "core",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ],
+      "x": 610,
+      "y": 105,
+      "w": 190,
+      "h": 150,
+      "fill": "#E9EDF8",
+      "stroke": "#657BB0",
+      "texts": [
+        {
+          "id": "text:projector:label:0",
+          "text": "Projector",
+          "x": 624,
+          "y": 133.52,
+          "w": 162,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:projector:detail:0",
+          "text": "Trainable",
+          "x": 624,
+          "y": 172.20000000000002,
+          "w": 162,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:projector:detail:1",
+          "text": "mapping",
+          "x": 624,
+          "y": 199.34,
+          "w": 162,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "prompt",
+      "label": "Text prompt",
+      "detail": "Instruction tokens",
+      "role": "input",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The text prompt is consumed by the same decoder-only language model."
+        }
+      ],
+      "x": 290,
+      "y": 380,
+      "w": 400,
+      "h": 120,
+      "fill": "#F0F4F8",
+      "stroke": "#6B8299",
+      "texts": [
+        {
+          "id": "text:prompt:label:0",
+          "text": "Text prompt",
+          "x": 304,
+          "y": 407.09000000000003,
+          "w": 372,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:prompt:detail:0",
+          "text": "Instruction tokens",
+          "x": 304,
+          "y": 445.77000000000004,
+          "w": 372,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "lm",
+      "label": "Language model",
+      "detail": "Decoder-only",
+      "role": "core",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ],
+      "x": 970,
+      "y": 90,
+      "w": 300,
+      "h": 360,
+      "fill": "#E9EDF8",
+      "stroke": "#657BB0",
+      "texts": [
+        {
+          "id": "text:lm:label:0",
+          "text": "Language model",
+          "x": 984,
+          "y": 112,
+          "w": 272,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:lm:detail:0",
+          "text": "Decoder-only",
+          "x": 984,
+          "y": 150.68,
+          "w": 272,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ],
+      "glyph": "stack"
+    },
+    {
+      "id": "answer",
+      "label": "Answer",
+      "detail": "Text output",
+      "role": "output",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "At inference, the language model produces an answer."
+        }
+      ],
+      "x": 1380,
+      "y": 115,
+      "w": 180,
+      "h": 110,
+      "fill": "#EAF4ED",
+      "stroke": "#427855",
+      "texts": [
+        {
+          "id": "text:answer:label:0",
+          "text": "Answer",
+          "x": 1394,
+          "y": 137.09,
+          "w": 152,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:answer:detail:0",
+          "text": "Text output",
+          "x": 1394,
+          "y": 175.77,
+          "w": 152,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "loss",
+      "label": "Supervised loss",
+      "detail": "Training only",
+      "role": "loss",
+      "phase": "train",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "During training only, the language model predictions are consumed by a supervised loss. The loss is a supervision path, not an inference module."
+        }
+      ],
+      "x": 1380,
+      "y": 385,
+      "w": 180,
+      "h": 130,
+      "fill": "#FBECE8",
+      "stroke": "#B57362",
+      "texts": [
+        {
+          "id": "text:loss:label:0",
+          "text": "Supervised",
+          "x": 1394,
+          "y": 401.75,
+          "w": 152,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:loss:label:1",
+          "text": "loss",
+          "x": 1394,
+          "y": 432.43,
+          "w": 152,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:loss:detail:0",
+          "text": "Training only",
+          "x": 1394,
+          "y": 471.11,
+          "w": 152,
+          "h": 27.139999999999997,
+          "fontSize": 23,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "image",
+      "to": "vision",
+      "label": null,
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "points": [
+        [
+          220,
+          180
+        ],
+        [
+          290,
+          180
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "vision",
+      "to": "projector",
+      "label": null,
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "points": [
+        [
+          500,
+          180
+        ],
+        [
+          610,
+          180
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e3",
+      "from": "projector",
+      "to": "lm",
+      "label": {
+        "id": "edge-label:e3",
+        "text": "Visual tokens",
+        "x": 810,
+        "y": 140,
+        "w": 152.321,
+        "h": 29.900000000000002,
+        "fontSize": 23,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ],
+      "points": [
+        [
+          800,
+          180
+        ],
+        [
+          970,
+          180
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.25,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e4",
+      "from": "prompt",
+      "to": "lm",
+      "label": {
+        "id": "edge-label:e4",
+        "text": "Text tokens",
+        "x": 730,
+        "y": 325,
+        "w": 130.977,
+        "h": 29.900000000000002,
+        "fontSize": 23,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The text prompt is consumed by the same decoder-only language model."
+        }
+      ],
+      "points": [
+        [
+          690,
+          440
+        ],
+        [
+          850,
+          440
+        ],
+        [
+          850,
+          360
+        ],
+        [
+          970,
+          360
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.75,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e5",
+      "from": "lm",
+      "to": "answer",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "At inference, the language model produces an answer."
+        }
+      ],
+      "points": [
+        [
+          1270,
+          170
+        ],
+        [
+          1380,
+          170
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.2222222222222222,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e6",
+      "from": "lm",
+      "to": "loss",
+      "label": null,
+      "kind": "data",
+      "phase": "train",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "During training only, the language model predictions are consumed by a supervised loss. The loss is a supervision path, not an inference module."
+        }
+      ],
+      "points": [
+        [
+          1270,
+          414
+        ],
+        [
+          1320,
+          414
+        ],
+        [
+          1320,
+          450
+        ],
+        [
+          1380,
+          450
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.9,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "visual",
+      "label": "Visual tokenization",
+      "members": [
+        "vision",
+        "projector"
+      ],
+      "x": 268,
+      "y": 53,
+      "w": 554,
+      "h": 224
+    }
+  ],
+  "texts": [
+    {
+      "id": "group-label:visual",
+      "text": "Visual tokenization",
+      "x": 282,
+      "y": 65,
+      "w": 526,
+      "h": 29.900000000000002,
+      "fontSize": 23,
+      "bold": true,
+      "color": "#526477",
+      "align": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:image:label:0",
+      "text": "Image",
+      "x": 54,
+      "y": 190.18,
+      "w": 152,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:image:detail:0",
+      "text": "RGB input",
+      "x": 54,
+      "y": 228.86,
+      "w": 152,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:label:0",
+      "text": "Vision",
+      "x": 304,
+      "y": 131.75,
+      "w": 182,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:label:1",
+      "text": "encoder",
+      "x": 304,
+      "y": 162.43,
+      "w": 182,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:detail:0",
+      "text": "Frozen weights",
+      "x": 304,
+      "y": 201.11,
+      "w": 182,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:projector:label:0",
+      "text": "Projector",
+      "x": 624,
+      "y": 133.52,
+      "w": 162,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:projector:detail:0",
+      "text": "Trainable",
+      "x": 624,
+      "y": 172.20000000000002,
+      "w": 162,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:projector:detail:1",
+      "text": "mapping",
+      "x": 624,
+      "y": 199.34,
+      "w": 162,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:prompt:label:0",
+      "text": "Text prompt",
+      "x": 304,
+      "y": 407.09000000000003,
+      "w": 372,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:prompt:detail:0",
+      "text": "Instruction tokens",
+      "x": 304,
+      "y": 445.77000000000004,
+      "w": 372,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:lm:label:0",
+      "text": "Language model",
+      "x": 984,
+      "y": 112,
+      "w": 272,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:lm:detail:0",
+      "text": "Decoder-only",
+      "x": 984,
+      "y": 150.68,
+      "w": 272,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:answer:label:0",
+      "text": "Answer",
+      "x": 1394,
+      "y": 137.09,
+      "w": 152,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:answer:detail:0",
+      "text": "Text output",
+      "x": 1394,
+      "y": 175.77,
+      "w": 152,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:loss:label:0",
+      "text": "Supervised",
+      "x": 1394,
+      "y": 401.75,
+      "w": 152,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:loss:label:1",
+      "text": "loss",
+      "x": 1394,
+      "y": 432.43,
+      "w": 152,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:loss:detail:0",
+      "text": "Training only",
+      "x": 1394,
+      "y": 471.11,
+      "w": 152,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e3",
+      "text": "Visual tokens",
+      "x": 810,
+      "y": 140,
+      "w": 152.321,
+      "h": 29.900000000000002,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e4",
+      "text": "Text tokens",
+      "x": 730,
+      "y": 325,
+      "w": 130.977,
+      "h": 29.900000000000002,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "glyph-text:lm:0",
+      "owner": "lm",
+      "text": "Decoder block",
+      "x": 994,
+      "y": 234.795,
+      "w": 252,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "glyph-text:lm:1",
+      "owner": "lm",
+      "text": "Decoder block",
+      "x": 994,
+      "y": 363.885,
+      "w": 252,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "glyph-text:lm:ellipsis",
+      "owner": "lm",
+      "text": "...",
+      "x": 994,
+      "y": 297.90999999999997,
+      "w": 252,
+      "h": 27.139999999999997,
+      "fontSize": 23,
+      "bold": true,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    }
+  ],
+  "decorations": [
+    {
+      "id": "glyph:image:0",
+      "type": "rect",
+      "x": 64,
+      "y": 106,
+      "w": 132,
+      "h": 70.18,
+      "fill": "#E9F2F7",
+      "stroke": "#9FB6C7",
+      "radius": 2
+    },
+    {
+      "id": "glyph:image:1",
+      "type": "rect",
+      "x": 64,
+      "y": 153.0206,
+      "w": 132,
+      "h": 23.159400000000005,
+      "fill": "#CEE1D6",
+      "stroke": "none"
+    },
+    {
+      "id": "glyph:image:2",
+      "type": "ellipse",
+      "x": 153.76,
+      "y": 116.527,
+      "w": 15.439600000000002,
+      "h": 15.439600000000002,
+      "fill": "#D1B877",
+      "stroke": "none"
+    },
+    {
+      "id": "glyph:image:3",
+      "type": "line",
+      "x": 72,
+      "y": 153.7224,
+      "w": 42.24,
+      "h": -21.054000000000002,
+      "fill": "none",
+      "stroke": "#6A9789"
+    },
+    {
+      "id": "glyph:image:4",
+      "type": "line",
+      "x": 114.24000000000001,
+      "y": 132.6684,
+      "w": 39.6,
+      "h": 21.054000000000002,
+      "fill": "none",
+      "stroke": "#6A9789"
+    },
+    {
+      "id": "glyph:lm:5",
+      "type": "rect",
+      "x": 994,
+      "y": 201.82,
+      "w": 252,
+      "h": 93.09,
+      "fill": "#FFFFFF",
+      "stroke": "#657BB0",
+      "radius": 2
+    },
+    {
+      "id": "glyph:lm:6",
+      "type": "rect",
+      "x": 994,
+      "y": 330.90999999999997,
+      "w": 252,
+      "h": 93.09,
+      "fill": "#FFFFFF",
+      "stroke": "#657BB0",
+      "radius": 2
+    }
+  ],
+  "title": "Vision-language model overview",
+  "typography": {
+    "fontFamily": "Arial",
+    "moduleSize": 26,
+    "detailSize": 23,
+    "annotationSize": 23,
+    "titleSize": 30
+  },
+  "specHash": "c17d4139184663a1a2b41a9f6bfac5e081bd84fecf1842b36d689d5acc96ba68",
+  "semanticHash": "81ef27c1b2399d65af965744cee835198f52edfc3d6809d3184dd20643c1808d",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

@@ -1,0 +1,114 @@
+{
+  "version": "contract-demo-1",
+  "scope": "Paper-v1 method contribution and its supporting mechanisms, not a configured later code route. Benchmark auditing/Lite-S is a separate paper contribution outside this method illustration. No benchmark execution or correctness guarantee.",
+  "takeaway": "A fixed, interpretable localization-and-repair design confines LLM work to focused selections and local edits, combining established techniques rather than claiming each as novel.",
+  "contributionHierarchy": [
+    {
+      "id": "fixed-control",
+      "claim": "Fixed localization and repair with bounded LLM tasks",
+      "kind": "Central design combination; individual primitives are not claimed new",
+      "placement": "main",
+      "blocks": [
+        "localize",
+        "repair"
+      ],
+      "evidence": [
+        {
+          "source": "paper-intro",
+          "quote": "without letting the LLM decide future actions or operate with complex tools"
+        }
+      ],
+      "visualCue": "A fixed localization/repair frame with No autonomous planning; LLM labels only on bounded selections and local editing.",
+      "prominence": "Framing claim across both focal regions"
+    },
+    {
+      "id": "hierarchical-focus",
+      "claim": "Hierarchical localization using concise source representations",
+      "kind": "Supporting design combination",
+      "placement": "main",
+      "blocks": [
+        "localize"
+      ],
+      "evidence": [
+        {
+          "source": "paper-intro",
+          "quote": "hierarchical process to first localize the fault to specific files, then to relevant classes or functions, and finally to fine-grained edit locations"
+        }
+      ],
+      "visualCue": "Persist selected file and element identifiers across tree, skeleton, original code and selected interval; retain source context.",
+      "prominence": "Primary mechanism region"
+    },
+    {
+      "id": "local-edit",
+      "claim": "Localized Search/Replace generation",
+      "kind": "Established edit technique within the combination",
+      "placement": "main",
+      "blocks": [
+        "repair"
+      ],
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "avoids generating the complete code and instead focuses on producing small edits"
+        }
+      ],
+      "visualCue": "Magnify a gold source interval into SEARCH/REPLACE while surrounding source stays unchanged; show multiple candidate edits.",
+      "prominence": "Second focal mechanism"
+    },
+    {
+      "id": "selection-support",
+      "claim": "Syntax/regression filtering and normalized frequency ranking",
+      "kind": "Established deterministic support operations",
+      "placement": "support",
+      "blocks": [
+        "select"
+      ],
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "syntax errors and regression test failures"
+        },
+        {
+          "source": "paper-method",
+          "quote": "highest number of occurrences"
+        }
+      ],
+      "visualCue": "Small ordered filter/rank strip ending in Selected patch; no LLM marker or correctness guarantee.",
+      "prominence": "Subordinate to localization and local editing"
+    },
+    {
+      "id": "dataset-audit",
+      "claim": "Benchmark audit and SWE-bench Lite-S",
+      "kind": "Separate evaluation contribution",
+      "placement": "outside",
+      "blocks": [],
+      "evidence": [
+        {
+          "source": "paper-intro",
+          "quote": "we construct SWE-bench Lite-S"
+        }
+      ],
+      "visualCue": "Retained in companion record, not an algorithm module.",
+      "prominence": "Not drawn"
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "source-funnel",
+      "composition": "White landscape canvas, about 1.7:1. A wide-to-narrow source funnel at left and local-edit magnification at right; compact selection strip below right. A small framing bracket carries Fixed localization + repair and No autonomous planning. No numbered card pipeline or colored background bands.",
+      "mechanism": "Narrowing geometry explains bounded source context; magnify only the selected interval to explain local edits. Four small LLM markers identify three selections and generation; deterministic operations stay subordinate."
+    },
+    {
+      "id": "nested-focus",
+      "composition": "White landscape canvas, about 1.7:1. At left, nested source views enlarge the selected repository region from tree to skeletons to original code and edit context. At right, magnify that context into local Search/Replace edits; small selection strip below. Retain the fixed-control framing captions. No funnel, numbered equal-card pipeline or decorative background.",
+      "mechanism": "Containment and successive source zooms explain the shrinking relevant region instead of a funnel. The repeated selected identifiers bind the views. Local edit magnification preserves unchanged source and four bounded LLM roles."
+    }
+  ],
+  "review": {
+    "sourceAudit": "../../2026-11-17-agentless-contribution/source-contribution-review-v2.md",
+    "status": "Offline interface example: historical source audit reused, new contracts/compositions not independently pixel-reviewed"
+  },
+  "notes": [
+    "No image calls, first-reading reports or candidate-selection results exist for this new contract demonstration."
+  ]
+}

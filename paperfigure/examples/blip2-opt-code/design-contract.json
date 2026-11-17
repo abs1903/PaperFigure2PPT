@@ -1,0 +1,17 @@
+{
+  "reference": "design-reference.png",
+  "sha256": "b2fc45bb52a0da9a23fff2a95653525557ac763b85a0be7d45ac479e4eb1bc51",
+  "preserve": [
+    "White landscape composition, upper learned query input, continuous image route, lower optional prompt lane",
+    "Slate-blue frozen backbones; amber Q-Former; teal learned interface; subtle native gradients",
+    "Serif typography, large Q-Former focal label, native token motifs with ellipses",
+    "No title, detached stages, footer or footnotes"
+  ],
+  "deviations": [
+    "No extra semantic visual-prefix or tokenizer node beyond the frozen inventory; projection-to-OPT is one semantic edge",
+    "The OPT embedding table and tokenizer are shown as one labeled interface",
+    "Encoder label shortened to EVA-CLIP-G ViT encoder to preserve final-size legibility",
+    "Small redundant snowflakes removed where they crowd native labels"
+  ],
+  "scientificAuthority": "Pinned code and semantic-freeze.json, never the generated reference"
+}

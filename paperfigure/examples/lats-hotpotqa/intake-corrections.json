@@ -1,0 +1,8 @@
+{
+  "initialError": "Reflection context was assumed to influence both generation and value because both functions accept it.",
+  "independentFinding": "hotpotqa.py175-207: else attached to if len(z)!=0 and False overwrites feedback prompt unconditionally.",
+  "correction": "Reflection-to-value edge removed; policy feedback retained; value base-prompt use explicit.",
+  "sourceReview": "docs/LATS_CODE_SOURCE_AUDIT.md",
+  "visualStudyPrompt": "Initial built-in image-generation prompt was written before this correction; any depicted critic feedback must be rejected, not claimed to be a model-only hallucination.",
+  "otherCorrection": "Rollout descendants not appended to ordinary node.children; endpoints separately collected."
+}

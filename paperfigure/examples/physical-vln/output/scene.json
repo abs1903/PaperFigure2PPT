@@ -1,0 +1,1068 @@
+{
+  "width": 1440,
+  "height": 680,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "obs",
+      "label": "RGB-D view",
+      "detail": "Observation at t",
+      "role": "input",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ],
+      "x": 48,
+      "y": 115,
+      "w": 190,
+      "h": 110,
+      "fill": "#F0F4F8",
+      "stroke": "#6B8299",
+      "texts": [
+        {
+          "id": "text:obs:label:0",
+          "text": "RGB-D view",
+          "x": 62,
+          "y": 140.04,
+          "w": 162,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:obs:detail:0",
+          "text": "Observation at t",
+          "x": 62,
+          "y": 176.35999999999999,
+          "w": 162,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "Visual encoder",
+      "detail": "Visual features",
+      "role": "encoder",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ],
+      "x": 320,
+      "y": 115,
+      "w": 220,
+      "h": 110,
+      "fill": "#EAF0FA",
+      "stroke": "#5579B0",
+      "texts": [
+        {
+          "id": "text:vision:label:0",
+          "text": "Visual encoder",
+          "x": 334,
+          "y": 140.04,
+          "w": 192,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:vision:detail:0",
+          "text": "Visual features",
+          "x": 334,
+          "y": 176.35999999999999,
+          "w": 192,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "instruction",
+      "label": "Instruction",
+      "detail": "Navigation goal",
+      "role": "input",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ],
+      "x": 48,
+      "y": 350,
+      "w": 190,
+      "h": 110,
+      "fill": "#F0F4F8",
+      "stroke": "#6B8299",
+      "texts": [
+        {
+          "id": "text:instruction:label:0",
+          "text": "Instruction",
+          "x": 62,
+          "y": 375.04,
+          "w": 162,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:instruction:detail:0",
+          "text": "Navigation goal",
+          "x": 62,
+          "y": 411.36,
+          "w": 162,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "language",
+      "label": "Text encoder",
+      "detail": "Language features",
+      "role": "encoder",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ],
+      "x": 320,
+      "y": 350,
+      "w": 220,
+      "h": 110,
+      "fill": "#EAF0FA",
+      "stroke": "#5579B0",
+      "texts": [
+        {
+          "id": "text:language:label:0",
+          "text": "Text encoder",
+          "x": 334,
+          "y": 375.04,
+          "w": 192,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:language:detail:0",
+          "text": "Language features",
+          "x": 334,
+          "y": 411.36,
+          "w": 192,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "label": "State fusion",
+      "detail": "Cross-modal context",
+      "role": "core",
+      "phase": "inference",
+      "status": "proposed",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "For this illustrative design, state fusion is the component under study; visual and language encoders and the action interface are the baseline components. This is not a claim of novelty over published VLN systems."
+        }
+      ],
+      "x": 665,
+      "y": 225,
+      "w": 230,
+      "h": 120,
+      "fill": "#E2F3F0",
+      "stroke": "#237F78",
+      "texts": [
+        {
+          "id": "text:fusion:label:0",
+          "text": "State fusion",
+          "x": 679,
+          "y": 255.04,
+          "w": 202,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:fusion:detail:0",
+          "text": "Cross-modal context",
+          "x": 679,
+          "y": 291.36,
+          "w": 202,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "label": "Recurrent state",
+      "detail": "History at t - 1",
+      "role": "memory",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "A recurrent state store supplies previous state to state fusion. The fused state updates the recurrent store for the next time step."
+        }
+      ],
+      "x": 665,
+      "y": 465,
+      "w": 230,
+      "h": 100,
+      "fill": "#F1ECF8",
+      "stroke": "#8568AA",
+      "texts": [
+        {
+          "id": "text:state:label:0",
+          "text": "Recurrent state",
+          "x": 679,
+          "y": 485.04,
+          "w": 202,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:state:detail:0",
+          "text": "History at t - 1",
+          "x": 679,
+          "y": 521.36,
+          "w": 202,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "label": "Action policy",
+      "detail": "Select action",
+      "role": "core",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ],
+      "x": 980,
+      "y": 225,
+      "w": 190,
+      "h": 120,
+      "fill": "#E9EDF8",
+      "stroke": "#657BB0",
+      "texts": [
+        {
+          "id": "text:policy:label:0",
+          "text": "Action policy",
+          "x": 994,
+          "y": 255.04,
+          "w": 162,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:policy:detail:0",
+          "text": "Select action",
+          "x": 994,
+          "y": 291.36,
+          "w": 162,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "env",
+      "label": "Environment",
+      "detail": "Execute action",
+      "role": "environment",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ],
+      "x": 1220,
+      "y": 225,
+      "w": 200,
+      "h": 120,
+      "fill": "#EDF3EE",
+      "stroke": "#5C8167",
+      "texts": [
+        {
+          "id": "text:env:label:0",
+          "text": "Environment",
+          "x": 1234,
+          "y": 255.04,
+          "w": 172,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:env:detail:0",
+          "text": "Execute action",
+          "x": 1234,
+          "y": 291.36,
+          "w": 172,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "obs",
+      "to": "vision",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ],
+      "points": [
+        [
+          238,
+          170
+        ],
+        [
+          320,
+          170
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "vision",
+      "to": "fusion",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ],
+      "points": [
+        [
+          540,
+          170
+        ],
+        [
+          780,
+          170
+        ],
+        [
+          780,
+          225
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e3",
+      "from": "instruction",
+      "to": "language",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ],
+      "points": [
+        [
+          238,
+          405
+        ],
+        [
+          320,
+          405
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e4",
+      "from": "language",
+      "to": "fusion",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ],
+      "points": [
+        [
+          540,
+          405
+        ],
+        [
+          600,
+          405
+        ],
+        [
+          600,
+          285
+        ],
+        [
+          665,
+          285
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e5",
+      "from": "state",
+      "to": "fusion",
+      "label": {
+        "id": "edge-label:e5",
+        "text": "Previous state",
+        "x": 680,
+        "y": 370,
+        "w": 142.12,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "A recurrent state store supplies previous state to state fusion. The fused state updates the recurrent store for the next time step."
+        }
+      ],
+      "points": [
+        [
+          665,
+          515
+        ],
+        [
+          630,
+          515
+        ],
+        [
+          630,
+          400
+        ],
+        [
+          780,
+          400
+        ],
+        [
+          780,
+          345
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e6",
+      "from": "fusion",
+      "to": "state",
+      "label": {
+        "id": "edge-label:e6",
+        "text": "Next state",
+        "x": 960,
+        "y": 450,
+        "w": 105.44,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "A recurrent state store supplies previous state to state fusion. The fused state updates the recurrent store for the next time step."
+        }
+      ],
+      "points": [
+        [
+          849,
+          345
+        ],
+        [
+          849,
+          380
+        ],
+        [
+          940,
+          380
+        ],
+        [
+          940,
+          515
+        ],
+        [
+          895,
+          515
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "right",
+      "fromFraction": 0.8,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": true
+    },
+    {
+      "id": "e7",
+      "from": "fusion",
+      "to": "policy",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ],
+      "points": [
+        [
+          895,
+          285
+        ],
+        [
+          980,
+          285
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e8",
+      "from": "policy",
+      "to": "env",
+      "label": null,
+      "kind": "control",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ],
+      "points": [
+        [
+          1170,
+          285
+        ],
+        [
+          1220,
+          285
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": true
+    },
+    {
+      "id": "e9",
+      "from": "env",
+      "to": "obs",
+      "label": {
+        "id": "edge-label:e9",
+        "text": "Next observation",
+        "x": 1060,
+        "y": 24,
+        "w": 165.56,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The environment returns the next RGB-D observation at the next time step."
+        }
+      ],
+      "points": [
+        [
+          1320,
+          225
+        ],
+        [
+          1320,
+          55
+        ],
+        [
+          143,
+          55
+        ],
+        [
+          143,
+          115
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": true
+    }
+  ],
+  "groups": [],
+  "texts": [
+    {
+      "id": "text:obs:label:0",
+      "text": "RGB-D view",
+      "x": 62,
+      "y": 140.04,
+      "w": 162,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:obs:detail:0",
+      "text": "Observation at t",
+      "x": 62,
+      "y": 176.35999999999999,
+      "w": 162,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:label:0",
+      "text": "Visual encoder",
+      "x": 334,
+      "y": 140.04,
+      "w": 192,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:detail:0",
+      "text": "Visual features",
+      "x": 334,
+      "y": 176.35999999999999,
+      "w": 192,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:instruction:label:0",
+      "text": "Instruction",
+      "x": 62,
+      "y": 375.04,
+      "w": 162,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:instruction:detail:0",
+      "text": "Navigation goal",
+      "x": 62,
+      "y": 411.36,
+      "w": 162,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:language:label:0",
+      "text": "Text encoder",
+      "x": 334,
+      "y": 375.04,
+      "w": 192,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:language:detail:0",
+      "text": "Language features",
+      "x": 334,
+      "y": 411.36,
+      "w": 192,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:fusion:label:0",
+      "text": "State fusion",
+      "x": 679,
+      "y": 255.04,
+      "w": 202,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:fusion:detail:0",
+      "text": "Cross-modal context",
+      "x": 679,
+      "y": 291.36,
+      "w": 202,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:state:label:0",
+      "text": "Recurrent state",
+      "x": 679,
+      "y": 485.04,
+      "w": 202,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:state:detail:0",
+      "text": "History at t - 1",
+      "x": 679,
+      "y": 521.36,
+      "w": 202,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:policy:label:0",
+      "text": "Action policy",
+      "x": 994,
+      "y": 255.04,
+      "w": 162,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:policy:detail:0",
+      "text": "Select action",
+      "x": 994,
+      "y": 291.36,
+      "w": 162,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:env:label:0",
+      "text": "Environment",
+      "x": 1234,
+      "y": 255.04,
+      "w": 172,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:env:detail:0",
+      "text": "Execute action",
+      "x": 1234,
+      "y": 291.36,
+      "w": 172,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e5",
+      "text": "Previous state",
+      "x": 680,
+      "y": 370,
+      "w": 142.12,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e6",
+      "text": "Next state",
+      "x": 960,
+      "y": 450,
+      "w": 105.44,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e9",
+      "text": "Next observation",
+      "x": 1060,
+      "y": 24,
+      "w": 165.56,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    }
+  ],
+  "decorations": [],
+  "title": "Embodied navigation agent",
+  "typography": {
+    "fontFamily": "Arial",
+    "moduleSize": 24,
+    "detailSize": 20,
+    "annotationSize": 20,
+    "titleSize": 30
+  },
+  "specHash": "8a644a8a04e6f0117ea88ab0ff1d780a0dd7bddfb2f16621cd2b3170285b6370",
+  "semanticHash": "d2a72f0aa55f7321a390af4a16e7d20fa1d4d90d07fb2c842f90d2b4a719bb94",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

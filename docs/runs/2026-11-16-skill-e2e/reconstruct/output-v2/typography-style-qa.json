@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "errors": [],
+  "profileDigest": "6beec37b1c92da0370b5ff7656a922e3ab9bf4a632c66af97fa202867fa8fb75",
+  "svgSHA256": "349bc0072ad974bc0bd394681fd94ca81257abd561ad04c4ebfa7dfa59730367",
+  "pptxSHA256": "4e3fba6e5c88dca90192775e5d6644eb84a892ed2c9b98563176e46b2ed364b5",
+  "renderReportDigest": null,
+  "labels": 34,
+  "centeredBlocks": 5,
+  "fonts": [
+    {
+      "family": "Times New Roman",
+      "renderAliases": [
+        "Times New Roman"
+      ]
+    },
+    {
+      "family": "Comic Sans MS",
+      "renderAliases": [
+        "Comic Sans MS"
+      ]
+    },
+    {
+      "family": "Arial",
+      "renderAliases": [
+        "Arial"
+      ]
+    }
+  ],
+  "renderedFontCoverage": "unverified",
+  "limits": [
+    "Profile freezes chosen typography; it does not identify a font from pixels.",
+    "Computed SVG font-family is a request, not proof of per-glyph platform font choice.",
+    "Rendered-font coverage is document-wide; visual crops still verify shape, baseline and partial glyph fallback.",
+    "No interactive Microsoft PowerPoint editing test."
+  ]
+}

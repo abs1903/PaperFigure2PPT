@@ -1,0 +1,44 @@
+{
+  "scope": "Official HotPotQA --algorithm lats --prompt_sample cot; shared mutable environment; reflection-to-policy only; not a claim of full-paper implementation equivalence.",
+  "publicationWidthIn": 7,
+  "noTitleOrFooter": true,
+  "solidFillsOnly": true,
+  "palette": {
+    "#E8F1FB": {
+      "meaning": "Language-model inference",
+      "nodes": [
+        "policy",
+        "value",
+        "reflect"
+      ]
+    },
+    "#E8F4EC": {
+      "meaning": "Question-scoped stored state",
+      "nodes": [
+        "tree",
+        "failed",
+        "context"
+      ]
+    },
+    "#F6F7F8": {
+      "meaning": "Neutral I/O, environment, or control",
+      "nodes": [
+        "question",
+        "select",
+        "tools",
+        "rollout",
+        "backup",
+        "result"
+      ]
+    },
+    "#BF8A20": {
+      "meaning": "Selected trajectory only",
+      "channel": "tree motif path + selection wire"
+    }
+  },
+  "visualFocus": "Branching trajectory tree, not equally weighted generic cards",
+  "designStudy": "Generated visual proposal, with source-required deviations: no reflection critic feedback, no UCT inside rollout, no rollout-child retention, no gradients. Not claimed as pixel-faithful reconstruction.",
+  "authorFigureHiddenUntilNativeFreeze": true,
+  "readableMinimumPixelsAt7in": 25,
+  "sourceFactsOverrideGeneratedImage": true
+}

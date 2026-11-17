@@ -1,0 +1,353 @@
+{
+  "version": "1.0",
+  "width": 600,
+  "height": 580,
+  "modules": [
+    {
+      "id": "sample-0",
+      "box": [
+        20,
+        20,
+        560,
+        115
+      ],
+      "anchorShapeId": "frame-0",
+      "centerTextIds": [
+        "text-0"
+      ],
+      "minPadding": 12
+    },
+    {
+      "id": "sample-1",
+      "box": [
+        20,
+        160,
+        560,
+        115
+      ],
+      "anchorShapeId": "frame-1",
+      "centerTextIds": [
+        "text-1"
+      ],
+      "minPadding": 12
+    },
+    {
+      "id": "sample-2",
+      "box": [
+        20,
+        300,
+        560,
+        115
+      ],
+      "anchorShapeId": "frame-2",
+      "centerTextIds": [
+        "text-2"
+      ],
+      "minPadding": 12
+    },
+    {
+      "id": "sample-3",
+      "box": [
+        20,
+        440,
+        560,
+        115
+      ],
+      "anchorShapeId": "frame-3",
+      "centerTextIds": [
+        "text-3"
+      ],
+      "minPadding": 12
+    }
+  ],
+  "primitives": [
+    {
+      "id": "frame-0",
+      "type": "path",
+      "owner": "sample-0",
+      "seq": 0,
+      "box": [
+        20,
+        20,
+        560,
+        115
+      ],
+      "commands": [
+        [
+          "M",
+          20,
+          20
+        ],
+        [
+          "L",
+          580,
+          20
+        ],
+        [
+          "L",
+          580,
+          135
+        ],
+        [
+          "L",
+          20,
+          135
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#F7F8FA",
+      "stroke": "#CCD2D7",
+      "width": 1
+    },
+    {
+      "id": "text-0",
+      "type": "text",
+      "owner": "sample-0",
+      "seq": 1,
+      "text": "Method Overview",
+      "font": "Times New Roman",
+      "sourceFont": "Times New Roman",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "positions": [
+        [
+          184.47412109375,
+          87.43896484375
+        ]
+      ],
+      "box": [
+        184.47412109375,
+        57.43896484375,
+        400,
+        40
+      ],
+      "fill": "#172B3A",
+      "angle": 0,
+      "nativeTracking": -0.0009068080357142857
+    },
+    {
+      "id": "frame-1",
+      "type": "path",
+      "owner": "sample-1",
+      "seq": 2,
+      "box": [
+        20,
+        160,
+        560,
+        115
+      ],
+      "commands": [
+        [
+          "M",
+          20,
+          160
+        ],
+        [
+          "L",
+          580,
+          160
+        ],
+        [
+          "L",
+          580,
+          275
+        ],
+        [
+          "L",
+          20,
+          275
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#F7F8FA",
+      "stroke": "#CCD2D7",
+      "width": 1
+    },
+    {
+      "id": "text-1",
+      "type": "text",
+      "owner": "sample-1",
+      "seq": 3,
+      "text": "Thought and action",
+      "font": "Comic Sans MS",
+      "sourceFont": "Comic Sans MS",
+      "size": 30,
+      "bold": false,
+      "italic": false,
+      "positions": [
+        [
+          165.6962890625,
+          225.1025390625
+        ]
+      ],
+      "box": [
+        165.6962890625,
+        195.1025390625,
+        400,
+        40
+      ],
+      "fill": "#172B3A",
+      "angle": 0,
+      "nativeTracking": -0.00005744485294117647
+    },
+    {
+      "id": "frame-2",
+      "type": "path",
+      "owner": "sample-2",
+      "seq": 4,
+      "box": [
+        20,
+        300,
+        560,
+        115
+      ],
+      "commands": [
+        [
+          "M",
+          20,
+          300
+        ],
+        [
+          "L",
+          580,
+          300
+        ],
+        [
+          "L",
+          580,
+          415
+        ],
+        [
+          "L",
+          20,
+          415
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#F7F8FA",
+      "stroke": "#CCD2D7",
+      "width": 1
+    },
+    {
+      "id": "text-2",
+      "type": "text",
+      "owner": "sample-2",
+      "seq": 5,
+      "text": "Skill description",
+      "font": "Verdana",
+      "sourceFont": "Verdana-Bold",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "positions": [
+        [
+          164.96826171875,
+          365.87890625
+        ]
+      ],
+      "box": [
+        164.96826171875,
+        335.87890625,
+        400,
+        40
+      ],
+      "fill": "#172B3A",
+      "angle": 0,
+      "nativeTracking": -0.0006103515625
+    },
+    {
+      "id": "frame-3",
+      "type": "path",
+      "owner": "sample-3",
+      "seq": 6,
+      "box": [
+        20,
+        440,
+        560,
+        115
+      ],
+      "commands": [
+        [
+          "M",
+          20,
+          440
+        ],
+        [
+          "L",
+          580,
+          440
+        ],
+        [
+          "L",
+          580,
+          555
+        ],
+        [
+          "L",
+          20,
+          555
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "fill": "#F7F8FA",
+      "stroke": "#CCD2D7",
+      "width": 1
+    },
+    {
+      "id": "text-3",
+      "type": "text",
+      "owner": "sample-3",
+      "seq": 7,
+      "text": "Input / Output",
+      "font": "Arial",
+      "sourceFont": "Arial",
+      "size": 30,
+      "bold": false,
+      "italic": false,
+      "positions": [
+        [
+          207.82470703125,
+          505.44677734375
+        ]
+      ],
+      "box": [
+        207.82470703125,
+        475.44677734375,
+        400,
+        40
+      ],
+      "fill": "#172B3A",
+      "angle": 0,
+      "nativeTracking": -0.0011268028846153845
+    }
+  ],
+  "labels": [
+    {
+      "id": "text-0",
+      "owner": "sample-0"
+    },
+    {
+      "id": "text-1",
+      "owner": "sample-1"
+    },
+    {
+      "id": "text-2",
+      "owner": "sample-2"
+    },
+    {
+      "id": "text-3",
+      "owner": "sample-3"
+    }
+  ],
+  "edges": [],
+  "exceptions": []
+}

@@ -1,0 +1,54 @@
+
+> paperfigure-workspace@0.1.0 test
+> npm --prefix paperfigure test
+
+
+> paperfigure-skill@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ vlm: complete exports, valid graph, native editability, zero layout errors (768.742667ms)
+✔ tool-memory-agent: complete exports, valid graph, native editability, zero layout errors (76.337833ms)
+✔ physical-vln: complete exports, valid graph, native editability, zero layout errors (64.025875ms)
+✔ default is caption-free and footer-free, with metadata title retained (1.822792ms)
+✔ headings and legend are explicit opt-ins (1.402917ms)
+✔ global typography and per-node font override change native text (10.011167ms)
+✔ duplicate node id is rejected (0.319792ms)
+✔ missing endpoint is rejected (0.1205ms)
+✔ fabricated evidence quote is rejected (0.102542ms)
+✔ wrong evidence source is rejected (0.09775ms)
+✔ phase mismatch is rejected (0.095375ms)
+✔ unmarked cycle is rejected (0.117917ms)
+✔ unjustified novelty highlighting is rejected (0.070791ms)
+✔ unknown layout node is rejected (0.082958ms)
+✔ group parent cycle is rejected (0.075208ms)
+✔ schema rejects unknown fields and invalid glyphs (0.073667ms)
+✔ node overlaps are detected (1.065083ms)
+✔ text overflow is detected without reducing fonts (1.089417ms)
+✔ edge through a module is detected (0.672958ms)
+✔ final publication size has an independent readability gate (0.729958ms)
+✔ crossing detector distinguishes crossing from shared endpoint (0.025792ms)
+✔ independent raster route metric catches displaced thin arrows (0.440958ms)
+✔ two routes sharing a segment are reported (1.126583ms)
+✔ automatic layout routes an unseen linear graph (0.423625ms)
+✔ SVG and PPTX are byte-reproducible for identical input (17.977166ms)
+✔ appearance candidates preserve the entire semantic graph (1.707334ms)
+✔ output source and existing user files are preserved (1.478209ms)
+✔ tampered SVG label is detected from actual output (9.060666ms)
+✔ missing native PPTX connector is detected (10.115041ms)
+✔ connector geometry corruption is detected (10.618375ms)
+✔ isolated skill installation refuses a second installation (160.090875ms)
+✔ CLI executes through a symlinked installation path (170.224833ms)
+✔ renderer can be imported by a stdin-driven generation script (132.873958ms)
+✔ installer rejects a recursive destination before making changes (63.1605ms)
+✔ mechanical success cannot imply visual acceptance (0.423209ms)
+✔ a rejected or stale review cannot approve delivery (7.461041ms)
+✔ reference-driven VLM preserves source semantics and native structure (875.722542ms)
+✔ illustrations cannot escape asset roots or cover other modules (1.063083ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2651.827458

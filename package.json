@@ -1,0 +1,1 @@
+{"name":"paperfigure-workspace","private":true,"version":"0.1.0","scripts":{"test":"npm --prefix paperfigure test","examples":"npm --prefix paperfigure run examples"}}

@@ -1,0 +1,188 @@
+{
+  "status": "rendered",
+  "renderer": "soffice",
+  "log": "convert /Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-16-skill-e2e/design/output-v3/figure.pptx as a Impress document -> /Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-16-skill-e2e/design/output-v3/rendered-pptx/figure.pdf using filter : impress_pdf_Export",
+  "routeAlignmentPassed": true,
+  "routes": [
+    {
+      "edge": "task",
+      "testedSamples": 40,
+      "matchedSamples": 40,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "execute",
+      "testedSamples": 43,
+      "matchedSamples": 43,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "verify",
+      "testedSamples": 15,
+      "matchedSamples": 15,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "success",
+      "testedSamples": 35,
+      "matchedSamples": 35,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "retrieved-code",
+      "testedSamples": 43,
+      "matchedSamples": 43,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "query",
+      "testedSamples": 43,
+      "matchedSamples": 43,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "latest",
+      "testedSamples": 53,
+      "matchedSamples": 53,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "outcome",
+      "testedSamples": 281,
+      "matchedSamples": 281,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "next-task",
+      "testedSamples": 25,
+      "matchedSamples": 25,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "runtime-context",
+      "testedSamples": 3,
+      "matchedSamples": 3,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "critic-context",
+      "testedSamples": 13,
+      "matchedSamples": 13,
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "edge": "refine",
+      "testedSamples": 9,
+      "matchedSamples": 9,
+      "coverage": 1,
+      "passed": true
+    }
+  ],
+  "pdfCheck": {
+    "rendered": true,
+    "routeAlignmentPassed": true,
+    "textComplete": true,
+    "missingLabels": [],
+    "routes": [
+      {
+        "edge": "task",
+        "testedSamples": 40,
+        "matchedSamples": 40,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "execute",
+        "testedSamples": 43,
+        "matchedSamples": 43,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "verify",
+        "testedSamples": 15,
+        "matchedSamples": 15,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "success",
+        "testedSamples": 35,
+        "matchedSamples": 35,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "retrieved-code",
+        "testedSamples": 43,
+        "matchedSamples": 43,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "query",
+        "testedSamples": 43,
+        "matchedSamples": 43,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "latest",
+        "testedSamples": 53,
+        "matchedSamples": 53,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "outcome",
+        "testedSamples": 281,
+        "matchedSamples": 281,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "next-task",
+        "testedSamples": 25,
+        "matchedSamples": 25,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "runtime-context",
+        "testedSamples": 3,
+        "matchedSamples": 3,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "critic-context",
+        "testedSamples": 13,
+        "matchedSamples": 13,
+        "coverage": 1,
+        "passed": true
+      },
+      {
+        "edge": "refine",
+        "testedSamples": 9,
+        "matchedSamples": 9,
+        "coverage": 1,
+        "passed": true
+      }
+    ]
+  },
+  "normalizedPixelMAE": 0.0288520304144385,
+  "darkForegroundIoU": 0.4096270636469273,
+  "foregroundPixelRatio": 1.0664336507171266,
+  "limits": "Route ink alignment is an objective check with a 3px tolerance and 90% minimum per edge. PDF text extraction checks label presence including math glyphs, not visual typography. Pixel similarity is diagnostic, not an aesthetic score; independent visual review remains necessary."
+}

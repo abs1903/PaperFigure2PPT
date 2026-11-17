@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "deliveryReady": true,
+  "selectedOutput": "output-v2",
+  "calls": {
+    "initial": 2,
+    "edits": 1,
+    "maximum": 4
+  },
+  "authorInformed": true,
+  "files": {
+    "selected-reference.png": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "selected-reference-freeze.json": "5d873d0d6a0f074a835f124633a7f64abea64d72dd43d2761b6ce78955eded9e",
+    "spec.json": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+    "narrative-plan.json": "eeb7d7e8d2e0c66065fbba1d93d317b815a57109dabfd9f672c039c67bb5dcc1",
+    "semantic-freeze.json": "9a83ccd754cc98c472f9e110c3a797bd92d0f382aaab4646329f293fd151effa",
+    "source/manifest.json": "83c4aba75464f569876fb7513e8269cb065aac996db9d46e3bb1c7c5dbc0fa74",
+    "author-scene.mjs": "9e9ef9fe184f5e1e39f486d8eb64b0896ae17c41291d642319c14cb0fb39b2db",
+    "reference-geometry.json": "9b694b6b42613ab8a27decdd63485c85a6f5ff847151863434f76f5bfaabbc8b",
+    "first-reading-freeze.json": "d95edd6b8fc96a035c0c9ccfc2c9fbad77bffc4ce82c0e86cdc1dfd6168f79dc",
+    "first-reading.md": "eaaba73dbd7ebcdb6116f5f351a5d373ec50f6ffd43a5676c279a0768d798297",
+    "rereading-c.md": "411e9a80cb3029cd719a96c4c18e25d8b264c4d452b24f5a587cc9071d050cc6",
+    "image-review-initial.json": "1fc9f06f2ef09598bd46c8e148f60bee241a2c5a68f47854e9c8d30198768d8e",
+    "image-review-b2.json": "3b524ffec5098c0c379dd56c26bf1211c93d68c2928ee716bd98e72f08ab69ab",
+    "output-v2/editable.svg": "417fb7cafa273edd015b80386ae69986164405c6f739fa819dd80da8681dbd8a",
+    "output-v2/figure.pptx": "e2d8f3bc23f6b8e692e2db2660067ede8dc2c02b808577ad13830e4397489eb2",
+    "output-v2/native-render/figure.pdf": "02e197aa3ad4f22714f09c05ad4d6c6b2e08205d1254a7e1e0680ec4bc2bfa04",
+    "output-v2/native-render/preview.png": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa",
+    "output-v2/native-audit.json": "5749c5abad683f55230d8d3d8a25104257d4dce50998cde4596771394ee44be7",
+    "output-v2/native-render/render-qa.json": "7c5e2af9bbccd34d5e30596acd4b572a8298b99b4c8ac59832487eebe569add0",
+    "output-v2/typography-qa.json": "522afce6220467bce3bd7d797e318b80d7d24b51556e760a6a00af0b5f49eb74",
+    "output-v2/visual-review.json": "a89d4bd0c8d89044cff0a5189c045cd237915f443583d79ab8f02f472eb8321b",
+    "output-v2/reconstruction-review.json": "ba585c4932a1aab5e5a20d831d57223a2af078351a12ed8d7c6752847b4287cc",
+    "output-v2/delivery.json": "efda00d1bfd9d3e4730dd53fc0028b6a232a169aa961a774d18d738f1cc124a9",
+    "AUTHOR_COMPARISON.md": "3f042786b68621b6b63593a760610e83c52ee0e4a171f1572cfc96cd17788fb6",
+    "REPORT.md": "30ec53c2211e5b5c0be10a6d3e601f080434c38e3a47e5ef9e293aaed980b7c6"
+  }
+}

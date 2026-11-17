@@ -1,0 +1,22 @@
+{
+  "reviewedArtifacts": [
+    "editable.svg",
+    "figure.pptx",
+    "preview.png",
+    "layout-scene.json",
+    "reference-contract.json",
+    "reference-layout-qa.json",
+    "layout-qa.json",
+    "native-audit.json",
+    "native-render/figure.pdf",
+    "native-render/preview.png",
+    "native-render/render-qa.json",
+    "typography-profile.json",
+    "typography-style-qa.json",
+    "typography-qa.json"
+  ],
+  "hashesMatch": true,
+  "targetUnchanged": true,
+  "deliveryReady": true,
+  "reportLinksChecked": 39
+}

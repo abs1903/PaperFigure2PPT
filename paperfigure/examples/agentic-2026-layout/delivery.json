@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-16",
+  "cases": [
+    {
+      "name": "agemem",
+      "output": "agemem/output-v12",
+      "mechanicalPassed": true,
+      "editing": {
+        "topologyUnchanged": true,
+        "meaningUnchanged": true,
+        "measuredLayout": true,
+        "nativeAudit": true,
+        "actualRender": true,
+        "errors": []
+      },
+      "reproducibility": {
+        "svgByteIdentical": true,
+        "pptxByteIdentical": true
+      },
+      "sourceAuditedRevision": "output-v11",
+      "finalMeaningIdentical": true,
+      "finalTopologyIdentical": true,
+      "semanticHash": "15f7010043fdb9090ecd0edc7977976a716e59fb080ba9d037473133bf94df35",
+      "topologyHash": "3cdf208d71369250f2241eafbc3d95a036452e904f2962f3b39ffc982357cf70",
+      "artifacts": {
+        "editable.svg": "272bae277c5f893626ff968a2a740d4347c293721338da8caf940bf663e8ae72",
+        "preview.png": "94775f0f7150b68127ce00e64f2d6945210fd46d045f83dc398030a3f5c0f74d",
+        "figure.pptx": "f02e46f646fd72e7d307d51d572572ab4cbc0b0fdad7cb7194bd0636ad714ff4",
+        "layout-scene.json": "4f7a5195b22f0d5b0a2a4fd95be896fdf4a1a0ab882d6af1ca449106b794244b",
+        "native-render/preview.png": "f37776644b164ab52e9bba87359c9e1a5fa2496a3d3a2b081cbb8cee75e8c7ed",
+        "native-render/render-qa.json": "1254907163e5a09576713fce840dfd0f7ad9cb84c7c416903d808cdbea479220",
+        "comparison-original-svg.png": "e626af6468d69c77b4fc8c81879889dbb7512e3a4847f9ddb80ec87b4d5ca509",
+        "comparison-svg-pptx.png": "256eabaab5443806b7588613fe2bd482f76341701ed4bfbbc2e57032cf2c6c52"
+      }
+    },
+    {
+      "name": "memskill",
+      "output": "memskill/output-v12",
+      "mechanicalPassed": true,
+      "editing": {
+        "topologyUnchanged": true,
+        "meaningUnchanged": true,
+        "measuredLayout": true,
+        "nativeAudit": true,
+        "actualRender": true,
+        "errors": []
+      },
+      "reproducibility": {
+        "svgByteIdentical": true,
+        "pptxByteIdentical": true
+      },
+      "sourceAuditedRevision": "output-v11",
+      "finalMeaningIdentical": true,
+      "finalTopologyIdentical": true,
+      "semanticHash": "9d7208bcc87134cd4d56a22f95642fa7314fdb974cdc26d68cdd5e6bd9c86721",
+      "topologyHash": "c01efaebbfd14f8b2bb6ad488f46bfa8d352ab385db464825c3b82851c9cafe5",
+      "artifacts": {
+        "editable.svg": "d0bf3245a9023c12bbb6db51b775480b2f169d2c7db58d4e6e685d56b57bdaf1",
+        "preview.png": "73fc14c4ed088b45d69dafdd2506c7f8c02547449d279262aaf7726cc2fad473",
+        "figure.pptx": "3de529fae8ea1c75b9e48884808371a5e9622fe3bdcde3701e8264817162a3a1",
+        "layout-scene.json": "5fe2ea151844e367809067c6ac985e2f762caef6f5329f76e781f1a201571da0",
+        "native-render/preview.png": "f99784defa580759a1dbb7816c08104d375fd47a3f49643b1460cdcedf6945ac",
+        "native-render/render-qa.json": "d2b011b763ae8c208f9fb9009a89b10c604ee6c35e76ac93e6d73c7caf5769ee",
+        "comparison-original-svg.png": "0b7d32d7b15036373c31b7f69714b64dc1c62030cee8a34cb571175d0ab8f8e3",
+        "comparison-svg-pptx.png": "ecca4b317f93a1f27ff6f656769ad0d82d16e62ba8ace5cfec2e2bcdda7bccd4"
+      }
+    }
+  ],
+  "reviewEvidence": {
+    "docs/AGENTIC_2026_SOURCE_AUDIT_V11.md": "37aa909496f10cd885eefbb7995db46be92d8a77e25287f5c76274e82d104454",
+    "docs/AGENTIC_2026_ISOLATED_VISUAL_REVIEW_V12.md": "423a06e30a8cf7b523aa352f4d25567d704d47833dc4b4ff872ef3ff665841f5",
+    "docs/LAYOUT_WORKFLOW_INDEPENDENT_REVIEW_FINAL.md": "a46ba7ad029ca522994689e9e0f1d55ccfe171c3086635f8b6837c58410e703f",
+    "docs/test-results-layout-and-arrows.txt": "b5a1b9c95d5fe85fa20f7ff9909861b75e324a602d7f9fad66980d5ce4046bea"
+  },
+  "acceptance": {
+    "mechanical": "passed",
+    "isolatedSource": "passed; final placement/style-only repairs preserve audited semantics",
+    "isolatedVisual": "passed for both final v12 previews and independently rendered PPTX",
+    "workflowCode": "passed",
+    "subjectivePublicationQuality": "not claimed",
+    "interactiveMicrosoftPowerPoint": "not tested"
+  }
+}

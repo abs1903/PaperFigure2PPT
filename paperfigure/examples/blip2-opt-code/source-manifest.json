@@ -1,0 +1,13 @@
+{
+  "repo": "salesforce/LAVIS",
+  "commit": "05cb670f47296522e24e7727e366b4a997d28582",
+  "commitDate": "2026-09-18T09:59:39Z",
+  "files": {
+    "lavis/models/blip2_models/blip2_opt.py": "c7ebd7994a5ec419009ce4515f002ee7afa52cb92012df1a530b21e1443519e6",
+    "lavis/models/blip2_models/blip2.py": "265755bbb90884e2906219816a834458fd7bcfb0b15d1490acca29423e5d512e",
+    "lavis/models/blip2_models/Qformer.py": "9d1375ffed630df9449e7e5e69072038bf20af5bd0e1cc22ae1f2337b586f95e",
+    "lavis/configs/models/blip2/blip2_pretrain_opt2.7b.yaml": "506b8bdb4c513d93f2dec65ea8c808ce8bdd77504e4c44b04d2da07f0b1d1859",
+    "LICENSE.txt": "5aca00bff81e12a65992c7f2ecfece6ba7a923193c7a1d33a1b60f657e8cf11a"
+  },
+  "note": "Read-only selected-source snapshot; no model dependencies, model weights, or training executed."
+}

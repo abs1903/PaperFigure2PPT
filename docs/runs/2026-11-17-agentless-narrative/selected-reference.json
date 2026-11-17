@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "path": "selected-reference.png",
+  "sha256": "81bea89ab5a2cfd8437c5ed5e194f66a81fa27852b98f372d9755e8e63ad6bcf",
+  "sizePx": [
+    1685,
+    934
+  ],
+  "reviewPath": "image-review-v4.json",
+  "reviewSHA256": "07c898a6d34498aee5c48ad58a51ba587aa601dacea30264fae86a629bb06b5d",
+  "sourceReviewPath": "source-narrative-review-v3.json",
+  "sourceReviewSHA256": "86a51e7455efde8cb849ab8a5613db5d21e6c925c7c16ed632da46a766d02199",
+  "specSHA256": "cdef0cf5d66b9709bc6e22e9f7564c5995041fff27ec8491d0e68e438344fa2e",
+  "briefSHA256": "985839e929f82bb333d48a2845fefdc07f9af77e9f47326badf4ec45d6a5bca5",
+  "narrativePlanSHA256": "1c878fe7157ed7473c968853e0edd1196e7f339817d369d403baf33441477378",
+  "figureHidden": false,
+  "nativeOrOfficeAccepted": false,
+  "note": "Frozen before independent author-figure comparison. One-pixel width change in actual edit outputs is retained, not resampled."
+}

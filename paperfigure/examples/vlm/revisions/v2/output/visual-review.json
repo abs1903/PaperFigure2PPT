@@ -1,0 +1,43 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "independent_visual_review"
+  },
+  "verdict": "accept",
+  "checks": {
+    "referenceComparison": "pass",
+    "semanticFidelity": "pass",
+    "composition": "pass",
+    "modalityIdentity": "pass",
+    "typography": "pass",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "pass"
+  },
+  "artifacts": {
+    "spec.json": "533756ada0cbd144288dbebcbc7e691292d35aa0fe4f301d118a3d58531cfe55",
+    "figure.svg": "2b459673dd3ae1b95b8939ef0eec372e927fcc1c335dbeb2207364d26a7ed592",
+    "figure.pptx": "63d9a97c00ed2cf69c729182c44b821506c8c7e7e76ad39be6e4d3054d6adda1",
+    "figure.png": "e781bd9ecdb8bbab3930c16eec702661b0a1ab30ac78a1d03d6731a23c096e72",
+    "rendered-pptx/figure.png": "e2cc544eb8e275ae25ac00354f339afb044b7899cdca181be884a6be4d553de3"
+  },
+  "reference": {
+    "path": "../../../design-reference/imagegen-v1.png",
+    "sha256": "c10dcce0a77ff07fbdf8857eff1a30eb8eca44e0fa8118e150a087d4b6946809"
+  },
+  "notes": [
+    "Independently compared the retained design reference, v2 preview, full-resolution figure PNG, and LibreOffice-rendered PPTX raster.",
+    "The candidate transfers the source-safe visual intent: compact two-stream layout, dominant language-model anchor, lightweight visual-tokenization enclosure, original image tile, teal visual-token and lavender text-token motifs, and a separate dashed supervision branch.",
+    "The candidate semantic snapshot exactly matches the original VLM specification: seven nodes and six edges, including the training-only LM-to-loss path. It does not introduce attention/FFN internals, a fixed decoder depth, token counts, answer content, or optimizer/gradient connections.",
+    "No visible title, subtitle, footer, legend, footnote, or fine-print annotation was observed. The metadata title/subtitle remain only in the specification.",
+    "Mechanical QA reports native text, shapes, and connectors. Its single picture object is confined to the illustrative input tile; it is not a rasterized full figure. Editable module shapes/connectors and adjustable text remain present.",
+    "The inspected Office render preserves readable labels, token motifs, dashed supervision route, arrow direction, and overall composition. render-report.json records route alignment for all six edges."
+  ],
+  "remainingLimitations": [
+    "Acceptance is scoped only to reference reconstruction and the stated VLM overview; it is not a top-venue-quality certification or a human approval.",
+    "The visual token blocks and decoder-block repetition are explicitly illustrative motifs, not evidence of token counts or decoder depth; the existing ellipses help communicate this but a caption should retain the method-level caveat.",
+    "The PPTX contains independently movable native connector segments rather than auto-attached connectors, so moving modules still requires route adjustment.",
+    "This review used the LibreOffice render supplied with the candidate. Microsoft PowerPoint interactive editing/rendering remains unverified."
+  ]
+}

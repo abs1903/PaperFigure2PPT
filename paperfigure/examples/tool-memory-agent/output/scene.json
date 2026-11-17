@@ -1,0 +1,795 @@
+{
+  "width": 1440,
+  "height": 680,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "task",
+      "label": "Task",
+      "detail": "User request",
+      "role": "input",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The task is passed to the language-model controller."
+        }
+      ],
+      "x": 48,
+      "y": 245,
+      "w": 190,
+      "h": 120,
+      "fill": "#F0F4F8",
+      "stroke": "#6B8299",
+      "texts": [
+        {
+          "id": "text:task:label:0",
+          "text": "Task",
+          "x": 62,
+          "y": 275.04,
+          "w": 162,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:task:detail:0",
+          "text": "User request",
+          "x": 62,
+          "y": 311.36,
+          "w": 162,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "controller",
+      "label": "LM controller",
+      "detail": "Next-step decision",
+      "role": "core",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The task is passed to the language-model controller."
+        }
+      ],
+      "x": 390,
+      "y": 245,
+      "w": 250,
+      "h": 120,
+      "fill": "#E9EDF8",
+      "stroke": "#657BB0",
+      "texts": [
+        {
+          "id": "text:controller:label:0",
+          "text": "LM controller",
+          "x": 404,
+          "y": 275.04,
+          "w": 222,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:controller:detail:0",
+          "text": "Next-step decision",
+          "x": 404,
+          "y": 311.36,
+          "w": 222,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "External tools",
+      "detail": "Search / execution",
+      "role": "tool",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller issues tool calls to external tools. Tool observations return to the controller on a subsequent decision step."
+        }
+      ],
+      "x": 850,
+      "y": 80,
+      "w": 250,
+      "h": 110,
+      "fill": "#FFF2DF",
+      "stroke": "#AA7933",
+      "texts": [
+        {
+          "id": "text:tools:label:0",
+          "text": "External tools",
+          "x": 864,
+          "y": 105.03999999999999,
+          "w": 222,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:tools:detail:0",
+          "text": "Search / execution",
+          "x": 864,
+          "y": 141.35999999999999,
+          "w": 222,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "label": "Memory store",
+      "detail": "Persistent context",
+      "role": "memory",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller queries persistent memory. Retrieved context returns to the controller. Memory contents are maintained externally; this overview does not imply gradient updates or automatic memory writes."
+        }
+      ],
+      "x": 850,
+      "y": 445,
+      "w": 250,
+      "h": 110,
+      "fill": "#F1ECF8",
+      "stroke": "#8568AA",
+      "texts": [
+        {
+          "id": "text:memory:label:0",
+          "text": "Memory store",
+          "x": 864,
+          "y": 470.04,
+          "w": 222,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:memory:detail:0",
+          "text": "Persistent context",
+          "x": 864,
+          "y": 506.36,
+          "w": 222,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "label": "Response",
+      "detail": "Final answer",
+      "role": "output",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller emits a final response to the user."
+        }
+      ],
+      "x": 1200,
+      "y": 245,
+      "w": 200,
+      "h": 120,
+      "fill": "#EAF4ED",
+      "stroke": "#427855",
+      "texts": [
+        {
+          "id": "text:response:label:0",
+          "text": "Response",
+          "x": 1214,
+          "y": 275.04,
+          "w": 172,
+          "h": 28.32,
+          "fontSize": 24,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:response:detail:0",
+          "text": "Final answer",
+          "x": 1214,
+          "y": 311.36,
+          "w": 172,
+          "h": 23.599999999999998,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "task",
+      "to": "controller",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The task is passed to the language-model controller."
+        }
+      ],
+      "points": [
+        [
+          238,
+          305
+        ],
+        [
+          390,
+          305
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "controller",
+      "to": "tools",
+      "label": {
+        "id": "edge-label:e2",
+        "text": "Tool call",
+        "x": 725,
+        "y": 97,
+        "w": 88.06,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "control",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller issues tool calls to external tools. Tool observations return to the controller on a subsequent decision step."
+        }
+      ],
+      "points": [
+        [
+          640,
+          275
+        ],
+        [
+          710,
+          275
+        ],
+        [
+          710,
+          135
+        ],
+        [
+          850,
+          135
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.25,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": true
+    },
+    {
+      "id": "e3",
+      "from": "tools",
+      "to": "controller",
+      "label": {
+        "id": "edge-label:e3",
+        "text": "Observation",
+        "x": 770,
+        "y": 190,
+        "w": 123.92,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller issues tool calls to external tools. Tool observations return to the controller on a subsequent decision step."
+        }
+      ],
+      "points": [
+        [
+          850,
+          168
+        ],
+        [
+          750,
+          168
+        ],
+        [
+          750,
+          290.6
+        ],
+        [
+          640,
+          290.6
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.8,
+      "toFraction": 0.38,
+      "stroke": "#65788B",
+      "dashed": true
+    },
+    {
+      "id": "e4",
+      "from": "controller",
+      "to": "memory",
+      "label": {
+        "id": "edge-label:e4",
+        "text": "Query",
+        "x": 730,
+        "y": 552,
+        "w": 71.06,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "control",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller queries persistent memory. Retrieved context returns to the controller. Memory contents are maintained externally; this overview does not imply gradient updates or automatic memory writes."
+        }
+      ],
+      "points": [
+        [
+          640,
+          353
+        ],
+        [
+          710,
+          353
+        ],
+        [
+          710,
+          533
+        ],
+        [
+          850,
+          533
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.9,
+      "toFraction": 0.8,
+      "stroke": "#65788B",
+      "dashed": true
+    },
+    {
+      "id": "e5",
+      "from": "memory",
+      "to": "controller",
+      "label": {
+        "id": "edge-label:e5",
+        "text": "Retrieved context",
+        "x": 770,
+        "y": 398,
+        "w": 170.22,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller queries persistent memory. Retrieved context returns to the controller. Memory contents are maintained externally; this overview does not imply gradient updates or automatic memory writes."
+        }
+      ],
+      "points": [
+        [
+          850,
+          467
+        ],
+        [
+          750,
+          467
+        ],
+        [
+          750,
+          335
+        ],
+        [
+          640,
+          335
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.2,
+      "toFraction": 0.75,
+      "stroke": "#65788B",
+      "dashed": true
+    },
+    {
+      "id": "e6",
+      "from": "controller",
+      "to": "response",
+      "label": {
+        "id": "edge-label:e6",
+        "text": "Finish",
+        "x": 1020,
+        "y": 270,
+        "w": 69.34,
+        "h": 26,
+        "fontSize": 20,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller emits a final response to the user."
+        }
+      ],
+      "points": [
+        [
+          640,
+          305
+        ],
+        [
+          1200,
+          305
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "dashed": false
+    }
+  ],
+  "groups": [],
+  "texts": [
+    {
+      "id": "text:task:label:0",
+      "text": "Task",
+      "x": 62,
+      "y": 275.04,
+      "w": 162,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:task:detail:0",
+      "text": "User request",
+      "x": 62,
+      "y": 311.36,
+      "w": 162,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:controller:label:0",
+      "text": "LM controller",
+      "x": 404,
+      "y": 275.04,
+      "w": 222,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:controller:detail:0",
+      "text": "Next-step decision",
+      "x": 404,
+      "y": 311.36,
+      "w": 222,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tools:label:0",
+      "text": "External tools",
+      "x": 864,
+      "y": 105.03999999999999,
+      "w": 222,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tools:detail:0",
+      "text": "Search / execution",
+      "x": 864,
+      "y": 141.35999999999999,
+      "w": 222,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:memory:label:0",
+      "text": "Memory store",
+      "x": 864,
+      "y": 470.04,
+      "w": 222,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:memory:detail:0",
+      "text": "Persistent context",
+      "x": 864,
+      "y": 506.36,
+      "w": 222,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:response:label:0",
+      "text": "Response",
+      "x": 1214,
+      "y": 275.04,
+      "w": 172,
+      "h": 28.32,
+      "fontSize": 24,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:response:detail:0",
+      "text": "Final answer",
+      "x": 1214,
+      "y": 311.36,
+      "w": 172,
+      "h": 23.599999999999998,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e2",
+      "text": "Tool call",
+      "x": 725,
+      "y": 97,
+      "w": 88.06,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e3",
+      "text": "Observation",
+      "x": 770,
+      "y": 190,
+      "w": 123.92,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e4",
+      "text": "Query",
+      "x": 730,
+      "y": 552,
+      "w": 71.06,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e5",
+      "text": "Retrieved context",
+      "x": 770,
+      "y": 398,
+      "w": 170.22,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e6",
+      "text": "Finish",
+      "x": 1020,
+      "y": 270,
+      "w": 69.34,
+      "h": 26,
+      "fontSize": 20,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    }
+  ],
+  "decorations": [],
+  "title": "Language agent with tools and memory",
+  "typography": {
+    "fontFamily": "Arial",
+    "moduleSize": 24,
+    "detailSize": 20,
+    "annotationSize": 20,
+    "titleSize": 30
+  },
+  "specHash": "f9cc116cd7c65074f7fa55bec547e72ad8dae6ff890d38748cd93e7768fbfd52",
+  "semanticHash": "57524097ade14ab51438b1597b5d32fbe0cbf5401b0be9d378964f1a2dec0a91",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

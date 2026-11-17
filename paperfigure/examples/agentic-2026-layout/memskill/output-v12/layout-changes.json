@@ -1,0 +1,98 @@
+[
+  {
+    "kind": "center-text",
+    "module": "retriever",
+    "dx": -0.6754772663116455,
+    "dy": -1.2070045471191406,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "state-skill-encoder",
+    "dx": 1.0055493116378784,
+    "dy": -1.2968816757202148,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "skill-selection",
+    "dx": 1.0892444252967834,
+    "dy": -0.9642715454101562,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "executor",
+    "dx": -0.5025573372840881,
+    "dy": -3.130242347717285,
+    "pass": 0
+  },
+  {
+    "kind": "font-fit",
+    "module": "reset-event",
+    "scale": 0.9953275135422978,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "reset-event",
+    "dx": 0.03561574333372164,
+    "dy": 0.9473929559230214,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "evaluation",
+    "dx": -3.582065999507904,
+    "dy": -4.602978706359863,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "task-reward",
+    "dx": -1.2106958031654358,
+    "dy": -1.3585400581359863,
+    "pass": 0
+  },
+  {
+    "kind": "font-fit",
+    "module": "refine-skills",
+    "scale": 0.9781308035028365,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "refine-skills",
+    "dx": 1.6815192825474696,
+    "dy": -3.6412728787394144,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "analyze-failures",
+    "dx": -0.4664342201233467,
+    "dy": -4.144714525604229,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "aggregate-cases",
+    "dx": -0.11398324356082412,
+    "dy": -2.364472473144531,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "difficulty-filtering",
+    "dx": 1.3065162897109985,
+    "dy": -3.624793529510498,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "cluster-cases",
+    "dx": -0.8979833722114563,
+    "dy": -0.0796346664428711,
+    "pass": 0
+  }
+]

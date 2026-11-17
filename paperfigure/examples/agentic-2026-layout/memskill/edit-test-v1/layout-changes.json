@@ -1,0 +1,31 @@
+{
+  "topologyBefore": "c01efaebbfd14f8b2bb6ad488f46bfa8d352ab385db464825c3b82851c9cafe5",
+  "topologyAfter": "c01efaebbfd14f8b2bb6ad488f46bfa8d352ab385db464825c3b82851c9cafe5",
+  "moves": [
+    {
+      "id": "task-reward",
+      "dx": 0,
+      "dy": 12
+    }
+  ],
+  "styles": [
+    {
+      "id": "evaluation-to-reward",
+      "value": {
+        "stroke": "#334455",
+        "width": 3,
+        "dashed": true,
+        "dashPattern": [
+          10,
+          6
+        ],
+        "endArrow": "stealth",
+        "arrowSize": "med",
+        "lineCap": "square"
+      }
+    }
+  ],
+  "semanticBefore": "9d7208bcc87134cd4d56a22f95642fa7314fdb974cdc26d68cdd5e6bd9c86721",
+  "semanticAfter": "9d7208bcc87134cd4d56a22f95642fa7314fdb974cdc26d68cdd5e6bd9c86721",
+  "changes": []
+}

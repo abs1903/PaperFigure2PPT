@@ -1,0 +1,13 @@
+{
+  "encoding": "Module fill encodes parameter state in the pinned constructor/configuration; not an observed optimization result.",
+  "categories": {
+    "frozen": {"fill": "#DDE8EF", "stroke": "#44748D", "nodes": ["vision", "embeddings", "opt"], "evidence": "blip2_opt.py freezes visual_encoder and opt_model; OPT embedding table belongs to opt_model."},
+    "trainable": {"fill": "#F7DFAC", "stroke": "#A87519", "nodes": ["norm", "qformer", "projection"], "evidence": "Separately created ln_vision, Qformer and opt_proj are not included in either freezing loop; source defaults only."},
+    "neutral": {"fill": "#FAFBFC", "stroke": "#73838D", "nodes": ["prompt", "caption", "concat"], "evidence": "Input/output interfaces and parameter-free concatenation."}
+  },
+  "learnedQueryParameters": {"owner": "queries", "fill": "#C89433", "meaning": "Same gold category: 32 learned query parameters; lighter shade is a gradient stop, not a separate category."},
+  "activationGlyphs": {"prefixes": ["prefix-", "prompt-emb-"], "fill": "#A8B3BC", "meaning": "Both sequences are activations, not parameters; neutral identical styling, labels distinguish sequence parts."},
+  "otherColors": {"#0C3150": "Uniform text and data-flow ink; no category distinction.", "white": "Background, contrast and input-interface fill; no category distinction.", "photo": "Illustrative input data; natural colors do not encode module state."},
+  "redundantCues": ["Frozen labels on both backbones and OPT table", "Learned query label", "Explicit module and operation names"],
+  "referenceDeviation": "User requested semantic colors after the initial freeze. Teal decoration and unique Q-Former highlight are removed; the graph and layout of the reviewed concat revision are retained."
+}

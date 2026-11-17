@@ -1,0 +1,527 @@
+{
+  "version": "1.0",
+  "title": "Agentless: narrow code, propose edits, choose a patch",
+  "subtitle": "Figure-hidden, pinned-code overview; not an executed repair experiment.",
+  "sources": [
+    {
+      "id": "localize",
+      "kind": "code",
+      "locator": "OpenAutoCoder/Agentless@5ce5888b9f149beaace393957a55ea8ee46c9f71:agentless/fl/localize.py:100-361",
+      "text": "def localize_instance(\n    bug, args, swe_bench_data, start_file_locs, existing_instance_ids, write_lock=None\n):\n    instance_id = bug[\"instance_id\"]\n    log_file = os.path.join(\n        args.output_folder, \"localization_logs\", f\"{instance_id}.log\"\n    )\n    if args.target_id is not None:\n        if args.target_id != bug[\"instance_id\"]:\n            return\n\n    logger = setup_logger(log_file)\n    logger.info(f\"Processing bug {instance_id}\")\n\n    if instance_id in existing_instance_ids:\n        logger.info(f\"Skipping existing instance_id: {bug['instance_id']}\")\n        return\n\n    structure = get_repo_structure(\n        instance_id, bug[\"repo\"], bug[\"base_commit\"], \"playground\"\n    )\n\n    logger.info(f\"================ localize {instance_id} ================\")\n\n    bench_data = [x for x in swe_bench_data if x[\"instance_id\"] == instance_id][0]\n    problem_statement = bench_data[\"problem_statement\"]\n\n    filter_none_python(structure)  # some basic filtering steps\n    filter_out_test_files(structure)\n\n    found_files = []\n    found_related_locs = {}\n    found_edit_locs = {}\n    additional_artifact_loc_file = None\n    additional_artifact_loc_related = None\n    additional_artifact_loc_edit_location = None\n    file_traj, related_loc_trajs, edit_loc_traj = {}, [], {}\n\n    # file level localization\n    if args.file_level:\n        fl = LLMFL(\n            instance_id,\n            structure,\n            problem_statement,\n            args.model,\n            args.backend,\n            logger,\n        )\n        found_files, additional_artifact_loc_file, file_traj = fl.localize(\n            mock=args.mock\n        )\n    else:\n        # assume start_file is provided\n        for locs in start_file_locs:\n            if locs[\"instance_id\"] == instance_id:\n                found_files = locs[\"found_files\"]\n                if \"additional_artifact_loc_file\" in locs:\n                    additional_artifact_loc_file = locs[\"additional_artifact_loc_file\"]\n                    file_traj = locs[\"file_traj\"]\n                if \"found_related_locs\" in locs:\n                    found_related_locs = locs[\"found_related_locs\"]\n                    additional_artifact_loc_related = locs[\n                        \"additional_artifact_loc_related\"\n                    ]\n                    related_loc_trajs = locs[\"related_loc_traj\"]\n                break\n\n        if len(found_files) == 0:\n            return\n\n    # related class, functions, global var localization\n    if args.related_level:\n        if len(found_files) != 0:\n            trying_temp = 0  # related always try with temp 0\n            related_loc_trajs = []\n            for _ in range(MAX_RETRIES):\n                pred_files = found_files[: args.top_n]\n                fl = LLMFL(\n                    instance_id,\n                    structure,\n                    problem_statement,\n                    args.model,\n                    args.backend,\n                    logger,\n                )\n                additional_artifact_loc_related = []\n                found_related_locs = {}\n                related_loc_traj = {}\n                if args.compress and not args.related_level_separate_file:\n                    (\n                        found_related_locs,\n                        additional_artifact_loc_related,\n                        related_loc_traj,\n                    ) = fl.localize_function_from_compressed_files(\n                        pred_files,\n                        mock=args.mock,\n                        temperature=trying_temp,\n                        keep_old_order=args.keep_old_order,\n                        compress_assign=args.compress_assign,\n                        total_lines=args.compress_assign_total_lines,\n                        prefix_lines=args.compress_assign_prefix_lines,\n                        suffix_lines=args.compress_assign_suffix_lines,\n                    )\n                    additional_artifact_loc_related = [additional_artifact_loc_related]\n                    related_loc_trajs.append(related_loc_traj)\n\n                    if check_contains_valid_loc(\n                        found_related_locs, structure=structure\n                    ):\n                        break\n\n                    logger.info(\n                        f\"No valid related locations found ... retrying with higher temperature ...\"\n                    )\n                    trying_temp = 1.0  # set trying temp to 1 to get valid locs\n\n                elif args.compress and args.related_level_separate_file:\n                    additional_artifact_loc_related = []\n                    found_related_locs = {fn: [] for fn in pred_files}\n                    related_loc_traj = []\n                    for i, pred_file in enumerate(pred_files):\n                        (\n                            found_related_locs_i,\n                            additional_artifact_loc_related_i,\n                            related_loc_traj_i,\n                        ) = fl.localize_function_from_compressed_files(\n                            [pred_file],\n                            mock=args.mock,\n                            temperature=trying_temp,\n                            compress_assign=args.compress_assign,\n                            total_lines=args.compress_assign_total_lines,\n                            prefix_lines=args.compress_assign_prefix_lines,\n                            suffix_lines=args.compress_assign_suffix_lines,\n                        )\n                        found_related_locs[pred_file] = found_related_locs_i[pred_file]\n                        additional_artifact_loc_related.append(\n                            additional_artifact_loc_related_i\n                        )\n                        related_loc_traj.append(related_loc_traj_i)\n                    related_loc_trajs.append(related_loc_traj)\n\n                    if check_contains_valid_loc(\n                        found_related_locs, structure=structure\n                    ):\n                        break\n                    trying_temp = 1.0  # set trying temp to 1 to get valid locs\n                else:\n                    # directly use raw code file instead of skeleton format as ablation\n                    (\n                        found_related_locs,\n                        additional_artifact_loc_related,\n                        related_loc_traj,\n                    ) = fl.localize_function_from_raw_text(\n                        pred_files,\n                        mock=args.mock,\n                        temperature=trying_temp,\n                        keep_old_order=args.keep_old_order,\n                    )\n                    additional_artifact_loc_related = [additional_artifact_loc_related]\n                    related_loc_trajs.append(related_loc_traj)\n\n                    if check_contains_valid_loc(\n                        found_related_locs, structure=structure\n                    ):\n                        break\n\n                    logger.info(\n                        f\"No valid related locations found ... retrying with higher temperature ...\"\n                    )\n                    trying_temp = 1.0  # set trying temp to 1 to get valid locs\n\n    if args.fine_grain_line_level:\n        if len(found_files) != 0:\n            # Only supports the following args for now\n            trying_temp = args.temperature\n            for _ in range(MAX_RETRIES):\n                pred_files = found_files[: args.top_n]\n                fl = LLMFL(\n                    instance_id,\n                    structure,\n                    problem_statement,\n                    args.model,\n                    args.backend,\n                    logger,\n                )\n                if not args.direct_edit_loc:\n                    coarse_found_locs = found_related_locs\n                    (\n                        found_edit_locs,\n                        additional_artifact_loc_edit_location,\n                        edit_loc_traj,\n                    ) = fl.localize_line_from_coarse_function_locs(\n                        pred_files,\n                        coarse_found_locs,\n                        context_window=args.context_window,\n                        add_space=args.add_space,\n                        no_line_number=args.no_line_number,\n                        sticky_scroll=args.sticky_scroll,\n                        mock=args.mock,\n                        temperature=trying_temp,\n                        num_samples=args.num_samples,\n                        keep_old_order=args.keep_old_order,\n                    )\n                    additional_artifact_loc_edit_location = [\n                        additional_artifact_loc_edit_location\n                    ]\n\n                    sample_valid = False\n                    if args.num_samples > 1:\n                        for found_edit_loc in found_edit_locs:\n                            if check_contains_valid_loc(\n                                found_edit_loc, structure=structure\n                            ):\n                                # at least one set of location contains valid edit locs is okay\n                                sample_valid = True\n                                break\n                    else:\n                        if check_contains_valid_loc(\n                            found_edit_locs, structure=structure\n                        ):\n                            break\n\n                    if sample_valid:\n                        break\n\n                    logger.info(\n                        f\"No valid edit locations found ... retrying with higher temperature ...\"\n                    )\n                    trying_temp = 1.0  # set trying temp to 1 to get valid locs\n                else:\n                    # directly use the raw source code to get to edit location, used as ablation setting\n                    (\n                        found_edit_locs,\n                        additional_artifact_loc_edit_location,\n                        edit_loc_traj,\n                    ) = fl.localize_line_from_raw_text(\n                        pred_files,\n                        mock=args.mock,\n                        temperature=trying_temp,\n                        num_samples=args.num_samples,\n                        keep_old_order=args.keep_old_order,\n                    )\n                    additional_artifact_loc_edit_location = [\n                        additional_artifact_loc_edit_location\n                    ]\n\n                    if check_contains_valid_loc(\n                        found_related_locs, structure=structure\n                    ):\n                        break\n\n                    sample_valid = False\n                    if args.num_samples > 1:\n                        for found_edit_loc in found_edit_locs:\n                            if check_contains_valid_loc(\n                                found_edit_loc, structure=structure\n                            ):\n                                # at least one set of location contains valid edit locs is okay\n                                sample_valid = True\n                                break\n                    else:\n                        if check_contains_valid_loc("
+    },
+    {
+      "id": "repair",
+      "kind": "code",
+      "locator": "OpenAutoCoder/Agentless@5ce5888b9f149beaace393957a55ea8ee46c9f71:agentless/repair/repair.py:272-532",
+      "text": "def process_loc(loc, args, swe_bench_data, prev_o, write_lock=None):\n    instance_id = loc[\"instance_id\"]\n\n    if args.target_id is not None:\n        if args.target_id != instance_id:\n            return\n\n    log_file = os.path.join(args.output_folder, \"repair_logs\", f\"{instance_id}.log\")\n    logger = setup_logger(log_file)\n    found = False\n    for o in prev_o:\n        if o[\"instance_id\"] == instance_id:\n            found = True\n            break\n\n    if found:\n        logger.info(f\"skipping {instance_id} since patch already generated\")\n        return None\n\n    logger.info(f\"================ repairing {instance_id} ================\")\n    if len(loc[\"found_files\"]) == 0:\n        if write_lock is not None:\n            write_lock.acquire()\n        with open(args.output_file, \"a\") as f:\n            f.write(\n                json.dumps(\n                    {\n                        \"instance_id\": instance_id,\n                        \"raw_output\": [\"\"],\n                        \"try_count\": [0],\n                        \"all_generations\": [[]],\n                        \"traj\": [],\n                        \"prev_content\": [[]],\n                        \"file_names\": [[]],\n                    }\n                )\n                + \"\\n\"\n            )\n        if write_lock is not None:\n            write_lock.release()\n        return\n\n    pred_files = loc[\"found_files\"][: args.top_n]\n    bench_data = [x for x in swe_bench_data if x[\"instance_id\"] == instance_id][0]\n    problem_statement = bench_data[\"problem_statement\"]\n    structure = get_repo_structure(\n        instance_id, bench_data[\"repo\"], bench_data[\"base_commit\"], \"playground\"\n    )\n    files, _, _ = get_full_file_paths_and_classes_and_functions(structure)\n    raw_outputs, counts, all_generations, traj, prev_contents, file_names = (\n        [],\n        [],\n        [],\n        [],\n        [],\n        [],\n    )\n\n    raw_output = \"\"\n    topn_content = \"\"\n    # Construct file contents\n    file_contents = dict()\n    for i, pred_file in enumerate(pred_files):\n        content = None\n        for file_content in files:\n            if file_content[0] == pred_file:\n                content = \"\\n\".join(file_content[1])\n                file_contents[pred_file] = content\n                break\n\n        assert content is not None, f\"{pred_file} file not found\"\n    # Construct top-n file context\n    file_to_edit_locs = dict()\n\n    if \"found_edit_locs\" in loc:\n        file_to_edit_locs = loc[\"found_edit_locs\"]\n\n    topn_content, file_loc_intervals = construct_topn_file_context(\n        file_to_edit_locs,\n        pred_files,\n        file_contents,\n        structure,\n        context_window=args.context_window,\n        loc_interval=args.loc_interval,\n        fine_grain_loc_only=args.fine_grain_loc_only,\n        add_space=args.add_space,\n        no_line_number=args.diff_format or args.str_replace_format,\n        sticky_scroll=args.sticky_scroll,\n    )\n\n    if topn_content.strip() == \"\":\n        if write_lock is not None:\n            write_lock.acquire()\n        with open(args.output_file, \"a\") as f:\n            f.write(\n                json.dumps(\n                    {\n                        \"instance_id\": instance_id,\n                        \"raw_output\": [\"\"],\n                        \"try_count\": [0],\n                        \"all_generations\": [[]],\n                        \"traj\": [],\n                        \"prev_content\": [[]],\n                        \"file_names\": [[]],\n                    }\n                )\n                + \"\\n\"\n            )\n        if write_lock is not None:\n            write_lock.release()\n        return\n\n    prompt_template = (\n        repair_prompt_combine_topn_cot_str_replace\n        if args.cot and args.str_replace_format\n        else repair_prompt_combine_topn_cot_diff\n        if args.cot and args.diff_format\n        else repair_prompt_combine_topn_cot\n        if args.cot\n        else repair_prompt_combine_topn\n    )\n    file_instruction = repair_relevant_file_instruction\n    message = prompt_template.format(\n        repair_relevant_file_instruction=file_instruction,\n        problem_statement=problem_statement,\n        content=topn_content.rstrip(),\n    ).strip()\n    logger.info(f\"prompting with message:\\n{message}\")\n\n    all_generations, counts, traj, prev_contents, file_names = [], [], [], [], []\n    sample_responses = []\n    # get greedy sample\n    model = make_model(\n        model=args.model,\n        logger=logger,\n        backend=args.backend,\n        max_tokens=1024,\n        temperature=0,\n        batch_size=1,\n    )\n    if args.skip_greedy:\n        greedy_traj = {\n            \"response\": \"\",\n            \"usage\": {\n                \"completion_tokens\": 0,\n                \"prompt_tokens\": 0,\n            },\n        }\n    else:\n        if args.mock:\n            greedy_traj = {\n                \"response\": \"\",\n                \"usage\": {\n                    \"prompt_tokens\": num_tokens_from_messages(message, args.model),\n                },\n            }\n        else:\n            if args.str_replace_format:\n                greedy_traj = model.codegen_w_tool(\n                    message, num_samples=1, prompt_cache=args.max_samples > 1\n                )[0]\n            else:\n                greedy_traj = model.codegen(\n                    message, num_samples=1, prompt_cache=args.max_samples > 1\n                )[0]\n\n    sample_responses.append(greedy_traj)\n    # get temperature samples\n    model = make_model(\n        model=args.model,\n        logger=logger,\n        backend=args.backend,\n        max_tokens=1024,\n        temperature=0.8,\n        batch_size=args.max_samples - 1,  # minus the 1 greedy sample\n    )\n\n    if args.mock:\n        first_traj = {\n            \"response\": \"\",\n            \"usage\": {\n                \"prompt_tokens\": num_tokens_from_messages(message, args.model),\n            },\n        }\n        later_traj = {\n            \"response\": \"\",\n            \"usage\": {\"prompt_tokens\": 0},\n        }\n        if args.max_samples - 1:\n            sample_trajs = [first_traj] + [later_traj] * (args.max_samples - 2)\n        else:\n            sample_trajs = []\n    else:\n        if args.max_samples - 1:\n            # always use cached prompt if possible for later samples\n            if args.str_replace_format:\n                sample_trajs = model.codegen_w_tool(\n                    message, num_samples=args.max_samples - 1, prompt_cache=True\n                )\n            else:\n                sample_trajs = model.codegen(\n                    message, num_samples=args.max_samples - 1, prompt_cache=True\n                )\n        else:\n            sample_trajs = []\n\n    sample_responses.extend(sample_trajs)\n\n    count = 0\n    while count < args.max_samples:\n        print(f\"trying the {count + 1}-th sample ...\")\n        ret = sample_responses[count]\n        count += 1\n        traj.append({**ret, \"prompt\": message})\n\n        if args.mock:\n            continue\n\n        raw_output = ret[\"response\"]\n        logger.info(f\"raw output:\\n{raw_output}\")\n        all_generations.append(raw_output)\n        edited_files, new_contents = _post_process_multifile_repair(\n            raw_output,\n            file_contents,\n            logger,\n            file_loc_intervals,\n            diff_format=args.diff_format,\n            str_replace_format=args.str_replace_format,\n        )\n\n        if len(new_contents) == 0:\n            prev_contents.append(\"\")\n            file_names.append(\"\")\n        else:\n            prev_content = [file_contents[edited_file] for edited_file in edited_files]\n            prev_contents.append(prev_content)\n            file_names.append(edited_files)\n\n        counts.append(count)\n        raw_outputs.append(raw_output)\n\n    if write_lock is not None:\n        write_lock.acquire()\n    with open(args.output_file, \"a\") as f:\n        f.write(\n            json.dumps(\n                {\n                    \"instance_id\": instance_id,\n                    \"raw_output\": raw_outputs,\n                    \"all_generations\": [all_generations],\n                    \"try_count\": counts,\n                    \"traj\": traj,\n                    \"prev_content\": [prev_contents],\n                    \"file_names\": [file_names],\n                }\n            )\n            + \"\\n\"\n        )\n    if write_lock is not None:\n        write_lock.release()\n"
+    },
+    {
+      "id": "postprocess",
+      "kind": "code",
+      "locator": "OpenAutoCoder/Agentless@5ce5888b9f149beaace393957a55ea8ee46c9f71:agentless/repair/repair.py:568-606",
+      "text": "def post_process_raw_output(\n    raw_output_text, file_contents, logger, file_loc_intervals, args\n):\n    git_diffs = \"\"\n    raw_git_diffs = \"\"\n    edited_files, new_contents, contents = [], [], []\n    try:\n        edited_files, new_contents = _post_process_multifile_repair(\n            raw_output_text,\n            file_contents,\n            logger,\n            file_loc_intervals,\n            diff_format=args.diff_format,\n            str_replace_format=args.str_replace_format,\n        )\n\n        contents = [file_contents[edited_file] for edited_file in edited_files]\n\n        git_diff = fake_git_repo(\"playground\", edited_files, contents, new_contents)\n\n        raw_git_diffs += \"\\n\" + git_diff.replace(\"\\ No newline at end of file\\n\", \"\")\n\n        syntax_success = check_syntax(new_contents)\n\n        differ_by_empty_lines = check_code_differ_by_just_empty_lines(\n            new_contents, contents\n        )\n\n        logger.info(f\"{differ_by_empty_lines = }\")\n        if syntax_success and not differ_by_empty_lines:\n            git_diffs = raw_git_diffs\n        else:\n            git_diffs = \"\"  # no need to evaluate\n    except Exception as e:\n        print(raw_output_text)\n        print(e)\n\n    return git_diffs, raw_git_diffs, contents, edited_files, new_contents\n"
+    },
+    {
+      "id": "normalize",
+      "kind": "code",
+      "locator": "OpenAutoCoder/Agentless@5ce5888b9f149beaace393957a55ea8ee46c9f71:agentless/util/postprocess_data.py:408-471",
+      "text": "def normalize_patch(\n    instance_id,\n    patch: str,\n    original_file_content: list,\n    new_file_content: list,\n    edited_files: list,\n) -> str:\n    \"Remove edits to trailing spaces and comments in the patch.\"\n    if not patch.strip():\n        return \"\"\n\n    normalized_diff = \"\"\n\n    for o_file_content, n_file_content, edited_file in zip(\n        original_file_content, new_file_content, edited_files\n    ):\n        old_content = o_file_content\n        new_content = n_file_content\n\n        # Normalize file contents\n        def normalize_code(code):\n            try:\n                node = ast.parse(code)\n                return ast.unparse(node)\n            except:\n                return code\n\n        old_content = normalize_code(old_content)\n        new_content = normalize_code(new_content)\n\n        try:\n            remove_docstring_old_content = remove_comments_and_docstrings(old_content)\n            ast.parse(remove_docstring_old_content)  # check\n            remove_docstring_new_content = remove_comments_and_docstrings(new_content)\n            ast.parse(remove_docstring_new_content)  # check\n        except:\n            # when does this exception happen?\n            # when the code has some class or function with empty docstring (thats valid python code)\n            # but removing it is not, to be save we just use the original.\n            remove_docstring_old_content = old_content\n            remove_docstring_new_content = new_content\n\n        diff = fake_git_repo(\n            \"playground\",\n            edited_file,\n            remove_docstring_old_content,\n            remove_docstring_new_content,\n        )\n\n        if is_just_new_function(\n            remove_docstring_old_content, remove_docstring_new_content\n        ):\n            # modify the diff to ignore context.\n            new_diff = []\n            for line in diff.splitlines():\n                if line.startswith(\"-\") or line.startswith(\"+\"):\n                    new_diff.append(line)\n            diff = \"\\n\".join(new_diff)\n\n        normalized_diff += diff\n\n    # Note that the normalized diff may not be applied to the original file.\n    return normalized_diff\n"
+    },
+    {
+      "id": "rank",
+      "kind": "code",
+      "locator": "OpenAutoCoder/Agentless@5ce5888b9f149beaace393957a55ea8ee46c9f71:agentless/repair/rerank.py:156-289",
+      "text": "def majority_voting(args):\n\n    with open(args.output_file, \"w\") as f:\n\n        for instance_id in execution_results:\n            if len(execution_results[instance_id]) < args.num_samples:\n                print(\n                    f\"There were only {len(execution_results[instance_id])} patches for {instance_id} instead of the full {args.num_samples}\"\n                )\n\n            patch_keys = [\n                execution_results[instance_id][i][\"normalized_patch\"]\n                for i in range(len(execution_results[instance_id]))\n            ]\n            regression_tests = [\n                execution_results[instance_id][i][\"regression_test_result\"]\n                for i in range(len(execution_results[instance_id]))\n            ]\n\n            min_tests = min(regression_tests)\n            regression_tests = [\n                True if x == min_tests else False for x in regression_tests\n            ]\n\n            reproduction_tests = [\n                execution_results[instance_id][i][\"reproduction_test_result\"]\n                for i in range(len(execution_results[instance_id]))\n            ]\n            raw_patches = [\n                execution_results[instance_id][i][\"patch\"]\n                for i in range(len(execution_results[instance_id]))\n            ]\n\n            if args.regression and not args.reproduction:\n                patch_ids = [\n                    i\n                    for i in range(len(execution_results[instance_id]))\n                    if patch_keys[i].strip() and regression_tests[i]\n                ]\n            elif args.reproduction:\n                patch_ids = [\n                    i\n                    for i in range(len(execution_results[instance_id]))\n                    if patch_keys[i].strip()\n                    and regression_tests[i]\n                    and reproduction_tests[i]\n                ]\n                if len(patch_ids) == 0:\n                    # reset to just using the all regression passing patches\n                    patch_ids = [\n                        i\n                        for i in range(len(execution_results[instance_id]))\n                        if patch_keys[i].strip() and regression_tests[i]\n                    ]\n            else:\n                patch_ids = [\n                    i\n                    for i in range(len(execution_results[instance_id]))\n                    if patch_keys[i].strip()\n                ]\n\n            if not patch_ids:\n                # just vote on all patches\n                if not all([x.strip() == \"\" for x in raw_patches]) and not all(\n                    [x.strip() == \"\" for x in patch_keys]\n                ):\n                    vote = Counter()\n                    first_appear_idx = dict()\n                    valid_indices = []\n                    for i in range(len(execution_results[instance_id])):\n                        sample = get_sample(instance_id, i)\n                        patch_key = sample[\"normalized_patch\"]\n                        if patch_key != \"\":\n                            valid_indices.append(i)\n                            vote[patch_key] += 1\n                            if patch_key not in first_appear_idx:\n                                first_appear_idx[patch_key] = i\n                    maj_selected_id = max(\n                        valid_indices,\n                        key=lambda i: (\n                            vote[patch_keys[i]],\n                            -first_appear_idx[patch_keys[i]],\n                        ),\n                    )\n                    patch = get_sample(instance_id, maj_selected_id)[\"patch\"]\n                    result = {\n                        \"model_name_or_path\": \"agentless\",\n                        \"instance_id\": instance_id,\n                        \"model_patch\": patch,\n                    }\n                else:\n                    print(f\"No raw patches valid for {instance_id}\")\n                    result = {\n                        \"model_name_or_path\": \"agentless\",\n                        \"instance_id\": instance_id,\n                        \"model_patch\": \"\",\n                    }\n                f.write(json.dumps(result) + \"\\n\")\n                continue\n\n            vote = Counter()\n            first_appear_idx = dict()\n            changed_length_idx = dict()\n            for i in patch_ids:\n                sample = get_sample(instance_id, i)\n                patch_key, patch = sample[\"normalized_patch\"], sample[\"patch\"]\n                vote[patch_key] += 1\n                if patch_key not in first_appear_idx:\n                    first_appear_idx[patch_key] = i\n                    changed_length_idx[patch_key] = modified_length(patch_key)\n\n            maj_selected_id = max(\n                patch_ids,\n                key=lambda i: (vote[patch_keys[i]], -first_appear_idx[patch_keys[i]]),\n            )\n\n            if args.target is not None and instance_id == args.target:\n                for patch in vote:\n                    print(\n                        \"=\" * 20,\n                        vote[patch],\n                        \"=\" * 20,\n                    )\n                    print(patch)\n                    print(\"=\" * 50)\n\n            sample = get_sample(instance_id, maj_selected_id)\n            result = {\n                \"model_name_or_path\": \"agentless\",\n                \"instance_id\": instance_id,\n                \"model_patch\": sample[\"patch\"],\n            }\n\n            f.write(json.dumps(result) + \"\\n\")"
+    },
+    {
+      "id": "regression",
+      "kind": "code",
+      "locator": "OpenAutoCoder/Agentless@5ce5888b9f149beaace393957a55ea8ee46c9f71:agentless/repair/rerank.py:13-76",
+      "text": "def _load_results(args):\n    global execution_results\n\n    roots = [Path(folder) for folder in args.patch_folder.split(\",\")]\n\n    intervals = [(0, int(args.num_samples / len(roots)) - 1) for _ in range(len(roots))]\n\n    interval = intervals[0]\n    for i in range(interval[0], interval[1] + 1):\n        for _, root in enumerate(roots):\n            patches = load_jsonl(root / f\"output_{i}_normalized.jsonl\")\n            print(\n                f\"Loaded {len(patches)} patches from {root / f'output_{i}_normalized.jsonl'}\"\n            )\n            if args.regression:\n                regression_test_results = load_jsonl(\n                    root / f\"output_{i}_regression_test_results.jsonl\"\n                )\n            if args.reproduction:\n                reproduction_test_results = load_jsonl(\n                    root / f\"output_{i}_reproduction_test_results.jsonl\"\n                )\n\n            for patch in patches[:]:\n                if args.regression:\n                    regression_test_result = [\n                        x\n                        for x in regression_test_results\n                        if x[\"instance_id\"] == patch[\"instance_id\"]\n                    ][0].get(\"regression\", [0] * 10000)\n                    regression_test_result = len(regression_test_result)\n                else:\n                    regression_test_result = 0\n\n                if args.reproduction:\n                    if (\n                        len(\n                            [\n                                x\n                                for x in reproduction_test_results\n                                if x[\"instance_id\"] == patch[\"instance_id\"]\n                            ]\n                        )\n                        == 1\n                    ):\n                        reproduction_test_result = [\n                            x\n                            for x in reproduction_test_results\n                            if x[\"instance_id\"] == patch[\"instance_id\"]\n                        ][0].get(\"reproduction\", False)\n                    else:\n                        reproduction_test_result = False\n                else:\n                    reproduction_test_result = True\n\n                execution_results.setdefault(patch[\"instance_id\"], []).append(\n                    {\n                        \"normalized_patch\": patch[\"normalized_patch\"].strip(),\n                        \"patch\": patch[\"model_patch\"],\n                        \"regression_test_result\": regression_test_result,\n                        \"reproduction_test_result\": reproduction_test_result,\n                    }\n                )\n"
+    },
+    {
+      "id": "test-report",
+      "kind": "code",
+      "locator": "OpenAutoCoder/Agentless@5ce5888b9f149beaace393957a55ea8ee46c9f71:agentless/test/run_regression_tests.py:18-31",
+      "text": "def rewrite_report(instance_id, input_folder_path, regression_tests):\n\n    log_path = f\"{input_folder_path}/test/{instance_id}/test_output.txt\"\n    eval_sm, found = get_logs_eval(log_path)\n\n    eval_ref = {\n        KEY_INSTANCE_ID: instance_id,\n        FAIL_TO_PASS: [],\n        PASS_TO_PASS: regression_tests[instance_id],\n    }\n\n    report = get_eval_tests_report(eval_sm, eval_ref)\n\n    return report[\"PASS_TO_PASS\"][\"failure\"]"
+    },
+    {
+      "id": "paper-method",
+      "kind": "paper",
+      "locator": "https://arxiv.org/html/2407.01489v1#S2; text-only extraction, all figures/captions removed",
+      "text": "2\nAgentless\nApproach\n2.1\nLocalization\nTo fix or implement a new feature, the first step is to obtain the locations in the source code, as without the correct locations, it can be impossible to provide the right edits.\nThe difficulty lies in the fact that there could be hundreds of files\nwith thousands of lines of code each in a repository, whereas the correct locations to edit are only a few selected lines or functions.\nAgentless\naddresses this by using a simple three-step hierarchical localization process: 1) localize to selected files; 2) localize each selected files into relevant classes, functions, and variables; 3) localize to code edit locations.\nLocalize to suspicious files.\nFirst,\nAgentless\nlocalizes the possible locations to specific suspicious files.\nInstead of providing the complete code snippet for each file in the repository,\nAgentless\nconstructs a succinct representation of the repository\u2019s file and directory structure.\nWe refer to this as the\nrepository structure format\n,\nwhich begins with the root folder of the repository and organizes code files or folder names.\nFiles and folders at the same directory level are aligned vertically, and files/folders in sub-directories are indented.\nWe recursively traverse the entire repository to obtain the repository structure format, which will be used as input for the LLM.\nThe repository structure format provides the necessary file paths alongside the neighboring file names to maintain organizational information in the original codebase.\nAgentless\nthen inputs the processed repository structure format along with the original issue description to an LLM and requests it to identify a list of the top N suspicious files in the repository that need further inspection or modification to resolve the issue.\nLocalize to edit locations.\nThe previous localization step provided us with a list of related code elements.\nWe then directly provide the code content from these elements to the model and ask it to localize to specific edit locations.\nCompared to using the entire file content, the input context we provide here is much smaller.\nWith this input, we then ask the LLM to identify the final set of edit locations, specified by line numbers, functions, or classes.\nOur simple hierarchical localization process allows\nAgentless\nto select a set of relevant code snippets as edit locations to perform repair.\n2.2\nRepair\nIn the repair stage, the goal is to produce the correct patch to solve the issue.\nFollowing existing work on LLM-based program repair\nKolak et\u00a0al. [2022]\n;\nPrenner et\u00a0al. [2022]\n;\nJiang et\u00a0al. [2023]\n, we first utilize the identified edit locations and construct a context window of code snippets to provide to the LLM for repair.\nFor example, if the identified location was a class from line 40 to 78, we would produce a context window of\n[40 - x, 78 + x]\nwhere\nx\ndenotes the context window size.\nThe intuition behind adding the additional code before and after the identified location is to provide the LLM with relevant contextual information for better program repair\nXia & Zhang [2022]\n.\nIf multiple edit locations are identified, we would concatenate these context windows together separated with \u201c\n...\n\u201d to indicate missing context in the middle.\nFiltering and patch selection.\nFor each issue,\nAgentless\nuses the LLM to generate multiple potential patches (starting with greedy and then sample multiple patches with higher temperature).\nWe also apply traditional software engineering technique of regression testing\nWong et\u00a0al. [1997]\nto run the existing tests in the repository on all the generated patches.\nAny patches which failed the existing tests can be filtered out as they incorrectly change the correct behavior of previous code.\nNote, our implementation of this regression test filtering step follows prior work also evaluated on the same benchmark\nGauthier [2024]\n;\nChen et\u00a0al. [2024]\n.\nFor the remaining patches,\nAgentless\napplies a re-ranking approach using majority voting:\nWe first normalize each patch to ignore surface-level differences (e.g., extra spaces, newlines, and comments), and then select the patch with the highest number of occurrences as the final patch for submission. More specifically, to standardize the patch, we begin by parsing both the old and new code (after applying the patch) into abstract syntax trees. Next, we unparse the trees into a canonical source code format with docstrings removed. Finally, we compute the textual diff between the standardized old and new code to get the normalized patch.\nAgentless\nsolves repository-level issues using a simple step-by-step procedure.\nWe note here that none of the techniques used by\nAgentless\nin isolation are revolutionary,\nbut instead\nAgentless\nsmartly combines existing techniques to construct an easy-to-understand approach.\nDifferent from prior autonomous agent-based tools that involve complex interactions with the environment,\nAgentless\nuses a simple two phase approach to first localize and then repair the bug without relying on any agents for decision-making.\nBy conducting localization in a hierarchical manner,\nAgentless\ncan efficiently and effectively compute the fine-grained locations for editing.\nAgentless\nthen performs repair by sampling multiple patches using a simple diff format.\nWe filter out any patches with syntax and regression tests errors, and finally select the patch for submission using classic majority voting.\n"
+    }
+  ],
+  "claims": {
+    "summary": "Hierarchical issue localization focuses edit generation; syntax-screened candidate patches are selected using regression-failure screening and normalized-diff frequency.",
+    "innovation": null,
+    "baseline": null,
+    "scope": "New figure from code/method prose only. Paper-level Localization and Repair phases; sampling/filtering/selection belong to Repair. Pinned Dec2024 code route: file_level/related_level/fine_grain_line_level enabled, compress enabled, direct_edit_loc false, skip_greedy false, multiple samples; rerank regression=true, reproduction=false, default deduplicate=false. No benchmark/model execution."
+  },
+  "assumptions": [
+    "The figure describes a configured route, not every official CLI branch or an exact reproduction of paper-version software.",
+    "Repair-context is a parameter-free workspace bundling issue text, relevant original files, localization intervals and snippets, not a separate model.",
+    "Regression screening in this pinned implementation keeps the minimum observed failure-count cohort among candidate records; it does not guarantee zero failing tests or correct repair.",
+    "Frequency selection groups normalized patch strings and returns an associated original raw patch; normalized equality is not a proof of semantic equivalence.",
+    "No reproduction-test generation/filtering, repository retrieval extensions, autonomous tool loop, training or model weight updates are depicted.",
+    "Empty localization/context or all-empty patches can prevent usable output. If the least-failure candidate cohort is empty but other normalized nonempty patches exist, the code falls back to frequency selection over those nonempty keys; this is a conditional bypass, never proof of passing tests.",
+    "Patch miniatures/tallies will be schematic and carry no empirical counts or measured success claims."
+  ],
+  "nodes": [
+    {
+      "id": "issue",
+      "label": "Issue report",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "problem_statement = bench_data[\"problem_statement\"]"
+        }
+      ]
+    },
+    {
+      "id": "repository",
+      "label": "Code repository",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "structure = get_repo_structure("
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "label": "Suspicious files",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "found_files, additional_artifact_loc_file, file_traj = fl.localize("
+        }
+      ]
+    },
+    {
+      "id": "symbols",
+      "label": "Relevant symbols",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "fl.localize_function_from_compressed_files("
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "label": "Edit locations",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "fl.localize_line_from_coarse_function_locs("
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Focused repair context",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "repair",
+          "quote": "topn_content, file_loc_intervals = construct_topn_file_context("
+        }
+      ]
+    },
+    {
+      "id": "samples",
+      "label": "Sample candidate edits",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "repair",
+          "quote": "sample_responses.extend(sample_trajs)"
+        }
+      ]
+    },
+    {
+      "id": "apply",
+      "label": "Apply and syntax-screen edits",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "postprocess",
+          "quote": "if syntax_success and not differ_by_empty_lines:"
+        }
+      ]
+    },
+    {
+      "id": "normalize",
+      "label": "Normalized patch keys",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "normalize",
+          "quote": "return ast.unparse(node)"
+        }
+      ]
+    },
+    {
+      "id": "regression",
+      "label": "Regression failure counts",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "regression",
+          "quote": "regression_test_result = len(regression_test_result)"
+        }
+      ]
+    },
+    {
+      "id": "screen",
+      "label": "Least-failure cohort",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "True if x == min_tests else False for x in regression_tests"
+        }
+      ]
+    },
+    {
+      "id": "vote",
+      "label": "Frequency selection",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "vote[patch_key] += 1"
+        }
+      ]
+    },
+    {
+      "id": "selected",
+      "label": "Selected original patch",
+      "role": "output",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "\"model_patch\": sample[\"patch\"]"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "issue-files",
+      "from": "issue",
+      "to": "files",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "problem_statement,"
+        }
+      ]
+    },
+    {
+      "id": "repo-files",
+      "from": "repository",
+      "to": "files",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "structure,"
+        }
+      ]
+    },
+    {
+      "id": "files-symbols",
+      "from": "files",
+      "to": "symbols",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "pred_files = found_files[: args.top_n]"
+        }
+      ]
+    },
+    {
+      "id": "symbols-locations",
+      "from": "symbols",
+      "to": "locations",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "localize",
+          "quote": "coarse_found_locs = found_related_locs"
+        }
+      ]
+    },
+    {
+      "id": "locations-context",
+      "from": "locations",
+      "to": "context",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "repair",
+          "quote": "file_to_edit_locs = loc[\"found_edit_locs\"]"
+        }
+      ]
+    },
+    {
+      "id": "repo-context",
+      "from": "repository",
+      "to": "context",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "repair",
+          "quote": "file_contents[pred_file] = content"
+        }
+      ]
+    },
+    {
+      "id": "issue-context",
+      "from": "issue",
+      "to": "context",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "repair",
+          "quote": "problem_statement=problem_statement,"
+        }
+      ]
+    },
+    {
+      "id": "context-sample",
+      "from": "context",
+      "to": "samples",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "repair",
+          "quote": "content=topn_content.rstrip(),"
+        }
+      ]
+    },
+    {
+      "id": "context-apply",
+      "from": "context",
+      "to": "apply",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "repair",
+          "quote": "file_loc_intervals,"
+        }
+      ]
+    },
+    {
+      "id": "samples-apply",
+      "from": "samples",
+      "to": "apply",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "postprocess",
+          "quote": "raw_output_text,"
+        }
+      ]
+    },
+    {
+      "id": "apply-normalize",
+      "from": "apply",
+      "to": "normalize",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "normalize",
+          "quote": "if not patch.strip():"
+        }
+      ]
+    },
+    {
+      "id": "apply-regression",
+      "from": "apply",
+      "to": "regression",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "test-report",
+          "quote": "return report[\"PASS_TO_PASS\"][\"failure\"]"
+        }
+      ]
+    },
+    {
+      "id": "normalize-screen",
+      "from": "normalize",
+      "to": "screen",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "if patch_keys[i].strip() and regression_tests[i]"
+        }
+      ]
+    },
+    {
+      "id": "regression-screen",
+      "from": "regression",
+      "to": "screen",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "min_tests = min(regression_tests)"
+        }
+      ]
+    },
+    {
+      "id": "screen-vote",
+      "from": "screen",
+      "to": "vote",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "for i in patch_ids:"
+        }
+      ]
+    },
+    {
+      "id": "fallback-vote",
+      "from": "normalize",
+      "to": "vote",
+      "label": "",
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "if not patch_ids:"
+        }
+      ]
+    },
+    {
+      "id": "vote-selected",
+      "from": "vote",
+      "to": "selected",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "rank",
+          "quote": "sample = get_sample(instance_id, maj_selected_id)"
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "layout": {
+    "canvas": {
+      "width": 1800,
+      "height": 850
+    },
+    "direction": "LR",
+    "nodes": {},
+    "edges": {}
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 9,
+    "showTitle": false,
+    "showSubtitle": false,
+    "showLegend": false,
+    "typography": {
+      "fontFamily": "Arial",
+      "moduleSize": 44,
+      "detailSize": 34,
+      "annotationSize": 34
+    },
+    "reference": {
+      "mode": "target",
+      "path": "selected-reference.png",
+      "sha256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91"
+    }
+  }
+}

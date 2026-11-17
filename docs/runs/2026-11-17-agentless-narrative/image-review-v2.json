@@ -1,0 +1,34 @@
+{
+  "version": "2.0",
+  "reviewType": "independent-raster-image-rereview",
+  "reviewer": {"kind":"independent-agent","name":"/root/agentless_narrative_review","isolation":{"method":"fork_turns:none","notOpened":["author diagram","previous generated image other than declared V1 edit parent","previous image reports"]}},
+  "verdict": "revise",
+  "verdictScope": "appearance-only revision; source/narrative and V1 semantic corrections pass",
+  "firstReading": "Issue and repository narrow through tree, files, related code, and edit locations; repair generates candidate patches, filters/ranks them, and yields a selected patch.",
+  "inspectedImages": [
+    {"path":"candidate-v2.png","sha256":"0a29489cbbd336813499024a242e0654043c9424975312e2e3d8ed75673c7d07","sizePx":[1685,934],"view":"native"},
+    {"path":"candidate-v2-paper-width.png","sha256":"f2b45976a623f2410391fc2348d35bbc1c2ec58e4a83ca84bb04a0fc5520ee39","sizePx":[672,372],"view":"7in-at-96dpi diagnostic"}
+  ],
+  "checks": {
+    "scientificFidelity":"pass",
+    "informationSelectionNarrative":"pass",
+    "modelDeterministicRoles":"pass",
+    "sourceContextTransformations":"pass",
+    "readingOrder":"pass",
+    "finalWidthTypography":"pass",
+    "flatSemanticPalette":"fail",
+    "searchReplaceFormat":"pass",
+    "nativeFeasibilityVisualInference":"pass",
+    "authorFigureComparison":"unverified",
+    "nativeOfficeEditabilityDelivery":"unverified"
+  },
+  "resolvedV1Findings":["unchanged source context with highlighted interval","removed unsupported repair text","corrected issue-rail scope"],
+  "findings":[{"id":"R2","severity":"appearance","region":"issue capsule, phase bands, cards","evidence":"soft shadows and subtle gradient-like shading remain visible","effect":"violates flat/no-gradient/no-shadow brief and adds avoidable reconstruction complexity","requiredCorrection":"use solid fills and remove shadows while preserving semantics, labels, routes, and selected-interval/diff encoding"}],
+  "artifacts": {
+    "prompt-edit-v2.txt":"e9d9eef91cd72c4aed7f2969714b092b90d81e539284952990428058d1bf1e95",
+    "generation-record-v2.json":"069cddb4a99ea24641c9ece1fbd0aad9c0ecef857580153bb4392692db3b2edf",
+    "spec.json":"cdef0cf5d66b9709bc6e22e9f7564c5995041fff27ec8491d0e68e438344fa2e",
+    "narrative-plan.json":"1c878fe7157ed7473c968853e0edd1196e7f339817d369d403baf33441477378",
+    "design-brief.json":"985839e929f82bb333d48a2845fefdc07f9af77e9f47326badf4ec45d6a5bca5"
+  }
+}

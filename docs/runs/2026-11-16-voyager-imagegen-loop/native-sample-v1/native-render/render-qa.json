@@ -1,0 +1,99 @@
+{
+  "engine": "LibreOffice -> PDF -> MuPDF",
+  "pptxSHA256": "78f0ea708d228403c013e2ef742a39e450a4f2ef5e879b6a5d2217a7bca35f99",
+  "pdfSHA256": "ea5e12dd466683f0620aa330d2bf77151cba19b8656a3622d776813bfd9cc66f",
+  "requestedFonts": [
+    "Arial",
+    "Courier New"
+  ],
+  "renderedFonts": [
+    "BAAAAA+CourierNewPSMT",
+    "CAAAAA+Arial-BoldMT"
+  ],
+  "fontScope": "Conversion-process-only fontconfig; no fonts installed globally",
+  "errors": [],
+  "limits": [
+    "No interactive Microsoft PowerPoint editing test.",
+    "Port attachment and font appearance are verified through this independent rendering engine."
+  ],
+  "textChecks": [
+    {
+      "id": "label-block:refine",
+      "ink": [
+        678,
+        694,
+        241,
+        34
+      ],
+      "container": [
+        657,
+        674,
+        281,
+        69
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 1.0,
+      "dy": 2.5
+    },
+    {
+      "id": "label-block:verify",
+      "ink": [
+        1068,
+        694,
+        98,
+        35
+      ],
+      "container": [
+        1026,
+        674,
+        183,
+        69
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": -0.5,
+      "dy": 3.0
+    },
+    {
+      "id": "label-block:store",
+      "ink": [
+        1583,
+        705,
+        169,
+        28
+      ],
+      "container": [
+        1537,
+        684,
+        262,
+        71
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": -0.5,
+      "dy": -0.5
+    }
+  ],
+  "edgeChecks": [
+    {
+      "id": "critique-to-refine",
+      "coverage": 1.0,
+      "samples": 19,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "success-to-store",
+      "coverage": 1.0,
+      "samples": 67,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "bounded-return",
+      "coverage": 1.0,
+      "samples": 108,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    }
+  ],
+  "passed": true
+}

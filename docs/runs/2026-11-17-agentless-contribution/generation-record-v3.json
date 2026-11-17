@@ -1,0 +1,32 @@
+{
+  "round": 3,
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "b8f1d68ac98dd947a97368a97d57d4473d2861e9393303dfb2908fabd32723c6",
+  "promptPath": "prompt-edit-v3.txt",
+  "promptSHA256": "69b826b42754d8bb1e705cca1edf275d11b4c431f738fdb686660d357b4b871e",
+  "inputImages": [
+    {
+      "path": "candidate-v2.png",
+      "sha256": "b8f1d68ac98dd947a97368a97d57d4473d2861e9393303dfb2908fabd32723c6",
+      "role": "actual referenced_image_paths edit target"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-v3.png",
+    "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+    "sizePx": [
+      1637,
+      960
+    ]
+  },
+  "specSHA256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+  "briefSHA256": "e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8",
+  "narrativePlanSHA256": "776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65",
+  "semanticFreezeSHA256": "d2104eedef8d904d2d39ef353f0906bb6a01a0c9be7314a95be592005efc92cb",
+  "defectClass": "Scientific wiring only: focused context handoff into generation, no direct source-to-filter bypass",
+  "sourceFigureAccess": true,
+  "figureHidden": false,
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

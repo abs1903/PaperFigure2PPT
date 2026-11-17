@@ -1,0 +1,434 @@
+{
+  "version": "1.0",
+  "title": "Embodied navigation agent",
+  "subtitle": "Fuse observations with instruction-conditioned state before selecting an executable action.",
+  "sources": [
+    {
+      "id": "method",
+      "kind": "user-description",
+      "locator": "method.md",
+      "text": "# Embodied navigation agent\n\nThis is an original illustrative architecture specification for testing PaperFigure, not a reproduction or a claim of research novelty.\n\nThe current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module.\n\nThe navigation instruction is processed by a language encoder. Language features are sent to the state fusion module.\n\nA recurrent state store supplies previous state to state fusion. The fused state updates the recurrent store for the next time step.\n\nThe state fusion output is passed to an action policy. The action policy sends an action to the environment.\n\nThe environment returns the next RGB-D observation at the next time step.\n\nFor this illustrative design, state fusion is the component under study; visual and language encoders and the action interface are the baseline components. This is not a claim of novelty over published VLN systems.\n"
+    }
+  ],
+  "claims": {
+    "summary": "Fuse observations with instruction-conditioned state before selecting an executable action.",
+    "innovation": "State fusion is the user-defined component under study in this illustrative scenario; no literature novelty is claimed.",
+    "baseline": "Visual encoder, language encoder, policy, and environment interface are retained baseline components.",
+    "scope": "Illustrative system-level overview. Internal transformer layers, optimization details, and performance claims are outside scope."
+  },
+  "assumptions": [
+    "All modules and relations are defined by method.md; no empirical performance or paper-level novelty is claimed."
+  ],
+  "nodes": [
+    {
+      "id": "obs",
+      "label": "RGB-D view",
+      "detail": "Observation at t",
+      "role": "input",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "Visual encoder",
+      "detail": "Visual features",
+      "role": "encoder",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "instruction",
+      "label": "Instruction",
+      "detail": "Navigation goal",
+      "role": "input",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "language",
+      "label": "Text encoder",
+      "detail": "Language features",
+      "role": "encoder",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "label": "State fusion",
+      "detail": "Cross-modal context",
+      "role": "core",
+      "phase": "inference",
+      "status": "proposed",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "For this illustrative design, state fusion is the component under study; visual and language encoders and the action interface are the baseline components. This is not a claim of novelty over published VLN systems."
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "label": "Recurrent state",
+      "detail": "History at t - 1",
+      "role": "memory",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "A recurrent state store supplies previous state to state fusion. The fused state updates the recurrent store for the next time step."
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "label": "Action policy",
+      "detail": "Select action",
+      "role": "core",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ]
+    },
+    {
+      "id": "env",
+      "label": "Environment",
+      "detail": "Execute action",
+      "role": "environment",
+      "phase": "inference",
+      "status": "baseline",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "obs",
+      "to": "vision",
+      "label": "",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "from": "vision",
+      "to": "fusion",
+      "label": "",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The current RGB-D observation is processed by a visual encoder. The resulting visual features are sent to a state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "from": "instruction",
+      "to": "language",
+      "label": "",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "from": "language",
+      "to": "fusion",
+      "label": "",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The navigation instruction is processed by a language encoder. Language features are sent to the state fusion module."
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "from": "state",
+      "to": "fusion",
+      "label": "Previous state",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "A recurrent state store supplies previous state to state fusion. The fused state updates the recurrent store for the next time step."
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "from": "fusion",
+      "to": "state",
+      "label": "Next state",
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "A recurrent state store supplies previous state to state fusion. The fused state updates the recurrent store for the next time step."
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "from": "fusion",
+      "to": "policy",
+      "label": "",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "from": "policy",
+      "to": "env",
+      "label": "",
+      "kind": "control",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The state fusion output is passed to an action policy. The action policy sends an action to the environment."
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "from": "env",
+      "to": "obs",
+      "label": "Next observation",
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The environment returns the next RGB-D observation at the next time step."
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "layout": {
+    "canvas": {
+      "width": 1440,
+      "height": 680
+    },
+    "direction": "LR",
+    "nodes": {
+      "obs": {
+        "x": 48,
+        "y": 115,
+        "w": 190,
+        "h": 110
+      },
+      "vision": {
+        "x": 320,
+        "y": 115,
+        "w": 220,
+        "h": 110
+      },
+      "instruction": {
+        "x": 48,
+        "y": 350,
+        "w": 190,
+        "h": 110
+      },
+      "language": {
+        "x": 320,
+        "y": 350,
+        "w": 220,
+        "h": 110
+      },
+      "fusion": {
+        "x": 665,
+        "y": 225,
+        "w": 230,
+        "h": 120
+      },
+      "state": {
+        "x": 665,
+        "y": 465,
+        "w": 230,
+        "h": 100
+      },
+      "policy": {
+        "x": 980,
+        "y": 225,
+        "w": 190,
+        "h": 120
+      },
+      "env": {
+        "x": 1220,
+        "y": 225,
+        "w": 200,
+        "h": 120
+      }
+    },
+    "edges": {
+      "e2": {
+        "fromPort": "right",
+        "toPort": "top",
+        "via": [
+          [
+            780,
+            170
+          ]
+        ]
+      },
+      "e4": {
+        "fromPort": "right",
+        "toPort": "left",
+        "via": [
+          [
+            600,
+            405
+          ],
+          [
+            600,
+            285
+          ]
+        ]
+      },
+      "e5": {
+        "fromPort": "left",
+        "toPort": "bottom",
+        "via": [
+          [
+            630,
+            515
+          ],
+          [
+            630,
+            400
+          ],
+          [
+            780,
+            400
+          ]
+        ],
+        "label": {
+          "x": 680,
+          "y": 370
+        }
+      },
+      "e6": {
+        "fromPort": "bottom",
+        "toPort": "right",
+        "via": [
+          [
+            849,
+            380
+          ],
+          [
+            940,
+            380
+          ],
+          [
+            940,
+            515
+          ]
+        ],
+        "label": {
+          "x": 960,
+          "y": 450
+        },
+        "fromFraction": 0.8
+      },
+      "e9": {
+        "fromPort": "top",
+        "toPort": "top",
+        "via": [
+          [
+            1320,
+            55
+          ],
+          [
+            143,
+            55
+          ]
+        ],
+        "label": {
+          "x": 1060,
+          "y": 24
+        }
+      }
+    }
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 7,
+    "showTitle": false,
+    "showSubtitle": false,
+    "typography": {
+      "fontFamily": "Arial",
+      "moduleSize": 24,
+      "detailSize": 20,
+      "annotationSize": 20
+    },
+    "showLegend": false
+  }
+}

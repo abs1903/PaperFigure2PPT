@@ -1,0 +1,145 @@
+[
+  {
+    "id": 2,
+    "name": "fixed-control-box",
+    "type": "shape",
+    "owner": "fixed-control",
+    "bbox": [
+      334,
+      8,
+      637,
+      68
+    ]
+  },
+  {
+    "id": 10,
+    "name": "label-block:fixed-control",
+    "type": "text-block",
+    "owner": "fixed-control",
+    "sourceTextIds": [
+      "text-fixed-control-0"
+    ],
+    "text": "Fixed localization + repair",
+    "bbox": [
+      334,
+      8,
+      637,
+      68
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 12,
+    "name": "fixed-control",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 3,
+    "name": "llm-files-box",
+    "type": "shape",
+    "owner": "llm-files",
+    "bbox": [
+      178,
+      442,
+      80,
+      42
+    ]
+  },
+  {
+    "id": 11,
+    "name": "label-block:llm-files",
+    "type": "text-block",
+    "owner": "llm-files",
+    "sourceTextIds": [
+      "text-llm-files-0"
+    ],
+    "text": "LLM",
+    "bbox": [
+      178,
+      442,
+      80,
+      42
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 13,
+    "name": "llm-files",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "selected-code-box",
+    "type": "shape",
+    "owner": "selected-code",
+    "bbox": [
+      584,
+      612,
+      195,
+      81
+    ]
+  },
+  {
+    "id": 7,
+    "name": "code-dots-top",
+    "type": "text",
+    "owner": "selected-code",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 21,
+    "bbox": [
+      597,
+      609.731025390625,
+      17.50341796875,
+      26.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 8,
+    "name": "code-definition",
+    "type": "text",
+    "owner": "selected-code",
+    "text": "def to_python(self, ...):",
+    "font": "Arial Narrow",
+    "fontSize": 20,
+    "bbox": [
+      598,
+      638.77578125,
+      163.22265625,
+      25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 9,
+    "name": "code-dots-bottom",
+    "type": "text",
+    "owner": "selected-code",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 21,
+    "bbox": [
+      597,
+      658.731025390625,
+      17.50341796875,
+      26.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 14,
+    "name": "selected-code",
+    "type": "group",
+    "owner": null
+  }
+]

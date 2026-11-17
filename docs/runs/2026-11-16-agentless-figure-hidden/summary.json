@@ -1,0 +1,23 @@
+{
+  "startedDate": "2026-11-16",
+  "completedDate": "2026-11-17",
+  "paper": "Agentless: Demystifying LLM-based Software Engineering Agents (2407.01489v1)",
+  "codeCommit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+  "sourceFiles": 8,
+  "nodes": 13,
+  "relations": 17,
+  "sourceFiguresOpened": false,
+  "sourceCaptionsRead": false,
+  "authorFigureCompared": false,
+  "modelPriorKnowledgeCannotBeExcluded": true,
+  "imageGenerations": 1,
+  "actualAttachedImageEdits": 2,
+  "verdicts": {
+    "v1": "revise: missing visible key/raw-patch association",
+    "v2": "revise: typography/detail density",
+    "v3": "accept: image stage only"
+  },
+  "selectedImageSHA256": "8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91",
+  "fullNativeOrOfficeDelivery": false,
+  "deliveryReady": false
+}

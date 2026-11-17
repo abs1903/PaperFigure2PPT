@@ -1,0 +1,974 @@
+{
+  "width": 2240,
+  "height": 930,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "question",
+      "label": "Question",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "question = env.reset(idx=idx)"
+        }
+      ],
+      "x": 170,
+      "y": 65,
+      "w": 340,
+      "h": 110,
+      "fontSize": 38,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:question:label:0",
+          "text": "Question",
+          "x": 188,
+          "y": 92,
+          "w": 304,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Prompt + history",
+      "detail": "Within this question",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "prompt += step_str"
+        }
+      ],
+      "x": 170,
+      "y": 270,
+      "w": 340,
+      "h": 160,
+      "fontSize": 34,
+      "fill": "#E8F3EF",
+      "stroke": "#507E71",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:context:label:0",
+          "text": "Prompt + history",
+          "x": 188,
+          "y": 294,
+          "w": 304,
+          "h": 40.12,
+          "fontSize": 34,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:context:detail:0",
+          "text": "Within this question",
+          "x": 188,
+          "y": 374,
+          "w": 304,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "lm",
+      "label": "ReAct LM",
+      "detail": "",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "thought_action = llm(prompt + f\"Thought {i}:\", stop=[f\"\\nObservation {i}:\"])"
+        }
+      ],
+      "x": 650,
+      "y": 230,
+      "w": 430,
+      "h": 240,
+      "fontSize": 44,
+      "fill": "#E8F0F7",
+      "stroke": "#59778E",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:lm:label:0",
+          "text": "ReAct LM",
+          "x": 668,
+          "y": 254,
+          "w": 394,
+          "h": 51.919999999999995,
+          "fontSize": 44,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "label": "Parsed action",
+      "detail": "Tool call / Finish",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "thought, action = thought_action.strip().split(f\"\\nAction {i}: \")"
+        }
+      ],
+      "x": 1210,
+      "y": 270,
+      "w": 330,
+      "h": 160,
+      "fontSize": 36,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:action:label:0",
+          "text": "Parsed action",
+          "x": 1228,
+          "y": 294,
+          "w": 294,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:action:detail:0",
+          "text": "Tool call / Finish",
+          "x": 1228,
+          "y": 374,
+          "w": 294,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "env",
+      "label": "Wikipedia tools",
+      "detail": "Search / Lookup",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "env",
+          "quote": "def step(self, action):"
+        }
+      ],
+      "x": 1660,
+      "y": 230,
+      "w": 380,
+      "h": 240,
+      "fontSize": 38,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:env:label:0",
+          "text": "Wikipedia tools",
+          "x": 1678,
+          "y": 254,
+          "w": 344,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:env:detail:0",
+          "text": "Search / Lookup",
+          "x": 1678,
+          "y": 385,
+          "w": 344,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "trace",
+      "label": "Step record",
+      "detail": "",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "step_str = f\"Thought {i}: {thought}\\nAction {i}: {action}\\nObservation {i}: {obs}\\n\""
+        }
+      ],
+      "x": 680,
+      "y": 650,
+      "w": 730,
+      "h": 170,
+      "fontSize": 36,
+      "fill": "#E8F3EF",
+      "stroke": "#507E71",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:trace:label:0",
+          "text": "Step record",
+          "x": 698,
+          "y": 674,
+          "w": 694,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "label": "Answer",
+      "detail": "Finish terminates",
+      "role": "output",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "env",
+          "quote": "self.answer = answer"
+        }
+      ],
+      "x": 1660,
+      "y": 650,
+      "w": 380,
+      "h": 135,
+      "fontSize": 38,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:answer:label:0",
+          "text": "Answer",
+          "x": 1678,
+          "y": 665,
+          "w": 344,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:answer:detail:0",
+          "text": "Finish terminates",
+          "x": 1678,
+          "y": 728,
+          "w": 344,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "question",
+      "to": "context",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "prompt += question + \"\\n\""
+        }
+      ],
+      "points": [
+        [
+          340,
+          175
+        ],
+        [
+          340,
+          270
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "context",
+      "to": "lm",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "thought_action = llm(prompt + f\"Thought {i}:\", stop=[f\"\\nObservation {i}:\"])"
+        }
+      ],
+      "points": [
+        [
+          510,
+          350
+        ],
+        [
+          650,
+          350
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e3",
+      "from": "lm",
+      "to": "action",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "thought, action = thought_action.strip().split(f\"\\nAction {i}: \")"
+        }
+      ],
+      "points": [
+        [
+          1080,
+          350
+        ],
+        [
+          1210,
+          350
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e4",
+      "from": "action",
+      "to": "env",
+      "label": null,
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "obs, r, done, info = step(env, action[0].lower() + action[1:])"
+        }
+      ],
+      "points": [
+        [
+          1540,
+          350
+        ],
+        [
+          1660,
+          350
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e5",
+      "from": "lm",
+      "to": "trace",
+      "label": {
+        "id": "edge-label:e5",
+        "text": "Thought + action",
+        "x": 900,
+        "y": 523,
+        "w": 255.264,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "step_str = f\"Thought {i}: {thought}\\nAction {i}: {action}\\nObservation {i}: {obs}\\n\""
+        }
+      ],
+      "points": [
+        [
+          865,
+          470
+        ],
+        [
+          865,
+          650
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.2534246575342466,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e6",
+      "from": "env",
+      "to": "trace",
+      "label": {
+        "id": "edge-label:e6",
+        "text": "Observation",
+        "x": 1450,
+        "y": 512,
+        "w": 188.672,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "obs, r, done, info = step(env, action[0].lower() + action[1:])"
+        }
+      ],
+      "points": [
+        [
+          1755,
+          470
+        ],
+        [
+          1755,
+          570
+        ],
+        [
+          1264,
+          570
+        ],
+        [
+          1264,
+          650
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.25,
+      "toFraction": 0.8,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e7",
+      "from": "trace",
+      "to": "context",
+      "label": {
+        "id": "edge-label:e7",
+        "text": "Append for next step",
+        "x": 180,
+        "y": 674,
+        "w": 309.37600000000003,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "loop",
+          "quote": "prompt += step_str"
+        }
+      ],
+      "points": [
+        [
+          680,
+          735
+        ],
+        [
+          100,
+          735
+        ],
+        [
+          100,
+          350
+        ],
+        [
+          170,
+          350
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e8",
+      "from": "env",
+      "to": "answer",
+      "label": {
+        "id": "edge-label:e8",
+        "text": "Finish[answer]",
+        "x": 1770,
+        "y": 535,
+        "w": 220.99200000000002,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "env",
+          "quote": "self.answer = answer"
+        }
+      ],
+      "points": [
+        [
+          1983,
+          470
+        ],
+        [
+          1983,
+          650
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.85,
+      "toFraction": 0.85,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    }
+  ],
+  "groups": [],
+  "texts": [
+    {
+      "id": "text:question:label:0",
+      "text": "Question",
+      "x": 188,
+      "y": 92,
+      "w": 304,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:context:label:0",
+      "text": "Prompt + history",
+      "x": 188,
+      "y": 294,
+      "w": 304,
+      "h": 40.12,
+      "fontSize": 34,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:context:detail:0",
+      "text": "Within this question",
+      "x": 188,
+      "y": 374,
+      "w": 304,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:lm:label:0",
+      "text": "ReAct LM",
+      "x": 668,
+      "y": 254,
+      "w": 394,
+      "h": 51.919999999999995,
+      "fontSize": 44,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:action:label:0",
+      "text": "Parsed action",
+      "x": 1228,
+      "y": 294,
+      "w": 294,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:action:detail:0",
+      "text": "Tool call / Finish",
+      "x": 1228,
+      "y": 374,
+      "w": 294,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:env:label:0",
+      "text": "Wikipedia tools",
+      "x": 1678,
+      "y": 254,
+      "w": 344,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:env:detail:0",
+      "text": "Search / Lookup",
+      "x": 1678,
+      "y": 385,
+      "w": 344,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:trace:label:0",
+      "text": "Step record",
+      "x": 698,
+      "y": 674,
+      "w": 694,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:answer:label:0",
+      "text": "Answer",
+      "x": 1678,
+      "y": 665,
+      "w": 344,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:answer:detail:0",
+      "text": "Finish terminates",
+      "x": 1678,
+      "y": 728,
+      "w": 344,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "edge-label:e5",
+      "text": "Thought + action",
+      "x": 900,
+      "y": 523,
+      "w": 255.264,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e6",
+      "text": "Observation",
+      "x": 1450,
+      "y": 512,
+      "w": 188.672,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e7",
+      "text": "Append for next step",
+      "x": 180,
+      "y": 674,
+      "w": 309.37600000000003,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e8",
+      "text": "Finish[answer]",
+      "x": 1770,
+      "y": 535,
+      "w": 220.99200000000002,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "art:reason",
+      "owner": "lm",
+      "text": "Reason about evidence",
+      "x": 671,
+      "y": 328,
+      "w": 388,
+      "h": 45.900000000000006,
+      "fontSize": 34,
+      "bold": false,
+      "color": "#15354A",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:choose",
+      "owner": "lm",
+      "text": "Select the next action",
+      "x": 671,
+      "y": 383,
+      "w": 388,
+      "h": 45.900000000000006,
+      "fontSize": 34,
+      "bold": false,
+      "color": "#15354A",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:trace-content",
+      "owner": "trace",
+      "text": "Thought  /  Action  /  Observation",
+      "x": 700,
+      "y": 749,
+      "w": 690,
+      "h": 45.900000000000006,
+      "fontSize": 34,
+      "bold": false,
+      "color": "#15354A",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    }
+  ],
+  "decorations": [
+    {
+      "id": "art:lm-divider",
+      "owner": "lm",
+      "type": "line",
+      "x": 671,
+      "y": 308,
+      "w": 388,
+      "h": 0,
+      "fill": "none",
+      "stroke": "#839099",
+      "strokeWidth": 1.4,
+      "purpose": "Separate native module heading and source-supported contents; no additional scientific edge."
+    }
+  ],
+  "assets": [],
+  "title": "ReAct: interleaved reasoning and tool interaction",
+  "typography": {
+    "fontFamily": "Times New Roman",
+    "moduleSize": 38,
+    "detailSize": 32,
+    "annotationSize": 32,
+    "titleSize": 30,
+    "moduleBold": true
+  },
+  "specHash": "e9d73ef588821e1fe7cfe8c2a8bb4c681bf491b0a06445ce93252a8317964ff4",
+  "semanticHash": "405ecdf423c4ca5f07c0b8f9792cacd7615ad3d0dc58ecab49c50f965b4acf4a",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

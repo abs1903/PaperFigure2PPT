@@ -1,0 +1,14 @@
+{
+  "stage": "source-plan-accepted-before-generation",
+  "figureHidden": false,
+  "files": {
+    "spec.json": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+    "narrative-plan.json": "eeb7d7e8d2e0c66065fbba1d93d317b815a57109dabfd9f672c039c67bb5dcc1",
+    "brief-sparse-full-columns.json": "1950694cfee8776bbbdc1e197a5eaa566fb3e5b5496adbcf274343c3c62777a7",
+    "brief-horizontal-bottleneck.json": "6248f339c8ec25c09c37af1ccca7728ba0cd280f2efee40a828639acf2746c81",
+    "prompt-sparse-full-columns.txt": "de8d6b06a5739f6231af650d3b7a21f37f795207e8d76de76f20ba89a7482c2c",
+    "prompt-horizontal-bottleneck.txt": "4e7deb05c2f1d5f19968c13c894238e4ff5814ee6102b2aa9553342596e3c516",
+    "source-plan-review.json": "66ccc10c5d535145e7d5c848950cdad53886bb669c33f113a67f9c956dd79ffb",
+    "source-plan-review.md": "c1893258051a3ecbfb86017bc139f95c7456661f783c640d70ac89c4098c603b"
+  }
+}

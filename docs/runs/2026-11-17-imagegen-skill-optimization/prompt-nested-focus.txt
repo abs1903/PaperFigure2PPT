@@ -1,0 +1,69 @@
+Use case: scientific-educational. Asset: paper method illustration. Art-direction metadata below is not extra canvas text.
+Reader takeaway: A fixed, interpretable localization-and-repair design confines LLM work to focused selections and local edits, combining established techniques rather than claiming each as novel.
+Scientific scope: Paper-v1 method contribution and its supporting mechanisms, not a configured later code route. Benchmark auditing/Lite-S is a separate paper contribution outside this method illustration. No benchmark execution or correctness guarantee.
+Contribution hierarchy; emphasize the supported design choices without claiming every primitive is new:
+Focal design: Fixed localization and repair with bounded LLM tasks. Status: Central design combination; individual primitives are not claimed new. Visible evidence: A fixed localization/repair frame with No autonomous planning; LLM labels only on bounded selections and local editing.. Prominence: Framing claim across both focal regions. Visual owners: Hierarchical localization, Localized Search/Replace.
+Focal design: Hierarchical localization using concise source representations. Status: Supporting design combination. Visible evidence: Persist selected file and element identifiers across tree, skeleton, original code and selected interval; retain source context.. Prominence: Primary mechanism region. Visual owners: Hierarchical localization.
+Focal design: Localized Search/Replace generation. Status: Established edit technique within the combination. Visible evidence: Magnify a gold source interval into SEARCH/REPLACE while surrounding source stays unchanged; show multiple candidate edits.. Prominence: Second focal mechanism. Visual owners: Localized Search/Replace.
+Supporting operation: Syntax/regression filtering and normalized frequency ranking. Status: Established deterministic support operations. Visible evidence: Small ordered filter/rank strip ending in Selected patch; no LLM marker or correctness guarantee.. Prominence: Subordinate to localization and local editing. Visual owners: Filter + frequency selection.
+Outside figure scope; do not depict: Benchmark audit and SWE-bench Lite-S.
+Composition: White landscape canvas, about 1.7:1. At left, nested source views enlarge the selected repository region from tree to skeletons to original code and edit context. At right, magnify that context into local Search/Replace edits; small selection strip below. Retain the fixed-control framing captions. No funnel, numbered equal-card pipeline or decorative background.
+Visible mechanism: Containment and successive source zooms explain the shrinking relevant region instead of a funnel. The repeated selected identifiers bind the views. Local edit magnification preserves unchanged source and four bounded LLM roles.
+Typography: Publication width seven inches: focal mechanism labels dominant but restrained, main labels around 9pt or above, source identifiers small but legible as repeated linked cues. No dense full function signatures, large numeric steps, tiny prose or text-over-arrow collisions.; publication width 7 inches.
+Visual representations; semantic coverage is validated separately:
+Issue report: Small shared Issue report input, tapped to file/element selection and repair generation; no autonomous next-action controller.
+Hierarchical localization: One coherent source-focus illustration: Code repository -> Build tree -> Repository tree; LLM selects files; Build skeletons derives signatures; LLM selects elements; Read code retrieves original source; LLM selects edit locations; Context padding retains gray source around the gold interval. Preserve fields.py, UUIDField and to_python across views. Use the selected composition, not equal cards.
+Localized Search/Replace: Focused source arrives in a Context window. An issue-conditioned LLM generates local Search/Replace edits: gold interval magnifies into red-minus SEARCH and green-plus REPLACE strips, with surrounding source unchanged. A fan shows multiple Candidate patches. Use schematic code strokes, not an invented successful bug fix.
+Filter + frequency selection: Small deterministic strip: Syntax + regression -> Normalize + frequency -> Selected patch. No LLM badge; exact output serialization and repair correctness are unspecified.
+Directed relations; internal operations must remain visibly meaningful:
+Within Hierarchical localization: Original repository yields a tree through deterministic Build tree.
+Within Hierarchical localization: Selected files yield source-derived Skeletons via Build skeletons, not model-written source.
+Within Hierarchical localization: Selected identifiers retrieve original source through Read code.
+Issue report -> Hierarchical localization: Issue feeds the first, file-selection LLM.
+Issue report -> Hierarchical localization: The same issue feeds the element-selection LLM.
+Issue report -> Localized Search/Replace: The same issue also feeds the local-edit generation LLM.
+Within Hierarchical localization: Repository tree feeds LLM selection of file paths.
+Within Hierarchical localization: Skeletons feed LLM selection of relevant elements.
+Within Hierarchical localization: Original selected code feeds LLM selection of edit locations; no extra direct issue edge is asserted.
+Within Hierarchical localization: Selected interval plus surrounding original code represents deterministic context padding.
+Hierarchical localization -> Localized Search/Replace: Focused context feeds local Search/Replace generation, never a direct raw-context-to-filter bypass.
+Localized Search/Replace -> Filter + frequency selection: Generated candidate patches feed deterministic filtering.
+Within Filter + frequency selection: Syntax/regression filtering precedes normalization/frequency ranking.
+Within Filter + frequency selection: Ranking yields Selected patch; no serialization or correctness guarantee.
+Exact visible text whitelist:
+"Hierarchical localization"
+"Localized Search/Replace"
+"Issue report"
+"Code repository"
+"Repository tree"
+"Build tree"
+"Selected files"
+"Build skeletons"
+"Skeletons"
+"Read code"
+"Selected code"
+"Edit locations"
+"Context padding"
+"Context window"
+"LLM"
+"fields.py"
+"UUIDField"
+"to_python"
+"SEARCH"
+"REPLACE"
+"Candidate patches"
+"Syntax + regression"
+"Normalize + frequency"
+"Selected patch"
+"Fixed localization + repair"
+"No autonomous planning"
+Text budget: 85 words maximum; repeat labels only when needed to show shared inputs or source linkage.
+Semantic solid palette:
+#64748B: Original source, input and deterministic support
+#2563EB: Bounded LLM-driven source selections
+#FDE68A: Selected interval in unchanged original source; not a generated edit
+#0F766E: Generated candidate and selected output, not correctness
+White background and flat solid fills. No overall title, footer, shadows, glow or decorative icons. Keep the requested local mechanism/contribution captions. Colors supplement labels and geometry.
+Do not turn every semantic node into an equal card. Keep the primary mechanism prominent, supporting checks subordinate, and arrowheads/text unobstructed. Schematic examples are not measured executions.
+Forbidden scientific additions: Claiming each established component is a new invention; Autonomous agent/controller/planning loop or weight training; LLM building repository tree, skeletons or original source content; Red/green +/- diff inside localization before generation; Replacing an entire source file rather than local Search/Replace; Invented concrete bug, faulty/repaired statement or successful repair; New empirical counts or performance/cost badges; Dataset-audit/Lite-S as a method-computation module; Later-code least-failure/fallback branches; Numbered uniform step-card pipeline; Huge phase braces, colored background bands, shadows or gradients.
+Generated pixels never authorize scientific changes. Return an imperfect candidate for review rather than inventing a mechanism.

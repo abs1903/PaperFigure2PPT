@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2240" height="930" viewBox="0 0 2240 930" lang="en"><title>ReAct: interleaved reasoning and tool interaction</title><metadata>{&quot;specHash&quot;:&quot;91e44e7d18260f6232a02d5e63be284aa5a906285b4905f12c4ba4c4d1d52989&quot;,&quot;semanticHash&quot;:&quot;2bdd2f0349cab5ce9614bafb31380bc1c9faa6b5d3cd4545f29e255def0f6fd6&quot;}</metadata><rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#15354A" stroke-width="1.5"/></marker></defs>
+<defs></defs>
+<path id="edge:e1" data-from="question" data-to="context" d="M 340 175 L 340 270" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e2" data-from="context" data-to="lm" d="M 510 350 L 650 350" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e3" data-from="lm" data-to="action" d="M 1080 350 L 1210 350" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e4" data-from="action" data-to="env" d="M 1540 350 L 1660 350" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e5" data-from="lm" data-to="trace" d="M 865 470 L 865 650" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e6" data-from="env" data-to="trace" d="M 1755 470 L 1755 570 L 1264 570 L 1264 650" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e7" data-from="trace" data-to="context" d="M 680 735 L 100 735 L 100 350 L 170 350" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e8" data-from="env" data-to="answer" d="M 1983 470 L 1983 650" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<rect id="node:question" x="170" y="65" width="340" height="110" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<rect id="node:context" x="170" y="270" width="340" height="160" rx="19" fill="#E8F3EF" stroke="#507E71" stroke-width="2"/>
+<rect id="node:lm" x="650" y="230" width="430" height="240" rx="19" fill="#E8F0F7" stroke="#59778E" stroke-width="2"/>
+<rect id="node:action" x="1210" y="270" width="330" height="160" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<rect id="node:env" x="1660" y="230" width="380" height="240" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<rect id="node:trace" x="680" y="650" width="730" height="170" rx="19" fill="#E8F3EF" stroke="#507E71" stroke-width="2"/>
+<rect id="node:answer" x="1660" y="650" width="380" height="135" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<line id="art:lm-divider" fill="none" stroke="#839099" stroke-width="1.4" x1="671" y1="308" x2="1059" y2="308"/>
+<text id="text:question:label:0" x="340" y="126.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Question</text>
+<text id="text:context:label:0" x="340" y="325.28" font-family="Times New Roman, Helvetica, sans-serif" font-size="34" font-weight="bold"  fill="#172B42" text-anchor="middle">Prompt + history</text>
+<text id="text:context:detail:0" x="340" y="403.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Within this question</text>
+<text id="text:lm:label:0" x="865" y="294.48" font-family="Times New Roman, Helvetica, sans-serif" font-size="44" font-weight="bold"  fill="#172B42" text-anchor="middle">ReAct LM</text>
+<text id="text:action:label:0" x="1375" y="327.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="bold"  fill="#172B42" text-anchor="middle">Parsed action</text>
+<text id="text:action:detail:0" x="1375" y="403.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Search / Lookup</text>
+<text id="text:env:label:0" x="1850" y="288.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Wikipedia tools</text>
+<text id="text:env:detail:0" x="1850" y="414.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Stateful WikiEnv</text>
+<text id="text:trace:label:0" x="1045" y="707.12" font-family="Times New Roman, Helvetica, sans-serif" font-size="36" font-weight="bold"  fill="#172B42" text-anchor="middle">Step record</text>
+<text id="text:answer:label:0" x="1850" y="699.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Answer</text>
+<text id="text:answer:detail:0" x="1850" y="757.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Finish terminates</text>
+<text id="edge-label:e5" x="1027.632" y="552.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Thought + action</text>
+<text id="edge-label:e6" x="1544.336" y="541.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Observation</text>
+<text id="edge-label:e7" x="334.688" y="826.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Append for next step</text>
+<text id="edge-label:e8" x="1880.496" y="564.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Finish[answer]</text>
+<text id="art:reason" x="865" y="359.28" font-family="Times New Roman, Helvetica, sans-serif" font-size="34" font-weight="normal" font-style="italic" fill="#15354A" text-anchor="middle">Reason about evidence</text>
+<text id="art:choose" x="865" y="414.28" font-family="Times New Roman, Helvetica, sans-serif" font-size="34" font-weight="normal" font-style="italic" fill="#15354A" text-anchor="middle">Select the next action</text>
+<text id="art:trace-content" x="1045" y="780.28" font-family="Times New Roman, Helvetica, sans-serif" font-size="34" font-weight="normal"  fill="#15354A" text-anchor="middle">Thought  /  Action  /  Observation</text>
+</svg>

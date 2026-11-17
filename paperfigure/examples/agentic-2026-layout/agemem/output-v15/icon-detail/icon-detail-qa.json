@@ -1,0 +1,467 @@
+{
+  "passed": false,
+  "errors": [
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-50-refined-line-1"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-50-refined-line-2"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-51-refined-ray-0"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-51-refined-ray-1"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-51-refined-ray-2"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-51-refined-ray-3"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-51-refined-ray-4"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-51-refined-ray-5"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-51-refined-ray-6"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-55-refined-antenna-left"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-55-refined-antenna-right"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-55-refined-left-leg"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-55-refined-right-leg"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-55-refined-bag-seam"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-56-refined-grip-1"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-56-refined-grip-2"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-58-refined-text-rule-0"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-58-refined-text-rule-1"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-58-refined-text-rule-2"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-59-refined-slot-0"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-59-refined-slot-1"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-59-refined-slot-2"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-61-refined-antenna-left"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-61-refined-antenna-right"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-61-refined-left-leg"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-61-refined-right-leg"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-61-refined-bag-seam"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-62-refined-antenna-left"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-62-refined-antenna-right"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-62-refined-left-leg"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-62-refined-right-leg"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-62-refined-bag-seam"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-63-refined-text-rule-0"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-63-refined-text-rule-1"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-63-refined-text-rule-2"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-64-refined-slot-0"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-64-refined-slot-1"
+    },
+    {
+      "code": "icon-fill-drift",
+      "id": "icon-64-refined-slot-2"
+    }
+  ],
+  "icons": [
+    {
+      "id": "icon-50",
+      "module": "session-content",
+      "parts": 6,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-51",
+      "module": "query",
+      "parts": 10,
+      "textParts": 1,
+      "grouped": true
+    },
+    {
+      "id": "icon-55",
+      "module": "memory-manager",
+      "parts": 29,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-56",
+      "module": "short-term-tools",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-57",
+      "module": "long-term-tools",
+      "parts": 4,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-58",
+      "module": "agentic-context",
+      "parts": 8,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-59",
+      "module": "agentic-memory",
+      "parts": 13,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-61",
+      "module": "llm-answer",
+      "parts": 29,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-62",
+      "module": "construction-agent",
+      "parts": 29,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-63",
+      "module": "stm-instance",
+      "parts": 8,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-64",
+      "module": "ltm-instance",
+      "parts": 13,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-65",
+      "module": "construction",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true
+    }
+  ],
+  "native": {
+    "passed": true,
+    "errors": [],
+    "counts": {
+      "nativeTextBoxes": 28,
+      "nativeSVGLabelsCovered": 34,
+      "centeredTextBlocks": 5,
+      "nativeSemanticConnectorSegments": 12,
+      "nativeLineArt": 38,
+      "nativeShapes": 146,
+      "auxiliaryPorts": 20,
+      "groups": 26,
+      "pictures": 0,
+      "media": 0,
+      "contentObjects": 224
+    },
+    "editability": {
+      "nativeContent": 224,
+      "totalContent": 224,
+      "ratio": 1,
+      "excluded": "Transparent auxiliary ports and semantic groups; native representation is not visual quality."
+    },
+    "endpointBinding": "Actual a:stCxn/a:endCxn IDs point to native port helpers inside owning module groups; full orthogonal rerouting is separate.",
+    "limits": [
+      "XML checks do not establish visual fidelity. Independently render the PPTX.",
+      "Moving a grouped module is supported; complex route segments may need reflow.",
+      "Interactive Microsoft PowerPoint behavior is not inferred from LibreOffice."
+    ]
+  },
+  "limits": [
+    "OOXML geometry/style evidence does not replace actual rendering.",
+    "Native text glyph ink, contour holes, anti-aliasing and source silhouette require visual comparison.",
+    "No interactive Microsoft PowerPoint edit test."
+  ],
+  "regions": [
+    {
+      "id": "icon-50",
+      "module": "session-content",
+      "parts": 6,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        349.7135,
+        35.9315,
+        44.6141,
+        44.6141
+      ],
+      "svgPptxPixelMAE": 2.1757037037037037,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-51",
+      "module": "query",
+      "parts": 10,
+      "textParts": 1,
+      "grouped": true,
+      "referenceRegion": [
+        82.3636,
+        25.1996,
+        53.2338,
+        53.2338
+      ],
+      "svgPptxPixelMAE": 3.4279555555555556,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-55",
+      "module": "memory-manager",
+      "parts": 29,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        85.1517,
+        246.5854,
+        59.7395,
+        59.7395
+      ],
+      "svgPptxPixelMAE": 0.8273037037037037,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-56",
+      "module": "short-term-tools",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        80.8427,
+        325.0833,
+        42.5863,
+        42.5864
+      ],
+      "svgPptxPixelMAE": 1.0892,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-57",
+      "module": "long-term-tools",
+      "parts": 4,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        324.7028,
+        321.5347,
+        43.1777,
+        43.1778
+      ],
+      "svgPptxPixelMAE": 1.0684148148148147,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-58",
+      "module": "agentic-context",
+      "parts": 8,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        57.7736,
+        475.6597,
+        48.0782,
+        48.0782
+      ],
+      "svgPptxPixelMAE": 0.8136,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-59",
+      "module": "agentic-memory",
+      "parts": 13,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        320.6473,
+        475.2356,
+        42.1639,
+        42.1639
+      ],
+      "svgPptxPixelMAE": 1.0203111111111112,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-61",
+      "module": "llm-answer",
+      "parts": 29,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        74.9267,
+        583.562,
+        59.7395,
+        59.7395
+      ],
+      "svgPptxPixelMAE": 1.0678370370370371,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-62",
+      "module": "construction-agent",
+      "parts": 29,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        417.3968,
+        560.8324,
+        59.7395,
+        59.7395
+      ],
+      "svgPptxPixelMAE": 0.7542518518518518,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-63",
+      "module": "stm-instance",
+      "parts": 8,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        339.9128,
+        664.9342,
+        44.3606,
+        44.3607
+      ],
+      "svgPptxPixelMAE": 0.990637037037037,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-64",
+      "module": "ltm-instance",
+      "parts": 13,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        505.1904,
+        665.1877,
+        42.1639,
+        42.1639
+      ],
+      "svgPptxPixelMAE": 1.7603407407407408,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-65",
+      "module": "construction",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        426.5234,
+        673.6367,
+        35.9116,
+        35.9116
+      ],
+      "svgPptxPixelMAE": 1.880548148148148,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    }
+  ],
+  "sha256": {
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/source/reference.png": "8a2ab882b9a3a73615d237e1cb0aa1ffffa181cced23ec9e9dc990bd552e0c68",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v12/preview.png": "94775f0f7150b68127ce00e64f2d6945210fd46d045f83dc398030a3f5c0f74d",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/preview.png": "532041926ff3f44c3d61c03cc8f150c3ca5fcf469a8335cf03296650af7c6b46",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/native-render/preview.png": "60c35a2d12424a3abf482b772fb98e1bafb0f7dec8229af7bc3546a08dd3f9d6",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/editable.svg": "349bc0072ad974bc0bd394681fd94ca81257abd561ad04c4ebfa7dfa59730367",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/agemem/output-v15/figure.pptx": "c96f52038759c7d0d7e49eef7c5416bd0e8199c1a5f0b822bc437ea5073d2cd5"
+  }
+}

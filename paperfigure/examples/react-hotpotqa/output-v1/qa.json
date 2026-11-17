@@ -1,0 +1,46 @@
+{
+  "passed": false,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "action",
+        "text:action:detail:1"
+      ],
+      "message": "Node text exceeds inner padding"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "font-metrics",
+      "objects": [],
+      "message": "Text bounds use Helvetica estimates; independently render the selected font"
+    }
+  ],
+  "metrics": {
+    "nodes": 7,
+    "edges": 8,
+    "texts": 19,
+    "groups": 0,
+    "minFinalTextPt": 7.199999999999999,
+    "nativeShapes": 27,
+    "nativeConnectors": 12,
+    "logicalEdges": 8,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 19,
+    "pictures": 0,
+    "editableRatio": 1
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

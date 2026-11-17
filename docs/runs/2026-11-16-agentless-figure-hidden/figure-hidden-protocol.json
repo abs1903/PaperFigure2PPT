@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-16",
+  "paper": {
+    "title": "Agentless: Demystifying LLM-based Software Engineering Agents",
+    "arxiv": "2407.01489v1",
+    "url": "https://arxiv.org/abs/2407.01489"
+  },
+  "repository": "https://github.com/OpenAutoCoder/Agentless",
+  "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+  "sourceFiles": 8,
+  "authorFiguresOpened": false,
+  "authorCaptionsRead": false,
+  "authorFigureComparisonAllowed": false,
+  "externalReferenceImageInputs": [],
+  "sourceInputs": [
+    "source/",
+    "paper-method-text.txt"
+  ],
+  "paperTextSanitization": "Figure/image/SVG/table/caption elements and figure-referencing prose removed before model-visible method text; raw HTML never rendered and image assets not fetched. Initial navigation-only extraction was rejected and retained as -v0.",
+  "readmePolicy": "README itself was not fetched/opened; initial title/repository search returned only metadata and clone/title snippets, no figure/caption.",
+  "limitations": [
+    "General pretrained model knowledge of this paper/figure cannot be excluded.",
+    "One newly selected example is not a held-out benchmark or a general success-rate estimate.",
+    "Paper v1 prose and Dec2024 code snapshot differ: the figure is explicitly pinned-code scoped.",
+    "No model/repair/benchmark/test-harness code was executed; drawn patch/test motifs are illustrative."
+  ],
+  "frozenSemanticSHA256": "191303ce8082a02367f2d20128bbdb36118c0b032250981418cb7e82b652f78f",
+  "manifestSHA256": "09de0c43d7d21ff1da7854fc3fdcbb1a5b38b237c8bdae30a82ee501f2afee14",
+  "codeAndPaperTextFreezeBeforeImageGeneration": true,
+  "generationBudget": {
+    "initialDirectionsMaximum": 2,
+    "purposefulEditsMaximum": 3,
+    "initialGenerationsExecuted": 1,
+    "editsExecuted": 1
+  },
+  "tool": "built-in ImageGen",
+  "svgPptxOrOfficeGenerated": false
+}

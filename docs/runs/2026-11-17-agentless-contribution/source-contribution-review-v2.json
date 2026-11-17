@@ -1,0 +1,10 @@
+{
+  "version":"2.0",
+  "reviewType":"independent-source-and-contribution-narrative-rereview",
+  "reviewer":{"kind":"independent-agent","name":"/root/agentless_narrative_review","isolation":{"method":"fork_turns:none"}},
+  "verdict":"accept",
+  "acceptanceScope":"pre-generation source/contribution plan only",
+  "checks":{"centralContributionCalloutSpecificity":"pass","noAutonomousControllerImplication":"pass","knownTechniqueCombinationBoundary":"pass","hierarchicalConciseLocalization":"pass","localizedSearchReplace":"pass","deterministicSelectionSupport":"pass","liteSOutOfMethodGraph":"pass","actualPixels":"unverified","authorComparison":"unverified","nativeOfficeDelivery":"unverified"},
+  "notes":["Fixed localization + repair / No autonomous planning is a framing annotation, not a new primitive, controller, or baseline graph.","Actual pixels must still demonstrate contribution prominence rather than only process order."],
+  "artifactHashes":{"paper-introduction-source.txt":"e1d5159bcc58a1c8e6dfd329829728746db2cbaa5233e9dd609e762c2b9ecec6","paper-method-source.txt":"b0a9c15af53234d86bae255aca4dbc0751122ddf4ce845eda1d2eb97255a5622","spec.json":"4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c","narrative-plan.json":"776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65","design-brief.json":"e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8"}
+}

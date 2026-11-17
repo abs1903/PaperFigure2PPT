@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="680" viewBox="0 0 1440 680" lang="en"><title>Embodied navigation agent</title><metadata>{&quot;specHash&quot;:&quot;8a644a8a04e6f0117ea88ab0ff1d780a0dd7bddfb2f16621cd2b3170285b6370&quot;,&quot;semanticHash&quot;:&quot;d2a72f0aa55f7321a390af4a16e7d20fa1d4d90d07fb2c842f90d2b4a719bb94&quot;}</metadata><rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#65788B" stroke-width="1.5"/></marker></defs>
+<path id="edge:e1" data-from="obs" data-to="vision" d="M 238 170 L 320 170" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e2" data-from="vision" data-to="fusion" d="M 540 170 L 780 170 L 780 225" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e3" data-from="instruction" data-to="language" d="M 238 405 L 320 405" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e4" data-from="language" data-to="fusion" d="M 540 405 L 600 405 L 600 285 L 665 285" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e5" data-from="state" data-to="fusion" d="M 665 515 L 630 515 L 630 400 L 780 400 L 780 345" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e6" data-from="fusion" data-to="state" d="M 849 345 L 849 380 L 940 380 L 940 515 L 895 515" fill="none" stroke="#65788B" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e7" data-from="fusion" data-to="policy" d="M 895 285 L 980 285" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e8" data-from="policy" data-to="env" d="M 1170 285 L 1220 285" fill="none" stroke="#65788B" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e9" data-from="env" data-to="obs" d="M 1320 225 L 1320 55 L 143 55 L 143 115" fill="none" stroke="#65788B" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<rect id="node:obs" x="48" y="115" width="190" height="110" rx="8" fill="#F0F4F8" stroke="#6B8299" stroke-width="1.8"/>
+<rect id="node:vision" x="320" y="115" width="220" height="110" rx="8" fill="#EAF0FA" stroke="#5579B0" stroke-width="1.8"/>
+<rect id="node:instruction" x="48" y="350" width="190" height="110" rx="8" fill="#F0F4F8" stroke="#6B8299" stroke-width="1.8"/>
+<rect id="node:language" x="320" y="350" width="220" height="110" rx="8" fill="#EAF0FA" stroke="#5579B0" stroke-width="1.8"/>
+<rect id="node:fusion" x="665" y="225" width="230" height="120" rx="8" fill="#E2F3F0" stroke="#237F78" stroke-width="2.8"/>
+<rect id="node:state" x="665" y="465" width="230" height="100" rx="8" fill="#F1ECF8" stroke="#8568AA" stroke-width="1.8"/>
+<rect id="node:policy" x="980" y="225" width="190" height="120" rx="8" fill="#E9EDF8" stroke="#657BB0" stroke-width="1.8"/>
+<rect id="node:env" x="1220" y="225" width="200" height="120" rx="8" fill="#EDF3EE" stroke="#5C8167" stroke-width="1.8"/>
+<text id="text:obs:label:0" x="143" y="162.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">RGB-D view</text>
+<text id="text:obs:detail:0" x="143" y="194.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Observation at t</text>
+<text id="text:vision:label:0" x="430" y="162.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">Visual encoder</text>
+<text id="text:vision:detail:0" x="430" y="194.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Visual features</text>
+<text id="text:instruction:label:0" x="143" y="397.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">Instruction</text>
+<text id="text:instruction:detail:0" x="143" y="429.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Navigation goal</text>
+<text id="text:language:label:0" x="430" y="397.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">Text encoder</text>
+<text id="text:language:detail:0" x="430" y="429.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Language features</text>
+<text id="text:fusion:label:0" x="780" y="277.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">State fusion</text>
+<text id="text:fusion:detail:0" x="780" y="309.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Cross-modal context</text>
+<text id="text:state:label:0" x="780" y="507.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">Recurrent state</text>
+<text id="text:state:detail:0" x="780" y="539.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">History at t - 1</text>
+<text id="text:policy:label:0" x="1075" y="277.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">Action policy</text>
+<text id="text:policy:detail:0" x="1075" y="309.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Select action</text>
+<text id="text:env:label:0" x="1320" y="277.12" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B42" text-anchor="middle">Environment</text>
+<text id="text:env:detail:0" x="1320" y="309.76" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Execute action</text>
+<rect x="680" y="370" width="142.12" height="26" fill="#FFFFFF"/>
+<text id="edge-label:e5" x="751.06" y="388.4" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Previous state</text>
+<rect x="960" y="450" width="105.44" height="26" fill="#FFFFFF"/>
+<text id="edge-label:e6" x="1012.72" y="468.4" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Next state</text>
+<rect x="1060" y="24" width="165.56" height="26" fill="#FFFFFF"/>
+<text id="edge-label:e9" x="1142.78" y="42.4" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526477" text-anchor="middle">Next observation</text>
+</svg>

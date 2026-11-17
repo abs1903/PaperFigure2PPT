@@ -1,0 +1,23 @@
+{
+  "paper": "Masked Autoencoders Are Scalable Vision Learners",
+  "version": "CVPR2022 open-access paper",
+  "date": "2026-11-17",
+  "selectionReason": "Author Figure1 provides a compact visual explanation of asymmetric token loads; a strong visual benchmark and a mechanism different from agent pipelines. This is a qualitative selection, not a community quality rating.",
+  "authorFigureOpenedBeforeDesign": true,
+  "figureHidden": false,
+  "bounds": {
+    "initialGenerations": 2,
+    "maximumAttachedEdits": 2,
+    "totalImageCalls": 4
+  },
+  "targetDeliverables": [
+    "accepted-raster",
+    "editable-svg",
+    "native-pptx",
+    "actual-libreoffice-render",
+    "independent-native-review",
+    "author-comparison"
+  ],
+  "imageOnlyFirstReading": "Fresh reviewer; neutral image paths; source/brief withheld until account saved.",
+  "execution": "No model pre-training or benchmark evaluation; schematic patch example only."
+}

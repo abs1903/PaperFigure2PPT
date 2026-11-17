@@ -1,0 +1,10 @@
+{
+  "deliveryReady": true,
+  "visualAcceptance": "independently-accepted-for-reference-reconstruction",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/voyager_visual_quality_v2"
+  },
+  "reasons": [],
+  "scope": "Reference reconstruction review; not a venue-quality certification or a human user approval"
+}

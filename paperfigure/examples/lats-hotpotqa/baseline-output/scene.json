@@ -1,0 +1,2214 @@
+{
+  "width": 1800,
+  "height": 1000,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "question",
+      "label": "Question",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "x = env.reset(idx=idx)"
+        }
+      ],
+      "x": 113.4,
+      "y": 290,
+      "w": 210,
+      "h": 110,
+      "fill": "#F0F4F8",
+      "stroke": "#6B8299",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:question:label:0",
+          "text": "Question",
+          "x": 127.4,
+          "y": 326.12,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "tree",
+      "label": "Trajectory tree",
+      "detail": "This question",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "root = Node(state=None, question=x)"
+        }
+      ],
+      "x": 454.20000000000005,
+      "y": 290,
+      "w": 210,
+      "h": 110,
+      "fill": "#F1ECF8",
+      "stroke": "#8568AA",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:tree:label:0",
+          "text": "Trajectory",
+          "x": 468.20000000000005,
+          "y": 287.31,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:tree:label:1",
+          "text": "tree",
+          "x": 468.20000000000005,
+          "y": 325.07,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:tree:detail:0",
+          "text": "This question",
+          "x": 468.20000000000005,
+          "y": 370.83,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "select",
+      "label": "Select (UCT)",
+      "detail": "",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node = select_node(root)"
+        }
+      ],
+      "x": 795,
+      "y": 228.33333333333331,
+      "w": 210,
+      "h": 110,
+      "fill": "#F1F4F7",
+      "stroke": "#788A9C",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:select:label:0",
+          "text": "Select",
+          "x": 809,
+          "y": 245.57333333333332,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:select:label:1",
+          "text": "(UCT)",
+          "x": 809,
+          "y": 283.3333333333333,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "label": "Expand",
+      "detail": "LM candidates",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "samples = gpt(prompt, n=n_generate_sample, stop=stop)"
+        }
+      ],
+      "x": 1135.8000000000002,
+      "y": 290,
+      "w": 210,
+      "h": 110,
+      "fill": "#E9EDF8",
+      "stroke": "#657BB0",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:policy:label:0",
+          "text": "Expand",
+          "x": 1149.8000000000002,
+          "y": 306.19,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:policy:detail:0",
+          "text": "LM candidates",
+          "x": 1149.8000000000002,
+          "y": 351.95,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Shared WikiEnv",
+      "detail": "Search / Lookup / Finish",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "obs, r, done, info = step(env, f\"{action_type.lower()}[{action_param}]\")"
+        }
+      ],
+      "x": 1476.6000000000001,
+      "y": 228.33333333333331,
+      "w": 210,
+      "h": 110,
+      "fill": "#FFF2DF",
+      "stroke": "#AA7933",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:tools:label:0",
+          "text": "Shared",
+          "x": 1490.6000000000001,
+          "y": 193.7833333333333,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:tools:label:1",
+          "text": "WikiEnv",
+          "x": 1490.6000000000001,
+          "y": 231.5433333333333,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:tools:detail:0",
+          "text": "Search /",
+          "x": 1490.6000000000001,
+          "y": 277.3033333333333,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:tools:detail:1",
+          "text": "Lookup /",
+          "x": 1490.6000000000001,
+          "y": 309.1633333333333,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:tools:detail:2",
+          "text": "Finish",
+          "x": 1490.6000000000001,
+          "y": 341.0233333333333,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "value",
+      "label": "LM value",
+      "detail": "Base value prompt",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "task",
+          "quote": "prompt = value_prompt_reasoning.format(s=\"\", input=inp)"
+        }
+      ],
+      "x": 795,
+      "y": 475,
+      "w": 210,
+      "h": 110,
+      "fill": "#E9EDF8",
+      "stroke": "#657BB0",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:value:label:0",
+          "text": "LM value",
+          "x": 809,
+          "y": 475.26,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:value:detail:0",
+          "text": "Base value",
+          "x": 809,
+          "y": 521.02,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:value:detail:1",
+          "text": "prompt",
+          "x": 809,
+          "y": 552.88,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "rollout",
+      "label": "Value-guided rollout",
+      "detail": "Absolute depth < 4",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "while not node.is_terminal and depth < max_depth:"
+        }
+      ],
+      "x": 1135.8000000000002,
+      "y": 660,
+      "w": 210,
+      "h": 110,
+      "fill": "#F1F4F7",
+      "stroke": "#788A9C",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:rollout:label:0",
+          "text": "Value-guided",
+          "x": 1149.8000000000002,
+          "y": 641.38,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:rollout:label:1",
+          "text": "rollout",
+          "x": 1149.8000000000002,
+          "y": 679.14,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:rollout:detail:0",
+          "text": "Absolute depth",
+          "x": 1149.8000000000002,
+          "y": 724.9,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:rollout:detail:1",
+          "text": "< 4",
+          "x": 1149.8000000000002,
+          "y": 756.76,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "backup",
+      "label": "Backup",
+      "detail": "If no success",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "backpropagate(terminal_node, reward)"
+        }
+      ],
+      "x": 1476.6000000000001,
+      "y": 475,
+      "w": 210,
+      "h": 110,
+      "fill": "#F1F4F7",
+      "stroke": "#788A9C",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:backup:label:0",
+          "text": "Backup",
+          "x": 1490.6000000000001,
+          "y": 491.19,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:backup:detail:0",
+          "text": "If no success",
+          "x": 1490.6000000000001,
+          "y": 536.95,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "failed",
+      "label": "Failed traces",
+      "detail": "Wrong terminal",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "failed_trajectories.append({'trajectory': trajectory, 'final_answer': f\"{action_type.lower()}[{action_param}]\"})"
+        }
+      ],
+      "x": 113.4,
+      "y": 660,
+      "w": 210,
+      "h": 110,
+      "fill": "#F1ECF8",
+      "stroke": "#8568AA",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:failed:label:0",
+          "text": "Failed",
+          "x": 127.4,
+          "y": 641.38,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:failed:label:1",
+          "text": "traces",
+          "x": 127.4,
+          "y": 679.14,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:failed:detail:0",
+          "text": "Wrong",
+          "x": 127.4,
+          "y": 724.9,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:failed:detail:1",
+          "text": "terminal",
+          "x": 127.4,
+          "y": 756.76,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "reflect",
+      "label": "Self-reflection",
+      "detail": "New distinct failures: 1-3 total",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "if len(unique_trajectories) > len(reflection_map) and len(unique_trajectories) < 4:"
+        }
+      ],
+      "x": 454.20000000000005,
+      "y": 660,
+      "w": 210,
+      "h": 110,
+      "fill": "#E9EDF8",
+      "stroke": "#657BB0",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:reflect:label:0",
+          "text": "Self-reflection",
+          "x": 468.20000000000005,
+          "y": 644.33,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:reflect:detail:0",
+          "text": "New distinct",
+          "x": 468.20000000000005,
+          "y": 690.09,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:reflect:detail:1",
+          "text": "failures: 1-3",
+          "x": 468.20000000000005,
+          "y": 721.95,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:reflect:detail:2",
+          "text": "total",
+          "x": 468.20000000000005,
+          "y": 753.8100000000001,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Reflection context",
+      "detail": "This question",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "reflection_map = task.generate_self_reflection(unique_trajectories, x)"
+        }
+      ],
+      "x": 795,
+      "y": 721.6666666666666,
+      "w": 210,
+      "h": 110,
+      "fill": "#F1ECF8",
+      "stroke": "#8568AA",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:context:label:0",
+          "text": "Reflection",
+          "x": 809,
+          "y": 718.9766666666667,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:context:label:1",
+          "text": "context",
+          "x": 809,
+          "y": 756.7366666666667,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:context:detail:0",
+          "text": "This question",
+          "x": 809,
+          "y": 802.4966666666667,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "label": "Return state",
+      "detail": "Success / budget fallback",
+      "role": "output",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "return best_child.state, best_child.value, all_nodes, best_child.reward, best_child.em"
+        }
+      ],
+      "x": 1476.6000000000001,
+      "y": 721.6666666666666,
+      "w": 210,
+      "h": 110,
+      "fill": "#EAF4ED",
+      "stroke": "#427855",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:result:label:0",
+          "text": "Return",
+          "x": 1490.6000000000001,
+          "y": 703.0466666666666,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:result:label:1",
+          "text": "state",
+          "x": 1490.6000000000001,
+          "y": 740.8066666666666,
+          "w": 182,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:result:detail:0",
+          "text": "Success /",
+          "x": 1490.6000000000001,
+          "y": 786.5666666666666,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:result:detail:1",
+          "text": "budget fallback",
+          "x": 1490.6000000000001,
+          "y": 818.4266666666666,
+          "w": 182,
+          "h": 31.86,
+          "fontSize": 27,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "initialize",
+      "from": "question",
+      "to": "tree",
+      "kind": "data",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "root = Node(state=None, question=x)"
+        }
+      ],
+      "points": [
+        [
+          323.4,
+          345
+        ],
+        [
+          454.20000000000005,
+          345
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": false
+    },
+    {
+      "id": "select-path",
+      "from": "tree",
+      "to": "select",
+      "kind": "control",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node = select_node(root)"
+        }
+      ],
+      "points": [
+        [
+          664.2,
+          345
+        ],
+        [
+          684.2,
+          345
+        ],
+        [
+          684.2,
+          283.3333333333333
+        ],
+        [
+          795,
+          283.3333333333333
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "expand-path",
+      "from": "select",
+      "to": "policy",
+      "kind": "control",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "expand_node(node, args, task)"
+        }
+      ],
+      "points": [
+        [
+          1005,
+          283.3333333333333
+        ],
+        [
+          1025,
+          283.3333333333333
+        ],
+        [
+          1025,
+          345
+        ],
+        [
+          1135.8000000000002,
+          345
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "execute",
+      "from": "policy",
+      "to": "tools",
+      "kind": "control",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "obs, r, done, info = step(env, f\"{action_type.lower()}[{action_param}]\")"
+        }
+      ],
+      "points": [
+        [
+          1345.8000000000002,
+          345
+        ],
+        [
+          1365.8000000000002,
+          345
+        ],
+        [
+          1365.8000000000002,
+          283.3333333333333
+        ],
+        [
+          1476.6000000000001,
+          283.3333333333333
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "store-children",
+      "from": "tools",
+      "to": "tree",
+      "kind": "feedback",
+      "label": {
+        "id": "edge-label:store-children",
+        "text": "Expansion children",
+        "x": 1116.7520000000002,
+        "y": 244,
+        "w": 244.09599999999998,
+        "h": 35.1,
+        "fontSize": 27,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node.children.extend(new_nodes)"
+        }
+      ],
+      "points": [
+        [
+          1476.6000000000001,
+          283.3333333333333
+        ],
+        [
+          1456.6000000000001,
+          283.3333333333333
+        ],
+        [
+          1456.6000000000001,
+          274
+        ],
+        [
+          1021,
+          274
+        ],
+        [
+          1021,
+          354.3333333333333
+        ],
+        [
+          684.2,
+          354.3333333333333
+        ],
+        [
+          684.2,
+          345
+        ],
+        [
+          664.2,
+          345
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "candidate-values",
+      "from": "tree",
+      "to": "value",
+      "kind": "data",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "child_prompts = [generate_prompt(child) for child in node.children if not child.is_terminal]"
+        }
+      ],
+      "points": [
+        [
+          664.2,
+          345
+        ],
+        [
+          684.2,
+          345
+        ],
+        [
+          684.2,
+          530
+        ],
+        [
+          795,
+          530
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": false
+    },
+    {
+      "id": "best-child",
+      "from": "value",
+      "to": "rollout",
+      "kind": "control",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "rollout(max(node.children, key=lambda child: child.value), args, task, idx, max_depth=4)"
+        }
+      ],
+      "points": [
+        [
+          1005,
+          530
+        ],
+        [
+          1025,
+          530
+        ],
+        [
+          1025,
+          715
+        ],
+        [
+          1135.8000000000002,
+          715
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "rollout-step",
+      "from": "rollout",
+      "to": "tools",
+      "kind": "feedback",
+      "label": {
+        "id": "edge-label:rollout-step",
+        "text": "Reuse policy + tools",
+        "x": 1331.4240000000002,
+        "y": 469.16666666666663,
+        "w": 258.352,
+        "h": 35.1,
+        "fontSize": 27,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "new_states = generate_new_states(node, args, task, n)"
+        }
+      ],
+      "points": [
+        [
+          1240.8000000000002,
+          660
+        ],
+        [
+          1240.8000000000002,
+          640
+        ],
+        [
+          1460.6000000000001,
+          640
+        ],
+        [
+          1460.6000000000001,
+          358.3333333333333
+        ],
+        [
+          1581.6000000000001,
+          358.3333333333333
+        ],
+        [
+          1581.6000000000001,
+          338.3333333333333
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "rollout-feedback",
+      "from": "tools",
+      "to": "rollout",
+      "kind": "feedback",
+      "label": {
+        "id": "edge-label:rollout-feedback",
+        "text": "Observation / terminal reward",
+        "x": 1176.815,
+        "y": 469.16666666666663,
+        "w": 369.97,
+        "h": 35.1,
+        "fontSize": 27,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "return state.reward, state"
+        }
+      ],
+      "points": [
+        [
+          1581.6000000000001,
+          338.3333333333333
+        ],
+        [
+          1581.6000000000001,
+          358.3333333333333
+        ],
+        [
+          1361.8000000000002,
+          358.3333333333333
+        ],
+        [
+          1361.8000000000002,
+          640
+        ],
+        [
+          1240.8000000000002,
+          640
+        ],
+        [
+          1240.8000000000002,
+          660
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "no-success",
+      "from": "rollout",
+      "to": "backup",
+      "kind": "control",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "backpropagate(terminal_node, reward)"
+        }
+      ],
+      "points": [
+        [
+          1345.8000000000002,
+          715
+        ],
+        [
+          1365.8000000000002,
+          715
+        ],
+        [
+          1365.8000000000002,
+          530
+        ],
+        [
+          1476.6000000000001,
+          530
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "update-statistics",
+      "from": "backup",
+      "to": "tree",
+      "kind": "feedback",
+      "label": {
+        "id": "edge-label:update-statistics",
+        "text": "Values + visits",
+        "x": 976.6885000000001,
+        "y": 386,
+        "w": 187.423,
+        "h": 35.1,
+        "fontSize": 27,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node.visits += 1"
+        }
+      ],
+      "points": [
+        [
+          1476.6000000000001,
+          530
+        ],
+        [
+          1456.6000000000001,
+          530
+        ],
+        [
+          1456.6000000000001,
+          416
+        ],
+        [
+          684.2,
+          416
+        ],
+        [
+          684.2,
+          345
+        ],
+        [
+          664.2,
+          345
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "terminal-failure",
+      "from": "tools",
+      "to": "failed",
+      "kind": "feedback",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "if new_node.is_terminal and r == 0:"
+        }
+      ],
+      "points": [
+        [
+          1476.6000000000001,
+          283.3333333333333
+        ],
+        [
+          1456.6000000000001,
+          283.3333333333333
+        ],
+        [
+          1456.6000000000001,
+          644
+        ],
+        [
+          343.4,
+          644
+        ],
+        [
+          343.4,
+          715
+        ],
+        [
+          323.4,
+          715
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "reflect-failures",
+      "from": "failed",
+      "to": "reflect",
+      "kind": "data",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "if len(unique_trajectories) > len(reflection_map) and len(unique_trajectories) < 4:"
+        }
+      ],
+      "points": [
+        [
+          323.4,
+          715
+        ],
+        [
+          454.20000000000005,
+          715
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": false
+    },
+    {
+      "id": "store-reflection",
+      "from": "reflect",
+      "to": "context",
+      "kind": "data",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "task",
+          "quote": "'reflection': reflection[0]"
+        }
+      ],
+      "points": [
+        [
+          664.2,
+          715
+        ],
+        [
+          684.2,
+          715
+        ],
+        [
+          684.2,
+          776.6666666666666
+        ],
+        [
+          795,
+          776.6666666666666
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": false
+    },
+    {
+      "id": "policy-feedback",
+      "from": "context",
+      "to": "policy",
+      "kind": "feedback",
+      "label": null,
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "task",
+          "quote": "prompt = cot_prompt_feedback.format(trajectories=trajectories, input=input)"
+        }
+      ],
+      "points": [
+        [
+          900,
+          721.6666666666666
+        ],
+        [
+          900,
+          701.6666666666666
+        ],
+        [
+          1119.8000000000002,
+          701.6666666666666
+        ],
+        [
+          1119.8000000000002,
+          420
+        ],
+        [
+          1240.8000000000002,
+          420
+        ],
+        [
+          1240.8000000000002,
+          400
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "return-tree",
+      "from": "tree",
+      "to": "result",
+      "kind": "control",
+      "label": {
+        "id": "edge-label:return-tree",
+        "text": "Terminal / fallback",
+        "x": 954.8320000000001,
+        "y": 614,
+        "w": 231.136,
+        "h": 35.1,
+        "fontSize": 27,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "best_child = max(all_nodes_list, key=lambda x: x.reward)"
+        }
+      ],
+      "points": [
+        [
+          664.2,
+          345
+        ],
+        [
+          684.2,
+          345
+        ],
+        [
+          684.2,
+          644
+        ],
+        [
+          1456.6000000000001,
+          644
+        ],
+        [
+          1456.6000000000001,
+          776.6666666666666
+        ],
+        [
+          1476.6000000000001,
+          776.6666666666666
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    },
+    {
+      "id": "return-rollout",
+      "from": "rollout",
+      "to": "result",
+      "kind": "control",
+      "label": {
+        "id": "edge-label:return-rollout",
+        "text": "Successful terminal",
+        "x": 1295.8310000000004,
+        "y": 746.6666666666666,
+        "w": 250.738,
+        "h": 35.1,
+        "fontSize": 27,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "background": "#FFFFFF",
+        "fontFamily": "Arial"
+      },
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "return terminal_node.state, terminal_node.value, [], terminal_node.reward, terminal_node.em"
+        }
+      ],
+      "points": [
+        [
+          1345.8000000000002,
+          715
+        ],
+        [
+          1365.8000000000002,
+          715
+        ],
+        [
+          1365.8000000000002,
+          776.6666666666666
+        ],
+        [
+          1476.6000000000001,
+          776.6666666666666
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#65788B",
+      "strokeWidth": 2.5,
+      "dashed": true
+    }
+  ],
+  "groups": [],
+  "texts": [
+    {
+      "id": "text:question:label:0",
+      "text": "Question",
+      "x": 127.4,
+      "y": 326.12,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tree:label:0",
+      "text": "Trajectory",
+      "x": 468.20000000000005,
+      "y": 287.31,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tree:label:1",
+      "text": "tree",
+      "x": 468.20000000000005,
+      "y": 325.07,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tree:detail:0",
+      "text": "This question",
+      "x": 468.20000000000005,
+      "y": 370.83,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:select:label:0",
+      "text": "Select",
+      "x": 809,
+      "y": 245.57333333333332,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:select:label:1",
+      "text": "(UCT)",
+      "x": 809,
+      "y": 283.3333333333333,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:policy:label:0",
+      "text": "Expand",
+      "x": 1149.8000000000002,
+      "y": 306.19,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:policy:detail:0",
+      "text": "LM candidates",
+      "x": 1149.8000000000002,
+      "y": 351.95,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tools:label:0",
+      "text": "Shared",
+      "x": 1490.6000000000001,
+      "y": 193.7833333333333,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tools:label:1",
+      "text": "WikiEnv",
+      "x": 1490.6000000000001,
+      "y": 231.5433333333333,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tools:detail:0",
+      "text": "Search /",
+      "x": 1490.6000000000001,
+      "y": 277.3033333333333,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tools:detail:1",
+      "text": "Lookup /",
+      "x": 1490.6000000000001,
+      "y": 309.1633333333333,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:tools:detail:2",
+      "text": "Finish",
+      "x": 1490.6000000000001,
+      "y": 341.0233333333333,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:value:label:0",
+      "text": "LM value",
+      "x": 809,
+      "y": 475.26,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:value:detail:0",
+      "text": "Base value",
+      "x": 809,
+      "y": 521.02,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:value:detail:1",
+      "text": "prompt",
+      "x": 809,
+      "y": 552.88,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:rollout:label:0",
+      "text": "Value-guided",
+      "x": 1149.8000000000002,
+      "y": 641.38,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:rollout:label:1",
+      "text": "rollout",
+      "x": 1149.8000000000002,
+      "y": 679.14,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:rollout:detail:0",
+      "text": "Absolute depth",
+      "x": 1149.8000000000002,
+      "y": 724.9,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:rollout:detail:1",
+      "text": "< 4",
+      "x": 1149.8000000000002,
+      "y": 756.76,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:backup:label:0",
+      "text": "Backup",
+      "x": 1490.6000000000001,
+      "y": 491.19,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:backup:detail:0",
+      "text": "If no success",
+      "x": 1490.6000000000001,
+      "y": 536.95,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:failed:label:0",
+      "text": "Failed",
+      "x": 127.4,
+      "y": 641.38,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:failed:label:1",
+      "text": "traces",
+      "x": 127.4,
+      "y": 679.14,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:failed:detail:0",
+      "text": "Wrong",
+      "x": 127.4,
+      "y": 724.9,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:failed:detail:1",
+      "text": "terminal",
+      "x": 127.4,
+      "y": 756.76,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:reflect:label:0",
+      "text": "Self-reflection",
+      "x": 468.20000000000005,
+      "y": 644.33,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:reflect:detail:0",
+      "text": "New distinct",
+      "x": 468.20000000000005,
+      "y": 690.09,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:reflect:detail:1",
+      "text": "failures: 1-3",
+      "x": 468.20000000000005,
+      "y": 721.95,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:reflect:detail:2",
+      "text": "total",
+      "x": 468.20000000000005,
+      "y": 753.8100000000001,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:context:label:0",
+      "text": "Reflection",
+      "x": 809,
+      "y": 718.9766666666667,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:context:label:1",
+      "text": "context",
+      "x": 809,
+      "y": 756.7366666666667,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:context:detail:0",
+      "text": "This question",
+      "x": 809,
+      "y": 802.4966666666667,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:result:label:0",
+      "text": "Return",
+      "x": 1490.6000000000001,
+      "y": 703.0466666666666,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:result:label:1",
+      "text": "state",
+      "x": 1490.6000000000001,
+      "y": 740.8066666666666,
+      "w": 182,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:result:detail:0",
+      "text": "Success /",
+      "x": 1490.6000000000001,
+      "y": 786.5666666666666,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:result:detail:1",
+      "text": "budget fallback",
+      "x": 1490.6000000000001,
+      "y": 818.4266666666666,
+      "w": 182,
+      "h": 31.86,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:store-children",
+      "text": "Expansion children",
+      "x": 1116.7520000000002,
+      "y": 244,
+      "w": 244.09599999999998,
+      "h": 35.1,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:rollout-step",
+      "text": "Reuse policy + tools",
+      "x": 1331.4240000000002,
+      "y": 469.16666666666663,
+      "w": 258.352,
+      "h": 35.1,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:rollout-feedback",
+      "text": "Observation / terminal reward",
+      "x": 1176.815,
+      "y": 469.16666666666663,
+      "w": 369.97,
+      "h": 35.1,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:update-statistics",
+      "text": "Values + visits",
+      "x": 976.6885000000001,
+      "y": 386,
+      "w": 187.423,
+      "h": 35.1,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:return-tree",
+      "text": "Terminal / fallback",
+      "x": 954.8320000000001,
+      "y": 614,
+      "w": 231.136,
+      "h": 35.1,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:return-rollout",
+      "text": "Successful terminal",
+      "x": 1295.8310000000004,
+      "y": 746.6666666666666,
+      "w": 250.738,
+      "h": 35.1,
+      "fontSize": 27,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "background": "#FFFFFF",
+      "fontFamily": "Arial"
+    }
+  ],
+  "decorations": [],
+  "assets": [],
+  "title": "Code-grounded LATS HotPotQA",
+  "typography": {
+    "fontFamily": "Arial",
+    "moduleSize": 32,
+    "detailSize": 27,
+    "annotationSize": 27,
+    "titleSize": 30,
+    "moduleBold": true
+  },
+  "specHash": "6e02f3b640ac5169adddf2a759d2e3db86e985e3460c34eabf8029e52fd7e936",
+  "semanticHash": "df0e16808cfa96ab60e62ff1fc4e34e18fab28ab5092674caa302f042ac6c9ba",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

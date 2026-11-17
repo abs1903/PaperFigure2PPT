@@ -1,0 +1,9 @@
+# Frozen B2 visual inventory
+
+Observed before native authoring: 15 registered visible shape groups, including one dashed objective container and its target/selector/loss/prediction/caption components. Encoder is large/dark blue; decoder smaller/pale blue. Four visible and four encoded patches; one learned token with ×12; restored 4×4 blue positions r1c1/r1c4/r3c2/r4c4, twelve gray. Loss 4×4 uses same four white positions and twelve gold. Four landscape grids are each 4×4. All landscapes are geometric, with sun, teal mountain silhouette, and sand bottom row.
+
+Thirteen directed routes: image→visible, visible→encoder, encoder→latents, latents→restore, learned token→restore, restore→full grid, full grid→decoder, decoder→predictions, original→target inset, top prediction→prediction inset, target→selector, selector→MSE, prediction inset→MSE. Two additional dashed metadata routes: restore indices→restore and binary mask→selector. No target arrow enters encoder or decoder. Fifteen directed routes total. Native reconstruction retains the visible grouping rather than substituting the spec's higher-level edge grouping.
+
+Visible label inventory: Image patches; Visible / patches; Mask / 75%; Encoder; Encoded / visible / patches; Learned mask tokens; ×12; Restore / order; Lightweight / decoder; Pixel / predictions; Restore indices; Binary mask; Original / target; Masked / positions only; Masked-patch / MSE. Twenty-five native text lines total (count checked against transcript). Source typography is heavy sans serif, approximately Arial bold, unknown exact font.
+
+Allowed approximation: mild tonal shading becomes source-matched solid fills. Anti-aliasing and exact unknown font appearance are approximate. Source geometry, line breaks, text sizes, grid counts and routes must remain intact. No scientific content changes.

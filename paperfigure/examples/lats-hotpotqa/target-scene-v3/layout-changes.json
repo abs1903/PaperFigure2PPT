@@ -1,0 +1,177 @@
+[
+  {
+    "kind": "center-text",
+    "module": "question",
+    "dx": -4.333984375,
+    "dy": 8.1875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "tree",
+    "dx": 45.88232421875,
+    "dy": -3.5468292236328125,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "tree",
+    "id": "label-tree-1",
+    "dx": 29.3427734375,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "select",
+    "dx": 10.433837890625,
+    "dy": -1.8142166137695312,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "select",
+    "id": "label-select-1",
+    "dx": 8.746826171875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "policy",
+    "dx": 0.769775390625,
+    "dy": 1.4929122924804688,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "policy",
+    "id": "label-policy-0",
+    "dx": 29.230712890625,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "tools",
+    "dx": 2.114013671875,
+    "dy": 0.35979461669921875,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "tools",
+    "id": "label-tools-0",
+    "dx": -0.353271484375,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "tools",
+    "id": "label-tools-1",
+    "dx": 39.17333984375,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "tools",
+    "id": "label-tools-2",
+    "dx": 30.377197265625,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "tools",
+    "id": "label-tools-3",
+    "dx": 23.115966796875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "failed",
+    "dx": -9.238037109375,
+    "dy": 7.30126953125,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "reflect",
+    "dx": -4.955810546875,
+    "dy": 8.441650390625,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "context",
+    "dx": -5.77490234375,
+    "dy": -4.3957672119140625,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "context",
+    "id": "label-context-0",
+    "dx": 8.441650390625,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "context",
+    "id": "label-context-1",
+    "dx": 25.3759765625,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "value",
+    "dx": -4.45703125,
+    "dy": 9.857421875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "rollout",
+    "dx": 165.034423828125,
+    "dy": -5.54681396484375,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "rollout",
+    "id": "label-rollout-1",
+    "dx": 39.99560546875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "backup",
+    "dx": -5.80712890625,
+    "dy": -2.81109619140625,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "backup",
+    "id": "label-backup-0",
+    "dx": 17.73388671875,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "backup",
+    "id": "label-backup-1",
+    "dx": 3.735595703125,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "result",
+    "dx": 23.4482421875,
+    "dy": -2.51318359375,
+    "pass": 0
+  },
+  {
+    "kind": "center-line",
+    "module": "result",
+    "id": "label-result-0",
+    "dx": 15.432373046875,
+    "pass": 0
+  }
+]

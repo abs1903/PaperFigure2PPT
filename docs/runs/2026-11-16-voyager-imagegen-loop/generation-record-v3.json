@@ -1,0 +1,32 @@
+{
+  "round": 3,
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132",
+  "promptPath": "prompt-v3.txt",
+  "promptSHA256": "917f3d8f2e95dee9e5f77727c35718d6db8e08f6b3943d99d4c12f1fbbcea221",
+  "inputImages": [
+    {
+      "path": "candidate-v2.png",
+      "sha256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132",
+      "role": "actual edit-target attachment"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-v3.png",
+    "sha256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda"
+  },
+  "specSHA256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543",
+  "briefSHA256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e",
+  "defect": "semantic palette and uniform field fills",
+  "invariants": [
+    "text",
+    "topology",
+    "geometry",
+    "arrow routes/directions",
+    "relative hierarchy",
+    "native geometric illustrations"
+  ],
+  "decision": "unreviewed",
+  "nativeDeliveryReady": false
+}

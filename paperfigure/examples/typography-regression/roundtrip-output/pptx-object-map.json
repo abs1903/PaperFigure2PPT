@@ -1,0 +1,150 @@
+[
+  {
+    "id": 2,
+    "name": "frame-0",
+    "type": "shape",
+    "owner": "sample-0",
+    "bbox": [
+      20,
+      20,
+      560,
+      115
+    ]
+  },
+  {
+    "id": 10,
+    "name": "label-block:sample-0",
+    "type": "text-block",
+    "owner": "sample-0",
+    "sourceTextIds": [
+      "text-0"
+    ],
+    "text": "Method Overview",
+    "bbox": [
+      20,
+      20,
+      560,
+      115
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 14,
+    "name": "sample-0",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "frame-1",
+    "type": "shape",
+    "owner": "sample-1",
+    "bbox": [
+      20,
+      160,
+      560,
+      115
+    ]
+  },
+  {
+    "id": 11,
+    "name": "label-block:sample-1",
+    "type": "text-block",
+    "owner": "sample-1",
+    "sourceTextIds": [
+      "text-1"
+    ],
+    "text": "Thought and action",
+    "bbox": [
+      20,
+      160,
+      560,
+      115
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 15,
+    "name": "sample-1",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 6,
+    "name": "frame-2",
+    "type": "shape",
+    "owner": "sample-2",
+    "bbox": [
+      20,
+      300,
+      560,
+      115
+    ]
+  },
+  {
+    "id": 12,
+    "name": "label-block:sample-2",
+    "type": "text-block",
+    "owner": "sample-2",
+    "sourceTextIds": [
+      "text-2"
+    ],
+    "text": "Skill description",
+    "bbox": [
+      20,
+      300,
+      560,
+      115
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 16,
+    "name": "sample-2",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 8,
+    "name": "frame-3",
+    "type": "shape",
+    "owner": "sample-3",
+    "bbox": [
+      20,
+      440,
+      560,
+      115
+    ]
+  },
+  {
+    "id": 13,
+    "name": "label-block:sample-3",
+    "type": "text-block",
+    "owner": "sample-3",
+    "sourceTextIds": [
+      "text-3"
+    ],
+    "text": "Input / Output",
+    "bbox": [
+      20,
+      440,
+      560,
+      115
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 17,
+    "name": "sample-3",
+    "type": "group",
+    "owner": null
+  }
+]

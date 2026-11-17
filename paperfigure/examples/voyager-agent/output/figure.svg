@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2240" height="1030" viewBox="0 0 2240 1030" lang="en"><title>Voyager: automatic curriculum and reusable executable skills</title><metadata>{&quot;specHash&quot;:&quot;78753e070b5b25d4825ccd2f033e787a6f0fe48f44da224252a1036d773c23e6&quot;,&quot;semanticHash&quot;:&quot;5552e6ad7f6bedf863248cea5eea58897b41fecd03d792da657d183fa0d56156&quot;}</metadata><rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#15354A" stroke-width="1.5"/></marker></defs>
+<defs></defs>
+<path id="edge:e1" data-from="curriculum" data-to="action" d="M 520 395 L 920 395" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e2" data-from="action" data-to="world" d="M 1350 395 L 1640 395" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e3" data-from="world" data-to="critic" d="M 1865 520 L 1865 690" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e4" data-from="world" data-to="action" d="M 1707.5 520 L 1707.5 575 L 1264 575 L 1264 520" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e5" data-from="critic" data-to="action" d="M 1640 795 L 1490 795 L 1490 625 L 1100 625 L 1100 520" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e6" data-from="critic" data-to="skills" d="M 2090 795 L 2160 795 L 2160 20 L 1210 20 L 1210 55" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e7" data-from="skills" data-to="action" d="M 1220 215 L 1220 270" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e8" data-from="curriculum" data-to="skills" d="M 310 270 L 310 135 L 860 135" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e9" data-from="action" data-to="skills" d="M 1027.5 270 L 1027.5 215" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e10" data-from="skills" data-to="world" d="M 1410 135 L 1510 135 L 1510 210 L 1865 210 L 1865 270" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e11" data-from="critic" data-to="curriculum" d="M 1865 900 L 1865 965 L 310 965 L 310 520" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<rect id="node:curriculum" x="100" y="270" width="420" height="250" rx="19" fill="#E8F0F7" stroke="#59778E" stroke-width="2"/>
+<rect id="node:action" x="920" y="270" width="430" height="250" rx="19" fill="#E8F0F7" stroke="#59778E" stroke-width="2"/>
+<rect id="node:world" x="1640" y="270" width="450" height="250" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<rect id="node:critic" x="1640" y="690" width="450" height="210" rx="19" fill="#E8F0F7" stroke="#59778E" stroke-width="2"/>
+<rect id="node:skills" x="860" y="55" width="550" height="160" rx="19" fill="#E8F3EF" stroke="#507E71" stroke-width="2"/>
+<text id="text:curriculum:label:0" x="310" y="328.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Automatic</text>
+<text id="text:curriculum:label:1" x="310" y="373.8" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">curriculum</text>
+<text id="text:curriculum:detail:0" x="310" y="473.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">State + task history</text>
+<text id="text:action:label:0" x="1135" y="333.56" font-family="Times New Roman, Helvetica, sans-serif" font-size="43" font-weight="bold"  fill="#172B42" text-anchor="middle">Action agent</text>
+<text id="text:action:detail:0" x="1135" y="473.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Generate / refine code</text>
+<text id="text:world:label:0" x="1865" y="329.88" font-family="Times New Roman, Helvetica, sans-serif" font-size="39" font-weight="bold"  fill="#172B42" text-anchor="middle">Minecraft runtime</text>
+<text id="text:world:detail:0" x="1865" y="473.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Execute JS programs</text>
+<text id="text:critic:label:0" x="1865" y="752.64" font-family="Times New Roman, Helvetica, sans-serif" font-size="42" font-weight="bold"  fill="#172B42" text-anchor="middle">Critic</text>
+<text id="text:critic:detail:0" x="1865" y="858.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Success + critique</text>
+<text id="text:skills:label:0" x="1135" y="114.88" font-family="Times New Roman, Helvetica, sans-serif" font-size="39" font-weight="bold"  fill="#172B42" text-anchor="middle">Skill library</text>
+<text id="text:skills:detail:0" x="1135" y="182.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Code + descriptions</text>
+<text id="edge-label:e1" x="715.096" y="363.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Task + context</text>
+<text id="edge-label:e2" x="1471.888" y="363.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">JavaScript</text>
+<text id="edge-label:e3" x="2014.096" y="609.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Events + task</text>
+<text id="edge-label:e4" x="1456.144" y="554.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Runtime feedback</text>
+<text id="edge-label:e5" x="1243.36" y="672.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Critique</text>
+<text id="edge-label:e6" x="1891.296" y="82.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Reusable success only</text>
+<text id="edge-label:e7" x="1301.24" y="249.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Code</text>
+<text id="edge-label:e8" x="587.6" y="109.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Context query</text>
+<text id="edge-label:e9" x="952.048" y="249.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Query</text>
+<text id="edge-label:e10" x="1727.408" y="180.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Saved code + primitives</text>
+<text id="edge-label:e11" x="709.168" y="933.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Record task outcome</text>
+</svg>

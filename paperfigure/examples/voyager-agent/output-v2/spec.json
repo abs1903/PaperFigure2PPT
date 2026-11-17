@@ -1,0 +1,685 @@
+{
+  "version": "1.0",
+  "title": "Voyager: automatic curriculum and reusable executable skills",
+  "subtitle": "Automatic learn() mode: curriculum, iterative code execution, self-verification and success-conditioned skill registration.",
+  "sources": [
+    {
+      "id": "orchestrator",
+      "kind": "code",
+      "locator": "https://github.com/MineDojo/Voyager/blob/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/voyager.py",
+      "text": "import copy\nimport json\nimport os\nimport time\nfrom typing import Dict\n\nimport voyager.utils as U\nfrom .env import VoyagerEnv\n\nfrom .agents import ActionAgent\nfrom .agents import CriticAgent\nfrom .agents import CurriculumAgent\nfrom .agents import SkillManager\n\n\n# TODO: remove event memory\nclass Voyager:\n    def __init__(\n        self,\n        mc_port: int = None,\n        azure_login: Dict[str, str] = None,\n        server_port: int = 3000,\n        openai_api_key: str = None,\n        env_wait_ticks: int = 20,\n        env_request_timeout: int = 600,\n        max_iterations: int = 160,\n        reset_placed_if_failed: bool = False,\n        action_agent_model_name: str = \"gpt-4\",\n        action_agent_temperature: float = 0,\n        action_agent_task_max_retries: int = 4,\n        action_agent_show_chat_log: bool = True,\n        action_agent_show_execution_error: bool = True,\n        curriculum_agent_model_name: str = \"gpt-4\",\n        curriculum_agent_temperature: float = 0,\n        curriculum_agent_qa_model_name: str = \"gpt-3.5-turbo\",\n        curriculum_agent_qa_temperature: float = 0,\n        curriculum_agent_warm_up: Dict[str, int] = None,\n        curriculum_agent_core_inventory_items: str = r\".*_log|.*_planks|stick|crafting_table|furnace\"\n        r\"|cobblestone|dirt|coal|.*_pickaxe|.*_sword|.*_axe\",\n        curriculum_agent_mode: str = \"auto\",\n        critic_agent_model_name: str = \"gpt-4\",\n        critic_agent_temperature: float = 0,\n        critic_agent_mode: str = \"auto\",\n        skill_manager_model_name: str = \"gpt-3.5-turbo\",\n        skill_manager_temperature: float = 0,\n        skill_manager_retrieval_top_k: int = 5,\n        openai_api_request_timeout: int = 240,\n        ckpt_dir: str = \"ckpt\",\n        skill_library_dir: str = None,\n        resume: bool = False,\n    ):\n        \"\"\"\n        The main class for Voyager.\n        Action agent is the iterative prompting mechanism in paper.\n        Curriculum agent is the automatic curriculum in paper.\n        Critic agent is the self-verification in paper.\n        Skill manager is the skill library in paper.\n        :param mc_port: minecraft in-game port\n        :param azure_login: minecraft login config\n        :param server_port: mineflayer port\n        :param openai_api_key: openai api key\n        :param env_wait_ticks: how many ticks at the end each step will wait, if you found some chat log missing,\n        you should increase this value\n        :param env_request_timeout: how many seconds to wait for each step, if the code execution exceeds this time,\n        python side will terminate the connection and need to be resumed\n        :param reset_placed_if_failed: whether to reset placed blocks if failed, useful for building task\n        :param action_agent_model_name: action agent model name\n        :param action_agent_temperature: action agent temperature\n        :param action_agent_task_max_retries: how many times to retry if failed\n        :param curriculum_agent_model_name: curriculum agent model name\n        :param curriculum_agent_temperature: curriculum agent temperature\n        :param curriculum_agent_qa_model_name: curriculum agent qa model name\n        :param curriculum_agent_qa_temperature: curriculum agent qa temperature\n        :param curriculum_agent_warm_up: info will show in curriculum human message\n        if completed task larger than the value in dict, available keys are:\n        {\n            \"context\": int,\n            \"biome\": int,\n            \"time\": int,\n            \"other_blocks\": int,\n            \"nearby_entities\": int,\n            \"health\": int,\n            \"hunger\": int,\n            \"position\": int,\n            \"equipment\": int,\n            \"chests\": int,\n            \"optional_inventory_items\": int,\n        }\n        :param curriculum_agent_core_inventory_items: only show these items in inventory before optional_inventory_items\n        reached in warm up\n        :param curriculum_agent_mode: \"auto\" for automatic curriculum, \"manual\" for human curriculum\n        :param critic_agent_model_name: critic agent model name\n        :param critic_agent_temperature: critic agent temperature\n        :param critic_agent_mode: \"auto\" for automatic critic ,\"manual\" for human critic\n        :param skill_manager_model_name: skill manager model name\n        :param skill_manager_temperature: skill manager temperature\n        :param skill_manager_retrieval_top_k: how many skills to retrieve for each task\n        :param openai_api_request_timeout: how many seconds to wait for openai api\n        :param ckpt_dir: checkpoint dir\n        :param skill_library_dir: skill library dir\n        :param resume: whether to resume from checkpoint\n        \"\"\"\n        # init env\n        self.env = VoyagerEnv(\n            mc_port=mc_port,\n            azure_login=azure_login,\n            server_port=server_port,\n            request_timeout=env_request_timeout,\n        )\n        self.env_wait_ticks = env_wait_ticks\n        self.reset_placed_if_failed = reset_placed_if_failed\n        self.max_iterations = max_iterations\n\n        # set openai api key\n        os.environ[\"OPENAI_API_KEY\"] = openai_api_key\n\n        # init agents\n        self.action_agent = ActionAgent(\n            model_name=action_agent_model_name,\n            temperature=action_agent_temperature,\n            request_timout=openai_api_request_timeout,\n            ckpt_dir=ckpt_dir,\n            resume=resume,\n            chat_log=action_agent_show_chat_log,\n            execution_error=action_agent_show_execution_error,\n        )\n        self.action_agent_task_max_retries = action_agent_task_max_retries\n        self.curriculum_agent = CurriculumAgent(\n            model_name=curriculum_agent_model_name,\n            temperature=curriculum_agent_temperature,\n            qa_model_name=curriculum_agent_qa_model_name,\n            qa_temperature=curriculum_agent_qa_temperature,\n            request_timout=openai_api_request_timeout,\n            ckpt_dir=ckpt_dir,\n            resume=resume,\n            mode=curriculum_agent_mode,\n            warm_up=curriculum_agent_warm_up,\n            core_inventory_items=curriculum_agent_core_inventory_items,\n        )\n        self.critic_agent = CriticAgent(\n            model_name=critic_agent_model_name,\n            temperature=critic_agent_temperature,\n            request_timout=openai_api_request_timeout,\n            mode=critic_agent_mode,\n        )\n        self.skill_manager = SkillManager(\n            model_name=skill_manager_model_name,\n            temperature=skill_manager_temperature,\n            retrieval_top_k=skill_manager_retrieval_top_k,\n            request_timout=openai_api_request_timeout,\n            ckpt_dir=skill_library_dir if skill_library_dir else ckpt_dir,\n            resume=True if resume or skill_library_dir else False,\n        )\n        self.recorder = U.EventRecorder(ckpt_dir=ckpt_dir, resume=resume)\n        self.resume = resume\n\n        # init variables for rollout\n        self.action_agent_rollout_num_iter = -1\n        self.task = None\n        self.context = \"\"\n        self.messages = None\n        self.conversations = []\n        self.last_events = None\n\n    def reset(self, task, context=\"\", reset_env=True):\n        self.action_agent_rollout_num_iter = 0\n        self.task = task\n        self.context = context\n        if reset_env:\n            self.env.reset(\n                options={\n                    \"mode\": \"soft\",\n                    \"wait_ticks\": self.env_wait_ticks,\n                }\n            )\n        difficulty = (\n            \"easy\" if len(self.curriculum_agent.completed_tasks) > 15 else \"peaceful\"\n        )\n        # step to peek an observation\n        events = self.env.step(\n            \"bot.chat(`/time set ${getNextTime()}`);\\n\"\n            + f\"bot.chat('/difficulty {difficulty}');\"\n        )\n        skills = self.skill_manager.retrieve_skills(query=self.context)\n        print(\n            f\"\\033[33mRender Action Agent system message with {len(skills)} skills\\033[0m\"\n        )\n        system_message = self.action_agent.render_system_message(skills=skills)\n        human_message = self.action_agent.render_human_message(\n            events=events, code=\"\", task=self.task, context=context, critique=\"\"\n        )\n        self.messages = [system_message, human_message]\n        print(\n            f\"\\033[32m****Action Agent human message****\\n{human_message.content}\\033[0m\"\n        )\n        assert len(self.messages) == 2\n        self.conversations = []\n        return self.messages\n\n    def close(self):\n        self.env.close()\n\n    def step(self):\n        if self.action_agent_rollout_num_iter < 0:\n            raise ValueError(\"Agent must be reset before stepping\")\n        ai_message = self.action_agent.llm(self.messages)\n        print(f\"\\033[34m****Action Agent ai message****\\n{ai_message.content}\\033[0m\")\n        self.conversations.append(\n            (self.messages[0].content, self.messages[1].content, ai_message.content)\n        )\n        parsed_result = self.action_agent.process_ai_message(message=ai_message)\n        success = False\n        if isinstance(parsed_result, dict):\n            code = parsed_result[\"program_code\"] + \"\\n\" + parsed_result[\"exec_code\"]\n            events = self.env.step(\n                code,\n                programs=self.skill_manager.programs,\n            )\n            self.recorder.record(events, self.task)\n            self.action_agent.update_chest_memory(events[-1][1][\"nearbyChests\"])\n            success, critique = self.critic_agent.check_task_success(\n                events=events,\n                task=self.task,\n                context=self.context,\n                chest_observation=self.action_agent.render_chest_observation(),\n                max_retries=5,\n            )\n\n            if self.reset_placed_if_failed and not success:\n                # revert all the placing event in the last step\n                blocks = []\n                positions = []\n                for event_type, event in events:\n                    if event_type == \"onSave\" and event[\"onSave\"].endswith(\"_placed\"):\n                        block = event[\"onSave\"].split(\"_placed\")[0]\n                        position = event[\"status\"][\"position\"]\n                        blocks.append(block)\n                        positions.append(position)\n                new_events = self.env.step(\n                    f\"await givePlacedItemBack(bot, {U.json_dumps(blocks)}, {U.json_dumps(positions)})\",\n                    programs=self.skill_manager.programs,\n                )\n                events[-1][1][\"inventory\"] = new_events[-1][1][\"inventory\"]\n                events[-1][1][\"voxels\"] = new_events[-1][1][\"voxels\"]\n            new_skills = self.skill_manager.retrieve_skills(\n                query=self.context\n                + \"\\n\\n\"\n                + self.action_agent.summarize_chatlog(events)\n            )\n            system_message = self.action_agent.render_system_message(skills=new_skills)\n            human_message = self.action_agent.render_human_message(\n                events=events,\n                code=parsed_result[\"program_code\"],\n                task=self.task,\n                context=self.context,\n                critique=critique,\n            )\n            self.last_events = copy.deepcopy(events)\n            self.messages = [system_message, human_message]\n        else:\n            assert isinstance(parsed_result, str)\n            self.recorder.record([], self.task)\n            print(f\"\\033[34m{parsed_result} Trying again!\\033[0m\")\n        assert len(self.messages) == 2\n        self.action_agent_rollout_num_iter += 1\n        done = (\n            self.action_agent_rollout_num_iter >= self.action_agent_task_max_retries\n            or success\n        )\n        info = {\n            \"task\": self.task,\n            \"success\": success,\n            \"conversations\": self.conversations,\n        }\n        if success:\n            assert (\n                \"program_code\" in parsed_result and \"program_name\" in parsed_result\n            ), \"program and program_name must be returned when success\"\n            info[\"program_code\"] = parsed_result[\"program_code\"]\n            info[\"program_name\"] = parsed_result[\"program_name\"]\n        else:\n            print(\n                f\"\\033[32m****Action Agent human message****\\n{self.messages[-1].content}\\033[0m\"\n            )\n        return self.messages, 0, done, info\n\n    def rollout(self, *, task, context, reset_env=True):\n        self.reset(task=task, context=context, reset_env=reset_env)\n        while True:\n            messages, reward, done, info = self.step()\n            if done:\n                break\n        return messages, reward, done, info\n\n    def learn(self, reset_env=True):\n        if self.resume:\n            # keep the inventory\n            self.env.reset(\n                options={\n                    \"mode\": \"soft\",\n                    \"wait_ticks\": self.env_wait_ticks,\n                }\n            )\n        else:\n            # clear the inventory\n            self.env.reset(\n                options={\n                    \"mode\": \"hard\",\n                    \"wait_ticks\": self.env_wait_ticks,\n                }\n            )\n            self.resume = True\n        self.last_events = self.env.step(\"\")\n\n        while True:\n            if self.recorder.iteration > self.max_iterations:\n                print(\"Iteration limit reached\")\n                break\n            task, context = self.curriculum_agent.propose_next_task(\n                events=self.last_events,\n                chest_observation=self.action_agent.render_chest_observation(),\n                max_retries=5,\n            )\n            print(\n                f\"\\033[35mStarting task {task} for at most {self.action_agent_task_max_retries} times\\033[0m\"\n            )\n            try:\n                messages, reward, done, info = self.rollout(\n                    task=task,\n                    context=context,\n                    reset_env=reset_env,\n                )\n            except Exception as e:\n                time.sleep(3)  # wait for mineflayer to exit\n                info = {\n                    \"task\": task,\n                    \"success\": False,\n                }\n                # reset bot status here\n                self.last_events = self.env.reset(\n                    options={\n                        \"mode\": \"hard\",\n                        \"wait_ticks\": self.env_wait_ticks,\n                        \"inventory\": self.last_events[-1][1][\"inventory\"],\n                        \"equipment\": self.last_events[-1][1][\"status\"][\"equipment\"],\n                        \"position\": self.last_events[-1][1][\"status\"][\"position\"],\n                    }\n                )\n                # use red color background to print the error\n                print(\"Your last round rollout terminated due to error:\")\n                print(f\"\\033[41m{e}\\033[0m\")\n\n            if info[\"success\"]:\n                self.skill_manager.add_new_skill(info)\n\n            self.curriculum_agent.update_exploration_progress(info)\n            print(\n                f\"\\033[35mCompleted tasks: {', '.join(self.curriculum_agent.completed_tasks)}\\033[0m\"\n            )\n            print(\n                f\"\\033[35mFailed tasks: {', '.join(self.curriculum_agent.failed_tasks)}\\033[0m\"\n            )\n\n        return {\n            \"completed_tasks\": self.curriculum_agent.completed_tasks,\n            \"failed_tasks\": self.curriculum_agent.failed_tasks,\n            \"skills\": self.skill_manager.skills,\n        }\n\n    def decompose_task(self, task):\n        if not self.last_events:\n            self.last_events = self.env.reset(\n                options={\n                    \"mode\": \"hard\",\n                    \"wait_ticks\": self.env_wait_ticks,\n                }\n            )\n        return self.curriculum_agent.decompose_task(task, self.last_events)\n\n    def inference(self, task=None, sub_goals=[], reset_mode=\"hard\", reset_env=True):\n        if not task and not sub_goals:\n            raise ValueError(\"Either task or sub_goals must be provided\")\n        if not sub_goals:\n            sub_goals = self.decompose_task(task)\n        self.env.reset(\n            options={\n                \"mode\": reset_mode,\n                \"wait_ticks\": self.env_wait_ticks,\n            }\n        )\n        self.curriculum_agent.completed_tasks = []\n        self.curriculum_agent.failed_tasks = []\n        self.last_events = self.env.step(\"\")\n        while self.curriculum_agent.progress < len(sub_goals):\n            next_task = sub_goals[self.curriculum_agent.progress]\n            context = self.curriculum_agent.get_task_context(next_task)\n            print(\n                f\"\\033[35mStarting task {next_task} for at most {self.action_agent_task_max_retries} times\\033[0m\"\n            )\n            messages, reward, done, info = self.rollout(\n                task=next_task,\n                context=context,\n                reset_env=reset_env,\n            )\n            self.curriculum_agent.update_exploration_progress(info)\n            print(\n                f\"\\033[35mCompleted tasks: {', '.join(self.curriculum_agent.completed_tasks)}\\033[0m\"\n            )\n            print(\n                f\"\\033[35mFailed tasks: {', '.join(self.curriculum_agent.failed_tasks)}\\033[0m\"\n            )\n"
+    },
+    {
+      "id": "skills",
+      "kind": "code",
+      "locator": "https://github.com/MineDojo/Voyager/blob/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/agents/skill.py",
+      "text": "import os\n\nimport voyager.utils as U\nfrom langchain.chat_models import ChatOpenAI\nfrom langchain.embeddings.openai import OpenAIEmbeddings\nfrom langchain.schema import HumanMessage, SystemMessage\nfrom langchain.vectorstores import Chroma\n\nfrom voyager.prompts import load_prompt\nfrom voyager.control_primitives import load_control_primitives\n\n\nclass SkillManager:\n    def __init__(\n        self,\n        model_name=\"gpt-3.5-turbo\",\n        temperature=0,\n        retrieval_top_k=5,\n        request_timout=120,\n        ckpt_dir=\"ckpt\",\n        resume=False,\n    ):\n        self.llm = ChatOpenAI(\n            model_name=model_name,\n            temperature=temperature,\n            request_timeout=request_timout,\n        )\n        U.f_mkdir(f\"{ckpt_dir}/skill/code\")\n        U.f_mkdir(f\"{ckpt_dir}/skill/description\")\n        U.f_mkdir(f\"{ckpt_dir}/skill/vectordb\")\n        # programs for env execution\n        self.control_primitives = load_control_primitives()\n        if resume:\n            print(f\"\\033[33mLoading Skill Manager from {ckpt_dir}/skill\\033[0m\")\n            self.skills = U.load_json(f\"{ckpt_dir}/skill/skills.json\")\n        else:\n            self.skills = {}\n        self.retrieval_top_k = retrieval_top_k\n        self.ckpt_dir = ckpt_dir\n        self.vectordb = Chroma(\n            collection_name=\"skill_vectordb\",\n            embedding_function=OpenAIEmbeddings(),\n            persist_directory=f\"{ckpt_dir}/skill/vectordb\",\n        )\n        assert self.vectordb._collection.count() == len(self.skills), (\n            f\"Skill Manager's vectordb is not synced with skills.json.\\n\"\n            f\"There are {self.vectordb._collection.count()} skills in vectordb but {len(self.skills)} skills in skills.json.\\n\"\n            f\"Did you set resume=False when initializing the manager?\\n\"\n            f\"You may need to manually delete the vectordb directory for running from scratch.\"\n        )\n\n    @property\n    def programs(self):\n        programs = \"\"\n        for skill_name, entry in self.skills.items():\n            programs += f\"{entry['code']}\\n\\n\"\n        for primitives in self.control_primitives:\n            programs += f\"{primitives}\\n\\n\"\n        return programs\n\n    def add_new_skill(self, info):\n        if info[\"task\"].startswith(\"Deposit useless items into the chest at\"):\n            # No need to reuse the deposit skill\n            return\n        program_name = info[\"program_name\"]\n        program_code = info[\"program_code\"]\n        skill_description = self.generate_skill_description(program_name, program_code)\n        print(\n            f\"\\033[33mSkill Manager generated description for {program_name}:\\n{skill_description}\\033[0m\"\n        )\n        if program_name in self.skills:\n            print(f\"\\033[33mSkill {program_name} already exists. Rewriting!\\033[0m\")\n            self.vectordb._collection.delete(ids=[program_name])\n            i = 2\n            while f\"{program_name}V{i}.js\" in os.listdir(f\"{self.ckpt_dir}/skill/code\"):\n                i += 1\n            dumped_program_name = f\"{program_name}V{i}\"\n        else:\n            dumped_program_name = program_name\n        self.vectordb.add_texts(\n            texts=[skill_description],\n            ids=[program_name],\n            metadatas=[{\"name\": program_name}],\n        )\n        self.skills[program_name] = {\n            \"code\": program_code,\n            \"description\": skill_description,\n        }\n        assert self.vectordb._collection.count() == len(\n            self.skills\n        ), \"vectordb is not synced with skills.json\"\n        U.dump_text(\n            program_code, f\"{self.ckpt_dir}/skill/code/{dumped_program_name}.js\"\n        )\n        U.dump_text(\n            skill_description,\n            f\"{self.ckpt_dir}/skill/description/{dumped_program_name}.txt\",\n        )\n        U.dump_json(self.skills, f\"{self.ckpt_dir}/skill/skills.json\")\n        self.vectordb.persist()\n\n    def generate_skill_description(self, program_name, program_code):\n        messages = [\n            SystemMessage(content=load_prompt(\"skill\")),\n            HumanMessage(\n                content=program_code\n                + \"\\n\\n\"\n                + f\"The main function is `{program_name}`.\"\n            ),\n        ]\n        skill_description = f\"    // { self.llm(messages).content}\"\n        return f\"async function {program_name}(bot) {{\\n{skill_description}\\n}}\"\n\n    def retrieve_skills(self, query):\n        k = min(self.vectordb._collection.count(), self.retrieval_top_k)\n        if k == 0:\n            return []\n        print(f\"\\033[33mSkill Manager retrieving for {k} skills\\033[0m\")\n        docs_and_scores = self.vectordb.similarity_search_with_score(query, k=k)\n        print(\n            f\"\\033[33mSkill Manager retrieved skills: \"\n            f\"{', '.join([doc.metadata['name'] for doc, _ in docs_and_scores])}\\033[0m\"\n        )\n        skills = []\n        for doc, _ in docs_and_scores:\n            skills.append(self.skills[doc.metadata[\"name\"]][\"code\"])\n        return skills\n"
+    },
+    {
+      "id": "critic",
+      "kind": "code",
+      "locator": "https://github.com/MineDojo/Voyager/blob/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/agents/critic.py",
+      "text": "from voyager.prompts import load_prompt\nfrom voyager.utils.json_utils import fix_and_parse_json\nfrom langchain.chat_models import ChatOpenAI\nfrom langchain.schema import HumanMessage, SystemMessage\n\n\nclass CriticAgent:\n    def __init__(\n        self,\n        model_name=\"gpt-3.5-turbo\",\n        temperature=0,\n        request_timout=120,\n        mode=\"auto\",\n    ):\n        self.llm = ChatOpenAI(\n            model_name=model_name,\n            temperature=temperature,\n            request_timeout=request_timout,\n        )\n        assert mode in [\"auto\", \"manual\"]\n        self.mode = mode\n\n    def render_system_message(self):\n        system_message = SystemMessage(content=load_prompt(\"critic\"))\n        return system_message\n\n    def render_human_message(self, *, events, task, context, chest_observation):\n        assert events[-1][0] == \"observe\", \"Last event must be observe\"\n        biome = events[-1][1][\"status\"][\"biome\"]\n        time_of_day = events[-1][1][\"status\"][\"timeOfDay\"]\n        voxels = events[-1][1][\"voxels\"]\n        health = events[-1][1][\"status\"][\"health\"]\n        hunger = events[-1][1][\"status\"][\"food\"]\n        position = events[-1][1][\"status\"][\"position\"]\n        equipment = events[-1][1][\"status\"][\"equipment\"]\n        inventory_used = events[-1][1][\"status\"][\"inventoryUsed\"]\n        inventory = events[-1][1][\"inventory\"]\n\n        for i, (event_type, event) in enumerate(events):\n            if event_type == \"onError\":\n                print(f\"\\033[31mCritic Agent: Error occurs {event['onError']}\\033[0m\")\n                return None\n\n        observation = \"\"\n\n        observation += f\"Biome: {biome}\\n\\n\"\n\n        observation += f\"Time: {time_of_day}\\n\\n\"\n\n        if voxels:\n            observation += f\"Nearby blocks: {', '.join(voxels)}\\n\\n\"\n        else:\n            observation += f\"Nearby blocks: None\\n\\n\"\n\n        observation += f\"Health: {health:.1f}/20\\n\\n\"\n        observation += f\"Hunger: {hunger:.1f}/20\\n\\n\"\n\n        observation += f\"Position: x={position['x']:.1f}, y={position['y']:.1f}, z={position['z']:.1f}\\n\\n\"\n\n        observation += f\"Equipment: {equipment}\\n\\n\"\n\n        if inventory:\n            observation += f\"Inventory ({inventory_used}/36): {inventory}\\n\\n\"\n        else:\n            observation += f\"Inventory ({inventory_used}/36): Empty\\n\\n\"\n\n        observation += chest_observation\n\n        observation += f\"Task: {task}\\n\\n\"\n\n        if context:\n            observation += f\"Context: {context}\\n\\n\"\n        else:\n            observation += f\"Context: None\\n\\n\"\n\n        print(f\"\\033[31m****Critic Agent human message****\\n{observation}\\033[0m\")\n        return HumanMessage(content=observation)\n\n    def human_check_task_success(self):\n        confirmed = False\n        success = False\n        critique = \"\"\n        while not confirmed:\n            success = input(\"Success? (y/n)\")\n            success = success.lower() == \"y\"\n            critique = input(\"Enter your critique:\")\n            print(f\"Success: {success}\\nCritique: {critique}\")\n            confirmed = input(\"Confirm? (y/n)\") in [\"y\", \"\"]\n        return success, critique\n\n    def ai_check_task_success(self, messages, max_retries=5):\n        if max_retries == 0:\n            print(\n                \"\\033[31mFailed to parse Critic Agent response. Consider updating your prompt.\\033[0m\"\n            )\n            return False, \"\"\n\n        if messages[1] is None:\n            return False, \"\"\n\n        critic = self.llm(messages).content\n        print(f\"\\033[31m****Critic Agent ai message****\\n{critic}\\033[0m\")\n        try:\n            response = fix_and_parse_json(critic)\n            assert response[\"success\"] in [True, False]\n            if \"critique\" not in response:\n                response[\"critique\"] = \"\"\n            return response[\"success\"], response[\"critique\"]\n        except Exception as e:\n            print(f\"\\033[31mError parsing critic response: {e} Trying again!\\033[0m\")\n            return self.ai_check_task_success(\n                messages=messages,\n                max_retries=max_retries - 1,\n            )\n\n    def check_task_success(\n        self, *, events, task, context, chest_observation, max_retries=5\n    ):\n        human_message = self.render_human_message(\n            events=events,\n            task=task,\n            context=context,\n            chest_observation=chest_observation,\n        )\n\n        messages = [\n            self.render_system_message(),\n            human_message,\n        ]\n\n        if self.mode == \"manual\":\n            return self.human_check_task_success()\n        elif self.mode == \"auto\":\n            return self.ai_check_task_success(\n                messages=messages, max_retries=max_retries\n            )\n        else:\n            raise ValueError(f\"Invalid critic agent mode: {self.mode}\")\n"
+    }
+  ],
+  "claims": {
+    "summary": "Voyager: automatic curriculum and reusable executable skills",
+    "innovation": null,
+    "baseline": null,
+    "scope": "Automatic learn() mode: curriculum, iterative code execution, self-verification and success-conditioned skill registration."
+  },
+  "assumptions": [
+    "A code-derived method overview, not a new method or a runtime reproduction.",
+    "Solid colors encode operation classes, not trainability: blue=language-model computation, green=retained state, gray-white=tools/runtime, parameter-free checks and I/O.",
+    "Feedback arrows indicate later steps or trials, never model gradient updates.",
+    "Layout is original; source-paper graphics are not embedded.",
+    "The diagram is a method overview, not an exhaustive argument graph. Latest world events also condition curriculum proposal; local State + task history text names this input while only the task-outcome update loop is routed.",
+    "Skill-library to action is retrieved top-k code; library to runtime supplies all saved programs plus fixed control primitives. These are different interfaces.",
+    "Initial retrieval uses task context; refinement retrieval uses context plus filtered chat-log prerequisite summary. Query arrow abstracts orchestrator/helper work, not an extra LLM query generator.",
+    "Only critic-success programs are eligible for skill saving; deposit-useless-items tasks are explicitly excluded by SkillManager.",
+    "Critic receives task, context, events and chest observations; inputs shared across the task are not all duplicated as separate arrows.",
+    "The next action prompt receives runtime feedback and critique; the refinement loop ends on success or retry limit. Neither world nor critic feedback implies gradient training."
+  ],
+  "nodes": [
+    {
+      "id": "curriculum",
+      "label": "Automatic curriculum",
+      "detail": "State + task history",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "task, context = self.curriculum_agent.propose_next_task("
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "label": "Action agent",
+      "detail": "Generate / refine code",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "ai_message = self.action_agent.llm(self.messages)"
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "label": "Minecraft runtime",
+      "detail": "Execute JS programs",
+      "role": "environment",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "events = self.env.step("
+        }
+      ]
+    },
+    {
+      "id": "critic",
+      "label": "Critic",
+      "detail": "Success + critique",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "success, critique = self.critic_agent.check_task_success("
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Skill library",
+      "detail": "Code + descriptions",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "skills",
+          "quote": "self.skills[program_name] = {"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "curriculum",
+      "to": "action",
+      "label": "Task + context",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "task=task,\n                    context=context,"
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "from": "action",
+      "to": "world",
+      "label": "JavaScript",
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "code = parsed_result[\"program_code\"] + \"\\n\" + parsed_result[\"exec_code\"]"
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "from": "world",
+      "to": "critic",
+      "label": "Events + task",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "success, critique = self.critic_agent.check_task_success(\n                events=events,"
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "from": "world",
+      "to": "action",
+      "label": "Runtime feedback",
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "events=events,\n                code=parsed_result[\"program_code\"],"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "from": "critic",
+      "to": "action",
+      "label": "Critique",
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "critique=critique,"
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "from": "critic",
+      "to": "skills",
+      "label": "Reusable success only",
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "if info[\"success\"]:\n                self.skill_manager.add_new_skill(info)"
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "from": "skills",
+      "to": "action",
+      "label": "Code",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "system_message = self.action_agent.render_system_message(skills=skills)"
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "from": "curriculum",
+      "to": "skills",
+      "label": "Context query",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "skills = self.skill_manager.retrieve_skills(query=self.context)"
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "from": "action",
+      "to": "skills",
+      "label": "Query",
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "+ self.action_agent.summarize_chatlog(events)"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "from": "skills",
+      "to": "world",
+      "label": "Saved code + primitives",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "programs=self.skill_manager.programs,"
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "from": "critic",
+      "to": "curriculum",
+      "label": "Record task outcome",
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "self.curriculum_agent.update_exploration_progress(info)"
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "layout": {
+    "canvas": {
+      "width": 2240,
+      "height": 1030
+    },
+    "direction": "LR",
+    "nodes": {
+      "curriculum": {
+        "x": 100,
+        "y": 270,
+        "w": 420,
+        "h": 250,
+        "fontSize": 38
+      },
+      "action": {
+        "x": 920,
+        "y": 270,
+        "w": 430,
+        "h": 250,
+        "fontSize": 43
+      },
+      "world": {
+        "x": 1640,
+        "y": 270,
+        "w": 450,
+        "h": 250,
+        "fontSize": 39
+      },
+      "critic": {
+        "x": 1640,
+        "y": 690,
+        "w": 450,
+        "h": 210,
+        "fontSize": 42
+      },
+      "skills": {
+        "x": 860,
+        "y": 55,
+        "w": 550,
+        "h": 160,
+        "fontSize": 39
+      }
+    },
+    "edges": {
+      "e1": {
+        "fromPort": "right",
+        "toPort": "left",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "label": {
+          "x": 605,
+          "y": 334
+        }
+      },
+      "e2": {
+        "fromPort": "right",
+        "toPort": "left",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "label": {
+          "x": 1390,
+          "y": 334
+        }
+      },
+      "e3": {
+        "fromPort": "bottom",
+        "toPort": "top",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "label": {
+          "x": 1910,
+          "y": 580
+        }
+      },
+      "e4": {
+        "fromPort": "bottom",
+        "toPort": "bottom",
+        "fromFraction": 0.15,
+        "toFraction": 0.8,
+        "via": [
+          [
+            1707.5,
+            575
+          ],
+          [
+            1264,
+            575
+          ]
+        ],
+        "label": {
+          "x": 1320,
+          "y": 525
+        }
+      },
+      "e5": {
+        "fromPort": "left",
+        "toPort": "bottom",
+        "fromFraction": 0.5,
+        "toFraction": 0.4186046511627907,
+        "via": [
+          [
+            1490,
+            795
+          ],
+          [
+            1490,
+            625
+          ],
+          [
+            1100,
+            625
+          ]
+        ],
+        "label": {
+          "x": 1180,
+          "y": 643
+        }
+      },
+      "e6": {
+        "fromPort": "right",
+        "toPort": "top",
+        "fromFraction": 0.5,
+        "toFraction": 0.6363636363636364,
+        "via": [
+          [
+            2160,
+            795
+          ],
+          [
+            2160,
+            20
+          ],
+          [
+            1210,
+            20
+          ]
+        ],
+        "label": {
+          "x": 1720,
+          "y": 53
+        }
+      },
+      "e7": {
+        "fromPort": "bottom",
+        "toPort": "top",
+        "fromFraction": 0.6545454545454545,
+        "toFraction": 0.6976744186046512,
+        "label": {
+          "x": 1255,
+          "y": 220
+        }
+      },
+      "e8": {
+        "fromPort": "top",
+        "toPort": "left",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "via": [
+          [
+            310,
+            135
+          ]
+        ],
+        "label": {
+          "x": 480,
+          "y": 80
+        }
+      },
+      "e9": {
+        "fromPort": "top",
+        "toPort": "bottom",
+        "fromFraction": 0.25,
+        "toFraction": 0.30454545454545456,
+        "label": {
+          "x": 900,
+          "y": 220
+        }
+      },
+      "e10": {
+        "fromPort": "right",
+        "toPort": "top",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "via": [
+          [
+            1510,
+            135
+          ],
+          [
+            1510,
+            210
+          ],
+          [
+            1865,
+            210
+          ]
+        ],
+        "label": {
+          "x": 1550,
+          "y": 151
+        }
+      },
+      "e11": {
+        "fromPort": "bottom",
+        "toPort": "bottom",
+        "fromFraction": 0.5,
+        "toFraction": 0.5,
+        "via": [
+          [
+            1865,
+            965
+          ],
+          [
+            310,
+            965
+          ]
+        ],
+        "label": {
+          "x": 550,
+          "y": 904
+        }
+      }
+    }
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 7,
+    "showTitle": false,
+    "showSubtitle": false,
+    "showLegend": false,
+    "typography": {
+      "fontFamily": "Times New Roman",
+      "moduleSize": 38,
+      "detailSize": 32,
+      "annotationSize": 32,
+      "moduleBold": true
+    },
+    "nodeGlyphs": {},
+    "appearances": {
+      "nodes": {
+        "curriculum": {
+          "fill": "#E8F0F7",
+          "stroke": "#59778E",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 384,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 174,
+            "w": 384,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "action": {
+          "fill": "#E8F0F7",
+          "stroke": "#59778E",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 394,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 174,
+            "w": 394,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "world": {
+          "fill": "#FAFBFC",
+          "stroke": "#839099",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 414,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 174,
+            "w": 414,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "critic": {
+          "fill": "#E8F0F7",
+          "stroke": "#59778E",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 414,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 139,
+            "w": 414,
+            "align": "center",
+            "italic": false
+          }
+        },
+        "skills": {
+          "fill": "#E8F3EF",
+          "stroke": "#507E71",
+          "radius": 19,
+          "strokeWidth": 2,
+          "label": {
+            "x": 18,
+            "y": 24,
+            "w": 514,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 18,
+            "y": 98,
+            "w": 514,
+            "align": "center",
+            "italic": false
+          }
+        }
+      },
+      "edges": {
+        "e1": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e2": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e3": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e4": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e5": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e6": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e7": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e8": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e9": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e10": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        },
+        "e11": {
+          "stroke": "#15354A",
+          "strokeWidth": 2.8,
+          "labelBackground": false
+        }
+      }
+    },
+    "artwork": []
+  }
+}

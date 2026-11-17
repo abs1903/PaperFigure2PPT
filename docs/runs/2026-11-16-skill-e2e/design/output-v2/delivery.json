@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "mode": "design",
+  "mechanicalPassed": false,
+  "validation": {
+    "mechanical": {
+      "status": "fail",
+      "reasons": [
+        "Mechanical QA failed"
+      ]
+    },
+    "render": {
+      "status": "unverified",
+      "reasons": [
+        "Independent Office/PDF verification missing"
+      ]
+    },
+    "review": {
+      "status": "unverified",
+      "reasons": [
+        "No readable independent visual-review record"
+      ]
+    }
+  },
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "reasons": [
+    "Mechanical QA failed",
+    "Independent Office/PDF verification missing",
+    "No readable independent visual-review record"
+  ],
+  "scope": "Source-grounded design and declared reference comparison; not venue certification or user approval"
+}

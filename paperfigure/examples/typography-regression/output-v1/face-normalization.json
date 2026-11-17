@@ -1,0 +1,16 @@
+[
+  {
+    "id": "text-2",
+    "before": {
+      "font": "Verdana-Bold",
+      "bold": true,
+      "italic": false
+    },
+    "after": {
+      "font": "Verdana",
+      "bold": true,
+      "italic": false
+    },
+    "reason": "Known PDF PostScript face separated into family and style; retain sourceFont."
+  }
+]

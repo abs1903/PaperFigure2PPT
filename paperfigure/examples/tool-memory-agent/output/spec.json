@@ -1,0 +1,329 @@
+{
+  "version": "1.0",
+  "title": "Language agent with tools and memory",
+  "subtitle": "Separate tool observations, persistent state, and the final response.",
+  "sources": [
+    {
+      "id": "method",
+      "kind": "user-description",
+      "locator": "method.md",
+      "text": "# Language agent with tools and memory\n\nThis is an original illustrative architecture specification for testing PaperFigure, not a reproduction or a claim of research novelty.\n\nThe task is passed to the language-model controller.\n\nThe controller issues tool calls to external tools. Tool observations return to the controller on a subsequent decision step.\n\nThe controller queries persistent memory. Retrieved context returns to the controller. Memory contents are maintained externally; this overview does not imply gradient updates or automatic memory writes.\n\nThe controller emits a final response to the user.\n"
+    }
+  ],
+  "claims": {
+    "summary": "Separate tool observations, persistent state, and the final response.",
+    "innovation": null,
+    "baseline": null,
+    "scope": "Illustrative system-level overview. Internal transformer layers, optimization details, and performance claims are outside scope."
+  },
+  "assumptions": [
+    "All modules and relations are defined by method.md; no empirical performance or paper-level novelty is claimed."
+  ],
+  "nodes": [
+    {
+      "id": "task",
+      "label": "Task",
+      "detail": "User request",
+      "role": "input",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The task is passed to the language-model controller."
+        }
+      ]
+    },
+    {
+      "id": "controller",
+      "label": "LM controller",
+      "detail": "Next-step decision",
+      "role": "core",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The task is passed to the language-model controller."
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "External tools",
+      "detail": "Search / execution",
+      "role": "tool",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller issues tool calls to external tools. Tool observations return to the controller on a subsequent decision step."
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "label": "Memory store",
+      "detail": "Persistent context",
+      "role": "memory",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller queries persistent memory. Retrieved context returns to the controller. Memory contents are maintained externally; this overview does not imply gradient updates or automatic memory writes."
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "label": "Response",
+      "detail": "Final answer",
+      "role": "output",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller emits a final response to the user."
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "task",
+      "to": "controller",
+      "label": "",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The task is passed to the language-model controller."
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "from": "controller",
+      "to": "tools",
+      "label": "Tool call",
+      "kind": "control",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller issues tool calls to external tools. Tool observations return to the controller on a subsequent decision step."
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "from": "tools",
+      "to": "controller",
+      "label": "Observation",
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller issues tool calls to external tools. Tool observations return to the controller on a subsequent decision step."
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "from": "controller",
+      "to": "memory",
+      "label": "Query",
+      "kind": "control",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller queries persistent memory. Retrieved context returns to the controller. Memory contents are maintained externally; this overview does not imply gradient updates or automatic memory writes."
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "from": "memory",
+      "to": "controller",
+      "label": "Retrieved context",
+      "kind": "feedback",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller queries persistent memory. Retrieved context returns to the controller. Memory contents are maintained externally; this overview does not imply gradient updates or automatic memory writes."
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "from": "controller",
+      "to": "response",
+      "label": "Finish",
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The controller emits a final response to the user."
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "layout": {
+    "canvas": {
+      "width": 1440,
+      "height": 680
+    },
+    "direction": "LR",
+    "nodes": {
+      "task": {
+        "x": 48,
+        "y": 245,
+        "w": 190,
+        "h": 120
+      },
+      "controller": {
+        "x": 390,
+        "y": 245,
+        "w": 250,
+        "h": 120
+      },
+      "tools": {
+        "x": 850,
+        "y": 80,
+        "w": 250,
+        "h": 110
+      },
+      "memory": {
+        "x": 850,
+        "y": 445,
+        "w": 250,
+        "h": 110
+      },
+      "response": {
+        "x": 1200,
+        "y": 245,
+        "w": 200,
+        "h": 120
+      }
+    },
+    "edges": {
+      "e2": {
+        "fromPort": "right",
+        "fromFraction": 0.25,
+        "toPort": "left",
+        "via": [
+          [
+            710,
+            275
+          ],
+          [
+            710,
+            135
+          ]
+        ],
+        "label": {
+          "x": 725,
+          "y": 97
+        }
+      },
+      "e3": {
+        "fromPort": "left",
+        "fromFraction": 0.8,
+        "toPort": "right",
+        "toFraction": 0.38,
+        "via": [
+          [
+            750,
+            168
+          ],
+          [
+            750,
+            290.6
+          ]
+        ],
+        "label": {
+          "x": 770,
+          "y": 190
+        }
+      },
+      "e4": {
+        "fromPort": "right",
+        "fromFraction": 0.9,
+        "toPort": "left",
+        "toFraction": 0.8,
+        "via": [
+          [
+            710,
+            353
+          ],
+          [
+            710,
+            533
+          ]
+        ],
+        "label": {
+          "x": 730,
+          "y": 552
+        }
+      },
+      "e5": {
+        "fromPort": "left",
+        "fromFraction": 0.2,
+        "toPort": "right",
+        "toFraction": 0.75,
+        "via": [
+          [
+            750,
+            467
+          ],
+          [
+            750,
+            335
+          ]
+        ],
+        "label": {
+          "x": 770,
+          "y": 398
+        }
+      },
+      "e6": {
+        "fromPort": "right",
+        "toPort": "left",
+        "label": {
+          "x": 1020,
+          "y": 270
+        }
+      }
+    }
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 7,
+    "showTitle": false,
+    "showSubtitle": false,
+    "typography": {
+      "fontFamily": "Arial",
+      "moduleSize": 24,
+      "detailSize": 20,
+      "annotationSize": 20
+    },
+    "showLegend": false
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "passed": true,
+  "errors": [],
+  "regions": [
+    {
+      "id": "question",
+      "reference": [
+        4,
+        174,
+        152,
+        70
+      ],
+      "expected": [
+        4,
+        174,
+        152,
+        70
+      ],
+      "actual": [
+        4,
+        174,
+        152,
+        70
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "tree",
+      "reference": [
+        186,
+        101,
+        338,
+        554
+      ],
+      "expected": [
+        186,
+        101,
+        338,
+        554
+      ],
+      "actual": [
+        186,
+        101,
+        338,
+        554
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "select",
+      "reference": [
+        570,
+        137,
+        147,
+        85
+      ],
+      "expected": [
+        570,
+        137,
+        147,
+        85
+      ],
+      "actual": [
+        570,
+        137,
+        147,
+        85
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "policy",
+      "reference": [
+        782,
+        135,
+        205,
+        87
+      ],
+      "expected": [
+        782,
+        135,
+        205,
+        87
+      ],
+      "actual": [
+        782,
+        135,
+        205,
+        87
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "tools",
+      "reference": [
+        1055,
+        118,
+        374,
+        140
+      ],
+      "expected": [
+        1055,
+        118,
+        374,
+        140
+      ],
+      "actual": [
+        1055,
+        118,
+        374,
+        140
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "failed",
+      "reference": [
+        889,
+        377,
+        175,
+        69
+      ],
+      "expected": [
+        889,
+        377,
+        175,
+        69
+      ],
+      "actual": [
+        889,
+        377,
+        175,
+        69
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "reflect",
+      "reference": [
+        1102,
+        376,
+        196,
+        71
+      ],
+      "expected": [
+        1102,
+        376,
+        196,
+        71
+      ],
+      "actual": [
+        1102,
+        376,
+        196,
+        71
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "context",
+      "reference": [
+        1335,
+        358,
+        176,
+        109
+      ],
+      "expected": [
+        1335,
+        358,
+        176,
+        109
+      ],
+      "actual": [
+        1335,
+        358,
+        176,
+        109
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "value",
+      "reference": [
+        570,
+        589,
+        152,
+        72
+      ],
+      "expected": [
+        570,
+        589,
+        152,
+        72
+      ],
+      "actual": [
+        570,
+        589,
+        152,
+        72
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "rollout",
+      "reference": [
+        744,
+        532,
+        658,
+        190
+      ],
+      "expected": [
+        744,
+        532,
+        658,
+        190
+      ],
+      "actual": [
+        744,
+        532,
+        658,
+        190
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "backup",
+      "reference": [
+        1560,
+        572,
+        166,
+        106
+      ],
+      "expected": [
+        1560,
+        572,
+        166,
+        106
+      ],
+      "actual": [
+        1560,
+        572,
+        166,
+        106
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "result",
+      "reference": [
+        1263,
+        811,
+        288,
+        79
+      ],
+      "expected": [
+        1263,
+        811,
+        288,
+        79
+      ],
+      "actual": [
+        1263,
+        811,
+        288,
+        79
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    }
+  ],
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/lats-hotpotqa/design-study/initial.png",
+    "sha256": "fc12b3fc8bd7a3f54088ad4e5feabb33e1fabec2f42d37062ab7a249e741648e",
+    "width": 1752,
+    "height": 897
+  },
+  "contractSHA256": "8fafecd47ae64dbeb2130bff254543df2f38b579a4845029d903d2297d5b0fb4",
+  "svgSHA256": "e71782e204568ad842c4bf87ffd100ab4554dea97170573e507eeb530883fc9b",
+  "sceneSHA256": "b16f28f6e61ba923183b07d95e42793a405ea2f3af995886d75c89e102519f43",
+  "scope": "Actual SVG anchor geometry versus frozen PNG regions; colors, text, arrow routes and aesthetics still require region comparisons and isolated fidelity review."
+}

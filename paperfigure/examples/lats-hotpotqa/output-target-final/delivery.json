@@ -1,0 +1,13 @@
+{
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/lats-hotpotqa/design-study/initial.png",
+    "sha256": "fc12b3fc8bd7a3f54088ad4e5feabb33e1fabec2f42d37062ab7a249e741648e",
+    "width": 1752,
+    "height": 897
+  },
+  "reasons": [
+    "Actual PPTX rendering and an isolated review against this exact reference are required; region geometry is not fidelity acceptance."
+  ]
+}

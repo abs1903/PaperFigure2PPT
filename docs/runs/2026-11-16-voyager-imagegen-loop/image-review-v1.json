@@ -1,0 +1,71 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "voyager_image_stage_review",
+    "contextIsolation": "Raw pinned sources and current source audits plus current run inputs were used; earlier visual review verdicts were not read."
+  },
+  "stage": "isolated-raster-review",
+  "verdict": "revise",
+  "publicationWidthIn": 7,
+  "artifacts": {
+    "image": {
+      "path": "candidate-v1.png",
+      "sha256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae",
+      "pixelWidth": 1860,
+      "pixelHeight": 845
+    },
+    "spec": {
+      "path": "spec.json",
+      "sha256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543"
+    },
+    "brief": {
+      "path": "design-brief.json",
+      "sha256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e"
+    },
+    "prompt": {
+      "path": "prompt-v1.txt",
+      "sha256": "ddc416a427395e1583bea1a68f4839ef3eb6784eea563e93fade54687a15e32d"
+    },
+    "sourceAudits": [
+      {"path": "source-audit.md", "sha256": "dc538a8e8496725dd2f60081ebf2a3939eb6b5e4a109b7aa31387263fe3f14cb"},
+      {"path": "source-audit-v2.md", "sha256": "acad436f5d0cdea3b88b6b1e59a777acb6b043abd838bffcfd7ccaf24d388acf"}
+    ],
+    "generationRecord": {
+      "path": "generation-record-v1.json",
+      "sha256": "c2a399cc8ee07783fdb9c55256da9a48b7e12431f2528c0f665bade875cc95ab",
+      "round": 1,
+      "inputImages": []
+    }
+  },
+  "checks": {
+    "semanticFidelity": "pass",
+    "relationDirectionality": "pass",
+    "sourceBoundException": "pass",
+    "composition": "pass",
+    "typographyAtSevenInches": "revise",
+    "solidSemanticPalette": "fail",
+    "noTitleOrFooter": "pass",
+    "nativeFeasibility": "fail",
+    "officeOrEditability": "unverified"
+  },
+  "primaryDefect": {
+    "class": "flat-native visual modality",
+    "decision": "targeted attached-image edit required",
+    "regions": ["left task illustrations", "central execution vignette", "right library illustrations", "blue and green region backgrounds"],
+    "finding": "Shaded bitmap-style game art and visibly graded region washes violate the flat solid/no-gradient brief and would require raster insertion or material redraw for native rebuilding.",
+    "invariants": ["all exact text", "source topology", "arrow directions", "semantic color ownership", "relative hierarchy", "no title/footer"]
+  },
+  "secondaryFindings": [
+    {
+      "class": "typography",
+      "region": "lower-right success-condition annotation",
+      "finding": "The three-line annotation is legible but near the 7-inch body-text minimum and competes with its arrow."
+    },
+    {
+      "class": "routing",
+      "region": "lower state-return band",
+      "finding": "Task outcome, bounded-retries, and state-return labels crowd the lower band, though their semantics remain traceable."
+    }
+  ],
+  "limitations": ["No SVG, PPTX, PDF, Office render, or editability artifact was reviewed at raster stage.", "No attached-image edit has yet been inspected."]
+}

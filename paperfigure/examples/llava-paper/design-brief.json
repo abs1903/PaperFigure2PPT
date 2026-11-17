@@ -1,0 +1,77 @@
+{
+  "status": "native-reconstruction-generated-and-independently-reviewed",
+  "paper": {
+    "title": "Visual Instruction Tuning",
+    "venue": "NeurIPS 2023",
+    "url": "https://proceedings.nips.cc/paper_files/paper/2023/file/6dcf277ea32ce3288914faf369fe6de0-Paper-Conference.pdf",
+    "sections": [
+      "4.1 Architecture",
+      "4.2 Training"
+    ],
+    "artworkReuse": "No paper figure assets copied; new original design studies only"
+  },
+  "forwardNodes": [
+    "Image",
+    "CLIP ViT-L/14",
+    "Linear projection W",
+    "Vicuna",
+    "Text instruction",
+    "Language response"
+  ],
+  "forwardEdges": [
+    [
+      "Image",
+      "CLIP ViT-L/14"
+    ],
+    [
+      "CLIP ViT-L/14",
+      "Linear projection W"
+    ],
+    [
+      "Linear projection W",
+      "Vicuna"
+    ],
+    [
+      "Text instruction",
+      "Vicuna"
+    ],
+    [
+      "Vicuna",
+      "Language response"
+    ]
+  ],
+  "trainingStates": {
+    "alignment": {
+      "train": [
+        "W"
+      ],
+      "freeze": [
+        "vision encoder",
+        "Vicuna"
+      ]
+    },
+    "instructionTuning": {
+      "train": [
+        "W",
+        "Vicuna"
+      ],
+      "freeze": [
+        "vision encoder"
+      ]
+    }
+  },
+  "visualRequirements": [
+    "A coherent scientific diagram with a purposeful focal point, not decorated flowchart cards",
+    "No giant blank model frame or generic repeated Decoder block filler",
+    "No visible title, subtitle, footer, fine print or provenance text",
+    "Communicate the projection and stage-dependent trainable parameters clearly",
+    "Preserve semantic content when later reconstructing native editable objects"
+  ],
+  "nextGate": "Review actual visual studies at the requested quality bar before editable reconstruction",
+  "currentFigureScope": "Architecture only; training schedule remains in METHOD.md and is omitted from the architecture graphic after user feedback.",
+  "userFeedback": {
+    "A": "Visual finish is promising; left/right layout feels strange.",
+    "B": "Standalone Stage 1 / Stage 2 panel at one end is rejected.",
+    "C": "User accepted C layout; final native quality remains subject to the delivered preview and actual export review."
+  }
+}

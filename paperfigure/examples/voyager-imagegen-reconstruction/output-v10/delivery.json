@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "mode": "png-native-reconstruction",
+  "status": "reviewed-with-documented-limits",
+  "reviewSHA256": "e8c85c796c085039da3f435eec6328e8dd83c96d50be3f7c8e939e5ae97702fe",
+  "reviewer": {
+    "identity": "/root/voyager_png_fidelity_review",
+    "isolation": "fork_turns:none"
+  },
+  "verdicts": {
+    "referenceFidelity": {
+      "verdict": "pass",
+      "scope": "SVG preview and independent PPTX render",
+      "summary": "No remaining material discrepancy outside the authorized solid-fill simplification."
+    },
+    "svgNativeEditability": {
+      "verdict": "pass",
+      "scope": "structural SVG representation"
+    },
+    "pptxNativeEditability": {
+      "verdict": "pass",
+      "scope": "structural OOXML representation"
+    }
+  },
+  "artifacts": {
+    "svg": "figure.svg",
+    "pptx": "figure.pptx",
+    "png": "figure.png",
+    "preview": "preview.png",
+    "referenceComparison": "comparison/original-above-reconstruction.png",
+    "svgPptxComparison": "comparison/svg-above-pptx.png",
+    "independentPptxPreview": "pptx-render/figure.png",
+    "objectTree": "object-tree.json",
+    "inventory": "inventory.json",
+    "nativeAudit": "pptx-native-audit.json",
+    "reproducibility": "reproducibility.json"
+  },
+  "artifactSHA256": {
+    "reference": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f",
+    "inventory": "42583ff7ff3b1755d34c9cc4fcdb22131129ceb4d4fc15d762663ec15acf2afb",
+    "svg": "d7ef2fd4b0956dea80db2ea4ae27abec0c57990cf64db9beab4c9c63953ca8ee",
+    "svgPreview": "1a22b8fe3c33c7e9bb52233658ca12252fd9167af0928038c16da937d6014d74",
+    "pptx": "3f4db1ffe169fed1ed227e80bd25c85b4b927e8f09bf9ea0c3e8a35ce17ea5f0",
+    "pptxRender": "39129544e05a9fd5a8e34d3d611989c9405d934348a706a6ebeba944ed8b8bb2",
+    "objectMap": "c7b613e7185f7df33440d647099e5341f93fd03a79ac28270b99d301b7001595",
+    "nativeAudit": "7745da1fa1ba3376ad6e54f036959fb3bcda95b6c1aa5737acf3765ca775f2af",
+    "codeMetrics": "dee807418baa14ae6222d3b482f3ea9e87b89827d3e98fc257788d1eab26c32b"
+  },
+  "limits": [
+    "unknown original font",
+    "fine Minecraft texture simplification",
+    "no interactive Microsoft PowerPoint test"
+  ]
+}

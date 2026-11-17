@@ -1,0 +1,43 @@
+{
+  "version": "2.0",
+  "reviewType": "independent-source-and-narrative-rereview",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_narrative_review",
+    "isolation": {"method": "fork_turns:none", "declaredBy": "delegated task instruction"}
+  },
+  "scope": {"paper": "arXiv:2407.01489v1", "mode": "conceptual overview", "sourceLimit": "supplied PDF pp.3-5 extract"},
+  "verdict": "revise",
+  "checks": {
+    "paperV1Scope": "pass",
+    "twoPhaseAndHierarchicalLocalization": "pass",
+    "deterministicPreprocessingAndRetrieval": "pass",
+    "llmAndIssueRoleBoundaries": "pass",
+    "searchReplaceCandidates": "pass",
+    "filterThenFrequencySelection": "pass",
+    "finalPatchFormEvidence": "fail",
+    "unsupportedAutonomyOrSuccess": "pass",
+    "actualPixels": "unverified",
+    "authorFigureComparison": "unverified",
+    "nativeOfficeDelivery": "unverified"
+  },
+  "findings": [{
+    "id": "R1",
+    "severity": "required",
+    "sourceEvidence": {"file": "paper-method-source.txt", "lines": "156-163"},
+    "finding": "The paper establishes normalized frequency selection but not the assertion that the final patch is an original/associated candidate rather than a normalized representative.",
+    "affectedBriefLines": [10,79,236],
+    "correction": "Use selected patch or selected representative Search/Replace patch; remove the original/associated-candidate claim."
+  }],
+  "resolvedPriorFindings": ["codebase-tree", "files-skeletons", "elements-code", "Search/Replace candidate format", "removed issue-locations edge"],
+  "artifactHashes": {
+    "paper-method-source.txt": "b0a9c15af53234d86bae255aca4dbc0751122ddf4ce845eda1d2eb97255a5622",
+    "source-normalized.txt": "333e59b375703a0bbff6a96a1a03f3a310edd8e218ab911a3e206b5849072ca3",
+    "spec.json": "8934770d23ae48b3bd353bc787119d3e50aa2210d2d8044afc09753480ea2a96",
+    "narrative-plan.json": "854d955dd1de48cd769f2e9015bcb978c29547af3507ad45d71a3a1cccda2558",
+    "design-brief.json": "2265eeaff4337641aec5ff54aac93d55cc3de672e3c0447dc12a19b039c77303",
+    "paper-narrative.md": "24e9753b6810f4afb7353ac3a474eea840ce7df1935fe721aad90ec869608e9b",
+    "image-reference.md": "2fd7370de12a1edb12865edc9f3290716b9d5999be387149bfe4453eb5d2a5fc",
+    "visual-review.md": "9199cb5d65ab9a525ec5d61a0083d56ca381f73b0b20e651370ea6a26a18991e"
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "version": "1.0",
+  "title": "Code-grounded LATS HotPotQA",
+  "subtitle": "",
+  "sources": [
+    {
+      "id": "lats",
+      "kind": "code",
+      "locator": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/lats.py",
+      "text": "import itertools\nimport numpy as np\nfrom functools import partial\nfrom models import gpt\nimport wikienv, wrappers\nimport requests\nimport logging\nimport random\n\nenv = wikienv.WikiEnv()\nenv = wrappers.HotPotQAWrapper(env, split=\"train\")\nenv = wrappers.LoggingWrapper(env)\n\nglobal reflection_map\nglobal failed_trajectories\nreflection_map = []\nfailed_trajectories = []\n\ndef step(env, action):\n    attempts = 0\n    while attempts < 10:\n        try:\n            return env.step(action)\n        except requests.exceptions.Timeout:\n            attempts += 1\n\ndef get_value(task, x, y, n_evaluate_sample, cache_value=True):\n    global reflection_map\n    global failed_trajectories\n    \n    unique_trajectories = get_unique_trajectories(failed_trajectories)\n    value_prompt = task.value_prompt_wrap(x, y, unique_trajectories, reflection_map)\n    logging.info(f\"Current: {x}\")\n    logging.info(f\"Current: {y}\")\n    if cache_value and value_prompt in task.value_cache:\n        return task.value_cache[value_prompt]\n    logging.info(f\"VALUE PROMPT: {value_prompt}\")\n    value_outputs = gpt(value_prompt, n=n_evaluate_sample, stop=None)\n    logging.info(f\"VALUE OUTPUTS: {value_outputs}\")\n    value = task.value_outputs_unwrap(value_outputs)\n    logging.info(f\"VALUES: {value}\")\n    if cache_value:\n        task.value_cache[value_prompt] = value\n    return value\n\ndef get_values(task, x, ys, n_evaluate_sample, cache_value=True):\n    values = []\n    local_value_cache = {}\n    for y in ys:  # each partial output\n        if y in local_value_cache:  # avoid duplicate candidates\n            value = 0\n        else:    \n            value = get_value(task, x, y, n_evaluate_sample, cache_value=cache_value)\n            local_value_cache[y] = value\n        values.append(value)\n    return values\n\ndef get_samples(task, x, y, n_generate_sample, prompt_sample, stop):\n    global failed_trajectories\n    global reflection_map\n    unique_trajectories = get_unique_trajectories(failed_trajectories)\n    if len(unique_trajectories) > len(reflection_map) and len(unique_trajectories) < 4:\n        print(\"generating reflections\")\n        reflection_map = task.generate_self_reflection(unique_trajectories, x)\n    if prompt_sample == 'standard':\n        prompt = task.standard_prompt_wrap(x, y)\n    elif prompt_sample == 'cot':\n        prompt = task.cot_prompt_wrap(x, y, reflection_map)\n    else:\n        raise ValueError(f'prompt_sample {prompt_sample} not recognized')\n    logging.info(f\"PROMPT: {prompt}\")\n    samples = gpt(prompt, n=n_generate_sample, stop=stop)\n    return [y + _ for _ in samples]\n\ndef get_unique_trajectories(failed_trajectories, num=5):\n    unique_trajectories = []\n    seen_final_answers = set()\n    for traj in failed_trajectories:\n        final_answer = traj.get('final_answer')\n        if final_answer not in seen_final_answers:\n            unique_trajectories.append(node_trajectory_to_text(traj['trajectory']))\n            seen_final_answers.add(final_answer)\n        if len(unique_trajectories) >= num:\n            break\n    return unique_trajectories\n\nclass Node:\n    def __init__(self, state, question, parent=None):\n        self.state = {'thought': '', 'action': '', 'observation': ''} if state is None else state\n        self.parent = parent\n        self.question = question\n        self.children = []\n        self.visits = 0\n        self.value = 0\n        self.depth = 0 if parent is None else parent.depth + 1\n        self.is_terminal = False\n        self.reward = 0\n        self.exhausted = False # If all children are terminal\n        self.em = 0  # Exact match, evaluation metric\n\n    def uct(self):\n        if self.visits == 0:\n            return self.value\n        return self.value / self.visits + np.sqrt(2 * np.log(self.parent.visits) / self.visits)\n    \n    def __str__(self):\n        return f\"Node(depth={self.depth}, value={self.value:.2f}, visits={self.visits}, thought={self.state['thought']}, action={self.state['action']}, observation={self.state['observation']})\"\n    \n    def to_dict(self):\n        return {\n            'state': self.state,\n            'question': self.question,\n            'parent': self.parent.to_dict() if self.parent else None,\n            'children': [child.to_dict() for child in self.children],\n            'visits': self.visits,\n            'value': self.value,\n            'depth': self.depth,\n            'is_terminal': self.is_terminal,\n            'reward': self.reward,\n            'em': self.em,\n        }\n    \ndef node_trajectory_to_text(node_string):\n    lines = node_string.split('\\n')\n    formatted_lines = []\n    for line in lines:\n        try:\n            depth = int(line.split(\",\")[0].split(\"=\")[1].strip())\n            thought = line.split(\", thought=\")[1].split(\", action=\")[0].strip()\n            action = line.split(\", action=\")[1].split(\", observation=\")[0].strip()\n            observation = line.split(\", observation=\")[1].split(\")\")[0].strip()\n        except IndexError:\n            continue\n        \n        if depth != 0:\n            if thought:\n                formatted_lines.append(f\"Thought {depth}: {thought}\")\n            if action:\n                formatted_lines.append(f\"Action {depth}: {action}\")\n            if observation:\n                formatted_lines.append(f\"Observation {depth}: {observation}\")\n    \n    return '\\n'.join(formatted_lines)\n\ndef collect_all_nodes(node):\n        \"\"\"Recursively collect all nodes starting from the given node.\"\"\"\n        nodes = [node]\n        for child in node.children:\n            nodes.extend(collect_all_nodes(child))\n        return nodes\n\ndef collect_trajectory(node):\n    trajectory = []\n    while node:\n        trajectory.append(str(node))\n        node = node.parent\n    return '\\n'.join(reversed(trajectory))\n\ndef lats_search(args, task, idx, iterations=30, to_print=True):\n    global gpt\n    global failed_trajectories\n    global reflection_map\n    gpt = partial(gpt, model=args.backend, temperature=args.temperature)\n    x = env.reset(idx=idx)\n    if to_print:\n        print(idx, x)\n    root = Node(state=None, question=x)\n    all_nodes = []\n    failed_trajectories = []\n    terminal_nodes = []\n    reflection_map = []\n    logging.basicConfig(filename=args.log, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', filemode='a')\n\n    for i in range(iterations):\n        logging.info(f\"Iteration {i + 1}...\")\n        node = select_node(root)\n\n        while node is None or (node.is_terminal and node.reward != 1):\n            logging.info(f\"Need to backtrack or terminal node with reward 0 found at iteration {i + 1}, reselecting...\")\n            node = select_node(root)\n        \n        if node is None:\n            logging.info(\"All paths lead to terminal nodes with reward 0. Ending search.\")\n            break\n\n        if node.is_terminal and node.reward == 1:\n            logging.info(f\"Terminal node with reward 1 found at iteration {i + 1}\")\n            return node.state, node.value, all_nodes, node.reward, node.em\n        \n        expand_node(node, args, task)\n\n        while node.is_terminal or not node.children:\n            logging.info(f\"Depth limit node found at iteration {i + 1}, reselecting...\")\n            node = select_node(root)\n            expand_node(node, args, task)\n\n        value = evaluate_node(node, args, task)\n        # Find the child with the highest value\n        reward, terminal_node = rollout(max(node.children, key=lambda child: child.value), args, task, idx, max_depth=4)\n\n        terminal_nodes.append(terminal_node)\n\n        if terminal_node.reward == 1:\n            logging.info(\"SUCCESSFUL TRAJECTORY FOUND DURING SIMULATION\")\n            return terminal_node.state, terminal_node.value, [], terminal_node.reward, terminal_node.em\n\n        backpropagate(terminal_node, reward)\n        all_nodes = [(node, node.value) for node in collect_all_nodes(root)]\n\n        # Check for terminal nodes with a reward of 1\n        terminal_nodes_with_reward_1 = [node for node in collect_all_nodes(root) if node.is_terminal and node.reward == 1]\n        if terminal_nodes_with_reward_1:\n            logging.info(f\"Terminal node with reward 1 found at iteration {i + 1}\")\n            best_node = max(terminal_nodes_with_reward_1, key=lambda x: x.value)\n            return best_node.state, best_node.value, all_nodes, best_node.reward, best_node.em\n    \n        for j, (node, value) in enumerate(all_nodes):\n            logging.info(f\"Node {j+1}: {str(node)}\")\n\n        logging.info(f\"State of all_nodes after iteration {i + 1}: {all_nodes}\")\n\n    all_nodes_list = collect_all_nodes(root)\n    all_nodes_list.extend(terminal_nodes)\n    best_child = max(all_nodes_list, key=lambda x: x.reward)\n    failed_trajectories = []\n    if best_child.reward == 1:\n        logging.info(\"Successful trajectory found\")\n    else:\n        logging.info(\"Unsuccessful trajectory found\")\n    if best_child is None:\n        best_child = root\n    return best_child.state, best_child.value, all_nodes, best_child.reward, best_child.em\n\ndef select_node(node):\n    while node and node.children:\n        logging.info(f\"Selecting from {len(node.children)} children at depth {node.depth}.\")\n        \n        terminal_children = [child for child in node.children if child.is_terminal]\n        terminal_status = [child.is_terminal for child in node.children]\n        \n        if len(terminal_children) == len(node.children):\n            logging.info(f\"All children are terminal at depth {node.depth}. Backtracking...\")\n            if node.parent:  \n                node.parent.children.remove(node)\n            node = node.parent  \n            continue  \n        \n        node_with_reward_1 = next((child for child in terminal_children if child.reward == 1), None)\n        if node_with_reward_1:\n            logging.info(f\"Found terminal node with reward 1 at depth {node.depth}.\")\n            return node_with_reward_1\n        \n        node = max((child for child in node.children if not child.is_terminal), key=lambda child: child.uct(), default=None)\n\n        while node.is_terminal and node.reward != 1:\n            node = max((child for child in node.parent.children if not child.is_terminal), key=lambda child: child.uct(), default=None)\n            \n        logging.info(f\"Selected node at depth {node.depth} with UCT {node.uct()}.\")\n        \n    return node  # This will return None if all paths from the root are exhausted\n\ndef expand_node(node, args, task):\n    if node.depth >= 7:\n        logging.info(\"Depth limit reached\")\n        print(\"Depth limit reached\")\n        node.is_terminal = True\n        return\n    new_nodes = generate_new_states(node, args, task, args.n_generate_sample)\n    node.children.extend(new_nodes)\n\ndef rollout(node, args, task, idx, max_depth=4):\n    logging.info(\"ROLLING OUT\")\n    depth = node.depth\n    n = 5\n    rewards = [0]\n    while not node.is_terminal and depth < max_depth:\n        # Generate new states\n        logging.info(f\"ROLLING OUT {depth}\")\n        new_states = []\n        values = []\n        while len(new_states) == 0:\n            new_states = generate_new_states(node, args, task, n)\n\n        for state in new_states:\n            if state.is_terminal:\n                return state.reward, state\n                \n        child_prompts = [generate_prompt(child) for child in new_states if not child.is_terminal and child is not None]\n        #new_state = new_state[0]\n        while len(values) == 0:\n            values = get_values(task, node.question, child_prompts, args.n_evaluate_sample)\n        max_value_index = values.index(max(values))\n        rewards.append(max(values))\n        node = new_states[max_value_index] \n        depth += 1\n        if depth == max_depth:\n            rewards = [-1]\n    \n    logging.info(\"ROLLOUT FINISHED\")\n    return sum(rewards) / len(rewards), node\n\ndef generate_new_states(node, args, task, n):\n    global failed_trajectories\n    prompt = generate_prompt(node)\n    sampled_actions = get_samples(task, prompt, f\"Thought {node.depth + 1}: \", n, prompt_sample=args.prompt_sample, stop=\"Observation\")\n    logging.info(f\"SAMPLED ACTION: {sampled_actions}\")\n    tried_actions = []\n    \n    unique_states = {}  # Store unique states here\n    for action in sampled_actions:\n        new_state = node.state.copy()  # Make a copy of the parent node's state\n\n        thought_line = next((line.split(\":\")[1].strip() for line in action.split(\"\\n\") if line.startswith(f\"Thought {node.depth + 1}\")), '')\n        action_line = next((line.split(\":\")[1].strip() for line in action.split(\"\\n\") if line.startswith(\"Action\") and \":\" in line), None)\n\n        # Use thought and action to form a unique key\n        unique_key = f\"{thought_line}::{action_line}\"\n        \n        if unique_key in unique_states:\n            continue  # Skip if this state already exists\n\n        tried_actions.append(action_line)\n        \n        if action_line:\n            action_type = action_line.split('[')[0] if '[' in action_line else action_line\n            action_param = action_line.split('[')[1].split(']')[0] if '[' in action_line else \"\"\n\n            obs, r, done, info = step(env, f\"{action_type.lower()}[{action_param}]\")\n\n            # Update the new state dictionary\n            new_state['thought'] = thought_line\n            new_state['action'] = action_line\n            new_state['observation'] = obs\n\n            new_node = Node(state=new_state, question=node.question, parent=node)\n            new_node.is_terminal = r == 1 or done\n            new_node.reward = r\n            new_node.depth = node.depth + 1\n            if r == 1:\n                new_node.em = info.get('em')\n            unique_states[unique_key] = new_node  # Add this state to unique_states\n            logging.info(f\"NEW NODE: {new_node}\")\n            logging.info(f\"Feedback: {info}\")\n\n            if new_node.is_terminal and r == 0:\n                trajectory = collect_trajectory(new_node)\n                #print(trajectory)\n                #if f\"{action_type.lower()}[{action_param}]\" not in failed_trajectories.values():\n                failed_trajectories.append({'trajectory': trajectory, 'final_answer': f\"{action_type.lower()}[{action_param}]\"})\n\n    return list(unique_states.values())  # Return unique nodes as a list\n\n\ndef evaluate_node(node, args, task):\n    child_prompts = [generate_prompt(child) for child in node.children if not child.is_terminal]\n    votes = get_values(task, node.question, child_prompts, args.n_evaluate_sample)\n    \n    logging.info(f\"Length of votes: {len(votes)}\")\n    logging.info(f\"Length of node.children: {len(node.children)}\")\n    \n    # Pre-allocate votes list\n    votes = votes + [0] * (len(node.children) - len(votes))\n    for i, child in enumerate(node.children):\n        child.value = votes[i] \n    # max_vote = max(votes) if votes else 1\n    # if max_vote == 0:\n    #     max_vote = 1  # Avoid division by zero\n    \n    # terminal_conditions = [1 if child.is_terminal else 0 for child in node.children]\n    # for i, condition in enumerate(terminal_conditions):\n    #     if condition == 1:\n    #         votes[i] = max_vote + 1\n    \n    # for i, child in enumerate(node.children):\n    #     child.value = votes[i] / max_vote  # Now safe from division by zero\n    \n    return sum(votes) / len(votes) if votes else 0\n\n\ndef print_tree(node, level=0):\n    indent = \"  \" * level\n    print(f\"{indent}{node}\")\n    for child in node.children:\n        print_tree(child, level + 1)\n\ndef backpropagate(node, value):\n    while node:\n        node.visits += 1\n        if node.is_terminal:\n            if node.reward == 0:\n                node.value = (node.value * (node.visits - 1) + (-1)) / node.visits\n                logging.info(f\"Backpropagating with reward 0 at depth {node.depth}. New value: {node.value}.\")\n            else:\n                node.value = (node.value * (node.visits - 1) + value) / node.visits\n                logging.info(f\"Backpropagating with reward 1 at depth {node.depth}. New value: {node.value}.\")\n        else:\n            node.value = (node.value * (node.visits - 1) + value) / node.visits\n            logging.info(f\"Backpropagating at depth {node.depth}. New value: {node.value}.\")\n\n        node = node.parent\n\ndef generate_prompt(node):\n    trajectory = []\n    question = node.question\n    while node:\n        new_segment = []\n        if node.state['thought']:\n            new_segment.append(f\"Thought {node.depth}: {node.state['thought']}\")\n        if node.state['action']:\n            new_segment.append(f\"Action {node.depth}: {node.state['action']}\")\n        if node.state['observation'] and node.depth != 0:  # Exclude the observation from the root node\n            new_segment.append(f\"Observation {node.depth}: {node.state['observation']}\")\n        trajectory.append('\\n'.join(new_segment))\n        node = node.parent\n    return question + '\\n'.join(reversed(trajectory))"
+    },
+    {
+      "id": "task",
+      "kind": "code",
+      "locator": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/hotpotqa.py",
+      "text": "import os\nimport re\nfrom base import Task\nfrom hotpot import *\nfrom models import gpt\nimport logging\nfrom transformers import GPT2Tokenizer\nimport random\n\ntokenizer = GPT2Tokenizer.from_pretrained(\"gpt2\")\n\ndef get_token_length(text):\n    return len(tokenizer.encode(text))\n\nmax_token_length = 4000\n\n# Configuring the logging\n\nclass HotPotQATask(Task):\n    \"\"\"\n    Input (x)   : a text instruction\n    Output (y)  : a text generation\n    Reward (r)  : # TODO\n    Input Example: \n    Output Example: \n    \"\"\"\n    def __init__(self):\n        \"\"\"\n        file: a text file, each line is some sentences\n        \"\"\"\n        super().__init__()\n        self.steps = 7\n        self.stops = ['\\nObservation:\\n', None]\n        self.value_cache = {}\n\n    def __len__(self) -> int:\n        return len(self.data)\n    \n    def get_input(self, idx: int) -> str:\n        return self.data[idx]\n    \n    def test_output(self, idx: int, output: str):\n        output = output.split('Action:\\n')[-1]\n        prompt = score_prompt + output\n        score_outputs = gpt(prompt, n=5, model='gpt-4')\n        scores = []\n        for score_output in score_outputs:\n            # print(score_output)\n            pattern = r\".*correctness score is (\\d+).*\"\n            match = re.match(pattern, score_output, re.DOTALL)\n            if match:\n                score = int(match.groups()[0])\n                scores.append(score)\n            else:\n                print(f'------------------score no match: {[score_output]}')\n        print(scores)\n        # print('------------')\n        info = {'rs': scores, 'r': sum(scores) / len(scores) if scores else 0}\n        return info\n    \n    @staticmethod\n    def standard_prompt_wrap(x: str, y:str='') -> str:\n        return standard_prompt.format(input=x) + y\n\n    @staticmethod\n    def generate_self_reflection(z, question):\n        reflection_mapping = []\n        trajectories = \"\"\n\n        sampled_items = random.sample(z, min(3, len(z)))\n        failed_trajectories = \"\\n\".join([f\"{question}\\n{traj}\\n\" for traj in z])\n        failed_trajectories = [f\"Question: {traj}\" for traj in failed_trajectories.split(\"Question: \")[1:]]\n        \n        for traj in failed_trajectories:\n            trajectories += traj\n            \n            reflect_prompt = reflection_prompt.format(trajectory=traj)\n            \n            reflection = gpt(reflect_prompt)\n            \n            trajectories += \"Reflection: \" + reflection[0] + \"\\n\"\n            \n            reflection_mapping.append({\n                'question': question,\n                'trajectory': traj,\n                'reflection': reflection[0]\n            })\n\n        return reflection_mapping\n\n    @staticmethod\n    def cot_prompt_wrap(x: str, y: str = '', reflection_mapping_list=[]):\n        question = x\n        input = x + y\n        trajectories = \"\"\n        #z = []\n        if reflection_mapping_list:\n            for reflection_mapping in reflection_mapping_list:\n                traj_with_reflection = reflection_mapping['trajectory'] + \"FAILED TRAJECTORY\\nReflection: \" + reflection_mapping['reflection'] + \"\\n\\n\"\n                trajectories += traj_with_reflection\n            \n            prompt = cot_prompt_feedback.format(trajectories=trajectories, input=input)\n            if get_token_length(prompt) > max_token_length:\n                print(\"Too long\")\n                trajectories = \"\"\n                for reflection_mapping in reflection_mapping_list[:3]:\n                    traj_with_reflection = reflection_mapping['trajectory'] + \"FAILED TRAJECTORY\\nReflection: \" + reflection_mapping['reflection'] + \"\\n\\n\"\n                    trajectories += traj_with_reflection\n                prompt = cot_prompt_feedback_short.format(trajectories=trajectories, input=input)\n            \n            return prompt\n        else:\n            prompt = cot_prompt.format(input=input)\n            if get_token_length(prompt) > max_token_length:\n                prompt = cot_prompt_short.format(input=input)\n            return prompt\n    @staticmethod\n    def vote_prompt_wrap(x: str, ys: list) -> str:\n        prompt = vote_prompt + \"\\n\" + x + \"\\n\\n\"\n        for i, y in enumerate(ys, 1):\n            # y = y.replace('Plan:\\n', '')\n            # TODO: truncate the plan part?\n            prompt += f'Choice {i}:\\n{y}\\n'\n        return prompt\n    \n    @staticmethod\n    def vote_outputs_unwrap(vote_outputs: list, n_candidates: int) -> list:\n        vote_results = [0] * n_candidates\n        for vote_output in vote_outputs:\n            pattern = r\".*best trajectory is .*(\\d+).*\"\n            match = re.match(pattern, vote_output, re.DOTALL)\n            if match:\n                vote = int(match.groups()[0]) - 1\n                if vote in range(n_candidates):\n                    vote_results[vote] += 1\n            else:\n                print(f'vote no match: {[vote_output]}')\n        return vote_results\n\n    @staticmethod\n    def compare_prompt_wrap(x: str, ys: list) -> str:\n        assert len(ys) == 2, 'compare prompt only supports 2 candidates'\n        \n        # Extract the last Action for each trajectory\n        last_actions = []\n        for y in ys:\n            # Split by line and reverse to start from the end\n            lines = y.split('\\n')[::-1]\n            for line in lines:\n                # Check for an Action line and get its content\n                if \"Action\" in line:\n                    last_actions.append(line.split('Action')[-1].strip(': '))\n                    break\n\n        assert len(last_actions) == 2, 'Expected to find 2 Actions'\n\n        # Construct the prompt with the extracted Actions\n        prompt = compare_prompt + f'Action 1:{last_actions[0]}\\n\\nAction 2:{last_actions[1]}\\n'\n        return prompt\n\n    \n    @staticmethod\n    def compare_output_unwrap(compare_output: str):\n        if 'more correct trajectory is 1' in compare_output:\n            return 0\n        elif 'more correct trajectory is 2' in compare_output:\n            return 1\n        elif \"two trajectories are similarly correct\" in compare_output:\n            return 0.5\n        else:\n            print(f'-----------------compare no match: {[compare_output]}')\n            return -1\n    \n    @staticmethod\n    def value_prompt_wrap(x: str, y: str, z: list = [], reflections: list = []) -> str:\n        question = x.split('\\n')[0]\n        #z = []\n        if len(z) != 0:\n            failed_trajectories = \"\"\n            \n            # Combine the trajectories with their corresponding reflections\n            for traj, ref in zip(z, reflections):\n                failed_trajectories += f\"{question}\\n{traj}\\nThis trajectory is incorrect as {ref['reflection']}\\nThus the correctness score is 1\\n\"\n            \n            inp = x + y + \"\\nThis trajectory is \"\n            \n            prompt = value_prompt_reasoning_feedback.format(s=\"\", trajectories=failed_trajectories, input=inp)\n            \n            if get_token_length(prompt) > max_token_length:\n                prompt = value_prompt_reasoning_feedback_short.format(s=\"\", trajectories=failed_trajectories, input=inp)\n        if len(z) != 0 and False:\n            failed_trajectories = \"\\n\".join([f\"{question}\\n{traj}\\nThus the correctness score is 1\\n\" for traj in z])\n            inp = x + y + \"\\nThus the correctness score is \"\n            prompt = value_prompt_feedback.format(s=\"\", trajectories=failed_trajectories, input=inp)\n            if get_token_length(prompt) > max_token_length:\n                print(\"Token length exceeded\", get_token_length(prompt))\n                failed_trajectories = \"\\n\".join([f\"{question}\\n{traj}\\nThus the correctness score is 1\\n\" for traj in z[:2]])\n                inp = y + \"\\nThus the correctness score is \"\n                prompt = value_prompt_feedback.format(s=\"\", trajectories=failed_trajectories, input=inp)\n                print(\"New length\", get_token_length(prompt))\n        else:\n            inp = y + \"\\nThis trajectory is \"\n            #inp = y + \"\\nThus the correctess score is \"\n            #prompt = value_prompt.format(s=\"\", input=inp)\n            prompt = value_prompt_reasoning.format(s=\"\", input=inp)\n            \n        return prompt\n\n    \n    @staticmethod\n    def value_outputs_unwrap(evaluate_prompt: str):\n        evaluate_prompt = evaluate_prompt[0]\n        if '10' in evaluate_prompt:\n            return 1.0\n        elif '9' in evaluate_prompt:\n            return 0.9\n        elif '8' in evaluate_prompt:\n            return 0.8\n        elif '7' in evaluate_prompt:\n            return 0.7\n        elif '6' in evaluate_prompt:\n            return 0.6\n        elif '5' in evaluate_prompt:\n            return 0.5\n        elif '4' in evaluate_prompt:\n            return 0.4\n        elif '3' in evaluate_prompt:\n            return 0.3\n        elif '2' in evaluate_prompt:\n            return 0.2\n        elif '1' in evaluate_prompt:\n            return 0.1\n        else:\n            return -1\n            \n"
+    },
+    {
+      "id": "env",
+      "kind": "code",
+      "locator": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/wikienv.py",
+      "text": "import ast\nimport json\nimport time\nimport gym\nimport requests\nfrom bs4 import BeautifulSoup\n\n# import wikipedia\n\ndef clean_str(p):\n    try:\n        return p.encode().decode(\"unicode-escape\").encode(\"latin1\").decode(\"utf-8\")\n    except UnicodeDecodeError:\n        return p\n\n\nclass textSpace(gym.spaces.Space):\n  def contains(self, x) -> bool:\n    \"\"\"Return boolean specifying if x is a valid member of this space.\"\"\"\n    return isinstance(x, str)\n\n\nclass WikiEnv(gym.Env):\n\n  def __init__(self):\n    \"\"\"\n      Initialize the environment.\n    \"\"\"\n    super().__init__()\n    self.page = None  # current Wikipedia page\n    self.obs = None  # current observation\n    self.lookup_keyword = None  # current lookup keyword\n    self.lookup_list = None  # list of paragraphs containing current lookup keyword\n    self.lookup_cnt = None  # current lookup index\n    self.steps = 0  # current number of steps\n    self.answer = None  # current answer from the agent\n    self.observation_space = self.action_space = textSpace()\n    self.search_time = 0\n    self.num_searches = 0\n    \n  def _get_obs(self):\n    return self.obs\n\n  def _get_info(self):\n    return {\"steps\": self.steps, \"answer\": self.answer}\n\n  def reset(self, seed=None, return_info=False, options=None):\n    # We need the following line to seed self.np_random\n    # super().reset(seed=seed)\n    self.obs = (\"Interact with Wikipedia using search[], lookup[], and \"\n                \"finish[].\\n\")\n    self.page = None\n    self.lookup_keyword = None\n    self.lookup_list = None\n    self.lookup_cnt = None\n    self.steps = 0\n    self.answer = None\n    observation = self._get_obs()\n    info = self._get_info()\n    return (observation, info) if return_info else observation\n\n  def construct_lookup_list(self, keyword):\n    # find all paragraphs\n    if self.page is None:\n      return []\n    paragraphs = self.page.split(\"\\n\")\n    paragraphs = [p.strip() for p in paragraphs if p.strip()]\n\n    # find all sentence\n    sentences = []\n    for p in paragraphs:\n      sentences += p.split('. ')\n    sentences = [s.strip() + '.' for s in sentences if s.strip()]\n\n    parts = sentences\n    parts = [p for p in parts if keyword.lower() in p.lower()]\n    return parts\n\n  @staticmethod\n  def get_page_obs(page):\n    # find all paragraphs\n    paragraphs = page.split(\"\\n\")\n    paragraphs = [p.strip() for p in paragraphs if p.strip()]\n\n    # find all sentence\n    sentences = []\n    for p in paragraphs:\n      sentences += p.split('. ')\n    sentences = [s.strip() + '.' for s in sentences if s.strip()]\n    return ' '.join(sentences[:5])\n\n    # ps = page.split(\"\\n\")\n    # ret = ps[0]\n    # for i in range(1, len(ps)):\n    #   if len((ret + ps[i]).split(\" \")) <= 50:\n    #     ret += ps[i]\n    #   else:\n    #     break\n    # return ret\n\n  def search_step(self, entity):\n    entity_ = entity.replace(\" \", \"+\")\n    search_url = f\"https://en.wikipedia.org/w/index.php?search={entity_}\"\n    old_time = time.time()\n    response_text = requests.get(search_url).text\n    self.search_time += time.time() - old_time\n    self.num_searches += 1\n    soup = BeautifulSoup(response_text, features=\"html.parser\")\n    result_divs = soup.find_all(\"div\", {\"class\": \"mw-search-result-heading\"})\n    if result_divs:  # mismatch\n      self.result_titles = [clean_str(div.get_text().strip()) for div in result_divs]\n      self.obs = f\"Could not find {entity}. Similar: {self.result_titles[:5]}.\"\n    else:\n      page = [p.get_text().strip() for p in soup.find_all(\"p\") + soup.find_all(\"ul\")]\n      if any(\"may refer to:\" in p for p in page):\n        self.search_step(\"[\" + entity + \"]\")\n      else:\n        self.page = \"\"\n        for p in page:\n          if len(p.split(\" \")) > 2:\n            self.page += clean_str(p)\n            if not p.endswith(\"\\n\"):\n              self.page += \"\\n\"\n        self.obs = self.get_page_obs(self.page)\n        self.lookup_keyword = self.lookup_list = self.lookup_cnt = None\n  \n  def step(self, action):\n    reward = 0\n    done = False\n    action = action.strip()\n    # if self.answer is not None:  # already finished\n    #   done = True\n    #   return self.obs, reward, done, self._get_info()\n    \n    if action.startswith(\"search[\") and action.endswith(\"]\"):\n      entity = action[len(\"search[\"):-1]\n      # entity_ = entity.replace(\" \", \"_\")\n      # search_url = f\"https://en.wikipedia.org/wiki/{entity_}\"\n      self.search_step(entity)\n    elif action.startswith(\"lookup[\") and action.endswith(\"]\"):\n      keyword = action[len(\"lookup[\"):-1]\n      if self.lookup_keyword != keyword:  # reset lookup\n        self.lookup_keyword = keyword\n        self.lookup_list = self.construct_lookup_list(keyword)\n        self.lookup_cnt = 0\n      if self.lookup_cnt >= len(self.lookup_list):\n        self.obs = \"No more results.\\n\"\n      else:\n        self.obs = f\"(Result {self.lookup_cnt + 1} / {len(self.lookup_list)}) \" + self.lookup_list[self.lookup_cnt]\n        self.lookup_cnt += 1\n    elif action.startswith(\"finish[\") and action.endswith(\"]\"):\n      answer = action[len(\"finish[\"):-1]\n      self.answer = answer\n      done = True\n      self.obs = f\"Episode finished, reward = {reward}\\n\"\n    elif action.startswith(\"think[\") and action.endswith(\"]\"):\n      self.obs = \"Nice thought.\"\n    else:\n      self.obs = \"Invalid action: {}\".format(action)\n\n    self.steps += 1\n\n    return self.obs, reward, done, self._get_info()\n  \n  def get_time_info(self):\n    speed = self.search_time / self.num_searches if self.num_searches else 0\n    return {\n        \"call_speed\": speed,\n        \"call_time\": self.search_time,\n        \"num_calls\": self.num_searches,\n    }\n"
+    },
+    {
+      "id": "reward",
+      "kind": "code",
+      "locator": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/wrappers.py",
+      "text": "import json\nimport os\nimport gym\nimport numpy as np\nimport re\nimport string\nfrom collections import Counter\n\n    \nDATA_DIR = \"data\"\nHOTPOTQA_SPLIT_FILE = {\n  \"train\": \"hotpot_train_v1.1_simplified.json\",\n  \"dev\": \"hotpot_dev_v1_simplified.json\",\n  \"test\": \"hotpot_test_v1_simplified.json\",\n}\n\nFEVER_SPLIT_FILE = {\n  \"train\": \"train.jsonl\",\n  \"dev\": \"paper_dev.jsonl\",\n}\n\n\nclass HistoryWrapper(gym.ObservationWrapper):\n  def __init__(self, env, obs_format, prompt=None):\n    super().__init__(env)\n    assert obs_format in [\"obs\", \"history\"]\n    if obs_format == \"history\":\n      assert hasattr(self.env, \"traj\")\n    self.obs_format = obs_format\n    self.prompt = prompt if prompt is not None else \"\"\n\n  def observation(self, obs):\n    if self.obs_format == \"obs\":\n      return obs\n    elif self.obs_format == \"history\":\n      observation = self.env.traj[\"observations\"][0] + \"\\n\"\n      for i, (o, a) in enumerate(zip(self.env.traj[\"observations\"][1:], self.env.traj[\"actions\"]), 1):\n        observation += f\"Action {i}: {a}\\nObservation {i}: {o}\\n\\n\"\n      return self.prompt + observation\n    \n\ndef normalize_answer(s):\n  def remove_articles(text):\n    return re.sub(r\"\\b(a|an|the)\\b\", \" \", text)\n  \n  def white_space_fix(text):\n      return \" \".join(text.split())\n\n  def remove_punc(text):\n      exclude = set(string.punctuation)\n      return \"\".join(ch for ch in text if ch not in exclude)\n\n  def lower(text):\n      return text.lower()\n\n  return white_space_fix(remove_articles(remove_punc(lower(s))))\n\ndef f1_score(prediction, ground_truth):\n  normalized_prediction = normalize_answer(prediction)\n  normalized_ground_truth = normalize_answer(ground_truth)\n\n  ZERO_METRIC = (0, 0, 0)\n\n  if normalized_prediction in ['yes', 'no', 'noanswer'] and normalized_prediction != normalized_ground_truth:\n    return ZERO_METRIC\n  if normalized_ground_truth in ['yes', 'no', 'noanswer'] and normalized_prediction != normalized_ground_truth:\n    return ZERO_METRIC\n  \n  prediction_tokens = normalized_prediction.split()\n  ground_truth_tokens = normalized_ground_truth.split()\n  common = Counter(prediction_tokens) & Counter(ground_truth_tokens)\n  num_same = sum(common.values())\n  if num_same == 0:\n    return ZERO_METRIC\n  precision = 1.0 * num_same / len(prediction_tokens)\n  recall = 1.0 * num_same / len(ground_truth_tokens)\n  f1 = (2 * precision * recall) / (precision + recall)\n  return f1, precision, recall\n  \nclass HotPotQAWrapper(gym.Wrapper):\n  def __init__(self, env, split):\n    super().__init__(env)\n    data_file = f\"{DATA_DIR}/{HOTPOTQA_SPLIT_FILE[split]}\"\n    self.data = json.load(open(data_file))\n    self.data = [(d['question'], d['answer']) for d in self.data]\n    self.data_idx = 0\n    self.split = split\n\n  def reset(self, seed=None, return_info=False, options=None, idx=None):\n    self.env.reset(seed=seed, return_info=return_info, options=options)\n    try:\n      self.env.step('')\n    except:\n      pass\n    self.env.reset(seed=seed, return_info=return_info, options=options)\n    self.data_idx = int(np.random.randint(len(self.data))) if idx is None else idx\n    observation = f\"Question: {self.data[self.data_idx][0]}\"\n    info = self._get_info()\n    return (observation, info) if return_info else observation\n\n  def _get_info(self):\n    return {\n      \"steps\": self.steps, \n      \"answer\": self.answer,\n      \"question\": self.data[self.data_idx][0], \n      \"hotpot_split\": self.split\n    }\n\n  def get_reward(self, info):\n    if info['answer'] is not None:\n      pred = normalize_answer(self.data[self.data_idx][1])\n      gt = normalize_answer(info['answer'])\n      score = (pred == gt)\n      return int(score)\n    return 0\n  \n  def get_metrics(self, info):\n    if info['answer'] is not None:\n      pred = normalize_answer(self.data[self.data_idx][1])\n      gt = normalize_answer(info['answer'])\n      em = (pred == gt)\n      f1 = f1_score(pred, gt)[0]\n      return {'reward': em, 'em': em, 'f1': f1}\n    return {'reward': 0, 'em': 0, 'f1': 0}\n\n  def step(self, action):\n    # TODO: first step obs does not have question. \n    obs, _, done, info = self.env.step(action)\n    reward = self.get_reward(info)\n    if done:\n      obs = f\"Episode finished, reward = {reward}\\n\"\n      info.update({\"gt_answer\": self.data[self.data_idx][1], \"question_idx\": self.data_idx})\n      info.update(self.get_metrics(info))\n    return obs, reward, done, info\n  \n  def __len__(self):\n    return len(self.data)\n\nclass FeverWrapper(gym.Wrapper):\n  def __init__(self, env, split):\n    super().__init__(env)\n    \n    data_path = f\"./data/{FEVER_SPLIT_FILE[split]}\"\n    with open(data_path, \"r\") as json_file:\n      json_list = list(json_file)\n\n    data = []\n    for json_str in json_list:\n      json_str = json.loads(json_str)\n      label = json_str[\"label\"]\n      claim = json_str[\"claim\"]\n      data.append((claim, label))\n\n    self.data = data\n    self.data_idx = 0\n    self.split = split\n\n  def reset(self, seed=None, return_info=False, options=None, idx=None):\n    self.env.reset(seed=seed, return_info=return_info, options=options)\n    try:\n      self.env.step('')\n    except:\n      pass\n    self.env.reset(seed=seed, return_info=return_info, options=options)\n    self.data_idx = int(np.random.randint(len(self.data))) if idx is None else idx\n    observation = f\"Claim: {self.data[self.data_idx][0]}\"\n    info = self._get_info()\n    return (observation, info) if return_info else observation\n\n  def _get_info(self):\n    return {\n      \"steps\": self.steps, \n      \"answer\": self.answer,\n      \"question\": self.data[self.data_idx][0], \n      \"fever_split\": self.split\n    }\n\n  def get_reward(self, info):\n    if info['answer'] is not None:\n      label = normalize_answer(self.data[self.data_idx][1])\n      pred = normalize_answer(info['answer'])\n      if label == pred:\n        return 1\n    return 0\n\n  def step(self, action):\n    # TODO: first step obs does not have question. \n    obs, _, done, info = self.env.step(action)\n    reward = self.get_reward(info)\n    if done:\n      obs = f\"Episode finished, reward = {reward}\\n\"\n      info.update({\"gt_answer\": self.data[self.data_idx][1], \"question_idx\": self.data_idx})\n      info.update({'em': reward, 'reward': reward, 'f1': reward})\n    return obs, reward, done, info\n    \n  def __len__(self):\n    return len(self.data)\n  \n  \nclass LoggingWrapper(gym.Wrapper):\n  def __init__(self, env, folder=\"trajs\", file_id=None):\n    super().__init__(env)\n    self.trajs = []\n    self.traj = {\"observations\": [], \"actions\": []}\n    self.folder = folder\n    self.file_id = np.random.randint(0, 10000000) if file_id is None else file_id\n    self.file_path = f\"{self.folder}/{self.file_id}.json\"\n    os.makedirs(\"trajs\", exist_ok=True)\n\n  def __len__(self):\n    return len(self.env.data)\n  \n\n  def reset(self, seed=None, return_info=False, options=None, idx=None):\n    output = self.env.reset(seed=seed, return_info=return_info, options=options, idx=idx)\n    observation = output[0] if return_info else output\n    self.traj = {\"observations\": [observation], \"actions\": []}\n    return output\n\n  def step(self, action):\n    obs, reward, done, info = self.env.step(action)\n    self.traj[\"observations\"].append(obs)\n    self.traj[\"actions\"].append(action)\n    if done:\n      self.traj.update(info)\n    return obs, reward, done, info\n\n  def update_record(self):\n    if len(self.traj) > 0:\n      self.trajs.append(self.traj)\n      self.traj = {\"observations\": [], \"actions\": []}\n  \n  def write(self):\n    self.update_record()\n    with open(self.file_path, \"w\") as f:\n      json.dump(self.trajs, f)\n      print(f\"Saved trajs to trajs/{self.file_id}.json\")\n    \n  def close(self):\n    self.write()\n"
+    },
+    {
+      "id": "entry",
+      "kind": "code",
+      "locator": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/run.py",
+      "text": "import os\nimport json\nimport argparse\n\nfrom hotpotqa import HotPotQATask\nfrom models import gpt_usage\nfrom lats import lats_search\nfrom tot import dfs_search\nfrom rap import mcts_search\nimport logging\n\ndef run(args):\n    task = HotPotQATask()\n    print(task)\n    logs, cnt_avg, cnt_any = [], 0, 0\n\n    # create log directories if they don't exist\n    os.makedirs(os.path.dirname(args.log), exist_ok=True)\n    \n    logging.basicConfig(filename=args.log, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', filemode='a')\n\n    count = 0\n    task_accs = []\n    info = []\n\n    for i in range(args.task_start_index, args.task_end_index):\n        # solve\n        if args.algorithm == 'lats':\n            state, value, all_nodes, reward, em = lats_search(args, task, i, args.iterations, True)\n        elif args.algorithm == 'tot':\n            state, value, all_nodes, reward, em = dfs_search(args, task, i, args.iterations)\n        elif args.algorithm == 'rap':\n            state, value, all_nodes, reward, em = mcts_search(args, task, i, args.iterations)\n        else:\n            raise Exception(\"Search algorithm option not valid\")\n         # log main metric\n        if em is None:\n            em = 0\n        task_accs.append(em)\n        cnt_avg = sum(task_accs) / len(task_accs)\n        print(i, 'len(task_accs)', len(task_accs), 'cnt_avg', cnt_avg, '\\n')\n        #all_nodes_dict = [(node.to_dict(), value) for node, value in all_nodes]\n        \n       \n    n = args.task_end_index - args.task_start_index\n    print('usage_so_far', gpt_usage(args.backend))\n\ndef parse_args():\n    args = argparse.ArgumentParser()\n    args.add_argument('--backend', type=str, choices=['gpt-4', 'gpt-3.5-turbo', 'gpt-3.5-turbo-16k', 'gpt-3.5-turbo-0613'], default='gpt-3.5-turbo-0613')\n    args.add_argument('--temperature', type=float, default=1.0)\n    args.add_argument('--task_start_index', type=int, default=900)\n    args.add_argument('--task_end_index', type=int, default=1000)\n    args.add_argument('--prompt_sample', type=str, choices=['standard', 'cot'])\n    args.add_argument('--n_generate_sample', type=int, default=1)  \n    args.add_argument('--n_evaluate_sample', type=int, default=1)\n    args.add_argument('--iterations', type=int, default=50)\n    args.add_argument('--log', type=str)\n    args.add_argument('--algorithm', type=str, choices=['lats', 'rap', 'tot'])\n\n    args = args.parse_args()\n    return args\n\n\nif __name__ == '__main__':\n    args = parse_args()\n    print(args)\n    run(args)"
+    }
+  ],
+  "claims": {
+    "summary": "Question-scoped trajectory search with LM values and failure-guided generation",
+    "innovation": null,
+    "baseline": null,
+    "scope": "Official HotPotQA --algorithm lats --prompt_sample cot; shared mutable environment; reflection-to-policy only; not a claim of full-paper implementation equivalence."
+  },
+  "nodes": [
+    {
+      "id": "question",
+      "label": "Question",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "x = env.reset(idx=idx)"
+        }
+      ]
+    },
+    {
+      "id": "tree",
+      "label": "Trajectory tree",
+      "detail": "This question",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "root = Node(state=None, question=x)"
+        }
+      ]
+    },
+    {
+      "id": "select",
+      "label": "Select (UCT)",
+      "detail": "",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node = select_node(root)"
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "label": "Expand",
+      "detail": "LM candidates",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "samples = gpt(prompt, n=n_generate_sample, stop=stop)"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Shared tool environment",
+      "detail": "WikiEnv + QA wrapper",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "obs, r, done, info = step(env, f\"{action_type.lower()}[{action_param}]\")"
+        },
+        {
+          "source": "reward",
+          "quote": "reward = self.get_reward(info)"
+        }
+      ]
+    },
+    {
+      "id": "value",
+      "label": "LM value",
+      "detail": "Base value prompt",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "task",
+          "quote": "prompt = value_prompt_reasoning.format(s=\"\", input=inp)"
+        }
+      ]
+    },
+    {
+      "id": "rollout",
+      "label": "Value-guided rollout",
+      "detail": "Absolute depth < 4",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "while not node.is_terminal and depth < max_depth:"
+        }
+      ]
+    },
+    {
+      "id": "backup",
+      "label": "Backup",
+      "detail": "If no success",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "backpropagate(terminal_node, reward)"
+        }
+      ]
+    },
+    {
+      "id": "failed",
+      "label": "Failed traces",
+      "detail": "Wrong terminal",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "failed_trajectories.append({'trajectory': trajectory, 'final_answer': f\"{action_type.lower()}[{action_param}]\"})"
+        }
+      ]
+    },
+    {
+      "id": "reflect",
+      "label": "Self-reflection",
+      "detail": "New distinct failures: 1-3 total",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "if len(unique_trajectories) > len(reflection_map) and len(unique_trajectories) < 4:"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Reflection context",
+      "detail": "This question",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "reflection_map = task.generate_self_reflection(unique_trajectories, x)"
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "label": "Return state",
+      "detail": "Success / budget fallback",
+      "role": "output",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "return best_child.state, best_child.value, all_nodes, best_child.reward, best_child.em"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "initialize",
+      "from": "question",
+      "to": "tree",
+      "kind": "data",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "root = Node(state=None, question=x)"
+        }
+      ]
+    },
+    {
+      "id": "select-path",
+      "from": "tree",
+      "to": "select",
+      "kind": "control",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node = select_node(root)"
+        }
+      ]
+    },
+    {
+      "id": "expand-path",
+      "from": "select",
+      "to": "policy",
+      "kind": "control",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "expand_node(node, args, task)"
+        }
+      ]
+    },
+    {
+      "id": "execute",
+      "from": "policy",
+      "to": "tools",
+      "kind": "control",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "obs, r, done, info = step(env, f\"{action_type.lower()}[{action_param}]\")"
+        }
+      ]
+    },
+    {
+      "id": "store-children",
+      "from": "tools",
+      "to": "tree",
+      "kind": "feedback",
+      "label": "Expansion children",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node.children.extend(new_nodes)"
+        }
+      ]
+    },
+    {
+      "id": "candidate-values",
+      "from": "tree",
+      "to": "value",
+      "kind": "data",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "child_prompts = [generate_prompt(child) for child in node.children if not child.is_terminal]"
+        }
+      ]
+    },
+    {
+      "id": "best-child",
+      "from": "value",
+      "to": "rollout",
+      "kind": "control",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "rollout(max(node.children, key=lambda child: child.value), args, task, idx, max_depth=4)"
+        }
+      ]
+    },
+    {
+      "id": "rollout-step",
+      "from": "rollout",
+      "to": "tools",
+      "kind": "feedback",
+      "label": "Reuse policy + tools",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "new_states = generate_new_states(node, args, task, n)"
+        }
+      ]
+    },
+    {
+      "id": "rollout-feedback",
+      "from": "tools",
+      "to": "rollout",
+      "kind": "feedback",
+      "label": "Observation / terminal reward",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "return state.reward, state"
+        }
+      ]
+    },
+    {
+      "id": "no-success",
+      "from": "rollout",
+      "to": "backup",
+      "kind": "control",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "backpropagate(terminal_node, reward)"
+        }
+      ]
+    },
+    {
+      "id": "update-statistics",
+      "from": "backup",
+      "to": "tree",
+      "kind": "feedback",
+      "label": "Values + visits",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "node.visits += 1"
+        }
+      ]
+    },
+    {
+      "id": "terminal-failure",
+      "from": "tools",
+      "to": "failed",
+      "kind": "feedback",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "if new_node.is_terminal and r == 0:"
+        }
+      ]
+    },
+    {
+      "id": "reflect-failures",
+      "from": "failed",
+      "to": "reflect",
+      "kind": "data",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "if len(unique_trajectories) > len(reflection_map) and len(unique_trajectories) < 4:"
+        }
+      ]
+    },
+    {
+      "id": "store-reflection",
+      "from": "reflect",
+      "to": "context",
+      "kind": "data",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "task",
+          "quote": "'reflection': reflection[0]"
+        }
+      ]
+    },
+    {
+      "id": "policy-feedback",
+      "from": "context",
+      "to": "policy",
+      "kind": "feedback",
+      "label": "",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "task",
+          "quote": "prompt = cot_prompt_feedback.format(trajectories=trajectories, input=input)"
+        }
+      ]
+    },
+    {
+      "id": "return-tree",
+      "from": "tree",
+      "to": "result",
+      "kind": "control",
+      "label": "Terminal / fallback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "best_child = max(all_nodes_list, key=lambda x: x.reward)"
+        }
+      ]
+    },
+    {
+      "id": "return-rollout",
+      "from": "rollout",
+      "to": "result",
+      "kind": "control",
+      "label": "Success or budget fallback from rollout endpoints",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "lats",
+          "quote": "return terminal_node.state, terminal_node.value, [], terminal_node.reward, terminal_node.em"
+        },
+        {
+          "source": "lats",
+          "quote": "all_nodes_list.extend(terminal_nodes)"
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "assumptions": [
+    "Scope and known implementation hazards are retained in METHOD.md and the independent source audit.",
+    "Tree motif is illustrative, not an observed execution or a literal branching-factor/layer count.",
+    "Rollout endpoints keep parent links but are not appended to ordinary children.",
+    "Return state may be unsuccessful on budget fallback; no deployment-time success guarantee.",
+    "No reflection-to-value edge: returned base prompt overwrites attempted feedback prompt."
+  ],
+  "layout": {
+    "canvas": {
+      "width": 1800,
+      "height": 1000
+    },
+    "direction": "LR",
+    "nodes": {},
+    "edges": {}
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 7,
+    "showTitle": false,
+    "showSubtitle": false,
+    "showLegend": false,
+    "typography": {
+      "fontFamily": "Arial",
+      "moduleSize": 32,
+      "detailSize": 27,
+      "annotationSize": 27
+    },
+    "reference": {
+      "mode": "target",
+      "path": "design-study/initial.png",
+      "sha256": "fc12b3fc8bd7a3f54088ad4e5feabb33e1fabec2f42d37062ab7a249e741648e"
+    }
+  }
+}

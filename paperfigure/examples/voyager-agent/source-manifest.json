@@ -1,0 +1,37 @@
+{
+  "repo": "MineDojo/Voyager",
+  "commit": "55e45a880755d0c8c66ca7fb5fe7962ac8974f89",
+  "files": {
+    "voyager/voyager.py": {
+      "sha256": "4051b817ac3b044de12d456e03f162869715e675f5f8b2bd372491662710a59c",
+      "bytes": 17295,
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/voyager.py"
+    },
+    "voyager/agents/action.py": {
+      "sha256": "6fd2966302b077566a2a38768a0a77eec898925352a4a1f34198fcae5d1c568e",
+      "bytes": 10947,
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/agents/action.py"
+    },
+    "voyager/agents/critic.py": {
+      "sha256": "c915cf6be12307f878800c0e257fc7226f37e8ae35e226f570b73824cf08a81c",
+      "bytes": 4795,
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/agents/critic.py"
+    },
+    "voyager/agents/curriculum.py": {
+      "sha256": "faf58ae09c3cdd3322ab05155cab6196a7eedaa940d7fc5bb9096c0a1bdc4503",
+      "bytes": 20381,
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/agents/curriculum.py"
+    },
+    "voyager/agents/skill.py": {
+      "sha256": "1029c13a2857f55b66ca677a52bc8c60bcfe115c7a860c51acc7d8eab40e31bc",
+      "bytes": 4990,
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/voyager/agents/skill.py"
+    },
+    "LICENSE": {
+      "sha256": "2319d24336f653a0438af96fb57ccbabbfc9b8a0dd9ddbbfb9854701376adc01",
+      "bytes": 1070,
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/LICENSE"
+    }
+  },
+  "note": "Selected source snapshot; code not executed. No external model calls, environments or weights."
+}

@@ -1,0 +1,26 @@
+{
+  "operation": "generate",
+  "tool": "built-in image_gen",
+  "modelSnapshot": "not exposed by tool",
+  "compositionId": "horizontal-bottleneck",
+  "promptPath": "prompt-horizontal-bottleneck.txt",
+  "promptSHA256": "4e7deb05c2f1d5f19968c13c894238e4ff5814ee6102b2aa9553342596e3c516",
+  "inputImages": [],
+  "outputImage": {
+    "path": "candidate-b.png",
+    "sha256": "fe548d6e60d42d21b44870ec72a09fb87422b5b3e19fe5d2d29e3f5fb657fb8b",
+    "sizePx": [
+      1774,
+      887
+    ]
+  },
+  "semanticSnapshotDigest": "78d2903cdc6e471d931efe6614098d735e18f651265e85c0ef144c92bf351116",
+  "narrativeParsedObjectDigest": "7ec165808468308cea93040ec0e2166f23e0a2a28a65401cf31540b5a695b1ad",
+  "specFileSHA256": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+  "briefFileSHA256": "6248f339c8ec25c09c37af1ccca7728ba0cd280f2efee40a828639acf2746c81",
+  "narrativeFileSHA256": "eeb7d7e8d2e0c66065fbba1d93d317b815a57109dabfd9f672c039c67bb5dcc1",
+  "semanticFreezeSHA256": "9a83ccd754cc98c472f9e110c3a797bd92d0f382aaab4646329f293fd151effa",
+  "figureHidden": false,
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

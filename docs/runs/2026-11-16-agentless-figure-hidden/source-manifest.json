@@ -1,0 +1,77 @@
+{
+  "repository": "OpenAutoCoder/Agentless",
+  "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/LICENSE",
+      "gitBlob": "c99d4d2ce279ca269d1a4d918dff73c105a8fa17",
+      "hadTrailingNewline": true,
+      "sha256": "01be13f66160d7e6227a3cedc1e993b63e497b5d3623ab7fa5798c1fba769cb1",
+      "bytes": 1070
+    },
+    {
+      "path": "agentless/fl/localize.py",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/agentless/fl/localize.py",
+      "gitBlob": "2916f1c9cf8c17a649d03bd9d3c82ea1e5e94b38",
+      "hadTrailingNewline": true,
+      "sha256": "bef8e67c1e1012cf0090985a68a3d165b4222b7c0fe42ac5e0b2d18c4f63cdb7",
+      "bytes": 23600
+    },
+    {
+      "path": "agentless/fl/FL.py",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/agentless/fl/FL.py",
+      "gitBlob": "186a847e5dac975c0a43b113a55951e9cf976be6",
+      "hadTrailingNewline": true,
+      "sha256": "5e105482389fef03689e3af42b2f6969525d56460c65c5722a84c39196f6f5fa",
+      "bytes": 26646
+    },
+    {
+      "path": "agentless/repair/repair.py",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/agentless/repair/repair.py",
+      "gitBlob": "8dac61ff1582078fedc0e2b6a916c6019b1e72b8",
+      "hadTrailingNewline": true,
+      "sha256": "5bbd34d00a214624a7c01b44f96990dbe2cdb9ba60709b2571936eeb00b6bac7",
+      "bytes": 27893
+    },
+    {
+      "path": "agentless/repair/rerank.py",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/agentless/repair/rerank.py",
+      "gitBlob": "5f1cab553fab0cc369027bd77f404e51bce373a3",
+      "hadTrailingNewline": true,
+      "sha256": "4c43fa968a8ce7d5cf98b4c747c57e1ee504bc58686dbd328aced6d2ad10768e",
+      "bytes": 12839
+    },
+    {
+      "path": "agentless/util/postprocess_data.py",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/agentless/util/postprocess_data.py",
+      "gitBlob": "fd227d878d4f6f0802a0784d635178fd38841868",
+      "hadTrailingNewline": true,
+      "sha256": "9ddd0f53dbdf696d4d4726d0f05f92073db7795cb62b441dbeb5f66146d05462",
+      "bytes": 34120
+    },
+    {
+      "path": "agentless/test/run_regression_tests.py",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/agentless/test/run_regression_tests.py",
+      "gitBlob": "ba329c66bb849718c9b63cdd5081ee47979df4ed",
+      "hadTrailingNewline": true,
+      "sha256": "66d7cabee98a22b4e0ff315317ad8cd5e8d6baab6c71e1283b57d2d47167aa92",
+      "bytes": 8251
+    },
+    {
+      "path": "agentless/test/run_tests.py",
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/agentless/test/run_tests.py",
+      "gitBlob": "11bd7a4f9ee0ac95bd2d702328dfc800d1364e05",
+      "hadTrailingNewline": true,
+      "sha256": "fbe4fbcd8a751799eced21e2f65c4144b1eda8358ab8fa672ff819d9300129aa",
+      "bytes": 20958
+    }
+  ],
+  "figureExposure": {
+    "authorFiguresOpened": false,
+    "authorFigureCaptionsRead": false,
+    "readmeFetched": false,
+    "imageAssetsFetched": false,
+    "policy": "Read only paper method prose after removing figure/table/image/caption elements and figure-referencing paragraphs; official code raw text. No author figure access or later unblinding during this run. Prior model knowledge cannot be excluded."
+  }
+}

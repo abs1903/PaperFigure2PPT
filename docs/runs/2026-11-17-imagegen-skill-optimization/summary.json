@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-17",
+  "implementation": "single-skill update with 1.1 contribution-bound prompt contract",
+  "targetedTests": {
+    "passed": 9,
+    "failed": 0,
+    "log": "design-prompt-tests.log"
+  },
+  "legacyPromptHashesUnchanged": true,
+  "realVersion11CompositionsCompiled": [
+    "source-funnel",
+    "nested-focus"
+  ],
+  "skillFormat": "pass",
+  "relativeSkillLinksAndAnchors": 26,
+  "previousNativeReviewedArtifactsUnchanged": 14,
+  "actualNewImageCalls": 0,
+  "actualNewFirstReadingReviews": 0,
+  "actualNewVisualCandidateComparisons": 0,
+  "imageQualityOrEfficiencyImprovementMeasured": false,
+  "changedFiles": [
+    "paperfigure/SKILL.md",
+    "paperfigure/scripts/design-prompt.mjs",
+    "paperfigure/scripts/paperfigure.mjs",
+    "paperfigure/references/image-reference.md",
+    "paperfigure/references/paper-narrative.md",
+    "paperfigure/references/visual-review.md",
+    "paperfigure/tests/design-prompt.test.mjs",
+    "README.md",
+    "paperfigure/references/case-guide.md"
+  ],
+  "limits": "Structural/software validation only; no new image or reader-study claim."
+}

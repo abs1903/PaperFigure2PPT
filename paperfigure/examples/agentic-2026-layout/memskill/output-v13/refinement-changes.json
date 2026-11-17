@@ -1,0 +1,584 @@
+[
+  {
+    "type": "icon",
+    "id": "icon-0",
+    "family": "token-strip",
+    "module": "selected-trace",
+    "region": [
+      372.8187,
+      187.8647,
+      248.2486,
+      25.7743
+    ],
+    "parts": 17,
+    "sourceTokenSequence": [
+      "circle",
+      "square",
+      "circle",
+      null,
+      "circle",
+      "square",
+      "diamond",
+      "square",
+      "diamond"
+    ]
+  },
+  {
+    "type": "icon",
+    "id": "icon-1",
+    "family": "compass",
+    "module": "selected-trace",
+    "region": [
+      587.8044,
+      129.4334,
+      33.2628,
+      33.2628
+    ],
+    "parts": 7
+  },
+  {
+    "type": "icon",
+    "id": "icon-2",
+    "family": "speech",
+    "module": "selected-trace",
+    "region": [
+      542.2257,
+      128.6466,
+      36.1746,
+      34.8302
+    ],
+    "parts": 1
+  },
+  {
+    "type": "icon",
+    "id": "icon-6",
+    "family": "memory-bank",
+    "module": "memory-bank",
+    "region": [
+      374,
+      489,
+      361,
+      122
+    ],
+    "parts": 19
+  },
+  {
+    "type": "icon",
+    "id": "icon-9",
+    "family": "snowflake",
+    "module": "executor",
+    "region": [
+      1027.0618,
+      580.0525,
+      39.7064,
+      39.7064
+    ],
+    "parts": 19
+  },
+  {
+    "type": "icon",
+    "id": "icon-12",
+    "family": "token-strip",
+    "module": "trace-input",
+    "region": [
+      46.2788,
+      183.685,
+      248.2486,
+      25.7743
+    ],
+    "parts": 17,
+    "sourceTokenSequence": [
+      "circle",
+      "square",
+      "circle",
+      null,
+      "circle",
+      "square",
+      "diamond",
+      "square",
+      "diamond"
+    ]
+  },
+  {
+    "type": "icon",
+    "id": "icon-13",
+    "family": "compass",
+    "module": "trace-input",
+    "region": [
+      261.2645,
+      125.2541,
+      33.2628,
+      33.2628
+    ],
+    "parts": 7
+  },
+  {
+    "type": "icon",
+    "id": "icon-14",
+    "family": "speech",
+    "module": "trace-input",
+    "region": [
+      215.6858,
+      124.4668,
+      36.1747,
+      34.8302
+    ],
+    "parts": 1
+  },
+  {
+    "type": "icon",
+    "id": "icon-15",
+    "family": "token-strip",
+    "module": "trace-2",
+    "region": [
+      45.6727,
+      308.3771,
+      249.4677,
+      25.7675
+    ],
+    "parts": 15,
+    "sourceTokenSequence": [
+      "circle",
+      null,
+      "square",
+      "circle",
+      "square",
+      null,
+      "square",
+      "diamond",
+      null
+    ]
+  },
+  {
+    "type": "icon",
+    "id": "icon-16",
+    "family": "compass",
+    "module": "trace-2",
+    "region": [
+      261.2645,
+      250.6428,
+      33.2628,
+      33.2628
+    ],
+    "parts": 7
+  },
+  {
+    "type": "icon",
+    "id": "icon-17",
+    "family": "speech",
+    "module": "trace-2",
+    "region": [
+      215.6858,
+      249.8555,
+      36.1747,
+      34.8302
+    ],
+    "parts": 1
+  },
+  {
+    "type": "icon",
+    "id": "icon-18",
+    "family": "token-strip",
+    "module": "trace-3",
+    "region": [
+      45.0179,
+      434.9637,
+      250.7773,
+      24.576
+    ],
+    "parts": 15,
+    "sourceTokenSequence": [
+      "circle",
+      "square",
+      null,
+      "diamond",
+      null,
+      "circle",
+      null,
+      "diamond",
+      "diamond"
+    ]
+  },
+  {
+    "type": "icon",
+    "id": "icon-19",
+    "family": "compass",
+    "module": "trace-3",
+    "region": [
+      261.2645,
+      376.0309,
+      33.2628,
+      33.2628
+    ],
+    "parts": 7
+  },
+  {
+    "type": "icon",
+    "id": "icon-20",
+    "family": "speech",
+    "module": "trace-3",
+    "region": [
+      215.6858,
+      375.2441,
+      36.1747,
+      34.8302
+    ],
+    "parts": 1
+  },
+  {
+    "type": "icon",
+    "id": "icon-21",
+    "family": "token-strip",
+    "module": "trace-4",
+    "region": [
+      46.2788,
+      559.851,
+      248.2486,
+      24.4158
+    ],
+    "parts": 16,
+    "sourceTokenSequence": [
+      "circle",
+      null,
+      "circle",
+      "diamond",
+      "square",
+      "circle",
+      "square",
+      null,
+      "diamond"
+    ]
+  },
+  {
+    "type": "icon",
+    "id": "icon-22",
+    "family": "compass",
+    "module": "trace-4",
+    "region": [
+      261.2645,
+      501.4196,
+      33.2628,
+      33.2628
+    ],
+    "parts": 7
+  },
+  {
+    "type": "icon",
+    "id": "icon-23",
+    "family": "speech",
+    "module": "trace-4",
+    "region": [
+      215.6858,
+      500.6328,
+      36.1747,
+      34.8302
+    ],
+    "parts": 1
+  },
+  {
+    "type": "icon",
+    "id": "icon-24",
+    "family": "token-strip",
+    "module": "trace-E",
+    "region": [
+      46.2788,
+      745.1476,
+      248.2486,
+      25.7744
+    ],
+    "parts": 17,
+    "sourceTokenSequence": [
+      "circle",
+      "square",
+      "circle",
+      null,
+      "circle",
+      "square",
+      "diamond",
+      "square",
+      "diamond"
+    ]
+  },
+  {
+    "type": "icon",
+    "id": "icon-25",
+    "family": "compass",
+    "module": "trace-E",
+    "region": [
+      261.2645,
+      686.7166,
+      33.2628,
+      33.2628
+    ],
+    "parts": 7
+  },
+  {
+    "type": "icon",
+    "id": "icon-26",
+    "family": "speech",
+    "module": "trace-E",
+    "region": [
+      215.6858,
+      685.9293,
+      36.1747,
+      34.8302
+    ],
+    "parts": 1
+  },
+  {
+    "type": "icon",
+    "id": "icon-35",
+    "family": "loop",
+    "module": "loop-label",
+    "region": [
+      1008.142,
+      814.8076,
+      37.1986,
+      40.403
+    ],
+    "parts": 4
+  },
+  {
+    "type": "icon",
+    "id": "icon-36",
+    "family": "snowflake",
+    "module": "designer",
+    "region": [
+      1859.719,
+      63.8693,
+      39.7063,
+      39.7064
+    ],
+    "parts": 19
+  },
+  {
+    "type": "icon",
+    "id": "icon-37",
+    "family": "flame",
+    "module": "controller",
+    "region": [
+      953.1382,
+      290.091,
+      34.8302,
+      34.8302
+    ],
+    "parts": 2
+  },
+  {
+    "type": "arrow-anchor",
+    "id": "reset-every-trace",
+    "from": [
+      [
+        510,
+        460
+      ],
+      [
+        510,
+        520
+      ]
+    ],
+    "to": [
+      [
+        510,
+        460
+      ],
+      [
+        510,
+        543
+      ]
+    ],
+    "reason": "Visible top boundary of cylinder-to-bank bridge in the compound source illustration."
+  },
+  {
+    "type": "formula-baseline",
+    "id": "math-3-base",
+    "before": {
+      "size": 40.81398000000001,
+      "positions": [
+        [
+          816.6875,
+          176.72591999999997
+        ]
+      ]
+    },
+    "after": {
+      "size": 40,
+      "positions": [
+        [
+          816.6875,
+          178
+        ]
+      ]
+    }
+  },
+  {
+    "type": "formula-baseline",
+    "id": "math-3-sub",
+    "before": {
+      "size": 23.672108400000003,
+      "positions": [
+        [
+          839.135189,
+          184.62539999999998
+        ]
+      ]
+    },
+    "after": {
+      "size": 23.2,
+      "positions": [
+        [
+          839.135189,
+          186
+        ]
+      ]
+    }
+  },
+  {
+    "type": "formula-baseline",
+    "id": "math-4-base",
+    "before": {
+      "size": 42.679746,
+      "positions": [
+        [
+          868.7516,
+          177.267394
+        ]
+      ]
+    },
+    "after": {
+      "size": 40,
+      "positions": [
+        [
+          868.7516,
+          178
+        ]
+      ]
+    }
+  },
+  {
+    "type": "formula-baseline",
+    "id": "math-4-sub",
+    "before": {
+      "size": 24.75425268,
+      "positions": [
+        [
+          892.2254603,
+          185.52799
+        ]
+      ]
+    },
+    "after": {
+      "size": 23.2,
+      "positions": [
+        [
+          892.2254603,
+          186
+        ]
+      ]
+    }
+  },
+  {
+    "type": "formula-baseline",
+    "id": "math-5-base",
+    "before": {
+      "size": 37.898709000000004,
+      "positions": [
+        [
+          1017.7481,
+          175.879401
+        ]
+      ]
+    },
+    "after": {
+      "size": 40,
+      "positions": [
+        [
+          1017.7481,
+          178
+        ]
+      ]
+    }
+  },
+  {
+    "type": "formula-baseline",
+    "id": "math-5-sub",
+    "before": {
+      "size": 21.98125122,
+      "positions": [
+        [
+          1038.59238995,
+          183.214635
+        ]
+      ]
+    },
+    "after": {
+      "size": 23.2,
+      "positions": [
+        [
+          1038.59238995,
+          186
+        ]
+      ]
+    }
+  },
+  {
+    "type": "formula-cell-center",
+    "ids": [
+      "math-3-base",
+      "math-3-sub"
+    ],
+    "dx": 6.83689546585083,
+    "targetCenterX": 839
+  },
+  {
+    "type": "formula-cell-center",
+    "ids": [
+      "math-4-base",
+      "math-4-sub"
+    ],
+    "dx": 3.8179197311401367,
+    "targetCenterX": 889
+  },
+  {
+    "type": "formula-cell-center",
+    "ids": [
+      "math-5-base",
+      "math-5-sub"
+    ],
+    "dx": 4.700640678405762,
+    "targetCenterX": 1040
+  },
+  {
+    "type": "formula-container-center",
+    "ids": [
+      "math-8-base",
+      "math-8-sub"
+    ],
+    "dx": 7.2402947545051575,
+    "targetCenterX": 434.5
+  },
+  {
+    "type": "arrow-label-center",
+    "ids": [
+      "text-11"
+    ],
+    "dx": 6.183430194854736,
+    "targetCenterX": 552.5
+  },
+  {
+    "type": "arrow-label-center",
+    "ids": [
+      "text-21"
+    ],
+    "dx": -10.737828254699707,
+    "targetCenterX": 805.5
+  },
+  {
+    "type": "arrow-label-center",
+    "ids": [
+      "text-22"
+    ],
+    "dx": -11.018776953220367,
+    "targetCenterX": 805.5
+  }
+]

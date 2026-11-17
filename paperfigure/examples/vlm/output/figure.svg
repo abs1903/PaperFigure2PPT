@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="650" viewBox="0 0 1600 650" lang="en"><title>Vision-language model overview</title><metadata>{&quot;specHash&quot;:&quot;c17d4139184663a1a2b41a9f6bfac5e081bd84fecf1842b36d689d5acc96ba68&quot;,&quot;semanticHash&quot;:&quot;81ef27c1b2399d65af965744cee835198f52edfc3d6809d3184dd20643c1808d&quot;}</metadata><rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#65788B" stroke-width="1.5"/></marker></defs>
+<rect id="group:visual" x="268" y="53" width="554" height="224" rx="10" fill="#FAFBFD" stroke="#CCD6DF" stroke-width="1.5"/>
+<path id="edge:e1" data-from="image" data-to="vision" d="M 220 180 L 290 180" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e2" data-from="vision" data-to="projector" d="M 500 180 L 610 180" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e3" data-from="projector" data-to="lm" d="M 800 180 L 970 180" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e4" data-from="prompt" data-to="lm" d="M 690 440 L 850 440 L 850 360 L 970 360" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e5" data-from="lm" data-to="answer" d="M 1270 170 L 1380 170" fill="none" stroke="#65788B" stroke-width="2.5"  marker-end="url(#arrow0)"/>
+<path id="edge:e6" data-from="lm" data-to="loss" d="M 1270 414 L 1320 414 L 1320 450 L 1380 450" fill="none" stroke="#65788B" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<rect id="node:image" x="40" y="90" width="180" height="180" rx="8" fill="#F0F4F8" stroke="#6B8299" stroke-width="1.8"/>
+<rect id="node:vision" x="290" y="105" width="210" height="150" rx="8" fill="#EAF0FA" stroke="#5579B0" stroke-width="1.8"/>
+<rect id="node:projector" x="610" y="105" width="190" height="150" rx="8" fill="#E9EDF8" stroke="#657BB0" stroke-width="1.8"/>
+<rect id="node:prompt" x="290" y="380" width="400" height="120" rx="8" fill="#F0F4F8" stroke="#6B8299" stroke-width="1.8"/>
+<rect id="node:lm" x="970" y="90" width="300" height="360" rx="8" fill="#E9EDF8" stroke="#657BB0" stroke-width="1.8"/>
+<rect id="node:answer" x="1380" y="115" width="180" height="110" rx="8" fill="#EAF4ED" stroke="#427855" stroke-width="1.8"/>
+<rect id="node:loss" x="1380" y="385" width="180" height="130" rx="8" fill="#FBECE8" stroke="#B57362" stroke-width="1.8"/>
+<rect id="glyph:image:0" fill="#E9F2F7" stroke="#9FB6C7" stroke-width="1.8" x="64" y="106" width="132" height="70.18" rx="2"/>
+<rect id="glyph:image:1" fill="#CEE1D6" stroke="none" stroke-width="1.8" x="64" y="153.0206" width="132" height="23.159400000000005" rx="0"/>
+<ellipse id="glyph:image:2" fill="#D1B877" stroke="none" stroke-width="1.8" cx="161.47979999999998" cy="124.24680000000001" rx="7.719800000000001" ry="7.719800000000001"/>
+<line id="glyph:image:3" fill="none" stroke="#6A9789" stroke-width="1.8" x1="72" y1="153.7224" x2="114.24000000000001" y2="132.6684"/>
+<line id="glyph:image:4" fill="none" stroke="#6A9789" stroke-width="1.8" x1="114.24000000000001" y1="132.6684" x2="153.84" y2="153.7224"/>
+<rect id="glyph:lm:5" fill="#FFFFFF" stroke="#657BB0" stroke-width="1.8" x="994" y="201.82" width="252" height="93.09" rx="2"/>
+<rect id="glyph:lm:6" fill="#FFFFFF" stroke="#657BB0" stroke-width="1.8" x="994" y="330.90999999999997" width="252" height="93.09" rx="2"/>
+<text id="group-label:visual" x="282" y="86.16" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#526477" text-anchor="start">Visual tokenization</text>
+<text id="text:image:label:0" x="130" y="214.1" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">Image</text>
+<text id="text:image:detail:0" x="130" y="250.02" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">RGB input</text>
+<text id="text:vision:label:0" x="395" y="155.67" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">Vision</text>
+<text id="text:vision:label:1" x="395" y="186.35" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">encoder</text>
+<text id="text:vision:detail:0" x="395" y="222.27" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Frozen weights</text>
+<text id="text:projector:label:0" x="705" y="157.44" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">Projector</text>
+<text id="text:projector:detail:0" x="705" y="193.36" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Trainable</text>
+<text id="text:projector:detail:1" x="705" y="220.5" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">mapping</text>
+<text id="text:prompt:label:0" x="490" y="431.01" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">Text prompt</text>
+<text id="text:prompt:detail:0" x="490" y="466.93" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Instruction tokens</text>
+<text id="text:lm:label:0" x="1120" y="135.92" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">Language model</text>
+<text id="text:lm:detail:0" x="1120" y="171.84" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Decoder-only</text>
+<text id="text:answer:label:0" x="1470" y="161.01" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">Answer</text>
+<text id="text:answer:detail:0" x="1470" y="196.93" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Text output</text>
+<text id="text:loss:label:0" x="1470" y="425.67" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">Supervised</text>
+<text id="text:loss:label:1" x="1470" y="456.35" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172B42" text-anchor="middle">loss</text>
+<text id="text:loss:detail:0" x="1470" y="492.27" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Training only</text>
+<rect x="810" y="140" width="152.321" height="29.900000000000002" fill="#FFFFFF"/>
+<text id="edge-label:e3" x="886.161" y="161.16" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Visual tokens</text>
+<rect x="730" y="325" width="130.977" height="29.900000000000002" fill="#FFFFFF"/>
+<text id="edge-label:e4" x="795.489" y="346.16" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Text tokens</text>
+<text id="glyph-text:lm:0" x="1120" y="255.955" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Decoder block</text>
+<text id="glyph-text:lm:1" x="1120" y="385.045" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#526477" text-anchor="middle">Decoder block</text>
+<text id="glyph-text:lm:ellipsis" x="1120" y="319.07" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#526477" text-anchor="middle">...</text>
+</svg>

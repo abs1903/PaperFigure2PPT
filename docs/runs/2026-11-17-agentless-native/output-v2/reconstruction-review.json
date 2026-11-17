@@ -1,0 +1,42 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_native_review",
+    "isolation": "Initial reference inventory was performed before native output existed; this reviewer did not author or modify the SVG, PPTX, scene, contract, or QA records."
+  },
+  "verdict": "accept",
+  "referenceFidelity": "pass",
+  "svgNativeEditability": "pass",
+  "pptxNativeEditability": "pass",
+  "reference": {
+    "path": "../../2026-11-17-agentless-contribution/selected-reference.png",
+    "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb"
+  },
+  "artifacts": {
+    "ledger": {"path": "reference-transcript.json", "sha256": "c35ec73a8ff30fa0d43fa200ab2abbdbf6cb925a5d098eda1617e41225704808"},
+    "referenceGeometry": {"path": "reference-geometry.json", "sha256": "033cc449e0e777c3845f911dd337de063c09bd48160c034fcd1c2602eac360c1"},
+    "svg": {"path": "editable.svg", "sha256": "02b4d4dbfb3a051efae9c3a91b576a40770bd6cd92130e8a5fed25fd0dcef8ef"},
+    "svgPreview": {"path": "preview.png", "sha256": "6080622fea56a23e5addff98a247dcd0bf9a16b7e869e2e815af1345c8010b9a"},
+    "pptx": {"path": "figure.pptx", "sha256": "3e7357fdbffc0707439273f3582a4108a982d7518d6c02c66d0bbe4a8a7feea3"},
+    "pptxRender": {"path": "native-render/preview.png", "sha256": "fe36e2edff4ff7ffffc0de1ef2869d9f7b9d0f7a0034a925ee170862b7fcfc6f"},
+    "pptxPdf": {"path": "native-render/figure.pdf", "sha256": "5eb060d4c92f21ddcc1a520ea22366a65a61c1cf98a6b4b3b42da05c833cb352"},
+    "pptxObjectMap": {"path": "pptx-object-map.json", "sha256": "dc7ad2aa858389e6b07ce3132f151e592606ed7464e6879bdfb4a9fe693d2bf9"},
+    "pptxNativeAudit": {"path": "native-audit.json", "sha256": "602d011e72126697a685faa11fc7d8255aa75d5d4be8736d9659c256c0bb4c9e"},
+    "referenceLayoutQa": {"path": "reference-layout-qa.json", "sha256": "4ef8f8af2b8e9108cfa1ca3ca756151582d0936c6ab6fe04249031395a5c907d"}
+  },
+  "authorizedDeviations": [
+    "Solid native fills approximate the target's slight raster microtexture and tint variation.",
+    "Typography is explicitly image-derived and approximate; no claim is made that Arial/Arial Narrow identifies the source font."
+  ],
+  "regionChecklist": [
+    {"region": "top control brace and two title frames", "finding": "pass; placement, hierarchy, outline treatment, and no-autonomous-planning constraint retained."},
+    {"region": "hierarchical-localization funnel", "finding": "pass; tapered silhouette, four horizontal bands, staged narrowing, LLM badges, repository/tree, selected-file/element/code, and context window retained."},
+    {"region": "local edit magnification", "finding": "pass; highlighted context line branches to distinct SEARCH and REPLACE cards with the target's red-minus/green-plus meaning."},
+    {"region": "candidate patches and validation", "finding": "pass; three overlapping teal patch cards, downward handoff, syntax/regression then normalize/frequency, and selected patch retained."},
+    {"region": "connectors and labels", "finding": "pass; composed SVG and LibreOffice views show all directed workflow routes, arrowheads, visible white LLM text, and readable paper-width labels without clipping."}
+  ],
+  "unresolvedExceptions": [
+    "No interactive Microsoft PowerPoint edit test or Microsoft PowerPoint render was supplied. LibreOffice supports the asserted current appearance, but manual PowerPoint reflow/rerouting remains unverified.",
+    "The 23 native connector segments include multi-segment orthogonal routes. The audit supports native representation and endpoints, not zero-cost rerouting after a user moves grouped modules."
+  ]
+}

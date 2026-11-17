@@ -1,0 +1,26 @@
+{
+  "round": 1,
+  "operation": "generate",
+  "tool": "built-in image_gen",
+  "promptPath": "prompt-generate-v1.txt",
+  "promptSHA256": "984304dd2b15e52c44c0dc9280978f3c66ae069c2613298b958bddef42688d62",
+  "inputImages": [],
+  "outputImage": {
+    "path": "candidate-v1.png",
+    "sha256": "082cfbaf36b7736f0de414295ab95b6388ea00ddce4128d3946a44e87e9aeed8",
+    "sizePx": [
+      1817,
+      866
+    ]
+  },
+  "specPath": "spec.json",
+  "specSHA256": "91fc27a5e30c34d6a31172a17f2298e427686af4c57e065f0b298a9bf3af146f",
+  "briefPath": "design-brief-reviewed.json",
+  "briefSHA256": "4a62139615c6fdc7e7909d0cd03203c9da6357d8eb4fa160c4584fa4fe815688",
+  "sourceManifestSHA256": "09de0c43d7d21ff1da7854fc3fdcbb1a5b38b237c8bdae30a82ee501f2afee14",
+  "semanticFreezeSHA256": "6770722469aec8e41607ba70037280d7128748a07f0d48bbfbb1ac424b7412a9",
+  "sourceFigureAccess": false,
+  "authorFigureCompared": false,
+  "decision": "unreviewed",
+  "deliveryReady": false
+}

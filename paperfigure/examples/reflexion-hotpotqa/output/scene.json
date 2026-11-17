@@ -1,0 +1,998 @@
+{
+  "width": 2240,
+  "height": 960,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "question",
+      "label": "Question",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.question = question"
+        }
+      ],
+      "x": 65,
+      "y": 295,
+      "w": 260,
+      "h": 120,
+      "fontSize": 38,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:question:label:0",
+          "text": "Question",
+          "x": 83,
+          "y": 325,
+          "w": 224,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "actor",
+      "label": "ReAct actor",
+      "detail": "Thought + action loop",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "class ReactReflectAgent(ReactAgent):"
+        }
+      ],
+      "x": 440,
+      "y": 240,
+      "w": 380,
+      "h": 230,
+      "fontSize": 40,
+      "fill": "#E8F0F7",
+      "stroke": "#59778E",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:actor:label:0",
+          "text": "ReAct actor",
+          "x": 458,
+          "y": 264,
+          "w": 344,
+          "h": 47.199999999999996,
+          "fontSize": 40,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:actor:detail:0",
+          "text": "Thought + action loop",
+          "x": 458,
+          "y": 389,
+          "w": 344,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Wikipedia tools",
+      "detail": "Search / Lookup",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.docstore = DocstoreExplorer(docstore)"
+        }
+      ],
+      "x": 990,
+      "y": 240,
+      "w": 350,
+      "h": 230,
+      "fontSize": 38,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:tools:label:0",
+          "text": "Wikipedia tools",
+          "x": 1008,
+          "y": 264,
+          "w": 314,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:tools:detail:0",
+          "text": "Search / Lookup",
+          "x": 1008,
+          "y": 389,
+          "w": 314,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "label": "Exact-match check",
+      "detail": "Correct: stop",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "return EM(self.answer, self.key)"
+        }
+      ],
+      "x": 1530,
+      "y": 240,
+      "w": 450,
+      "h": 230,
+      "fontSize": 37,
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:check:label:0",
+          "text": "Exact-match check",
+          "x": 1548,
+          "y": 264,
+          "w": 414,
+          "h": 43.66,
+          "fontSize": 37,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:check:detail:0",
+          "text": "Correct: stop",
+          "x": 1548,
+          "y": 389,
+          "w": 414,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "reflect",
+      "label": "Self-reflection LM",
+      "detail": "Truncated prior trace",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "return format_step(self.reflect_llm(self._build_reflection_prompt()))"
+        }
+      ],
+      "x": 1530,
+      "y": 650,
+      "w": 450,
+      "h": 200,
+      "fontSize": 38,
+      "fill": "#E8F0F7",
+      "stroke": "#59778E",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:reflect:label:0",
+          "text": "Self-reflection LM",
+          "x": 1548,
+          "y": 674,
+          "w": 414,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:reflect:detail:0",
+          "text": "Truncated prior trace",
+          "x": 1548,
+          "y": 778,
+          "w": 414,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "label": "Reflection memory",
+      "detail": "Same-question retries",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.reflections += [self.prompt_reflection()]"
+        }
+      ],
+      "x": 900,
+      "y": 650,
+      "w": 450,
+      "h": 200,
+      "fontSize": 38,
+      "fill": "#E8F3EF",
+      "stroke": "#507E71",
+      "radius": 19,
+      "strokeWidth": 2,
+      "texts": [
+        {
+          "id": "text:memory:label:0",
+          "text": "Reflection memory",
+          "x": 918,
+          "y": 674,
+          "w": 414,
+          "h": 44.839999999999996,
+          "fontSize": 38,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:memory:detail:0",
+          "text": "Same-question retries",
+          "x": 918,
+          "y": 778,
+          "w": 414,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": false
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "question",
+      "to": "actor",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "question = self.question,"
+        }
+      ],
+      "points": [
+        [
+          325,
+          355
+        ],
+        [
+          440,
+          355
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "actor",
+      "to": "tools",
+      "label": {
+        "id": "edge-label:e2",
+        "text": "Action",
+        "x": 850,
+        "y": 297,
+        "w": 104.928,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.docstore.search(argument)"
+        }
+      ],
+      "points": [
+        [
+          820,
+          355
+        ],
+        [
+          990,
+          355
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e3",
+      "from": "tools",
+      "to": "actor",
+      "label": {
+        "id": "edge-label:e3",
+        "text": "Observation",
+        "x": 830,
+        "y": 108,
+        "w": 188.672,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.scratchpad += format_step(self.docstore.search(argument))"
+        }
+      ],
+      "points": [
+        [
+          1165,
+          240
+        ],
+        [
+          1165,
+          170
+        ],
+        [
+          630,
+          170
+        ],
+        [
+          630,
+          240
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e4",
+      "from": "actor",
+      "to": "check",
+      "label": {
+        "id": "edge-label:e4",
+        "text": "Finish / halt",
+        "x": 1090,
+        "y": 484,
+        "w": 179.616,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "if (self.is_finished() or self.is_halted()) and not self.is_correct():"
+        }
+      ],
+      "points": [
+        [
+          744,
+          470
+        ],
+        [
+          744,
+          540
+        ],
+        [
+          1642.5,
+          540
+        ],
+        [
+          1642.5,
+          470
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "bottom",
+      "fromFraction": 0.8,
+      "toFraction": 0.25,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e5",
+      "from": "check",
+      "to": "reflect",
+      "label": {
+        "id": "edge-label:e5",
+        "text": "Incorrect",
+        "x": 1680,
+        "y": 553,
+        "w": 140.48000000000002,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "if (self.is_finished() or self.is_halted()) and not self.is_correct():"
+        }
+      ],
+      "points": [
+        [
+          1867.5,
+          470
+        ],
+        [
+          1867.5,
+          650
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.75,
+      "toFraction": 0.75,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    },
+    {
+      "id": "e6",
+      "from": "actor",
+      "to": "reflect",
+      "label": {
+        "id": "edge-label:e6",
+        "text": "Prior trace",
+        "x": 1030,
+        "y": 604,
+        "w": 163.744,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "scratchpad = truncate_scratchpad(self.scratchpad, tokenizer=self.enc))"
+        }
+      ],
+      "points": [
+        [
+          535,
+          470
+        ],
+        [
+          535,
+          600
+        ],
+        [
+          1642.5,
+          600
+        ],
+        [
+          1642.5,
+          650
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.25,
+      "toFraction": 0.25,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e7",
+      "from": "reflect",
+      "to": "memory",
+      "label": {
+        "id": "edge-label:e7",
+        "text": "Append",
+        "x": 1374,
+        "y": 691,
+        "w": 126.304,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "self.reflections += [self.prompt_reflection()]"
+        }
+      ],
+      "points": [
+        [
+          1530,
+          750
+        ],
+        [
+          1350,
+          750
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e8",
+      "from": "memory",
+      "to": "actor",
+      "label": {
+        "id": "edge-label:e8",
+        "text": "Next run(): fresh attempt",
+        "x": 450,
+        "y": 688,
+        "w": 360.704,
+        "h": 41.6,
+        "fontSize": 32,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "agent",
+          "quote": "reflections = self.reflections_str,"
+        }
+      ],
+      "points": [
+        [
+          900,
+          750
+        ],
+        [
+          370,
+          750
+        ],
+        [
+          370,
+          410
+        ],
+        [
+          440,
+          410
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.7391304347826086,
+      "stroke": "#15354A",
+      "strokeWidth": 2.8,
+      "dashed": true
+    }
+  ],
+  "groups": [],
+  "texts": [
+    {
+      "id": "text:question:label:0",
+      "text": "Question",
+      "x": 83,
+      "y": 325,
+      "w": 224,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:actor:label:0",
+      "text": "ReAct actor",
+      "x": 458,
+      "y": 264,
+      "w": 344,
+      "h": 47.199999999999996,
+      "fontSize": 40,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:actor:detail:0",
+      "text": "Thought + action loop",
+      "x": 458,
+      "y": 389,
+      "w": 344,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:tools:label:0",
+      "text": "Wikipedia tools",
+      "x": 1008,
+      "y": 264,
+      "w": 314,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:tools:detail:0",
+      "text": "Search / Lookup",
+      "x": 1008,
+      "y": 389,
+      "w": 314,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:check:label:0",
+      "text": "Exact-match check",
+      "x": 1548,
+      "y": 264,
+      "w": 414,
+      "h": 43.66,
+      "fontSize": 37,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:check:detail:0",
+      "text": "Correct: stop",
+      "x": 1548,
+      "y": 389,
+      "w": 414,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:reflect:label:0",
+      "text": "Self-reflection LM",
+      "x": 1548,
+      "y": 674,
+      "w": 414,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:reflect:detail:0",
+      "text": "Truncated prior trace",
+      "x": 1548,
+      "y": 778,
+      "w": 414,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "text:memory:label:0",
+      "text": "Reflection memory",
+      "x": 918,
+      "y": 674,
+      "w": 414,
+      "h": 44.839999999999996,
+      "fontSize": 38,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:memory:detail:0",
+      "text": "Same-question retries",
+      "x": 918,
+      "y": 778,
+      "w": 414,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "edge-label:e2",
+      "text": "Action",
+      "x": 850,
+      "y": 297,
+      "w": 104.928,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e3",
+      "text": "Observation",
+      "x": 830,
+      "y": 108,
+      "w": 188.672,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e4",
+      "text": "Finish / halt",
+      "x": 1090,
+      "y": 484,
+      "w": 179.616,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e5",
+      "text": "Incorrect",
+      "x": 1680,
+      "y": 553,
+      "w": 140.48000000000002,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e6",
+      "text": "Prior trace",
+      "x": 1030,
+      "y": 604,
+      "w": 163.744,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e7",
+      "text": "Append",
+      "x": 1374,
+      "y": 691,
+      "w": 126.304,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:e8",
+      "text": "Next run(): fresh attempt",
+      "x": 450,
+      "y": 688,
+      "w": 360.704,
+      "h": 41.6,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "art:gate-key",
+      "owner": "check",
+      "text": "Answer vs. key",
+      "x": 1550,
+      "y": 329,
+      "w": 410,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#15354A",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    }
+  ],
+  "decorations": [],
+  "assets": [],
+  "title": "Reflexion: textual feedback across repeated attempts",
+  "typography": {
+    "fontFamily": "Times New Roman",
+    "moduleSize": 38,
+    "detailSize": 32,
+    "annotationSize": 32,
+    "titleSize": 30,
+    "moduleBold": true
+  },
+  "specHash": "fdf616c0c112ffb027bd9b64fa7f4220f6ca2b4daaeca858d2e9d65e2af2ac52",
+  "semanticHash": "5cf82f48c5ad237b9e4b20036e45cd5dd3c54d138b03ea810ed40a5bc884cc7d",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

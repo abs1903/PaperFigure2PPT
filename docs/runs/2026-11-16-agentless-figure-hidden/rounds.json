@@ -1,0 +1,29 @@
+[
+  {
+    "round": 1,
+    "generationRecord": "generation-record-v1.json",
+    "sha256": "27b640c8c380711664c5719dcc5d43dc935351be9cdcde2b4f173487dec7416d",
+    "review": "image-review-v1.json",
+    "reviewSHA256": "af1df71b172c705a259c5a68133d7f4ea3bcf232b012e4bb872f12a816927283",
+    "verdict": "revise",
+    "decision": "keep as working parent, not accepted"
+  },
+  {
+    "round": 2,
+    "generationRecord": "generation-record-v2.json",
+    "sha256": "53ae10e9c192490a3ba6b43a693327b3c6511179be75685ed021ffa1682f68f8",
+    "review": "image-review-v2.json",
+    "reviewSHA256": "b0bd1f3d13be3f36055098f3874b82b446510ecaec5ed693ed61efc24c80cf38",
+    "verdict": "revise",
+    "decision": "keep as corrected semantic parent; typography refinement pending"
+  },
+  {
+    "round": 3,
+    "generationRecord": "generation-record-v3.json",
+    "sha256": "0e21733bf11eb02a433414aae13327b82dc796c3f1ea419fc01aa1228b45b3cd",
+    "review": "image-review-v3.json",
+    "reviewSHA256": "4c0bf8df70e160770cbfcc338fde3ccd77a8c4e6b73a1d9d0fd268050a1612b7",
+    "verdict": "accept",
+    "decision": "freeze exact image-stage reference only"
+  }
+]

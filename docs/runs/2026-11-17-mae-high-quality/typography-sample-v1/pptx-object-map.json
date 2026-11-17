@@ -1,0 +1,129 @@
+[
+  {
+    "id": 2,
+    "name": "encoder-anchor",
+    "type": "shape",
+    "owner": "encoder",
+    "bbox": [
+      484,
+      208,
+      181,
+      262
+    ]
+  },
+  {
+    "id": 10,
+    "name": "label-block:encoder",
+    "type": "text-block",
+    "owner": "encoder",
+    "sourceTextIds": [
+      "text-encoder-0"
+    ],
+    "text": "Encoder",
+    "bbox": [
+      484,
+      208,
+      181,
+      262
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 12,
+    "name": "encoder",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 3,
+    "name": "masktokens-anchor",
+    "type": "shape",
+    "owner": "masktokens",
+    "bbox": [
+      890,
+      59,
+      60,
+      60
+    ]
+  },
+  {
+    "id": 6,
+    "name": "masktokens-caption",
+    "type": "text",
+    "owner": "masktokens",
+    "text": "Learned mask tokens",
+    "font": "Arial",
+    "fontSize": 33.247,
+    "bbox": [
+      785.0346069335938,
+      13.114927510986327,
+      339.9307861328125,
+      41.55875
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 7,
+    "name": "masktokens-count",
+    "type": "text",
+    "owner": "masktokens",
+    "text": "×12",
+    "font": "Arial",
+    "fontSize": 36,
+    "bbox": [
+      980.466796875,
+      70.8175,
+      61.06640625,
+      45
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 13,
+    "name": "masktokens",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "loss-anchor",
+    "type": "shape",
+    "owner": "loss",
+    "bbox": [
+      1237,
+      723,
+      214,
+      82
+    ]
+  },
+  {
+    "id": 11,
+    "name": "label-block:loss",
+    "type": "text-block",
+    "owner": "loss",
+    "sourceTextIds": [
+      "text-loss-0",
+      "text-loss-1"
+    ],
+    "text": "Masked-patch\nMSE",
+    "bbox": [
+      1237,
+      723,
+      214,
+      82
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 14,
+    "name": "loss",
+    "type": "group",
+    "owner": null
+  }
+]

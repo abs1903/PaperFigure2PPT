@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "reviewType": "independent-source-and-narrative-review",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_narrative_review",
+    "isolation": {
+      "method": "fork_turns:none",
+      "declaredBy": "delegated task instruction",
+      "notOpened": ["author diagram", "generated graphics", "previous reports", "root conversation"]
+    }
+  },
+  "scope": {
+    "paper": "arXiv:2407.01489v1",
+    "mode": "conceptual method overview",
+    "excluded": ["later pinned-code route", "execution", "author comparison", "raster/native/Office delivery"]
+  },
+  "verdict": "revise",
+  "checks": {
+    "scopeSeparation": "pass",
+    "twoPhaseMethod": "pass",
+    "projectCodebaseToRepositoryTree": "fail",
+    "selectedFilesVsSkeletons": "fail",
+    "selectedCodeVsPaddedContext": "revise",
+    "issueConditioningEvidence": "fail",
+    "searchReplacePatchSemantics": "fail",
+    "filterAndFrequencySelection": "pass",
+    "unsupportedAutonomyOrSuccess": "pass",
+    "actualPixels": "unverified",
+    "authorFigureComparison": "unverified",
+    "nativeOfficeDelivery": "unverified"
+  },
+  "findings": [
+    {"id":"R1","severity":"required","sourceLines":"3-8","finding":"Spec omits project-codebase to deterministic repository-tree conversion.","correction":"Add or explicitly internalize the conversion; do not depict it as LLM work."},
+    {"id":"R2","severity":"required","sourceLines":"45-47,76-80","finding":"Top-N LLM selection and skeleton construction are conflated.","correction":"Distinguish selected files from derived selected-file skeletons."},
+    {"id":"R3","severity":"required","sourceLines":"140-149","finding":"Generic candidate patches omit Search/Replace semantics.","correction":"Use a Search/Replace-diff label or compact search/replacement visual."},
+    {"id":"R4","severity":"required","sourceLines":"45-47,81-85","finding":"The supplied extract does not explicitly re-send the issue to final edit-location selection, despite the third issue badge/edge.","correction":"Cite direct support or remove/qualify that badge and edge."},
+    {"id":"R5","severity":"recommended","sourceLines":"33-35,58-70","finding":"Supporting wording narrows relevant elements to classes/functions although the source also names variables.","correction":"Use broad code-elements wording or include variables."}
+  ],
+  "artifactHashes": {
+    "paper-method-source.txt":"b0a9c15af53234d86bae255aca4dbc0751122ddf4ce845eda1d2eb97255a5622",
+    "source-normalized.txt":"333e59b375703a0bbff6a96a1a03f3a310edd8e218ab911a3e206b5849072ca3",
+    "spec.json":"b2a9933edb42064c4dea16a958a278786f3b397197cb7a0cf7426c713c4f078b",
+    "narrative-plan.json":"afe5ba013dee727e6801e4000715c9278c19f2d990ab0540ddea9c74d33352df",
+    "design-brief.json":"e7f06e7d6179c1c006dc181afd0f72014016b130b730a38c611655ad520126b3",
+    "paper-narrative.md":"24e9753b6810f4afb7353ac3a474eea840ce7df1935fe721aad90ec869608e9b",
+    "image-reference.md":"2fd7370de12a1edb12865edc9f3290716b9d5999be387149bfe4453eb5d2a5fc",
+    "visual-review.md":"9199cb5d65ab9a525ec5d61a0083d56ca381f73b0b20e651370ea6a26a18991e"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-17",
+  "mode": "reference-bound-reconstruction",
+  "selectedTargetSHA256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+  "finalOutput": "output-v2",
+  "validation": {
+    "mechanical": {
+      "status": "pass",
+      "reasons": []
+    },
+    "render": {
+      "status": "pass",
+      "reasons": []
+    },
+    "review": {
+      "status": "pass",
+      "reasons": []
+    }
+  },
+  "deliveryReady": true,
+  "nativeCounts": {
+    "nativeTextBoxes": 68,
+    "nativeSVGLabelsCovered": 72,
+    "centeredTextBlocks": 12,
+    "nativeSemanticConnectorSegments": 23,
+    "nativeLineArt": 1,
+    "nativeShapes": 68,
+    "auxiliaryPorts": 37,
+    "groups": 35,
+    "pictures": 0,
+    "media": 0,
+    "contentObjects": 160
+  },
+  "reviewedArtifactsChecked": 14,
+  "officeEngine": "LibreOffice -> PDF -> MuPDF",
+  "referenceAnchorMaxDriftPx": {
+    "center": 1.118,
+    "width": 4,
+    "height": 3
+  },
+  "textLabels": 72,
+  "sourceVisibleRoutes": 19,
+  "nativeRouteMinimumCoverage": 1.0,
+  "actualFontCoverage": true,
+  "verifierRegressionTests": {
+    "command": "uv run --with pymupdf --with numpy python -m unittest discover -s paperfigure/tests -p test_render_layout.py",
+    "observedResult": "4 tests passed"
+  },
+  "retainedFailure": "output-v1/native-render/render-qa.json",
+  "limitations": [
+    "Original raster font identity approximate",
+    "Raster microtexture/nonuniform tint approximated by editable solid fills",
+    "No interactive Microsoft PowerPoint render/edit/reflow test",
+    "Intermediate polyline bends may need manual adjustment after moving groups"
+  ]
+}

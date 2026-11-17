@@ -1,0 +1,693 @@
+{
+  "passed": false,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [
+    {
+      "code": "text-width",
+      "objects": [
+        "text:rollout:label:0"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-width",
+      "objects": [
+        "text:rollout:detail:0"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-width",
+      "objects": [
+        "text:reflect:label:0"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-width",
+      "objects": [
+        "text:result:detail:1"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "tree",
+        "text:tree:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "tree",
+        "text:tree:detail:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "tools",
+        "text:tools:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "tools",
+        "text:tools:label:1"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "tools",
+        "text:tools:detail:1"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "tools",
+        "text:tools:detail:2"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "value",
+        "text:value:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "value",
+        "text:value:detail:1"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "rollout",
+        "text:rollout:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "rollout",
+        "text:rollout:detail:1"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "failed",
+        "text:failed:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "failed",
+        "text:failed:detail:1"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "reflect",
+        "text:reflect:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "reflect",
+        "text:reflect:detail:2"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "context",
+        "text:context:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "context",
+        "text:context:detail:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "result",
+        "text:result:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "result",
+        "text:result:detail:1"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:rollout:label:0",
+        "edge-label:return-tree"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:rollout:detail:0",
+        "edge-label:return-rollout"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:rollout:detail:1",
+        "edge-label:return-rollout"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:backup:label:0",
+        "edge-label:rollout-step"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:backup:label:0",
+        "edge-label:rollout-feedback"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:result:label:1",
+        "edge-label:return-rollout"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "edge-label:rollout-step",
+        "edge-label:rollout-feedback"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:rollout-step",
+        "backup"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:rollout-feedback",
+        "backup"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:update-statistics",
+        "policy"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:return-rollout",
+        "rollout"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:return-rollout",
+        "result"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "best-child",
+        "edge-label:return-tree"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "rollout-step",
+        "edge-label:rollout-feedback"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "rollout-feedback",
+        "edge-label:rollout-step"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "update-statistics",
+        "edge-label:rollout-step"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "update-statistics",
+        "edge-label:rollout-feedback"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "terminal-failure",
+        "edge-label:rollout-step"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "terminal-failure",
+        "edge-label:rollout-feedback"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "terminal-failure",
+        "edge-label:return-tree"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "policy-feedback",
+        "edge-label:update-statistics"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "policy-feedback",
+        "edge-label:return-tree"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "policy-feedback",
+        "edge-label:update-statistics"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "return-tree",
+        "edge-label:return-rollout"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "return-tree",
+        "edge-label:return-rollout"
+      ],
+      "message": "Edge passes through text box"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "select-path",
+        "store-children"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "select-path",
+        "candidate-values"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "select-path",
+        "update-statistics"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "select-path",
+        "return-tree"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "expand-path",
+        "store-children"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "execute",
+        "store-children"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "execute",
+        "terminal-failure"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "store-children",
+        "candidate-values"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "store-children",
+        "update-statistics"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "store-children",
+        "terminal-failure"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "store-children",
+        "return-tree"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "candidate-values",
+        "update-statistics"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "candidate-values",
+        "return-tree"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "best-child",
+        "terminal-failure"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "best-child",
+        "policy-feedback"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "best-child",
+        "return-tree"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "rollout-step",
+        "rollout-feedback"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "rollout-step",
+        "no-success"
+      ],
+      "message": "2 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "rollout-step",
+        "update-statistics"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "rollout-step",
+        "terminal-failure"
+      ],
+      "message": "2 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "rollout-step",
+        "return-tree"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "rollout-feedback",
+        "update-statistics"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "rollout-feedback",
+        "terminal-failure"
+      ],
+      "message": "2 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "rollout-feedback",
+        "return-tree"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "no-success",
+        "update-statistics"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "no-success",
+        "terminal-failure"
+      ],
+      "message": "2 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "no-success",
+        "return-tree"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "no-success",
+        "return-rollout"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "update-statistics",
+        "terminal-failure"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "update-statistics",
+        "policy-feedback"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "update-statistics",
+        "return-tree"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "terminal-failure",
+        "reflect-failures"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "terminal-failure",
+        "policy-feedback"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "terminal-failure",
+        "return-tree"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "policy-feedback",
+        "return-tree"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "return-tree",
+        "return-rollout"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    }
+  ],
+  "metrics": {
+    "nodes": 12,
+    "edges": 17,
+    "texts": 43,
+    "groups": 0,
+    "minFinalTextPt": 7.56,
+    "nativeShapes": 55,
+    "nativeConnectors": 63,
+    "logicalEdges": 17,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 43,
+    "pictures": 0,
+    "editableRatio": 1
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "provider": "Codex built-in image generation",
+  "date": "2026-11-15",
+  "purpose": "Composition proposal; not a scientific source or final editable deliverable",
+  "prompt": "prompt.txt",
+  "image": "imagegen-v1.png",
+  "review": {
+    "adopted": ["Horizontal modality flow", "Dominant language-model region", "Separate training-only branch", "Restrained palette"],
+    "rejected": ["Visible figure heading", "Ambiguous decorative visual-token grids", "Unsupported self-attention and FFN detail", "Any implied fixed decoder depth"],
+    "reconstruction": "Agent-authored layout from the retained semantic graph, rebuilt as native objects; not automatic image tracing"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_figure_hidden_review"
+  },
+  "reviewKind": "isolated-image-stage",
+  "verdict": "revise",
+  "contextIsolation": "Fresh pixel inspection from actual candidate plus source-reviewed prompt/brief/spec; no author figure, caption, README, web content, or prior image review consulted.",
+  "authorFigureComparison": "not performed; prohibited",
+  "reference": {
+    "path": "candidate-v1.png",
+    "sha256": "082cfbaf36b7736f0de414295ab95b6388ea00ddce4128d3946a44e87e9aeed8",
+    "sizePx": [
+      1817,
+      866
+    ]
+  },
+  "inputs": {
+    "prompt-generate-v1.txt": "984304dd2b15e52c44c0dc9280978f3c66ae069c2613298b958bddef42688d62",
+    "design-brief-reviewed.json": "4a62139615c6fdc7e7909d0cd03203c9da6357d8eb4fa160c4584fa4fe815688",
+    "spec.json": "91fc27a5e30c34d6a31172a17f2298e427686af4c57e065f0b298a9bf3af146f",
+    "semantic-freeze.json": "6770722469aec8e41607ba70037280d7128748a07f0d48bbfbb1ac424b7412a9",
+    "generation-record-v1.json": "27b640c8c380711664c5719dcc5d43dc935351be9cdcde2b4f173487dec7416d"
+  },
+  "checks": {
+    "authorFigureHidden": "pass",
+    "semanticFidelity": "fail",
+    "twoPaperPhases": "pass",
+    "hierarchyAndContext": "pass",
+    "regressionAndFallback": "pass",
+    "normalizationVsOriginalOutput": "fail",
+    "composition": "fail",
+    "typographyAt7In": "pass",
+    "semanticColors": "pass",
+    "noTitleOrFooter": "pass",
+    "nativeFeasibility": "unverified"
+  },
+  "revision": {
+    "defectClass": "selection-stage semantic routing/association",
+    "observedDefect": "The raster does not visibly carry an original raw patch associated with the winning normalized key through Frequency vote to Original patch.",
+    "change": "Add a visible raw-candidate association/route in the right selection region only.",
+    "invariants": [
+      "all visible labels",
+      "two phase headings",
+      "hierarchy/context/sampling/syntax flow",
+      "fewest-failures route",
+      "conditional dashed bypass",
+      "green only for Original patch",
+      "white flat style",
+      "no title/footer",
+      "no added modules or claims"
+    ]
+  },
+  "notes": [
+    "No SVG/PPTX/PDF/Office artifact was reviewed or accepted.",
+    "Generation record, not rounds.json, establishes the image identity and no-image-input provenance."
+  ]
+}

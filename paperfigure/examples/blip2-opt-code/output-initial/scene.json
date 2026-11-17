@@ -1,0 +1,2013 @@
+{
+  "width": 2240,
+  "height": 850,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "image",
+      "label": "Image",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "image = samples[\"image\"]"
+        }
+      ],
+      "x": 30,
+      "y": 290,
+      "w": 200,
+      "h": 180,
+      "fill": "none",
+      "stroke": "none",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": []
+    },
+    {
+      "id": "vision",
+      "label": "EVA-CLIP-G\nVision Encoder",
+      "detail": "(frozen)",
+      "role": "encoder",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "image_embeds = self.ln_vision(self.visual_encoder(image))"
+        }
+      ],
+      "x": 280,
+      "y": 285,
+      "w": 250,
+      "h": 190,
+      "fill": "#DDE8EF",
+      "gradient": {
+        "from": "#FFFFFF",
+        "to": "#DDE8EF",
+        "direction": "vertical"
+      },
+      "stroke": "#44748D",
+      "radius": 18,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:vision:label:0",
+          "text": "EVA-CLIP-G",
+          "x": 290,
+          "y": 329,
+          "w": 230,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:vision:label:1",
+          "text": "Vision",
+          "x": 290,
+          "y": 371.48,
+          "w": 230,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:vision:label:2",
+          "text": "Encoder",
+          "x": 290,
+          "y": 413.96,
+          "w": 230,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:vision:detail:0",
+          "text": "(frozen)",
+          "x": 290,
+          "y": 425,
+          "w": 230,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "norm",
+      "label": "Layer\nNorm",
+      "detail": "learned affine",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "image_embeds = self.ln_vision(self.visual_encoder(image))"
+        }
+      ],
+      "x": 580,
+      "y": 305,
+      "w": 180,
+      "h": 150,
+      "fill": "#E2F4EB",
+      "gradient": {
+        "from": "#FFFFFF",
+        "to": "#E2F4EB",
+        "direction": "vertical"
+      },
+      "stroke": "#168F8B",
+      "radius": 18,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:norm:label:0",
+          "text": "Layer",
+          "x": 588,
+          "y": 319,
+          "w": 164,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:norm:label:1",
+          "text": "Norm",
+          "x": 588,
+          "y": 361.48,
+          "w": 164,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "queries",
+      "label": "32 Learned Queries",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "config",
+          "quote": "num_query_token: 32"
+        }
+      ],
+      "x": 810,
+      "y": 65,
+      "w": 340,
+      "h": 130,
+      "fill": "none",
+      "stroke": "none",
+      "radius": 8,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:queries:label:0",
+          "text": "32 Learned Queries",
+          "x": 810,
+          "y": 65,
+          "w": 340,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "id": "qformer",
+      "label": "Q-Former",
+      "detail": "Query-to-image attention",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "query_embeds=query_tokens,\n                encoder_hidden_states=image_embeds,"
+        }
+      ],
+      "x": 810,
+      "y": 280,
+      "w": 340,
+      "h": 200,
+      "fontSize": 43,
+      "fill": "#F7DFAC",
+      "gradient": {
+        "from": "#FFFFFF",
+        "to": "#F7DFAC",
+        "direction": "vertical"
+      },
+      "stroke": "#BD811B",
+      "radius": 18,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:qformer:label:0",
+          "text": "Q-Former",
+          "x": 822,
+          "y": 320,
+          "w": 316,
+          "h": 50.739999999999995,
+          "fontSize": 43,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:qformer:detail:0",
+          "text": "Query-to-image",
+          "x": 820,
+          "y": 392,
+          "w": 320,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": true
+        },
+        {
+          "id": "text:qformer:detail:1",
+          "text": "attention",
+          "x": 820,
+          "y": 429.76,
+          "w": 320,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "id": "projection",
+      "label": "opt_proj",
+      "detail": "Learned linear",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "inputs_opt = self.opt_proj(query_output.last_hidden_state)"
+        }
+      ],
+      "x": 1205,
+      "y": 310,
+      "w": 185,
+      "h": 140,
+      "fill": "#E1F3E9",
+      "gradient": {
+        "from": "#FFFFFF",
+        "to": "#E1F3E9",
+        "direction": "vertical"
+      },
+      "stroke": "#168F8B",
+      "radius": 18,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:projection:label:0",
+          "text": "opt_proj",
+          "x": 1213,
+          "y": 328,
+          "w": 169,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman",
+          "italic": true
+        }
+      ]
+    },
+    {
+      "id": "prompt",
+      "label": "Optional prompt",
+      "detail": "empty by default",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "config",
+          "quote": "prompt: \"\""
+        }
+      ],
+      "x": 30,
+      "y": 655,
+      "w": 420,
+      "h": 115,
+      "fill": "#F1F7F3",
+      "gradient": {
+        "from": "#FFFFFF",
+        "to": "#F1F7F3",
+        "direction": "vertical"
+      },
+      "stroke": "#168F8B",
+      "radius": 18,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:prompt:label:0",
+          "text": "Optional prompt",
+          "x": 94,
+          "y": 669,
+          "w": 344,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:prompt:detail:0",
+          "text": "empty by default",
+          "x": 94,
+          "y": 716,
+          "w": 344,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "embeddings",
+      "label": "Tokenize + embed",
+      "detail": "Frozen OPT table",
+      "role": "encoder",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "inputs_embeds = self.opt_model.get_input_embeddings()(opt_tokens.input_ids)"
+        }
+      ],
+      "x": 620,
+      "y": 645,
+      "w": 380,
+      "h": 135,
+      "fill": "#E0EBF1",
+      "gradient": {
+        "from": "#FFFFFF",
+        "to": "#E0EBF1",
+        "direction": "vertical"
+      },
+      "stroke": "#44748D",
+      "radius": 18,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:embeddings:label:0",
+          "text": "Tokenize + embed",
+          "x": 630,
+          "y": 669,
+          "w": 360,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:embeddings:detail:0",
+          "text": "Frozen OPT table",
+          "x": 630,
+          "y": 723,
+          "w": 360,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "opt",
+      "label": "OPT-2.7B\nLanguage Model",
+      "detail": "(frozen)",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "inputs_embeds = torch.cat([inputs_opt,inputs_embeds],dim=1)"
+        }
+      ],
+      "x": 1500,
+      "y": 260,
+      "w": 520,
+      "h": 370,
+      "fill": "#DDE8EF",
+      "gradient": {
+        "from": "#FFFFFF",
+        "to": "#DDE8EF",
+        "direction": "vertical"
+      },
+      "stroke": "#44748D",
+      "radius": 26,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:opt:label:0",
+          "text": "OPT-2.7B",
+          "x": 1520,
+          "y": 283,
+          "w": 480,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:opt:label:1",
+          "text": "Language Model",
+          "x": 1520,
+          "y": 325.48,
+          "w": 480,
+          "h": 42.48,
+          "fontSize": 36,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:opt:detail:0",
+          "text": "(frozen)",
+          "x": 1520,
+          "y": 376,
+          "w": 480,
+          "h": 37.76,
+          "fontSize": 32,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "caption",
+      "label": "Decoded\ncaption",
+      "detail": "",
+      "role": "output",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "outputs, skip_special_tokens=True"
+        }
+      ],
+      "x": 2090,
+      "y": 355,
+      "w": 120,
+      "h": 150,
+      "fill": "#FFFFFF",
+      "stroke": "#168F8B",
+      "radius": 15,
+      "strokeWidth": 2.2,
+      "texts": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "image",
+      "to": "vision",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "image_embeds = self.ln_vision(self.visual_encoder(image))"
+        }
+      ],
+      "points": [
+        [
+          230,
+          380
+        ],
+        [
+          280,
+          380
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "vision",
+      "to": "norm",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "image_embeds = self.ln_vision(self.visual_encoder(image))"
+        }
+      ],
+      "points": [
+        [
+          530,
+          380
+        ],
+        [
+          580,
+          380
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e3",
+      "from": "norm",
+      "to": "qformer",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "query_embeds=query_tokens,\n                encoder_hidden_states=image_embeds,"
+        }
+      ],
+      "points": [
+        [
+          760,
+          380
+        ],
+        [
+          810,
+          380
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e4",
+      "from": "queries",
+      "to": "qformer",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "query_embeds=query_tokens,\n                encoder_hidden_states=image_embeds,"
+        }
+      ],
+      "points": [
+        [
+          980,
+          195
+        ],
+        [
+          980,
+          280
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e5",
+      "from": "qformer",
+      "to": "projection",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "inputs_opt = self.opt_proj(query_output.last_hidden_state)"
+        }
+      ],
+      "points": [
+        [
+          1150,
+          380
+        ],
+        [
+          1205,
+          380
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e6",
+      "from": "projection",
+      "to": "opt",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "inputs_embeds = torch.cat([inputs_opt,inputs_embeds],dim=1)"
+        }
+      ],
+      "points": [
+        [
+          1390,
+          380
+        ],
+        [
+          1500,
+          380
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.32432432432432434,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e7",
+      "from": "prompt",
+      "to": "embeddings",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "inputs_embeds = self.opt_model.get_input_embeddings()(opt_tokens.input_ids)"
+        }
+      ],
+      "points": [
+        [
+          450,
+          712.5
+        ],
+        [
+          620,
+          712.5
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e8",
+      "from": "embeddings",
+      "to": "opt",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "inputs_embeds = torch.cat([inputs_opt,inputs_embeds],dim=1)"
+        }
+      ],
+      "points": [
+        [
+          1000,
+          712.5
+        ],
+        [
+          1440,
+          712.5
+        ],
+        [
+          1440,
+          560
+        ],
+        [
+          1500,
+          560
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.8108108108108109,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    },
+    {
+      "id": "e9",
+      "from": "opt",
+      "to": "caption",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "opt",
+          "quote": "outputs, skip_special_tokens=True"
+        }
+      ],
+      "points": [
+        [
+          2020,
+          430
+        ],
+        [
+          2090,
+          430
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.4594594594594595,
+      "toFraction": 0.5,
+      "stroke": "#0C3150",
+      "strokeWidth": 2.8,
+      "dashed": false
+    }
+  ],
+  "groups": [],
+  "texts": [
+    {
+      "id": "text:vision:label:0",
+      "text": "EVA-CLIP-G",
+      "x": 290,
+      "y": 329,
+      "w": 230,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:vision:label:1",
+      "text": "Vision",
+      "x": 290,
+      "y": 371.48,
+      "w": 230,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:vision:label:2",
+      "text": "Encoder",
+      "x": 290,
+      "y": 413.96,
+      "w": 230,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:vision:detail:0",
+      "text": "(frozen)",
+      "x": 290,
+      "y": 425,
+      "w": 230,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:norm:label:0",
+      "text": "Layer",
+      "x": 588,
+      "y": 319,
+      "w": 164,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:norm:label:1",
+      "text": "Norm",
+      "x": 588,
+      "y": 361.48,
+      "w": 164,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:queries:label:0",
+      "text": "32 Learned Queries",
+      "x": 810,
+      "y": 65,
+      "w": 340,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "text:qformer:label:0",
+      "text": "Q-Former",
+      "x": 822,
+      "y": 320,
+      "w": 316,
+      "h": 50.739999999999995,
+      "fontSize": 43,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:qformer:detail:0",
+      "text": "Query-to-image",
+      "x": 820,
+      "y": 392,
+      "w": 320,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "text:qformer:detail:1",
+      "text": "attention",
+      "x": 820,
+      "y": 429.76,
+      "w": 320,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "text:projection:label:0",
+      "text": "opt_proj",
+      "x": 1213,
+      "y": 328,
+      "w": 169,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "text:prompt:label:0",
+      "text": "Optional prompt",
+      "x": 94,
+      "y": 669,
+      "w": 344,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:prompt:detail:0",
+      "text": "empty by default",
+      "x": 94,
+      "y": 716,
+      "w": 344,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:embeddings:label:0",
+      "text": "Tokenize + embed",
+      "x": 630,
+      "y": 669,
+      "w": 360,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:embeddings:detail:0",
+      "text": "Frozen OPT table",
+      "x": 630,
+      "y": 723,
+      "w": 360,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:opt:label:0",
+      "text": "OPT-2.7B",
+      "x": 1520,
+      "y": 283,
+      "w": 480,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:opt:label:1",
+      "text": "Language Model",
+      "x": 1520,
+      "y": 325.48,
+      "w": 480,
+      "h": 42.48,
+      "fontSize": 36,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:opt:detail:0",
+      "text": "(frozen)",
+      "x": 1520,
+      "y": 376,
+      "w": 480,
+      "h": 37.76,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "art:norm-affine",
+      "owner": "norm",
+      "text": "affine",
+      "x": 596,
+      "y": 409,
+      "w": 148,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#0C3150",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:linear-detail",
+      "owner": "projection",
+      "text": "linear",
+      "x": 1220,
+      "y": 393,
+      "w": 155,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#0C3150",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:prefix-label",
+      "owner": "opt",
+      "text": "Visual prefix (32)",
+      "x": 1532,
+      "y": 505,
+      "w": 220,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#0C3150",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:prompt-label",
+      "owner": "opt",
+      "text": "Prompt embeddings",
+      "x": 1770,
+      "y": 505,
+      "w": 230,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#0C3150",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:decode-mode",
+      "owner": "opt",
+      "text": "Autoregressive generation",
+      "x": 1525,
+      "y": 576,
+      "w": 470,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#0C3150",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:caption-label-1",
+      "owner": "caption",
+      "text": "Decoded",
+      "x": 2070,
+      "y": 525,
+      "w": 160,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#0C3150",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:caption-label-2",
+      "owner": "caption",
+      "text": "caption",
+      "x": 2070,
+      "y": 566,
+      "w": 160,
+      "h": 43.2,
+      "fontSize": 32,
+      "bold": false,
+      "color": "#0C3150",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    }
+  ],
+  "decorations": [
+    {
+      "id": "art:queries-0",
+      "owner": "queries",
+      "type": "rect",
+      "x": 875,
+      "y": 127,
+      "w": 20,
+      "h": 55,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:queries-1",
+      "owner": "queries",
+      "type": "rect",
+      "x": 901,
+      "y": 127,
+      "w": 20,
+      "h": 55,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:queries-2",
+      "owner": "queries",
+      "type": "rect",
+      "x": 927,
+      "y": 127,
+      "w": 20,
+      "h": 55,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:queries-3",
+      "owner": "queries",
+      "type": "rect",
+      "x": 995,
+      "y": 127,
+      "w": 20,
+      "h": 55,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:queries-4",
+      "owner": "queries",
+      "type": "rect",
+      "x": 1021,
+      "y": 127,
+      "w": 20,
+      "h": 55,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:queries-5",
+      "owner": "queries",
+      "type": "rect",
+      "x": 1047,
+      "y": 127,
+      "w": 20,
+      "h": 55,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:queries-dot-0",
+      "owner": "queries",
+      "type": "ellipse",
+      "x": 958,
+      "y": 154.5,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:queries-dot-1",
+      "owner": "queries",
+      "type": "ellipse",
+      "x": 969,
+      "y": 154.5,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:queries-dot-2",
+      "owner": "queries",
+      "type": "ellipse",
+      "x": 980,
+      "y": 154.5,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:opt-input-strip",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1520,
+      "y": 440,
+      "w": 480,
+      "h": 118,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#FBFDFE",
+      "stroke": "#44748D",
+      "radius": 20,
+      "strokeWidth": 1.7
+    },
+    {
+      "id": "art:prefix-0",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1545,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prefix-1",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1571,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prefix-2",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1597,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prefix-3",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1665,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prefix-4",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1691,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prefix-5",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1717,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#CAEEEB",
+        "to": "#168F8B",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prefix-dot-0",
+      "owner": "opt",
+      "type": "ellipse",
+      "x": 1628,
+      "y": 473,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:prefix-dot-1",
+      "owner": "opt",
+      "type": "ellipse",
+      "x": 1639,
+      "y": 473,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:prefix-dot-2",
+      "owner": "opt",
+      "type": "ellipse",
+      "x": 1650,
+      "y": 473,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:prompt-emb-0",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1783,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#D7EAF7",
+        "to": "#8CBFE0",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prompt-emb-1",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1809,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#D7EAF7",
+        "to": "#8CBFE0",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prompt-emb-2",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1835,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#D7EAF7",
+        "to": "#8CBFE0",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prompt-emb-3",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1903,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#D7EAF7",
+        "to": "#8CBFE0",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prompt-emb-4",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1929,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#D7EAF7",
+        "to": "#8CBFE0",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prompt-emb-5",
+      "owner": "opt",
+      "type": "rect",
+      "x": 1955,
+      "y": 454,
+      "w": 20,
+      "h": 38,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none",
+      "radius": 7,
+      "strokeWidth": 1.7,
+      "gradient": {
+        "from": "#D7EAF7",
+        "to": "#8CBFE0",
+        "direction": "vertical"
+      }
+    },
+    {
+      "id": "art:prompt-emb-dot-0",
+      "owner": "opt",
+      "type": "ellipse",
+      "x": 1866,
+      "y": 473,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none"
+    },
+    {
+      "id": "art:prompt-emb-dot-1",
+      "owner": "opt",
+      "type": "ellipse",
+      "x": 1877,
+      "y": 473,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none"
+    },
+    {
+      "id": "art:prompt-emb-dot-2",
+      "owner": "opt",
+      "type": "ellipse",
+      "x": 1888,
+      "y": 473,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#8CBFE0",
+      "stroke": "none"
+    },
+    {
+      "id": "art:concat-divider",
+      "owner": "opt",
+      "type": "line",
+      "x": 1760,
+      "y": 453,
+      "w": 0,
+      "h": 85,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#44748D",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:chat",
+      "owner": "prompt",
+      "type": "rect",
+      "x": 51,
+      "y": 682,
+      "w": 44,
+      "h": 35,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#FFFFFF",
+      "stroke": "#168F8B",
+      "radius": 5,
+      "strokeWidth": 1.7
+    },
+    {
+      "id": "art:chat-dot-0",
+      "owner": "prompt",
+      "type": "ellipse",
+      "x": 59,
+      "y": 694,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:chat-dot-1",
+      "owner": "prompt",
+      "type": "ellipse",
+      "x": 70,
+      "y": 694,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:chat-dot-2",
+      "owner": "prompt",
+      "type": "ellipse",
+      "x": 81,
+      "y": 694,
+      "w": 5,
+      "h": 5,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#168F8B",
+      "stroke": "none"
+    },
+    {
+      "id": "art:chat-tail",
+      "owner": "prompt",
+      "type": "line",
+      "x": 60,
+      "y": 717,
+      "w": -7,
+      "h": 12,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#168F8B",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:fold-mask",
+      "owner": "caption",
+      "type": "rect",
+      "x": 2178,
+      "y": 355,
+      "w": 32,
+      "h": 32,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "radius": 0,
+      "strokeWidth": 1.7
+    },
+    {
+      "id": "art:fold",
+      "owner": "caption",
+      "type": "line",
+      "x": 2178,
+      "y": 355,
+      "w": 32,
+      "h": 32,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#168F8B",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:fold-bottom",
+      "owner": "caption",
+      "type": "line",
+      "x": 2178,
+      "y": 387,
+      "w": 32,
+      "h": 0,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#168F8B",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:fold-left",
+      "owner": "caption",
+      "type": "line",
+      "x": 2178,
+      "y": 355,
+      "w": 0,
+      "h": 32,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#168F8B",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:caption-line-0",
+      "owner": "caption",
+      "type": "rect",
+      "x": 2107,
+      "y": 403,
+      "w": 85,
+      "h": 7,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#9DBFD0",
+      "stroke": "none",
+      "radius": 3,
+      "strokeWidth": 1.7
+    },
+    {
+      "id": "art:caption-line-1",
+      "owner": "caption",
+      "type": "rect",
+      "x": 2107,
+      "y": 425,
+      "w": 85,
+      "h": 7,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#9DBFD0",
+      "stroke": "none",
+      "radius": 3,
+      "strokeWidth": 1.7
+    },
+    {
+      "id": "art:caption-line-2",
+      "owner": "caption",
+      "type": "rect",
+      "x": 2107,
+      "y": 447,
+      "w": 71,
+      "h": 7,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#9DBFD0",
+      "stroke": "none",
+      "radius": 3,
+      "strokeWidth": 1.7
+    },
+    {
+      "id": "art:caption-line-3",
+      "owner": "caption",
+      "type": "rect",
+      "x": 2107,
+      "y": 469,
+      "w": 52,
+      "h": 7,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "fill": "#9DBFD0",
+      "stroke": "none",
+      "radius": 3,
+      "strokeWidth": 1.7
+    },
+    {
+      "id": "art:freeze-vision-0",
+      "owner": "vision",
+      "type": "line",
+      "x": 393,
+      "y": 310,
+      "w": 24,
+      "h": 0,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-vision-1",
+      "owner": "vision",
+      "type": "line",
+      "x": 399,
+      "y": 299.60769515458674,
+      "w": 12.000000000000004,
+      "h": 20.784609690826528,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-vision-2",
+      "owner": "vision",
+      "type": "line",
+      "x": 411,
+      "y": 299.60769515458674,
+      "w": -11.999999999999996,
+      "h": 20.784609690826528,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-embeddings-0",
+      "owner": "embeddings",
+      "type": "line",
+      "x": 798,
+      "y": 660,
+      "w": 24,
+      "h": 0,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-embeddings-1",
+      "owner": "embeddings",
+      "type": "line",
+      "x": 804,
+      "y": 649.6076951545867,
+      "w": 12.000000000000004,
+      "h": 20.784609690826528,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-embeddings-2",
+      "owner": "embeddings",
+      "type": "line",
+      "x": 816,
+      "y": 649.6076951545867,
+      "w": -11.999999999999996,
+      "h": 20.784609690826528,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-opt-0",
+      "owner": "opt",
+      "type": "line",
+      "x": 1748,
+      "y": 278,
+      "w": 24,
+      "h": 0,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-opt-1",
+      "owner": "opt",
+      "type": "line",
+      "x": 1754,
+      "y": 267.60769515458674,
+      "w": 12.000000000000004,
+      "h": 20.784609690826528,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    },
+    {
+      "id": "art:freeze-opt-2",
+      "owner": "opt",
+      "type": "line",
+      "x": 1766,
+      "y": 267.60769515458674,
+      "w": -11.999999999999996,
+      "h": 20.784609690826528,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "stroke": "#1685A4",
+      "fill": "none",
+      "strokeWidth": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "art:image-photo",
+      "owner": "image",
+      "type": "asset",
+      "x": 30,
+      "y": 290,
+      "w": 200,
+      "h": 180,
+      "purpose": "Code-supported notation; token glyphs with ellipses are schematic, not literal counts.",
+      "asset": "assets/illustrations/llava-c-source.png",
+      "crop": {
+        "x": 80,
+        "y": 200,
+        "w": 206,
+        "h": 186,
+        "sourceWidth": 2120,
+        "sourceHeight": 742
+      },
+      "path": "assets/illustrations/llava-c-source.png"
+    }
+  ],
+  "title": "BLIP-2 OPT generation: code reconstruction",
+  "typography": {
+    "fontFamily": "Times New Roman",
+    "moduleSize": 36,
+    "detailSize": 32,
+    "annotationSize": 32,
+    "titleSize": 30,
+    "moduleBold": false
+  },
+  "specHash": "637fbf762aee42a51b01c476e9962b44f1198b214b9a3ff805bca3a5a04283f1",
+  "semanticHash": "814d8d660e4285f0ebdc239114f3a617eccf2429f585621595aa5ece800ac671",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

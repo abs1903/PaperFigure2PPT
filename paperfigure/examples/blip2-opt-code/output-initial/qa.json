@@ -1,0 +1,132 @@
+{
+  "passed": false,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [
+    {
+      "code": "text-width",
+      "objects": [
+        "art:prefix-label"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-width",
+      "objects": [
+        "art:prompt-label"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "node-text-overflow",
+      "objects": [
+        "queries",
+        "text:queries:label:0"
+      ],
+      "message": "Node text exceeds inner padding"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:chat",
+        "text:prompt:label:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:chat",
+        "text:prompt:detail:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:freeze-embeddings-1",
+        "text:embeddings:label:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:freeze-embeddings-2",
+        "text:embeddings:label:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:freeze-opt-1",
+        "text:opt:label:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:freeze-opt-2",
+        "text:opt:label:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:vision:label:1",
+        "text:vision:label:2"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:vision:label:2",
+        "text:vision:detail:0"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:caption-label-1",
+        "art:caption-label-2"
+      ],
+      "message": "Text bounding boxes overlap"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "font-metrics",
+      "objects": [],
+      "message": "Text bounds use Helvetica estimates; independently render the selected font"
+    }
+  ],
+  "metrics": {
+    "nodes": 10,
+    "edges": 9,
+    "texts": 25,
+    "groups": 0,
+    "minFinalTextPt": 7.199999999999999,
+    "nativeShapes": 86,
+    "nativeConnectors": 11,
+    "logicalEdges": 9,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 25,
+    "pictures": 1,
+    "editableRatio": 0.9897959183673469
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

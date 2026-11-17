@@ -1,0 +1,28 @@
+{
+  "generator": "PaperFigure",
+  "version": "0.1.0",
+  "specHash": "209c2a8537678e09e898478b04ec5492ebbfce91cfc5742181ab2d0845646479",
+  "semanticHash": "bbf36774fdcc6d3a46cd6e42e11dcd5f48436dca95d7f877bc21709fc3d00137",
+  "generatorHash": "0a1d3b71f32a748df0dfae18e1eaef6729b27bea4b8e80db63acb5b7df16a022",
+  "node": "v24.14.1",
+  "dependencies": {
+    "ajv": "8.17.1",
+    "fast-xml-parser": "5.3.6",
+    "jszip": "3.10.1",
+    "pdfkit": "0.17.2",
+    "pptxgenjs": "4.0.1",
+    "sharp": "0.34.5",
+    "svg-to-pdfkit": "0.1.8"
+  },
+  "artifacts": {
+    "figure.drawio": "a7bb3baff734e6482e3dea3f60da2d6dc92df3dbc8d18e1da2a365f7edb19713",
+    "figure.pdf": "299806ffd1107b272820d203275dc766567594ebb6a76256e8e219c75357d38e",
+    "figure.png": "407caab54599c68eda9b1aff2798e117f09630a66aa03dcc8c9d4b2cfce606ed",
+    "figure.pptx": "827955360035e2ed3326fb6763180b9ba924ae76f73e2a5bb0a8293b53a152b6",
+    "figure.svg": "553dcd84283e89a065828c5981673dfcfa7f02e01324ccd74b8db83e37697a9b",
+    "preview.png": "6497c20a287c3724846332a4a3636b39eda4d3aa9cd70a1e9def34eda0aa7d51",
+    "qa.json": "03d1314c7244ea55165a16a6f8f5becb1c94f26fbd1e80cc606149f9fdf63146",
+    "scene.json": "e809ef2c885e6b312ec2e0499f31e3197c976d32406612372dcb3c92bb011e2f",
+    "spec.json": "c2bcce6fe02dae56157428951570c9731e339d86eeae15a36e232dc73bb98093"
+  }
+}

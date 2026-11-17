@@ -1,0 +1,47 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "voyager_image_stage_review",
+    "contextIsolation": "The raw pinned sources/current audits, current run inputs, parent image, V2 image, and immutable generation record were inspected. Earlier visual verdicts were not used as evidence of a pass."
+  },
+  "stage": "isolated-raster-review",
+  "verdict": "revise",
+  "publicationWidthIn": 7,
+  "artifacts": {
+    "parentImage": {"path": "candidate-v1.png", "sha256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae"},
+    "image": {"path": "candidate-v2.png", "sha256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132", "pixelWidth": 1860, "pixelHeight": 845},
+    "spec": {"path": "spec.json", "sha256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543"},
+    "brief": {"path": "design-brief.json", "sha256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e"},
+    "prompt": {"path": "prompt-v2.txt", "sha256": "8f2d850e1bbd4874472a528cb16e7b1926d464d2761267a6be676280bbab05d8"},
+    "generationRecord": {"path": "generation-record-v2.json", "sha256": "c22e057bdc9dd30ec13fc50d7f61dcf2ff05c3a9eb6c628726773b169197966f", "round": 2, "parentImageSHA256": "47ef6978f3204ae712e8ccd4f6b99c0f6f40837266f2dcb9fae81b7f81776dae"},
+    "sourceAudits": [
+      {"path": "source-audit.md", "sha256": "dc538a8e8496725dd2f60081ebf2a3939eb6b5e4a109b7aa31387263fe3f14cb"},
+      {"path": "source-audit-v2.md", "sha256": "acad436f5d0cdea3b88b6b1e59a777acb6b043abd838bffcfd7ccaf24d388acf"}
+    ]
+  },
+  "checks": {
+    "semanticFidelity": "pass",
+    "relationDirectionality": "pass",
+    "sourceBoundException": "pass",
+    "composition": "pass",
+    "typographyAtSevenInches": "revise",
+    "flatNativeModality": "pass",
+    "semanticSolidPalette": "fail",
+    "noTitleOrFooter": "pass",
+    "nativeFeasibility": "pass",
+    "officeOrEditability": "unverified"
+  },
+  "primaryDefect": {
+    "class": "semantic palette and flat-fill compliance",
+    "decision": "one targeted attached-image edit required",
+    "regions": ["upper-left Automatic curriculum field", "central iterative-prompting field", "left and right region background fields"],
+    "finding": "Automatic curriculum is green instead of the specified blue LM-computation color, while visible gradients/soft washes remain despite the solid-fill requirement.",
+    "invariants": ["flat voxel illustrations", "every text character", "module locations and sizes", "whitespace", "source topology", "all arrow routes/directions", "relative hierarchy", "no title/footer"]
+  },
+  "secondaryFindings": [
+    {"class": "typography", "region": "lower-right storage-condition annotation", "finding": "Legible but close to the requested 7-inch body-text margin and near the storage arrow."},
+    {"class": "routing", "region": "bottom state-return band", "finding": "Task outcome and Bounded retries remain crowded but traceable."},
+    {"class": "text-whitelist", "region": "code-sheet ellipsis", "finding": "The visible `...` is outside the brief's exact-label whitelist; defer from the palette-only edit."}
+  ],
+  "limitations": ["No native implementation or Office/PDF render was inspected.", "A third attached-image candidate has not yet been reviewed."]
+}

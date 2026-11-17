@@ -1,0 +1,115 @@
+{
+  "passed": false,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [
+    {
+      "code": "text-width",
+      "objects": [
+        "art:task-example"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-width",
+      "objects": [
+        "art:all-code"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-width",
+      "objects": [
+        "art:skill-desc-2"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:curriculum-head-rule",
+        "text:curriculum:label:1"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:state-head-rule",
+        "text:state:label:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:feedback:label:0",
+        "art:feedback-payload"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:execute",
+        "art:all-code"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:all-code",
+        "art:primitives"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:task",
+        "action"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:retrieved-code",
+        "skills"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "font-metrics",
+      "objects": [],
+      "message": "Text bounds use Helvetica estimates; independently render the selected font"
+    }
+  ],
+  "metrics": {
+    "nodes": 7,
+    "edges": 12,
+    "texts": 33,
+    "groups": 1,
+    "minFinalTextPt": 8.662500000000001,
+    "nativeShapes": 74,
+    "nativeConnectors": 16,
+    "logicalEdges": 12,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 33,
+    "pictures": 0,
+    "editableRatio": 1
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

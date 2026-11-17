@@ -1,0 +1,38 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/react_paper_audit"
+  },
+  "verdict": "revise",
+  "checks": {
+    "referenceComparison": "pass",
+    "semanticFidelity": "revise",
+    "composition": "pass",
+    "modalityIdentity": "pass",
+    "typography": "pass",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "pass"
+  },
+  "reference": {
+    "path": "../../blip2-opt-code/output-solid/figure.png",
+    "sha256": "5af776269bdc0c4592c312c12f9c3dee60a99ce1bf08f7450a91081e6eb43fd9"
+  },
+  "artifacts": {
+    "spec.json": "9469b3c06bbaf6840ac71d64d69a27d298825a95b690585d3500e5596f531aed",
+    "figure.svg": "20d3d80b43c081a7e0c878592f7b93b23ac0b718804b730e0339122cd3433d68",
+    "figure.pptx": "13dab54551e33170ee50b85f99a607e12f80a7c6cd6449e81b8536b903d93219",
+    "figure.pdf": "d580efd22fb426a100d73638ee41173c0b2e307ee040f4d8930d7678de5ee041",
+    "figure.png": "5b94e150234ffc312efed3bf6a445aaf82dfea7546a284c7f343b66a28426781",
+    "rendered-pptx/figure.png": "2b0ea541f6d6d982e9f0ddab73e9ee00d2103ff4f00e918086a0e26c5b2a3679",
+    "rendered-pdf/figure.png": "274148b091f830d0472c90be899b51e17a596b33430a303c9ff21de791cc7d8a"
+  },
+  "notes": [
+    "Inspected the frozen preview, LibreOffice PPTX raster, and PDF raster at publication scale; no author ReAct figure was inspected.",
+    "Solid fills and native serif labels carry the BLIP2 reference's applicable design language; ReAct-specific topology is an allowed deviation under design-contract.json.",
+    "Blue consistently denotes LM computation, green denotes retained text scoped locally to the question, and gray-white denotes tools/I-O; no gradients or training/gradient arrows are shown.",
+    "Revise: the figure shows successful Finish termination but omits the code-verified seven-iteration cap and forced finish[] on exhaustion, so the feedback loop can be read as unbounded.",
+    "Native-object evidence is mechanical only: qa.json reports editableRatio=1 with 18 native text boxes, 26 native shapes, 12 native connector segments, and zero pictures."
+  ]
+}

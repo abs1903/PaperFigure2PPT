@@ -1,0 +1,49 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/mae_native_review",
+    "isolation": "Reference inventory was independently recorded in ../native-reference-inspection.md before output-v2 was opened; the reviewer did not author the scene, SVG, PPTX, contract, or QA."
+  },
+  "verdict": "accept",
+  "referenceFidelity": "pass",
+  "svgNativeEditability": "pass",
+  "pptxNativeEditability": "pass",
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766"
+  },
+  "artifacts": {
+    "ledger": {"path": "reference-transcript.json", "sha256": "bb721db072977ba361e44a56c3ad62cd81e570d476169a6bd63f9159fe8095db"},
+    "svg": {"path": "editable.svg", "sha256": "417fb7cafa273edd015b80386ae69986164405c6f739fa819dd80da8681dbd8a"},
+    "svgPreview": {"path": "preview.png", "sha256": "21e9c780d2195df90b227de607d1ceabf3e3a1c2dae73714b68509bdd8256c12"},
+    "pptx": {"path": "figure.pptx", "sha256": "e2d8f3bc23f6b8e692e2db2660067ede8dc2c02b808577ad13830e4397489eb2"},
+    "pptxRender": {"path": "native-render/preview.png", "sha256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa"},
+    "pptxPdf": {"path": "native-render/figure.pdf", "sha256": "02e197aa3ad4f22714f09c05ad4d6c6b2e08205d1254a7e1e0680ec4bc2bfa04"},
+    "objectMap": {"path": "pptx-object-map.json", "sha256": "7ba8e0689d743484e0ef66b35bf27ed4f0835eb56e30631faef242f02e6ff297"},
+    "nativeAudit": {"path": "native-audit.json", "sha256": "5749c5abad683f55230d8d3d8a25104257d4dce50998cde4596771394ee44be7"},
+    "officeRenderAudit": {"path": "native-render/render-qa.json", "sha256": "7c5e2af9bbccd34d5e30596acd4b572a8298b99b4c8ac59832487eebe569add0"},
+    "fullComparison": {"path": "reference-svg-office-triptych.png", "sha256": "832ef3b0552b345e4982661ac2f996d844fc8318ad55dcfe4dd199ab6963dd62"},
+    "paperWidth": {
+      "reference": {"path": "reference-paper-width.png", "sha256": "a7ebe892df3a8e3bbd02be19fb1b01953866c830b149686267e0a090a48ad0a0"},
+      "svg": {"path": "svg-paper-width.png", "sha256": "5653a4f8e79ecc5bca4aad303d003e4fef95df0294d710b4fcc3da80122840ac"},
+      "office": {"path": "office-paper-width.png", "sha256": "35c94357354a298627d5a964913836cf0eaf5d4b21d2f9a5472b9e42202d8620"}
+    }
+  },
+  "regionChecklist": [
+    {"region": "upper sparse pipeline", "status": "pass", "finding": "Image grid, four visible tokens, large encoder, four encoded tokens, restore step, restored 4x4 grid, lightweight decoder, and full prediction grid retain the frozen target geometry and direction."},
+    {"region": "post-encoder restoration", "status": "pass", "finding": "One gray learned token marked x12 enters Restore order only after Encoder; restored blue cells are r1c1/r1c4/r3c2/r4c4 and the other 12 are gray."},
+    {"region": "objective band", "status": "pass", "finding": "Target and prediction insets each retain 4x4 landscape grids; dashed binary-mask path feeds the 4x4 selector; selector white cells match the four visible positions and its other 12 cells are gold before Masked-patch MSE."},
+    {"region": "text and routes", "status": "pass", "finding": "All 25 reference text lines remain direct native text with the reference line breaks; all 15 directed routes and two dashed metadata routes remain visible and distinguishable. No title/footer or unapproved scientific claim appears."},
+    {"region": "cross-format parity", "status": "pass", "finding": "SVG and actual LibreOffice images were opened at 1774x887 and 672x336. Compact lower labels, loss selector, dashes, arrowheads, and ordering remain readable and visually faithful."},
+    {"region": "native editability", "status": "pass", "finding": "SVG inspection found real text and no image/foreignObject. PPTX XML inspection found 198 native shapes, 20 p:cxnSp connector segments, 25 literal a:t nodes, and no p:pic/a:blip; object map/audit crosswalk this to 21 text boxes and 147 native shapes."}
+  ],
+  "authorizedDeviations": [
+    "Mild target gradients are source-color solid fills.",
+    "Unknown raster typography is approximated with Arial Bold.",
+    "Landscape mountain microcontours are approximate."
+  ],
+  "unresolvedExceptions": [
+    "Interactive Microsoft PowerPoint editing behavior was not tested; native XML/object-map and an actual LibreOffice render establish the delivered PPTX's native construction and rendered fidelity only.",
+    "Exact source raster font identity remains unknown; the permitted Arial Bold approximation was visually checked."
+  ]
+}

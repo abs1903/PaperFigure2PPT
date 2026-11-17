@@ -1,0 +1,26 @@
+{
+  "firstOfficeFailure": "output-v1/native-render/render-qa.json",
+  "firstOfficeErrors": [
+    {
+      "code": "native-text-invisible",
+      "id": "label-block:llm-files"
+    },
+    {
+      "code": "native-text-invisible",
+      "id": "label-block:llm-elements"
+    },
+    {
+      "code": "native-text-invisible",
+      "id": "label-block:llm-locations"
+    },
+    {
+      "code": "native-text-invisible",
+      "id": "label-block:llm-repair"
+    }
+  ],
+  "observed": "Full composed Office preview contains white LLM glyphs on blue badges. Text-isolation deck removed badge fills and used white page background, so a dark-ink-only test falsely classified them as invisible.",
+  "discardedHypothesis": "RGBA alpha masking alone is insufficient: LibreOffice paints an opaque page background.",
+  "focusedFix": "Text-isolation slides now choose a contrasting matte from unchanged native text colors; mask uses the same 35-level contrast floor, while all geometry/centering/wrap/route thresholds remain unchanged.",
+  "regressionTests": "Four actual MuPDF raster tests: light/dark glyph bounds, mixed white/black runs, blank mattes and equivalence to original dark-on-white mask.",
+  "scopeLimit": "Matte isolation proves rendered glyph presence/placement, not full-slide contrast or occlusion. Full actual Office preview requires independent visual review."
+}

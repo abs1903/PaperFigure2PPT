@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "selected": "candidate-b2.png",
+  "selectionReason": "B preserves the preferred continuous asymmetric forward path; attached B2 corrects same-mask 16-cell loss selector and exact loss label. Source-informed review accepts; independent pixel-only rereading retained.",
+  "authorFigureSeen": true,
+  "imageCalls": {
+    "initial": 2,
+    "attachedEdits": 1,
+    "used": 3,
+    "maximum": 4
+  },
+  "rejected": [
+    {
+      "candidate": "candidate-a.png",
+      "reason": "Loss selector has five blue cells; visible encoder lane has four."
+    },
+    {
+      "candidate": "candidate-b.png",
+      "reason": "Loss selector is only 3x4; duplicated standalone MSE and compressed loss inset."
+    }
+  ],
+  "hashes": {
+    "selected-reference.png": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "candidate-b2.png": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "image-review-b2.json": "3b524ffec5098c0c379dd56c26bf1211c93d68c2928ee716bd98e72f08ab69ab",
+    "rereading-c.json": "4f10133e85fe899c48ddf15fc60d0d797b86bb5e9b3f94a910f71d48456c5af8",
+    "semantic-freeze.json": "9a83ccd754cc98c472f9e110c3a797bd92d0f382aaab4646329f293fd151effa",
+    "reference-geometry.json": "9b694b6b42613ab8a27decdd63485c85a6f5ff847151863434f76f5bfaabbc8b"
+  },
+  "scope": "Raster target acceptance only. Actual SVG/PPTX/Office/independent native verdict separate."
+}

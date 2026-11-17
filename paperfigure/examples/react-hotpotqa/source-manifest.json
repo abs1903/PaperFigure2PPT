@@ -1,0 +1,31 @@
+{
+  "repo": "ysymyth/ReAct",
+  "commit": "6bdb3a1fd38b8188fc7ba4102969fe483df8fdc9",
+  "files": {
+    "hotpotqa.ipynb": {
+      "sha256": "4c42f4818b721eab15023261c8de41da70f31f60c6fa181d33a743f45b8382f3",
+      "bytes": 5027,
+      "url": "https://raw.githubusercontent.com/ysymyth/ReAct/6bdb3a1fd38b8188fc7ba4102969fe483df8fdc9/hotpotqa.ipynb"
+    },
+    "wikienv.py": {
+      "sha256": "0de8f4429b3c94bbb0cf826171109faee2b8f04863bcc032cac1dbb4f4fccb30",
+      "bytes": 5533,
+      "url": "https://raw.githubusercontent.com/ysymyth/ReAct/6bdb3a1fd38b8188fc7ba4102969fe483df8fdc9/wikienv.py"
+    },
+    "wrappers.py": {
+      "sha256": "60fb59bf1ae615c18f0db86f4ad2beb67bd2419d74b87a57f6bb18eb28e58d5a",
+      "bytes": 7625,
+      "url": "https://raw.githubusercontent.com/ysymyth/ReAct/6bdb3a1fd38b8188fc7ba4102969fe483df8fdc9/wrappers.py"
+    },
+    "LICENSE": {
+      "sha256": "cd2d341de1d3781e993e9859b1a36e8bfe12c84507c0a52f21c0220743af475b",
+      "bytes": 1067,
+      "url": "https://raw.githubusercontent.com/ysymyth/ReAct/6bdb3a1fd38b8188fc7ba4102969fe483df8fdc9/LICENSE"
+    },
+    "hotpotqa_code.py": {
+      "sha256": "d499341328bd2610f9d657129e97e811eaf0e9f208fc8a316bcb7ee96214ff26",
+      "derivedFrom": "hotpotqa.ipynb code cells, original order, outputs excluded"
+    }
+  },
+  "note": "Selected source snapshot; code not executed. No external model calls, environments or weights."
+}

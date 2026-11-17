@@ -1,0 +1,29 @@
+Observation
+
+ReAct actor
+Question
+Thought + action loop
+
+Action
+
+Exact-match check
+
+Wikipedia tools
+
+Answer vs. key
+Search / Lookup
+
+Correct: stop
+
+Finish / halt
+Incorrect
+Prior trace
+Next run(): fresh attempt
+
+Reflection memory
+Same-question retries
+
+Append
+
+Self-reflection LM
+Truncated prior trace

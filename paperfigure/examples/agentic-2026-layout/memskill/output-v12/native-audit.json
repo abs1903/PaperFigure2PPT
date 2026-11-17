@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "nativeTextBoxes": 233,
+    "nativeSVGLabelsCovered": 238,
+    "centeredTextBlocks": 12,
+    "nativeSemanticConnectorSegments": 48,
+    "nativeLineArt": 18,
+    "nativeShapes": 206,
+    "auxiliaryPorts": 76,
+    "groups": 54,
+    "pictures": 0,
+    "media": 0,
+    "contentObjects": 505
+  },
+  "editability": {
+    "nativeContent": 505,
+    "totalContent": 505,
+    "ratio": 1,
+    "excluded": "Transparent auxiliary ports and semantic groups; native representation is not visual quality."
+  },
+  "endpointBinding": "Actual a:stCxn/a:endCxn IDs point to native port helpers inside owning module groups; full orthogonal rerouting is separate.",
+  "limits": [
+    "XML checks do not establish visual fidelity. Independently render the PPTX.",
+    "Moving a grouped module is supported; complex route segments may need reflow.",
+    "Interactive Microsoft PowerPoint behavior is not inferred from LibreOffice."
+  ]
+}

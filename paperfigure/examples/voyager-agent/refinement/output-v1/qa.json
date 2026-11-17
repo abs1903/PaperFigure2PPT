@@ -1,0 +1,141 @@
+{
+  "passed": false,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [
+    {
+      "code": "text-width",
+      "objects": [
+        "art:critic-output"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:curriculum-head-rule",
+        "text:curriculum:label:1"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "glyph-text-overlap",
+      "objects": [
+        "art:world-block-3",
+        "text:world:label:0"
+      ],
+      "message": "Undeclared glyph overlaps module text"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "edge-label:execute",
+        "edge-label:runtime-feedback"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:code-0",
+        "art:code-1"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:code-1",
+        "art:code-2"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:code-2",
+        "art:code-3"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:all-code",
+        "art:primitives"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "art:state-events",
+        "art:state-history"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:latest",
+        "world"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "execute",
+        "edge-label:runtime-feedback"
+      ],
+      "message": "Edge passes through text box"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "success",
+        "edge-label:critique"
+      ],
+      "message": "Edge passes through text box"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "edge-crossing",
+      "objects": [
+        "retrieved-code",
+        "context-query"
+      ],
+      "message": "1 proper segment intersection(s); review ambiguity"
+    },
+    {
+      "code": "font-metrics",
+      "objects": [],
+      "message": "Text bounds use Helvetica estimates; independently render the selected font"
+    }
+  ],
+  "metrics": {
+    "nodes": 6,
+    "edges": 12,
+    "texts": 39,
+    "groups": 0,
+    "minFinalTextPt": 7.0874999999999995,
+    "nativeShapes": 72,
+    "nativeConnectors": 26,
+    "logicalEdges": 12,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 39,
+    "pictures": 0,
+    "editableRatio": 1
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

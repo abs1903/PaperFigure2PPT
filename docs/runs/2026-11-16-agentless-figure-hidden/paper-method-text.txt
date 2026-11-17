@@ -1,0 +1,89 @@
+2
+Agentless
+Approach
+2.1
+Localization
+To fix or implement a new feature, the first step is to obtain the locations in the source code, as without the correct locations, it can be impossible to provide the right edits.
+The difficulty lies in the fact that there could be hundreds of files
+with thousands of lines of code each in a repository, whereas the correct locations to edit are only a few selected lines or functions.
+Agentless
+addresses this by using a simple three-step hierarchical localization process: 1) localize to selected files; 2) localize each selected files into relevant classes, functions, and variables; 3) localize to code edit locations.
+Localize to suspicious files.
+First,
+Agentless
+localizes the possible locations to specific suspicious files.
+Instead of providing the complete code snippet for each file in the repository,
+Agentless
+constructs a succinct representation of the repository’s file and directory structure.
+We refer to this as the
+repository structure format
+,
+which begins with the root folder of the repository and organizes code files or folder names.
+Files and folders at the same directory level are aligned vertically, and files/folders in sub-directories are indented.
+We recursively traverse the entire repository to obtain the repository structure format, which will be used as input for the LLM.
+The repository structure format provides the necessary file paths alongside the neighboring file names to maintain organizational information in the original codebase.
+Agentless
+then inputs the processed repository structure format along with the original issue description to an LLM and requests it to identify a list of the top N suspicious files in the repository that need further inspection or modification to resolve the issue.
+Localize to edit locations.
+The previous localization step provided us with a list of related code elements.
+We then directly provide the code content from these elements to the model and ask it to localize to specific edit locations.
+Compared to using the entire file content, the input context we provide here is much smaller.
+With this input, we then ask the LLM to identify the final set of edit locations, specified by line numbers, functions, or classes.
+Our simple hierarchical localization process allows
+Agentless
+to select a set of relevant code snippets as edit locations to perform repair.
+2.2
+Repair
+In the repair stage, the goal is to produce the correct patch to solve the issue.
+Following existing work on LLM-based program repair
+Kolak et al. [2022]
+;
+Prenner et al. [2022]
+;
+Jiang et al. [2023]
+, we first utilize the identified edit locations and construct a context window of code snippets to provide to the LLM for repair.
+For example, if the identified location was a class from line 40 to 78, we would produce a context window of
+[40 - x, 78 + x]
+where
+x
+denotes the context window size.
+The intuition behind adding the additional code before and after the identified location is to provide the LLM with relevant contextual information for better program repair
+Xia & Zhang [2022]
+.
+If multiple edit locations are identified, we would concatenate these context windows together separated with “
+...
+” to indicate missing context in the middle.
+Filtering and patch selection.
+For each issue,
+Agentless
+uses the LLM to generate multiple potential patches (starting with greedy and then sample multiple patches with higher temperature).
+We also apply traditional software engineering technique of regression testing
+Wong et al. [1997]
+to run the existing tests in the repository on all the generated patches.
+Any patches which failed the existing tests can be filtered out as they incorrectly change the correct behavior of previous code.
+Note, our implementation of this regression test filtering step follows prior work also evaluated on the same benchmark
+Gauthier [2024]
+;
+Chen et al. [2024]
+.
+For the remaining patches,
+Agentless
+applies a re-ranking approach using majority voting:
+We first normalize each patch to ignore surface-level differences (e.g., extra spaces, newlines, and comments), and then select the patch with the highest number of occurrences as the final patch for submission. More specifically, to standardize the patch, we begin by parsing both the old and new code (after applying the patch) into abstract syntax trees. Next, we unparse the trees into a canonical source code format with docstrings removed. Finally, we compute the textual diff between the standardized old and new code to get the normalized patch.
+Agentless
+solves repository-level issues using a simple step-by-step procedure.
+We note here that none of the techniques used by
+Agentless
+in isolation are revolutionary,
+but instead
+Agentless
+smartly combines existing techniques to construct an easy-to-understand approach.
+Different from prior autonomous agent-based tools that involve complex interactions with the environment,
+Agentless
+uses a simple two phase approach to first localize and then repair the bug without relying on any agents for decision-making.
+By conducting localization in a hierarchical manner,
+Agentless
+can efficiently and effectively compute the fine-grained locations for editing.
+Agentless
+then performs repair by sampling multiple patches using a simple diff format.
+We filter out any patches with syntax and regression tests errors, and finally select the patch for submission using classic majority voting.

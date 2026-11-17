@@ -1,0 +1,8 @@
+{
+  "stage": "native-reconstruction-independently-accepted",
+  "output": "../2026-11-17-agentless-native/output-v2",
+  "deliveryPath": "../2026-11-17-agentless-native/output-v2/delivery.json",
+  "deliverySHA256": "c4b3c3e5b8bb817bf3774293b04259aef6372f1766d208e997f51223d0a0f63a",
+  "selectedTargetSHA256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+  "notes": "Original image-stage records retain their historical scope; actual downstream native/Office acceptance is documented here."
+}

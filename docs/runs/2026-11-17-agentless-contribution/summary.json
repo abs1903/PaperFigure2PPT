@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "sourceContributionReview": "accept",
+  "rasterReview": "accept",
+  "contributionVisibility": "pass",
+  "knownTechniqueCombinationBoundary": "pass",
+  "actualCalls": {
+    "generate": 1,
+    "attachedImageEdits": 2
+  },
+  "selectedImage": "selected-reference.png",
+  "selectedSHA256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+  "figureHidden": false,
+  "qualitativeComparison": "Contribution mechanisms more explicit than user-rejected pipeline; author retains stronger concrete issue/code grounding. No overall superiority claim.",
+  "verification": {
+    "skillFormat": "pass",
+    "specBriefAndPromptCompilation": "pass",
+    "reviewHashReferences": 34,
+    "localLinks": 94,
+    "frozenInputsUnchanged": true
+  },
+  "nativeOfficeDeliveryReady": false,
+  "previousUserRejectionPreserved": true
+}

@@ -1,0 +1,209 @@
+{
+  "version": "1.1",
+  "semanticSHA256": "4fa488bc1a4e61ca78f6743cb7e9db144c879769c5b1ca180a2986300031f579",
+  "scope": "Paper-v1 method contribution and its supporting mechanisms, not a configured later code route. Benchmark auditing/Lite-S is a separate paper contribution outside this method illustration. No benchmark execution or correctness guarantee.",
+  "sourceReview": "../../2026-11-17-agentless-contribution/source-contribution-review-v2.md",
+  "blocks": [
+    {
+      "id": "issue",
+      "label": "Issue report",
+      "nodes": [
+        "issue"
+      ],
+      "representation": "Small shared Issue report input, tapped to file/element selection and repair generation; no autonomous next-action controller."
+    },
+    {
+      "id": "localize",
+      "label": "Hierarchical localization",
+      "nodes": [
+        "codebase",
+        "repository",
+        "files",
+        "skeletons",
+        "elements",
+        "element-code",
+        "locations",
+        "context"
+      ],
+      "representation": "One coherent source-focus illustration: Code repository -> Build tree -> Repository tree; LLM selects files; Build skeletons derives signatures; LLM selects elements; Read code retrieves original source; LLM selects edit locations; Context padding retains gray source around the gold interval. Preserve fields.py, UUIDField and to_python across views. Use the selected composition, not equal cards."
+    },
+    {
+      "id": "repair",
+      "label": "Localized Search/Replace",
+      "nodes": [
+        "samples"
+      ],
+      "representation": "Focused source arrives in a Context window. An issue-conditioned LLM generates local Search/Replace edits: gold interval magnifies into red-minus SEARCH and green-plus REPLACE strips, with surrounding source unchanged. A fan shows multiple Candidate patches. Use schematic code strokes, not an invented successful bug fix."
+    },
+    {
+      "id": "select",
+      "label": "Filter + frequency selection",
+      "nodes": [
+        "filter",
+        "rank",
+        "patch"
+      ],
+      "representation": "Small deterministic strip: Syntax + regression -> Normalize + frequency -> Selected patch. No LLM badge; exact output serialization and repair correctness are unspecified."
+    }
+  ],
+  "relations": [
+    {
+      "edge": "codebase-tree",
+      "mode": "internal",
+      "display": "Original repository yields a tree through deterministic Build tree."
+    },
+    {
+      "edge": "files-skeletons",
+      "mode": "internal",
+      "display": "Selected files yield source-derived Skeletons via Build skeletons, not model-written source."
+    },
+    {
+      "edge": "elements-code",
+      "mode": "internal",
+      "display": "Selected identifiers retrieve original source through Read code."
+    },
+    {
+      "edge": "issue-files",
+      "mode": "arrow",
+      "display": "Issue feeds the first, file-selection LLM."
+    },
+    {
+      "edge": "issue-elements",
+      "mode": "arrow",
+      "display": "The same issue feeds the element-selection LLM."
+    },
+    {
+      "edge": "issue-samples",
+      "mode": "arrow",
+      "display": "The same issue also feeds the local-edit generation LLM."
+    },
+    {
+      "edge": "repo-files",
+      "mode": "internal",
+      "display": "Repository tree feeds LLM selection of file paths."
+    },
+    {
+      "edge": "files-elements",
+      "mode": "internal",
+      "display": "Skeletons feed LLM selection of relevant elements."
+    },
+    {
+      "edge": "elements-locations",
+      "mode": "internal",
+      "display": "Original selected code feeds LLM selection of edit locations; no extra direct issue edge is asserted."
+    },
+    {
+      "edge": "locations-context",
+      "mode": "internal",
+      "display": "Selected interval plus surrounding original code represents deterministic context padding."
+    },
+    {
+      "edge": "context-samples",
+      "mode": "arrow",
+      "display": "Focused context feeds local Search/Replace generation, never a direct raw-context-to-filter bypass."
+    },
+    {
+      "edge": "samples-filter",
+      "mode": "arrow",
+      "display": "Generated candidate patches feed deterministic filtering."
+    },
+    {
+      "edge": "filter-rank",
+      "mode": "internal",
+      "display": "Syntax/regression filtering precedes normalization/frequency ranking."
+    },
+    {
+      "edge": "rank-patch",
+      "mode": "internal",
+      "display": "Ranking yields Selected patch; no serialization or correctness guarantee."
+    }
+  ],
+  "labels": [
+    "Hierarchical localization",
+    "Localized Search/Replace",
+    "Issue report",
+    "Code repository",
+    "Repository tree",
+    "Build tree",
+    "Selected files",
+    "Build skeletons",
+    "Skeletons",
+    "Read code",
+    "Selected code",
+    "Edit locations",
+    "Context padding",
+    "Context window",
+    "LLM",
+    "fields.py",
+    "UUIDField",
+    "to_python",
+    "SEARCH",
+    "REPLACE",
+    "Candidate patches",
+    "Syntax + regression",
+    "Normalize + frequency",
+    "Selected patch",
+    "Fixed localization + repair",
+    "No autonomous planning"
+  ],
+  "maxVisibleWords": 85,
+  "publicationWidthIn": 7,
+  "typography": "Publication width seven inches: focal mechanism labels dominant but restrained, main labels around 9pt or above, source identifiers small but legible as repeated linked cues. No dense full function signatures, large numeric steps, tiny prose or text-over-arrow collisions.",
+  "palette": [
+    {
+      "color": "#64748B",
+      "meaning": "Original source, input and deterministic support",
+      "nodes": [
+        "issue",
+        "codebase",
+        "repository",
+        "skeletons",
+        "element-code",
+        "context",
+        "filter",
+        "rank"
+      ]
+    },
+    {
+      "color": "#2563EB",
+      "meaning": "Bounded LLM-driven source selections",
+      "nodes": [
+        "files",
+        "elements"
+      ]
+    },
+    {
+      "color": "#FDE68A",
+      "meaning": "Selected interval in unchanged original source; not a generated edit",
+      "nodes": [
+        "locations"
+      ]
+    },
+    {
+      "color": "#0F766E",
+      "meaning": "Generated candidate and selected output, not correctness",
+      "nodes": [
+        "samples",
+        "patch"
+      ]
+    }
+  ],
+  "forbidden": [
+    "Claiming each established component is a new invention",
+    "Autonomous agent/controller/planning loop or weight training",
+    "LLM building repository tree, skeletons or original source content",
+    "Red/green +/- diff inside localization before generation",
+    "Replacing an entire source file rather than local Search/Replace",
+    "Invented concrete bug, faulty/repaired statement or successful repair",
+    "New empirical counts or performance/cost badges",
+    "Dataset-audit/Lite-S as a method-computation module",
+    "Later-code least-failure/fallback branches",
+    "Numbered uniform step-card pipeline",
+    "Huge phase braces, colored background bands, shadows or gradients"
+  ],
+  "narrative": {
+    "path": "narrative-plan.json",
+    "sha256": "682a2220629cbee306f26b347881cac8a42c2175c1783b696ff6adbe35a9dd3c"
+  },
+  "compositionId": "source-funnel"
+}

@@ -1,0 +1,37 @@
+{
+  "repo": "MineDojo/Voyager",
+  "commit": "55e45a880755d0c8c66ca7fb5fe7962ac8974f89",
+  "files": {
+    "skill_library/trial1/skill/code/mineWoodLog.js": {
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/skill_library/trial1/skill/code/mineWoodLog.js",
+      "sha256": "b8e4f15f4d283ad2c1f9dcc307a14c18d6c3e5cc1c581c6640c07661e29f1e40",
+      "bytes": 577
+    },
+    "skill_library/trial1/skill/code/craftCraftingTable.js": {
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/skill_library/trial1/skill/code/craftCraftingTable.js",
+      "sha256": "0f0fe53ae0bc9d91fefdad522772272997f052386c9c5bb714b2b797b8179a85",
+      "bytes": 760
+    },
+    "skill_library/trial1/skill/code/craftWoodenPickaxe.js": {
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/skill_library/trial1/skill/code/craftWoodenPickaxe.js",
+      "sha256": "14d00cc0e41a9137c7ff8d9858fa26d5d21ef197ee5b4f98974eb591411e68e1",
+      "bytes": 1451
+    },
+    "skill_library/trial1/skill/description/mineWoodLog.txt": {
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/skill_library/trial1/skill/description/mineWoodLog.txt",
+      "sha256": "dc5df906091a0244420b3c3aaaaed8fcd52d1ee512a6aaf44a1615b5a2cea431",
+      "bytes": 341
+    },
+    "skill_library/trial1/skill/description/craftCraftingTable.txt": {
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/skill_library/trial1/skill/description/craftCraftingTable.txt",
+      "sha256": "6de6a0703e569abadd2beafcb31ba62ba7070a3eaed3392e39a6f31534ae0c4e",
+      "bytes": 269
+    },
+    "skill_library/trial1/skill/description/craftWoodenPickaxe.txt": {
+      "url": "https://raw.githubusercontent.com/MineDojo/Voyager/55e45a880755d0c8c66ca7fb5fe7962ac8974f89/skill_library/trial1/skill/description/craftWoodenPickaxe.txt",
+      "sha256": "69fb6872c342a61cb0626cd6cca29f0084333a3e856592edeb13c19def24042f",
+      "bytes": 319
+    }
+  },
+  "note": "Author-released skill artifacts, not a fresh execution. Retain parent MIT license; do not infer new outcomes."
+}

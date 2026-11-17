@@ -1,0 +1,2953 @@
+[
+  {
+    "id": 2,
+    "name": "control-brace-path",
+    "type": "shape",
+    "owner": "control-brace",
+    "bbox": [
+      127,
+      57,
+      1466,
+      30
+    ]
+  },
+  {
+    "id": 192,
+    "name": "control-brace",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 3,
+    "name": "fixed-control-box",
+    "type": "shape",
+    "owner": "fixed-control",
+    "bbox": [
+      334,
+      8,
+      637,
+      68
+    ]
+  },
+  {
+    "id": 143,
+    "name": "label-block:fixed-control",
+    "type": "text-block",
+    "owner": "fixed-control",
+    "sourceTextIds": [
+      "text-fixed-control-0"
+    ],
+    "text": "Fixed localization + repair",
+    "bbox": [
+      334,
+      8,
+      637,
+      68
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 193,
+    "name": "fixed-control",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "no-autonomy-box",
+    "type": "shape",
+    "owner": "no-autonomy",
+    "bbox": [
+      1003,
+      14,
+      421,
+      52
+    ]
+  },
+  {
+    "id": 144,
+    "name": "label-block:no-autonomy",
+    "type": "text-block",
+    "owner": "no-autonomy",
+    "sourceTextIds": [
+      "text-no-autonomy-0"
+    ],
+    "text": "No autonomous planning",
+    "bbox": [
+      1003,
+      14,
+      421,
+      52
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 194,
+    "name": "no-autonomy",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 5,
+    "name": "funnel-fill",
+    "type": "shape",
+    "owner": "funnel",
+    "bbox": [
+      92,
+      117,
+      810,
+      838
+    ]
+  },
+  {
+    "id": 6,
+    "name": "repo-band",
+    "type": "shape",
+    "owner": "funnel",
+    "bbox": [
+      108,
+      185,
+      779,
+      197
+    ]
+  },
+  {
+    "id": 7,
+    "name": "files-band",
+    "type": "shape",
+    "owner": "funnel",
+    "bbox": [
+      157,
+      391,
+      681,
+      161
+    ]
+  },
+  {
+    "id": 8,
+    "name": "elements-band",
+    "type": "shape",
+    "owner": "funnel",
+    "bbox": [
+      197,
+      562,
+      600,
+      139
+    ]
+  },
+  {
+    "id": 9,
+    "name": "locations-band",
+    "type": "shape",
+    "owner": "funnel",
+    "bbox": [
+      232,
+      710,
+      530,
+      55
+    ]
+  },
+  {
+    "id": 10,
+    "name": "context-band",
+    "type": "shape",
+    "owner": "funnel",
+    "bbox": [
+      248,
+      777,
+      496,
+      174
+    ]
+  },
+  {
+    "id": 11,
+    "name": "funnel-outline",
+    "type": "shape",
+    "owner": "funnel",
+    "bbox": [
+      92,
+      117,
+      810,
+      838
+    ]
+  },
+  {
+    "id": 73,
+    "name": "heading-localize",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Hierarchical localization",
+    "font": "Arial",
+    "fontSize": 44,
+    "bbox": [
+      262.6279296875,
+      125.010234375,
+      503.744140625,
+      55
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 75,
+    "name": "repo-caption-a",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Code",
+    "font": "Arial",
+    "fontSize": 30,
+    "bbox": [
+      244.5,
+      191.1373046875,
+      75,
+      37.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 76,
+    "name": "repo-caption-b",
+    "type": "text",
+    "owner": "funnel",
+    "text": "repository",
+    "font": "Arial",
+    "fontSize": 30,
+    "bbox": [
+      212.14794921875,
+      215.98056640625,
+      146.7041015625,
+      37.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 77,
+    "name": "tree-caption",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Repository tree",
+    "font": "Arial",
+    "fontSize": 29,
+    "bbox": [
+      552.135986328125,
+      185.147880859375,
+      212.72802734375,
+      36.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 78,
+    "name": "build-tree",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Build tree",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      412.1923828125,
+      257.80126953125,
+      105.615234375,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 92,
+    "name": "selected-files-caption",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Selected files",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      276.598876953125,
+      423.941650390625,
+      159.80224609375,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 94,
+    "name": "build-skeletons-a",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Build",
+    "font": "Arial",
+    "fontSize": 24,
+    "bbox": [
+      475.31640625,
+      440.36921875,
+      53.3671875,
+      30
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 95,
+    "name": "build-skeletons-b",
+    "type": "text",
+    "owner": "funnel",
+    "text": "skeletons",
+    "font": "Arial",
+    "fontSize": 24,
+    "bbox": [
+      453.8046875,
+      467.86921875,
+      101.390625,
+      30
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 96,
+    "name": "skeleton-caption",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Skeletons",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      618.724365234375,
+      416.816982421875,
+      127.55126953125,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 99,
+    "name": "selected-element-caption",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Selected element",
+    "font": "Arial Narrow",
+    "fontSize": 26,
+    "bbox": [
+      302,
+      580.37931640625,
+      174.205078125,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 101,
+    "name": "read-code",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Read code",
+    "font": "Arial Narrow",
+    "fontSize": 25,
+    "bbox": [
+      472.421142578125,
+      616.80126953125,
+      99.15771484375,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 102,
+    "name": "selected-code-caption",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Selected code",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      589.57373046875,
+      579.37931640625,
+      174.8525390625,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 106,
+    "name": "locations-caption",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Edit locations",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      435.27001953125,
+      724.7333203125,
+      170.4599609375,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 107,
+    "name": "left-context-caption",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Context window",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      437.841796875,
+      800.3856640625,
+      199.31640625,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 108,
+    "name": "context-padding-a",
+    "type": "text",
+    "owner": "funnel",
+    "text": "Context",
+    "font": "Arial",
+    "fontSize": 24,
+    "bbox": [
+      287.64453125,
+      827.50984375,
+      82.7109375,
+      30
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 109,
+    "name": "context-padding-b",
+    "type": "text",
+    "owner": "funnel",
+    "text": "padding",
+    "font": "Arial",
+    "fontSize": 24,
+    "bbox": [
+      286.291015625,
+      850.984453125,
+      85.41796875,
+      30
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 169,
+    "name": "port-15-funnel",
+    "type": "port-helper",
+    "owner": "funnel",
+    "point": [
+      287,
+      889
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 15,
+    "name": "repo-page-0",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      255,
+      268,
+      91,
+      77
+    ]
+  },
+  {
+    "id": 16,
+    "name": "repo-fold-0",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      329,
+      268,
+      17,
+      17
+    ]
+  },
+  {
+    "id": 17,
+    "name": "repo-page-1",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      252,
+      284,
+      104,
+      77
+    ]
+  },
+  {
+    "id": 18,
+    "name": "repo-fold-1",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      339,
+      284,
+      17,
+      17
+    ]
+  },
+  {
+    "id": 19,
+    "name": "repo-page-2",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      238,
+      299,
+      132,
+      74
+    ]
+  },
+  {
+    "id": 20,
+    "name": "repo-fold-2",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      353,
+      299,
+      17,
+      17
+    ]
+  },
+  {
+    "id": 21,
+    "name": "repo-line-0",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      275,
+      315,
+      71,
+      6
+    ]
+  },
+  {
+    "id": 22,
+    "name": "repo-line-1",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      275,
+      331,
+      80,
+      6
+    ]
+  },
+  {
+    "id": 23,
+    "name": "repo-line-2",
+    "type": "shape",
+    "owner": "repo-document-stack",
+    "bbox": [
+      275,
+      347,
+      52,
+      6
+    ]
+  },
+  {
+    "id": 195,
+    "name": "repo-document-stack",
+    "type": "group",
+    "owner": "repo-icon"
+  },
+  {
+    "id": 155,
+    "name": "port-1-repo-icon",
+    "type": "port-helper",
+    "owner": "repo-icon",
+    "point": [
+      411,
+      299
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 196,
+    "name": "repo-icon",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 24,
+    "name": "folder-root",
+    "type": "shape",
+    "owner": "icon-folder-root",
+    "bbox": [
+      560,
+      230,
+      23,
+      19
+    ]
+  },
+  {
+    "id": 197,
+    "name": "icon-folder-root",
+    "type": "group",
+    "owner": "tree"
+  },
+  {
+    "id": 25,
+    "name": "folder-django",
+    "type": "shape",
+    "owner": "icon-folder-django",
+    "bbox": [
+      591,
+      265,
+      23,
+      19
+    ]
+  },
+  {
+    "id": 198,
+    "name": "icon-folder-django",
+    "type": "group",
+    "owner": "tree"
+  },
+  {
+    "id": 26,
+    "name": "folder-selected",
+    "type": "shape",
+    "owner": "icon-folder-selected",
+    "bbox": [
+      620,
+      320,
+      23,
+      19
+    ]
+  },
+  {
+    "id": 199,
+    "name": "icon-folder-selected",
+    "type": "group",
+    "owner": "tree"
+  },
+  {
+    "id": 27,
+    "name": "folder-other",
+    "type": "shape",
+    "owner": "icon-folder-other",
+    "bbox": [
+      591,
+      353,
+      23,
+      19
+    ]
+  },
+  {
+    "id": 200,
+    "name": "icon-folder-other",
+    "type": "group",
+    "owner": "tree"
+  },
+  {
+    "id": 28,
+    "name": "tree-trunk",
+    "type": "shape",
+    "owner": "tree",
+    "bbox": [
+      568,
+      263,
+      16,
+      100
+    ]
+  },
+  {
+    "id": 29,
+    "name": "tree-branch-a",
+    "type": "line-decoration",
+    "owner": "tree",
+    "bbox": [
+      568,
+      277,
+      16,
+      0
+    ]
+  },
+  {
+    "id": 30,
+    "name": "tree-subtrunk",
+    "type": "shape",
+    "owner": "tree",
+    "bbox": [
+      598,
+      299,
+      16,
+      33
+    ]
+  },
+  {
+    "id": 31,
+    "name": "tree-selected",
+    "type": "shape",
+    "owner": "tree",
+    "bbox": [
+      646,
+      316,
+      118,
+      33
+    ]
+  },
+  {
+    "id": 79,
+    "name": "tree-django",
+    "type": "text",
+    "owner": "tree",
+    "text": "django/",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      627,
+      256.6473046875,
+      88.58056640625,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 80,
+    "name": "tree-dots-0",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      609,
+      222.36369140624998,
+      21.6708984375,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 81,
+    "name": "tree-dots-1",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      609,
+      280.36369140625,
+      21.6708984375,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 82,
+    "name": "tree-dots-2",
+    "type": "text",
+    "owner": "tree",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 26,
+    "bbox": [
+      620,
+      341.36369140625,
+      21.6708984375,
+      32.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 83,
+    "name": "tree-selected-text",
+    "type": "text",
+    "owner": "tree",
+    "text": "fields.py",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      657.475830078125,
+      314.6473046875,
+      99.04833984375,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 156,
+    "name": "port-2-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      529,
+      299
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 157,
+    "name": "port-3-tree",
+    "type": "port-helper",
+    "owner": "tree",
+    "point": [
+      487,
+      386
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 201,
+    "name": "tree",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 32,
+    "name": "llm-files-box",
+    "type": "shape",
+    "owner": "llm-files",
+    "bbox": [
+      178,
+      442,
+      80,
+      42
+    ]
+  },
+  {
+    "id": 146,
+    "name": "label-block:llm-files",
+    "type": "text-block",
+    "owner": "llm-files",
+    "sourceTextIds": [
+      "text-llm-files-0"
+    ],
+    "text": "LLM",
+    "bbox": [
+      178,
+      442,
+      80,
+      42
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 172,
+    "name": "port-18-llm-files",
+    "type": "port-helper",
+    "owner": "llm-files",
+    "point": [
+      174,
+      464
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 202,
+    "name": "llm-files",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 33,
+    "name": "selected-files-box",
+    "type": "shape",
+    "owner": "selected-files",
+    "bbox": [
+      275,
+      459,
+      162,
+      50
+    ]
+  },
+  {
+    "id": 34,
+    "name": "selected-files-highlight",
+    "type": "shape",
+    "owner": "selected-files",
+    "bbox": [
+      287,
+      468,
+      136,
+      32
+    ]
+  },
+  {
+    "id": 147,
+    "name": "label-block:selected-files",
+    "type": "text-block",
+    "owner": "selected-files",
+    "sourceTextIds": [
+      "text-selected-files-0"
+    ],
+    "text": "fields.py",
+    "bbox": [
+      275,
+      459,
+      162,
+      50
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 158,
+    "name": "port-4-selected-files",
+    "type": "port-helper",
+    "owner": "selected-files",
+    "point": [
+      487,
+      415
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 159,
+    "name": "port-5-selected-files",
+    "type": "port-helper",
+    "owner": "selected-files",
+    "point": [
+      457,
+      500
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 203,
+    "name": "selected-files",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 35,
+    "name": "skeleton-box",
+    "type": "shape",
+    "owner": "skeleton",
+    "bbox": [
+      582,
+      449,
+      213,
+      86
+    ]
+  },
+  {
+    "id": 36,
+    "name": "skeleton-highlight",
+    "type": "shape",
+    "owner": "skeleton",
+    "bbox": [
+      593,
+      490,
+      191,
+      35
+    ]
+  },
+  {
+    "id": 97,
+    "name": "skeleton-uuid",
+    "type": "text",
+    "owner": "skeleton",
+    "text": "UUIDField(...)",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      598,
+      455.9697265625,
+      152.783203125,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 98,
+    "name": "skeleton-method",
+    "type": "text",
+    "owner": "skeleton",
+    "text": "to_python(...)",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      607,
+      488.6473046875,
+      159.08642578125,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 160,
+    "name": "port-6-skeleton",
+    "type": "port-helper",
+    "owner": "skeleton",
+    "point": [
+      567,
+      500
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 161,
+    "name": "port-7-skeleton",
+    "type": "port-helper",
+    "owner": "skeleton",
+    "point": [
+      496,
+      552
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 204,
+    "name": "skeleton",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 37,
+    "name": "llm-elements-box",
+    "type": "shape",
+    "owner": "llm-elements",
+    "bbox": [
+      212,
+      597,
+      80,
+      42
+    ]
+  },
+  {
+    "id": 148,
+    "name": "label-block:llm-elements",
+    "type": "text-block",
+    "owner": "llm-elements",
+    "sourceTextIds": [
+      "text-llm-elements-0"
+    ],
+    "text": "LLM",
+    "bbox": [
+      212,
+      597,
+      80,
+      42
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 174,
+    "name": "port-20-llm-elements",
+    "type": "port-helper",
+    "owner": "llm-elements",
+    "point": [
+      207,
+      620
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 205,
+    "name": "llm-elements",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 38,
+    "name": "selected-element-box",
+    "type": "shape",
+    "owner": "selected-element",
+    "bbox": [
+      303,
+      619,
+      155,
+      42
+    ]
+  },
+  {
+    "id": 149,
+    "name": "label-block:selected-element",
+    "type": "text-block",
+    "owner": "selected-element",
+    "sourceTextIds": [
+      "text-selected-element-0"
+    ],
+    "text": "to_python",
+    "bbox": [
+      303,
+      619,
+      155,
+      42
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 162,
+    "name": "port-8-selected-element",
+    "type": "port-helper",
+    "owner": "selected-element",
+    "point": [
+      496,
+      580
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 163,
+    "name": "port-9-selected-element",
+    "type": "port-helper",
+    "owner": "selected-element",
+    "point": [
+      471,
+      652
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 206,
+    "name": "selected-element",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 39,
+    "name": "selected-code-box",
+    "type": "shape",
+    "owner": "selected-code",
+    "bbox": [
+      584,
+      612,
+      195,
+      81
+    ]
+  },
+  {
+    "id": 103,
+    "name": "code-dots-top",
+    "type": "text",
+    "owner": "selected-code",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 21,
+    "bbox": [
+      597,
+      609.731025390625,
+      17.50341796875,
+      26.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 104,
+    "name": "code-definition",
+    "type": "text",
+    "owner": "selected-code",
+    "text": "def to_python(self, ...):",
+    "font": "Arial Narrow",
+    "fontSize": 20,
+    "bbox": [
+      598,
+      638.77578125,
+      163.22265625,
+      25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 105,
+    "name": "code-dots-bottom",
+    "type": "text",
+    "owner": "selected-code",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 21,
+    "bbox": [
+      597,
+      658.731025390625,
+      17.50341796875,
+      26.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 164,
+    "name": "port-10-selected-code",
+    "type": "port-helper",
+    "owner": "selected-code",
+    "point": [
+      571,
+      652
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 165,
+    "name": "port-11-selected-code",
+    "type": "port-helper",
+    "owner": "selected-code",
+    "point": [
+      504,
+      694
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 207,
+    "name": "selected-code",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 40,
+    "name": "llm-locations-box",
+    "type": "shape",
+    "owner": "llm-locations",
+    "bbox": [
+      238,
+      720,
+      81,
+      42
+    ]
+  },
+  {
+    "id": 150,
+    "name": "label-block:llm-locations",
+    "type": "text-block",
+    "owner": "llm-locations",
+    "sourceTextIds": [
+      "text-llm-locations-0"
+    ],
+    "text": "LLM",
+    "bbox": [
+      238,
+      720,
+      81,
+      42
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 166,
+    "name": "port-12-llm-locations",
+    "type": "port-helper",
+    "owner": "llm-locations",
+    "point": [
+      504,
+      720
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 167,
+    "name": "port-13-llm-locations",
+    "type": "port-helper",
+    "owner": "llm-locations",
+    "point": [
+      515,
+      766
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 208,
+    "name": "llm-locations",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 41,
+    "name": "left-context-box",
+    "type": "shape",
+    "owner": "left-context",
+    "bbox": [
+      413,
+      833,
+      251,
+      111
+    ]
+  },
+  {
+    "id": 42,
+    "name": "left-context-bar-0",
+    "type": "shape",
+    "owner": "left-context",
+    "bbox": [
+      424,
+      845,
+      216,
+      12
+    ]
+  },
+  {
+    "id": 43,
+    "name": "left-context-highlight",
+    "type": "shape",
+    "owner": "left-context",
+    "bbox": [
+      424,
+      879,
+      231,
+      32
+    ]
+  },
+  {
+    "id": 44,
+    "name": "left-context-bar-1",
+    "type": "shape",
+    "owner": "left-context",
+    "bbox": [
+      425,
+      920,
+      215,
+      11
+    ]
+  },
+  {
+    "id": 110,
+    "name": "left-context-dots-0",
+    "type": "text",
+    "owner": "left-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 20,
+    "bbox": [
+      439,
+      837.9720703125,
+      16.669921875,
+      25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 111,
+    "name": "left-context-dots-1",
+    "type": "text",
+    "owner": "left-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 20,
+    "bbox": [
+      439,
+      854.9720703125,
+      16.669921875,
+      25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 112,
+    "name": "left-context-dots-2",
+    "type": "text",
+    "owner": "left-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 20,
+    "bbox": [
+      439,
+      874.9720703125,
+      16.669921875,
+      25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 113,
+    "name": "left-context-dots-3",
+    "type": "text",
+    "owner": "left-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 20,
+    "bbox": [
+      439,
+      908.9720703125,
+      16.669921875,
+      25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 168,
+    "name": "port-14-left-context",
+    "type": "port-helper",
+    "owner": "left-context",
+    "point": [
+      515,
+      794
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 170,
+    "name": "port-16-left-context",
+    "type": "port-helper",
+    "owner": "left-context",
+    "point": [
+      401,
+      889
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 175,
+    "name": "port-21-left-context",
+    "type": "port-helper",
+    "owner": "left-context",
+    "point": [
+      669,
+      882
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 209,
+    "name": "left-context",
+    "type": "group",
+    "owner": "funnel"
+  },
+  {
+    "id": 210,
+    "name": "funnel",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 12,
+    "name": "repair-panel-box",
+    "type": "shape",
+    "owner": "repair-panel",
+    "bbox": [
+      914,
+      141,
+      717,
+      588
+    ]
+  },
+  {
+    "id": 74,
+    "name": "heading-repair",
+    "type": "text",
+    "owner": "repair-panel",
+    "text": "Localized Search/Replace",
+    "font": "Arial",
+    "fontSize": 42,
+    "bbox": [
+      1024.052734375,
+      143.00599609375,
+      515.89453125,
+      52.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 114,
+    "name": "right-context-caption",
+    "type": "text",
+    "owner": "repair-panel",
+    "text": "Context window",
+    "font": "Arial",
+    "fontSize": 27,
+    "bbox": [
+      969.5087890625,
+      271.32357421875,
+      206.982421875,
+      33.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 126,
+    "name": "candidates-caption",
+    "type": "text",
+    "owner": "repair-panel",
+    "text": "Candidate patches",
+    "font": "Arial",
+    "fontSize": 28,
+    "bbox": [
+      1329.5244140625,
+      493.1706640625,
+      248.951171875,
+      35
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 186,
+    "name": "port-32-repair-panel",
+    "type": "port-helper",
+    "owner": "repair-panel",
+    "point": [
+      1274,
+      729
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 45,
+    "name": "right-context-box",
+    "type": "shape",
+    "owner": "right-context",
+    "bbox": [
+      945,
+      307,
+      245,
+      180
+    ]
+  },
+  {
+    "id": 46,
+    "name": "context-bar-0",
+    "type": "shape",
+    "owner": "right-context",
+    "bbox": [
+      964,
+      326,
+      204,
+      12
+    ]
+  },
+  {
+    "id": 47,
+    "name": "context-bar-1",
+    "type": "shape",
+    "owner": "right-context",
+    "bbox": [
+      964,
+      355,
+      187,
+      12
+    ]
+  },
+  {
+    "id": 48,
+    "name": "context-bar-2",
+    "type": "shape",
+    "owner": "right-context",
+    "bbox": [
+      964,
+      441,
+      204,
+      12
+    ]
+  },
+  {
+    "id": 49,
+    "name": "context-bar-3",
+    "type": "shape",
+    "owner": "right-context",
+    "bbox": [
+      964,
+      463,
+      187,
+      12
+    ]
+  },
+  {
+    "id": 50,
+    "name": "right-context-highlight",
+    "type": "shape",
+    "owner": "right-context",
+    "bbox": [
+      946,
+      388,
+      233,
+      39
+    ]
+  },
+  {
+    "id": 115,
+    "name": "right-context-dots-0",
+    "type": "text",
+    "owner": "right-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      969,
+      312.76927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 116,
+    "name": "right-context-dots-1",
+    "type": "text",
+    "owner": "right-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      969,
+      341.76927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 117,
+    "name": "right-context-dots-2",
+    "type": "text",
+    "owner": "right-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      969,
+      388.76927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 118,
+    "name": "right-context-dots-3",
+    "type": "text",
+    "owner": "right-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      969,
+      427.76927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 119,
+    "name": "right-context-dots-4",
+    "type": "text",
+    "owner": "right-context",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      969,
+      449.76927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 176,
+    "name": "port-22-right-context",
+    "type": "port-helper",
+    "owner": "right-context",
+    "point": [
+      942,
+      410
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 177,
+    "name": "port-23-right-context",
+    "type": "port-helper",
+    "owner": "right-context",
+    "point": [
+      1179,
+      421
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 180,
+    "name": "port-26-right-context",
+    "type": "port-helper",
+    "owner": "right-context",
+    "point": [
+      1084,
+      487
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 211,
+    "name": "right-context",
+    "type": "group",
+    "owner": "repair-panel"
+  },
+  {
+    "id": 51,
+    "name": "search-box",
+    "type": "shape",
+    "owner": "search",
+    "bbox": [
+      1298,
+      242,
+      314,
+      96
+    ]
+  },
+  {
+    "id": 52,
+    "name": "search-minus-band",
+    "type": "shape",
+    "owner": "search",
+    "bbox": [
+      1322,
+      286,
+      38,
+      40
+    ]
+  },
+  {
+    "id": 53,
+    "name": "search-code-band",
+    "type": "shape",
+    "owner": "search",
+    "bbox": [
+      1362,
+      286,
+      238,
+      40
+    ]
+  },
+  {
+    "id": 120,
+    "name": "search-heading",
+    "type": "text",
+    "owner": "search",
+    "text": "SEARCH",
+    "font": "Arial",
+    "fontSize": 29,
+    "bbox": [
+      1318,
+      246.692314453125,
+      122.45703125,
+      36.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 122,
+    "name": "search-minus",
+    "type": "text",
+    "owner": "search",
+    "text": "−",
+    "font": "Arial",
+    "fontSize": 33,
+    "bbox": [
+      1331.3642578125,
+      286.297958984375,
+      19.271484375,
+      41.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 123,
+    "name": "search-dots",
+    "type": "text",
+    "owner": "search",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 31,
+    "bbox": [
+      1370,
+      278.606708984375,
+      25.83837890625,
+      38.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 178,
+    "name": "port-24-search",
+    "type": "port-helper",
+    "owner": "search",
+    "point": [
+      1298,
+      286
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 212,
+    "name": "search",
+    "type": "group",
+    "owner": "repair-panel"
+  },
+  {
+    "id": 54,
+    "name": "replace-box",
+    "type": "shape",
+    "owner": "replace",
+    "bbox": [
+      1298,
+      350,
+      314,
+      96
+    ]
+  },
+  {
+    "id": 55,
+    "name": "replace-plus-band",
+    "type": "shape",
+    "owner": "replace",
+    "bbox": [
+      1322,
+      394,
+      38,
+      38
+    ]
+  },
+  {
+    "id": 56,
+    "name": "replace-code-band",
+    "type": "shape",
+    "owner": "replace",
+    "bbox": [
+      1362,
+      394,
+      238,
+      38
+    ]
+  },
+  {
+    "id": 121,
+    "name": "replace-heading",
+    "type": "text",
+    "owner": "replace",
+    "text": "REPLACE",
+    "font": "Arial",
+    "fontSize": 29,
+    "bbox": [
+      1318,
+      354.69939453125,
+      138.5712890625,
+      36.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 124,
+    "name": "replace-plus",
+    "type": "text",
+    "owner": "replace",
+    "text": "+",
+    "font": "Arial",
+    "fontSize": 35,
+    "bbox": [
+      1330.7802734375,
+      393.164501953125,
+      20.439453125,
+      43.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 125,
+    "name": "replace-dots",
+    "type": "text",
+    "owner": "replace",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 31,
+    "bbox": [
+      1370,
+      386.606708984375,
+      25.83837890625,
+      38.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 179,
+    "name": "port-25-replace",
+    "type": "port-helper",
+    "owner": "replace",
+    "point": [
+      1298,
+      432
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 213,
+    "name": "replace",
+    "type": "group",
+    "owner": "repair-panel"
+  },
+  {
+    "id": 58,
+    "name": "llm-repair-box",
+    "type": "shape",
+    "owner": "llm-repair",
+    "bbox": [
+      1035,
+      596,
+      101,
+      49
+    ]
+  },
+  {
+    "id": 152,
+    "name": "label-block:llm-repair",
+    "type": "text-block",
+    "owner": "llm-repair",
+    "sourceTextIds": [
+      "text-llm-repair-0"
+    ],
+    "text": "LLM",
+    "bbox": [
+      1035,
+      596,
+      101,
+      49
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 181,
+    "name": "port-27-llm-repair",
+    "type": "port-helper",
+    "owner": "llm-repair",
+    "point": [
+      1084,
+      589
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 183,
+    "name": "port-29-llm-repair",
+    "type": "port-helper",
+    "owner": "llm-repair",
+    "point": [
+      1029,
+      621
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 184,
+    "name": "port-30-llm-repair",
+    "type": "port-helper",
+    "owner": "llm-repair",
+    "point": [
+      1141,
+      621
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 214,
+    "name": "llm-repair",
+    "type": "group",
+    "owner": "repair-panel"
+  },
+  {
+    "id": 59,
+    "name": "candidate-back",
+    "type": "shape",
+    "owner": "candidate-stack",
+    "bbox": [
+      1369,
+      538,
+      221,
+      123
+    ]
+  },
+  {
+    "id": 60,
+    "name": "candidate-green-back",
+    "type": "shape",
+    "owner": "candidate-stack",
+    "bbox": [
+      1380,
+      593,
+      198,
+      34
+    ]
+  },
+  {
+    "id": 61,
+    "name": "candidate-middle",
+    "type": "shape",
+    "owner": "candidate-stack",
+    "bbox": [
+      1343,
+      559,
+      222,
+      122
+    ]
+  },
+  {
+    "id": 62,
+    "name": "candidate-green-middle",
+    "type": "shape",
+    "owner": "candidate-stack",
+    "bbox": [
+      1354,
+      614,
+      199,
+      34
+    ]
+  },
+  {
+    "id": 63,
+    "name": "candidate-front",
+    "type": "shape",
+    "owner": "candidate-stack",
+    "bbox": [
+      1318,
+      582,
+      221,
+      121
+    ]
+  },
+  {
+    "id": 64,
+    "name": "candidate-green-front",
+    "type": "shape",
+    "owner": "candidate-stack",
+    "bbox": [
+      1329,
+      637,
+      198,
+      34
+    ]
+  },
+  {
+    "id": 65,
+    "name": "candidate-gray-front",
+    "type": "shape",
+    "owner": "candidate-stack",
+    "bbox": [
+      1330,
+      616,
+      187,
+      11
+    ]
+  },
+  {
+    "id": 127,
+    "name": "candidate-dots-back",
+    "type": "text",
+    "owner": "candidate-stack",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      1380,
+      535.26927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 128,
+    "name": "candidate-dots-middle",
+    "type": "text",
+    "owner": "candidate-stack",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      1355,
+      557.26927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 129,
+    "name": "candidate-dots-front-top",
+    "type": "text",
+    "owner": "candidate-stack",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      1330,
+      579.26927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 130,
+    "name": "candidate-dots-front-gray",
+    "type": "text",
+    "owner": "candidate-stack",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      1330,
+      601.26927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 131,
+    "name": "candidate-dots-front-bottom",
+    "type": "text",
+    "owner": "candidate-stack",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 22,
+    "bbox": [
+      1330,
+      670.26927734375,
+      18.3369140625,
+      27.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 132,
+    "name": "candidate-plus",
+    "type": "text",
+    "owner": "candidate-stack",
+    "text": "+",
+    "font": "Arial",
+    "fontSize": 32,
+    "bbox": [
+      1335.65625,
+      635.3646875,
+      18.6875,
+      40
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 133,
+    "name": "candidate-change",
+    "type": "text",
+    "owner": "candidate-stack",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1374,
+      632.215087890625,
+      20.83740234375,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 215,
+    "name": "candidate-stack",
+    "type": "group",
+    "owner": "candidates"
+  },
+  {
+    "id": 185,
+    "name": "port-31-candidates",
+    "type": "port-helper",
+    "owner": "candidates",
+    "point": [
+      1296,
+      621
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 216,
+    "name": "candidates",
+    "type": "group",
+    "owner": "repair-panel"
+  },
+  {
+    "id": 217,
+    "name": "repair-panel",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 13,
+    "name": "selection-panel-box",
+    "type": "shape",
+    "owner": "selection-panel",
+    "bbox": [
+      907,
+      775,
+      729,
+      173
+    ]
+  },
+  {
+    "id": 187,
+    "name": "port-33-selection-panel",
+    "type": "port-helper",
+    "owner": "selection-panel",
+    "point": [
+      1274,
+      767
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 66,
+    "name": "syntax-box",
+    "type": "shape",
+    "owner": "syntax",
+    "bbox": [
+      926,
+      824,
+      170,
+      78
+    ]
+  },
+  {
+    "id": 153,
+    "name": "label-block:syntax",
+    "type": "text-block",
+    "owner": "syntax",
+    "sourceTextIds": [
+      "text-syntax-0",
+      "text-syntax-1"
+    ],
+    "text": "Syntax +\nregression",
+    "bbox": [
+      926,
+      824,
+      170,
+      78
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 188,
+    "name": "port-34-syntax",
+    "type": "port-helper",
+    "owner": "syntax",
+    "point": [
+      1102,
+      861
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 218,
+    "name": "syntax",
+    "type": "group",
+    "owner": "selection-panel"
+  },
+  {
+    "id": 67,
+    "name": "normalize-box",
+    "type": "shape",
+    "owner": "normalize",
+    "bbox": [
+      1164,
+      824,
+      188,
+      78
+    ]
+  },
+  {
+    "id": 154,
+    "name": "label-block:normalize",
+    "type": "text-block",
+    "owner": "normalize",
+    "sourceTextIds": [
+      "text-normalize-0",
+      "text-normalize-1"
+    ],
+    "text": "Normalize +\nfrequency",
+    "bbox": [
+      1164,
+      824,
+      188,
+      78
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 189,
+    "name": "port-35-normalize",
+    "type": "port-helper",
+    "owner": "normalize",
+    "point": [
+      1155,
+      861
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 190,
+    "name": "port-36-normalize",
+    "type": "port-helper",
+    "owner": "normalize",
+    "point": [
+      1360,
+      861
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 219,
+    "name": "normalize",
+    "type": "group",
+    "owner": "selection-panel"
+  },
+  {
+    "id": 68,
+    "name": "selected-patch-box",
+    "type": "shape",
+    "owner": "selected-patch",
+    "bbox": [
+      1415,
+      790,
+      208,
+      141
+    ]
+  },
+  {
+    "id": 69,
+    "name": "selected-patch-sheet",
+    "type": "shape",
+    "owner": "selected-patch",
+    "bbox": [
+      1433,
+      830,
+      159,
+      92
+    ]
+  },
+  {
+    "id": 70,
+    "name": "selected-patch-green",
+    "type": "shape",
+    "owner": "selected-patch",
+    "bbox": [
+      1443,
+      862,
+      142,
+      31
+    ]
+  },
+  {
+    "id": 138,
+    "name": "selected-patch-heading",
+    "type": "text",
+    "owner": "selected-patch",
+    "text": "Selected patch",
+    "font": "Arial",
+    "fontSize": 25,
+    "bbox": [
+      1430,
+      793.134521484375,
+      176.45263671875,
+      31.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 139,
+    "name": "selected-dots-top",
+    "type": "text",
+    "owner": "selected-patch",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 21,
+    "bbox": [
+      1449,
+      830.120673828125,
+      17.50341796875,
+      26.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 140,
+    "name": "selected-plus",
+    "type": "text",
+    "owner": "selected-patch",
+    "text": "+",
+    "font": "Arial",
+    "fontSize": 30,
+    "bbox": [
+      1450.240234375,
+      859.49814453125,
+      17.51953125,
+      37.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 141,
+    "name": "selected-change",
+    "type": "text",
+    "owner": "selected-patch",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 23,
+    "bbox": [
+      1486,
+      856.917880859375,
+      19.17041015625,
+      28.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 142,
+    "name": "selected-dots-bottom",
+    "type": "text",
+    "owner": "selected-patch",
+    "text": "...",
+    "font": "Arial",
+    "fontSize": 21,
+    "bbox": [
+      1449,
+      887.120673828125,
+      17.50341796875,
+      26.25
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 191,
+    "name": "port-37-selected-patch",
+    "type": "port-helper",
+    "owner": "selected-patch",
+    "point": [
+      1406,
+      861
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 220,
+    "name": "selected-patch",
+    "type": "group",
+    "owner": "selection-panel"
+  },
+  {
+    "id": 221,
+    "name": "selection-panel",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 14,
+    "name": "issue-left-box",
+    "type": "shape",
+    "owner": "issue-left",
+    "bbox": [
+      6,
+      572,
+      131,
+      88
+    ]
+  },
+  {
+    "id": 145,
+    "name": "label-block:issue-left",
+    "type": "text-block",
+    "owner": "issue-left",
+    "sourceTextIds": [
+      "text-issue-left-0",
+      "text-issue-left-1"
+    ],
+    "text": "Issue\nreport",
+    "bbox": [
+      6,
+      572,
+      131,
+      88
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 171,
+    "name": "port-17-issue-left",
+    "type": "port-helper",
+    "owner": "issue-left",
+    "point": [
+      80,
+      572
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 173,
+    "name": "port-19-issue-left",
+    "type": "port-helper",
+    "owner": "issue-left",
+    "point": [
+      137,
+      620
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 222,
+    "name": "issue-left",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 223,
+    "name": "build-tree-arrow",
+    "type": "connector",
+    "owner": null,
+    "edge": "build-tree-arrow",
+    "fromBinding": "port-1-repo-icon",
+    "toBinding": "port-2-tree",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 224,
+    "name": "tree-to-file-selection",
+    "type": "connector",
+    "owner": null,
+    "edge": "tree-to-file-selection",
+    "fromBinding": "port-3-tree",
+    "toBinding": "port-4-selected-files",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 225,
+    "name": "file-to-skeleton",
+    "type": "connector",
+    "owner": null,
+    "edge": "file-to-skeleton",
+    "fromBinding": "port-5-selected-files",
+    "toBinding": "port-6-skeleton",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 226,
+    "name": "skeleton-to-element",
+    "type": "connector",
+    "owner": null,
+    "edge": "skeleton-to-element",
+    "fromBinding": "port-7-skeleton",
+    "toBinding": "port-8-selected-element",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 227,
+    "name": "element-to-code",
+    "type": "connector",
+    "owner": null,
+    "edge": "element-to-code",
+    "fromBinding": "port-9-selected-element",
+    "toBinding": "port-10-selected-code",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 228,
+    "name": "code-to-locations",
+    "type": "connector",
+    "owner": null,
+    "edge": "code-to-locations",
+    "fromBinding": "port-11-selected-code",
+    "toBinding": "port-12-llm-locations",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 229,
+    "name": "locations-to-context",
+    "type": "connector",
+    "owner": null,
+    "edge": "locations-to-context",
+    "fromBinding": "port-13-llm-locations",
+    "toBinding": "port-14-left-context",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 230,
+    "name": "padding-to-context",
+    "type": "connector",
+    "owner": null,
+    "edge": "padding-to-context",
+    "fromBinding": "port-15-funnel",
+    "toBinding": "port-16-left-context",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 231,
+    "name": "issue-file:segment:0",
+    "type": "connector",
+    "owner": "group-issue-file",
+    "edge": "issue-file",
+    "fromBinding": "port-17-issue-left",
+    "toBinding": null,
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 232,
+    "name": "issue-file:segment:1",
+    "type": "connector",
+    "owner": "group-issue-file",
+    "edge": "issue-file",
+    "fromBinding": null,
+    "toBinding": "port-18-llm-files",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 233,
+    "name": "group-issue-file",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 234,
+    "name": "issue-elements",
+    "type": "connector",
+    "owner": null,
+    "edge": "issue-elements",
+    "fromBinding": "port-19-issue-left",
+    "toBinding": "port-20-llm-elements",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 235,
+    "name": "focused-context-handoff:segment:0",
+    "type": "connector",
+    "owner": "group-focused-context-handoff",
+    "edge": "focused-context-handoff",
+    "fromBinding": "port-21-left-context",
+    "toBinding": null,
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 236,
+    "name": "focused-context-handoff:segment:1",
+    "type": "connector",
+    "owner": "group-focused-context-handoff",
+    "edge": "focused-context-handoff",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 237,
+    "name": "focused-context-handoff:segment:2",
+    "type": "connector",
+    "owner": "group-focused-context-handoff",
+    "edge": "focused-context-handoff",
+    "fromBinding": null,
+    "toBinding": "port-22-right-context",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 238,
+    "name": "group-focused-context-handoff",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 239,
+    "name": "magnify-search:segment:0",
+    "type": "connector",
+    "owner": "group-magnify-search",
+    "edge": "magnify-search",
+    "fromBinding": "port-23-right-context",
+    "toBinding": null,
+    "stroke": "#7D8490",
+    "width": 3,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 240,
+    "name": "magnify-search:segment:1",
+    "type": "connector",
+    "owner": "group-magnify-search",
+    "edge": "magnify-search",
+    "fromBinding": null,
+    "toBinding": "port-24-search",
+    "stroke": "#7D8490",
+    "width": 3,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 241,
+    "name": "group-magnify-search",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 242,
+    "name": "magnify-replace",
+    "type": "connector",
+    "owner": null,
+    "edge": "magnify-replace",
+    "fromBinding": "port-23-right-context",
+    "toBinding": "port-25-replace",
+    "stroke": "#7D8490",
+    "width": 3,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 243,
+    "name": "context-to-generator",
+    "type": "connector",
+    "owner": null,
+    "edge": "context-to-generator",
+    "fromBinding": "port-26-right-context",
+    "toBinding": "port-27-llm-repair",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 244,
+    "name": "issue-to-generator",
+    "type": "connector",
+    "owner": null,
+    "edge": "issue-to-generator",
+    "fromBinding": "port-28-issue-right",
+    "toBinding": "port-29-llm-repair",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 245,
+    "name": "generator-to-candidates",
+    "type": "connector",
+    "owner": null,
+    "edge": "generator-to-candidates",
+    "fromBinding": "port-30-llm-repair",
+    "toBinding": "port-31-candidates",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 246,
+    "name": "candidate-to-filter",
+    "type": "connector",
+    "owner": null,
+    "edge": "candidate-to-filter",
+    "fromBinding": "port-32-repair-panel",
+    "toBinding": "port-33-selection-panel",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 247,
+    "name": "syntax-to-frequency",
+    "type": "connector",
+    "owner": null,
+    "edge": "syntax-to-frequency",
+    "fromBinding": "port-34-syntax",
+    "toBinding": "port-35-normalize",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 248,
+    "name": "frequency-to-patch",
+    "type": "connector",
+    "owner": null,
+    "edge": "frequency-to-patch",
+    "fromBinding": "port-36-normalize",
+    "toBinding": "port-37-selected-patch",
+    "stroke": "#344256",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 57,
+    "name": "issue-right-box",
+    "type": "shape",
+    "owner": "issue-right",
+    "bbox": [
+      887,
+      586,
+      97,
+      66
+    ]
+  },
+  {
+    "id": 151,
+    "name": "label-block:issue-right",
+    "type": "text-block",
+    "owner": "issue-right",
+    "sourceTextIds": [
+      "text-issue-right-0",
+      "text-issue-right-1"
+    ],
+    "text": "Issue\nreport",
+    "bbox": [
+      887,
+      586,
+      97,
+      66
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 182,
+    "name": "port-28-issue-right",
+    "type": "port-helper",
+    "owner": "issue-right",
+    "point": [
+      987,
+      621
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 249,
+    "name": "issue-right",
+    "type": "group",
+    "owner": null
+  }
+]

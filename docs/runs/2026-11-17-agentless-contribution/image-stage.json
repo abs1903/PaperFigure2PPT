@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "stage": "accepted-contribution-oriented-raster",
+  "selectedImage": {
+    "version": "1.0",
+    "path": "selected-reference.png",
+    "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+    "sizePx": [
+      1637,
+      960
+    ],
+    "reviewPath": "image-review-v3.json",
+    "reviewSHA256": "dc41b463eac30b0c9b26303e8d22e75b15ccbe7aacacd212843dc41cfb1cb9a3",
+    "sourceReviewPath": "source-contribution-review-v2.json",
+    "sourceReviewSHA256": "4fd48352cc2af1b77647b979758e7f425cd7747e95956f3125886a5e91e8928d",
+    "specSHA256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+    "briefSHA256": "e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8",
+    "narrativePlanSHA256": "776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65",
+    "figureHidden": false,
+    "nativeOrOfficeAccepted": false
+  },
+  "sourceContributionPassed": true,
+  "imageStagePassed": true,
+  "contributionVisibilityPassed": true,
+  "readyForNativePlanning": true,
+  "nativeFeasibility": "Reviewer inference from pixels only; no native sample",
+  "nativeOrOfficeGenerated": false,
+  "deliveryReady": false,
+  "actualCalls": {
+    "generate": 1,
+    "attachedImageEdits": 2
+  },
+  "scope": "Author-informed paper-v1 method contribution illustration. Established techniques are not claimed as individually new; dataset audit remains outside method scope."
+}

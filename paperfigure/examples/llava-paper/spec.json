@@ -1,0 +1,1545 @@
+{
+  "version": "1.0",
+  "title": "LLaVA architecture: visual-to-language projection",
+  "subtitle": "Paper-grounded architecture-only interpretation of original LLaVA.",
+  "sources": [
+    {
+      "id": "paper-summary",
+      "kind": "paper",
+      "locator": "https://proceedings.nips.cc/paper_files/paper/2023/file/6dcf277ea32ce3288914faf369fe6de0-Paper-Conference.pdf#page=4",
+      "text": "# Paper-grounded design brief: original LLaVA\n\nSource: [Visual Instruction Tuning, NeurIPS 2023](https://proceedings.nips.cc/paper_files/paper/2023/file/6dcf277ea32ce3288914faf369fe6de0-Paper-Conference.pdf), Sections 4.1\u20134.2, Figure 1 and Equation 1.\nThis is an authored summary for a new example, not a revision of the original\nsix-sentence illustrative VLM source. No paper artwork is copied or redistributed.\n\nAn image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively.\n\nThe training schedule carries information absent from the earlier generic example:\nalignment trains only W while retaining both backbones; subsequent instruction\ntuning updates W and Vicuna while the vision encoder stays frozen.\n\nKeep the model's internals abstract and compact. Do not import a Q-Former, MLP\nprojector, cross-attention adapter, exact token/layer counts or performance claims.\nDo not label all of Vicuna as frozen without distinguishing the training stage.\nNo figure title, footer or explanatory fine print is requested.\n"
+    }
+  ],
+  "claims": {
+    "summary": "A learned linear projection connects CLIP image features to Vicuna language-space conditioning.",
+    "innovation": "The figure highlights the lightweight vision-to-language interface; it does not claim linear layers are themselves novel.",
+    "baseline": "Pretrained CLIP visual encoder and Vicuna language model.",
+    "scope": "Architecture only, single-turn conditioning abstraction. Training stages remain in METHOD.md; no decoder internals, fixed counts, or performance claims are drawn."
+  },
+  "assumptions": [
+    "Evidence quotes in this specification are from the explicitly authored, source-backed METHOD.md summary, not verbatim quotations from the paper. The primary paper sections were independently inspected.",
+    "Token motifs and frozen notation are symbolic; their repeated glyph counts do not state dimensions or exact model depth.",
+    "The cat image and example instruction are illustrative inputs, not a reported paper evaluation sample."
+  ],
+  "nodes": [
+    {
+      "id": "image",
+      "label": "Image",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "clip",
+      "label": "CLIP\nViT-L/14",
+      "detail": "(frozen)",
+      "role": "encoder",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "projection",
+      "label": "W",
+      "detail": "",
+      "role": "core",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "instruction",
+      "label": "Describe the image\nin detail.",
+      "detail": "",
+      "role": "input",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "vicuna",
+      "label": "Vicuna Language Model",
+      "detail": "Autoregressive decoding",
+      "role": "core",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "label": "Language response",
+      "detail": "",
+      "role": "output",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "image",
+      "to": "clip",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "from": "clip",
+      "to": "projection",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "from": "projection",
+      "to": "vicuna",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "from": "instruction",
+      "to": "vicuna",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "from": "vicuna",
+      "to": "response",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "both",
+      "evidence": [
+        {
+          "source": "paper-summary",
+          "quote": "An image passes through the CLIP ViT-L/14 visual encoder. A learned linear matrix\nW maps its features Z_v into language-space visual embeddings H_v, with\nH_v = W Z_v. These visual embeddings and the instruction's text embeddings condition\nVicuna, which generates a language response autoregressively."
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "layout": {
+    "canvas": {
+      "width": 2120,
+      "height": 742
+    },
+    "direction": "LR",
+    "nodes": {
+      "image": {
+        "x": 80,
+        "y": 200,
+        "w": 206,
+        "h": 186
+      },
+      "clip": {
+        "x": 343,
+        "y": 199,
+        "w": 208,
+        "h": 188
+      },
+      "projection": {
+        "x": 800,
+        "y": 242,
+        "w": 144,
+        "h": 106,
+        "fontSize": 48
+      },
+      "instruction": {
+        "x": 80,
+        "y": 484,
+        "w": 470,
+        "h": 114
+      },
+      "vicuna": {
+        "x": 1267,
+        "y": 294,
+        "w": 538,
+        "h": 262,
+        "fontSize": 36
+      },
+      "response": {
+        "x": 1871,
+        "y": 338,
+        "w": 190,
+        "h": 190
+      }
+    },
+    "edges": {
+      "e1": {
+        "fromPort": "right",
+        "fromFraction": 0.5053763440860215,
+        "toPort": "left",
+        "toFraction": 0.5053191489361702
+      },
+      "e2": {
+        "fromPort": "right",
+        "fromFraction": 0.5053191489361702,
+        "toPort": "left"
+      },
+      "e3": {
+        "fromPort": "right",
+        "toPort": "left",
+        "toFraction": 0.4351145038167939,
+        "via": [
+          [
+            1219,
+            295
+          ],
+          [
+            1219,
+            408
+          ]
+        ]
+      },
+      "e4": {
+        "fromPort": "right",
+        "toPort": "left",
+        "toFraction": 0.6526717557251909,
+        "via": [
+          [
+            1219,
+            541
+          ],
+          [
+            1219,
+            465
+          ]
+        ]
+      },
+      "e5": {
+        "fromPort": "right",
+        "fromFraction": 0.5381679389312977,
+        "toPort": "left",
+        "toFraction": 0.5105263157894737
+      }
+    }
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 7,
+    "showTitle": false,
+    "showSubtitle": false,
+    "showLegend": false,
+    "typography": {
+      "fontFamily": "Arial",
+      "moduleSize": 34,
+      "detailSize": 32,
+      "annotationSize": 36,
+      "moduleBold": false
+    },
+    "nodeGlyphs": {},
+    "appearances": {
+      "nodes": {
+        "image": {
+          "fill": "none",
+          "stroke": "none",
+          "radius": 0,
+          "strokeWidth": 1,
+          "hideLabel": true
+        },
+        "clip": {
+          "fill": "#E9F1F5",
+          "gradient": {
+            "from": "#F0F4F6",
+            "to": "#DDE8EF",
+            "direction": "vertical"
+          },
+          "stroke": "#44748D",
+          "radius": 17,
+          "strokeWidth": 2.2,
+          "label": {
+            "x": 15,
+            "y": 57,
+            "w": 178,
+            "align": "center",
+            "bold": true
+          },
+          "detail": {
+            "x": 15,
+            "y": 140,
+            "w": 178,
+            "align": "center",
+            "bold": false
+          }
+        },
+        "projection": {
+          "fill": "#FFF0C8",
+          "gradient": {
+            "from": "#FFF6DD",
+            "to": "#F6DBA1",
+            "direction": "vertical"
+          },
+          "stroke": "#C38313",
+          "radius": 13,
+          "strokeWidth": 2.2,
+          "label": {
+            "x": 10,
+            "y": 22,
+            "w": 124,
+            "align": "center",
+            "bold": false,
+            "fontFamily": "Times New Roman",
+            "italic": true
+          }
+        },
+        "instruction": {
+          "fill": "#FAFCFB",
+          "gradient": {
+            "from": "#F9FCFB",
+            "to": "#F0F6F3",
+            "direction": "vertical"
+          },
+          "stroke": "#147F80",
+          "radius": 20,
+          "strokeWidth": 2.2,
+          "label": {
+            "x": 120,
+            "y": 17,
+            "w": 332,
+            "align": "left",
+            "bold": false
+          }
+        },
+        "vicuna": {
+          "fill": "#E5EEF4",
+          "gradient": {
+            "from": "#ECF3F6",
+            "to": "#DDE7EF",
+            "direction": "vertical"
+          },
+          "stroke": "#44748D",
+          "radius": 27,
+          "strokeWidth": 2.4,
+          "label": {
+            "x": 28,
+            "y": 25,
+            "w": 426,
+            "align": "left",
+            "bold": true
+          },
+          "detail": {
+            "x": 40,
+            "y": 109,
+            "w": 458,
+            "align": "center",
+            "bold": false
+          }
+        },
+        "response": {
+          "fill": "none",
+          "stroke": "none",
+          "radius": 17,
+          "strokeWidth": 2.5,
+          "hideLabel": true
+        }
+      },
+      "edges": {
+        "e1": {
+          "stroke": "#0C3150",
+          "strokeWidth": 3,
+          "labelBackground": false
+        },
+        "e2": {
+          "stroke": "#0C3150",
+          "strokeWidth": 3,
+          "labelBackground": false
+        },
+        "e3": {
+          "stroke": "#0C3150",
+          "strokeWidth": 3,
+          "labelBackground": false
+        },
+        "e4": {
+          "stroke": "#0C3150",
+          "strokeWidth": 3,
+          "labelBackground": false
+        },
+        "e5": {
+          "stroke": "#0C3150",
+          "strokeWidth": 3,
+          "labelBackground": false
+        }
+      }
+    },
+    "artwork": [
+      {
+        "id": "response-body",
+        "owner": "response",
+        "type": "rect",
+        "x": 1873,
+        "y": 340,
+        "w": 186,
+        "h": 186,
+        "fill": "#FFFFFF",
+        "stroke": "#147F80",
+        "strokeWidth": 2.5,
+        "radius": 15,
+        "purpose": "Native editable document endpoint outline; its folded corner is formed by owned native lines."
+      },
+      {
+        "id": "input-photo",
+        "owner": "image",
+        "type": "asset",
+        "x": 80,
+        "y": 200,
+        "w": 206,
+        "h": 186,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "asset": "assets/illustrations/llava-c-source.png",
+        "crop": {
+          "x": 80,
+          "y": 200,
+          "w": 206,
+          "h": 186,
+          "sourceWidth": 2120,
+          "sourceHeight": 742
+        }
+      },
+      {
+        "id": "xv",
+        "owner": "image",
+        "type": "text",
+        "x": 120,
+        "y": 132,
+        "w": 130,
+        "h": 67.19999999999999,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Xv",
+        "fontSize": 48,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "X",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "v",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "zv",
+        "owner": "e2",
+        "type": "text",
+        "x": 596,
+        "y": 183,
+        "w": 160,
+        "h": 61.599999999999994,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Zv",
+        "fontSize": 44,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "Z",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "v",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "projection-eq",
+        "owner": "projection",
+        "type": "text",
+        "x": 758,
+        "y": 171,
+        "w": 220,
+        "h": 61.599999999999994,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Hv = W Zv",
+        "fontSize": 44,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "H",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "v",
+            "subscript": true,
+            "italic": true
+          },
+          {
+            "text": " = W Z",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "v",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "hv",
+        "owner": "e3",
+        "type": "text",
+        "x": 1000,
+        "y": 183,
+        "w": 155,
+        "h": 61.599999999999994,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Hv",
+        "fontSize": 44,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "H",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "v",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "xq",
+        "owner": "instruction",
+        "type": "text",
+        "x": 230,
+        "y": 418,
+        "w": 130,
+        "h": 67.19999999999999,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Xq",
+        "fontSize": 48,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "X",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "q",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "hq",
+        "owner": "e4",
+        "type": "text",
+        "x": 871,
+        "y": 420,
+        "w": 130,
+        "h": 61.599999999999994,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Hq",
+        "fontSize": 44,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "H",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "q",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "fphi",
+        "owner": "vicuna",
+        "type": "text",
+        "x": 1730,
+        "y": 309,
+        "w": 75,
+        "h": 61.599999999999994,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "f\u03c6",
+        "fontSize": 44,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "f",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "\u03c6",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "xa",
+        "owner": "response",
+        "type": "text",
+        "x": 1902,
+        "y": 265,
+        "w": 130,
+        "h": 67.19999999999999,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Xa",
+        "fontSize": 48,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "X",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "a",
+            "subscript": true,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "learned-linear",
+        "owner": "projection",
+        "type": "text",
+        "x": 765,
+        "y": 357,
+        "w": 218,
+        "h": 42.0,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Learned linear",
+        "fontSize": 30,
+        "bold": false,
+        "fontFamily": "Arial",
+        "italic": false,
+        "fill": "#0C3150"
+      },
+      {
+        "id": "response-label",
+        "owner": "response",
+        "type": "text",
+        "x": 1823,
+        "y": 543,
+        "w": 284,
+        "h": 42.0,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "Language response",
+        "fontSize": 30,
+        "bold": false,
+        "fontFamily": "Arial",
+        "italic": false,
+        "fill": "#0C3150"
+      },
+      {
+        "id": "conditional",
+        "owner": "vicuna",
+        "type": "text",
+        "x": 1320,
+        "y": 455,
+        "w": 420,
+        "h": 56.0,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "text": "p(Xa | Hv, Hq)",
+        "fontSize": 40,
+        "bold": false,
+        "fontFamily": "Times New Roman",
+        "italic": true,
+        "fill": "#0C3150",
+        "runs": [
+          {
+            "text": "p(X",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "a",
+            "subscript": true,
+            "italic": true
+          },
+          {
+            "text": " | H",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "v",
+            "subscript": true,
+            "italic": true
+          },
+          {
+            "text": ", H",
+            "subscript": false,
+            "italic": true
+          },
+          {
+            "text": "q",
+            "subscript": true,
+            "italic": true
+          },
+          {
+            "text": ")",
+            "subscript": false,
+            "italic": true
+          }
+        ]
+      },
+      {
+        "id": "z-0",
+        "owner": "e2",
+        "type": "rect",
+        "x": 604,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#77CFC9",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#9BDEDA",
+          "to": "#77CFC9",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "z-1",
+        "owner": "e2",
+        "type": "rect",
+        "x": 631,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#77CFC9",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#9BDEDA",
+          "to": "#77CFC9",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "z-2",
+        "owner": "e2",
+        "type": "rect",
+        "x": 658,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#77CFC9",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#9BDEDA",
+          "to": "#77CFC9",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "z-3",
+        "owner": "e2",
+        "type": "rect",
+        "x": 685,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#77CFC9",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#9BDEDA",
+          "to": "#77CFC9",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "z-space",
+        "owner": "e2",
+        "type": "rect",
+        "x": 713,
+        "y": 279,
+        "w": 45,
+        "h": 30,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#FFFFFF",
+        "stroke": "none",
+        "radius": 0,
+        "strokeWidth": 1
+      },
+      {
+        "id": "z-dot-0",
+        "owner": "e2",
+        "type": "ellipse",
+        "x": 717,
+        "y": 291,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#77CFC9",
+        "stroke": "none"
+      },
+      {
+        "id": "z-dot-1",
+        "owner": "e2",
+        "type": "ellipse",
+        "x": 730,
+        "y": 291,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#77CFC9",
+        "stroke": "none"
+      },
+      {
+        "id": "z-dot-2",
+        "owner": "e2",
+        "type": "ellipse",
+        "x": 743,
+        "y": 291,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#77CFC9",
+        "stroke": "none"
+      },
+      {
+        "id": "h-0",
+        "owner": "e3",
+        "type": "rect",
+        "x": 1009,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#37BDB6",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#70D6D1",
+          "to": "#37BDB6",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "h-1",
+        "owner": "e3",
+        "type": "rect",
+        "x": 1036,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#37BDB6",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#70D6D1",
+          "to": "#37BDB6",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "h-2",
+        "owner": "e3",
+        "type": "rect",
+        "x": 1063,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#37BDB6",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#70D6D1",
+          "to": "#37BDB6",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "h-3",
+        "owner": "e3",
+        "type": "rect",
+        "x": 1090,
+        "y": 260,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#37BDB6",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#70D6D1",
+          "to": "#37BDB6",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "h-space",
+        "owner": "e3",
+        "type": "rect",
+        "x": 1118,
+        "y": 279,
+        "w": 45,
+        "h": 30,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#FFFFFF",
+        "stroke": "none",
+        "radius": 0,
+        "strokeWidth": 1
+      },
+      {
+        "id": "h-dot-0",
+        "owner": "e3",
+        "type": "ellipse",
+        "x": 1122,
+        "y": 291,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#37BDB6",
+        "stroke": "none"
+      },
+      {
+        "id": "h-dot-1",
+        "owner": "e3",
+        "type": "ellipse",
+        "x": 1135,
+        "y": 291,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#37BDB6",
+        "stroke": "none"
+      },
+      {
+        "id": "h-dot-2",
+        "owner": "e3",
+        "type": "ellipse",
+        "x": 1148,
+        "y": 291,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#37BDB6",
+        "stroke": "none"
+      },
+      {
+        "id": "q-0",
+        "owner": "e4",
+        "type": "rect",
+        "x": 873,
+        "y": 498,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#94C5E5",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#B4D8EE",
+          "to": "#94C5E5",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "q-1",
+        "owner": "e4",
+        "type": "rect",
+        "x": 900,
+        "y": 498,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#94C5E5",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#B4D8EE",
+          "to": "#94C5E5",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "q-2",
+        "owner": "e4",
+        "type": "rect",
+        "x": 927,
+        "y": 498,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#94C5E5",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#B4D8EE",
+          "to": "#94C5E5",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "q-3",
+        "owner": "e4",
+        "type": "rect",
+        "x": 954,
+        "y": 498,
+        "w": 21,
+        "h": 69,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#94C5E5",
+        "stroke": "none",
+        "radius": 7,
+        "strokeWidth": 1,
+        "gradient": {
+          "from": "#B4D8EE",
+          "to": "#94C5E5",
+          "direction": "vertical"
+        }
+      },
+      {
+        "id": "q-space",
+        "owner": "e4",
+        "type": "rect",
+        "x": 982,
+        "y": 517,
+        "w": 45,
+        "h": 30,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#FFFFFF",
+        "stroke": "none",
+        "radius": 0,
+        "strokeWidth": 1
+      },
+      {
+        "id": "q-dot-0",
+        "owner": "e4",
+        "type": "ellipse",
+        "x": 986,
+        "y": 529,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#94C5E5",
+        "stroke": "none"
+      },
+      {
+        "id": "q-dot-1",
+        "owner": "e4",
+        "type": "ellipse",
+        "x": 999,
+        "y": 529,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#94C5E5",
+        "stroke": "none"
+      },
+      {
+        "id": "q-dot-2",
+        "owner": "e4",
+        "type": "ellipse",
+        "x": 1012,
+        "y": 529,
+        "w": 6,
+        "h": 6,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#94C5E5",
+        "stroke": "none"
+      },
+      {
+        "id": "freeze-main-0",
+        "owner": "clip",
+        "type": "line",
+        "x": 430.0,
+        "y": 235.0,
+        "w": 36.0,
+        "h": 0.0,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 3
+      },
+      {
+        "id": "freeze-0--1--1",
+        "owner": "clip",
+        "type": "line",
+        "x": 430.0,
+        "y": 235.0,
+        "w": 3.500000000000001,
+        "h": -6.06217782649107,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-0--1-1",
+        "owner": "clip",
+        "type": "line",
+        "x": 430.0,
+        "y": 235.0,
+        "w": 3.500000000000004,
+        "h": 6.062177826491069,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-0-1--1",
+        "owner": "clip",
+        "type": "line",
+        "x": 466.0,
+        "y": 235.0,
+        "w": -3.5000000000000018,
+        "h": 6.06217782649107,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-0-1-1",
+        "owner": "clip",
+        "type": "line",
+        "x": 466.0,
+        "y": 235.0,
+        "w": -3.500000000000003,
+        "h": -6.062177826491069,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-main-1",
+        "owner": "clip",
+        "type": "line",
+        "x": 439.0,
+        "y": 219.4115427318801,
+        "w": 18.000000000000004,
+        "h": 31.17691453623979,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 3
+      },
+      {
+        "id": "freeze-1--1--1",
+        "owner": "clip",
+        "type": "line",
+        "x": 439.0,
+        "y": 219.4115427318801,
+        "w": 7.0,
+        "h": -1.7145055188062944e-15,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-1--1-1",
+        "owner": "clip",
+        "type": "line",
+        "x": 439.0,
+        "y": 219.4115427318801,
+        "w": -3.4999999999999947,
+        "h": 6.062177826491074,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-1-1--1",
+        "owner": "clip",
+        "type": "line",
+        "x": 457.0,
+        "y": 250.5884572681199,
+        "w": -7.0,
+        "h": 8.572527594031472e-16,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-1-1-1",
+        "owner": "clip",
+        "type": "line",
+        "x": 457.0,
+        "y": 250.5884572681199,
+        "w": 3.4999999999999956,
+        "h": -6.062177826491073,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-main-2",
+        "owner": "clip",
+        "type": "line",
+        "x": 457.0,
+        "y": 219.4115427318801,
+        "w": -17.999999999999993,
+        "h": 31.176914536239792,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 3
+      },
+      {
+        "id": "freeze-2--1--1",
+        "owner": "clip",
+        "type": "line",
+        "x": 457.0,
+        "y": 219.4115427318801,
+        "w": 3.500000000000004,
+        "h": 6.062177826491069,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-2--1-1",
+        "owner": "clip",
+        "type": "line",
+        "x": 457.0,
+        "y": 219.4115427318801,
+        "w": -7.0,
+        "h": 2.5717582782094417e-15,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-2-1--1",
+        "owner": "clip",
+        "type": "line",
+        "x": 439.0,
+        "y": 250.5884572681199,
+        "w": -3.500000000000003,
+        "h": -6.062177826491069,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "freeze-2-1-1",
+        "owner": "clip",
+        "type": "line",
+        "x": 439.0,
+        "y": 250.5884572681199,
+        "w": 7.0,
+        "h": -7.931754456707172e-15,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#087A9A",
+        "fill": "none",
+        "strokeWidth": 2.2
+      },
+      {
+        "id": "chat-frame",
+        "owner": "instruction",
+        "type": "rect",
+        "x": 112,
+        "y": 511,
+        "w": 45,
+        "h": 39,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#FFFFFF",
+        "stroke": "#147F80",
+        "radius": 5,
+        "strokeWidth": 1
+      },
+      {
+        "id": "chat-tail-1",
+        "owner": "instruction",
+        "type": "line",
+        "x": 120,
+        "y": 549,
+        "w": -7,
+        "h": 12,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#147F80",
+        "fill": "none",
+        "strokeWidth": 2.5
+      },
+      {
+        "id": "chat-tail-2",
+        "owner": "instruction",
+        "type": "line",
+        "x": 113,
+        "y": 561,
+        "w": 17,
+        "h": -12,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#147F80",
+        "fill": "none",
+        "strokeWidth": 2.5
+      },
+      {
+        "id": "chat-dot-0",
+        "owner": "instruction",
+        "type": "ellipse",
+        "x": 121,
+        "y": 523,
+        "w": 5,
+        "h": 5,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#147F80",
+        "stroke": "none"
+      },
+      {
+        "id": "chat-dot-1",
+        "owner": "instruction",
+        "type": "ellipse",
+        "x": 132,
+        "y": 523,
+        "w": 5,
+        "h": 5,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#147F80",
+        "stroke": "none"
+      },
+      {
+        "id": "chat-dot-2",
+        "owner": "instruction",
+        "type": "ellipse",
+        "x": 143,
+        "y": 523,
+        "w": 5,
+        "h": 5,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#147F80",
+        "stroke": "none"
+      },
+      {
+        "id": "fold-mask",
+        "owner": "response",
+        "type": "rect",
+        "x": 2014,
+        "y": 338,
+        "w": 47,
+        "h": 47,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#FFFFFF",
+        "stroke": "none",
+        "radius": 0,
+        "strokeWidth": 1
+      },
+      {
+        "id": "fold-diagonal",
+        "owner": "response",
+        "type": "line",
+        "x": 2016,
+        "y": 339,
+        "w": 44,
+        "h": 44,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#147F80",
+        "fill": "none",
+        "strokeWidth": 2.5
+      },
+      {
+        "id": "fold-base",
+        "owner": "response",
+        "type": "line",
+        "x": 2016,
+        "y": 383,
+        "w": 44,
+        "h": 0,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#147F80",
+        "fill": "none",
+        "strokeWidth": 2.5
+      },
+      {
+        "id": "fold-side",
+        "owner": "response",
+        "type": "line",
+        "x": 2016,
+        "y": 339,
+        "w": 0,
+        "h": 44,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "stroke": "#147F80",
+        "fill": "none",
+        "strokeWidth": 2.5
+      },
+      {
+        "id": "response-line-0",
+        "owner": "response",
+        "type": "rect",
+        "x": 1897,
+        "y": 393,
+        "w": 132,
+        "h": 9,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#9DBFD0",
+        "stroke": "none",
+        "radius": 4,
+        "strokeWidth": 1
+      },
+      {
+        "id": "response-line-1",
+        "owner": "response",
+        "type": "rect",
+        "x": 1897,
+        "y": 421,
+        "w": 132,
+        "h": 9,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#9DBFD0",
+        "stroke": "none",
+        "radius": 4,
+        "strokeWidth": 1
+      },
+      {
+        "id": "response-line-2",
+        "owner": "response",
+        "type": "rect",
+        "x": 1897,
+        "y": 449,
+        "w": 116,
+        "h": 9,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#9DBFD0",
+        "stroke": "none",
+        "radius": 4,
+        "strokeWidth": 1
+      },
+      {
+        "id": "response-line-3",
+        "owner": "response",
+        "type": "rect",
+        "x": 1897,
+        "y": 477,
+        "w": 88,
+        "h": 9,
+        "purpose": "Source-supported architecture notation or non-quantitative visual encoding; repeated motifs do not state token counts.",
+        "fill": "#9DBFD0",
+        "stroke": "none",
+        "radius": 4,
+        "strokeWidth": 1
+      }
+    ]
+  }
+}

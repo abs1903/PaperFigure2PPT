@@ -1,0 +1,32 @@
+{
+  "round": 4,
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "ef2b1ea6e8cb5b4255d2932390cd39d758a21ebc4ba01ed750760616712b0757",
+  "promptPath": "prompt-edit-v4.txt",
+  "promptSHA256": "9b2be04b0755f2433e92d2c1af8dc80af03b3fbf04fcb38d8ea403ee21f32270",
+  "inputImages": [
+    {
+      "path": "candidate-v3.png",
+      "sha256": "ef2b1ea6e8cb5b4255d2932390cd39d758a21ebc4ba01ed750760616712b0757",
+      "role": "actual referenced_image_paths edit target"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-v4.png",
+    "sha256": "81bea89ab5a2cfd8437c5ed5e194f66a81fa27852b98f372d9755e8e63ad6bcf",
+    "sizePx": [
+      1685,
+      934
+    ]
+  },
+  "specSHA256": "cdef0cf5d66b9709bc6e22e9f7564c5995041fff27ec8491d0e68e438344fa2e",
+  "briefSHA256": "985839e929f82bb333d48a2845fefdc07f9af77e9f47326badf4ec45d6a5bca5",
+  "narrativePlanSHA256": "1c878fe7157ed7473c968853e0edd1196e7f339817d369d403baf33441477378",
+  "semanticFreezeSHA256": "8d21545553b3a26abdd34187c91aee56e3f7e2daaf57c417a9290196a3bb61a5",
+  "defectClass": "Appearance only: remove broad gradient phase backdrops; retain phase label chips",
+  "sourceFigureAccess": true,
+  "figureHidden": false,
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

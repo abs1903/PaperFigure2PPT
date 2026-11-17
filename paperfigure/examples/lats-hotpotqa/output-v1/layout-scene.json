@@ -1,0 +1,4001 @@
+{
+  "version": "1.0",
+  "title": "LATS code-grounded HotPotQA",
+  "width": 1820,
+  "height": 1000,
+  "source": {
+    "repository": "https://github.com/andyz245/LanguageAgentTreeSearch",
+    "commit": "853d81614607dd27433faf17c7b0a7d660f95d22",
+    "scope": "Official HotPotQA --algorithm lats --prompt_sample cot; shared mutable environment; reflection-to-policy only; not a claim of full-paper implementation equivalence.",
+    "specSHA256": "6e02f3b640ac5169adddf2a759d2e3db86e985e3460c34eabf8029e52fd7e936",
+    "palette": "Blue = LM inference; green = question-scoped stored state; neutral = controls/tools/I-O; gold line = selected trajectory.",
+    "treeMotif": "Schematic branches, not actual execution, literal branching factor, neural layers or branch-specific environment states."
+  },
+  "groupIcons": true,
+  "cleanArrowTips": true,
+  "modules": [
+    {
+      "id": "question",
+      "box": [
+        20,
+        180,
+        160,
+        80
+      ],
+      "container": false,
+      "anchorShapeId": "shape-question",
+      "centerTextIds": [
+        "label-question-0"
+      ],
+      "textBox": [
+        20,
+        180,
+        160,
+        80
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "tree",
+      "box": [
+        220,
+        90,
+        360,
+        590
+      ],
+      "container": true,
+      "anchorShapeId": "shape-tree",
+      "centerTextIds": [
+        "label-tree-0",
+        "label-tree-1"
+      ],
+      "textBox": [
+        238,
+        105,
+        324,
+        95
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "select",
+      "box": [
+        630,
+        120,
+        160,
+        100
+      ],
+      "container": false,
+      "anchorShapeId": "shape-select",
+      "centerTextIds": [
+        "label-select-0",
+        "label-select-1"
+      ],
+      "textBox": [
+        630,
+        120,
+        160,
+        100
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "policy",
+      "box": [
+        860,
+        120,
+        225,
+        100
+      ],
+      "container": false,
+      "anchorShapeId": "shape-policy",
+      "centerTextIds": [
+        "label-policy-0",
+        "label-policy-1"
+      ],
+      "textBox": [
+        860,
+        120,
+        225,
+        100
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "tools",
+      "box": [
+        1160,
+        110,
+        400,
+        160
+      ],
+      "container": false,
+      "anchorShapeId": "shape-tools",
+      "centerTextIds": [
+        "label-tools-0",
+        "label-tools-1",
+        "label-tools-2",
+        "label-tools-3"
+      ],
+      "textBox": [
+        1160,
+        110,
+        400,
+        160
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "value",
+      "box": [
+        630,
+        620,
+        170,
+        90
+      ],
+      "container": false,
+      "anchorShapeId": "shape-value",
+      "centerTextIds": [
+        "label-value-0"
+      ],
+      "textBox": [
+        630,
+        620,
+        170,
+        90
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "rollout",
+      "box": [
+        860,
+        560,
+        660,
+        210
+      ],
+      "container": false,
+      "anchorShapeId": "shape-rollout",
+      "centerTextIds": [
+        "label-rollout-0",
+        "label-rollout-1"
+      ],
+      "textBox": [
+        878,
+        570,
+        624,
+        110
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "backup",
+      "box": [
+        1570,
+        600,
+        220,
+        145
+      ],
+      "container": false,
+      "anchorShapeId": "shape-backup",
+      "centerTextIds": [
+        "label-backup-0",
+        "label-backup-1",
+        "label-backup-2"
+      ],
+      "textBox": [
+        1570,
+        600,
+        220,
+        145
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "failed",
+      "box": [
+        1420,
+        350,
+        220,
+        130
+      ],
+      "container": false,
+      "anchorShapeId": "shape-failed",
+      "centerTextIds": [
+        "label-failed-0",
+        "label-failed-1"
+      ],
+      "textBox": [
+        1420,
+        350,
+        220,
+        130
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "reflect",
+      "box": [
+        1090,
+        350,
+        270,
+        130
+      ],
+      "container": false,
+      "anchorShapeId": "shape-reflect",
+      "centerTextIds": [
+        "label-reflect-0",
+        "label-reflect-1",
+        "label-reflect-2"
+      ],
+      "textBox": [
+        1090,
+        350,
+        270,
+        130
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "context",
+      "box": [
+        800,
+        350,
+        230,
+        130
+      ],
+      "container": false,
+      "anchorShapeId": "shape-context",
+      "centerTextIds": [
+        "label-context-0",
+        "label-context-1",
+        "label-context-2"
+      ],
+      "textBox": [
+        800,
+        350,
+        230,
+        130
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "result",
+      "box": [
+        1390,
+        850,
+        370,
+        100
+      ],
+      "container": false,
+      "anchorShapeId": "shape-result",
+      "centerTextIds": [
+        "label-result-0",
+        "label-result-1"
+      ],
+      "textBox": [
+        1390,
+        850,
+        370,
+        100
+      ],
+      "minPadding": 14,
+      "minFontScale": 0.94
+    },
+    {
+      "id": "annotation-layer",
+      "box": [
+        0,
+        0,
+        1820,
+        1000
+      ],
+      "container": true,
+      "routingObstacle": false
+    }
+  ],
+  "primitives": [
+    {
+      "id": "shape-question",
+      "owner": "question",
+      "type": "path",
+      "seq": 0,
+      "commands": [
+        [
+          "M",
+          38,
+          180
+        ],
+        [
+          "L",
+          162,
+          180
+        ],
+        [
+          "C",
+          171.94113,
+          180,
+          180,
+          188.05887,
+          180,
+          198
+        ],
+        [
+          "L",
+          180,
+          242
+        ],
+        [
+          "C",
+          180,
+          251.94113,
+          171.94113,
+          260,
+          162,
+          260
+        ],
+        [
+          "L",
+          38,
+          260
+        ],
+        [
+          "C",
+          28.05887,
+          260,
+          20,
+          251.94113,
+          20,
+          242
+        ],
+        [
+          "L",
+          20,
+          198
+        ],
+        [
+          "C",
+          20,
+          188.05887,
+          28.05887,
+          180,
+          38,
+          180
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        20,
+        180,
+        160,
+        80
+      ],
+      "fill": "#F6F7F8",
+      "stroke": "#84929B",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-question-0",
+      "owner": "question",
+      "type": "text",
+      "seq": 1,
+      "text": "Question",
+      "positions": [
+        [
+          35.3603515625,
+          229.84375
+        ]
+      ],
+      "box": [
+        35.3603515625,
+        199.84375,
+        136.79999999999998,
+        36
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0011160714285714285
+    },
+    {
+      "id": "shape-tree",
+      "owner": "tree",
+      "type": "path",
+      "seq": 2,
+      "commands": [
+        [
+          "M",
+          238,
+          90
+        ],
+        [
+          "L",
+          562,
+          90
+        ],
+        [
+          "C",
+          571.94113,
+          90,
+          580,
+          98.05887,
+          580,
+          108
+        ],
+        [
+          "L",
+          580,
+          662
+        ],
+        [
+          "C",
+          580,
+          671.94113,
+          571.94113,
+          680,
+          562,
+          680
+        ],
+        [
+          "L",
+          238,
+          680
+        ],
+        [
+          "C",
+          228.05887,
+          680,
+          220,
+          671.94113,
+          220,
+          662
+        ],
+        [
+          "L",
+          220,
+          108
+        ],
+        [
+          "C",
+          220,
+          98.05887,
+          228.05887,
+          90,
+          238,
+          90
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        220,
+        90,
+        360,
+        590
+      ],
+      "fill": "#E8F4EC",
+      "stroke": "#6E9683",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-tree-0",
+      "owner": "tree",
+      "type": "text",
+      "seq": 3,
+      "text": "Trajectory tree",
+      "positions": [
+        [
+          284.8181759620191,
+          142.9862078593744
+        ]
+      ],
+      "box": [
+        284.8181759620191,
+        109.47750820316787,
+        286.4993820605657,
+        40.21043958744782
+      ],
+      "font": "Arial",
+      "size": 33.50869965620652,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00033133370535714287
+    },
+    {
+      "id": "label-tree-1",
+      "owner": "tree",
+      "type": "text",
+      "seq": 4,
+      "text": "This question",
+      "positions": [
+        [
+          284.8181759620191,
+          180.5159514743257
+        ]
+      ],
+      "box": [
+        284.8181759620191,
+        152.92055175744974,
+        204.48191190205083,
+        33.11447966025115
+      ],
+      "font": "Arial",
+      "size": 27.595399716875956,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0003509521484375
+    },
+    {
+      "id": "shape-select",
+      "owner": "select",
+      "type": "path",
+      "seq": 5,
+      "commands": [
+        [
+          "M",
+          648,
+          120
+        ],
+        [
+          "L",
+          772,
+          120
+        ],
+        [
+          "C",
+          781.94113,
+          120,
+          790,
+          128.05887,
+          790,
+          138
+        ],
+        [
+          "L",
+          790,
+          202
+        ],
+        [
+          "C",
+          790,
+          211.94113,
+          781.94113,
+          220,
+          772,
+          220
+        ],
+        [
+          "L",
+          648,
+          220
+        ],
+        [
+          "C",
+          638.05887,
+          220,
+          630,
+          211.94113,
+          630,
+          202
+        ],
+        [
+          "L",
+          630,
+          138
+        ],
+        [
+          "C",
+          630,
+          128.05887,
+          638.05887,
+          120,
+          648,
+          120
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        630,
+        120,
+        160,
+        100
+      ],
+      "fill": "#F6F7F8",
+      "stroke": "#84929B",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-select-0",
+      "owner": "select",
+      "type": "text",
+      "seq": 6,
+      "text": "Select",
+      "positions": [
+        [
+          662.4765625,
+          160.7821502685547
+        ]
+      ],
+      "box": [
+        662.4765625,
+        128.7821502685547,
+        109.44,
+        38.4
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": 0
+    },
+    {
+      "id": "label-select-1",
+      "owner": "select",
+      "type": "text",
+      "seq": 7,
+      "text": "(UCT)",
+      "positions": [
+        [
+          662.4765625,
+          196.6221502685547
+        ]
+      ],
+      "box": [
+        662.4765625,
+        168.6221502685547,
+        79.8,
+        33.6
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00244140625
+    },
+    {
+      "id": "shape-policy",
+      "owner": "policy",
+      "type": "path",
+      "seq": 8,
+      "commands": [
+        [
+          "M",
+          878,
+          120
+        ],
+        [
+          "L",
+          1067,
+          120
+        ],
+        [
+          "C",
+          1076.94113,
+          120,
+          1085,
+          128.05887,
+          1085,
+          138
+        ],
+        [
+          "L",
+          1085,
+          202
+        ],
+        [
+          "C",
+          1085,
+          211.94113,
+          1076.94113,
+          220,
+          1067,
+          220
+        ],
+        [
+          "L",
+          878,
+          220
+        ],
+        [
+          "C",
+          868.05887,
+          220,
+          860,
+          211.94113,
+          860,
+          202
+        ],
+        [
+          "L",
+          860,
+          138
+        ],
+        [
+          "C",
+          860,
+          128.05887,
+          868.05887,
+          120,
+          878,
+          120
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        860,
+        120,
+        225,
+        100
+      ],
+      "fill": "#E8F1FB",
+      "stroke": "#718DA7",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-policy-0",
+      "owner": "policy",
+      "type": "text",
+      "seq": 9,
+      "text": "Expand",
+      "positions": [
+        [
+          884.235107421875,
+          163.3749237060547
+        ]
+      ],
+      "box": [
+        884.235107421875,
+        131.3749237060547,
+        109.44,
+        38.4
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": 0
+    },
+    {
+      "id": "label-policy-1",
+      "owner": "policy",
+      "type": "text",
+      "seq": 10,
+      "text": "LM candidates",
+      "positions": [
+        [
+          884.235107421875,
+          199.2149237060547
+        ]
+      ],
+      "box": [
+        884.235107421875,
+        172.2149237060547,
+        200.07,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0009765625
+    },
+    {
+      "id": "shape-tools",
+      "owner": "tools",
+      "type": "path",
+      "seq": 11,
+      "commands": [
+        [
+          "M",
+          1178,
+          110
+        ],
+        [
+          "L",
+          1542,
+          110
+        ],
+        [
+          "C",
+          1551.94113,
+          110,
+          1560,
+          118.05887,
+          1560,
+          128
+        ],
+        [
+          "L",
+          1560,
+          252
+        ],
+        [
+          "C",
+          1560,
+          261.94113,
+          1551.94113,
+          270,
+          1542,
+          270
+        ],
+        [
+          "L",
+          1178,
+          270
+        ],
+        [
+          "C",
+          1168.05887,
+          270,
+          1160,
+          261.94113,
+          1160,
+          252
+        ],
+        [
+          "L",
+          1160,
+          128
+        ],
+        [
+          "C",
+          1160,
+          118.05887,
+          1168.05887,
+          110,
+          1178,
+          110
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        1160,
+        110,
+        400,
+        160
+      ],
+      "fill": "#F6F7F8",
+      "stroke": "#84929B",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-tools-0",
+      "owner": "tools",
+      "type": "text",
+      "seq": 12,
+      "text": "Shared WikiEnv",
+      "positions": [
+        [
+          1214.759765625,
+          153.33023071289062
+        ]
+      ],
+      "box": [
+        1214.759765625,
+        121.33023071289062,
+        255.35999999999999,
+        38.4
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": 0
+    },
+    {
+      "id": "label-tools-1",
+      "owner": "tools",
+      "type": "text",
+      "seq": 13,
+      "text": "Search / Lookup / Finish",
+      "positions": [
+        [
+          1214.759765625,
+          189.17023071289063
+        ]
+      ],
+      "box": [
+        1214.759765625,
+        162.17023071289063,
+        369.35999999999996,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00012737771739130434
+    },
+    {
+      "id": "label-tools-2",
+      "owner": "tools",
+      "type": "text",
+      "seq": 14,
+      "text": "Observation / done",
+      "positions": [
+        [
+          1214.759765625,
+          219.41023071289064
+        ]
+      ],
+      "box": [
+        1214.759765625,
+        192.41023071289064,
+        277.02,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00005744485294117647
+    },
+    {
+      "id": "label-tools-3",
+      "owner": "tools",
+      "type": "text",
+      "seq": 15,
+      "text": "Exact-match reward",
+      "positions": [
+        [
+          1214.759765625,
+          249.65023071289065
+        ]
+      ],
+      "box": [
+        1214.759765625,
+        222.65023071289065,
+        277.02,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.000603170955882353
+    },
+    {
+      "id": "shape-value",
+      "owner": "value",
+      "type": "path",
+      "seq": 16,
+      "commands": [
+        [
+          "M",
+          648,
+          620
+        ],
+        [
+          "L",
+          782,
+          620
+        ],
+        [
+          "C",
+          791.94113,
+          620,
+          800,
+          628.05887,
+          800,
+          638
+        ],
+        [
+          "L",
+          800,
+          692
+        ],
+        [
+          "C",
+          800,
+          701.94113,
+          791.94113,
+          710,
+          782,
+          710
+        ],
+        [
+          "L",
+          648,
+          710
+        ],
+        [
+          "C",
+          638.05887,
+          710,
+          630,
+          701.94113,
+          630,
+          692
+        ],
+        [
+          "L",
+          630,
+          638
+        ],
+        [
+          "C",
+          630,
+          628.05887,
+          638.05887,
+          620,
+          648,
+          620
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        630,
+        620,
+        170,
+        90
+      ],
+      "fill": "#E8F1FB",
+      "stroke": "#718DA7",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-value-0",
+      "owner": "value",
+      "type": "text",
+      "seq": 17,
+      "text": "LM value",
+      "positions": [
+        [
+          650.228515625,
+          675.5615234375
+        ]
+      ],
+      "box": [
+        650.228515625,
+        645.5615234375,
+        136.79999999999998,
+        36
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0011160714285714285
+    },
+    {
+      "id": "shape-rollout",
+      "owner": "rollout",
+      "type": "path",
+      "seq": 18,
+      "commands": [
+        [
+          "M",
+          878,
+          560
+        ],
+        [
+          "L",
+          1502,
+          560
+        ],
+        [
+          "C",
+          1511.94113,
+          560,
+          1520,
+          568.05887,
+          1520,
+          578
+        ],
+        [
+          "L",
+          1520,
+          752
+        ],
+        [
+          "C",
+          1520,
+          761.94113,
+          1511.94113,
+          770,
+          1502,
+          770
+        ],
+        [
+          "L",
+          878,
+          770
+        ],
+        [
+          "C",
+          868.05887,
+          770,
+          860,
+          761.94113,
+          860,
+          752
+        ],
+        [
+          "L",
+          860,
+          578
+        ],
+        [
+          "C",
+          860,
+          568.05887,
+          868.05887,
+          560,
+          878,
+          560
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        860,
+        560,
+        660,
+        210
+      ],
+      "fill": "#F6F7F8",
+      "stroke": "#84929B",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-rollout-0",
+      "owner": "rollout",
+      "type": "text",
+      "seq": 19,
+      "text": "Value-guided rollout",
+      "positions": [
+        [
+          1031.640625,
+          615.6481628417969
+        ]
+      ],
+      "box": [
+        1031.640625,
+        582.6481628417969,
+        376.2,
+        39.6
+      ],
+      "font": "Arial",
+      "size": 33,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0006681743421052632
+    },
+    {
+      "id": "label-rollout-1",
+      "owner": "rollout",
+      "type": "text",
+      "seq": 20,
+      "text": "Absolute depth < 4",
+      "positions": [
+        [
+          1031.640625,
+          652.6081628417969
+        ]
+      ],
+      "box": [
+        1031.640625,
+        625.6081628417969,
+        277.02,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00028722426470588236
+    },
+    {
+      "id": "shape-backup",
+      "owner": "backup",
+      "type": "path",
+      "seq": 21,
+      "commands": [
+        [
+          "M",
+          1588,
+          600
+        ],
+        [
+          "L",
+          1772,
+          600
+        ],
+        [
+          "C",
+          1781.94113,
+          600,
+          1790,
+          608.05887,
+          1790,
+          618
+        ],
+        [
+          "L",
+          1790,
+          727
+        ],
+        [
+          "C",
+          1790,
+          736.94113,
+          1781.94113,
+          745,
+          1772,
+          745
+        ],
+        [
+          "L",
+          1588,
+          745
+        ],
+        [
+          "C",
+          1578.05887,
+          745,
+          1570,
+          736.94113,
+          1570,
+          727
+        ],
+        [
+          "L",
+          1570,
+          618
+        ],
+        [
+          "C",
+          1570,
+          608.05887,
+          1578.05887,
+          600,
+          1588,
+          600
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        1570,
+        600,
+        220,
+        145
+      ],
+      "fill": "#F6F7F8",
+      "stroke": "#84929B",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-backup-0",
+      "owner": "backup",
+      "type": "text",
+      "seq": 22,
+      "text": "Backup",
+      "positions": [
+        [
+          1598.93798828125,
+          650.7483215332031
+        ]
+      ],
+      "box": [
+        1598.93798828125,
+        618.7483215332031,
+        109.44,
+        38.4
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": 0
+    },
+    {
+      "id": "label-backup-1",
+      "owner": "backup",
+      "type": "text",
+      "seq": 23,
+      "text": "If no success",
+      "positions": [
+        [
+          1598.93798828125,
+          686.5883215332032
+        ]
+      ],
+      "box": [
+        1598.93798828125,
+        659.5883215332032,
+        200.07,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0006510416666666666
+    },
+    {
+      "id": "label-backup-2",
+      "owner": "backup",
+      "type": "text",
+      "seq": 24,
+      "text": "Values / visits",
+      "positions": [
+        [
+          1598.93798828125,
+          716.8283215332032
+        ]
+      ],
+      "box": [
+        1598.93798828125,
+        689.8283215332032,
+        230.85,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0005580357142857143
+    },
+    {
+      "id": "shape-failed",
+      "owner": "failed",
+      "type": "path",
+      "seq": 25,
+      "commands": [
+        [
+          "M",
+          1438,
+          350
+        ],
+        [
+          "L",
+          1622,
+          350
+        ],
+        [
+          "C",
+          1631.94113,
+          350,
+          1640,
+          358.05887,
+          1640,
+          368
+        ],
+        [
+          "L",
+          1640,
+          462
+        ],
+        [
+          "C",
+          1640,
+          471.94113,
+          1631.94113,
+          480,
+          1622,
+          480
+        ],
+        [
+          "L",
+          1438,
+          480
+        ],
+        [
+          "C",
+          1428.05887,
+          480,
+          1420,
+          471.94113,
+          1420,
+          462
+        ],
+        [
+          "L",
+          1420,
+          368
+        ],
+        [
+          "C",
+          1420,
+          358.05887,
+          1428.05887,
+          350,
+          1438,
+          350
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        1420,
+        350,
+        220,
+        130
+      ],
+      "fill": "#E8F4EC",
+      "stroke": "#6E9683",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-failed-0",
+      "owner": "failed",
+      "type": "text",
+      "seq": 26,
+      "text": "Failed traces",
+      "positions": [
+        [
+          1438.85693359375,
+          406.2014617919922
+        ]
+      ],
+      "box": [
+        1438.85693359375,
+        376.2014617919922,
+        222.29999999999998,
+        36
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.000732421875
+    },
+    {
+      "id": "label-failed-1",
+      "owner": "failed",
+      "type": "text",
+      "seq": 27,
+      "text": "Wrong terminal",
+      "positions": [
+        [
+          1438.85693359375,
+          439.8014617919922
+        ]
+      ],
+      "box": [
+        1438.85693359375,
+        413.8014617919922,
+        207.48,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0009765625
+    },
+    {
+      "id": "shape-reflect",
+      "owner": "reflect",
+      "type": "path",
+      "seq": 28,
+      "commands": [
+        [
+          "M",
+          1108,
+          350
+        ],
+        [
+          "L",
+          1342,
+          350
+        ],
+        [
+          "C",
+          1351.94113,
+          350,
+          1360,
+          358.05887,
+          1360,
+          368
+        ],
+        [
+          "L",
+          1360,
+          462
+        ],
+        [
+          "C",
+          1360,
+          471.94113,
+          1351.94113,
+          480,
+          1342,
+          480
+        ],
+        [
+          "L",
+          1108,
+          480
+        ],
+        [
+          "C",
+          1098.05887,
+          480,
+          1090,
+          471.94113,
+          1090,
+          462
+        ],
+        [
+          "L",
+          1090,
+          368
+        ],
+        [
+          "C",
+          1090,
+          358.05887,
+          1098.05887,
+          350,
+          1108,
+          350
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        1090,
+        350,
+        270,
+        130
+      ],
+      "fill": "#E8F1FB",
+      "stroke": "#718DA7",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-reflect-0",
+      "owner": "reflect",
+      "type": "text",
+      "seq": 29,
+      "text": "Self-reflection",
+      "positions": [
+        [
+          1115.900390625,
+          394.39537048339844
+        ]
+      ],
+      "box": [
+        1115.900390625,
+        364.39537048339844,
+        256.5,
+        36
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0007672991071428571
+    },
+    {
+      "id": "label-reflect-1",
+      "owner": "reflect",
+      "type": "text",
+      "seq": 30,
+      "text": "New distinct failure",
+      "positions": [
+        [
+          1115.900390625,
+          427.99537048339846
+        ]
+      ],
+      "box": [
+        1115.900390625,
+        401.99537048339846,
+        296.4,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": 0
+    },
+    {
+      "id": "label-reflect-2",
+      "owner": "reflect",
+      "type": "text",
+      "seq": 31,
+      "text": "1-3 total",
+      "positions": [
+        [
+          1115.900390625,
+          457.11537048339846
+        ]
+      ],
+      "box": [
+        1115.900390625,
+        431.11537048339846,
+        133.38,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0015869140625
+    },
+    {
+      "id": "shape-context",
+      "owner": "context",
+      "type": "path",
+      "seq": 32,
+      "commands": [
+        [
+          "M",
+          818,
+          350
+        ],
+        [
+          "L",
+          1012,
+          350
+        ],
+        [
+          "C",
+          1021.94113,
+          350,
+          1030,
+          358.05887,
+          1030,
+          368
+        ],
+        [
+          "L",
+          1030,
+          462
+        ],
+        [
+          "C",
+          1030,
+          471.94113,
+          1021.94113,
+          480,
+          1012,
+          480
+        ],
+        [
+          "L",
+          818,
+          480
+        ],
+        [
+          "C",
+          808.05887,
+          480,
+          800,
+          471.94113,
+          800,
+          462
+        ],
+        [
+          "L",
+          800,
+          368
+        ],
+        [
+          "C",
+          800,
+          358.05887,
+          808.05887,
+          350,
+          818,
+          350
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        800,
+        350,
+        230,
+        130
+      ],
+      "fill": "#E8F4EC",
+      "stroke": "#6E9683",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-context-0",
+      "owner": "context",
+      "type": "text",
+      "seq": 33,
+      "text": "Reflection",
+      "positions": [
+        [
+          838.2744140625,
+          389.7369079589844
+        ]
+      ],
+      "box": [
+        838.2744140625,
+        359.7369079589844,
+        170.99999999999997,
+        36
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0007595486111111111
+    },
+    {
+      "id": "label-context-1",
+      "owner": "context",
+      "type": "text",
+      "seq": 34,
+      "text": "context",
+      "positions": [
+        [
+          838.2744140625,
+          423.3369079589844
+        ]
+      ],
+      "box": [
+        838.2744140625,
+        393.3369079589844,
+        119.69999999999999,
+        36
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0011393229166666667
+    },
+    {
+      "id": "label-context-2",
+      "owner": "context",
+      "type": "text",
+      "seq": 35,
+      "text": "This question",
+      "positions": [
+        [
+          838.2744140625,
+          456.9369079589844
+        ]
+      ],
+      "box": [
+        838.2744140625,
+        430.9369079589844,
+        192.66,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0008138020833333334
+    },
+    {
+      "id": "shape-result",
+      "owner": "result",
+      "type": "path",
+      "seq": 36,
+      "commands": [
+        [
+          "M",
+          1408,
+          850
+        ],
+        [
+          "L",
+          1742,
+          850
+        ],
+        [
+          "C",
+          1751.94113,
+          850,
+          1760,
+          858.05887,
+          1760,
+          868
+        ],
+        [
+          "L",
+          1760,
+          932
+        ],
+        [
+          "C",
+          1760,
+          941.94113,
+          1751.94113,
+          950,
+          1742,
+          950
+        ],
+        [
+          "L",
+          1408,
+          950
+        ],
+        [
+          "C",
+          1398.05887,
+          950,
+          1390,
+          941.94113,
+          1390,
+          932
+        ],
+        [
+          "L",
+          1390,
+          868
+        ],
+        [
+          "C",
+          1390,
+          858.05887,
+          1398.05887,
+          850,
+          1408,
+          850
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        1390,
+        850,
+        370,
+        100
+      ],
+      "fill": "#F6F7F8",
+      "stroke": "#84929B",
+      "width": 2.2,
+      "fillRule": "nonzero",
+      "lineCap": "round"
+    },
+    {
+      "id": "label-result-0",
+      "owner": "result",
+      "type": "text",
+      "seq": 37,
+      "text": "Return state",
+      "positions": [
+        [
+          1421.3603515625,
+          890.6920471191406
+        ]
+      ],
+      "box": [
+        1421.3603515625,
+        858.6920471191406,
+        218.88,
+        38.4
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": 0
+    },
+    {
+      "id": "label-result-1",
+      "owner": "result",
+      "type": "text",
+      "seq": 38,
+      "text": "Success / budget fallback",
+      "positions": [
+        [
+          1421.3603515625,
+          926.5320471191407
+        ]
+      ],
+      "box": [
+        1421.3603515625,
+        899.5320471191407,
+        384.74999999999994,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00016276041666666666
+    },
+    {
+      "id": "tree-branch-root-a",
+      "owner": "tree",
+      "type": "path",
+      "seq": 39,
+      "commands": [
+        [
+          "M",
+          400,
+          255
+        ],
+        [
+          "L",
+          300,
+          345
+        ]
+      ],
+      "box": [
+        300,
+        255,
+        100,
+        90
+      ],
+      "fill": "none",
+      "stroke": "#BF8A20",
+      "width": 4.3,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-root-b",
+      "owner": "tree",
+      "type": "path",
+      "seq": 40,
+      "commands": [
+        [
+          "M",
+          400,
+          255
+        ],
+        [
+          "L",
+          400,
+          345
+        ]
+      ],
+      "box": [
+        400,
+        255,
+        0.01,
+        90
+      ],
+      "fill": "none",
+      "stroke": "#71857A",
+      "width": 2.1,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-root-c",
+      "owner": "tree",
+      "type": "path",
+      "seq": 41,
+      "commands": [
+        [
+          "M",
+          400,
+          255
+        ],
+        [
+          "L",
+          500,
+          345
+        ]
+      ],
+      "box": [
+        400,
+        255,
+        100,
+        90
+      ],
+      "fill": "none",
+      "stroke": "#71857A",
+      "width": 2.1,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-a-d",
+      "owner": "tree",
+      "type": "path",
+      "seq": 42,
+      "commands": [
+        [
+          "M",
+          300,
+          345
+        ],
+        [
+          "L",
+          260,
+          435
+        ]
+      ],
+      "box": [
+        260,
+        345,
+        40,
+        90
+      ],
+      "fill": "none",
+      "stroke": "#71857A",
+      "width": 2.1,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-a-e",
+      "owner": "tree",
+      "type": "path",
+      "seq": 43,
+      "commands": [
+        [
+          "M",
+          300,
+          345
+        ],
+        [
+          "L",
+          340,
+          435
+        ]
+      ],
+      "box": [
+        300,
+        345,
+        40,
+        90
+      ],
+      "fill": "none",
+      "stroke": "#BF8A20",
+      "width": 4.3,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-c-f",
+      "owner": "tree",
+      "type": "path",
+      "seq": 44,
+      "commands": [
+        [
+          "M",
+          500,
+          345
+        ],
+        [
+          "L",
+          470,
+          435
+        ]
+      ],
+      "box": [
+        470,
+        345,
+        30,
+        90
+      ],
+      "fill": "none",
+      "stroke": "#71857A",
+      "width": 2.1,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-c-g",
+      "owner": "tree",
+      "type": "path",
+      "seq": 45,
+      "commands": [
+        [
+          "M",
+          500,
+          345
+        ],
+        [
+          "L",
+          530,
+          435
+        ]
+      ],
+      "box": [
+        500,
+        345,
+        30,
+        90
+      ],
+      "fill": "none",
+      "stroke": "#71857A",
+      "width": 2.1,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-e-h",
+      "owner": "tree",
+      "type": "path",
+      "seq": 46,
+      "commands": [
+        [
+          "M",
+          340,
+          435
+        ],
+        [
+          "L",
+          300,
+          515
+        ]
+      ],
+      "box": [
+        300,
+        435,
+        40,
+        80
+      ],
+      "fill": "none",
+      "stroke": "#BF8A20",
+      "width": 4.3,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-branch-e-i",
+      "owner": "tree",
+      "type": "path",
+      "seq": 47,
+      "commands": [
+        [
+          "M",
+          340,
+          435
+        ],
+        [
+          "L",
+          380,
+          515
+        ]
+      ],
+      "box": [
+        340,
+        435,
+        40,
+        80
+      ],
+      "fill": "none",
+      "stroke": "#71857A",
+      "width": 2.1,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-root",
+      "owner": "tree",
+      "type": "path",
+      "seq": 48,
+      "commands": [
+        [
+          "M",
+          420,
+          255
+        ],
+        [
+          "C",
+          420,
+          266.046,
+          411.046,
+          275,
+          400,
+          275
+        ],
+        [
+          "C",
+          388.954,
+          275,
+          380,
+          266.046,
+          380,
+          255
+        ],
+        [
+          "C",
+          380,
+          243.954,
+          388.954,
+          235,
+          400,
+          235
+        ],
+        [
+          "C",
+          411.046,
+          235,
+          420,
+          243.954,
+          420,
+          255
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        380,
+        235,
+        40,
+        40
+      ],
+      "fill": "#D1E8D8",
+      "stroke": "#BF8A20",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-a",
+      "owner": "tree",
+      "type": "path",
+      "seq": 49,
+      "commands": [
+        [
+          "M",
+          320,
+          345
+        ],
+        [
+          "C",
+          320,
+          356.046,
+          311.046,
+          365,
+          300,
+          365
+        ],
+        [
+          "C",
+          288.954,
+          365,
+          280,
+          356.046,
+          280,
+          345
+        ],
+        [
+          "C",
+          280,
+          333.954,
+          288.954,
+          325,
+          300,
+          325
+        ],
+        [
+          "C",
+          311.046,
+          325,
+          320,
+          333.954,
+          320,
+          345
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        280,
+        325,
+        40,
+        40
+      ],
+      "fill": "#D1E8D8",
+      "stroke": "#BF8A20",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-b",
+      "owner": "tree",
+      "type": "path",
+      "seq": 50,
+      "commands": [
+        [
+          "M",
+          420,
+          345
+        ],
+        [
+          "C",
+          420,
+          356.046,
+          411.046,
+          365,
+          400,
+          365
+        ],
+        [
+          "C",
+          388.954,
+          365,
+          380,
+          356.046,
+          380,
+          345
+        ],
+        [
+          "C",
+          380,
+          333.954,
+          388.954,
+          325,
+          400,
+          325
+        ],
+        [
+          "C",
+          411.046,
+          325,
+          420,
+          333.954,
+          420,
+          345
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        380,
+        325,
+        40,
+        40
+      ],
+      "fill": "#FFFFFF",
+      "stroke": "#71857A",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-c",
+      "owner": "tree",
+      "type": "path",
+      "seq": 51,
+      "commands": [
+        [
+          "M",
+          520,
+          345
+        ],
+        [
+          "C",
+          520,
+          356.046,
+          511.046,
+          365,
+          500,
+          365
+        ],
+        [
+          "C",
+          488.954,
+          365,
+          480,
+          356.046,
+          480,
+          345
+        ],
+        [
+          "C",
+          480,
+          333.954,
+          488.954,
+          325,
+          500,
+          325
+        ],
+        [
+          "C",
+          511.046,
+          325,
+          520,
+          333.954,
+          520,
+          345
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        480,
+        325,
+        40,
+        40
+      ],
+      "fill": "#FFFFFF",
+      "stroke": "#71857A",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-d",
+      "owner": "tree",
+      "type": "path",
+      "seq": 52,
+      "commands": [
+        [
+          "M",
+          280,
+          435
+        ],
+        [
+          "C",
+          280,
+          446.046,
+          271.046,
+          455,
+          260,
+          455
+        ],
+        [
+          "C",
+          248.954,
+          455,
+          240,
+          446.046,
+          240,
+          435
+        ],
+        [
+          "C",
+          240,
+          423.954,
+          248.954,
+          415,
+          260,
+          415
+        ],
+        [
+          "C",
+          271.046,
+          415,
+          280,
+          423.954,
+          280,
+          435
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        240,
+        415,
+        40,
+        40
+      ],
+      "fill": "#FFFFFF",
+      "stroke": "#71857A",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-e",
+      "owner": "tree",
+      "type": "path",
+      "seq": 53,
+      "commands": [
+        [
+          "M",
+          360,
+          435
+        ],
+        [
+          "C",
+          360,
+          446.046,
+          351.046,
+          455,
+          340,
+          455
+        ],
+        [
+          "C",
+          328.954,
+          455,
+          320,
+          446.046,
+          320,
+          435
+        ],
+        [
+          "C",
+          320,
+          423.954,
+          328.954,
+          415,
+          340,
+          415
+        ],
+        [
+          "C",
+          351.046,
+          415,
+          360,
+          423.954,
+          360,
+          435
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        320,
+        415,
+        40,
+        40
+      ],
+      "fill": "#D1E8D8",
+      "stroke": "#BF8A20",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-f",
+      "owner": "tree",
+      "type": "path",
+      "seq": 54,
+      "commands": [
+        [
+          "M",
+          490,
+          435
+        ],
+        [
+          "C",
+          490,
+          446.046,
+          481.046,
+          455,
+          470,
+          455
+        ],
+        [
+          "C",
+          458.954,
+          455,
+          450,
+          446.046,
+          450,
+          435
+        ],
+        [
+          "C",
+          450,
+          423.954,
+          458.954,
+          415,
+          470,
+          415
+        ],
+        [
+          "C",
+          481.046,
+          415,
+          490,
+          423.954,
+          490,
+          435
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        450,
+        415,
+        40,
+        40
+      ],
+      "fill": "#FFFFFF",
+      "stroke": "#71857A",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-g",
+      "owner": "tree",
+      "type": "path",
+      "seq": 55,
+      "commands": [
+        [
+          "M",
+          550,
+          435
+        ],
+        [
+          "C",
+          550,
+          446.046,
+          541.046,
+          455,
+          530,
+          455
+        ],
+        [
+          "C",
+          518.954,
+          455,
+          510,
+          446.046,
+          510,
+          435
+        ],
+        [
+          "C",
+          510,
+          423.954,
+          518.954,
+          415,
+          530,
+          415
+        ],
+        [
+          "C",
+          541.046,
+          415,
+          550,
+          423.954,
+          550,
+          435
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        510,
+        415,
+        40,
+        40
+      ],
+      "fill": "#FFFFFF",
+      "stroke": "#71857A",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-h",
+      "owner": "tree",
+      "type": "path",
+      "seq": 56,
+      "commands": [
+        [
+          "M",
+          320,
+          515
+        ],
+        [
+          "C",
+          320,
+          526.046,
+          311.046,
+          535,
+          300,
+          535
+        ],
+        [
+          "C",
+          288.954,
+          535,
+          280,
+          526.046,
+          280,
+          515
+        ],
+        [
+          "C",
+          280,
+          503.954,
+          288.954,
+          495,
+          300,
+          495
+        ],
+        [
+          "C",
+          311.046,
+          495,
+          320,
+          503.954,
+          320,
+          515
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        280,
+        495,
+        40,
+        40
+      ],
+      "fill": "#D1E8D8",
+      "stroke": "#BF8A20",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-node-i",
+      "owner": "tree",
+      "type": "path",
+      "seq": 57,
+      "commands": [
+        [
+          "M",
+          400,
+          515
+        ],
+        [
+          "C",
+          400,
+          526.046,
+          391.046,
+          535,
+          380,
+          535
+        ],
+        [
+          "C",
+          368.954,
+          535,
+          360,
+          526.046,
+          360,
+          515
+        ],
+        [
+          "C",
+          360,
+          503.954,
+          368.954,
+          495,
+          380,
+          495
+        ],
+        [
+          "C",
+          391.046,
+          495,
+          400,
+          503.954,
+          400,
+          515
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "box": [
+        360,
+        495,
+        40,
+        40
+      ],
+      "fill": "#FFFFFF",
+      "stroke": "#71857A",
+      "width": 2.4,
+      "fillRule": "nonzero",
+      "lineCap": "round",
+      "icon": "trajectory-motif"
+    },
+    {
+      "id": "tree-more-a",
+      "owner": "tree",
+      "type": "text",
+      "seq": 58,
+      "text": "...",
+      "positions": [
+        [
+          245,
+          380
+        ]
+      ],
+      "box": [
+        245,
+        353,
+        46.169999999999995,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00146484375
+    },
+    {
+      "id": "tree-more-b",
+      "owner": "tree",
+      "type": "text",
+      "seq": 59,
+      "text": "...",
+      "positions": [
+        [
+          505,
+          480
+        ]
+      ],
+      "box": [
+        505,
+        453,
+        46.169999999999995,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00146484375
+    },
+    {
+      "id": "tree-field-a",
+      "owner": "tree",
+      "type": "text",
+      "seq": 60,
+      "text": "Thought + action",
+      "positions": [
+        [
+          299.66748046875,
+          580
+        ]
+      ],
+      "box": [
+        299.66748046875,
+        553,
+        246.23999999999998,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00016276041666666666
+    },
+    {
+      "id": "tree-field-b",
+      "owner": "tree",
+      "type": "text",
+      "seq": 61,
+      "text": "Observation",
+      "positions": [
+        [
+          327.495361328125,
+          618
+        ]
+      ],
+      "box": [
+        327.495361328125,
+        591,
+        169.29,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.001025390625
+    },
+    {
+      "id": "tree-field-c",
+      "owner": "tree",
+      "type": "text",
+      "seq": 62,
+      "text": "Values + visits",
+      "positions": [
+        [
+          314.80517578125,
+          656
+        ]
+      ],
+      "box": [
+        314.80517578125,
+        629,
+        230.85,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0005929129464285714
+    },
+    {
+      "id": "rollout-reuse",
+      "owner": "rollout",
+      "type": "text",
+      "seq": 63,
+      "text": "Reuse policy, shared tools and LM value",
+      "positions": [
+        [
+          947.365966796875,
+          696
+        ]
+      ],
+      "box": [
+        947.365966796875,
+        669,
+        600.2099999999999,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00017989309210526315
+    },
+    {
+      "id": "rollout-greedy",
+      "owner": "rollout",
+      "type": "text",
+      "seq": 64,
+      "text": "Keep the highest-valued continuation",
+      "positions": [
+        [
+          967.7841796875,
+          735
+        ]
+      ],
+      "box": [
+        967.7841796875,
+        708,
+        554.04,
+        32.4
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.000390625
+    },
+    {
+      "id": "store-label",
+      "owner": "annotation-layer",
+      "type": "text",
+      "seq": 65,
+      "text": "Expanded children",
+      "positions": [
+        [
+          1090,
+          52
+        ]
+      ],
+      "box": [
+        1090,
+        26,
+        251.93999999999997,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.0006103515625
+    },
+    {
+      "id": "call-label",
+      "owner": "annotation-layer",
+      "type": "text",
+      "seq": 66,
+      "text": "Call",
+      "positions": [
+        [
+          1600,
+          290
+        ]
+      ],
+      "box": [
+        1600,
+        264,
+        59.279999999999994,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.004231770833333333
+    },
+    {
+      "id": "observe-label",
+      "owner": "annotation-layer",
+      "type": "text",
+      "seq": 67,
+      "text": "Observation",
+      "positions": [
+        [
+          1540,
+          585
+        ]
+      ],
+      "box": [
+        1540,
+        559,
+        163.01999999999998,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00029296875
+    },
+    {
+      "id": "stats-label",
+      "owner": "annotation-layer",
+      "type": "text",
+      "seq": 68,
+      "text": "Update values + visits",
+      "positions": [
+        [
+          650,
+          790
+        ]
+      ],
+      "box": [
+        650,
+        764,
+        326.03999999999996,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00009300595238095238
+    },
+    {
+      "id": "fallback-label",
+      "owner": "annotation-layer",
+      "type": "text",
+      "seq": 69,
+      "text": "Budget fallback",
+      "positions": [
+        [
+          950,
+          865
+        ]
+      ],
+      "box": [
+        950,
+        839,
+        222.29999999999998,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.00027901785714285713
+    },
+    {
+      "id": "success-label",
+      "owner": "annotation-layer",
+      "type": "text",
+      "seq": 70,
+      "text": "Success",
+      "positions": [
+        [
+          1570,
+          778
+        ]
+      ],
+      "box": [
+        1570,
+        752,
+        103.74,
+        31.2
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": false,
+      "italic": false,
+      "fill": "#243746",
+      "angle": 0,
+      "nativeTracking": -0.001953125
+    }
+  ],
+  "labels": [
+    {
+      "id": "label-question-0",
+      "owner": "question"
+    },
+    {
+      "id": "label-tree-0",
+      "owner": "tree"
+    },
+    {
+      "id": "label-tree-1",
+      "owner": "tree"
+    },
+    {
+      "id": "label-select-0",
+      "owner": "select"
+    },
+    {
+      "id": "label-select-1",
+      "owner": "select"
+    },
+    {
+      "id": "label-policy-0",
+      "owner": "policy"
+    },
+    {
+      "id": "label-policy-1",
+      "owner": "policy"
+    },
+    {
+      "id": "label-tools-0",
+      "owner": "tools"
+    },
+    {
+      "id": "label-tools-1",
+      "owner": "tools"
+    },
+    {
+      "id": "label-tools-2",
+      "owner": "tools"
+    },
+    {
+      "id": "label-tools-3",
+      "owner": "tools"
+    },
+    {
+      "id": "label-value-0",
+      "owner": "value"
+    },
+    {
+      "id": "label-rollout-0",
+      "owner": "rollout"
+    },
+    {
+      "id": "label-rollout-1",
+      "owner": "rollout"
+    },
+    {
+      "id": "label-backup-0",
+      "owner": "backup"
+    },
+    {
+      "id": "label-backup-1",
+      "owner": "backup"
+    },
+    {
+      "id": "label-backup-2",
+      "owner": "backup"
+    },
+    {
+      "id": "label-failed-0",
+      "owner": "failed"
+    },
+    {
+      "id": "label-failed-1",
+      "owner": "failed"
+    },
+    {
+      "id": "label-reflect-0",
+      "owner": "reflect"
+    },
+    {
+      "id": "label-reflect-1",
+      "owner": "reflect"
+    },
+    {
+      "id": "label-reflect-2",
+      "owner": "reflect"
+    },
+    {
+      "id": "label-context-0",
+      "owner": "context"
+    },
+    {
+      "id": "label-context-1",
+      "owner": "context"
+    },
+    {
+      "id": "label-context-2",
+      "owner": "context"
+    },
+    {
+      "id": "label-result-0",
+      "owner": "result"
+    },
+    {
+      "id": "label-result-1",
+      "owner": "result"
+    },
+    {
+      "id": "tree-more-a",
+      "owner": "tree"
+    },
+    {
+      "id": "tree-more-b",
+      "owner": "tree"
+    },
+    {
+      "id": "tree-field-a",
+      "owner": "tree"
+    },
+    {
+      "id": "tree-field-b",
+      "owner": "tree"
+    },
+    {
+      "id": "tree-field-c",
+      "owner": "tree"
+    },
+    {
+      "id": "rollout-reuse",
+      "owner": "rollout"
+    },
+    {
+      "id": "rollout-greedy",
+      "owner": "rollout"
+    },
+    {
+      "id": "store-label",
+      "owner": "annotation-layer"
+    },
+    {
+      "id": "call-label",
+      "owner": "annotation-layer"
+    },
+    {
+      "id": "observe-label",
+      "owner": "annotation-layer"
+    },
+    {
+      "id": "stats-label",
+      "owner": "annotation-layer"
+    },
+    {
+      "id": "fallback-label",
+      "owner": "annotation-layer"
+    },
+    {
+      "id": "success-label",
+      "owner": "annotation-layer"
+    }
+  ],
+  "edges": [
+    {
+      "id": "initialize",
+      "from": {
+        "module": "question",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "tree",
+        "side": "left",
+        "fraction": 0.22033898305084745
+      },
+      "points": [
+        [
+          180,
+          220
+        ],
+        [
+          220,
+          220
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "data: "
+    },
+    {
+      "id": "select-path",
+      "from": {
+        "module": "tree",
+        "side": "right",
+        "fraction": 0.13559322033898305
+      },
+      "to": {
+        "module": "select",
+        "side": "left",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          580,
+          170
+        ],
+        [
+          630,
+          170
+        ]
+      ],
+      "stroke": "#BF8A20",
+      "width": 3.3,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "control: "
+    },
+    {
+      "id": "expand-path",
+      "from": {
+        "module": "select",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "policy",
+        "side": "left",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          790,
+          170
+        ],
+        [
+          860,
+          170
+        ]
+      ],
+      "stroke": "#BF8A20",
+      "width": 3.3,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "control: "
+    },
+    {
+      "id": "execute",
+      "from": {
+        "module": "policy",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "tools",
+        "side": "left",
+        "fraction": 0.375
+      },
+      "points": [
+        [
+          1085,
+          170
+        ],
+        [
+          1160,
+          170
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "control: "
+    },
+    {
+      "id": "store-children",
+      "from": {
+        "module": "tools",
+        "side": "top",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "tree",
+        "side": "top",
+        "fraction": 0.9444444444444444
+      },
+      "points": [
+        [
+          1360,
+          110
+        ],
+        [
+          1360,
+          70
+        ],
+        [
+          560,
+          70
+        ],
+        [
+          560,
+          90
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "feedback: Expansion children",
+      "dashed": true,
+      "labelIds": [
+        "store-label"
+      ]
+    },
+    {
+      "id": "candidate-values",
+      "from": {
+        "module": "tree",
+        "side": "right",
+        "fraction": 0.9745762711864406
+      },
+      "to": {
+        "module": "value",
+        "side": "left",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          580,
+          665
+        ],
+        [
+          630,
+          665
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "data: "
+    },
+    {
+      "id": "best-child",
+      "from": {
+        "module": "value",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "rollout",
+        "side": "left",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          800,
+          665
+        ],
+        [
+          860,
+          665
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "control: "
+    },
+    {
+      "id": "rollout-step",
+      "from": {
+        "module": "rollout",
+        "side": "top",
+        "fraction": 0.9
+      },
+      "to": {
+        "module": "tools",
+        "side": "bottom",
+        "fraction": 0.95
+      },
+      "points": [
+        [
+          1454,
+          560
+        ],
+        [
+          1454,
+          520
+        ],
+        [
+          1680,
+          520
+        ],
+        [
+          1680,
+          300
+        ],
+        [
+          1540,
+          300
+        ],
+        [
+          1540,
+          270
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "feedback: Reuse policy + tools",
+      "dashed": true,
+      "labelIds": [
+        "call-label"
+      ]
+    },
+    {
+      "id": "rollout-feedback",
+      "from": {
+        "module": "tools",
+        "side": "right",
+        "fraction": 0.75
+      },
+      "to": {
+        "module": "rollout",
+        "side": "top",
+        "fraction": 0.9545454545454546
+      },
+      "points": [
+        [
+          1560,
+          230
+        ],
+        [
+          1710,
+          230
+        ],
+        [
+          1710,
+          545
+        ],
+        [
+          1490,
+          545
+        ],
+        [
+          1490,
+          560
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "feedback: Observation / terminal reward",
+      "dashed": true,
+      "labelIds": [
+        "observe-label"
+      ]
+    },
+    {
+      "id": "no-success",
+      "from": {
+        "module": "rollout",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "backup",
+        "side": "left",
+        "fraction": 0.4482758620689655
+      },
+      "points": [
+        [
+          1520,
+          665
+        ],
+        [
+          1570,
+          665
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "control: "
+    },
+    {
+      "id": "update-statistics",
+      "from": {
+        "module": "backup",
+        "side": "bottom",
+        "fraction": 0.5909090909090909
+      },
+      "to": {
+        "module": "tree",
+        "side": "bottom",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          1700,
+          745
+        ],
+        [
+          1700,
+          805
+        ],
+        [
+          400,
+          805
+        ],
+        [
+          400,
+          680
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "feedback: Values + visits",
+      "dashed": true,
+      "labelIds": [
+        "stats-label"
+      ]
+    },
+    {
+      "id": "terminal-failure",
+      "from": {
+        "module": "tools",
+        "side": "bottom",
+        "fraction": 0.85
+      },
+      "to": {
+        "module": "failed",
+        "side": "top",
+        "fraction": 0.36363636363636365
+      },
+      "points": [
+        [
+          1500,
+          270
+        ],
+        [
+          1500,
+          350
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "feedback: "
+    },
+    {
+      "id": "reflect-failures",
+      "from": {
+        "module": "failed",
+        "side": "left",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "reflect",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          1420,
+          415
+        ],
+        [
+          1360,
+          415
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "data: "
+    },
+    {
+      "id": "store-reflection",
+      "from": {
+        "module": "reflect",
+        "side": "left",
+        "fraction": 0.5
+      },
+      "to": {
+        "module": "context",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          1090,
+          415
+        ],
+        [
+          1030,
+          415
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "data: "
+    },
+    {
+      "id": "policy-feedback",
+      "from": {
+        "module": "context",
+        "side": "top",
+        "fraction": 0.5652173913043478
+      },
+      "to": {
+        "module": "policy",
+        "side": "bottom",
+        "fraction": 0.3111111111111111
+      },
+      "points": [
+        [
+          930,
+          350
+        ],
+        [
+          930,
+          220
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "feedback: ",
+      "dashed": true
+    },
+    {
+      "id": "return-tree",
+      "from": {
+        "module": "tree",
+        "side": "bottom",
+        "fraction": 0.05
+      },
+      "to": {
+        "module": "result",
+        "side": "top",
+        "fraction": 0.7027027027027027
+      },
+      "points": [
+        [
+          238,
+          680
+        ],
+        [
+          238,
+          835
+        ],
+        [
+          1650,
+          835
+        ],
+        [
+          1650,
+          850
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "control: Terminal / fallback",
+      "labelIds": [
+        "fallback-label"
+      ]
+    },
+    {
+      "id": "return-rollout",
+      "from": {
+        "module": "rollout",
+        "side": "bottom",
+        "fraction": 0.8939393939393939
+      },
+      "to": {
+        "module": "result",
+        "side": "right",
+        "fraction": 0.5
+      },
+      "points": [
+        [
+          1450,
+          770
+        ],
+        [
+          1450,
+          785
+        ],
+        [
+          1785,
+          785
+        ],
+        [
+          1785,
+          900
+        ],
+        [
+          1760,
+          900
+        ]
+      ],
+      "stroke": "#243746",
+      "width": 2.8,
+      "startArrow": "none",
+      "endArrow": "triangle",
+      "arrowSize": "med",
+      "meaning": "control: Successful terminal",
+      "labelIds": [
+        "success-label"
+      ]
+    }
+  ],
+  "exceptions": []
+}

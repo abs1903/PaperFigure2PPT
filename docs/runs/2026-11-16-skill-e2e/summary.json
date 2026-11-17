@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-16",
+  "scope": "Two selected existing cases; authored design and source-guided reconstruction, not arbitrary-code automatic layout",
+  "reviewResults": [
+    {
+      "case": "Voyager initial",
+      "output": "design/output-v1",
+      "exitCode": 2,
+      "status": {
+        "version": "1.0",
+        "mode": "design",
+        "mechanicalPassed": true,
+        "validation": {
+          "mechanical": {
+            "status": "pass",
+            "reasons": []
+          },
+          "render": {
+            "status": "pass",
+            "reasons": []
+          },
+          "review": {
+            "status": "fail",
+            "reasons": [
+              "Independent reviewer has not accepted this candidate",
+              "Unpassed review criterion: composition",
+              "Unpassed review criterion: typography"
+            ]
+          }
+        },
+        "deliveryReady": false,
+        "visualAcceptance": "needs-revision",
+        "reviewer": {
+          "kind": "independent-agent",
+          "name": "/root/voyager_e2e_review"
+        },
+        "reasons": [
+          "Independent reviewer has not accepted this candidate",
+          "Unpassed review criterion: composition",
+          "Unpassed review criterion: typography"
+        ],
+        "scope": "Source-grounded design and declared reference comparison; not venue certification or user approval"
+      }
+    },
+    {
+      "case": "Voyager revised",
+      "output": "design/output-v3",
+      "exitCode": 0,
+      "status": {
+        "version": "1.0",
+        "mode": "design",
+        "mechanicalPassed": true,
+        "validation": {
+          "mechanical": {
+            "status": "pass",
+            "reasons": []
+          },
+          "render": {
+            "status": "pass",
+            "reasons": []
+          },
+          "review": {
+            "status": "pass",
+            "reasons": []
+          }
+        },
+        "deliveryReady": true,
+        "visualAcceptance": "independently-accepted",
+        "reviewer": {
+          "kind": "independent-agent",
+          "name": "/root/voyager_e2e_review"
+        },
+        "reasons": [],
+        "scope": "Source-grounded design and declared reference comparison; not venue certification or user approval"
+      }
+    },
+    {
+      "case": "AgeMem reconstructed",
+      "output": "reconstruct/output-v2",
+      "exitCode": 0,
+      "status": {
+        "version": "1.0",
+        "mode": "reconstruct",
+        "mechanicalPassed": true,
+        "validation": {
+          "mechanical": {
+            "status": "pass",
+            "reasons": []
+          },
+          "render": {
+            "status": "pass",
+            "reasons": []
+          },
+          "review": {
+            "status": "pass",
+            "reasons": []
+          }
+        },
+        "deliveryReady": true,
+        "visualAcceptance": "independently-accepted",
+        "reviewer": {
+          "kind": "independent-agent",
+          "name": "/root/agemem_e2e_review"
+        },
+        "reasons": [],
+        "scope": "Fidelity to the selected target plus declared deviations; not venue certification or user approval"
+      }
+    }
+  ],
+  "voyagerRevisedMetrics": {
+    "nodes": 7,
+    "edges": 12,
+    "texts": 33,
+    "groups": 1,
+    "minFinalTextPt": 8.662500000000001,
+    "nativeShapes": 74,
+    "nativeConnectors": 16,
+    "logicalEdges": 12,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 33,
+    "pictures": 0,
+    "editableRatio": 1
+  },
+  "limitations": [
+    "LibreOffice rendering; no interactive Microsoft PowerPoint edit test",
+    "Independent-agent acceptance is scoped, not user approval",
+    "Previous authored layouts and source-guided geometry reused; no general automatic design claim"
+  ]
+}

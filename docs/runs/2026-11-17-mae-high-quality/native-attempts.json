@@ -1,0 +1,25 @@
+{
+  "schema": "1.0",
+  "attempts": [
+    {
+      "stage": "initial case authoring",
+      "status": "schema rejected before export",
+      "cause": "primitive dash must be a string; edge dashes require dashed/dashPattern, not dash arrays",
+      "repair": "Corrected case-local author script to existing supported schema; no library or threshold change."
+    },
+    {
+      "stage": "native output-v1",
+      "status": "retained; superseded",
+      "cause": "Source comparison showed undersized medium arrowheads. Full Office delivery was not run for this version.",
+      "repair": "Changed owning author script to large arrowheads; preserved output-v1."
+    },
+    {
+      "stage": "typography-sample-v1",
+      "status": "actual LibreOffice render passed; sample visually inspected"
+    },
+    {
+      "stage": "native output-v2",
+      "status": "mechanical/render/independent review pass; deliveryReady true"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_figure_hidden_review"
+  },
+  "verdict": "accept",
+  "scope": "amended brief/prompt text only; pre-ImageGen input acceptance",
+  "authorFigureHidden": true,
+  "artifacts": {
+    "design-brief-reviewed.json": "4a62139615c6fdc7e7909d0cd03203c9da6357d8eb4fa160c4584fa4fe815688",
+    "prompt-generate-v1.txt": "984304dd2b15e52c44c0dc9280978f3c66ae069c2613298b958bddef42688d62"
+  },
+  "checks": {
+    "assuranceWordingRemoved": "pass",
+    "scientificTopologyUnchanged": "pass",
+    "leastFailureAndFallback": "pass",
+    "originalPatchDistinction": "pass",
+    "authorFigureProhibition": "pass",
+    "rasterQuality": "unverified",
+    "nativeDelivery": "unverified"
+  },
+  "notes": [
+    "Acceptance is limited to the amended text as ImageGen input.",
+    "No author figure comparison or image inspection occurred.",
+    "Subsequent actual-pixel review must remain independent and hash-bound."
+  ]
+}

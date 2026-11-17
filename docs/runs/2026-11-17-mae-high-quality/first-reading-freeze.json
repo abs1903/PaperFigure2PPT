@@ -1,0 +1,10 @@
+{
+  "stage": "image-only-account-saved-before-source-informed-pixel-review",
+  "reader": "/root/image_first_read_02",
+  "isolation": "fork_turns:none, neutral image paths, no source/plan/brief",
+  "files": {
+    "first-reading.md": "eaaba73dbd7ebcdb6116f5f351a5d373ec50f6ffd43a5676c279a0768d798297",
+    "first-reading.json": "890b21e01e3d53b8f9a044b33d526bbe3d8a66c8871fcb2ad43540d7bc9e1ec4"
+  },
+  "limits": "Qualitative image-only interpretation; prior model knowledge is not excluded; no novelty verification."
+}

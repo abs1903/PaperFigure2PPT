@@ -1,0 +1,11 @@
+{
+  "paperfigure/SKILL.md": "0b7e07182fd81dbd003b4601faa76a9b0e4404884b5aee5b4ba19b9a9d503123",
+  "paperfigure/scripts/design-prompt.mjs": "e0859330d6e4b10db9cd05451051b309bb07f45d82016343a32d0cac952379a1",
+  "paperfigure/scripts/paperfigure.mjs": "54e9eb8e707c1caecb66d305b2e5711612c4a4f863acfc850aa8bad9a50be1a6",
+  "paperfigure/references/image-reference.md": "c504dc26434ad149ccb0ba89a6aee90077c5e89455666ab7aadfa93d25e6e769",
+  "paperfigure/references/paper-narrative.md": "0e855388088cd92897ed4a6ddab1c59def075bb53cf7f43f9ec3cda667447a52",
+  "paperfigure/references/visual-review.md": "2b91a48e2e91fe3b848a267cde33eb442e372d0c27e5351fc25610a8034731f2",
+  "paperfigure/tests/design-prompt.test.mjs": "0ba0643da1edf176f9a68e75e84047a81ce53b33b5cc44f46cd587175f0eb6c6",
+  "README.md": "d3792c42b0c33645205bf08b7e50e2f7b26b21ab1463a2ee5cf01e10362dd1cb",
+  "paperfigure/references/case-guide.md": "ce2a52370b4c76e06439fb9e273ae66ce34eb37051ebd20151a05522a8631336"
+}

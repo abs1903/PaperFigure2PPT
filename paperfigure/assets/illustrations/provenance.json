@@ -1,0 +1,10 @@
+{
+  "vlm-scene.png": {
+    "provider": "Codex built-in image generation",
+    "date": "2026-11-15",
+    "prompt": "vlm-scene-prompt.txt",
+    "sourceReference": "Original project-generated VLM design reference",
+    "purpose": "Illustrative RGB input scene, not scientific observation data",
+    "editability": "Independent picture asset; all architecture text, modules, token motifs and routes remain native objects"
+  }
+}

@@ -1,0 +1,50 @@
+
+> paperfigure-workspace@0.1.0 test
+> npm --prefix paperfigure test
+
+
+> paperfigure-skill@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ vlm: complete exports, valid graph, native editability, zero layout errors (824.6935ms)
+✔ tool-memory-agent: complete exports, valid graph, native editability, zero layout errors (68.336ms)
+✔ physical-vln: complete exports, valid graph, native editability, zero layout errors (71.603875ms)
+✔ default is caption-free and footer-free, with metadata title retained (2.1975ms)
+✔ headings and legend are explicit opt-ins (1.863583ms)
+✔ global typography and per-node font override change native text (11.052125ms)
+✔ duplicate node id is rejected (0.336667ms)
+✔ missing endpoint is rejected (0.12225ms)
+✔ fabricated evidence quote is rejected (0.104792ms)
+✔ wrong evidence source is rejected (0.124917ms)
+✔ phase mismatch is rejected (0.089583ms)
+✔ unmarked cycle is rejected (0.11825ms)
+✔ unjustified novelty highlighting is rejected (0.07525ms)
+✔ unknown layout node is rejected (0.082584ms)
+✔ group parent cycle is rejected (0.07725ms)
+✔ schema rejects unknown fields and invalid glyphs (0.145916ms)
+✔ node overlaps are detected (1.066792ms)
+✔ text overflow is detected without reducing fonts (0.937042ms)
+✔ edge through a module is detected (0.671375ms)
+✔ final publication size has an independent readability gate (0.807417ms)
+✔ crossing detector distinguishes crossing from shared endpoint (0.035917ms)
+✔ independent raster route metric catches displaced thin arrows (0.309875ms)
+✔ two routes sharing a segment are reported (0.799375ms)
+✔ automatic layout routes an unseen linear graph (0.374334ms)
+✔ SVG and PPTX are byte-reproducible for identical input (17.716041ms)
+✔ appearance candidates preserve the entire semantic graph (1.938292ms)
+✔ output source and existing user files are preserved (1.344958ms)
+✔ tampered SVG label is detected from actual output (9.408834ms)
+✔ missing native PPTX connector is detected (13.8145ms)
+✔ connector geometry corruption is detected (10.990042ms)
+✔ isolated skill installation refuses a second installation (139.12075ms)
+✔ CLI executes through a symlinked installation path (142.21125ms)
+✔ renderer can be imported by a stdin-driven generation script (131.2745ms)
+✔ installer rejects a recursive destination before making changes (56.958417ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1720.460792

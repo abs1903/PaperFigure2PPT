@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "scope": "Previously accepted outputs; never rewrite these files during a font/layout fix.",
+  "cases": [
+    {
+      "id": "agemem",
+      "output": "../../examples/agentic-2026-layout/agemem/output-v15",
+      "profile": "agemem-accepted.json",
+      "sha256": {
+        "layout-scene.json": "6e2a146891c0c563e2628f758144f2c1c0f57eeeddc700a5bce2012fb150c2d6",
+        "editable.svg": "349bc0072ad974bc0bd394681fd94ca81257abd561ad04c4ebfa7dfa59730367",
+        "figure.pptx": "c96f52038759c7d0d7e49eef7c5416bd0e8199c1a5f0b822bc437ea5073d2cd5",
+        "preview.png": "532041926ff3f44c3d61c03cc8f150c3ca5fcf469a8335cf03296650af7c6b46",
+        "native-render/preview.png": "60c35a2d12424a3abf482b772fb98e1bafb0f7dec8229af7bc3546a08dd3f9d6"
+      }
+    },
+    {
+      "id": "memskill",
+      "output": "../../examples/agentic-2026-layout/memskill/output-v13",
+      "profile": "memskill-accepted.json",
+      "sha256": {
+        "layout-scene.json": "ecba8696b523cae8d8039a39ec8175435ff418165ee5782d1fc5d0265e5e3417",
+        "editable.svg": "cb69c7337351995a154159f2a44b82e4c91ae5b7100c424cc6093f14e8ae1536",
+        "figure.pptx": "0fc3fb39ec3580d3d8107942cac67b38aeb11c6eb0b93ad0396f9e66e339ac4c",
+        "preview.png": "9a2d94c97c7cd88cd8ea7c42134656aefb36a2bd7a711527e61abf35fd2313bd",
+        "native-render/preview.png": "3b79bbfd6e76c201a0b0d1587788c9c2281ef665d3141c49a182d30c4a3beb73"
+      },
+      "knownFontIdentityFindings": [
+        {
+          "code": "rendered-font-not-observed",
+          "family": "Verdana-Bold",
+          "reason": "A PDF PostScript face was preserved as a family name. Old native output uses a fallback for these labels; preserve user-accepted visual artifacts, but do not claim exact requested-font recovery."
+        }
+      ]
+    }
+  ]
+}

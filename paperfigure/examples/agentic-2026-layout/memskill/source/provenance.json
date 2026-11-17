@@ -1,0 +1,31 @@
+{
+  "paperURL": "https://arxiv.org/abs/2602.02474v1",
+  "htmlURL": "https://arxiv.org/html/2602.02474v1",
+  "imageURL": "https://arxiv.org/html/2602.02474v1/skill_method.png",
+  "version": "2602.02474v1",
+  "referenceSHA256": "5513b5de64da5929ac09592c51ae95ab078397f51e9e1211f6ce4beab46a3f31",
+  "licenseFound": [
+    {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": "paper.html arXiv license link; original authors retain copyright"
+    }
+  ],
+  "purpose": "Attributed local editable reconstruction and constraint evaluation; not new paper content",
+  "htmlFigureSHA256": "a4f8af2a4ca3520bbcd7cebea12a4ce75bb347bb95088752ba4afe92d7dae3e3",
+  "referenceDerivation": {
+    "type": "Lossless original PDF page raster crop",
+    "pdfFile": "paper.pdf",
+    "pdfSHA256": "806e7bd28fa636ee7f1664e5719f98606955c3ceb2570487fe831488880f63f5",
+    "page": 4,
+    "cropPoints": [
+      55.44,
+      67.0634,
+      541.44,
+      284.416
+    ],
+    "scale": 4,
+    "noRedesign": true
+  },
+  "selectedFigure": "Figure 2; LaTeX caption outside selected input"
+}

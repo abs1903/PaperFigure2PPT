@@ -1,0 +1,199 @@
+{
+  "version": "1.0",
+  "semanticSHA256": "191303ce8082a02367f2d20128bbdb36118c0b032250981418cb7e82b652f78f",
+  "message": "A fixed workflow narrows a large repository to a small edit context, proposes several edits, and selects a patch using syntax and regression filtering and normalized-patch frequency rather than an autonomous agent loop.",
+  "scope": "New figure from code/method prose only. Paper-level Localization and Repair phases; sampling/filtering/selection belong to Repair. Pinned Dec2024 code route: file_level/related_level/fine_grain_line_level enabled, compress enabled, direct_edit_loc false, skip_greedy false, multiple samples; rerank regression=true, reproduction=false, default deduplicate=false. No benchmark/model execution.",
+  "sourceReview": "source-audit.md, source-brief-review.md and source-brief-review-v2.md; amended wording checked before generation",
+  "composition": "Original wide white-background scientific editorial figure, about2.1:1. Use a continuous visual transformation: repository hierarchy narrows through files/symbols/highlighted edit locations; a focused source window then fans out into schematic candidate edits; candidate evidence converges into grouped normalized-key stacks and one original patch. Keep the fan-out/convergence mechanism prominent. Actual paper has TWO phase headings: Localization over the narrowing region, Repair over both edit proposal and selection. Do not print a third numbered phase. Avoid three equally sized card panels, generic software dashboards, robot/brain icons and any reference-image imitation. Only raw code and sanitized prose were used; no author figure is an input.",
+  "mechanism": "Represent hierarchy with a small original repository-tree motif and nested code magnifications, not a card per semantic node. The issue and selected code enter one focused workspace. LLM proposes multiple schematic edits; original source/intervals also reach edit application/syntax screening. Valid nonempty candidates feed normalization and regression evaluation as two evidence streams. Regression-failure counts identify the least-failure cohort; normalized keys group the surviving original patches for frequency selection. The winner is an ORIGINAL patch linked to a frequent key, never the canonical key itself. A compact dashed bypass labelled If cohort empty routes nonempty normalized keys to frequency selection if the least-failure candidate cohort has no usable keys. Use schematic +/- diff strokes and stacked paper motifs without fabricated code, exact counts, success badges or benchmark results.",
+  "typography": "Neutral sans-serif, sparse labels, monospaced strokes only as schematic code texture. Target at least9pt body at7-inch width and11pt phase headings. Prefer readable minimal words; exact labels listed below, no metadata or prose. No overall title, footer, legend, fine print or watermarks.",
+  "publicationWidthIn": 7,
+  "maxVisibleWords": 70,
+  "blocks": [
+    {
+      "id": "narrowing",
+      "label": "Localization",
+      "nodes": [
+        "issue",
+        "repository",
+        "files",
+        "symbols",
+        "locations"
+      ],
+      "representation": "Issue slip plus repository tree narrows through file selection, relevant symbols and edit-location highlight; nested magnification visually carries hierarchy. Source-guided illustrations are schematic, not real bug-case evidence."
+    },
+    {
+      "id": "proposal",
+      "label": "Repair: edit proposal",
+      "nodes": [
+        "context",
+        "samples",
+        "apply"
+      ],
+      "representation": "Focused source workspace and a visible fan-out of schematic diff/edit slips, then edit application/syntax screen; issue/original source dependencies remain traceable, no interactive agent tool loop."
+    },
+    {
+      "id": "selection",
+      "label": "Repair: patch selection",
+      "nodes": [
+        "normalize",
+        "regression",
+        "screen",
+        "vote",
+        "selected"
+      ],
+      "representation": "Paired evidence streams: normalized keys and regression-failure report feed a least-failure gate, then grouped patch-frequency stacks point to an associated original patch. Abstract symbols, no all-tests-pass checkmark, no numeric success metric."
+    }
+  ],
+  "relations": [
+    {
+      "edge": "issue-files",
+      "mode": "internal",
+      "display": "Issue description informs LLM file localization"
+    },
+    {
+      "edge": "repo-files",
+      "mode": "internal",
+      "display": "Repository structure informs LLM file localization"
+    },
+    {
+      "edge": "files-symbols",
+      "mode": "internal",
+      "display": "Narrow selected files to relevant classes/functions/variables"
+    },
+    {
+      "edge": "symbols-locations",
+      "mode": "internal",
+      "display": "Use those relevant code elements to identify edit locations"
+    },
+    {
+      "edge": "locations-context",
+      "mode": "arrow",
+      "display": "Edit-location intervals focus the repair context"
+    },
+    {
+      "edge": "repo-context",
+      "mode": "arrow",
+      "display": "Relevant original source is retained in the repair workspace"
+    },
+    {
+      "edge": "issue-context",
+      "mode": "arrow",
+      "display": "Original issue text is included in the repair workspace/prompt"
+    },
+    {
+      "edge": "context-sample",
+      "mode": "internal",
+      "display": "Issue plus focused code prompts candidate edit generation"
+    },
+    {
+      "edge": "context-apply",
+      "mode": "internal",
+      "display": "Relevant original files and allowed intervals also feed application of candidate edits"
+    },
+    {
+      "edge": "samples-apply",
+      "mode": "internal",
+      "display": "Generated edit instructions are applied and statically syntax/no-op screened"
+    },
+    {
+      "edge": "apply-normalize",
+      "mode": "arrow",
+      "display": "Surviving raw patches are canonicalized into grouping keys while raw originals stay associated"
+    },
+    {
+      "edge": "apply-regression",
+      "mode": "arrow",
+      "display": "Candidate patches are evaluated on selected regression tests; retain failure-count evidence, not an assumed pass"
+    },
+    {
+      "edge": "normalize-screen",
+      "mode": "internal",
+      "display": "Nonempty normalized keys identify usable candidate records"
+    },
+    {
+      "edge": "regression-screen",
+      "mode": "internal",
+      "display": "Compare regression failure counts and keep the minimum-count cohort; not necessarily zero"
+    },
+    {
+      "edge": "screen-vote",
+      "mode": "internal",
+      "display": "Count normalized-key occurrences within the eligible candidate cohort"
+    },
+    {
+      "edge": "fallback-vote",
+      "mode": "internal",
+      "display": "Conditional dashed bypass from normalized candidates to frequency selection ONLY if the least-failure eligible cohort is empty; then vote on all nonempty normalized keys"
+    },
+    {
+      "edge": "vote-selected",
+      "mode": "internal",
+      "display": "Select an original candidate patch associated with the winning key; tie handling remains in source record"
+    }
+  ],
+  "labels": [
+    "Localization",
+    "Repair",
+    "Issue report",
+    "Code repository",
+    "Files",
+    "Symbols",
+    "Edit locations",
+    "Focused context",
+    "Sample edits",
+    "Candidate edits",
+    "Apply edits",
+    "Syntax screen",
+    "Regression failures",
+    "Fewest failures",
+    "Normalize patches",
+    "Normalized keys",
+    "Frequency vote",
+    "If cohort empty",
+    "Original patch"
+  ],
+  "palette": [
+    {
+      "color": "#244B73",
+      "meaning": "Dark blue heading/operation ink for LLM-guided localization and candidate edit generation; never a background wash.",
+      "nodes": [
+        "files",
+        "symbols",
+        "locations",
+        "samples"
+      ]
+    },
+    {
+      "color": "#2F6B4C",
+      "meaning": "Green outline/heading marks the chosen ORIGINAL patch artifact only, not proof of correctness or all tests passing.",
+      "nodes": [
+        "selected"
+      ]
+    },
+    {
+      "color": "#333333",
+      "meaning": "Neutral ink for data inputs/context and deterministic transforms, tests, screening and frequency selection.",
+      "nodes": [
+        "issue",
+        "repository",
+        "context",
+        "apply",
+        "normalize",
+        "regression",
+        "screen",
+        "vote"
+      ]
+    }
+  ],
+  "forbidden": [
+    "No author paper image, image-based inspiration, caption, screenshot or prior native example layout as input",
+    "No agent, robot, autonomous environment loop, memory retrieval, training or optimizer stage",
+    "No claim that all selected candidates have zero regression failures, or that selected patch is guaranteed correct",
+    "Do not emit a normalized canonical patch as the final submitted artifact; return original candidate",
+    "Do not imply a strict >50% majority is necessary; highest frequency suffices",
+    "No reproduction-test extension in this scoped route",
+    "No invented executable code, actual bug names, exact vote counts, measured success percentages or fabricated test results",
+    "No overall title/footer, gradients, soft washes, shadows, decorative icons or dense tiny labels"
+  ]
+}

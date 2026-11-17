@@ -1,0 +1,556 @@
+{
+  "passed": true,
+  "errors": [],
+  "icons": [
+    {
+      "id": "icon-0",
+      "module": "selected-trace",
+      "parts": 17,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-1",
+      "module": "selected-trace",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-2",
+      "module": "selected-trace",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-6",
+      "module": "memory-bank",
+      "parts": 19,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-9",
+      "module": "executor",
+      "parts": 19,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-12",
+      "module": "trace-input",
+      "parts": 17,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-13",
+      "module": "trace-input",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-14",
+      "module": "trace-input",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-15",
+      "module": "trace-2",
+      "parts": 15,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-16",
+      "module": "trace-2",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-17",
+      "module": "trace-2",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-18",
+      "module": "trace-3",
+      "parts": 15,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-19",
+      "module": "trace-3",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-20",
+      "module": "trace-3",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-21",
+      "module": "trace-4",
+      "parts": 16,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-22",
+      "module": "trace-4",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-23",
+      "module": "trace-4",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-24",
+      "module": "trace-E",
+      "parts": 17,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-25",
+      "module": "trace-E",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-26",
+      "module": "trace-E",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-35",
+      "module": "loop-label",
+      "parts": 4,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-36",
+      "module": "designer",
+      "parts": 19,
+      "textParts": 0,
+      "grouped": true
+    },
+    {
+      "id": "icon-37",
+      "module": "controller",
+      "parts": 2,
+      "textParts": 0,
+      "grouped": true
+    }
+  ],
+  "native": {
+    "passed": true,
+    "errors": [],
+    "counts": {
+      "nativeTextBoxes": 233,
+      "nativeSVGLabelsCovered": 238,
+      "centeredTextBlocks": 12,
+      "nativeSemanticConnectorSegments": 48,
+      "nativeLineArt": 59,
+      "nativeShapes": 276,
+      "auxiliaryPorts": 76,
+      "groups": 77,
+      "pictures": 0,
+      "media": 0,
+      "contentObjects": 616
+    },
+    "editability": {
+      "nativeContent": 616,
+      "totalContent": 616,
+      "ratio": 1,
+      "excluded": "Transparent auxiliary ports and semantic groups; native representation is not visual quality."
+    },
+    "endpointBinding": "Actual a:stCxn/a:endCxn IDs point to native port helpers inside owning module groups; full orthogonal rerouting is separate.",
+    "limits": [
+      "XML checks do not establish visual fidelity. Independently render the PPTX.",
+      "Moving a grouped module is supported; complex route segments may need reflow.",
+      "Interactive Microsoft PowerPoint behavior is not inferred from LibreOffice."
+    ]
+  },
+  "limits": [
+    "OOXML geometry/style evidence does not replace actual rendering.",
+    "Native text glyph ink, contour holes, anti-aliasing and source silhouette require visual comparison.",
+    "No interactive Microsoft PowerPoint edit test."
+  ],
+  "regions": [
+    {
+      "id": "icon-0",
+      "module": "selected-trace",
+      "parts": 17,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        372.8187,
+        187.8647,
+        248.2486,
+        25.7743
+      ],
+      "svgPptxPixelMAE": 0.2922222222222222,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-1",
+      "module": "selected-trace",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        587.8044,
+        129.4334,
+        33.2628,
+        33.2628
+      ],
+      "svgPptxPixelMAE": 1.8494074074074074,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-2",
+      "module": "selected-trace",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        542.2257,
+        128.6466,
+        36.1746,
+        34.8302
+      ],
+      "svgPptxPixelMAE": 1.4794074074074075,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-6",
+      "module": "memory-bank",
+      "parts": 19,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        374,
+        489,
+        361,
+        122
+      ],
+      "svgPptxPixelMAE": 1.7117037037037037,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-9",
+      "module": "executor",
+      "parts": 19,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        1027.0618,
+        580.0525,
+        39.7064,
+        39.7064
+      ],
+      "svgPptxPixelMAE": 1.4278814814814815,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-12",
+      "module": "trace-input",
+      "parts": 17,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        46.2788,
+        183.685,
+        248.2486,
+        25.7743
+      ],
+      "svgPptxPixelMAE": 0.23745185185185186,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-13",
+      "module": "trace-input",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        261.2645,
+        125.2541,
+        33.2628,
+        33.2628
+      ],
+      "svgPptxPixelMAE": 1.9718518518518517,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-14",
+      "module": "trace-input",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        215.6858,
+        124.4668,
+        36.1747,
+        34.8302
+      ],
+      "svgPptxPixelMAE": 1.2746222222222223,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-15",
+      "module": "trace-2",
+      "parts": 15,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        45.6727,
+        308.3771,
+        249.4677,
+        25.7675
+      ],
+      "svgPptxPixelMAE": 0.3255851851851852,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-16",
+      "module": "trace-2",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        261.2645,
+        250.6428,
+        33.2628,
+        33.2628
+      ],
+      "svgPptxPixelMAE": 1.9768148148148148,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-17",
+      "module": "trace-2",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        215.6858,
+        249.8555,
+        36.1747,
+        34.8302
+      ],
+      "svgPptxPixelMAE": 1.5369333333333333,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-18",
+      "module": "trace-3",
+      "parts": 15,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        45.0179,
+        434.9637,
+        250.7773,
+        24.576
+      ],
+      "svgPptxPixelMAE": 0.28973333333333334,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-19",
+      "module": "trace-3",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        261.2645,
+        376.0309,
+        33.2628,
+        33.2628
+      ],
+      "svgPptxPixelMAE": 1.9164444444444444,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-20",
+      "module": "trace-3",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        215.6858,
+        375.2441,
+        36.1747,
+        34.8302
+      ],
+      "svgPptxPixelMAE": 1.2977925925925926,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-21",
+      "module": "trace-4",
+      "parts": 16,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        46.2788,
+        559.851,
+        248.2486,
+        24.4158
+      ],
+      "svgPptxPixelMAE": 0.19666666666666666,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-22",
+      "module": "trace-4",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        261.2645,
+        501.4196,
+        33.2628,
+        33.2628
+      ],
+      "svgPptxPixelMAE": 2.0874814814814813,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-23",
+      "module": "trace-4",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        215.6858,
+        500.6328,
+        36.1747,
+        34.8302
+      ],
+      "svgPptxPixelMAE": 1.0704296296296296,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-24",
+      "module": "trace-E",
+      "parts": 17,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        46.2788,
+        745.1476,
+        248.2486,
+        25.7744
+      ],
+      "svgPptxPixelMAE": 0.4264148148148148,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-25",
+      "module": "trace-E",
+      "parts": 7,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        261.2645,
+        686.7166,
+        33.2628,
+        33.2628
+      ],
+      "svgPptxPixelMAE": 2.064325925925926,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-26",
+      "module": "trace-E",
+      "parts": 1,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        215.6858,
+        685.9293,
+        36.1747,
+        34.8302
+      ],
+      "svgPptxPixelMAE": 1.4758518518518517,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-35",
+      "module": "loop-label",
+      "parts": 4,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        1008.142,
+        814.8076,
+        37.1986,
+        40.403
+      ],
+      "svgPptxPixelMAE": 0.8359555555555556,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-36",
+      "module": "designer",
+      "parts": 19,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        1859.719,
+        63.8693,
+        39.7063,
+        39.7064
+      ],
+      "svgPptxPixelMAE": 0.6289481481481481,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    },
+    {
+      "id": "icon-37",
+      "module": "controller",
+      "parts": 2,
+      "textParts": 0,
+      "grouped": true,
+      "referenceRegion": [
+        953.1382,
+        290.091,
+        34.8302,
+        34.8302
+      ],
+      "svgPptxPixelMAE": 0.28225185185185186,
+      "interpretation": "Diagnostic only; never a visual-acceptance threshold."
+    }
+  ],
+  "sha256": {
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/source/reference.png": "5513b5de64da5929ac09592c51ae95ab078397f51e9e1211f6ce4beab46a3f31",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v12/preview.png": "73fc14c4ed088b45d69dafdd2506c7f8c02547449d279262aaf7726cc2fad473",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/preview.png": "9a2d94c97c7cd88cd8ea7c42134656aefb36a2bd7a711527e61abf35fd2313bd",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/native-render/preview.png": "3b79bbfd6e76c201a0b0d1587788c9c2281ef665d3141c49a182d30c4a3beb73",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/editable.svg": "cb69c7337351995a154159f2a44b82e4c91ae5b7100c424cc6093f14e8ae1536",
+    "/Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/examples/agentic-2026-layout/memskill/output-v13/figure.pptx": "0fc3fb39ec3580d3d8107942cac67b38aeb11c6eb0b93ad0396f9e66e339ac4c"
+  }
+}

@@ -1,0 +1,1722 @@
+{
+  "version": "1.0",
+  "reference": {
+    "path": "../../2026-11-17-agentless-contribution/selected-reference.png",
+    "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+    "width": 1637,
+    "height": 960
+  },
+  "expectedCounts": {
+    "modules": 26,
+    "edges": 19,
+    "labels": 72,
+    "primitives": 141
+  },
+  "labels": [
+    {
+      "id": "text-fixed-control-0",
+      "owner": "fixed-control",
+      "text": "Fixed localization + repair",
+      "referenceRegion": [
+        334,
+        8,
+        637,
+        68
+      ],
+      "font": "Arial",
+      "size": 44,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-no-autonomy-0",
+      "owner": "no-autonomy",
+      "text": "No autonomous planning",
+      "referenceRegion": [
+        1003,
+        14,
+        421,
+        52
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "heading-localize",
+      "owner": "funnel",
+      "text": "Hierarchical localization",
+      "referenceRegion": [
+        251,
+        126,
+        527,
+        48
+      ],
+      "font": "Arial",
+      "size": 44,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "heading-repair",
+      "owner": "repair-panel",
+      "text": "Localized Search/Replace",
+      "referenceRegion": [
+        989,
+        149,
+        586,
+        43
+      ],
+      "font": "Arial",
+      "size": 42,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "repo-caption-a",
+      "owner": "funnel",
+      "text": "Code",
+      "referenceRegion": [
+        209,
+        192,
+        146,
+        32
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "repo-caption-b",
+      "owner": "funnel",
+      "text": "repository",
+      "referenceRegion": [
+        209,
+        220,
+        153,
+        32
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "tree-caption",
+      "owner": "funnel",
+      "text": "Repository tree",
+      "referenceRegion": [
+        546,
+        187,
+        225,
+        35
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "build-tree",
+      "owner": "funnel",
+      "text": "Build tree",
+      "referenceRegion": [
+        405,
+        257,
+        120,
+        30
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "tree-django",
+      "owner": "tree",
+      "text": "django/",
+      "referenceRegion": [
+        627,
+        258,
+        118,
+        33
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "tree-dots-0",
+      "owner": "tree",
+      "text": "...",
+      "referenceRegion": [
+        609,
+        232,
+        45,
+        25
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "tree-dots-1",
+      "owner": "tree",
+      "text": "...",
+      "referenceRegion": [
+        609,
+        290,
+        45,
+        25
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "tree-dots-2",
+      "owner": "tree",
+      "text": "...",
+      "referenceRegion": [
+        609,
+        351,
+        45,
+        25
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "tree-selected-text",
+      "owner": "tree",
+      "text": "fields.py",
+      "referenceRegion": [
+        653,
+        318,
+        108,
+        29
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-llm-files-0",
+      "owner": "llm-files",
+      "text": "LLM",
+      "referenceRegion": [
+        178,
+        442,
+        80,
+        42
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-llm-elements-0",
+      "owner": "llm-elements",
+      "text": "LLM",
+      "referenceRegion": [
+        212,
+        597,
+        80,
+        42
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-llm-locations-0",
+      "owner": "llm-locations",
+      "text": "LLM",
+      "referenceRegion": [
+        238,
+        720,
+        81,
+        42
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-llm-repair-0",
+      "owner": "llm-repair",
+      "text": "LLM",
+      "referenceRegion": [
+        1035,
+        596,
+        101,
+        49
+      ],
+      "font": "Arial",
+      "size": 34,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-issue-left-0",
+      "owner": "issue-left",
+      "text": "Issue",
+      "referenceRegion": [
+        6,
+        572,
+        131,
+        88
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-issue-left-1",
+      "owner": "issue-left",
+      "text": "report",
+      "referenceRegion": [
+        6,
+        572,
+        131,
+        88
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-issue-right-0",
+      "owner": "issue-right",
+      "text": "Issue",
+      "referenceRegion": [
+        887,
+        586,
+        97,
+        66
+      ],
+      "font": "Arial",
+      "size": 24,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-issue-right-1",
+      "owner": "issue-right",
+      "text": "report",
+      "referenceRegion": [
+        887,
+        586,
+        97,
+        66
+      ],
+      "font": "Arial",
+      "size": 24,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-files-caption",
+      "owner": "funnel",
+      "text": "Selected files",
+      "referenceRegion": [
+        275,
+        424,
+        163,
+        28
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-selected-files-0",
+      "owner": "selected-files",
+      "text": "fields.py",
+      "referenceRegion": [
+        275,
+        459,
+        162,
+        50
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "build-skeletons-a",
+      "owner": "funnel",
+      "text": "Build",
+      "referenceRegion": [
+        467,
+        440,
+        70,
+        28
+      ],
+      "font": "Arial",
+      "size": 24,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "build-skeletons-b",
+      "owner": "funnel",
+      "text": "skeletons",
+      "referenceRegion": [
+        445,
+        467,
+        119,
+        29
+      ],
+      "font": "Arial",
+      "size": 24,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "skeleton-caption",
+      "owner": "funnel",
+      "text": "Skeletons",
+      "referenceRegion": [
+        594,
+        416,
+        177,
+        32
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "skeleton-uuid",
+      "owner": "skeleton",
+      "text": "UUIDField(...)",
+      "referenceRegion": [
+        598,
+        458,
+        185,
+        29
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "skeleton-method",
+      "owner": "skeleton",
+      "text": "to_python(...)",
+      "referenceRegion": [
+        607,
+        491,
+        177,
+        31
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-element-caption",
+      "owner": "funnel",
+      "text": "Selected element",
+      "referenceRegion": [
+        302,
+        580,
+        198,
+        30
+      ],
+      "font": "Arial Narrow",
+      "size": 26,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-selected-element-0",
+      "owner": "selected-element",
+      "text": "to_python",
+      "referenceRegion": [
+        303,
+        619,
+        155,
+        42
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "read-code",
+      "owner": "funnel",
+      "text": "Read code",
+      "referenceRegion": [
+        470,
+        615,
+        104,
+        32
+      ],
+      "font": "Arial Narrow",
+      "size": 25,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-code-caption",
+      "owner": "funnel",
+      "text": "Selected code",
+      "referenceRegion": [
+        586,
+        578,
+        182,
+        32
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "code-dots-top",
+      "owner": "selected-code",
+      "text": "...",
+      "referenceRegion": [
+        597,
+        619,
+        37,
+        18
+      ],
+      "font": "Arial",
+      "size": 21,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "code-definition",
+      "owner": "selected-code",
+      "text": "def to_python(self, ...):",
+      "referenceRegion": [
+        598,
+        640,
+        174,
+        24
+      ],
+      "font": "Arial Narrow",
+      "size": 20,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "code-dots-bottom",
+      "owner": "selected-code",
+      "text": "...",
+      "referenceRegion": [
+        597,
+        668,
+        37,
+        18
+      ],
+      "font": "Arial",
+      "size": 21,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "locations-caption",
+      "owner": "funnel",
+      "text": "Edit locations",
+      "referenceRegion": [
+        432,
+        723,
+        177,
+        33
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "left-context-caption",
+      "owner": "funnel",
+      "text": "Context window",
+      "referenceRegion": [
+        423,
+        799,
+        229,
+        32
+      ],
+      "font": "Arial",
+      "size": 26,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "context-padding-a",
+      "owner": "funnel",
+      "text": "Context",
+      "referenceRegion": [
+        280,
+        828,
+        98,
+        26
+      ],
+      "font": "Arial",
+      "size": 24,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "context-padding-b",
+      "owner": "funnel",
+      "text": "padding",
+      "referenceRegion": [
+        280,
+        854,
+        98,
+        26
+      ],
+      "font": "Arial",
+      "size": 24,
+      "bold": false,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "left-context-dots-0",
+      "owner": "left-context",
+      "text": "...",
+      "referenceRegion": [
+        439,
+        846,
+        39,
+        18
+      ],
+      "font": "Arial",
+      "size": 20,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "left-context-dots-1",
+      "owner": "left-context",
+      "text": "...",
+      "referenceRegion": [
+        439,
+        863,
+        39,
+        18
+      ],
+      "font": "Arial",
+      "size": 20,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "left-context-dots-2",
+      "owner": "left-context",
+      "text": "...",
+      "referenceRegion": [
+        439,
+        883,
+        39,
+        18
+      ],
+      "font": "Arial",
+      "size": 20,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "left-context-dots-3",
+      "owner": "left-context",
+      "text": "...",
+      "referenceRegion": [
+        439,
+        917,
+        39,
+        18
+      ],
+      "font": "Arial",
+      "size": 20,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "right-context-caption",
+      "owner": "repair-panel",
+      "text": "Context window",
+      "referenceRegion": [
+        961,
+        270,
+        224,
+        33
+      ],
+      "font": "Arial",
+      "size": 27,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "right-context-dots-0",
+      "owner": "right-context",
+      "text": "...",
+      "referenceRegion": [
+        969,
+        320,
+        41,
+        23
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "right-context-dots-1",
+      "owner": "right-context",
+      "text": "...",
+      "referenceRegion": [
+        969,
+        349,
+        41,
+        23
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "right-context-dots-2",
+      "owner": "right-context",
+      "text": "...",
+      "referenceRegion": [
+        969,
+        396,
+        41,
+        23
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "right-context-dots-3",
+      "owner": "right-context",
+      "text": "...",
+      "referenceRegion": [
+        969,
+        435,
+        41,
+        23
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "right-context-dots-4",
+      "owner": "right-context",
+      "text": "...",
+      "referenceRegion": [
+        969,
+        457,
+        41,
+        23
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "search-heading",
+      "owner": "search",
+      "text": "SEARCH",
+      "referenceRegion": [
+        1318,
+        247,
+        160,
+        32
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "replace-heading",
+      "owner": "replace",
+      "text": "REPLACE",
+      "referenceRegion": [
+        1318,
+        355,
+        175,
+        32
+      ],
+      "font": "Arial",
+      "size": 29,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "search-minus",
+      "owner": "search",
+      "text": "−",
+      "referenceRegion": [
+        1322,
+        285,
+        38,
+        40
+      ],
+      "font": "Arial",
+      "size": 33,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "search-dots",
+      "owner": "search",
+      "text": "...",
+      "referenceRegion": [
+        1370,
+        285,
+        80,
+        40
+      ],
+      "font": "Arial",
+      "size": 31,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "replace-plus",
+      "owner": "replace",
+      "text": "+",
+      "referenceRegion": [
+        1322,
+        394,
+        38,
+        38
+      ],
+      "font": "Arial",
+      "size": 35,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "replace-dots",
+      "owner": "replace",
+      "text": "...",
+      "referenceRegion": [
+        1370,
+        394,
+        80,
+        38
+      ],
+      "font": "Arial",
+      "size": 31,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidates-caption",
+      "owner": "repair-panel",
+      "text": "Candidate patches",
+      "referenceRegion": [
+        1319,
+        494,
+        270,
+        35
+      ],
+      "font": "Arial",
+      "size": 28,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidate-dots-back",
+      "owner": "candidates",
+      "text": "...",
+      "referenceRegion": [
+        1380,
+        542,
+        45,
+        24
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidate-dots-middle",
+      "owner": "candidates",
+      "text": "...",
+      "referenceRegion": [
+        1355,
+        564,
+        45,
+        24
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidate-dots-front-top",
+      "owner": "candidates",
+      "text": "...",
+      "referenceRegion": [
+        1330,
+        586,
+        45,
+        24
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidate-dots-front-gray",
+      "owner": "candidates",
+      "text": "...",
+      "referenceRegion": [
+        1330,
+        608,
+        45,
+        24
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidate-dots-front-bottom",
+      "owner": "candidates",
+      "text": "...",
+      "referenceRegion": [
+        1330,
+        677,
+        45,
+        24
+      ],
+      "font": "Arial",
+      "size": 22,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidate-plus",
+      "owner": "candidates",
+      "text": "+",
+      "referenceRegion": [
+        1327,
+        637,
+        36,
+        33
+      ],
+      "font": "Arial",
+      "size": 32,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "candidate-change",
+      "owner": "candidates",
+      "text": "...",
+      "referenceRegion": [
+        1374,
+        637,
+        70,
+        33
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-syntax-0",
+      "owner": "syntax",
+      "text": "Syntax +",
+      "referenceRegion": [
+        926,
+        824,
+        170,
+        78
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-syntax-1",
+      "owner": "syntax",
+      "text": "regression",
+      "referenceRegion": [
+        926,
+        824,
+        170,
+        78
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-normalize-0",
+      "owner": "normalize",
+      "text": "Normalize +",
+      "referenceRegion": [
+        1164,
+        824,
+        188,
+        78
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "text-normalize-1",
+      "owner": "normalize",
+      "text": "frequency",
+      "referenceRegion": [
+        1164,
+        824,
+        188,
+        78
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-patch-heading",
+      "owner": "selected-patch",
+      "text": "Selected patch",
+      "referenceRegion": [
+        1430,
+        795,
+        181,
+        29
+      ],
+      "font": "Arial",
+      "size": 25,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-dots-top",
+      "owner": "selected-patch",
+      "text": "...",
+      "referenceRegion": [
+        1449,
+        837,
+        50,
+        22
+      ],
+      "font": "Arial",
+      "size": 21,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-plus",
+      "owner": "selected-patch",
+      "text": "+",
+      "referenceRegion": [
+        1442,
+        861,
+        34,
+        31
+      ],
+      "font": "Arial",
+      "size": 30,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-change",
+      "owner": "selected-patch",
+      "text": "...",
+      "referenceRegion": [
+        1486,
+        861,
+        61,
+        31
+      ],
+      "font": "Arial",
+      "size": 23,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    },
+    {
+      "id": "selected-dots-bottom",
+      "owner": "selected-patch",
+      "text": "...",
+      "referenceRegion": [
+        1449,
+        894,
+        50,
+        22
+      ],
+      "font": "Arial",
+      "size": 21,
+      "bold": true,
+      "confidence": "Manually transcribed; approximate typography"
+    }
+  ],
+  "groups": [
+    {
+      "id": "control-brace",
+      "anchorShapeId": "control-brace-path",
+      "referenceRegion": [
+        127,
+        57,
+        1466,
+        30
+      ]
+    },
+    {
+      "id": "fixed-control",
+      "anchorShapeId": "fixed-control-box",
+      "referenceRegion": [
+        334,
+        8,
+        637,
+        68
+      ]
+    },
+    {
+      "id": "no-autonomy",
+      "anchorShapeId": "no-autonomy-box",
+      "referenceRegion": [
+        1003,
+        14,
+        421,
+        52
+      ]
+    },
+    {
+      "id": "funnel",
+      "anchorShapeId": "funnel-outline",
+      "referenceRegion": [
+        92,
+        117,
+        810,
+        838
+      ]
+    },
+    {
+      "id": "repair-panel",
+      "anchorShapeId": "repair-panel-box",
+      "referenceRegion": [
+        914,
+        141,
+        717,
+        588
+      ]
+    },
+    {
+      "id": "selection-panel",
+      "anchorShapeId": "selection-panel-box",
+      "referenceRegion": [
+        907,
+        775,
+        729,
+        173
+      ]
+    },
+    {
+      "id": "issue-left",
+      "anchorShapeId": "issue-left-box",
+      "referenceRegion": [
+        6,
+        572,
+        131,
+        88
+      ]
+    },
+    {
+      "id": "repo-icon",
+      "parent": "funnel",
+      "anchorShapeId": "repo-page-2",
+      "referenceRegion": [
+        238,
+        299,
+        132,
+        74
+      ]
+    },
+    {
+      "id": "tree",
+      "parent": "funnel",
+      "anchorShapeId": "tree-selected",
+      "referenceRegion": [
+        646,
+        316,
+        118,
+        33
+      ]
+    },
+    {
+      "id": "llm-files",
+      "parent": "funnel",
+      "anchorShapeId": "llm-files-box",
+      "referenceRegion": [
+        178,
+        442,
+        80,
+        42
+      ]
+    },
+    {
+      "id": "selected-files",
+      "parent": "funnel",
+      "anchorShapeId": "selected-files-box",
+      "referenceRegion": [
+        275,
+        459,
+        162,
+        50
+      ]
+    },
+    {
+      "id": "skeleton",
+      "parent": "funnel",
+      "anchorShapeId": "skeleton-box",
+      "referenceRegion": [
+        582,
+        449,
+        213,
+        86
+      ]
+    },
+    {
+      "id": "llm-elements",
+      "parent": "funnel",
+      "anchorShapeId": "llm-elements-box",
+      "referenceRegion": [
+        212,
+        597,
+        80,
+        42
+      ]
+    },
+    {
+      "id": "selected-element",
+      "parent": "funnel",
+      "anchorShapeId": "selected-element-box",
+      "referenceRegion": [
+        303,
+        619,
+        155,
+        42
+      ]
+    },
+    {
+      "id": "selected-code",
+      "parent": "funnel",
+      "anchorShapeId": "selected-code-box",
+      "referenceRegion": [
+        584,
+        612,
+        195,
+        81
+      ]
+    },
+    {
+      "id": "llm-locations",
+      "parent": "funnel",
+      "anchorShapeId": "llm-locations-box",
+      "referenceRegion": [
+        238,
+        720,
+        81,
+        42
+      ]
+    },
+    {
+      "id": "left-context",
+      "parent": "funnel",
+      "anchorShapeId": "left-context-box",
+      "referenceRegion": [
+        413,
+        833,
+        251,
+        111
+      ]
+    },
+    {
+      "id": "right-context",
+      "parent": "repair-panel",
+      "anchorShapeId": "right-context-box",
+      "referenceRegion": [
+        945,
+        307,
+        245,
+        180
+      ]
+    },
+    {
+      "id": "search",
+      "parent": "repair-panel",
+      "anchorShapeId": "search-box",
+      "referenceRegion": [
+        1298,
+        242,
+        314,
+        96
+      ]
+    },
+    {
+      "id": "replace",
+      "parent": "repair-panel",
+      "anchorShapeId": "replace-box",
+      "referenceRegion": [
+        1298,
+        350,
+        314,
+        96
+      ]
+    },
+    {
+      "id": "issue-right",
+      "anchorShapeId": "issue-right-box",
+      "referenceRegion": [
+        887,
+        586,
+        97,
+        66
+      ]
+    },
+    {
+      "id": "llm-repair",
+      "parent": "repair-panel",
+      "anchorShapeId": "llm-repair-box",
+      "referenceRegion": [
+        1035,
+        596,
+        101,
+        49
+      ]
+    },
+    {
+      "id": "candidates",
+      "parent": "repair-panel",
+      "anchorShapeId": "candidate-front",
+      "referenceRegion": [
+        1318,
+        582,
+        221,
+        121
+      ]
+    },
+    {
+      "id": "syntax",
+      "parent": "selection-panel",
+      "anchorShapeId": "syntax-box",
+      "referenceRegion": [
+        926,
+        824,
+        170,
+        78
+      ]
+    },
+    {
+      "id": "normalize",
+      "parent": "selection-panel",
+      "anchorShapeId": "normalize-box",
+      "referenceRegion": [
+        1164,
+        824,
+        188,
+        78
+      ]
+    },
+    {
+      "id": "selected-patch",
+      "parent": "selection-panel",
+      "anchorShapeId": "selected-patch-box",
+      "referenceRegion": [
+        1415,
+        790,
+        208,
+        141
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "build-tree-arrow",
+      "from": "repo-icon",
+      "to": "tree",
+      "sourceRoute": [
+        [
+          411,
+          299
+        ],
+        [
+          529,
+          299
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Deterministic tree construction"
+    },
+    {
+      "id": "tree-to-file-selection",
+      "from": "tree",
+      "to": "selected-files",
+      "sourceRoute": [
+        [
+          487,
+          386
+        ],
+        [
+          487,
+          415
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Repository tree to first bounded selection"
+    },
+    {
+      "id": "file-to-skeleton",
+      "from": "selected-files",
+      "to": "skeleton",
+      "sourceRoute": [
+        [
+          457,
+          500
+        ],
+        [
+          567,
+          500
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Build skeletons from selected files"
+    },
+    {
+      "id": "skeleton-to-element",
+      "from": "skeleton",
+      "to": "selected-element",
+      "sourceRoute": [
+        [
+          496,
+          552
+        ],
+        [
+          496,
+          580
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Skeletons to selected elements"
+    },
+    {
+      "id": "element-to-code",
+      "from": "selected-element",
+      "to": "selected-code",
+      "sourceRoute": [
+        [
+          471,
+          652
+        ],
+        [
+          571,
+          652
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Read original selected source"
+    },
+    {
+      "id": "code-to-locations",
+      "from": "selected-code",
+      "to": "llm-locations",
+      "sourceRoute": [
+        [
+          504,
+          694
+        ],
+        [
+          504,
+          720
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Selected source to bounded edit localization"
+    },
+    {
+      "id": "locations-to-context",
+      "from": "llm-locations",
+      "to": "left-context",
+      "sourceRoute": [
+        [
+          515,
+          766
+        ],
+        [
+          515,
+          794
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Edit locations to padded source context"
+    },
+    {
+      "id": "padding-to-context",
+      "from": "funnel",
+      "to": "left-context",
+      "sourceRoute": [
+        [
+          287,
+          889
+        ],
+        [
+          401,
+          889
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Deterministic context padding"
+    },
+    {
+      "id": "issue-file",
+      "from": "issue-left",
+      "to": "llm-files",
+      "sourceRoute": [
+        [
+          80,
+          572
+        ],
+        [
+          80,
+          464
+        ],
+        [
+          174,
+          464
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Shared issue to file selection"
+    },
+    {
+      "id": "issue-elements",
+      "from": "issue-left",
+      "to": "llm-elements",
+      "sourceRoute": [
+        [
+          137,
+          620
+        ],
+        [
+          207,
+          620
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Shared issue to element selection"
+    },
+    {
+      "id": "focused-context-handoff",
+      "from": "left-context",
+      "to": "right-context",
+      "sourceRoute": [
+        [
+          669,
+          882
+        ],
+        [
+          869,
+          882
+        ],
+        [
+          869,
+          410
+        ],
+        [
+          942,
+          410
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Focused context to localized generation"
+    },
+    {
+      "id": "magnify-search",
+      "from": "right-context",
+      "to": "search",
+      "sourceRoute": [
+        [
+          1179,
+          421
+        ],
+        [
+          1179,
+          393
+        ],
+        [
+          1298,
+          286
+        ]
+      ],
+      "arrowhead": "none",
+      "meaning": "Magnification of selected interval into SEARCH"
+    },
+    {
+      "id": "magnify-replace",
+      "from": "right-context",
+      "to": "replace",
+      "sourceRoute": [
+        [
+          1179,
+          421
+        ],
+        [
+          1298,
+          432
+        ]
+      ],
+      "arrowhead": "none",
+      "meaning": "Magnification into REPLACE, no dataflow arrowhead"
+    },
+    {
+      "id": "context-to-generator",
+      "from": "right-context",
+      "to": "llm-repair",
+      "sourceRoute": [
+        [
+          1084,
+          487
+        ],
+        [
+          1084,
+          589
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Focused context input to LLM generation"
+    },
+    {
+      "id": "issue-to-generator",
+      "from": "issue-right",
+      "to": "llm-repair",
+      "sourceRoute": [
+        [
+          987,
+          621
+        ],
+        [
+          1029,
+          621
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Same issue input to generation"
+    },
+    {
+      "id": "generator-to-candidates",
+      "from": "llm-repair",
+      "to": "candidates",
+      "sourceRoute": [
+        [
+          1141,
+          621
+        ],
+        [
+          1296,
+          621
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "LLM generates candidate local patches"
+    },
+    {
+      "id": "candidate-to-filter",
+      "from": "repair-panel",
+      "to": "selection-panel",
+      "sourceRoute": [
+        [
+          1274,
+          729
+        ],
+        [
+          1274,
+          767
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Generated candidates to deterministic selection"
+    },
+    {
+      "id": "syntax-to-frequency",
+      "from": "syntax",
+      "to": "normalize",
+      "sourceRoute": [
+        [
+          1102,
+          861
+        ],
+        [
+          1155,
+          861
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Syntax/regression then normalization/frequency"
+    },
+    {
+      "id": "frequency-to-patch",
+      "from": "normalize",
+      "to": "selected-patch",
+      "sourceRoute": [
+        [
+          1360,
+          861
+        ],
+        [
+          1406,
+          861
+        ]
+      ],
+      "arrowhead": "triangle",
+      "meaning": "Ranking to selected patch"
+    }
+  ],
+  "notes": [
+    "Independent reference-inspection.md is the non-authoring inventory check. Counts here are declarations checked against that and source pixels, not automatic completeness proof.",
+    "Hidden portions of overlapping rear patch cards contain no manufactured text. Visible rear-card dots are separate native text."
+  ]
+}

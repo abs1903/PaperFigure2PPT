@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/andyz245/LanguageAgentTreeSearch",
+  "commit": "853d81614607dd27433faf17c7b0a7d660f95d22",
+  "paper": "https://proceedings.mlr.press/v235/zhou24r.html",
+  "scope": "hotpot/run.py --algorithm lats --prompt_sample cot; not programming or webshop branches",
+  "license": "MIT; included official LICENSE, author copyright retained",
+  "snapshotDate": "2026-11-16",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "cbe4f6d59f5cf6268eb318d1783496706504bb9577c771bd6ccccf93e4509f10",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "sha256": "bc8d46c7a94022a5235eeb3918810b50339e4828943f894ce795c93e4b9a9ab8",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/README.md"
+    },
+    {
+      "path": "hotpot/lats.py",
+      "sha256": "c451a2fea31d545df0faaeb23e6e2c0c2b9339fdb59956c6a9d605097abd9fd9",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/lats.py"
+    },
+    {
+      "path": "hotpot/run.py",
+      "sha256": "c542e13646a923cb930a959f942058e541f5c7fbde65a6161f19b1a6f5cd6f26",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/run.py"
+    },
+    {
+      "path": "hotpot/lats.sh",
+      "sha256": "5f665e94927dd12bee6bde8f7f1818e7a9fc29aae327c74e6a1158d0ca078e7e",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/lats.sh"
+    },
+    {
+      "path": "hotpot/hotpotqa.py",
+      "sha256": "7093fc3412dce623b6bd6c452fa530c742d04f7ada0dcabf1cdc95b2cec68f3c",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/hotpotqa.py"
+    },
+    {
+      "path": "hotpot/hotpot.py",
+      "sha256": "b6999391f3436d94f81b0785f15dec79f780226e2a281aa53973d0e34307a2e0",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/hotpot.py"
+    },
+    {
+      "path": "hotpot/wikienv.py",
+      "sha256": "78def3d1657178ef03bf14c01fe7cdfd039c762a90fbbc99c6efca4bd6d8cc0f",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/wikienv.py"
+    },
+    {
+      "path": "hotpot/wrappers.py",
+      "sha256": "60fb59bf1ae615c18f0db86f4ad2beb67bd2419d74b87a57f6bb18eb28e58d5a",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/wrappers.py"
+    },
+    {
+      "path": "hotpot/models.py",
+      "sha256": "87fe1bd64c6e3b2e13f13e48497fa8e3f5919a8930804a50c93444bea485ed96",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/models.py"
+    },
+    {
+      "path": "hotpot/base.py",
+      "sha256": "0113fecea7d00679b5da6b32cfea2bd3c46409fb86bff4d8a99af6cd0dc1fd1c",
+      "url": "https://github.com/andyz245/LanguageAgentTreeSearch/blob/853d81614607dd27433faf17c7b0a7d660f95d22/hotpot/base.py"
+    }
+  ],
+  "execution": "Read-only intake; no upstream imports, model/API calls, weights, datasets or environments executed.",
+  "authorFigureViewed": false
+}

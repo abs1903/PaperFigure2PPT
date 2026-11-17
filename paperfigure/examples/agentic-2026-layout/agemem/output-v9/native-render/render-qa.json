@@ -1,0 +1,175 @@
+{
+  "engine": "LibreOffice -> PDF -> MuPDF",
+  "pptxSHA256": "17b266f1d2187d020e9b6e9905b7422cdad0ed68269e1cd83a612a99f4a115a6",
+  "pdfSHA256": "6089f30b3b4b5f4eca6eff92f4267dab2e3bb0b68cbc24e48d8d570f218b06b0",
+  "requestedFonts": [
+    "Comic Sans MS",
+    "Times New Roman"
+  ],
+  "fontScope": "Conversion-process-only fontconfig; no fonts installed globally",
+  "errors": [],
+  "limits": [
+    "No interactive Microsoft PowerPoint editing test.",
+    "Port attachment and font appearance are verified through this independent rendering engine."
+  ],
+  "textChecks": [
+    {
+      "id": "label-block:query",
+      "ink": [
+        59,
+        93,
+        199,
+        62
+      ],
+      "container": [
+        51,
+        84,
+        215,
+        81
+      ],
+      "expectedLines": 3,
+      "actualLines": 3,
+      "dx": 0.0,
+      "dy": -0.5
+    },
+    {
+      "id": "label-block:session-content",
+      "ink": [
+        405,
+        33,
+        104,
+        56
+      ],
+      "container": [
+        397,
+        28,
+        119,
+        65
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": 0.5,
+      "dy": 0.5
+    },
+    {
+      "id": "label-block:short-term-tools",
+      "ink": [
+        134,
+        325,
+        139,
+        47
+      ],
+      "container": [
+        126,
+        316,
+        156,
+        59
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": -0.5,
+      "dy": 3.0
+    },
+    {
+      "id": "label-block:long-term-tools",
+      "ink": [
+        377,
+        320,
+        140,
+        47
+      ],
+      "container": [
+        371,
+        311,
+        153,
+        59
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": -0.5,
+      "dy": 3.0
+    },
+    {
+      "id": "label-block:llm-answer",
+      "ink": [
+        139,
+        589,
+        100,
+        55
+      ],
+      "container": [
+        130,
+        587,
+        119,
+        57
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": -0.5,
+      "dy": 1.0
+    }
+  ],
+  "edgeChecks": [
+    {
+      "id": "query-input",
+      "coverage": 1.0,
+      "samples": 8,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "session-input",
+      "coverage": 1.0,
+      "samples": 8,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "stm-operation",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "ltm-operation",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "memory-retrieval",
+      "coverage": 1.0,
+      "samples": 10,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "context-answer",
+      "coverage": 1.0,
+      "samples": 6,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "multi-round",
+      "coverage": 1.0,
+      "samples": 80,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "construct-stm",
+      "coverage": 1.0,
+      "samples": 14,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "construct-ltm",
+      "coverage": 1.0,
+      "samples": 14,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "memory-coordination",
+      "coverage": 1.0,
+      "samples": 20,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    }
+  ],
+  "passed": true
+}

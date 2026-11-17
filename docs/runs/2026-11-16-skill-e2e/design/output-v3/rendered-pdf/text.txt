@@ -1,0 +1,43 @@
+Iterative code refinement
+
+Program generation
+Automatic
+curriculum
+Example task
+
+Task + context
+
+Skill library
+
+craftWoodenPickaxe.js (excerpt)
+await craftCraftingTable(bot);
+If not done
+
+Wooden pickaxe
+
+Refine prompt
+Events + critique; bounded retries
+
+Exploration state
+Latest events
+Task history
+
+Execute program
+Minecraft
+All skills
++ primitives
+
+Verify task
+Critique: refine
+Eligible success
+
+Top-k
+mineWoodLog
+Mine a wood log
+craftCraftingTable
+Craft a crafting table
+craftWoodenPickaxe
+Craft pickaxe
+Query: task context
+Refine: + chat summary
+Store reusable skill

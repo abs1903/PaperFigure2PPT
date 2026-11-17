@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "candidateVersion": "output-v8",
+  "reviewer": {
+    "identity": "independent fidelity reviewer",
+    "isolation": "Reviewed reference, SVG preview, independently rendered PPTX, SVG markup, and OOXML/object map. Creator assertions and structural counts were not used as fidelity acceptance."
+  },
+  "verdicts": {
+    "referenceFidelity": {
+      "verdict": "REVISE",
+      "scope": "SVG preview and independent PPTX render",
+      "summary": "Composition and authorized solid-fill simplification pass; program.js line-2 typography is visibly shorter/smaller than the source."
+    },
+    "svgNativeEditability": {
+      "verdict": "PASS",
+      "scope": "structural SVG editability",
+      "summary": "69 native text elements, semantic module/icon/edge groups, 123 vectors, zero raster or gradient elements."
+    },
+    "pptxNativeEditability": {
+      "verdict": "PASS",
+      "scope": "structural OOXML editability",
+      "summary": "Native DrawingML shapes, connectors, text, and owned icon groups; zero pictures, blips, media payloads, and gradients."
+    }
+  },
+  "referenceFidelityFindings": [
+    {
+      "id": "V8-F01",
+      "severity": "major",
+      "region": "program-document / code line 2",
+      "finding": "The literal `const tree = await findBlock(` is native text with the correct syntax color and line break, but its rightmost glyph ends noticeably farther left than the reference in both the SVG preview and independent PPTX render.",
+      "repair": "Tune only line-2 font metrics/size/tracking to the source glyph width; preserve native text, literal content, placement, and all other geometry."
+    },
+    {
+      "id": "V8-F02",
+      "severity": "pass",
+      "region": "whole figure",
+      "finding": "Panel registration, arrows, semantic scene/icon interiors, labels, and module geometry are retained. Gradients/shading are replaced with flat fills as authorized."
+    }
+  ],
+  "structuralEvidence": {
+    "svg": {"textElements": 69, "vectorElements": 123, "rasterElements": 0, "gradients": 0, "semanticGroups": 56},
+    "pptx": {"shapes": 159, "connectors": 32, "groups": 56, "textRuns": 74, "pictures": 0, "blips": 0, "mediaPayloads": 0, "gradientFills": 0},
+    "iconOwnershipExamples": {"library-database": "library-panel", "state-database": "retained-state", "feedback-bubble": "feedback"},
+    "v7V8VisualEquivalence": {"svgPreviewByteIdentical": true, "pptxRenderByteIdentical": true}
+  },
+  "limitations": [
+    "Independent render is LibreOffice headless to PDF to pdftoppm, not Microsoft PowerPoint.",
+    "No certification of source scientific accuracy, original font recovery, or interactive Office editing of every object.",
+    "Structural counts are representation evidence, not a fidelity or publication-quality score."
+  ],
+  "sha256": {
+    "reference": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f",
+    "inventory": "b746c7ac30721e973f290ec4c201f772fc58a4b888060a177d85543e951a4e38",
+    "svg": "cd3eca166e410d3e0aaeb6cb46d128af89f5685d522ba3451fb710b93b430ebf",
+    "svgPreview": "651ebcdc39415bcb00791481974008ac3d4f155e308c7ed36f9e01eae6771394",
+    "pptx": "fb6ae5dc563cb541cea676b9590f6c9d57bea56f8c1357e929d14965f73c71c5",
+    "pptxRender": "d80db987b18dae0bad40ddf6b9b99a64224620bcdc4cde2cbf84fbfa81896d66",
+    "objectMap": "c7b613e7185f7df33440d647099e5341f93fd03a79ac28270b99d301b7001595",
+    "nativeAudit": "3b221cf93cac019fc6854d02cfe694d881a5fc9fecc23c96329120174f16e39b"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "reference": {
+    "path": "../../2026-11-17-agentless-contribution/selected-reference.png",
+    "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+    "width": 1637,
+    "height": 960
+  },
+  "centerTolerancePx": 4,
+  "sizeTolerancePx": 6,
+  "regions": [
+    {
+      "module": "control-brace",
+      "box": [
+        127,
+        57,
+        1466,
+        30
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "fixed-control",
+      "box": [
+        334,
+        8,
+        637,
+        68
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "no-autonomy",
+      "box": [
+        1003,
+        14,
+        421,
+        52
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "funnel",
+      "box": [
+        92,
+        117,
+        810,
+        838
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "repair-panel",
+      "box": [
+        914,
+        141,
+        717,
+        588
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "selection-panel",
+      "box": [
+        907,
+        775,
+        729,
+        173
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "issue-left",
+      "box": [
+        6,
+        572,
+        131,
+        88
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "repo-icon",
+      "box": [
+        238,
+        299,
+        132,
+        74
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "tree",
+      "box": [
+        646,
+        316,
+        118,
+        33
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "llm-files",
+      "box": [
+        178,
+        442,
+        80,
+        42
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "selected-files",
+      "box": [
+        275,
+        459,
+        162,
+        50
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "skeleton",
+      "box": [
+        582,
+        449,
+        213,
+        86
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "llm-elements",
+      "box": [
+        212,
+        597,
+        80,
+        42
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "selected-element",
+      "box": [
+        303,
+        619,
+        155,
+        42
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "selected-code",
+      "box": [
+        584,
+        612,
+        195,
+        81
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "llm-locations",
+      "box": [
+        238,
+        720,
+        81,
+        42
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "left-context",
+      "box": [
+        413,
+        833,
+        251,
+        111
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "right-context",
+      "box": [
+        945,
+        307,
+        245,
+        180
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "search",
+      "box": [
+        1298,
+        242,
+        314,
+        96
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "replace",
+      "box": [
+        1298,
+        350,
+        314,
+        96
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "issue-right",
+      "box": [
+        887,
+        586,
+        97,
+        66
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "llm-repair",
+      "box": [
+        1035,
+        596,
+        101,
+        49
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "candidates",
+      "box": [
+        1318,
+        582,
+        221,
+        121
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "syntax",
+      "box": [
+        926,
+        824,
+        170,
+        78
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "normalize",
+      "box": [
+        1164,
+        824,
+        188,
+        78
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    },
+    {
+      "module": "selected-patch",
+      "box": [
+        1415,
+        790,
+        208,
+        141
+      ],
+      "anchorMeaning": "Main visible source shape; associated labels are independently bound by the transcript and frozen typography profile."
+    }
+  ],
+  "geometryChanges": [],
+  "contentChanges": [],
+  "typography": {
+    "path": "typography-profile.json",
+    "sha256": "28a59ecac9103d2d4b0d88b7b24374a57de943e8c167aacf7207596f21f61d19"
+  },
+  "appearanceApproximations": [
+    "Raster anti-aliasing, soft microtexture and subtle nonuniform tint approximated by solid source-color native fills; no rearrangement.",
+    "Typeface identity is approximate; per-label geometry and weights frozen, actual Office fonts must pass."
+  ],
+  "reviewRequired": "Exact target versus full SVG and actual Office render; native audit and contribution prominence, not pixel error alone."
+}

@@ -1,0 +1,8316 @@
+{
+  "qa": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "exceptions": [],
+    "metrics": {
+      "texts": 72,
+      "edges": 19,
+      "collisions": 0
+    },
+    "topologyHash": "b391fc1d884962ee663e27c79d74dfa0af4aabdf4ceda0754b9307a4197532eb",
+    "visualAcceptance": "unreviewed",
+    "limits": [
+      "Text bounds come from the named actual rendering engine; fallback fonts may differ elsewhere.",
+      "Curves are sampled by the SVG measurement tool; unmeasured curves cannot be accepted.",
+      "Crossings can be intentional; each exception requires a specific source-based reason."
+    ]
+  },
+  "measured": {
+    "occlusions": [],
+    "engine": "Chromium actualBoundingBox glyph ink + SVG character positions/getCTM; DOM line boxes retained separately; curve samples <=1.5px",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "texts": {
+      "text-fixed-control-0": {
+        "bbox": {
+          "x": 386.158203125,
+          "y": 21.912109375,
+          "w": 536.486328125,
+          "h": 40.17578125
+        },
+        "layoutBBox": {
+          "x": 382.9140625,
+          "y": 13.408203125,
+          "w": 539.73046875,
+          "h": 49
+        },
+        "naturalAdvance": 539.171875,
+        "positionedAdvance": 539.171875,
+        "text": "Fixed localization + repair",
+        "paintIndex": 3,
+        "fontFamily": "Arial",
+        "fontSize": "44px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-no-autonomy-0": {
+        "bbox": {
+          "x": 1023.0078125,
+          "y": 25.1796875,
+          "w": 381.3125,
+          "h": 29.640625
+        },
+        "layoutBBox": {
+          "x": 1020.6328125,
+          "y": 19.0859375,
+          "w": 385.734375,
+          "h": 36
+        },
+        "naturalAdvance": 385.734375,
+        "positionedAdvance": 385.734375,
+        "text": "No autonomous planning",
+        "paintIndex": 5,
+        "fontFamily": "Arial",
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "heading-localize": {
+        "bbox": {
+          "x": 265.8505859375,
+          "y": 133.994140625,
+          "w": 497.556640625,
+          "h": 32.01171875
+        },
+        "layoutBBox": {
+          "x": 262.6279296875,
+          "y": 125.490234375,
+          "w": 503.7578125,
+          "h": 49
+        },
+        "naturalAdvance": 503.744140625,
+        "positionedAdvance": 503.744140625,
+        "text": "Hierarchical localization",
+        "paintIndex": 13,
+        "fontFamily": "Arial",
+        "fontSize": "44px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "heading-repair": {
+        "bbox": {
+          "x": 1027.2724609375,
+          "y": 151.06884765625,
+          "w": 511.1162109375,
+          "h": 38.8623046875
+        },
+        "layoutBBox": {
+          "x": 1024.052734375,
+          "y": 143.64599609375,
+          "w": 515.8955078125,
+          "h": 47
+        },
+        "naturalAdvance": 515.89453125,
+        "positionedAdvance": 515.89453125,
+        "text": "Localized Search/Replace",
+        "paintIndex": 79,
+        "fontFamily": "Arial",
+        "fontSize": "42px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "repo-caption-a": {
+        "bbox": {
+          "x": 245.9208984375,
+          "y": 196.896484375,
+          "w": 72.4658203125,
+          "h": 22.20703125
+        },
+        "layoutBBox": {
+          "x": 244.5,
+          "y": 191.7373046875,
+          "w": 75.0029296875,
+          "h": 33
+        },
+        "naturalAdvance": 75,
+        "positionedAdvance": 75,
+        "text": "Code",
+        "paintIndex": 14,
+        "fontFamily": "Arial",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "repo-caption-b": {
+        "bbox": {
+          "x": 214.12548828125,
+          "y": 222.10595703125,
+          "w": 144.2431640625,
+          "h": 27.7880859375
+        },
+        "layoutBBox": {
+          "x": 212.14794921875,
+          "y": 216.58056640625,
+          "w": 146.70703125,
+          "h": 33.3134765625
+        },
+        "naturalAdvance": 146.7041015625,
+        "positionedAdvance": 146.7041015625,
+        "text": "repository",
+        "paintIndex": 15,
+        "fontFamily": "Arial",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "tree-caption": {
+        "bbox": {
+          "x": 554.260009765625,
+          "y": 191.069091796875,
+          "w": 209.52783203125,
+          "h": 26.86181640625
+        },
+        "layoutBBox": {
+          "x": 552.135986328125,
+          "y": 185.827880859375,
+          "w": 212.740234375,
+          "h": 32.10302734375
+        },
+        "naturalAdvance": 212.72802734375,
+        "positionedAdvance": 212.72802734375,
+        "text": "Repository tree",
+        "paintIndex": 16,
+        "fontFamily": "Arial",
+        "fontSize": "29px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "build-tree": {
+        "bbox": {
+          "x": 414.0234375,
+          "y": 262.90576171875,
+          "w": 102.74658203125,
+          "h": 18.1884765625
+        },
+        "layoutBBox": {
+          "x": 412.1923828125,
+          "y": 257.80126953125,
+          "w": 105.61767578125,
+          "h": 28
+        },
+        "naturalAdvance": 105.615234375,
+        "positionedAdvance": 105.615234375,
+        "text": "Build tree",
+        "paintIndex": 17,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "tree-django": {
+        "bbox": {
+          "x": 627.9228515625,
+          "y": 261.83056640625,
+          "w": 87.65771484375,
+          "h": 25.3388671875
+        },
+        "layoutBBox": {
+          "x": 627,
+          "y": 257.4873046875,
+          "w": 88.5947265625,
+          "h": 30
+        },
+        "naturalAdvance": 88.58056640625,
+        "positionedAdvance": 88.58056640625,
+        "text": "django/",
+        "paintIndex": 46,
+        "fontFamily": "Arial",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "tree-dots-0": {
+        "bbox": {
+          "x": 610.8662109375,
+          "y": 242.71630859375,
+          "w": 18.0146484375,
+          "h": 3.5673828125
+        },
+        "layoutBBox": {
+          "x": 609,
+          "y": 222.28369140625,
+          "w": 21.681640625,
+          "h": 30
+        },
+        "naturalAdvance": 21.6708984375,
+        "positionedAdvance": 21.6708984375,
+        "text": "...",
+        "paintIndex": 47,
+        "fontFamily": "Arial",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "tree-dots-1": {
+        "bbox": {
+          "x": 610.8662109375,
+          "y": 300.71630859375,
+          "w": 18.0146484375,
+          "h": 3.5673828125
+        },
+        "layoutBBox": {
+          "x": 609,
+          "y": 280.28369140625,
+          "w": 21.681640625,
+          "h": 30
+        },
+        "naturalAdvance": 21.6708984375,
+        "positionedAdvance": 21.6708984375,
+        "text": "...",
+        "paintIndex": 48,
+        "fontFamily": "Arial",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "tree-dots-2": {
+        "bbox": {
+          "x": 610.8662109375,
+          "y": 361.71630859375,
+          "w": 18.0146484375,
+          "h": 3.5673828125
+        },
+        "layoutBBox": {
+          "x": 609,
+          "y": 341.28369140625,
+          "w": 21.681640625,
+          "h": 30
+        },
+        "naturalAdvance": 21.6708984375,
+        "positionedAdvance": 21.6708984375,
+        "text": "...",
+        "paintIndex": 49,
+        "fontFamily": "Arial",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "tree-selected-text": {
+        "bbox": {
+          "x": 657.726318359375,
+          "y": 319.83056640625,
+          "w": 98.560546875,
+          "h": 25.3388671875
+        },
+        "layoutBBox": {
+          "x": 657.475830078125,
+          "y": 315.4873046875,
+          "w": 99.04833984375,
+          "h": 30
+        },
+        "naturalAdvance": 99.04833984375,
+        "positionedAdvance": 99.04833984375,
+        "text": "fields.py",
+        "paintIndex": 50,
+        "fontFamily": "Arial",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-llm-files-0": {
+        "bbox": {
+          "x": 190.43017578125,
+          "y": 452.62060546875,
+          "w": 55.3095703125,
+          "h": 20.7587890625
+        },
+        "layoutBBox": {
+          "x": 188.20703125,
+          "y": 447.37939453125,
+          "w": 59.6005859375,
+          "h": 32
+        },
+        "naturalAdvance": 59.5859375,
+        "positionedAdvance": 59.5859375,
+        "text": "LLM",
+        "paintIndex": 52,
+        "fontFamily": "Arial",
+        "fontSize": "29px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-llm-elements-0": {
+        "bbox": {
+          "x": 224.43017578125,
+          "y": 607.62060546875,
+          "w": 55.3095703125,
+          "h": 20.7587890625
+        },
+        "layoutBBox": {
+          "x": 222.20703125,
+          "y": 602.37939453125,
+          "w": 59.6005859375,
+          "h": 32
+        },
+        "naturalAdvance": 59.5859375,
+        "positionedAdvance": 59.5859375,
+        "text": "LLM",
+        "paintIndex": 61,
+        "fontFamily": "Arial",
+        "fontSize": "29px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-llm-locations-0": {
+        "bbox": {
+          "x": 250.93017578125,
+          "y": 730.62060546875,
+          "w": 55.3095703125,
+          "h": 20.7587890625
+        },
+        "layoutBBox": {
+          "x": 248.70703125,
+          "y": 725.37939453125,
+          "w": 59.6005859375,
+          "h": 32
+        },
+        "naturalAdvance": 59.5859375,
+        "positionedAdvance": 59.5859375,
+        "text": "LLM",
+        "paintIndex": 69,
+        "fontFamily": "Arial",
+        "fontSize": "29px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-llm-repair-0": {
+        "bbox": {
+          "x": 1053.1767578125,
+          "y": 608.3310546875,
+          "w": 64.845703125,
+          "h": 24.337890625
+        },
+        "layoutBBox": {
+          "x": 1050.5703125,
+          "y": 601.6689453125,
+          "w": 69.865234375,
+          "h": 38
+        },
+        "naturalAdvance": 69.859375,
+        "positionedAdvance": 69.859375,
+        "text": "LLM",
+        "paintIndex": 106,
+        "fontFamily": "Arial",
+        "fontSize": "34px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-issue-left-0": {
+        "bbox": {
+          "x": 35.19384765625,
+          "y": 585.8037109375,
+          "w": 73.5498046875,
+          "h": 21.826171875
+        },
+        "layoutBBox": {
+          "x": 33.14306640625,
+          "y": 580.2783203125,
+          "w": 76.716796875,
+          "h": 33
+        },
+        "naturalAdvance": 76.7138671875,
+        "positionedAdvance": 76.7138671875,
+        "text": "Issue",
+        "paintIndex": 137,
+        "fontFamily": "Arial",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-issue-left-1": {
+        "bbox": {
+          "x": 30.14013671875,
+          "y": 619.228515625,
+          "w": 84.3310546875,
+          "h": 26.9677734375
+        },
+        "layoutBBox": {
+          "x": 28.16259765625,
+          "y": 613.2783203125,
+          "w": 86.6845703125,
+          "h": 33
+        },
+        "naturalAdvance": 86.6748046875,
+        "positionedAdvance": 86.6748046875,
+        "text": "report",
+        "paintIndex": 138,
+        "fontFamily": "Arial",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-issue-right-0": {
+        "bbox": {
+          "x": 906.455078125,
+          "y": 594.8429565429688,
+          "w": 58.83984375,
+          "h": 17.4609375
+        },
+        "layoutBBox": {
+          "x": 904.814453125,
+          "y": 590.0226440429688,
+          "w": 61.3828125,
+          "h": 27
+        },
+        "naturalAdvance": 61.37109375,
+        "positionedAdvance": 61.37109375,
+        "text": "Issue",
+        "paintIndex": 176,
+        "fontFamily": "Arial",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-issue-right-1": {
+        "bbox": {
+          "x": 902.412109375,
+          "y": 621.5828247070312,
+          "w": 67.46484375,
+          "h": 21.57421875
+        },
+        "layoutBBox": {
+          "x": 900.830078125,
+          "y": 616.4226684570312,
+          "w": 69.34765625,
+          "h": 27
+        },
+        "naturalAdvance": 69.33984375,
+        "positionedAdvance": 69.33984375,
+        "text": "report",
+        "paintIndex": 177,
+        "fontFamily": "Arial",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-files-caption": {
+        "bbox": {
+          "x": 277.502197265625,
+          "y": 428.740966796875,
+          "w": 157.6904296875,
+          "h": 18.51806640625
+        },
+        "layoutBBox": {
+          "x": 276.598876953125,
+          "y": 423.941650390625,
+          "w": 159.8046875,
+          "h": 28
+        },
+        "naturalAdvance": 159.80224609375,
+        "positionedAdvance": 159.80224609375,
+        "text": "Selected files",
+        "paintIndex": 18,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-selected-files-0": {
+        "bbox": {
+          "x": 306.726318359375,
+          "y": 471.33056640625,
+          "w": 98.560546875,
+          "h": 25.3388671875
+        },
+        "layoutBBox": {
+          "x": 306.475830078125,
+          "y": 466.9873046875,
+          "w": 99.04833984375,
+          "h": 30
+        },
+        "naturalAdvance": 99.04833984375,
+        "positionedAdvance": 99.04833984375,
+        "text": "fields.py",
+        "paintIndex": 55,
+        "fontFamily": "Arial",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "build-skeletons-a": {
+        "bbox": {
+          "x": 477.07421875,
+          "y": 445.26953125,
+          "w": 49.875,
+          "h": 17.4609375
+        },
+        "layoutBBox": {
+          "x": 475.31640625,
+          "y": 440.44921875,
+          "w": 53.37890625,
+          "h": 27
+        },
+        "naturalAdvance": 53.3671875,
+        "positionedAdvance": 53.3671875,
+        "text": "Build",
+        "paintIndex": 19,
+        "fontFamily": "Arial",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "build-skeletons-b": {
+        "bbox": {
+          "x": 454.54296875,
+          "y": 472.76953125,
+          "w": 99.7265625,
+          "h": 17.4609375
+        },
+        "layoutBBox": {
+          "x": 453.8046875,
+          "y": 467.94921875,
+          "w": 101.390625,
+          "h": 27
+        },
+        "naturalAdvance": 101.390625,
+        "positionedAdvance": 101.390625,
+        "text": "skeletons",
+        "paintIndex": 20,
+        "fontFamily": "Arial",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "skeleton-caption": {
+        "bbox": {
+          "x": 619.699951171875,
+          "y": 422.000244140625,
+          "w": 125.2705078125,
+          "h": 19.99951171875
+        },
+        "layoutBBox": {
+          "x": 618.724365234375,
+          "y": 417.656982421875,
+          "w": 127.56640625,
+          "h": 30
+        },
+        "naturalAdvance": 127.55126953125,
+        "positionedAdvance": 127.55126953125,
+        "text": "Skeletons",
+        "paintIndex": 21,
+        "fontFamily": "Arial",
+        "fontSize": "27px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "skeleton-uuid": {
+        "bbox": {
+          "x": 599.96533203125,
+          "y": 460.76904296875,
+          "w": 149.91455078125,
+          "h": 23.4619140625
+        },
+        "layoutBBox": {
+          "x": 598,
+          "y": 455.9697265625,
+          "w": 152.7861328125,
+          "h": 28.26123046875
+        },
+        "naturalAdvance": 152.783203125,
+        "positionedAdvance": 152.783203125,
+        "text": "UUIDField(...)",
+        "paintIndex": 58,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "skeleton-method": {
+        "bbox": {
+          "x": 607.474609375,
+          "y": 493.83056640625,
+          "w": 157.63623046875,
+          "h": 25.3388671875
+        },
+        "layoutBBox": {
+          "x": 607,
+          "y": 489.4873046875,
+          "w": 159.09521484375,
+          "h": 30
+        },
+        "naturalAdvance": 159.08642578125,
+        "positionedAdvance": 159.08642578125,
+        "text": "to_python(...)",
+        "paintIndex": 59,
+        "fontFamily": "Arial",
+        "fontSize": "27px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-element-caption": {
+        "bbox": {
+          "x": 302.7744140625,
+          "y": 585.37060546875,
+          "w": 173.1640625,
+          "h": 19.2587890625
+        },
+        "layoutBBox": {
+          "x": 302,
+          "y": 580.29931640625,
+          "w": 174.2177734375,
+          "h": 30
+        },
+        "naturalAdvance": 174.205078125,
+        "positionedAdvance": 174.205078125,
+        "text": "Selected element",
+        "paintIndex": 22,
+        "fontFamily": "\"Arial Narrow\"",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-selected-element-0": {
+        "bbox": {
+          "x": 319.49609375,
+          "y": 627.0322265625,
+          "w": 120.572265625,
+          "h": 25.935546875
+        },
+        "layoutBBox": {
+          "x": 319.00390625,
+          "y": 622.0751953125,
+          "w": 122.998046875,
+          "h": 31
+        },
+        "naturalAdvance": 122.9921875,
+        "positionedAdvance": 122.9921875,
+        "text": "to_python",
+        "paintIndex": 63,
+        "fontFamily": "Arial",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "read-code": {
+        "bbox": {
+          "x": 473.995849609375,
+          "y": 621.90576171875,
+          "w": 96.69189453125,
+          "h": 18.1884765625
+        },
+        "layoutBBox": {
+          "x": 472.421142578125,
+          "y": 616.80126953125,
+          "w": 99.16259765625,
+          "h": 28
+        },
+        "naturalAdvance": 99.15771484375,
+        "positionedAdvance": 99.15771484375,
+        "text": "Read code",
+        "paintIndex": 23,
+        "fontFamily": "\"Arial Narrow\"",
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-code-caption": {
+        "bbox": {
+          "x": 590.51318359375,
+          "y": 584.37060546875,
+          "w": 172.9482421875,
+          "h": 19.2587890625
+        },
+        "layoutBBox": {
+          "x": 589.57373046875,
+          "y": 579.29931640625,
+          "w": 174.861328125,
+          "h": 30
+        },
+        "naturalAdvance": 174.8525390625,
+        "positionedAdvance": 174.8525390625,
+        "text": "Selected code",
+        "paintIndex": 24,
+        "fontFamily": "Arial",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "code-dots-top": {
+        "bbox": {
+          "x": 598.9072265625,
+          "y": 626.948974609375,
+          "w": 13.77099609375,
+          "h": 2.10205078125
+        },
+        "layoutBBox": {
+          "x": 597,
+          "y": 610.051025390625,
+          "w": 17.5126953125,
+          "h": 23
+        },
+        "naturalAdvance": 17.50341796875,
+        "positionedAdvance": 17.50341796875,
+        "text": "...",
+        "paintIndex": 65,
+        "fontFamily": "Arial",
+        "fontSize": "21px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "code-definition": {
+        "bbox": {
+          "x": 598.537109375,
+          "y": 642.615234375,
+          "w": 161.279296875,
+          "h": 18.76953125
+        },
+        "layoutBBox": {
+          "x": 598,
+          "y": 638.17578125,
+          "w": 163.224609375,
+          "h": 23.208984375
+        },
+        "naturalAdvance": 163.22265625,
+        "positionedAdvance": 163.22265625,
+        "text": "def to_python(self, ...):",
+        "paintIndex": 66,
+        "fontFamily": "\"Arial Narrow\"",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "code-dots-bottom": {
+        "bbox": {
+          "x": 598.9072265625,
+          "y": 675.948974609375,
+          "w": 13.77099609375,
+          "h": 2.10205078125
+        },
+        "layoutBBox": {
+          "x": 597,
+          "y": 659.051025390625,
+          "w": 17.5126953125,
+          "h": 23
+        },
+        "naturalAdvance": 17.50341796875,
+        "positionedAdvance": 17.50341796875,
+        "text": "...",
+        "paintIndex": 67,
+        "fontFamily": "Arial",
+        "fontSize": "21px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "locations-caption": {
+        "bbox": {
+          "x": 437.16162109375,
+          "y": 730.0419921875,
+          "w": 167.3115234375,
+          "h": 18.916015625
+        },
+        "layoutBBox": {
+          "x": 435.27001953125,
+          "y": 724.6533203125,
+          "w": 170.46875,
+          "h": 30
+        },
+        "naturalAdvance": 170.4599609375,
+        "positionedAdvance": 170.4599609375,
+        "text": "Edit locations",
+        "paintIndex": 25,
+        "fontFamily": "Arial",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "left-context-caption": {
+        "bbox": {
+          "x": 439.0732421875,
+          "y": 805.376953125,
+          "w": 198.072265625,
+          "h": 19.24609375
+        },
+        "layoutBBox": {
+          "x": 437.841796875,
+          "y": 800.3056640625,
+          "w": 199.3271484375,
+          "h": 30
+        },
+        "naturalAdvance": 199.31640625,
+        "positionedAdvance": 199.31640625,
+        "text": "Context window",
+        "paintIndex": 26,
+        "fontFamily": "Arial",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "context-padding-a": {
+        "bbox": {
+          "x": 288.83984375,
+          "y": 832.1171875,
+          "w": 81.33984375,
+          "h": 17.765625
+        },
+        "layoutBBox": {
+          "x": 287.64453125,
+          "y": 827.58984375,
+          "w": 82.71484375,
+          "h": 27
+        },
+        "naturalAdvance": 82.7109375,
+        "positionedAdvance": 82.7109375,
+        "text": "Context",
+        "paintIndex": 27,
+        "fontFamily": "Arial",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "context-padding-b": {
+        "bbox": {
+          "x": 287.873046875,
+          "y": 855.884765625,
+          "w": 82.23046875,
+          "h": 22.23046875
+        },
+        "layoutBBox": {
+          "x": 286.291015625,
+          "y": 851.064453125,
+          "w": 85.4296875,
+          "h": 27.05078125
+        },
+        "naturalAdvance": 85.41796875,
+        "positionedAdvance": 85.41796875,
+        "text": "padding",
+        "paintIndex": 28,
+        "fontFamily": "Arial",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "left-context-dots-0": {
+        "bbox": {
+          "x": 440.435546875,
+          "y": 853.6279296875,
+          "w": 13.857421875,
+          "h": 2.744140625
+        },
+        "layoutBBox": {
+          "x": 439,
+          "y": 838.3720703125,
+          "w": 16.67578125,
+          "h": 22
+        },
+        "naturalAdvance": 16.669921875,
+        "positionedAdvance": 16.669921875,
+        "text": "...",
+        "paintIndex": 74,
+        "fontFamily": "Arial",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "left-context-dots-1": {
+        "bbox": {
+          "x": 440.435546875,
+          "y": 870.6279296875,
+          "w": 13.857421875,
+          "h": 2.744140625
+        },
+        "layoutBBox": {
+          "x": 439,
+          "y": 855.3720703125,
+          "w": 16.67578125,
+          "h": 22
+        },
+        "naturalAdvance": 16.669921875,
+        "positionedAdvance": 16.669921875,
+        "text": "...",
+        "paintIndex": 75,
+        "fontFamily": "Arial",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "left-context-dots-2": {
+        "bbox": {
+          "x": 440.435546875,
+          "y": 890.6279296875,
+          "w": 13.857421875,
+          "h": 2.744140625
+        },
+        "layoutBBox": {
+          "x": 439,
+          "y": 875.3720703125,
+          "w": 16.67578125,
+          "h": 22
+        },
+        "naturalAdvance": 16.669921875,
+        "positionedAdvance": 16.669921875,
+        "text": "...",
+        "paintIndex": 76,
+        "fontFamily": "Arial",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "left-context-dots-3": {
+        "bbox": {
+          "x": 440.435546875,
+          "y": 924.6279296875,
+          "w": 13.857421875,
+          "h": 2.744140625
+        },
+        "layoutBBox": {
+          "x": 439,
+          "y": 909.3720703125,
+          "w": 16.67578125,
+          "h": 22
+        },
+        "naturalAdvance": 16.669921875,
+        "positionedAdvance": 16.669921875,
+        "text": "...",
+        "paintIndex": 77,
+        "fontFamily": "Arial",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "right-context-caption": {
+        "bbox": {
+          "x": 970.78759765625,
+          "y": 276.5068359375,
+          "w": 205.6904296875,
+          "h": 19.986328125
+        },
+        "layoutBBox": {
+          "x": 969.5087890625,
+          "y": 272.16357421875,
+          "w": 206.99658203125,
+          "h": 30
+        },
+        "naturalAdvance": 206.982421875,
+        "positionedAdvance": 206.982421875,
+        "text": "Context window",
+        "paintIndex": 80,
+        "fontFamily": "Arial",
+        "fontSize": "27px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "right-context-dots-0": {
+        "bbox": {
+          "x": 970.5791015625,
+          "y": 329.99072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 969,
+          "y": 313.00927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 88,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "right-context-dots-1": {
+        "bbox": {
+          "x": 970.5791015625,
+          "y": 358.99072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 969,
+          "y": 342.00927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 89,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "right-context-dots-2": {
+        "bbox": {
+          "x": 970.5791015625,
+          "y": 405.99072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 969,
+          "y": 389.00927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 90,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "right-context-dots-3": {
+        "bbox": {
+          "x": 970.5791015625,
+          "y": 444.99072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 969,
+          "y": 428.00927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 91,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "right-context-dots-4": {
+        "bbox": {
+          "x": 970.5791015625,
+          "y": 466.99072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 969,
+          "y": 450.00927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 92,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "search-heading": {
+        "bbox": {
+          "x": 1319.0478515625,
+          "y": 252.259521484375,
+          "w": 119.18603515625,
+          "h": 21.48095703125
+        },
+        "layoutBBox": {
+          "x": 1318,
+          "y": 247.372314453125,
+          "w": 122.46728515625,
+          "h": 32
+        },
+        "naturalAdvance": 122.45703125,
+        "positionedAdvance": 122.45703125,
+        "text": "SEARCH",
+        "paintIndex": 96,
+        "fontFamily": "Arial",
+        "fontSize": "29px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "replace-heading": {
+        "bbox": {
+          "x": 1320.1240234375,
+          "y": 360.2666015625,
+          "w": 135.0029296875,
+          "h": 21.466796875
+        },
+        "layoutBBox": {
+          "x": 1318,
+          "y": 355.37939453125,
+          "w": 138.572265625,
+          "h": 32
+        },
+        "naturalAdvance": 138.5712890625,
+        "positionedAdvance": 138.5712890625,
+        "text": "REPLACE",
+        "paintIndex": 102,
+        "fontFamily": "Arial",
+        "fontSize": "29px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "search-minus": {
+        "bbox": {
+          "x": 1332.73388671875,
+          "y": 302.881103515625,
+          "w": 16.51611328125,
+          "h": 4.23779296875
+        },
+        "layoutBBox": {
+          "x": 1331.3642578125,
+          "y": 286.657958984375,
+          "w": 19.28125,
+          "h": 37
+        },
+        "naturalAdvance": 19.271484375,
+        "positionedAdvance": 19.271484375,
+        "text": "−",
+        "paintIndex": 97,
+        "fontFamily": "Arial",
+        "fontSize": "33px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "search-dots": {
+        "bbox": {
+          "x": 1372.22509765625,
+          "y": 302.873291015625,
+          "w": 21.47900390625,
+          "h": 4.25341796875
+        },
+        "layoutBBox": {
+          "x": 1370,
+          "y": 279.126708984375,
+          "w": 25.8505859375,
+          "h": 35
+        },
+        "naturalAdvance": 25.83837890625,
+        "positionedAdvance": 25.83837890625,
+        "text": "...",
+        "paintIndex": 98,
+        "fontFamily": "Arial",
+        "fontSize": "31px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "replace-plus": {
+        "bbox": {
+          "x": 1332.23291015625,
+          "y": 404.241455078125,
+          "w": 17.51708984375,
+          "h": 17.51708984375
+        },
+        "layoutBBox": {
+          "x": 1330.7802734375,
+          "y": 393.364501953125,
+          "w": 20.453125,
+          "h": 39
+        },
+        "naturalAdvance": 20.439453125,
+        "positionedAdvance": 20.439453125,
+        "text": "+",
+        "paintIndex": 103,
+        "fontFamily": "Arial",
+        "fontSize": "35px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "replace-dots": {
+        "bbox": {
+          "x": 1372.22509765625,
+          "y": 410.873291015625,
+          "w": 21.47900390625,
+          "h": 4.25341796875
+        },
+        "layoutBBox": {
+          "x": 1370,
+          "y": 387.126708984375,
+          "w": 25.8505859375,
+          "h": 35
+        },
+        "naturalAdvance": 25.83837890625,
+        "positionedAdvance": 25.83837890625,
+        "text": "...",
+        "paintIndex": 104,
+        "fontFamily": "Arial",
+        "fontSize": "31px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidates-caption": {
+        "bbox": {
+          "x": 1330.8505859375,
+          "y": 498.5458984375,
+          "w": 246.271484375,
+          "h": 25.908203125
+        },
+        "layoutBBox": {
+          "x": 1329.5244140625,
+          "y": 493.9306640625,
+          "w": 248.95703125,
+          "h": 31
+        },
+        "naturalAdvance": 248.951171875,
+        "positionedAdvance": 248.951171875,
+        "text": "Candidate patches",
+        "paintIndex": 81,
+        "fontFamily": "Arial",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidate-dots-back": {
+        "bbox": {
+          "x": 1381.5791015625,
+          "y": 552.49072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 1380,
+          "y": 535.50927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 114,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidate-dots-middle": {
+        "bbox": {
+          "x": 1356.5791015625,
+          "y": 574.49072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 1355,
+          "y": 557.50927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 115,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidate-dots-front-top": {
+        "bbox": {
+          "x": 1331.5791015625,
+          "y": 596.49072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 1330,
+          "y": 579.50927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 116,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidate-dots-front-gray": {
+        "bbox": {
+          "x": 1331.5791015625,
+          "y": 618.49072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 1330,
+          "y": 601.50927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 117,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidate-dots-front-bottom": {
+        "bbox": {
+          "x": 1331.5791015625,
+          "y": 687.49072265625,
+          "w": 15.2431640625,
+          "h": 3.0185546875
+        },
+        "layoutBBox": {
+          "x": 1330,
+          "y": 670.50927734375,
+          "w": 18.349609375,
+          "h": 25
+        },
+        "naturalAdvance": 18.3369140625,
+        "positionedAdvance": 18.3369140625,
+        "text": "...",
+        "paintIndex": 118,
+        "fontFamily": "Arial",
+        "fontSize": "22px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidate-plus": {
+        "bbox": {
+          "x": 1336.984375,
+          "y": 645.4921875,
+          "w": 16.015625,
+          "h": 16.015625
+        },
+        "layoutBBox": {
+          "x": 1335.65625,
+          "y": 635.8046875,
+          "w": 18.6875,
+          "h": 36
+        },
+        "naturalAdvance": 18.6875,
+        "positionedAdvance": 18.6875,
+        "text": "+",
+        "paintIndex": 119,
+        "fontFamily": "Arial",
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "candidate-change": {
+        "bbox": {
+          "x": 1375.79443359375,
+          "y": 651.784912109375,
+          "w": 17.32177734375,
+          "h": 3.43017578125
+        },
+        "layoutBBox": {
+          "x": 1374,
+          "y": 632.215087890625,
+          "w": 20.8447265625,
+          "h": 28
+        },
+        "naturalAdvance": 20.83740234375,
+        "positionedAdvance": 20.83740234375,
+        "text": "...",
+        "paintIndex": 120,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-syntax-0": {
+        "bbox": {
+          "x": 960.139404296875,
+          "y": 837.51904296875,
+          "w": 101.57470703125,
+          "h": 23.4619140625
+        },
+        "layoutBBox": {
+          "x": 959.236083984375,
+          "y": 832.7197265625,
+          "w": 103.53759765625,
+          "h": 28.26123046875
+        },
+        "naturalAdvance": 103.52783203125,
+        "positionedAdvance": 103.52783203125,
+        "text": "Syntax +",
+        "paintIndex": 123,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-syntax-1": {
+        "bbox": {
+          "x": 948.73193359375,
+          "y": 865.32421875,
+          "w": 124.49951171875,
+          "h": 23.15673828125
+        },
+        "layoutBBox": {
+          "x": 947.083984375,
+          "y": 860.2197265625,
+          "w": 127.84228515625,
+          "h": 28.26123046875
+        },
+        "naturalAdvance": 127.83203125,
+        "positionedAdvance": 127.83203125,
+        "text": "regression",
+        "paintIndex": 124,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-normalize-0": {
+        "bbox": {
+          "x": 1189.341552734375,
+          "y": 837.671630859375,
+          "w": 138.12255859375,
+          "h": 18.1884765625
+        },
+        "layoutBBox": {
+          "x": 1187.486083984375,
+          "y": 832.567138671875,
+          "w": 141.03759765625,
+          "h": 28
+        },
+        "naturalAdvance": 141.02783203125,
+        "positionedAdvance": 141.02783203125,
+        "text": "Normalize +",
+        "paintIndex": 126,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "text-normalize-1": {
+        "bbox": {
+          "x": 1198.5517578125,
+          "y": 864.866455078125,
+          "w": 118.78662109375,
+          "h": 23.4619140625
+        },
+        "layoutBBox": {
+          "x": 1198.2587890625,
+          "y": 860.067138671875,
+          "w": 119.48486328125,
+          "h": 28.26123046875
+        },
+        "naturalAdvance": 119.482421875,
+        "positionedAdvance": 119.482421875,
+        "text": "frequency",
+        "paintIndex": 127,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-patch-heading": {
+        "bbox": {
+          "x": 1430.9033203125,
+          "y": 797.933837890625,
+          "w": 173.86474609375,
+          "h": 23.13232421875
+        },
+        "layoutBBox": {
+          "x": 1430,
+          "y": 793.134521484375,
+          "w": 176.462890625,
+          "h": 28
+        },
+        "naturalAdvance": 176.45263671875,
+        "positionedAdvance": 176.45263671875,
+        "text": "Selected patch",
+        "paintIndex": 131,
+        "fontFamily": "Arial",
+        "fontSize": "25px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-dots-top": {
+        "bbox": {
+          "x": 1450.50732421875,
+          "y": 846.559326171875,
+          "w": 14.55029296875,
+          "h": 2.88134765625
+        },
+        "layoutBBox": {
+          "x": 1449,
+          "y": 830.440673828125,
+          "w": 17.5126953125,
+          "h": 23
+        },
+        "naturalAdvance": 17.50341796875,
+        "positionedAdvance": 17.50341796875,
+        "text": "...",
+        "paintIndex": 132,
+        "fontFamily": "Arial",
+        "fontSize": "21px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-plus": {
+        "bbox": {
+          "x": 1451.4853515625,
+          "y": 868.99267578125,
+          "w": 15.0146484375,
+          "h": 15.0146484375
+        },
+        "layoutBBox": {
+          "x": 1450.240234375,
+          "y": 860.09814453125,
+          "w": 17.53125,
+          "h": 33
+        },
+        "naturalAdvance": 17.51953125,
+        "positionedAdvance": 17.51953125,
+        "text": "+",
+        "paintIndex": 133,
+        "fontFamily": "Arial",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-change": {
+        "bbox": {
+          "x": 1487.65087890625,
+          "y": 874.922119140625,
+          "w": 15.93603515625,
+          "h": 3.15576171875
+        },
+        "layoutBBox": {
+          "x": 1486,
+          "y": 857.077880859375,
+          "w": 19.1708984375,
+          "h": 26
+        },
+        "naturalAdvance": 19.17041015625,
+        "positionedAdvance": 19.17041015625,
+        "text": "...",
+        "paintIndex": 134,
+        "fontFamily": "Arial",
+        "fontSize": "23px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "selected-dots-bottom": {
+        "bbox": {
+          "x": 1450.50732421875,
+          "y": 903.559326171875,
+          "w": 14.55029296875,
+          "h": 2.88134765625
+        },
+        "layoutBBox": {
+          "x": 1449,
+          "y": 887.440673828125,
+          "w": 17.5126953125,
+          "h": 23
+        },
+        "naturalAdvance": 17.50341796875,
+        "positionedAdvance": 17.50341796875,
+        "text": "...",
+        "paintIndex": 135,
+        "fontFamily": "Arial",
+        "fontSize": "21px",
+        "fontWeight": "700",
+        "fontStyle": "normal",
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    },
+    "edges": {
+      "build-tree-arrow": {
+        "bbox": {
+          "x": 411,
+          "y": 299,
+          "w": 118,
+          "h": 0
+        },
+        "points": [
+          [
+            411,
+            299
+          ],
+          [
+            412.49365234375,
+            299
+          ],
+          [
+            413.9873352050781,
+            299
+          ],
+          [
+            415.48101806640625,
+            299
+          ],
+          [
+            416.97467041015625,
+            299
+          ],
+          [
+            418.4683532714844,
+            299
+          ],
+          [
+            419.9620361328125,
+            299
+          ],
+          [
+            421.4556884765625,
+            299
+          ],
+          [
+            422.9493713378906,
+            299
+          ],
+          [
+            424.44305419921875,
+            299
+          ],
+          [
+            425.93670654296875,
+            299
+          ],
+          [
+            427.4303894042969,
+            299
+          ],
+          [
+            428.9240417480469,
+            299
+          ],
+          [
+            430.417724609375,
+            299
+          ],
+          [
+            431.911376953125,
+            299
+          ],
+          [
+            433.4050598144531,
+            299
+          ],
+          [
+            434.89874267578125,
+            299
+          ],
+          [
+            436.39239501953125,
+            299
+          ],
+          [
+            437.8860778808594,
+            299
+          ],
+          [
+            439.3797607421875,
+            299
+          ],
+          [
+            440.8734130859375,
+            299
+          ],
+          [
+            442.3670959472656,
+            299
+          ],
+          [
+            443.86077880859375,
+            299
+          ],
+          [
+            445.35443115234375,
+            299
+          ],
+          [
+            446.84808349609375,
+            299
+          ],
+          [
+            448.3417663574219,
+            299
+          ],
+          [
+            449.83544921875,
+            299
+          ],
+          [
+            451.3291015625,
+            299
+          ],
+          [
+            452.8227844238281,
+            299
+          ],
+          [
+            454.31646728515625,
+            299
+          ],
+          [
+            455.81011962890625,
+            299
+          ],
+          [
+            457.3038024902344,
+            299
+          ],
+          [
+            458.7974853515625,
+            299
+          ],
+          [
+            460.2911376953125,
+            299
+          ],
+          [
+            461.7847900390625,
+            299
+          ],
+          [
+            463.2784729003906,
+            299
+          ],
+          [
+            464.77215576171875,
+            299
+          ],
+          [
+            466.26580810546875,
+            299
+          ],
+          [
+            467.7594909667969,
+            299
+          ],
+          [
+            469.253173828125,
+            299
+          ],
+          [
+            470.746826171875,
+            299
+          ],
+          [
+            472.2405090332031,
+            299
+          ],
+          [
+            473.73419189453125,
+            299
+          ],
+          [
+            475.22784423828125,
+            299
+          ],
+          [
+            476.7215270996094,
+            299
+          ],
+          [
+            478.2151794433594,
+            299
+          ],
+          [
+            479.7088623046875,
+            299
+          ],
+          [
+            481.2025146484375,
+            299
+          ],
+          [
+            482.6961975097656,
+            299
+          ],
+          [
+            484.18988037109375,
+            299
+          ],
+          [
+            485.68353271484375,
+            299
+          ],
+          [
+            487.1772155761719,
+            299
+          ],
+          [
+            488.6708984375,
+            299
+          ],
+          [
+            490.16455078125,
+            299
+          ],
+          [
+            491.6582336425781,
+            299
+          ],
+          [
+            493.15191650390625,
+            299
+          ],
+          [
+            494.64556884765625,
+            299
+          ],
+          [
+            496.1392517089844,
+            299
+          ],
+          [
+            497.6329040527344,
+            299
+          ],
+          [
+            499.1265869140625,
+            299
+          ],
+          [
+            500.6202392578125,
+            299
+          ],
+          [
+            502.1139221191406,
+            299
+          ],
+          [
+            503.60760498046875,
+            299
+          ],
+          [
+            505.10125732421875,
+            299
+          ],
+          [
+            506.5949401855469,
+            299
+          ],
+          [
+            508.088623046875,
+            299
+          ],
+          [
+            509.582275390625,
+            299
+          ],
+          [
+            511.0759582519531,
+            299
+          ],
+          [
+            512.5696411132812,
+            299
+          ],
+          [
+            514.0632934570312,
+            299
+          ],
+          [
+            515.5569458007812,
+            299
+          ],
+          [
+            517.0506591796875,
+            299
+          ],
+          [
+            518.5443115234375,
+            299
+          ],
+          [
+            520.0379638671875,
+            299
+          ],
+          [
+            521.5316162109375,
+            299
+          ],
+          [
+            523.0253295898438,
+            299
+          ],
+          [
+            524.5189819335938,
+            299
+          ],
+          [
+            526.0126342773438,
+            299
+          ],
+          [
+            527.50634765625,
+            299
+          ],
+          [
+            529,
+            299
+          ]
+        ],
+        "length": 118
+      },
+      "tree-to-file-selection": {
+        "bbox": {
+          "x": 487,
+          "y": 386,
+          "w": 0,
+          "h": 29
+        },
+        "points": [
+          [
+            487,
+            386
+          ],
+          [
+            487,
+            387.45001220703125
+          ],
+          [
+            487,
+            388.8999938964844
+          ],
+          [
+            487,
+            390.3500061035156
+          ],
+          [
+            487,
+            391.79998779296875
+          ],
+          [
+            487,
+            393.25
+          ],
+          [
+            487,
+            394.70001220703125
+          ],
+          [
+            487,
+            396.1499938964844
+          ],
+          [
+            487,
+            397.6000061035156
+          ],
+          [
+            487,
+            399.04998779296875
+          ],
+          [
+            487,
+            400.5
+          ],
+          [
+            487,
+            401.95001220703125
+          ],
+          [
+            487,
+            403.3999938964844
+          ],
+          [
+            487,
+            404.8500061035156
+          ],
+          [
+            487,
+            406.29998779296875
+          ],
+          [
+            487,
+            407.75
+          ],
+          [
+            487,
+            409.20001220703125
+          ],
+          [
+            487,
+            410.6499938964844
+          ],
+          [
+            487,
+            412.1000061035156
+          ],
+          [
+            487,
+            413.54998779296875
+          ],
+          [
+            487,
+            415
+          ]
+        ],
+        "length": 29
+      },
+      "file-to-skeleton": {
+        "bbox": {
+          "x": 457,
+          "y": 500,
+          "w": 110,
+          "h": 0
+        },
+        "points": [
+          [
+            457,
+            500
+          ],
+          [
+            458.4864807128906,
+            500
+          ],
+          [
+            459.97296142578125,
+            500
+          ],
+          [
+            461.45947265625,
+            500
+          ],
+          [
+            462.9459533691406,
+            500
+          ],
+          [
+            464.43243408203125,
+            500
+          ],
+          [
+            465.9189147949219,
+            500
+          ],
+          [
+            467.4053955078125,
+            500
+          ],
+          [
+            468.89190673828125,
+            500
+          ],
+          [
+            470.3783874511719,
+            500
+          ],
+          [
+            471.8648681640625,
+            500
+          ],
+          [
+            473.3513488769531,
+            500
+          ],
+          [
+            474.83782958984375,
+            500
+          ],
+          [
+            476.3243408203125,
+            500
+          ],
+          [
+            477.810791015625,
+            500
+          ],
+          [
+            479.29730224609375,
+            500
+          ],
+          [
+            480.7837829589844,
+            500
+          ],
+          [
+            482.270263671875,
+            500
+          ],
+          [
+            483.75677490234375,
+            500
+          ],
+          [
+            485.24322509765625,
+            500
+          ],
+          [
+            486.729736328125,
+            500
+          ],
+          [
+            488.2162170410156,
+            500
+          ],
+          [
+            489.70269775390625,
+            500
+          ],
+          [
+            491.189208984375,
+            500
+          ],
+          [
+            492.6756591796875,
+            500
+          ],
+          [
+            494.16217041015625,
+            500
+          ],
+          [
+            495.6486511230469,
+            500
+          ],
+          [
+            497.1351318359375,
+            500
+          ],
+          [
+            498.6216125488281,
+            500
+          ],
+          [
+            500.10809326171875,
+            500
+          ],
+          [
+            501.5946044921875,
+            500
+          ],
+          [
+            503.0810852050781,
+            500
+          ],
+          [
+            504.56756591796875,
+            500
+          ],
+          [
+            506.0540466308594,
+            500
+          ],
+          [
+            507.54052734375,
+            500
+          ],
+          [
+            509.02703857421875,
+            500
+          ],
+          [
+            510.5135192871094,
+            500
+          ],
+          [
+            512,
+            500
+          ],
+          [
+            513.4865112304688,
+            500
+          ],
+          [
+            514.9729614257812,
+            500
+          ],
+          [
+            516.45947265625,
+            500
+          ],
+          [
+            517.9459228515625,
+            500
+          ],
+          [
+            519.4324340820312,
+            500
+          ],
+          [
+            520.9189453125,
+            500
+          ],
+          [
+            522.4053955078125,
+            500
+          ],
+          [
+            523.8919067382812,
+            500
+          ],
+          [
+            525.3783569335938,
+            500
+          ],
+          [
+            526.8648681640625,
+            500
+          ],
+          [
+            528.351318359375,
+            500
+          ],
+          [
+            529.8378295898438,
+            500
+          ],
+          [
+            531.3243408203125,
+            500
+          ],
+          [
+            532.810791015625,
+            500
+          ],
+          [
+            534.2973022460938,
+            500
+          ],
+          [
+            535.7838134765625,
+            500
+          ],
+          [
+            537.270263671875,
+            500
+          ],
+          [
+            538.7567749023438,
+            500
+          ],
+          [
+            540.2432250976562,
+            500
+          ],
+          [
+            541.729736328125,
+            500
+          ],
+          [
+            543.2161865234375,
+            500
+          ],
+          [
+            544.7026977539062,
+            500
+          ],
+          [
+            546.189208984375,
+            500
+          ],
+          [
+            547.6756591796875,
+            500
+          ],
+          [
+            549.1621704101562,
+            500
+          ],
+          [
+            550.648681640625,
+            500
+          ],
+          [
+            552.1351318359375,
+            500
+          ],
+          [
+            553.6216430664062,
+            500
+          ],
+          [
+            555.1080932617188,
+            500
+          ],
+          [
+            556.5946044921875,
+            500
+          ],
+          [
+            558.0810546875,
+            500
+          ],
+          [
+            559.5675659179688,
+            500
+          ],
+          [
+            561.0540771484375,
+            500
+          ],
+          [
+            562.54052734375,
+            500
+          ],
+          [
+            564.0270385742188,
+            500
+          ],
+          [
+            565.5134887695312,
+            500
+          ],
+          [
+            567,
+            500
+          ]
+        ],
+        "length": 110
+      },
+      "skeleton-to-element": {
+        "bbox": {
+          "x": 496,
+          "y": 552,
+          "w": 0,
+          "h": 28
+        },
+        "points": [
+          [
+            496,
+            552
+          ],
+          [
+            496,
+            553.4736938476562
+          ],
+          [
+            496,
+            554.9473876953125
+          ],
+          [
+            496,
+            556.4210815429688
+          ],
+          [
+            496,
+            557.8947143554688
+          ],
+          [
+            496,
+            559.368408203125
+          ],
+          [
+            496,
+            560.8421020507812
+          ],
+          [
+            496,
+            562.3157958984375
+          ],
+          [
+            496,
+            563.7894897460938
+          ],
+          [
+            496,
+            565.26318359375
+          ],
+          [
+            496,
+            566.73681640625
+          ],
+          [
+            496,
+            568.2105102539062
+          ],
+          [
+            496,
+            569.6842041015625
+          ],
+          [
+            496,
+            571.1578979492188
+          ],
+          [
+            496,
+            572.631591796875
+          ],
+          [
+            496,
+            574.1052856445312
+          ],
+          [
+            496,
+            575.5789184570312
+          ],
+          [
+            496,
+            577.0526123046875
+          ],
+          [
+            496,
+            578.5263061523438
+          ],
+          [
+            496,
+            580
+          ]
+        ],
+        "length": 28
+      },
+      "element-to-code": {
+        "bbox": {
+          "x": 471,
+          "y": 652,
+          "w": 100,
+          "h": 0
+        },
+        "points": [
+          [
+            471,
+            652
+          ],
+          [
+            472.4925537109375,
+            652
+          ],
+          [
+            473.9850769042969,
+            652
+          ],
+          [
+            475.47760009765625,
+            652
+          ],
+          [
+            476.97015380859375,
+            652
+          ],
+          [
+            478.4626770019531,
+            652
+          ],
+          [
+            479.9552307128906,
+            652
+          ],
+          [
+            481.44775390625,
+            652
+          ],
+          [
+            482.9403076171875,
+            652
+          ],
+          [
+            484.4328308105469,
+            652
+          ],
+          [
+            485.92535400390625,
+            652
+          ],
+          [
+            487.41790771484375,
+            652
+          ],
+          [
+            488.91046142578125,
+            652
+          ],
+          [
+            490.4029846191406,
+            652
+          ],
+          [
+            491.8955078125,
+            652
+          ],
+          [
+            493.3880615234375,
+            652
+          ],
+          [
+            494.880615234375,
+            652
+          ],
+          [
+            496.3731384277344,
+            652
+          ],
+          [
+            497.86566162109375,
+            652
+          ],
+          [
+            499.35821533203125,
+            652
+          ],
+          [
+            500.8507385253906,
+            652
+          ],
+          [
+            502.3432922363281,
+            652
+          ],
+          [
+            503.8358154296875,
+            652
+          ],
+          [
+            505.328369140625,
+            652
+          ],
+          [
+            506.8208923339844,
+            652
+          ],
+          [
+            508.3134460449219,
+            652
+          ],
+          [
+            509.80596923828125,
+            652
+          ],
+          [
+            511.29852294921875,
+            652
+          ],
+          [
+            512.791015625,
+            652
+          ],
+          [
+            514.2835693359375,
+            652
+          ],
+          [
+            515.776123046875,
+            652
+          ],
+          [
+            517.2686767578125,
+            652
+          ],
+          [
+            518.7611694335938,
+            652
+          ],
+          [
+            520.2537231445312,
+            652
+          ],
+          [
+            521.7462768554688,
+            652
+          ],
+          [
+            523.2388305664062,
+            652
+          ],
+          [
+            524.7313232421875,
+            652
+          ],
+          [
+            526.223876953125,
+            652
+          ],
+          [
+            527.7164306640625,
+            652
+          ],
+          [
+            529.208984375,
+            652
+          ],
+          [
+            530.7014770507812,
+            652
+          ],
+          [
+            532.1940307617188,
+            652
+          ],
+          [
+            533.6865844726562,
+            652
+          ],
+          [
+            535.1790771484375,
+            652
+          ],
+          [
+            536.671630859375,
+            652
+          ],
+          [
+            538.1641845703125,
+            652
+          ],
+          [
+            539.65673828125,
+            652
+          ],
+          [
+            541.1492309570312,
+            652
+          ],
+          [
+            542.6417846679688,
+            652
+          ],
+          [
+            544.1343383789062,
+            652
+          ],
+          [
+            545.6268920898438,
+            652
+          ],
+          [
+            547.119384765625,
+            652
+          ],
+          [
+            548.6119384765625,
+            652
+          ],
+          [
+            550.1044921875,
+            652
+          ],
+          [
+            551.5970458984375,
+            652
+          ],
+          [
+            553.0895385742188,
+            652
+          ],
+          [
+            554.5820922851562,
+            652
+          ],
+          [
+            556.0746459960938,
+            652
+          ],
+          [
+            557.567138671875,
+            652
+          ],
+          [
+            559.0596923828125,
+            652
+          ],
+          [
+            560.55224609375,
+            652
+          ],
+          [
+            562.0447998046875,
+            652
+          ],
+          [
+            563.5372924804688,
+            652
+          ],
+          [
+            565.0298461914062,
+            652
+          ],
+          [
+            566.5223999023438,
+            652
+          ],
+          [
+            568.014892578125,
+            652
+          ],
+          [
+            569.5074462890625,
+            652
+          ],
+          [
+            571,
+            652
+          ]
+        ],
+        "length": 100
+      },
+      "code-to-locations": {
+        "bbox": {
+          "x": 504,
+          "y": 694,
+          "w": 0,
+          "h": 26
+        },
+        "points": [
+          [
+            504,
+            694
+          ],
+          [
+            504,
+            695.4444580078125
+          ],
+          [
+            504,
+            696.888916015625
+          ],
+          [
+            504,
+            698.3333129882812
+          ],
+          [
+            504,
+            699.7777709960938
+          ],
+          [
+            504,
+            701.2222290039062
+          ],
+          [
+            504,
+            702.6666870117188
+          ],
+          [
+            504,
+            704.111083984375
+          ],
+          [
+            504,
+            705.5555419921875
+          ],
+          [
+            504,
+            707
+          ],
+          [
+            504,
+            708.4444580078125
+          ],
+          [
+            504,
+            709.888916015625
+          ],
+          [
+            504,
+            711.3333129882812
+          ],
+          [
+            504,
+            712.7777709960938
+          ],
+          [
+            504,
+            714.2222290039062
+          ],
+          [
+            504,
+            715.6666870117188
+          ],
+          [
+            504,
+            717.111083984375
+          ],
+          [
+            504,
+            718.5555419921875
+          ],
+          [
+            504,
+            720
+          ]
+        ],
+        "length": 26
+      },
+      "locations-to-context": {
+        "bbox": {
+          "x": 515,
+          "y": 766,
+          "w": 0,
+          "h": 28
+        },
+        "points": [
+          [
+            515,
+            766
+          ],
+          [
+            515,
+            767.4736938476562
+          ],
+          [
+            515,
+            768.9473876953125
+          ],
+          [
+            515,
+            770.4210815429688
+          ],
+          [
+            515,
+            771.8947143554688
+          ],
+          [
+            515,
+            773.368408203125
+          ],
+          [
+            515,
+            774.8421020507812
+          ],
+          [
+            515,
+            776.3157958984375
+          ],
+          [
+            515,
+            777.7894897460938
+          ],
+          [
+            515,
+            779.26318359375
+          ],
+          [
+            515,
+            780.73681640625
+          ],
+          [
+            515,
+            782.2105102539062
+          ],
+          [
+            515,
+            783.6842041015625
+          ],
+          [
+            515,
+            785.1578979492188
+          ],
+          [
+            515,
+            786.631591796875
+          ],
+          [
+            515,
+            788.1052856445312
+          ],
+          [
+            515,
+            789.5789184570312
+          ],
+          [
+            515,
+            791.0526123046875
+          ],
+          [
+            515,
+            792.5263061523438
+          ],
+          [
+            515,
+            794
+          ]
+        ],
+        "length": 28
+      },
+      "padding-to-context": {
+        "bbox": {
+          "x": 287,
+          "y": 889,
+          "w": 114,
+          "h": 0
+        },
+        "points": [
+          [
+            287,
+            889
+          ],
+          [
+            288.5,
+            889
+          ],
+          [
+            290,
+            889
+          ],
+          [
+            291.5,
+            889
+          ],
+          [
+            293,
+            889
+          ],
+          [
+            294.5,
+            889
+          ],
+          [
+            296,
+            889
+          ],
+          [
+            297.5,
+            889
+          ],
+          [
+            299,
+            889
+          ],
+          [
+            300.5,
+            889
+          ],
+          [
+            302,
+            889
+          ],
+          [
+            303.5,
+            889
+          ],
+          [
+            305,
+            889
+          ],
+          [
+            306.5,
+            889
+          ],
+          [
+            308,
+            889
+          ],
+          [
+            309.5,
+            889
+          ],
+          [
+            311,
+            889
+          ],
+          [
+            312.5,
+            889
+          ],
+          [
+            314,
+            889
+          ],
+          [
+            315.5,
+            889
+          ],
+          [
+            317,
+            889
+          ],
+          [
+            318.5,
+            889
+          ],
+          [
+            320,
+            889
+          ],
+          [
+            321.5,
+            889
+          ],
+          [
+            323,
+            889
+          ],
+          [
+            324.5,
+            889
+          ],
+          [
+            326,
+            889
+          ],
+          [
+            327.5,
+            889
+          ],
+          [
+            329,
+            889
+          ],
+          [
+            330.5,
+            889
+          ],
+          [
+            332,
+            889
+          ],
+          [
+            333.5,
+            889
+          ],
+          [
+            335,
+            889
+          ],
+          [
+            336.5,
+            889
+          ],
+          [
+            338,
+            889
+          ],
+          [
+            339.5,
+            889
+          ],
+          [
+            341,
+            889
+          ],
+          [
+            342.5,
+            889
+          ],
+          [
+            344,
+            889
+          ],
+          [
+            345.5,
+            889
+          ],
+          [
+            347,
+            889
+          ],
+          [
+            348.5,
+            889
+          ],
+          [
+            350,
+            889
+          ],
+          [
+            351.5,
+            889
+          ],
+          [
+            353,
+            889
+          ],
+          [
+            354.5,
+            889
+          ],
+          [
+            356,
+            889
+          ],
+          [
+            357.5,
+            889
+          ],
+          [
+            359,
+            889
+          ],
+          [
+            360.5,
+            889
+          ],
+          [
+            362,
+            889
+          ],
+          [
+            363.5,
+            889
+          ],
+          [
+            365,
+            889
+          ],
+          [
+            366.5,
+            889
+          ],
+          [
+            368,
+            889
+          ],
+          [
+            369.5,
+            889
+          ],
+          [
+            371,
+            889
+          ],
+          [
+            372.5,
+            889
+          ],
+          [
+            374,
+            889
+          ],
+          [
+            375.5,
+            889
+          ],
+          [
+            377,
+            889
+          ],
+          [
+            378.5,
+            889
+          ],
+          [
+            380,
+            889
+          ],
+          [
+            381.5,
+            889
+          ],
+          [
+            383,
+            889
+          ],
+          [
+            384.5,
+            889
+          ],
+          [
+            386,
+            889
+          ],
+          [
+            387.5,
+            889
+          ],
+          [
+            389,
+            889
+          ],
+          [
+            390.5,
+            889
+          ],
+          [
+            392,
+            889
+          ],
+          [
+            393.5,
+            889
+          ],
+          [
+            395,
+            889
+          ],
+          [
+            396.5,
+            889
+          ],
+          [
+            398,
+            889
+          ],
+          [
+            399.5,
+            889
+          ],
+          [
+            401,
+            889
+          ]
+        ],
+        "length": 114
+      },
+      "issue-file": {
+        "bbox": {
+          "x": 80,
+          "y": 464,
+          "w": 94,
+          "h": 108
+        },
+        "points": [
+          [
+            80,
+            572
+          ],
+          [
+            80.00000762939453,
+            570.5037231445312
+          ],
+          [
+            80.00000762939453,
+            569.0073852539062
+          ],
+          [
+            80.00000762939453,
+            567.5111083984375
+          ],
+          [
+            80.00000762939453,
+            566.0148315429688
+          ],
+          [
+            80.00000762939453,
+            564.5184936523438
+          ],
+          [
+            80.00000762939453,
+            563.022216796875
+          ],
+          [
+            80.00000762939453,
+            561.5259399414062
+          ],
+          [
+            80.00000762939453,
+            560.0296630859375
+          ],
+          [
+            80.00000762939453,
+            558.5333251953125
+          ],
+          [
+            80.00000762939453,
+            557.0370483398438
+          ],
+          [
+            80.00000762939453,
+            555.540771484375
+          ],
+          [
+            80.00000762939453,
+            554.04443359375
+          ],
+          [
+            80.00000762939453,
+            552.5481567382812
+          ],
+          [
+            80,
+            551.0518798828125
+          ],
+          [
+            80,
+            549.5555419921875
+          ],
+          [
+            80,
+            548.0592651367188
+          ],
+          [
+            80,
+            546.56298828125
+          ],
+          [
+            80,
+            545.066650390625
+          ],
+          [
+            80,
+            543.5703735351562
+          ],
+          [
+            80,
+            542.0740966796875
+          ],
+          [
+            80,
+            540.5777587890625
+          ],
+          [
+            80,
+            539.0814819335938
+          ],
+          [
+            80,
+            537.585205078125
+          ],
+          [
+            80,
+            536.0888671875
+          ],
+          [
+            80,
+            534.5925903320312
+          ],
+          [
+            80,
+            533.0963134765625
+          ],
+          [
+            80,
+            531.5999755859375
+          ],
+          [
+            80,
+            530.1036987304688
+          ],
+          [
+            80,
+            528.607421875
+          ],
+          [
+            80,
+            527.111083984375
+          ],
+          [
+            80,
+            525.6148071289062
+          ],
+          [
+            80,
+            524.1185302734375
+          ],
+          [
+            80,
+            522.6221923828125
+          ],
+          [
+            80,
+            521.1259155273438
+          ],
+          [
+            80,
+            519.629638671875
+          ],
+          [
+            80,
+            518.1333618164062
+          ],
+          [
+            80,
+            516.6370239257812
+          ],
+          [
+            80,
+            515.1407470703125
+          ],
+          [
+            80,
+            513.6444702148438
+          ],
+          [
+            80,
+            512.1481323242188
+          ],
+          [
+            80,
+            510.65185546875
+          ],
+          [
+            80,
+            509.1555480957031
+          ],
+          [
+            80,
+            507.65924072265625
+          ],
+          [
+            80,
+            506.1629638671875
+          ],
+          [
+            80,
+            504.6666564941406
+          ],
+          [
+            80,
+            503.1703796386719
+          ],
+          [
+            80,
+            501.674072265625
+          ],
+          [
+            80,
+            500.17779541015625
+          ],
+          [
+            80,
+            498.6814880371094
+          ],
+          [
+            80,
+            497.1851806640625
+          ],
+          [
+            80,
+            495.68890380859375
+          ],
+          [
+            80,
+            494.1925964355469
+          ],
+          [
+            80,
+            492.6962890625
+          ],
+          [
+            80,
+            491.20001220703125
+          ],
+          [
+            80,
+            489.7037048339844
+          ],
+          [
+            80,
+            488.2073974609375
+          ],
+          [
+            80,
+            486.71112060546875
+          ],
+          [
+            80,
+            485.2148132324219
+          ],
+          [
+            80,
+            483.718505859375
+          ],
+          [
+            80,
+            482.22222900390625
+          ],
+          [
+            80,
+            480.7259216308594
+          ],
+          [
+            80,
+            479.2296142578125
+          ],
+          [
+            80,
+            477.73333740234375
+          ],
+          [
+            80,
+            476.2370300292969
+          ],
+          [
+            80,
+            474.74072265625
+          ],
+          [
+            80,
+            473.24444580078125
+          ],
+          [
+            80,
+            471.7481384277344
+          ],
+          [
+            80,
+            470.2518615722656
+          ],
+          [
+            80,
+            468.75555419921875
+          ],
+          [
+            80,
+            467.25927734375
+          ],
+          [
+            80,
+            465.7629699707031
+          ],
+          [
+            80,
+            464.26666259765625
+          ],
+          [
+            81.22962951660156,
+            464
+          ],
+          [
+            82.7259292602539,
+            464
+          ],
+          [
+            84.22222137451172,
+            464
+          ],
+          [
+            85.71852111816406,
+            464
+          ],
+          [
+            87.21481323242188,
+            464
+          ],
+          [
+            88.71111297607422,
+            464
+          ],
+          [
+            90.20740509033203,
+            464
+          ],
+          [
+            91.70370483398438,
+            464
+          ],
+          [
+            93.19999694824219,
+            464
+          ],
+          [
+            94.69629669189453,
+            464
+          ],
+          [
+            96.19258880615234,
+            464
+          ],
+          [
+            97.68888854980469,
+            464
+          ],
+          [
+            99.18518829345703,
+            464
+          ],
+          [
+            100.68148803710938,
+            464
+          ],
+          [
+            102.17778015136719,
+            464
+          ],
+          [
+            103.674072265625,
+            464
+          ],
+          [
+            105.17036437988281,
+            464
+          ],
+          [
+            106.66667175292969,
+            464
+          ],
+          [
+            108.1629638671875,
+            464
+          ],
+          [
+            109.65925598144531,
+            464
+          ],
+          [
+            111.15554809570312,
+            464
+          ],
+          [
+            112.65185546875,
+            464
+          ],
+          [
+            114.14814758300781,
+            464
+          ],
+          [
+            115.64443969726562,
+            464
+          ],
+          [
+            117.1407470703125,
+            464
+          ],
+          [
+            118.63703918457031,
+            464
+          ],
+          [
+            120.13333129882812,
+            464
+          ],
+          [
+            121.62962341308594,
+            464
+          ],
+          [
+            123.12593078613281,
+            464
+          ],
+          [
+            124.62222290039062,
+            464
+          ],
+          [
+            126.11851501464844,
+            464
+          ],
+          [
+            127.61482238769531,
+            464
+          ],
+          [
+            129.11111450195312,
+            464
+          ],
+          [
+            130.60740661621094,
+            464
+          ],
+          [
+            132.10369873046875,
+            464
+          ],
+          [
+            133.60000610351562,
+            464
+          ],
+          [
+            135.09629821777344,
+            464
+          ],
+          [
+            136.59259033203125,
+            464
+          ],
+          [
+            138.08888244628906,
+            464
+          ],
+          [
+            139.58518981933594,
+            464
+          ],
+          [
+            141.08148193359375,
+            464
+          ],
+          [
+            142.57777404785156,
+            464
+          ],
+          [
+            144.07408142089844,
+            464
+          ],
+          [
+            145.57037353515625,
+            464
+          ],
+          [
+            147.06666564941406,
+            464
+          ],
+          [
+            148.56295776367188,
+            464
+          ],
+          [
+            150.05926513671875,
+            464
+          ],
+          [
+            151.55555725097656,
+            464
+          ],
+          [
+            153.05184936523438,
+            464
+          ],
+          [
+            154.5481414794922,
+            464
+          ],
+          [
+            156.04444885253906,
+            464
+          ],
+          [
+            157.54074096679688,
+            464
+          ],
+          [
+            159.0370330810547,
+            464
+          ],
+          [
+            160.53334045410156,
+            464
+          ],
+          [
+            162.02963256835938,
+            464
+          ],
+          [
+            163.5259246826172,
+            464
+          ],
+          [
+            165.022216796875,
+            464
+          ],
+          [
+            166.51852416992188,
+            464
+          ],
+          [
+            168.0148162841797,
+            464
+          ],
+          [
+            169.5111083984375,
+            464
+          ],
+          [
+            171.0074005126953,
+            464
+          ],
+          [
+            172.5037078857422,
+            464
+          ],
+          [
+            174,
+            464
+          ]
+        ],
+        "length": 202
+      },
+      "issue-elements": {
+        "bbox": {
+          "x": 137,
+          "y": 620,
+          "w": 70,
+          "h": 0
+        },
+        "points": [
+          [
+            137,
+            620
+          ],
+          [
+            138.48936462402344,
+            620
+          ],
+          [
+            139.97872924804688,
+            620
+          ],
+          [
+            141.46807861328125,
+            620
+          ],
+          [
+            142.9574432373047,
+            620
+          ],
+          [
+            144.44680786132812,
+            620
+          ],
+          [
+            145.93617248535156,
+            620
+          ],
+          [
+            147.425537109375,
+            620
+          ],
+          [
+            148.91488647460938,
+            620
+          ],
+          [
+            150.4042510986328,
+            620
+          ],
+          [
+            151.89361572265625,
+            620
+          ],
+          [
+            153.3829803466797,
+            620
+          ],
+          [
+            154.87234497070312,
+            620
+          ],
+          [
+            156.3616943359375,
+            620
+          ],
+          [
+            157.85107421875,
+            620
+          ],
+          [
+            159.34042358398438,
+            620
+          ],
+          [
+            160.8297882080078,
+            620
+          ],
+          [
+            162.31915283203125,
+            620
+          ],
+          [
+            163.80850219726562,
+            620
+          ],
+          [
+            165.29788208007812,
+            620
+          ],
+          [
+            166.7872314453125,
+            620
+          ],
+          [
+            168.27659606933594,
+            620
+          ],
+          [
+            169.76596069335938,
+            620
+          ],
+          [
+            171.25531005859375,
+            620
+          ],
+          [
+            172.74468994140625,
+            620
+          ],
+          [
+            174.23403930664062,
+            620
+          ],
+          [
+            175.72340393066406,
+            620
+          ],
+          [
+            177.2127685546875,
+            620
+          ],
+          [
+            178.70213317871094,
+            620
+          ],
+          [
+            180.19149780273438,
+            620
+          ],
+          [
+            181.68084716796875,
+            620
+          ],
+          [
+            183.1702117919922,
+            620
+          ],
+          [
+            184.65957641601562,
+            620
+          ],
+          [
+            186.14894104003906,
+            620
+          ],
+          [
+            187.6383056640625,
+            620
+          ],
+          [
+            189.12765502929688,
+            620
+          ],
+          [
+            190.6170196533203,
+            620
+          ],
+          [
+            192.10638427734375,
+            620
+          ],
+          [
+            193.5957489013672,
+            620
+          ],
+          [
+            195.08511352539062,
+            620
+          ],
+          [
+            196.574462890625,
+            620
+          ],
+          [
+            198.06382751464844,
+            620
+          ],
+          [
+            199.55319213867188,
+            620
+          ],
+          [
+            201.0425567626953,
+            620
+          ],
+          [
+            202.53192138671875,
+            620
+          ],
+          [
+            204.02127075195312,
+            620
+          ],
+          [
+            205.51063537597656,
+            620
+          ],
+          [
+            207,
+            620
+          ]
+        ],
+        "length": 70
+      },
+      "focused-context-handoff": {
+        "bbox": {
+          "x": 669,
+          "y": 410,
+          "w": 273,
+          "h": 472
+        },
+        "points": [
+          [
+            669,
+            882
+          ],
+          [
+            670.4990234375,
+            882
+          ],
+          [
+            671.9979858398438,
+            882
+          ],
+          [
+            673.4969482421875,
+            882
+          ],
+          [
+            674.9959716796875,
+            882
+          ],
+          [
+            676.4949951171875,
+            882
+          ],
+          [
+            677.9939575195312,
+            882
+          ],
+          [
+            679.492919921875,
+            882
+          ],
+          [
+            680.991943359375,
+            882
+          ],
+          [
+            682.490966796875,
+            882
+          ],
+          [
+            683.9899291992188,
+            882
+          ],
+          [
+            685.4889526367188,
+            882
+          ],
+          [
+            686.9879150390625,
+            882
+          ],
+          [
+            688.4869384765625,
+            882
+          ],
+          [
+            689.9859008789062,
+            882
+          ],
+          [
+            691.4849243164062,
+            882
+          ],
+          [
+            692.98388671875,
+            882
+          ],
+          [
+            694.48291015625,
+            882
+          ],
+          [
+            695.9818725585938,
+            882
+          ],
+          [
+            697.4808959960938,
+            882
+          ],
+          [
+            698.9798583984375,
+            882
+          ],
+          [
+            700.4788818359375,
+            882
+          ],
+          [
+            701.9779052734375,
+            882
+          ],
+          [
+            703.4768676757812,
+            882
+          ],
+          [
+            704.975830078125,
+            882
+          ],
+          [
+            706.474853515625,
+            882
+          ],
+          [
+            707.973876953125,
+            882
+          ],
+          [
+            709.4728393554688,
+            882
+          ],
+          [
+            710.9718017578125,
+            882
+          ],
+          [
+            712.4708251953125,
+            882
+          ],
+          [
+            713.9698486328125,
+            882
+          ],
+          [
+            715.4688110351562,
+            882
+          ],
+          [
+            716.9677734375,
+            882
+          ],
+          [
+            718.466796875,
+            882
+          ],
+          [
+            719.9658203125,
+            882
+          ],
+          [
+            721.4647827148438,
+            882
+          ],
+          [
+            722.9637451171875,
+            882
+          ],
+          [
+            724.4627685546875,
+            882
+          ],
+          [
+            725.9617919921875,
+            882
+          ],
+          [
+            727.4607543945312,
+            882
+          ],
+          [
+            728.9597778320312,
+            882
+          ],
+          [
+            730.458740234375,
+            882
+          ],
+          [
+            731.957763671875,
+            882
+          ],
+          [
+            733.4567260742188,
+            882
+          ],
+          [
+            734.9557495117188,
+            882
+          ],
+          [
+            736.4547119140625,
+            882
+          ],
+          [
+            737.9537353515625,
+            882
+          ],
+          [
+            739.4526977539062,
+            882
+          ],
+          [
+            740.9517211914062,
+            882
+          ],
+          [
+            742.45068359375,
+            882
+          ],
+          [
+            743.94970703125,
+            882
+          ],
+          [
+            745.4486694335938,
+            882
+          ],
+          [
+            746.9476928710938,
+            882
+          ],
+          [
+            748.4466552734375,
+            882
+          ],
+          [
+            749.9456787109375,
+            882
+          ],
+          [
+            751.4447021484375,
+            882
+          ],
+          [
+            752.9436645507812,
+            882
+          ],
+          [
+            754.442626953125,
+            882
+          ],
+          [
+            755.941650390625,
+            882
+          ],
+          [
+            757.440673828125,
+            882
+          ],
+          [
+            758.9396362304688,
+            882
+          ],
+          [
+            760.4385986328125,
+            882
+          ],
+          [
+            761.9376220703125,
+            882
+          ],
+          [
+            763.4366455078125,
+            882
+          ],
+          [
+            764.9356079101562,
+            882
+          ],
+          [
+            766.4346313476562,
+            882
+          ],
+          [
+            767.93359375,
+            882
+          ],
+          [
+            769.4326171875,
+            882
+          ],
+          [
+            770.9315795898438,
+            882
+          ],
+          [
+            772.4306030273438,
+            882
+          ],
+          [
+            773.9295654296875,
+            882
+          ],
+          [
+            775.4285888671875,
+            882
+          ],
+          [
+            776.9275512695312,
+            882
+          ],
+          [
+            778.4265747070312,
+            882
+          ],
+          [
+            779.925537109375,
+            882
+          ],
+          [
+            781.424560546875,
+            882
+          ],
+          [
+            782.9235229492188,
+            882
+          ],
+          [
+            784.4225463867188,
+            882
+          ],
+          [
+            785.9215087890625,
+            882
+          ],
+          [
+            787.4205322265625,
+            882
+          ],
+          [
+            788.9194946289062,
+            882
+          ],
+          [
+            790.4185180664062,
+            882
+          ],
+          [
+            791.91748046875,
+            882
+          ],
+          [
+            793.41650390625,
+            882
+          ],
+          [
+            794.9154663085938,
+            882
+          ],
+          [
+            796.4144897460938,
+            882
+          ],
+          [
+            797.9134521484375,
+            882
+          ],
+          [
+            799.4124755859375,
+            882
+          ],
+          [
+            800.9114990234375,
+            882
+          ],
+          [
+            802.4104614257812,
+            882
+          ],
+          [
+            803.909423828125,
+            882
+          ],
+          [
+            805.408447265625,
+            882
+          ],
+          [
+            806.907470703125,
+            882
+          ],
+          [
+            808.4064331054688,
+            882
+          ],
+          [
+            809.9053955078125,
+            882
+          ],
+          [
+            811.4044189453125,
+            882
+          ],
+          [
+            812.9034423828125,
+            882
+          ],
+          [
+            814.4024047851562,
+            882
+          ],
+          [
+            815.9014282226562,
+            882
+          ],
+          [
+            817.400390625,
+            882
+          ],
+          [
+            818.8994140625,
+            882
+          ],
+          [
+            820.3983764648438,
+            882
+          ],
+          [
+            821.8973999023438,
+            882
+          ],
+          [
+            823.3963623046875,
+            882
+          ],
+          [
+            824.8953857421875,
+            882
+          ],
+          [
+            826.3943481445312,
+            882
+          ],
+          [
+            827.8933715820312,
+            882
+          ],
+          [
+            829.392333984375,
+            882
+          ],
+          [
+            830.891357421875,
+            882
+          ],
+          [
+            832.3903198242188,
+            882
+          ],
+          [
+            833.8893432617188,
+            882
+          ],
+          [
+            835.3883056640625,
+            882
+          ],
+          [
+            836.8873291015625,
+            882
+          ],
+          [
+            838.3863525390625,
+            882
+          ],
+          [
+            839.8853149414062,
+            882
+          ],
+          [
+            841.38427734375,
+            882
+          ],
+          [
+            842.88330078125,
+            882
+          ],
+          [
+            844.38232421875,
+            882
+          ],
+          [
+            845.8812866210938,
+            882
+          ],
+          [
+            847.3802490234375,
+            882
+          ],
+          [
+            848.8792724609375,
+            882
+          ],
+          [
+            850.3782958984375,
+            882
+          ],
+          [
+            851.8772583007812,
+            882
+          ],
+          [
+            853.376220703125,
+            882
+          ],
+          [
+            854.875244140625,
+            882
+          ],
+          [
+            856.374267578125,
+            882
+          ],
+          [
+            857.8732299804688,
+            882
+          ],
+          [
+            859.3722534179688,
+            882
+          ],
+          [
+            860.8712158203125,
+            882
+          ],
+          [
+            862.3702392578125,
+            882
+          ],
+          [
+            863.8692016601562,
+            882
+          ],
+          [
+            865.3682250976562,
+            882
+          ],
+          [
+            866.8671875,
+            882
+          ],
+          [
+            868.3662109375,
+            882
+          ],
+          [
+            869,
+            881.1348266601562
+          ],
+          [
+            869,
+            879.6358032226562
+          ],
+          [
+            869,
+            878.1368408203125
+          ],
+          [
+            869,
+            876.6378173828125
+          ],
+          [
+            869,
+            875.1388549804688
+          ],
+          [
+            869,
+            873.6398315429688
+          ],
+          [
+            869,
+            872.140869140625
+          ],
+          [
+            869,
+            870.641845703125
+          ],
+          [
+            869,
+            869.142822265625
+          ],
+          [
+            869,
+            867.6438598632812
+          ],
+          [
+            869,
+            866.1448974609375
+          ],
+          [
+            869,
+            864.6458740234375
+          ],
+          [
+            869,
+            863.1468505859375
+          ],
+          [
+            869,
+            861.6478881835938
+          ],
+          [
+            869,
+            860.14892578125
+          ],
+          [
+            869,
+            858.64990234375
+          ],
+          [
+            869,
+            857.15087890625
+          ],
+          [
+            869,
+            855.6519165039062
+          ],
+          [
+            869,
+            854.1529541015625
+          ],
+          [
+            869,
+            852.6539306640625
+          ],
+          [
+            869,
+            851.1549072265625
+          ],
+          [
+            869,
+            849.6559448242188
+          ],
+          [
+            869,
+            848.1569213867188
+          ],
+          [
+            869,
+            846.657958984375
+          ],
+          [
+            869,
+            845.158935546875
+          ],
+          [
+            869,
+            843.6599731445312
+          ],
+          [
+            869,
+            842.1609497070312
+          ],
+          [
+            869,
+            840.6619873046875
+          ],
+          [
+            869,
+            839.1629638671875
+          ],
+          [
+            869,
+            837.6640014648438
+          ],
+          [
+            869,
+            836.1649780273438
+          ],
+          [
+            869,
+            834.666015625
+          ],
+          [
+            869,
+            833.1669921875
+          ],
+          [
+            869,
+            831.6680297851562
+          ],
+          [
+            869,
+            830.1690063476562
+          ],
+          [
+            869,
+            828.6700439453125
+          ],
+          [
+            869,
+            827.1710205078125
+          ],
+          [
+            869,
+            825.6719970703125
+          ],
+          [
+            869,
+            824.1730346679688
+          ],
+          [
+            869,
+            822.674072265625
+          ],
+          [
+            869,
+            821.175048828125
+          ],
+          [
+            869,
+            819.676025390625
+          ],
+          [
+            869,
+            818.1770629882812
+          ],
+          [
+            869,
+            816.6781005859375
+          ],
+          [
+            869,
+            815.1790771484375
+          ],
+          [
+            869,
+            813.6800537109375
+          ],
+          [
+            869,
+            812.1810913085938
+          ],
+          [
+            869,
+            810.68212890625
+          ],
+          [
+            869,
+            809.18310546875
+          ],
+          [
+            869,
+            807.68408203125
+          ],
+          [
+            869,
+            806.1851196289062
+          ],
+          [
+            869,
+            804.6861572265625
+          ],
+          [
+            869,
+            803.1871337890625
+          ],
+          [
+            869,
+            801.6881103515625
+          ],
+          [
+            869,
+            800.1891479492188
+          ],
+          [
+            869,
+            798.690185546875
+          ],
+          [
+            869,
+            797.191162109375
+          ],
+          [
+            869,
+            795.692138671875
+          ],
+          [
+            869,
+            794.193115234375
+          ],
+          [
+            869,
+            792.6941528320312
+          ],
+          [
+            869,
+            791.1951904296875
+          ],
+          [
+            869,
+            789.6961669921875
+          ],
+          [
+            869,
+            788.1971435546875
+          ],
+          [
+            869,
+            786.6981811523438
+          ],
+          [
+            869,
+            785.19921875
+          ],
+          [
+            869,
+            783.7001953125
+          ],
+          [
+            869,
+            782.201171875
+          ],
+          [
+            869,
+            780.7022094726562
+          ],
+          [
+            869,
+            779.2032470703125
+          ],
+          [
+            869,
+            777.7042236328125
+          ],
+          [
+            869,
+            776.2052001953125
+          ],
+          [
+            869,
+            774.7062377929688
+          ],
+          [
+            869,
+            773.207275390625
+          ],
+          [
+            869,
+            771.708251953125
+          ],
+          [
+            869,
+            770.209228515625
+          ],
+          [
+            869,
+            768.7102661132812
+          ],
+          [
+            869,
+            767.2113037109375
+          ],
+          [
+            869,
+            765.7122802734375
+          ],
+          [
+            869,
+            764.2132568359375
+          ],
+          [
+            869,
+            762.7142944335938
+          ],
+          [
+            869,
+            761.21533203125
+          ],
+          [
+            869,
+            759.71630859375
+          ],
+          [
+            869,
+            758.21728515625
+          ],
+          [
+            869,
+            756.7183227539062
+          ],
+          [
+            869,
+            755.2193603515625
+          ],
+          [
+            869,
+            753.7203369140625
+          ],
+          [
+            869,
+            752.2213134765625
+          ],
+          [
+            869,
+            750.7222900390625
+          ],
+          [
+            869,
+            749.2233276367188
+          ],
+          [
+            869,
+            747.724365234375
+          ],
+          [
+            869,
+            746.225341796875
+          ],
+          [
+            869,
+            744.726318359375
+          ],
+          [
+            869,
+            743.2273559570312
+          ],
+          [
+            869,
+            741.7283935546875
+          ],
+          [
+            869,
+            740.2293701171875
+          ],
+          [
+            869,
+            738.7303466796875
+          ],
+          [
+            869,
+            737.2313842773438
+          ],
+          [
+            869,
+            735.732421875
+          ],
+          [
+            869,
+            734.2333984375
+          ],
+          [
+            869,
+            732.734375
+          ],
+          [
+            869,
+            731.2354125976562
+          ],
+          [
+            869,
+            729.7364501953125
+          ],
+          [
+            869,
+            728.2374267578125
+          ],
+          [
+            869,
+            726.7384033203125
+          ],
+          [
+            869,
+            725.2394409179688
+          ],
+          [
+            869,
+            723.740478515625
+          ],
+          [
+            869,
+            722.241455078125
+          ],
+          [
+            869,
+            720.742431640625
+          ],
+          [
+            869,
+            719.2434692382812
+          ],
+          [
+            869,
+            717.7445068359375
+          ],
+          [
+            869,
+            716.2454833984375
+          ],
+          [
+            869,
+            714.7464599609375
+          ],
+          [
+            869,
+            713.2474975585938
+          ],
+          [
+            869,
+            711.74853515625
+          ],
+          [
+            869,
+            710.24951171875
+          ],
+          [
+            869,
+            708.75048828125
+          ],
+          [
+            869,
+            707.25146484375
+          ],
+          [
+            869,
+            705.7525024414062
+          ],
+          [
+            869,
+            704.2535400390625
+          ],
+          [
+            869,
+            702.7545166015625
+          ],
+          [
+            869,
+            701.2554931640625
+          ],
+          [
+            869,
+            699.7565307617188
+          ],
+          [
+            869,
+            698.257568359375
+          ],
+          [
+            869,
+            696.758544921875
+          ],
+          [
+            869,
+            695.259521484375
+          ],
+          [
+            869,
+            693.7605590820312
+          ],
+          [
+            869,
+            692.2615966796875
+          ],
+          [
+            869,
+            690.7625732421875
+          ],
+          [
+            869,
+            689.2635498046875
+          ],
+          [
+            869,
+            687.7645874023438
+          ],
+          [
+            869,
+            686.265625
+          ],
+          [
+            869,
+            684.7666015625
+          ],
+          [
+            869,
+            683.267578125
+          ],
+          [
+            869,
+            681.7686157226562
+          ],
+          [
+            869,
+            680.2696533203125
+          ],
+          [
+            869,
+            678.7706298828125
+          ],
+          [
+            869,
+            677.2716064453125
+          ],
+          [
+            869,
+            675.7726440429688
+          ],
+          [
+            869,
+            674.273681640625
+          ],
+          [
+            869,
+            672.774658203125
+          ],
+          [
+            869,
+            671.275634765625
+          ],
+          [
+            869,
+            669.7766723632812
+          ],
+          [
+            869,
+            668.2777099609375
+          ],
+          [
+            869,
+            666.7786865234375
+          ],
+          [
+            869,
+            665.2796630859375
+          ],
+          [
+            869,
+            663.7806396484375
+          ],
+          [
+            869,
+            662.2816772460938
+          ],
+          [
+            869,
+            660.78271484375
+          ],
+          [
+            869,
+            659.28369140625
+          ],
+          [
+            869,
+            657.78466796875
+          ],
+          [
+            869,
+            656.2857055664062
+          ],
+          [
+            869,
+            654.7867431640625
+          ],
+          [
+            869,
+            653.2877197265625
+          ],
+          [
+            869,
+            651.7886962890625
+          ],
+          [
+            869,
+            650.2897338867188
+          ],
+          [
+            869,
+            648.790771484375
+          ],
+          [
+            869,
+            647.291748046875
+          ],
+          [
+            869,
+            645.792724609375
+          ],
+          [
+            869,
+            644.2937622070312
+          ],
+          [
+            869,
+            642.7947998046875
+          ],
+          [
+            869,
+            641.2957763671875
+          ],
+          [
+            869,
+            639.7967529296875
+          ],
+          [
+            869,
+            638.2977905273438
+          ],
+          [
+            869,
+            636.798828125
+          ],
+          [
+            869,
+            635.2998046875
+          ],
+          [
+            869,
+            633.80078125
+          ],
+          [
+            869,
+            632.3018188476562
+          ],
+          [
+            869,
+            630.8028564453125
+          ],
+          [
+            869,
+            629.3038330078125
+          ],
+          [
+            869,
+            627.8048095703125
+          ],
+          [
+            869,
+            626.3058471679688
+          ],
+          [
+            869,
+            624.806884765625
+          ],
+          [
+            869,
+            623.307861328125
+          ],
+          [
+            869,
+            621.808837890625
+          ],
+          [
+            869,
+            620.309814453125
+          ],
+          [
+            869,
+            618.8108520507812
+          ],
+          [
+            869,
+            617.3118896484375
+          ],
+          [
+            869,
+            615.8128662109375
+          ],
+          [
+            869,
+            614.3138427734375
+          ],
+          [
+            869,
+            612.8148803710938
+          ],
+          [
+            869,
+            611.31591796875
+          ],
+          [
+            869,
+            609.81689453125
+          ],
+          [
+            869,
+            608.31787109375
+          ],
+          [
+            869,
+            606.8189086914062
+          ],
+          [
+            869,
+            605.3199462890625
+          ],
+          [
+            869,
+            603.8209228515625
+          ],
+          [
+            869,
+            602.3218994140625
+          ],
+          [
+            869,
+            600.8229370117188
+          ],
+          [
+            869,
+            599.323974609375
+          ],
+          [
+            869,
+            597.824951171875
+          ],
+          [
+            869,
+            596.325927734375
+          ],
+          [
+            869,
+            594.8269653320312
+          ],
+          [
+            869,
+            593.3280029296875
+          ],
+          [
+            869,
+            591.8289794921875
+          ],
+          [
+            869,
+            590.3299560546875
+          ],
+          [
+            869,
+            588.8309936523438
+          ],
+          [
+            869,
+            587.33203125
+          ],
+          [
+            869,
+            585.8330078125
+          ],
+          [
+            869,
+            584.333984375
+          ],
+          [
+            869,
+            582.8350219726562
+          ],
+          [
+            869,
+            581.3360595703125
+          ],
+          [
+            869,
+            579.8370361328125
+          ],
+          [
+            869,
+            578.3380126953125
+          ],
+          [
+            869,
+            576.8389892578125
+          ],
+          [
+            869,
+            575.3400268554688
+          ],
+          [
+            869,
+            573.841064453125
+          ],
+          [
+            869,
+            572.342041015625
+          ],
+          [
+            869,
+            570.843017578125
+          ],
+          [
+            869,
+            569.3440551757812
+          ],
+          [
+            869,
+            567.8450927734375
+          ],
+          [
+            869,
+            566.3460693359375
+          ],
+          [
+            869,
+            564.8471069335938
+          ],
+          [
+            869,
+            563.3480834960938
+          ],
+          [
+            869,
+            561.84912109375
+          ],
+          [
+            869,
+            560.35009765625
+          ],
+          [
+            869,
+            558.8511352539062
+          ],
+          [
+            869,
+            557.3521118164062
+          ],
+          [
+            869,
+            555.8530883789062
+          ],
+          [
+            869,
+            554.3541259765625
+          ],
+          [
+            869,
+            552.8551025390625
+          ],
+          [
+            869,
+            551.3561401367188
+          ],
+          [
+            869,
+            549.8571166992188
+          ],
+          [
+            869,
+            548.358154296875
+          ],
+          [
+            869,
+            546.859130859375
+          ],
+          [
+            869,
+            545.3601684570312
+          ],
+          [
+            869,
+            543.8611450195312
+          ],
+          [
+            869,
+            542.3621826171875
+          ],
+          [
+            869,
+            540.8631591796875
+          ],
+          [
+            869,
+            539.3641967773438
+          ],
+          [
+            869,
+            537.8651733398438
+          ],
+          [
+            869,
+            536.3662109375
+          ],
+          [
+            869,
+            534.8671875
+          ],
+          [
+            869,
+            533.3682250976562
+          ],
+          [
+            869,
+            531.8692016601562
+          ],
+          [
+            869,
+            530.3702392578125
+          ],
+          [
+            869,
+            528.8712158203125
+          ],
+          [
+            869,
+            527.3722534179688
+          ],
+          [
+            869,
+            525.8732299804688
+          ],
+          [
+            869,
+            524.374267578125
+          ],
+          [
+            869,
+            522.875244140625
+          ],
+          [
+            869,
+            521.3762817382812
+          ],
+          [
+            869,
+            519.8772583007812
+          ],
+          [
+            869,
+            518.3782958984375
+          ],
+          [
+            869,
+            516.8792724609375
+          ],
+          [
+            869,
+            515.3803100585938
+          ],
+          [
+            869,
+            513.8812866210938
+          ],
+          [
+            869,
+            512.38232421875
+          ],
+          [
+            869,
+            510.88330078125
+          ],
+          [
+            869,
+            509.38427734375
+          ],
+          [
+            869,
+            507.88531494140625
+          ],
+          [
+            869,
+            506.38629150390625
+          ],
+          [
+            869,
+            504.8873291015625
+          ],
+          [
+            869,
+            503.3883056640625
+          ],
+          [
+            869,
+            501.88934326171875
+          ],
+          [
+            869,
+            500.39031982421875
+          ],
+          [
+            869,
+            498.891357421875
+          ],
+          [
+            869,
+            497.392333984375
+          ],
+          [
+            869,
+            495.89337158203125
+          ],
+          [
+            869,
+            494.39434814453125
+          ],
+          [
+            869,
+            492.8953857421875
+          ],
+          [
+            869,
+            491.3963623046875
+          ],
+          [
+            869,
+            489.89739990234375
+          ],
+          [
+            869,
+            488.39837646484375
+          ],
+          [
+            869,
+            486.8994140625
+          ],
+          [
+            869,
+            485.400390625
+          ],
+          [
+            869,
+            483.90142822265625
+          ],
+          [
+            869,
+            482.40240478515625
+          ],
+          [
+            869,
+            480.9034423828125
+          ],
+          [
+            869,
+            479.4044189453125
+          ],
+          [
+            869,
+            477.90545654296875
+          ],
+          [
+            869,
+            476.40643310546875
+          ],
+          [
+            869,
+            474.907470703125
+          ],
+          [
+            869,
+            473.408447265625
+          ],
+          [
+            869,
+            471.90948486328125
+          ],
+          [
+            869,
+            470.41046142578125
+          ],
+          [
+            869,
+            468.9114990234375
+          ],
+          [
+            869,
+            467.4124755859375
+          ],
+          [
+            869,
+            465.9134521484375
+          ],
+          [
+            869,
+            464.41448974609375
+          ],
+          [
+            869,
+            462.91546630859375
+          ],
+          [
+            869,
+            461.41650390625
+          ],
+          [
+            869,
+            459.91748046875
+          ],
+          [
+            869,
+            458.41851806640625
+          ],
+          [
+            869,
+            456.91949462890625
+          ],
+          [
+            869,
+            455.4205322265625
+          ],
+          [
+            869,
+            453.9215087890625
+          ],
+          [
+            869,
+            452.42254638671875
+          ],
+          [
+            869,
+            450.92352294921875
+          ],
+          [
+            869,
+            449.424560546875
+          ],
+          [
+            869,
+            447.925537109375
+          ],
+          [
+            869,
+            446.42657470703125
+          ],
+          [
+            869,
+            444.92755126953125
+          ],
+          [
+            869,
+            443.4285888671875
+          ],
+          [
+            869,
+            441.9295654296875
+          ],
+          [
+            869,
+            440.43060302734375
+          ],
+          [
+            869,
+            438.93157958984375
+          ],
+          [
+            869,
+            437.4326171875
+          ],
+          [
+            869,
+            435.93359375
+          ],
+          [
+            869,
+            434.43463134765625
+          ],
+          [
+            869,
+            432.93560791015625
+          ],
+          [
+            869,
+            431.4366455078125
+          ],
+          [
+            869,
+            429.9376220703125
+          ],
+          [
+            869,
+            428.43865966796875
+          ],
+          [
+            869,
+            426.93963623046875
+          ],
+          [
+            869,
+            425.440673828125
+          ],
+          [
+            869,
+            423.941650390625
+          ],
+          [
+            869,
+            422.442626953125
+          ],
+          [
+            869,
+            420.94366455078125
+          ],
+          [
+            869,
+            419.44464111328125
+          ],
+          [
+            869,
+            417.9456787109375
+          ],
+          [
+            869,
+            416.4466552734375
+          ],
+          [
+            869,
+            414.94769287109375
+          ],
+          [
+            869,
+            413.44866943359375
+          ],
+          [
+            869,
+            411.94970703125
+          ],
+          [
+            869,
+            410.45068359375
+          ],
+          [
+            870.0482788085938,
+            410
+          ],
+          [
+            871.5473022460938,
+            410
+          ],
+          [
+            873.0462646484375,
+            410
+          ],
+          [
+            874.5452880859375,
+            410
+          ],
+          [
+            876.0442504882812,
+            410
+          ],
+          [
+            877.5432739257812,
+            410
+          ],
+          [
+            879.042236328125,
+            410
+          ],
+          [
+            880.541259765625,
+            410
+          ],
+          [
+            882.0402221679688,
+            410
+          ],
+          [
+            883.5392456054688,
+            410
+          ],
+          [
+            885.0382080078125,
+            410
+          ],
+          [
+            886.5372314453125,
+            410
+          ],
+          [
+            888.0361938476562,
+            410
+          ],
+          [
+            889.5352172851562,
+            410
+          ],
+          [
+            891.0341796875,
+            410
+          ],
+          [
+            892.533203125,
+            410
+          ],
+          [
+            894.0321655273438,
+            410
+          ],
+          [
+            895.5311889648438,
+            410
+          ],
+          [
+            897.0301513671875,
+            410
+          ],
+          [
+            898.5291748046875,
+            410
+          ],
+          [
+            900.0281982421875,
+            410
+          ],
+          [
+            901.5271606445312,
+            410
+          ],
+          [
+            903.0261840820312,
+            410
+          ],
+          [
+            904.525146484375,
+            410
+          ],
+          [
+            906.024169921875,
+            410
+          ],
+          [
+            907.5231323242188,
+            410
+          ],
+          [
+            909.0221557617188,
+            410
+          ],
+          [
+            910.5211181640625,
+            410
+          ],
+          [
+            912.0201416015625,
+            410
+          ],
+          [
+            913.5191040039062,
+            410
+          ],
+          [
+            915.0181274414062,
+            410
+          ],
+          [
+            916.51708984375,
+            410
+          ],
+          [
+            918.01611328125,
+            410
+          ],
+          [
+            919.5150756835938,
+            410
+          ],
+          [
+            921.0140991210938,
+            410
+          ],
+          [
+            922.5130615234375,
+            410
+          ],
+          [
+            924.0120849609375,
+            410
+          ],
+          [
+            925.5110473632812,
+            410
+          ],
+          [
+            927.0100708007812,
+            410
+          ],
+          [
+            928.509033203125,
+            410
+          ],
+          [
+            930.008056640625,
+            410
+          ],
+          [
+            931.5070190429688,
+            410
+          ],
+          [
+            933.0060424804688,
+            410
+          ],
+          [
+            934.5050048828125,
+            410
+          ],
+          [
+            936.0040283203125,
+            410
+          ],
+          [
+            937.5029907226562,
+            410
+          ],
+          [
+            939.0020141601562,
+            410
+          ],
+          [
+            940.5009765625,
+            410
+          ],
+          [
+            942,
+            410
+          ]
+        ],
+        "length": 745
+      },
+      "magnify-search": {
+        "bbox": {
+          "x": 1179,
+          "y": 286,
+          "w": 119,
+          "h": 135
+        },
+        "points": [
+          [
+            1179,
+            421
+          ],
+          [
+            1179,
+            419.5076904296875
+          ],
+          [
+            1179,
+            418.015380859375
+          ],
+          [
+            1179,
+            416.5230712890625
+          ],
+          [
+            1179,
+            415.03076171875
+          ],
+          [
+            1179,
+            413.5384521484375
+          ],
+          [
+            1179,
+            412.046142578125
+          ],
+          [
+            1179,
+            410.5538330078125
+          ],
+          [
+            1179,
+            409.0615234375
+          ],
+          [
+            1179,
+            407.5691833496094
+          ],
+          [
+            1179,
+            406.0768737792969
+          ],
+          [
+            1179,
+            404.5845642089844
+          ],
+          [
+            1179,
+            403.0922546386719
+          ],
+          [
+            1179,
+            401.5999450683594
+          ],
+          [
+            1179,
+            400.1076354980469
+          ],
+          [
+            1179,
+            398.6153259277344
+          ],
+          [
+            1179,
+            397.1230163574219
+          ],
+          [
+            1179,
+            395.6307067871094
+          ],
+          [
+            1179,
+            394.1383972167969
+          ],
+          [
+            1179.26318359375,
+            392.76336669921875
+          ],
+          [
+            1180.372802734375,
+            391.7655944824219
+          ],
+          [
+            1181.4825439453125,
+            390.7677917480469
+          ],
+          [
+            1182.59228515625,
+            389.77001953125
+          ],
+          [
+            1183.701904296875,
+            388.772216796875
+          ],
+          [
+            1184.8116455078125,
+            387.7744140625
+          ],
+          [
+            1185.9212646484375,
+            386.7766418457031
+          ],
+          [
+            1187.031005859375,
+            385.77886962890625
+          ],
+          [
+            1188.1407470703125,
+            384.78106689453125
+          ],
+          [
+            1189.2503662109375,
+            383.78326416015625
+          ],
+          [
+            1190.360107421875,
+            382.7854919433594
+          ],
+          [
+            1191.4697265625,
+            381.7876892089844
+          ],
+          [
+            1192.5794677734375,
+            380.7899169921875
+          ],
+          [
+            1193.6890869140625,
+            379.7921142578125
+          ],
+          [
+            1194.798828125,
+            378.7943420410156
+          ],
+          [
+            1195.9085693359375,
+            377.7965393066406
+          ],
+          [
+            1197.0181884765625,
+            376.79876708984375
+          ],
+          [
+            1198.1279296875,
+            375.80096435546875
+          ],
+          [
+            1199.237548828125,
+            374.80316162109375
+          ],
+          [
+            1200.3472900390625,
+            373.8053894042969
+          ],
+          [
+            1201.45703125,
+            372.8076171875
+          ],
+          [
+            1202.566650390625,
+            371.809814453125
+          ],
+          [
+            1203.6763916015625,
+            370.81201171875
+          ],
+          [
+            1204.7860107421875,
+            369.8142395019531
+          ],
+          [
+            1205.895751953125,
+            368.8164367675781
+          ],
+          [
+            1207.00537109375,
+            367.81866455078125
+          ],
+          [
+            1208.1151123046875,
+            366.82086181640625
+          ],
+          [
+            1209.224853515625,
+            365.8230895996094
+          ],
+          [
+            1210.33447265625,
+            364.8252868652344
+          ],
+          [
+            1211.4442138671875,
+            363.8275146484375
+          ],
+          [
+            1212.5538330078125,
+            362.8297119140625
+          ],
+          [
+            1213.66357421875,
+            361.8319091796875
+          ],
+          [
+            1214.773193359375,
+            360.8341369628906
+          ],
+          [
+            1215.8829345703125,
+            359.83636474609375
+          ],
+          [
+            1216.99267578125,
+            358.83856201171875
+          ],
+          [
+            1218.102294921875,
+            357.84075927734375
+          ],
+          [
+            1219.2120361328125,
+            356.8429870605469
+          ],
+          [
+            1220.3216552734375,
+            355.84521484375
+          ],
+          [
+            1221.431396484375,
+            354.847412109375
+          ],
+          [
+            1222.5411376953125,
+            353.849609375
+          ],
+          [
+            1223.6507568359375,
+            352.8518371582031
+          ],
+          [
+            1224.760498046875,
+            351.8540344238281
+          ],
+          [
+            1225.8701171875,
+            350.85626220703125
+          ],
+          [
+            1226.9798583984375,
+            349.85845947265625
+          ],
+          [
+            1228.0894775390625,
+            348.8606872558594
+          ],
+          [
+            1229.19921875,
+            347.8628845214844
+          ],
+          [
+            1230.3089599609375,
+            346.8651123046875
+          ],
+          [
+            1231.4185791015625,
+            345.8673095703125
+          ],
+          [
+            1232.5283203125,
+            344.8695068359375
+          ],
+          [
+            1233.637939453125,
+            343.8717346191406
+          ],
+          [
+            1234.7476806640625,
+            342.8739318847656
+          ],
+          [
+            1235.857421875,
+            341.87615966796875
+          ],
+          [
+            1236.967041015625,
+            340.87835693359375
+          ],
+          [
+            1238.0767822265625,
+            339.8805847167969
+          ],
+          [
+            1239.1864013671875,
+            338.8827819824219
+          ],
+          [
+            1240.296142578125,
+            337.885009765625
+          ],
+          [
+            1241.40576171875,
+            336.88720703125
+          ],
+          [
+            1242.5155029296875,
+            335.8894348144531
+          ],
+          [
+            1243.625244140625,
+            334.8916320800781
+          ],
+          [
+            1244.73486328125,
+            333.89385986328125
+          ],
+          [
+            1245.8446044921875,
+            332.89605712890625
+          ],
+          [
+            1246.9542236328125,
+            331.8982849121094
+          ],
+          [
+            1248.06396484375,
+            330.9004821777344
+          ],
+          [
+            1249.173583984375,
+            329.9027099609375
+          ],
+          [
+            1250.2833251953125,
+            328.9049072265625
+          ],
+          [
+            1251.39306640625,
+            327.9071044921875
+          ],
+          [
+            1252.502685546875,
+            326.9093322753906
+          ],
+          [
+            1253.6124267578125,
+            325.9115295410156
+          ],
+          [
+            1254.7220458984375,
+            324.91375732421875
+          ],
+          [
+            1255.831787109375,
+            323.91595458984375
+          ],
+          [
+            1256.94140625,
+            322.9181823730469
+          ],
+          [
+            1258.0511474609375,
+            321.9203796386719
+          ],
+          [
+            1259.160888671875,
+            320.922607421875
+          ],
+          [
+            1260.2705078125,
+            319.9248046875
+          ],
+          [
+            1261.3802490234375,
+            318.927001953125
+          ],
+          [
+            1262.4898681640625,
+            317.9292297363281
+          ],
+          [
+            1263.599609375,
+            316.93145751953125
+          ],
+          [
+            1264.7093505859375,
+            315.93365478515625
+          ],
+          [
+            1265.8189697265625,
+            314.9358825683594
+          ],
+          [
+            1266.9287109375,
+            313.9380798339844
+          ],
+          [
+            1268.038330078125,
+            312.9402770996094
+          ],
+          [
+            1269.1480712890625,
+            311.9425048828125
+          ],
+          [
+            1270.2578125,
+            310.9447021484375
+          ],
+          [
+            1271.367431640625,
+            309.9469299316406
+          ],
+          [
+            1272.4771728515625,
+            308.9491271972656
+          ],
+          [
+            1273.5867919921875,
+            307.95135498046875
+          ],
+          [
+            1274.696533203125,
+            306.95355224609375
+          ],
+          [
+            1275.80615234375,
+            305.9557800292969
+          ],
+          [
+            1276.9158935546875,
+            304.9579772949219
+          ],
+          [
+            1278.025634765625,
+            303.960205078125
+          ],
+          [
+            1279.13525390625,
+            302.96240234375
+          ],
+          [
+            1280.2449951171875,
+            301.9646301269531
+          ],
+          [
+            1281.3546142578125,
+            300.9668273925781
+          ],
+          [
+            1282.46435546875,
+            299.96905517578125
+          ],
+          [
+            1283.573974609375,
+            298.97125244140625
+          ],
+          [
+            1284.6837158203125,
+            297.9734802246094
+          ],
+          [
+            1285.79345703125,
+            296.9756774902344
+          ],
+          [
+            1286.903076171875,
+            295.9778747558594
+          ],
+          [
+            1288.0128173828125,
+            294.9801025390625
+          ],
+          [
+            1289.1224365234375,
+            293.9822998046875
+          ],
+          [
+            1290.232177734375,
+            292.9845275878906
+          ],
+          [
+            1291.341796875,
+            291.9867248535156
+          ],
+          [
+            1292.4515380859375,
+            290.98895263671875
+          ],
+          [
+            1293.561279296875,
+            289.99114990234375
+          ],
+          [
+            1294.6708984375,
+            288.99334716796875
+          ],
+          [
+            1295.7806396484375,
+            287.9955749511719
+          ],
+          [
+            1296.8902587890625,
+            286.9977722167969
+          ],
+          [
+            1298,
+            286
+          ]
+        ],
+        "length": 188.03125
+      },
+      "magnify-replace": {
+        "bbox": {
+          "x": 1179,
+          "y": 421,
+          "w": 119,
+          "h": 11
+        },
+        "points": [
+          [
+            1179,
+            421
+          ],
+          [
+            1180.487548828125,
+            421.13751220703125
+          ],
+          [
+            1181.9749755859375,
+            421.2749938964844
+          ],
+          [
+            1183.4625244140625,
+            421.4125061035156
+          ],
+          [
+            1184.949951171875,
+            421.54998779296875
+          ],
+          [
+            1186.4375,
+            421.6875
+          ],
+          [
+            1187.925048828125,
+            421.82501220703125
+          ],
+          [
+            1189.4124755859375,
+            421.9624938964844
+          ],
+          [
+            1190.9000244140625,
+            422.1000061035156
+          ],
+          [
+            1192.387451171875,
+            422.23748779296875
+          ],
+          [
+            1193.875,
+            422.375
+          ],
+          [
+            1195.362548828125,
+            422.51251220703125
+          ],
+          [
+            1196.8499755859375,
+            422.6499938964844
+          ],
+          [
+            1198.3375244140625,
+            422.7875061035156
+          ],
+          [
+            1199.824951171875,
+            422.92498779296875
+          ],
+          [
+            1201.3125,
+            423.0625
+          ],
+          [
+            1202.800048828125,
+            423.20001220703125
+          ],
+          [
+            1204.2874755859375,
+            423.3374938964844
+          ],
+          [
+            1205.7750244140625,
+            423.4750061035156
+          ],
+          [
+            1207.262451171875,
+            423.61248779296875
+          ],
+          [
+            1208.75,
+            423.75
+          ],
+          [
+            1210.237548828125,
+            423.88751220703125
+          ],
+          [
+            1211.7249755859375,
+            424.0249938964844
+          ],
+          [
+            1213.2125244140625,
+            424.1625061035156
+          ],
+          [
+            1214.699951171875,
+            424.29998779296875
+          ],
+          [
+            1216.1875,
+            424.4375
+          ],
+          [
+            1217.675048828125,
+            424.57501220703125
+          ],
+          [
+            1219.1624755859375,
+            424.7124938964844
+          ],
+          [
+            1220.6500244140625,
+            424.8500061035156
+          ],
+          [
+            1222.137451171875,
+            424.98748779296875
+          ],
+          [
+            1223.625,
+            425.125
+          ],
+          [
+            1225.112548828125,
+            425.26251220703125
+          ],
+          [
+            1226.5999755859375,
+            425.3999938964844
+          ],
+          [
+            1228.0875244140625,
+            425.5375061035156
+          ],
+          [
+            1229.574951171875,
+            425.67498779296875
+          ],
+          [
+            1231.0625,
+            425.8125
+          ],
+          [
+            1232.550048828125,
+            425.95001220703125
+          ],
+          [
+            1234.0374755859375,
+            426.0874938964844
+          ],
+          [
+            1235.5250244140625,
+            426.2250061035156
+          ],
+          [
+            1237.012451171875,
+            426.36248779296875
+          ],
+          [
+            1238.5,
+            426.5
+          ],
+          [
+            1239.987548828125,
+            426.63751220703125
+          ],
+          [
+            1241.4749755859375,
+            426.7749938964844
+          ],
+          [
+            1242.9625244140625,
+            426.9125061035156
+          ],
+          [
+            1244.449951171875,
+            427.04998779296875
+          ],
+          [
+            1245.9375,
+            427.1875
+          ],
+          [
+            1247.425048828125,
+            427.32501220703125
+          ],
+          [
+            1248.9124755859375,
+            427.4624938964844
+          ],
+          [
+            1250.4000244140625,
+            427.6000061035156
+          ],
+          [
+            1251.887451171875,
+            427.73748779296875
+          ],
+          [
+            1253.375,
+            427.875
+          ],
+          [
+            1254.862548828125,
+            428.01251220703125
+          ],
+          [
+            1256.3499755859375,
+            428.1499938964844
+          ],
+          [
+            1257.8375244140625,
+            428.2875061035156
+          ],
+          [
+            1259.324951171875,
+            428.42498779296875
+          ],
+          [
+            1260.8125,
+            428.5625
+          ],
+          [
+            1262.300048828125,
+            428.70001220703125
+          ],
+          [
+            1263.7874755859375,
+            428.8374938964844
+          ],
+          [
+            1265.2750244140625,
+            428.9750061035156
+          ],
+          [
+            1266.762451171875,
+            429.11248779296875
+          ],
+          [
+            1268.25,
+            429.25
+          ],
+          [
+            1269.737548828125,
+            429.38751220703125
+          ],
+          [
+            1271.2249755859375,
+            429.5249938964844
+          ],
+          [
+            1272.7125244140625,
+            429.6625061035156
+          ],
+          [
+            1274.199951171875,
+            429.79998779296875
+          ],
+          [
+            1275.6875,
+            429.9375
+          ],
+          [
+            1277.175048828125,
+            430.07501220703125
+          ],
+          [
+            1278.6624755859375,
+            430.2124938964844
+          ],
+          [
+            1280.1500244140625,
+            430.3500061035156
+          ],
+          [
+            1281.637451171875,
+            430.48748779296875
+          ],
+          [
+            1283.125,
+            430.625
+          ],
+          [
+            1284.612548828125,
+            430.76251220703125
+          ],
+          [
+            1286.0999755859375,
+            430.8999938964844
+          ],
+          [
+            1287.5875244140625,
+            431.0375061035156
+          ],
+          [
+            1289.074951171875,
+            431.17498779296875
+          ],
+          [
+            1290.5625,
+            431.3125
+          ],
+          [
+            1292.050048828125,
+            431.45001220703125
+          ],
+          [
+            1293.5374755859375,
+            431.5874938964844
+          ],
+          [
+            1295.0250244140625,
+            431.7250061035156
+          ],
+          [
+            1296.512451171875,
+            431.86248779296875
+          ],
+          [
+            1298,
+            432
+          ]
+        ],
+        "length": 119.50732421875
+      },
+      "context-to-generator": {
+        "bbox": {
+          "x": 1084,
+          "y": 487,
+          "w": 0,
+          "h": 102
+        },
+        "points": [
+          [
+            1084,
+            487
+          ],
+          [
+            1084,
+            488.5
+          ],
+          [
+            1084,
+            490
+          ],
+          [
+            1084,
+            491.5
+          ],
+          [
+            1084,
+            493
+          ],
+          [
+            1084,
+            494.5
+          ],
+          [
+            1084,
+            496
+          ],
+          [
+            1084,
+            497.5
+          ],
+          [
+            1084,
+            499
+          ],
+          [
+            1084,
+            500.5
+          ],
+          [
+            1084,
+            502
+          ],
+          [
+            1084,
+            503.5
+          ],
+          [
+            1084,
+            505
+          ],
+          [
+            1084,
+            506.5
+          ],
+          [
+            1084,
+            508
+          ],
+          [
+            1084,
+            509.5
+          ],
+          [
+            1084,
+            511
+          ],
+          [
+            1084,
+            512.5
+          ],
+          [
+            1084,
+            514
+          ],
+          [
+            1084,
+            515.5
+          ],
+          [
+            1084,
+            517
+          ],
+          [
+            1084,
+            518.5
+          ],
+          [
+            1084,
+            520
+          ],
+          [
+            1084,
+            521.5
+          ],
+          [
+            1084,
+            523
+          ],
+          [
+            1084,
+            524.5
+          ],
+          [
+            1084,
+            526
+          ],
+          [
+            1084,
+            527.5
+          ],
+          [
+            1084,
+            529
+          ],
+          [
+            1084,
+            530.5
+          ],
+          [
+            1084,
+            532
+          ],
+          [
+            1084,
+            533.5
+          ],
+          [
+            1084,
+            535
+          ],
+          [
+            1084,
+            536.5
+          ],
+          [
+            1084,
+            538
+          ],
+          [
+            1084,
+            539.5
+          ],
+          [
+            1084,
+            541
+          ],
+          [
+            1084,
+            542.5
+          ],
+          [
+            1084,
+            544
+          ],
+          [
+            1084,
+            545.5
+          ],
+          [
+            1084,
+            547
+          ],
+          [
+            1084,
+            548.5
+          ],
+          [
+            1084,
+            550
+          ],
+          [
+            1084,
+            551.5
+          ],
+          [
+            1084,
+            553
+          ],
+          [
+            1084,
+            554.5
+          ],
+          [
+            1084,
+            556
+          ],
+          [
+            1084,
+            557.5
+          ],
+          [
+            1084,
+            559
+          ],
+          [
+            1084,
+            560.5
+          ],
+          [
+            1084,
+            562
+          ],
+          [
+            1084,
+            563.5
+          ],
+          [
+            1084,
+            565
+          ],
+          [
+            1084,
+            566.5
+          ],
+          [
+            1084,
+            568
+          ],
+          [
+            1084,
+            569.5
+          ],
+          [
+            1084,
+            571
+          ],
+          [
+            1084,
+            572.5
+          ],
+          [
+            1084,
+            574
+          ],
+          [
+            1084,
+            575.5
+          ],
+          [
+            1084,
+            577
+          ],
+          [
+            1084,
+            578.5
+          ],
+          [
+            1084,
+            580
+          ],
+          [
+            1084,
+            581.5
+          ],
+          [
+            1084,
+            583
+          ],
+          [
+            1084,
+            584.5
+          ],
+          [
+            1084,
+            586
+          ],
+          [
+            1084,
+            587.5
+          ],
+          [
+            1084,
+            589
+          ]
+        ],
+        "length": 102
+      },
+      "issue-to-generator": {
+        "bbox": {
+          "x": 987,
+          "y": 621,
+          "w": 42,
+          "h": 0
+        },
+        "points": [
+          [
+            987,
+            621
+          ],
+          [
+            988.5,
+            621
+          ],
+          [
+            990,
+            621
+          ],
+          [
+            991.5,
+            621
+          ],
+          [
+            993,
+            621
+          ],
+          [
+            994.5,
+            621
+          ],
+          [
+            996,
+            621
+          ],
+          [
+            997.5,
+            621
+          ],
+          [
+            999,
+            621
+          ],
+          [
+            1000.5,
+            621
+          ],
+          [
+            1002,
+            621
+          ],
+          [
+            1003.5,
+            621
+          ],
+          [
+            1005,
+            621
+          ],
+          [
+            1006.5,
+            621
+          ],
+          [
+            1008,
+            621
+          ],
+          [
+            1009.5,
+            621
+          ],
+          [
+            1011,
+            621
+          ],
+          [
+            1012.5,
+            621
+          ],
+          [
+            1014,
+            621
+          ],
+          [
+            1015.5,
+            621
+          ],
+          [
+            1017,
+            621
+          ],
+          [
+            1018.5,
+            621
+          ],
+          [
+            1020,
+            621
+          ],
+          [
+            1021.5,
+            621
+          ],
+          [
+            1023,
+            621
+          ],
+          [
+            1024.5,
+            621
+          ],
+          [
+            1026,
+            621
+          ],
+          [
+            1027.5,
+            621
+          ],
+          [
+            1029,
+            621
+          ]
+        ],
+        "length": 42
+      },
+      "generator-to-candidates": {
+        "bbox": {
+          "x": 1141,
+          "y": 621,
+          "w": 155,
+          "h": 0
+        },
+        "points": [
+          [
+            1141,
+            621
+          ],
+          [
+            1142.4903564453125,
+            621
+          ],
+          [
+            1143.980712890625,
+            621
+          ],
+          [
+            1145.47119140625,
+            621
+          ],
+          [
+            1146.9615478515625,
+            621
+          ],
+          [
+            1148.451904296875,
+            621
+          ],
+          [
+            1149.9422607421875,
+            621
+          ],
+          [
+            1151.4327392578125,
+            621
+          ],
+          [
+            1152.923095703125,
+            621
+          ],
+          [
+            1154.4134521484375,
+            621
+          ],
+          [
+            1155.90380859375,
+            621
+          ],
+          [
+            1157.394287109375,
+            621
+          ],
+          [
+            1158.8846435546875,
+            621
+          ],
+          [
+            1160.375,
+            621
+          ],
+          [
+            1161.8653564453125,
+            621
+          ],
+          [
+            1163.355712890625,
+            621
+          ],
+          [
+            1164.84619140625,
+            621
+          ],
+          [
+            1166.3365478515625,
+            621
+          ],
+          [
+            1167.826904296875,
+            621
+          ],
+          [
+            1169.3172607421875,
+            621
+          ],
+          [
+            1170.8077392578125,
+            621
+          ],
+          [
+            1172.298095703125,
+            621
+          ],
+          [
+            1173.7884521484375,
+            621
+          ],
+          [
+            1175.27880859375,
+            621
+          ],
+          [
+            1176.769287109375,
+            621
+          ],
+          [
+            1178.2596435546875,
+            621
+          ],
+          [
+            1179.75,
+            621
+          ],
+          [
+            1181.2403564453125,
+            621
+          ],
+          [
+            1182.730712890625,
+            621
+          ],
+          [
+            1184.22119140625,
+            621
+          ],
+          [
+            1185.7115478515625,
+            621
+          ],
+          [
+            1187.201904296875,
+            621
+          ],
+          [
+            1188.6922607421875,
+            621
+          ],
+          [
+            1190.1827392578125,
+            621
+          ],
+          [
+            1191.673095703125,
+            621
+          ],
+          [
+            1193.1634521484375,
+            621
+          ],
+          [
+            1194.65380859375,
+            621
+          ],
+          [
+            1196.144287109375,
+            621
+          ],
+          [
+            1197.6346435546875,
+            621
+          ],
+          [
+            1199.125,
+            621
+          ],
+          [
+            1200.6153564453125,
+            621
+          ],
+          [
+            1202.105712890625,
+            621
+          ],
+          [
+            1203.59619140625,
+            621
+          ],
+          [
+            1205.0865478515625,
+            621
+          ],
+          [
+            1206.576904296875,
+            621
+          ],
+          [
+            1208.0672607421875,
+            621
+          ],
+          [
+            1209.5577392578125,
+            621
+          ],
+          [
+            1211.048095703125,
+            621
+          ],
+          [
+            1212.5384521484375,
+            621
+          ],
+          [
+            1214.02880859375,
+            621
+          ],
+          [
+            1215.519287109375,
+            621
+          ],
+          [
+            1217.0096435546875,
+            621
+          ],
+          [
+            1218.5,
+            621
+          ],
+          [
+            1219.9903564453125,
+            621
+          ],
+          [
+            1221.480712890625,
+            621
+          ],
+          [
+            1222.97119140625,
+            621
+          ],
+          [
+            1224.4615478515625,
+            621
+          ],
+          [
+            1225.951904296875,
+            621
+          ],
+          [
+            1227.4422607421875,
+            621
+          ],
+          [
+            1228.9327392578125,
+            621
+          ],
+          [
+            1230.423095703125,
+            621
+          ],
+          [
+            1231.9134521484375,
+            621
+          ],
+          [
+            1233.40380859375,
+            621
+          ],
+          [
+            1234.894287109375,
+            621
+          ],
+          [
+            1236.3846435546875,
+            621
+          ],
+          [
+            1237.875,
+            621
+          ],
+          [
+            1239.3653564453125,
+            621
+          ],
+          [
+            1240.855712890625,
+            621
+          ],
+          [
+            1242.34619140625,
+            621
+          ],
+          [
+            1243.8365478515625,
+            621
+          ],
+          [
+            1245.326904296875,
+            621
+          ],
+          [
+            1246.8172607421875,
+            621
+          ],
+          [
+            1248.3077392578125,
+            621
+          ],
+          [
+            1249.798095703125,
+            621
+          ],
+          [
+            1251.2884521484375,
+            621
+          ],
+          [
+            1252.77880859375,
+            621
+          ],
+          [
+            1254.269287109375,
+            621
+          ],
+          [
+            1255.7596435546875,
+            621
+          ],
+          [
+            1257.25,
+            621
+          ],
+          [
+            1258.7403564453125,
+            621
+          ],
+          [
+            1260.230712890625,
+            621
+          ],
+          [
+            1261.72119140625,
+            621
+          ],
+          [
+            1263.2115478515625,
+            621
+          ],
+          [
+            1264.701904296875,
+            621
+          ],
+          [
+            1266.1922607421875,
+            621
+          ],
+          [
+            1267.6827392578125,
+            621
+          ],
+          [
+            1269.173095703125,
+            621
+          ],
+          [
+            1270.6634521484375,
+            621
+          ],
+          [
+            1272.15380859375,
+            621
+          ],
+          [
+            1273.644287109375,
+            621
+          ],
+          [
+            1275.1346435546875,
+            621
+          ],
+          [
+            1276.625,
+            621
+          ],
+          [
+            1278.1153564453125,
+            621
+          ],
+          [
+            1279.605712890625,
+            621
+          ],
+          [
+            1281.09619140625,
+            621
+          ],
+          [
+            1282.5865478515625,
+            621
+          ],
+          [
+            1284.076904296875,
+            621
+          ],
+          [
+            1285.5672607421875,
+            621
+          ],
+          [
+            1287.0577392578125,
+            621
+          ],
+          [
+            1288.548095703125,
+            621
+          ],
+          [
+            1290.0384521484375,
+            621
+          ],
+          [
+            1291.52880859375,
+            621
+          ],
+          [
+            1293.019287109375,
+            621
+          ],
+          [
+            1294.5096435546875,
+            621
+          ],
+          [
+            1296,
+            621
+          ]
+        ],
+        "length": 155
+      },
+      "candidate-to-filter": {
+        "bbox": {
+          "x": 1274,
+          "y": 729,
+          "w": 0,
+          "h": 38
+        },
+        "points": [
+          [
+            1274,
+            729
+          ],
+          [
+            1274,
+            730.4615478515625
+          ],
+          [
+            1274,
+            731.923095703125
+          ],
+          [
+            1274,
+            733.3846435546875
+          ],
+          [
+            1274,
+            734.8461303710938
+          ],
+          [
+            1274,
+            736.3076782226562
+          ],
+          [
+            1274,
+            737.7692260742188
+          ],
+          [
+            1274,
+            739.2307739257812
+          ],
+          [
+            1274,
+            740.6923217773438
+          ],
+          [
+            1274,
+            742.1538696289062
+          ],
+          [
+            1274,
+            743.6153564453125
+          ],
+          [
+            1274,
+            745.076904296875
+          ],
+          [
+            1274,
+            746.5384521484375
+          ],
+          [
+            1274,
+            748
+          ],
+          [
+            1274,
+            749.4615478515625
+          ],
+          [
+            1274,
+            750.923095703125
+          ],
+          [
+            1274,
+            752.3846435546875
+          ],
+          [
+            1274,
+            753.8461303710938
+          ],
+          [
+            1274,
+            755.3076782226562
+          ],
+          [
+            1274,
+            756.7692260742188
+          ],
+          [
+            1274,
+            758.2307739257812
+          ],
+          [
+            1274,
+            759.6923217773438
+          ],
+          [
+            1274,
+            761.1538696289062
+          ],
+          [
+            1274,
+            762.6153564453125
+          ],
+          [
+            1274,
+            764.076904296875
+          ],
+          [
+            1274,
+            765.5384521484375
+          ],
+          [
+            1274,
+            767
+          ]
+        ],
+        "length": 38
+      },
+      "syntax-to-frequency": {
+        "bbox": {
+          "x": 1102,
+          "y": 861,
+          "w": 53,
+          "h": 0
+        },
+        "points": [
+          [
+            1102,
+            861
+          ],
+          [
+            1103.47216796875,
+            861
+          ],
+          [
+            1104.9444580078125,
+            861
+          ],
+          [
+            1106.4166259765625,
+            861
+          ],
+          [
+            1107.888916015625,
+            861
+          ],
+          [
+            1109.361083984375,
+            861
+          ],
+          [
+            1110.8333740234375,
+            861
+          ],
+          [
+            1112.3055419921875,
+            861
+          ],
+          [
+            1113.77783203125,
+            861
+          ],
+          [
+            1115.25,
+            861
+          ],
+          [
+            1116.72216796875,
+            861
+          ],
+          [
+            1118.1944580078125,
+            861
+          ],
+          [
+            1119.6666259765625,
+            861
+          ],
+          [
+            1121.138916015625,
+            861
+          ],
+          [
+            1122.611083984375,
+            861
+          ],
+          [
+            1124.0833740234375,
+            861
+          ],
+          [
+            1125.5555419921875,
+            861
+          ],
+          [
+            1127.02783203125,
+            861
+          ],
+          [
+            1128.5,
+            861
+          ],
+          [
+            1129.97216796875,
+            861
+          ],
+          [
+            1131.4444580078125,
+            861
+          ],
+          [
+            1132.9166259765625,
+            861
+          ],
+          [
+            1134.388916015625,
+            861
+          ],
+          [
+            1135.861083984375,
+            861
+          ],
+          [
+            1137.3333740234375,
+            861
+          ],
+          [
+            1138.8055419921875,
+            861
+          ],
+          [
+            1140.27783203125,
+            861
+          ],
+          [
+            1141.75,
+            861
+          ],
+          [
+            1143.22216796875,
+            861
+          ],
+          [
+            1144.6944580078125,
+            861
+          ],
+          [
+            1146.1666259765625,
+            861
+          ],
+          [
+            1147.638916015625,
+            861
+          ],
+          [
+            1149.111083984375,
+            861
+          ],
+          [
+            1150.5833740234375,
+            861
+          ],
+          [
+            1152.0555419921875,
+            861
+          ],
+          [
+            1153.52783203125,
+            861
+          ],
+          [
+            1155,
+            861
+          ]
+        ],
+        "length": 53
+      },
+      "frequency-to-patch": {
+        "bbox": {
+          "x": 1360,
+          "y": 861,
+          "w": 46,
+          "h": 0
+        },
+        "points": [
+          [
+            1360,
+            861
+          ],
+          [
+            1361.48388671875,
+            861
+          ],
+          [
+            1362.9677734375,
+            861
+          ],
+          [
+            1364.45166015625,
+            861
+          ],
+          [
+            1365.935546875,
+            861
+          ],
+          [
+            1367.4193115234375,
+            861
+          ],
+          [
+            1368.9031982421875,
+            861
+          ],
+          [
+            1370.3870849609375,
+            861
+          ],
+          [
+            1371.8709716796875,
+            861
+          ],
+          [
+            1373.3548583984375,
+            861
+          ],
+          [
+            1374.8387451171875,
+            861
+          ],
+          [
+            1376.3226318359375,
+            861
+          ],
+          [
+            1377.806396484375,
+            861
+          ],
+          [
+            1379.290283203125,
+            861
+          ],
+          [
+            1380.774169921875,
+            861
+          ],
+          [
+            1382.258056640625,
+            861
+          ],
+          [
+            1383.741943359375,
+            861
+          ],
+          [
+            1385.225830078125,
+            861
+          ],
+          [
+            1386.709716796875,
+            861
+          ],
+          [
+            1388.193603515625,
+            861
+          ],
+          [
+            1389.6773681640625,
+            861
+          ],
+          [
+            1391.1612548828125,
+            861
+          ],
+          [
+            1392.6451416015625,
+            861
+          ],
+          [
+            1394.1290283203125,
+            861
+          ],
+          [
+            1395.6129150390625,
+            861
+          ],
+          [
+            1397.0968017578125,
+            861
+          ],
+          [
+            1398.5806884765625,
+            861
+          ],
+          [
+            1400.0645751953125,
+            861
+          ],
+          [
+            1401.54833984375,
+            861
+          ],
+          [
+            1403.0322265625,
+            861
+          ],
+          [
+            1404.51611328125,
+            861
+          ],
+          [
+            1406,
+            861
+          ]
+        ],
+        "length": 46
+      }
+    },
+    "unaccountedNativeTexts": [],
+    "nonNative": []
+  }
+}

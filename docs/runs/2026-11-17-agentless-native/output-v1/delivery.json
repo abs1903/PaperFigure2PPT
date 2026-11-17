@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "mechanicalPassed": false,
+  "validation": {
+    "mechanical": {
+      "status": "unverified",
+      "reasons": [
+        "Typography verification unavailable"
+      ]
+    },
+    "render": {
+      "status": "unverified",
+      "reasons": [
+        "Actual Office evidence missing"
+      ]
+    },
+    "review": {
+      "status": "unverified",
+      "reasons": [
+        "No readable independent visual-review record",
+        "Review does not inspect the selected target PNG"
+      ]
+    }
+  },
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "reasons": [
+    "Typography verification unavailable",
+    "Actual Office evidence missing",
+    "No readable independent visual-review record",
+    "Review does not inspect the selected target PNG"
+  ],
+  "scope": "Fidelity to the selected target plus declared deviations; not venue certification or user approval"
+}

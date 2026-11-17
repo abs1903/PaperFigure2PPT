@@ -1,0 +1,1731 @@
+[
+  {
+    "name": "curriculum-panel",
+    "id": 2,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "curriculum-panel-1",
+    "id": 3,
+    "tag": "p:sp",
+    "owner": "curriculum-panel",
+    "text": null
+  },
+  {
+    "name": "curriculum-panel-2",
+    "id": 4,
+    "tag": "p:sp",
+    "owner": "curriculum-panel",
+    "text": "Automatic Curriculum"
+  },
+  {
+    "name": "generation-panel",
+    "id": 5,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "generation-panel-3",
+    "id": 6,
+    "tag": "p:sp",
+    "owner": "generation-panel",
+    "text": null
+  },
+  {
+    "name": "generation-panel-4",
+    "id": 7,
+    "tag": "p:sp",
+    "owner": "generation-panel",
+    "text": "Program Generation & Iterative Refinement"
+  },
+  {
+    "name": "library-panel",
+    "id": 8,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "library-panel-5",
+    "id": 9,
+    "tag": "p:sp",
+    "owner": "library-panel",
+    "text": null
+  },
+  {
+    "name": "library-panel-6",
+    "id": 10,
+    "tag": "p:sp",
+    "owner": "library-panel",
+    "text": "Reusable Skill Library"
+  },
+  {
+    "name": "library-panel-7",
+    "id": 11,
+    "tag": "p:sp",
+    "owner": "library-panel",
+    "text": "(Persistent, Growing)"
+  },
+  {
+    "name": "observations-to-curriculum",
+    "id": 12,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "observations-to-curriculum-8",
+    "id": 13,
+    "tag": "p:cxnSp",
+    "owner": "observations-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "observations-to-curriculum-9",
+    "id": 14,
+    "tag": "p:sp",
+    "owner": "observations-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "observations-to-curriculum-10",
+    "id": 15,
+    "tag": "p:cxnSp",
+    "owner": "observations-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "observations-to-curriculum-11",
+    "id": 16,
+    "tag": "p:sp",
+    "owner": "observations-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "observations-to-curriculum-12",
+    "id": 17,
+    "tag": "p:cxnSp",
+    "owner": "observations-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "observations-to-curriculum-13",
+    "id": 18,
+    "tag": "p:sp",
+    "owner": "observations-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "history-to-curriculum",
+    "id": 19,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "history-to-curriculum-14",
+    "id": 20,
+    "tag": "p:cxnSp",
+    "owner": "history-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "history-to-curriculum-15",
+    "id": 21,
+    "tag": "p:sp",
+    "owner": "history-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "history-to-curriculum-16",
+    "id": 22,
+    "tag": "p:cxnSp",
+    "owner": "history-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "history-to-curriculum-17",
+    "id": 23,
+    "tag": "p:sp",
+    "owner": "history-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "history-to-curriculum-18",
+    "id": 24,
+    "tag": "p:cxnSp",
+    "owner": "history-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "history-to-curriculum-19",
+    "id": 25,
+    "tag": "p:sp",
+    "owner": "history-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "curriculum-to-task",
+    "id": 26,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "curriculum-to-task-20",
+    "id": 27,
+    "tag": "p:cxnSp",
+    "owner": "curriculum-to-task",
+    "text": null
+  },
+  {
+    "name": "curriculum-to-task-21",
+    "id": 28,
+    "tag": "p:sp",
+    "owner": "curriculum-to-task",
+    "text": null
+  },
+  {
+    "name": "retained-to-curriculum",
+    "id": 29,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "retained-to-curriculum-22",
+    "id": 30,
+    "tag": "p:cxnSp",
+    "owner": "retained-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "retained-to-curriculum-23",
+    "id": 31,
+    "tag": "p:sp",
+    "owner": "retained-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "retained-to-curriculum-24",
+    "id": 32,
+    "tag": "p:cxnSp",
+    "owner": "retained-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "retained-to-curriculum-25",
+    "id": 33,
+    "tag": "p:sp",
+    "owner": "retained-to-curriculum",
+    "text": null
+  },
+  {
+    "name": "context-to-generator",
+    "id": 34,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "context-to-generator-26",
+    "id": 35,
+    "tag": "p:cxnSp",
+    "owner": "context-to-generator",
+    "text": null
+  },
+  {
+    "name": "context-to-generator-27",
+    "id": 36,
+    "tag": "p:sp",
+    "owner": "context-to-generator",
+    "text": null
+  },
+  {
+    "name": "context-to-generator-28",
+    "id": 37,
+    "tag": "p:cxnSp",
+    "owner": "context-to-generator",
+    "text": null
+  },
+  {
+    "name": "context-to-generator-29",
+    "id": 38,
+    "tag": "p:sp",
+    "owner": "context-to-generator",
+    "text": null
+  },
+  {
+    "name": "context-to-generator-30",
+    "id": 39,
+    "tag": "p:cxnSp",
+    "owner": "context-to-generator",
+    "text": null
+  },
+  {
+    "name": "context-to-generator-31",
+    "id": 40,
+    "tag": "p:sp",
+    "owner": "context-to-generator",
+    "text": null
+  },
+  {
+    "name": "generator-to-program",
+    "id": 41,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "generator-to-program-32",
+    "id": 42,
+    "tag": "p:cxnSp",
+    "owner": "generator-to-program",
+    "text": null
+  },
+  {
+    "name": "generator-to-program-33",
+    "id": 43,
+    "tag": "p:sp",
+    "owner": "generator-to-program",
+    "text": null
+  },
+  {
+    "name": "program-to-runtime",
+    "id": 44,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "program-to-runtime-34",
+    "id": 45,
+    "tag": "p:cxnSp",
+    "owner": "program-to-runtime",
+    "text": null
+  },
+  {
+    "name": "program-to-runtime-35",
+    "id": 46,
+    "tag": "p:sp",
+    "owner": "program-to-runtime",
+    "text": null
+  },
+  {
+    "name": "runtime-to-critic",
+    "id": 47,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "runtime-to-critic-36",
+    "id": 48,
+    "tag": "p:cxnSp",
+    "owner": "runtime-to-critic",
+    "text": null
+  },
+  {
+    "name": "runtime-to-critic-37",
+    "id": 49,
+    "tag": "p:sp",
+    "owner": "runtime-to-critic",
+    "text": null
+  },
+  {
+    "name": "critic-to-feedback",
+    "id": 50,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "critic-to-feedback-38",
+    "id": 51,
+    "tag": "p:cxnSp",
+    "owner": "critic-to-feedback",
+    "text": null
+  },
+  {
+    "name": "critic-to-feedback-39",
+    "id": 52,
+    "tag": "p:sp",
+    "owner": "critic-to-feedback",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-upper",
+    "id": 53,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-upper-40",
+    "id": 54,
+    "tag": "p:cxnSp",
+    "owner": "feedback-refinement-upper",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-upper-41",
+    "id": 55,
+    "tag": "p:sp",
+    "owner": "feedback-refinement-upper",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-upper-42",
+    "id": 56,
+    "tag": "p:cxnSp",
+    "owner": "feedback-refinement-upper",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-upper-43",
+    "id": 57,
+    "tag": "p:sp",
+    "owner": "feedback-refinement-upper",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-outer",
+    "id": 58,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-outer-44",
+    "id": 59,
+    "tag": "p:cxnSp",
+    "owner": "feedback-refinement-outer",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-outer-45",
+    "id": 60,
+    "tag": "p:sp",
+    "owner": "feedback-refinement-outer",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-outer-46",
+    "id": 61,
+    "tag": "p:cxnSp",
+    "owner": "feedback-refinement-outer",
+    "text": null
+  },
+  {
+    "name": "feedback-refinement-outer-47",
+    "id": 62,
+    "tag": "p:sp",
+    "owner": "feedback-refinement-outer",
+    "text": null
+  },
+  {
+    "name": "critic-success-to-library",
+    "id": 63,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "critic-success-to-library-48",
+    "id": 64,
+    "tag": "p:cxnSp",
+    "owner": "critic-success-to-library",
+    "text": null
+  },
+  {
+    "name": "critic-success-to-library-49",
+    "id": 65,
+    "tag": "p:sp",
+    "owner": "critic-success-to-library",
+    "text": null
+  },
+  {
+    "name": "critic-failure",
+    "id": 66,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "critic-failure-50",
+    "id": 67,
+    "tag": "p:cxnSp",
+    "owner": "critic-failure",
+    "text": null
+  },
+  {
+    "name": "critic-failure-51",
+    "id": 68,
+    "tag": "p:sp",
+    "owner": "critic-failure",
+    "text": null
+  },
+  {
+    "name": "critic-failure-52",
+    "id": 69,
+    "tag": "p:cxnSp",
+    "owner": "critic-failure",
+    "text": null
+  },
+  {
+    "name": "critic-failure-53",
+    "id": 70,
+    "tag": "p:sp",
+    "owner": "critic-failure",
+    "text": null
+  },
+  {
+    "name": "critic-failure-54",
+    "id": 71,
+    "tag": "p:cxnSp",
+    "owner": "critic-failure",
+    "text": null
+  },
+  {
+    "name": "critic-failure-55",
+    "id": 72,
+    "tag": "p:sp",
+    "owner": "critic-failure",
+    "text": null
+  },
+  {
+    "name": "next-task-return",
+    "id": 73,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "next-task-return-56",
+    "id": 74,
+    "tag": "p:cxnSp",
+    "owner": "next-task-return",
+    "text": null
+  },
+  {
+    "name": "next-task-return-57",
+    "id": 75,
+    "tag": "p:sp",
+    "owner": "next-task-return",
+    "text": null
+  },
+  {
+    "name": "next-task-return-58",
+    "id": 76,
+    "tag": "p:cxnSp",
+    "owner": "next-task-return",
+    "text": null
+  },
+  {
+    "name": "next-task-return-59",
+    "id": 77,
+    "tag": "p:sp",
+    "owner": "next-task-return",
+    "text": null
+  },
+  {
+    "name": "next-task-return-60",
+    "id": 78,
+    "tag": "p:cxnSp",
+    "owner": "next-task-return",
+    "text": null
+  },
+  {
+    "name": "next-task-return-61",
+    "id": 79,
+    "tag": "p:sp",
+    "owner": "next-task-return",
+    "text": null
+  },
+  {
+    "name": "world-observations",
+    "id": 80,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "world-observations-62",
+    "id": 81,
+    "tag": "p:sp",
+    "owner": "world-observations",
+    "text": null
+  },
+  {
+    "name": "world-observations-63",
+    "id": 82,
+    "tag": "p:sp",
+    "owner": "world-observations",
+    "text": "World"
+  },
+  {
+    "name": "world-observations-64",
+    "id": 83,
+    "tag": "p:sp",
+    "owner": "world-observations",
+    "text": "Observations"
+  },
+  {
+    "name": "world-observations-65",
+    "id": 84,
+    "tag": "p:sp",
+    "owner": "world-observations",
+    "text": "(latest)"
+  },
+  {
+    "name": "task-history",
+    "id": 85,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "task-history-66",
+    "id": 86,
+    "tag": "p:sp",
+    "owner": "task-history",
+    "text": null
+  },
+  {
+    "name": "task-history-67",
+    "id": 87,
+    "tag": "p:sp",
+    "owner": "task-history",
+    "text": "Task History"
+  },
+  {
+    "name": "task-history-68",
+    "id": 88,
+    "tag": "p:sp",
+    "owner": "task-history",
+    "text": "(completed)"
+  },
+  {
+    "name": "curriculum-controller",
+    "id": 89,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "curriculum-controller-69",
+    "id": 90,
+    "tag": "p:sp",
+    "owner": "curriculum-controller",
+    "text": null
+  },
+  {
+    "name": "curriculum-controller-70",
+    "id": 91,
+    "tag": "p:cxnSp",
+    "owner": "curriculum-controller",
+    "text": null
+  },
+  {
+    "name": "curriculum-controller-71",
+    "id": 92,
+    "tag": "p:sp",
+    "owner": "curriculum-controller",
+    "text": "Curriculum"
+  },
+  {
+    "name": "curriculum-controller-72",
+    "id": 93,
+    "tag": "p:sp",
+    "owner": "curriculum-controller",
+    "text": "Propose Task"
+  },
+  {
+    "name": "curriculum-controller-73",
+    "id": 94,
+    "tag": "p:sp",
+    "owner": "curriculum-controller",
+    "text": "+ Context"
+  },
+  {
+    "name": "task-context",
+    "id": 95,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "task-context-74",
+    "id": 96,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": null
+  },
+  {
+    "name": "task-context-75",
+    "id": 97,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": null
+  },
+  {
+    "name": "task-context-76",
+    "id": 98,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": "Task:"
+  },
+  {
+    "name": "task-context-77",
+    "id": 99,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": null
+  },
+  {
+    "name": "task-context-78",
+    "id": 100,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": "Mine 1 wood log"
+  },
+  {
+    "name": "task-context-79",
+    "id": 101,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": "Context:"
+  },
+  {
+    "name": "task-context-80",
+    "id": 102,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": "•  Retrieved code (top-k)"
+  },
+  {
+    "name": "task-context-81",
+    "id": 103,
+    "tag": "p:sp",
+    "owner": "task-context",
+    "text": "•  Recent events (filtered)"
+  },
+  {
+    "name": "retained-state",
+    "id": 104,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "retained-state-82",
+    "id": 105,
+    "tag": "p:sp",
+    "owner": "retained-state",
+    "text": null
+  },
+  {
+    "name": "retained-state-83",
+    "id": 106,
+    "tag": "p:sp",
+    "owner": "retained-state",
+    "text": "State (Retained)"
+  },
+  {
+    "name": "retained-state-84",
+    "id": 107,
+    "tag": "p:sp",
+    "owner": "retained-state",
+    "text": null
+  },
+  {
+    "name": "retained-state-85",
+    "id": 108,
+    "tag": "p:sp",
+    "owner": "retained-state",
+    "text": null
+  },
+  {
+    "name": "retained-state-86",
+    "id": 109,
+    "tag": "p:sp",
+    "owner": "retained-state",
+    "text": "Latest world observations"
+  },
+  {
+    "name": "retained-state-87",
+    "id": 110,
+    "tag": "p:sp",
+    "owner": "retained-state",
+    "text": "Runtime events (recent)"
+  },
+  {
+    "name": "retained-state-88",
+    "id": 111,
+    "tag": "p:sp",
+    "owner": "retained-state",
+    "text": "</>"
+  },
+  {
+    "name": "retrieved-code",
+    "id": 112,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "retrieved-code-89",
+    "id": 113,
+    "tag": "p:sp",
+    "owner": "retrieved-code",
+    "text": null
+  },
+  {
+    "name": "retrieved-code-90",
+    "id": 114,
+    "tag": "p:sp",
+    "owner": "retrieved-code",
+    "text": "Retrieved Code (top-k)"
+  },
+  {
+    "name": "retrieved-code-91",
+    "id": 115,
+    "tag": "p:sp",
+    "owner": "retrieved-code",
+    "text": "• chopTree()"
+  },
+  {
+    "name": "retrieved-code-92",
+    "id": 116,
+    "tag": "p:sp",
+    "owner": "retrieved-code",
+    "text": "• placeBlock()"
+  },
+  {
+    "name": "retrieved-code-93",
+    "id": 117,
+    "tag": "p:sp",
+    "owner": "retrieved-code",
+    "text": "• ..."
+  },
+  {
+    "name": "task-chat-context",
+    "id": 118,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "task-chat-context-94",
+    "id": 119,
+    "tag": "p:sp",
+    "owner": "task-chat-context",
+    "text": null
+  },
+  {
+    "name": "task-chat-context-95",
+    "id": 120,
+    "tag": "p:sp",
+    "owner": "task-chat-context",
+    "text": "Context (task + filtered chat log)"
+  },
+  {
+    "name": "action-generator",
+    "id": 121,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "action-generator-96",
+    "id": 122,
+    "tag": "p:sp",
+    "owner": "action-generator",
+    "text": null
+  },
+  {
+    "name": "action-generator-97",
+    "id": 123,
+    "tag": "p:sp",
+    "owner": "action-generator",
+    "text": "Action LM (Code Generator)"
+  },
+  {
+    "name": "action-generator-98",
+    "id": 124,
+    "tag": "p:cxnSp",
+    "owner": "action-generator",
+    "text": null
+  },
+  {
+    "name": "action-generator-99",
+    "id": 125,
+    "tag": "p:sp",
+    "owner": "action-generator",
+    "text": "Generate / Refine JavaScript (bounded)"
+  },
+  {
+    "name": "refine-caption",
+    "id": 126,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "refine-caption-100",
+    "id": 127,
+    "tag": "p:sp",
+    "owner": "refine-caption",
+    "text": "Refine"
+  },
+  {
+    "name": "refine-caption-101",
+    "id": 128,
+    "tag": "p:sp",
+    "owner": "refine-caption",
+    "text": "(with feedback)"
+  },
+  {
+    "name": "program-document",
+    "id": 129,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "program-document-102",
+    "id": 130,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": null
+  },
+  {
+    "name": "program-document-103",
+    "id": 131,
+    "tag": "p:cxnSp",
+    "owner": "program-document",
+    "text": null
+  },
+  {
+    "name": "program-document-104",
+    "id": 132,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "</>"
+  },
+  {
+    "name": "program-document-105",
+    "id": 133,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "program.js"
+  },
+  {
+    "name": "program-document-106",
+    "id": 134,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": null
+  },
+  {
+    "name": "program-document-107",
+    "id": 135,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "1"
+  },
+  {
+    "name": "program-document-108",
+    "id": 136,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "2"
+  },
+  {
+    "name": "program-document-109",
+    "id": 137,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "3"
+  },
+  {
+    "name": "program-document-110",
+    "id": 138,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "4"
+  },
+  {
+    "name": "program-document-111",
+    "id": 139,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "5"
+  },
+  {
+    "name": "program-document-112",
+    "id": 140,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "async function main() {"
+  },
+  {
+    "name": "program-document-113",
+    "id": 141,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "const tree = await findBlock("
+  },
+  {
+    "name": "program-document-114",
+    "id": 142,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "\"oak_log\");"
+  },
+  {
+    "name": "program-document-115",
+    "id": 143,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "await mineBlock(tree);"
+  },
+  {
+    "name": "program-document-116",
+    "id": 144,
+    "tag": "p:sp",
+    "owner": "program-document",
+    "text": "}"
+  },
+  {
+    "name": "runtime-execution",
+    "id": 145,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "runtime-execution-117",
+    "id": 146,
+    "tag": "p:sp",
+    "owner": "runtime-execution",
+    "text": null
+  },
+  {
+    "name": "runtime-execution-118",
+    "id": 147,
+    "tag": "p:cxnSp",
+    "owner": "runtime-execution",
+    "text": null
+  },
+  {
+    "name": "runtime-execution-119",
+    "id": 148,
+    "tag": "p:sp",
+    "owner": "runtime-execution",
+    "text": "Execute JS"
+  },
+  {
+    "name": "runtime-execution-120",
+    "id": 149,
+    "tag": "p:sp",
+    "owner": "runtime-execution",
+    "text": null
+  },
+  {
+    "name": "runtime-execution-121",
+    "id": 150,
+    "tag": "p:sp",
+    "owner": "runtime-execution",
+    "text": "Runtime"
+  },
+  {
+    "name": "runtime-execution-122",
+    "id": 151,
+    "tag": "p:sp",
+    "owner": "runtime-execution",
+    "text": "(all saved programs + primitives)"
+  },
+  {
+    "name": "runtime-scene",
+    "id": 152,
+    "tag": "p:grpSp",
+    "owner": "runtime-execution",
+    "text": null
+  },
+  {
+    "name": "runtime-scene-187",
+    "id": 153,
+    "tag": "p:sp",
+    "owner": "runtime-scene",
+    "text": null
+  },
+  {
+    "name": "runtime-scene-188",
+    "id": 154,
+    "tag": "p:sp",
+    "owner": "runtime-scene",
+    "text": null
+  },
+  {
+    "name": "runtime-scene-189",
+    "id": 155,
+    "tag": "p:sp",
+    "owner": "runtime-scene",
+    "text": null
+  },
+  {
+    "name": "runtime-scene-190",
+    "id": 156,
+    "tag": "p:sp",
+    "owner": "runtime-scene",
+    "text": null
+  },
+  {
+    "name": "runtime-scene-191",
+    "id": 157,
+    "tag": "p:sp",
+    "owner": "runtime-scene",
+    "text": null
+  },
+  {
+    "name": "critic",
+    "id": 158,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "critic-123",
+    "id": 159,
+    "tag": "p:sp",
+    "owner": "critic",
+    "text": null
+  },
+  {
+    "name": "critic-124",
+    "id": 160,
+    "tag": "p:cxnSp",
+    "owner": "critic",
+    "text": null
+  },
+  {
+    "name": "critic-125",
+    "id": 161,
+    "tag": "p:sp",
+    "owner": "critic",
+    "text": "Critic"
+  },
+  {
+    "name": "critic-126",
+    "id": 162,
+    "tag": "p:sp",
+    "owner": "critic",
+    "text": "Verify"
+  },
+  {
+    "name": "critic-127",
+    "id": 163,
+    "tag": "p:sp",
+    "owner": "critic",
+    "text": "(+ critique)"
+  },
+  {
+    "name": "feedback",
+    "id": 164,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "feedback-128",
+    "id": 165,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": null
+  },
+  {
+    "name": "feedback-129",
+    "id": 166,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": "Feedback"
+  },
+  {
+    "name": "feedback-130",
+    "id": 167,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": null
+  },
+  {
+    "name": "feedback-131",
+    "id": 168,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": null
+  },
+  {
+    "name": "feedback-132",
+    "id": 169,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": null
+  },
+  {
+    "name": "feedback-133",
+    "id": 170,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": "Success: Yes"
+  },
+  {
+    "name": "feedback-134",
+    "id": 171,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": "Critique:"
+  },
+  {
+    "name": "feedback-135",
+    "id": 172,
+    "tag": "p:sp",
+    "owner": "feedback",
+    "text": "(clear and reusable)"
+  },
+  {
+    "name": "success-filter",
+    "id": 173,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "success-filter-136",
+    "id": 174,
+    "tag": "p:sp",
+    "owner": "success-filter",
+    "text": null
+  },
+  {
+    "name": "success-filter-137",
+    "id": 175,
+    "tag": "p:sp",
+    "owner": "success-filter",
+    "text": "Success only"
+  },
+  {
+    "name": "failure-filter",
+    "id": 176,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "failure-filter-138",
+    "id": 177,
+    "tag": "p:sp",
+    "owner": "failure-filter",
+    "text": null
+  },
+  {
+    "name": "failure-filter-139",
+    "id": 178,
+    "tag": "p:sp",
+    "owner": "failure-filter",
+    "text": "Failure"
+  },
+  {
+    "name": "failure-filter-140",
+    "id": 179,
+    "tag": "p:sp",
+    "owner": "failure-filter",
+    "text": "(not saved)"
+  },
+  {
+    "name": "skill-card-1",
+    "id": 180,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "skill-card-1-141",
+    "id": 181,
+    "tag": "p:sp",
+    "owner": "skill-card-1",
+    "text": null
+  },
+  {
+    "name": "skill-card-1-142",
+    "id": 182,
+    "tag": "p:sp",
+    "owner": "skill-card-1",
+    "text": "chopTree()"
+  },
+  {
+    "name": "skill-card-1-143",
+    "id": 183,
+    "tag": "p:sp",
+    "owner": "skill-card-1",
+    "text": "Chop an entire tree and"
+  },
+  {
+    "name": "skill-card-1-144",
+    "id": 184,
+    "tag": "p:sp",
+    "owner": "skill-card-1",
+    "text": "collect the wood logs."
+  },
+  {
+    "name": "skill-card-1-145",
+    "id": 185,
+    "tag": "p:sp",
+    "owner": "skill-card-1",
+    "text": null
+  },
+  {
+    "name": "skill-card-1-146",
+    "id": 186,
+    "tag": "p:sp",
+    "owner": "skill-card-1",
+    "text": "</>"
+  },
+  {
+    "name": "skill-card-2",
+    "id": 187,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "skill-card-2-147",
+    "id": 188,
+    "tag": "p:sp",
+    "owner": "skill-card-2",
+    "text": null
+  },
+  {
+    "name": "skill-card-2-148",
+    "id": 189,
+    "tag": "p:sp",
+    "owner": "skill-card-2",
+    "text": "mineBlock(type)"
+  },
+  {
+    "name": "skill-card-2-149",
+    "id": 190,
+    "tag": "p:sp",
+    "owner": "skill-card-2",
+    "text": "Mine a block of the given"
+  },
+  {
+    "name": "skill-card-2-150",
+    "id": 191,
+    "tag": "p:sp",
+    "owner": "skill-card-2",
+    "text": "type (e.g., \"oak_log\")."
+  },
+  {
+    "name": "skill-card-2-151",
+    "id": 192,
+    "tag": "p:sp",
+    "owner": "skill-card-2",
+    "text": null
+  },
+  {
+    "name": "skill-card-2-152",
+    "id": 193,
+    "tag": "p:sp",
+    "owner": "skill-card-2",
+    "text": "</>"
+  },
+  {
+    "name": "skill-card-3",
+    "id": 194,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "skill-card-3-153",
+    "id": 195,
+    "tag": "p:sp",
+    "owner": "skill-card-3",
+    "text": null
+  },
+  {
+    "name": "skill-card-3-154",
+    "id": 196,
+    "tag": "p:sp",
+    "owner": "skill-card-3",
+    "text": "placeBlock(type, pos)"
+  },
+  {
+    "name": "skill-card-3-155",
+    "id": 197,
+    "tag": "p:sp",
+    "owner": "skill-card-3",
+    "text": "Place a block of the given"
+  },
+  {
+    "name": "skill-card-3-156",
+    "id": 198,
+    "tag": "p:sp",
+    "owner": "skill-card-3",
+    "text": "type at the target position."
+  },
+  {
+    "name": "skill-card-3-157",
+    "id": 199,
+    "tag": "p:sp",
+    "owner": "skill-card-3",
+    "text": null
+  },
+  {
+    "name": "skill-card-3-158",
+    "id": 200,
+    "tag": "p:sp",
+    "owner": "skill-card-3",
+    "text": "</>"
+  },
+  {
+    "name": "library-continuation",
+    "id": 201,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "library-continuation-159",
+    "id": 202,
+    "tag": "p:sp",
+    "owner": "library-continuation",
+    "text": null
+  },
+  {
+    "name": "library-continuation-160",
+    "id": 203,
+    "tag": "p:sp",
+    "owner": "library-continuation",
+    "text": "•••"
+  },
+  {
+    "name": "next-task-label",
+    "id": 204,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "next-task-label-161",
+    "id": 205,
+    "tag": "p:sp",
+    "owner": "next-task-label",
+    "text": null
+  },
+  {
+    "name": "next-task-label-162",
+    "id": 206,
+    "tag": "p:sp",
+    "owner": "next-task-label",
+    "text": "Next task"
+  },
+  {
+    "name": "curriculum-mark",
+    "id": 207,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "curriculum-mark-163",
+    "id": 208,
+    "tag": "p:sp",
+    "owner": "curriculum-mark",
+    "text": null
+  },
+  {
+    "name": "generation-mark",
+    "id": 209,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "generation-mark-164",
+    "id": 210,
+    "tag": "p:sp",
+    "owner": "generation-mark",
+    "text": null
+  },
+  {
+    "name": "controller-mark",
+    "id": 211,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "controller-mark-165",
+    "id": 212,
+    "tag": "p:sp",
+    "owner": "controller-mark",
+    "text": null
+  },
+  {
+    "name": "action-mark",
+    "id": 213,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "action-mark-166",
+    "id": 214,
+    "tag": "p:sp",
+    "owner": "action-mark",
+    "text": null
+  },
+  {
+    "name": "critic-mark",
+    "id": 215,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "critic-mark-167",
+    "id": 216,
+    "tag": "p:sp",
+    "owner": "critic-mark",
+    "text": null
+  },
+  {
+    "name": "history-icon",
+    "id": 217,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "history-icon-168",
+    "id": 218,
+    "tag": "p:sp",
+    "owner": "history-icon",
+    "text": null
+  },
+  {
+    "name": "retrieved-icon",
+    "id": 219,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "retrieved-icon-169",
+    "id": 220,
+    "tag": "p:sp",
+    "owner": "retrieved-icon",
+    "text": null
+  },
+  {
+    "name": "context-icon",
+    "id": 221,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "context-icon-170",
+    "id": 222,
+    "tag": "p:sp",
+    "owner": "context-icon",
+    "text": null
+  },
+  {
+    "name": "edit-icon",
+    "id": 223,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "edit-icon-171",
+    "id": 224,
+    "tag": "p:sp",
+    "owner": "edit-icon",
+    "text": null
+  },
+  {
+    "name": "cube-icon",
+    "id": 225,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "cube-icon-172",
+    "id": 226,
+    "tag": "p:sp",
+    "owner": "cube-icon",
+    "text": null
+  },
+  {
+    "name": "state-database",
+    "id": 227,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "state-database-173",
+    "id": 228,
+    "tag": "p:sp",
+    "owner": "state-database",
+    "text": null
+  },
+  {
+    "name": "state-globe",
+    "id": 229,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "state-globe-174",
+    "id": 230,
+    "tag": "p:sp",
+    "owner": "state-globe",
+    "text": null
+  },
+  {
+    "name": "library-database",
+    "id": 231,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "library-database-175",
+    "id": 232,
+    "tag": "p:sp",
+    "owner": "library-database",
+    "text": null
+  },
+  {
+    "name": "skill-document-1",
+    "id": 233,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "skill-document-1-176",
+    "id": 234,
+    "tag": "p:sp",
+    "owner": "skill-document-1",
+    "text": null
+  },
+  {
+    "name": "skill-document-2",
+    "id": 235,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "skill-document-2-177",
+    "id": 236,
+    "tag": "p:sp",
+    "owner": "skill-document-2",
+    "text": null
+  },
+  {
+    "name": "skill-document-3",
+    "id": 237,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "skill-document-3-178",
+    "id": 238,
+    "tag": "p:sp",
+    "owner": "skill-document-3",
+    "text": null
+  },
+  {
+    "name": "feedback-bubble",
+    "id": 239,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "feedback-bubble-179",
+    "id": 240,
+    "tag": "p:sp",
+    "owner": "feedback-bubble",
+    "text": null
+  },
+  {
+    "name": "world-icon",
+    "id": 241,
+    "tag": "p:grpSp",
+    "owner": null,
+    "text": null
+  },
+  {
+    "name": "world-icon-180",
+    "id": 242,
+    "tag": "p:sp",
+    "owner": "world-icon",
+    "text": null
+  },
+  {
+    "name": "world-icon-181",
+    "id": 243,
+    "tag": "p:sp",
+    "owner": "world-icon",
+    "text": null
+  },
+  {
+    "name": "world-icon-182",
+    "id": 244,
+    "tag": "p:sp",
+    "owner": "world-icon",
+    "text": null
+  },
+  {
+    "name": "world-icon-183",
+    "id": 245,
+    "tag": "p:sp",
+    "owner": "world-icon",
+    "text": null
+  },
+  {
+    "name": "world-icon-184",
+    "id": 246,
+    "tag": "p:sp",
+    "owner": "world-icon",
+    "text": null
+  },
+  {
+    "name": "world-icon-185",
+    "id": 247,
+    "tag": "p:sp",
+    "owner": "world-icon",
+    "text": null
+  },
+  {
+    "name": "world-icon-186",
+    "id": 248,
+    "tag": "p:sp",
+    "owner": "world-icon",
+    "text": null
+  }
+]

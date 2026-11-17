@@ -1,0 +1,170 @@
+{
+  "version": "1.0",
+  "source": {
+    "kind": "source-pdf",
+    "locator": "Accepted AgeMem/MemSkill source face families; Verdana-Bold normalization regression",
+    "notes": "A controlled style fixture, not a new paper figure or a claim of automatic font identification."
+  },
+  "fonts": [
+    {
+      "family": "Times New Roman",
+      "renderAliases": [
+        "Times New Roman"
+      ]
+    },
+    {
+      "family": "Comic Sans MS",
+      "renderAliases": [
+        "Comic Sans MS"
+      ]
+    },
+    {
+      "family": "Verdana",
+      "renderAliases": [
+        "Verdana"
+      ]
+    },
+    {
+      "family": "Arial",
+      "renderAliases": [
+        "Arial"
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "id": "text-0",
+      "owner": "sample-0",
+      "text": "Method Overview",
+      "font": "Times New Roman",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "angle": 0,
+      "positions": [
+        [
+          184.47412109375,
+          87.43896484375
+        ]
+      ],
+      "nativeTracking": -0.0009068080357142857
+    },
+    {
+      "id": "text-1",
+      "owner": "sample-1",
+      "text": "Thought and action",
+      "font": "Comic Sans MS",
+      "size": 30,
+      "bold": false,
+      "italic": false,
+      "angle": 0,
+      "positions": [
+        [
+          165.6962890625,
+          225.1025390625
+        ]
+      ],
+      "nativeTracking": -0.00005744485294117647
+    },
+    {
+      "id": "text-2",
+      "owner": "sample-2",
+      "text": "Skill description",
+      "font": "Verdana",
+      "size": 30,
+      "bold": true,
+      "italic": false,
+      "angle": 0,
+      "positions": [
+        [
+          164.96826171875,
+          365.87890625
+        ]
+      ],
+      "nativeTracking": -0.0006103515625
+    },
+    {
+      "id": "text-3",
+      "owner": "sample-3",
+      "text": "Input / Output",
+      "font": "Arial",
+      "size": 30,
+      "bold": false,
+      "italic": false,
+      "angle": 0,
+      "positions": [
+        [
+          207.82470703125,
+          505.44677734375
+        ]
+      ],
+      "nativeTracking": -0.0011268028846153845
+    }
+  ],
+  "blocks": [
+    {
+      "id": "sample-0",
+      "labels": [
+        "text-0"
+      ],
+      "textBox": [
+        20,
+        20,
+        560,
+        115
+      ],
+      "minPadding": 12,
+      "alignment": "center",
+      "verticalAlignment": "middle",
+      "lineSpacing": "1.10 * each line font size"
+    },
+    {
+      "id": "sample-1",
+      "labels": [
+        "text-1"
+      ],
+      "textBox": [
+        20,
+        160,
+        560,
+        115
+      ],
+      "minPadding": 12,
+      "alignment": "center",
+      "verticalAlignment": "middle",
+      "lineSpacing": "1.10 * each line font size"
+    },
+    {
+      "id": "sample-2",
+      "labels": [
+        "text-2"
+      ],
+      "textBox": [
+        20,
+        300,
+        560,
+        115
+      ],
+      "minPadding": 12,
+      "alignment": "center",
+      "verticalAlignment": "middle",
+      "lineSpacing": "1.10 * each line font size"
+    },
+    {
+      "id": "sample-3",
+      "labels": [
+        "text-3"
+      ],
+      "textBox": [
+        20,
+        440,
+        560,
+        115
+      ],
+      "minPadding": 12,
+      "alignment": "center",
+      "verticalAlignment": "middle",
+      "lineSpacing": "1.10 * each line font size"
+    }
+  ]
+}

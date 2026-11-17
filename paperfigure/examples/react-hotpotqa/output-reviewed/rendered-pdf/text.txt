@@ -1,0 +1,29 @@
+Question
+
+Prompt + history
+Within this question
+
+ReAct LM
+Reason about evidence
+Select the next action
+
+Parsed action
+Tool call / Finish
+
+Wikipedia tools
+Search / Lookup
+
+Up to 7 steps
+Thought + action
+
+Append for next step
+
+Step record
+Thought / Action / Observation
+
+Observation
+
+Finish[answer]
+
+Answer
+Finish or forced empty

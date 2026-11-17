@@ -1,0 +1,45 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/mae_native_review"
+  },
+  "verdict": "accept",
+  "checks": {
+    "referenceComparison": "pass",
+    "semanticFidelity": "pass",
+    "composition": "pass",
+    "modalityIdentity": "pass",
+    "typography": "pass",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "pass"
+  },
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766"
+  },
+  "artifacts": {
+    "editable.svg": "417fb7cafa273edd015b80386ae69986164405c6f739fa819dd80da8681dbd8a",
+    "figure.pptx": "e2d8f3bc23f6b8e692e2db2660067ede8dc2c02b808577ad13830e4397489eb2",
+    "preview.png": "21e9c780d2195df90b227de607d1ceabf3e3a1c2dae73714b68509bdd8256c12",
+    "layout-scene.json": "e7c753168dcd6a617699bc9f6cb770e36769f1f03e6ed7da07e6e70ca2368f53",
+    "reference-contract.json": "ae0300ad5c21fab7b46170a9237c0c24e3c9c73d9fca59d344019e718dc931f4",
+    "reference-layout-qa.json": "060812cc3b27800c5305540320b4ddeec75e82f58e700932f8e391e801e92644",
+    "layout-qa.json": "0451d4fd861e92bb8b9ff5bb38b1bbdc09344797148f850fdc7df22285f5fac7",
+    "native-audit.json": "5749c5abad683f55230d8d3d8a25104257d4dce50998cde4596771394ee44be7",
+    "native-render/figure.pdf": "02e197aa3ad4f22714f09c05ad4d6c6b2e08205d1254a7e1e0680ec4bc2bfa04",
+    "native-render/preview.png": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa",
+    "native-render/render-qa.json": "7c5e2af9bbccd34d5e30596acd4b572a8298b99b4c8ac59832487eebe569add0",
+    "typography-profile.json": "5cdfe81d919ace655937a6cd50f7e54d182a39b32624cb30350e583b897df22e",
+    "typography-style-qa.json": "ef4eacc7c72c6d4f31a543541e389ebe94abd21f6489c4b58f3f4e7df885ae77",
+    "typography-qa.json": "522afce6220467bce3bd7d797e318b80d7d24b51556e760a6a00af0b5f49eb74"
+  },
+  "notes": [
+    "Isolated reviewer wrote native-reference-inspection.md before opening output-v2, then opened the frozen target, SVG preview, actual LibreOffice preview, target/SVG/Office triptych, and all three 672px exports.",
+    "Reference geometry, all 15 routes, all 25 text lines, the 4/16 visible-token relationship, post-encoder x12 mask-token insertion, restored blue positions r1c1/r1c4/r3c2/r4c4, and the complementary twelve-gold selector were visually and source checked.",
+    "Authorized deviations observed: source-matched solid fills replace mild raster gradients; Arial Bold approximates the unknown raster font; landscape mountain microcontours are approximate. No unauthorized layout, label, count, or route change observed.",
+    "Actual LibreOffice render was inspected at full size and 672px. It preserves the native SVG's readable compact loss inset, routes, arrowheads, hierarchy, and no-title/no-footer canvas.",
+    "Native evidence independently checked: editable.svg has native text and no raster image/foreignObject; PPTX XML contains 198 native shapes, 20 native connector segments, 25 literal a:t nodes, and zero p:pic/a:blip media. This verifies native construction, not interactive Microsoft PowerPoint behavior."
+  ]
+}

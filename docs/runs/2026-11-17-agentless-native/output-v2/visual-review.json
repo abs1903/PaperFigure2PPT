@@ -1,0 +1,44 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_native_review"
+  },
+  "verdict": "accept",
+  "checks": {
+    "referenceComparison": "pass",
+    "semanticFidelity": "pass",
+    "composition": "pass",
+    "modalityIdentity": "pass",
+    "typography": "pass",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "pass"
+  },
+  "reference": {
+    "path": "../../2026-11-17-agentless-contribution/selected-reference.png",
+    "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb"
+  },
+  "artifacts": {
+    "editable.svg": "02b4d4dbfb3a051efae9c3a91b576a40770bd6cd92130e8a5fed25fd0dcef8ef",
+    "figure.pptx": "3e7357fdbffc0707439273f3582a4108a982d7518d6c02c66d0bbe4a8a7feea3",
+    "preview.png": "6080622fea56a23e5addff98a247dcd0bf9a16b7e869e2e815af1345c8010b9a",
+    "layout-scene.json": "465f9a7f938614b43b2143d9543d2a16334852c894dacab20721a6c1448d09ea",
+    "reference-contract.json": "a9c8d0bcd8381cb9fc2e441317c9bf555d6a138b7c10921384b17587e2291fea",
+    "reference-layout-qa.json": "4ef8f8af2b8e9108cfa1ca3ca756151582d0936c6ab6fe04249031395a5c907d",
+    "layout-qa.json": "57eb181b9ac5b3517914c55c77c3100e9719255e925541d00998f1cfa168dbd1",
+    "native-audit.json": "602d011e72126697a685faa11fc7d8255aa75d5d4be8736d9659c256c0bb4c9e",
+    "native-render/figure.pdf": "5eb060d4c92f21ddcc1a520ea22366a65a61c1cf98a6b4b3b42da05c833cb352",
+    "native-render/preview.png": "fe36e2edff4ff7ffffc0de1ef2869d9f7b9d0f7a0034a925ee170862b7fcfc6f",
+    "native-render/render-qa.json": "f485a11c58e622b22330a9fee00e164b347b29ab5ce1195950a50b746f98cba8",
+    "typography-profile.json": "4ccdf2c79b1b2d4825c4a95843fc8540a643bc3206be8e7cec8ae5a768471569",
+    "typography-style-qa.json": "28ce3cdccbf784986d9381d696ba4f88bd80bb0e04ff88834b043001aaec4ae9",
+    "typography-qa.json": "ca4b97cdc54092880e2130d48acf026ae2a9a97199dc5321fa0d80f940c9b8eb"
+  },
+  "notes": [
+    "Directly inspected the exact target, SVG preview, actual LibreOffice raster, target/SVG/Office triptych, and both paper-width rasters. The tapered four-stage localization funnel, magnified local search/replace relation, candidate-patch overlap, validation strip, directed arrows, and blue/yellow/red/green semantic accents are preserved.",
+    "The composed LibreOffice raster visibly retains white LLM glyphs on blue badges; the revised matte-isolation check is treated only as supplementary glyph-presence/placement evidence. It does not replace composed-slide inspection, which was performed.",
+    "Typography passes as an image-approximation reconstruction: observed wrapping, centering, hierarchy, and paper-width readability match the target closely. Exact source typeface identity remains unverified by raster evidence.",
+    "Editability passes for the review scope: XML audit records 68 native text boxes covering 72 labels, 68 native shapes, 23 native connector segments, 35 groups, and no pictures/media. Complex orthogonal multi-segment connectors may require manual rerouting after moving grouped modules. Interactive Microsoft PowerPoint editing and Microsoft PowerPoint rendering were not tested; Office-render evidence is LibreOffice only."
+  ]
+}

@@ -1,0 +1,63 @@
+Use case: scientific-educational. Asset: original AI-paper method figure, not a slide or software dependency chart.
+Reader takeaway: An embodied agent turns bounded code-execution feedback into reusable skills, while an automatic curriculum selects the next task from exploration state.
+Scientific scope: Pinned MineDojo/Voyager commit55e45a880755d0c8c66ca7fb5fe7962ac8974f89, automatic learn() overview. Task/skill illustrations are source-supported examples, not an observed run or fixed curriculum order.
+Composition: Original wide scientific editorial figure, about2.2:1. Three unequal regions: a quiet left curriculum/state rail; a dominant central embodied code-refinement scene with an obvious bounded loop; a compact right reusable-code library. Let mechanism, generous whitespace and a few meaningful voxel/task illustrations organize the story. Avoid equal-size card grids and heavy enclosing frames. Do not copy the previous native-layout coordinates. The central world/action-result loop should be visually memorable, not a collection of API boxes. No overall title/footer.
+Visible mechanism: The left rail shows three small illustrated task examples without fixed-order arrows, and a separate exploration-state record. The central program sheet sits above a simple geometric Minecraft-like world vignette. Code goes down into Execute; execution results reach Verify, then feedback goes through Refine prompt back into Generate code only while not done. The right library contains three concise named code entries with small meaningful log/table/pickaxe symbols. Prompt retrieval and success-conditioned storage must have distinct, legible routes; outer quiet event/outcome paths return to left state. Describe fixed runtime dependencies beside Execute instead of another long crossing wire.
+Typography and final-size test: Clear Arial/Helvetica-style sans-serif labels with one monospaced code excerpt; bold short headings, generous spacing. At7-inch publication width target9pt body and11pt key headings, with every label legible. Prefer fewer labels over tiny text. Exact labels below are the only printed text; no printed IDs or provenance.; publication width 7 inches.
+Visual blocks (semantic owners are metadata, not extra boxes or printed IDs):
+curriculum-rail / Automatic curriculum: Lightly structured rail with small flat voxel task illustrations, a task-selection output and a retained exploration-state strip; no full framed card around every state variable.. Owners: curriculum, state.
+embodied-refinement / Iterative prompting: Large central source-code sheet plus geometric Minecraft-like execution scene; a clearly directed local Generate/Execute/Verify/Refine loop, not four equal generic cards. Self-verification is visible. The scene and tool silhouettes are meaningful illustrative content, not decorative emoji or measured screenshots.. Owners: action, world, critic, feedback.
+reusable-library / Skill library: Compact native-reconstructable code catalog with log/table/pickaxe silhouettes, three exact released skill names, a prompt-retrieval path and separate eligible-success storage inlet.. Owners: skills.
+Required directed relations (an internal relation needs a visible mechanism, not an unexplained enclosure):
+curriculum-rail:curriculum -> embodied-refinement:action: arrow; Task + context from curriculum to code generation
+embodied-refinement:action -> embodied-refinement:world: internal; Generated code flows into world execution; explicit downward direction
+embodied-refinement:world -> embodied-refinement:critic: internal; World execution results go to self-verification
+embodied-refinement:critic -> reusable-library:skills: arrow; Eligible success flows from verification to skill storage; never store failures
+reusable-library:skills -> embodied-refinement:action: arrow; Top-k code from library into the generation prompt
+embodied-refinement:action -> reusable-library:skills: arrow; Task context initially; task context plus filtered chat summary during refinement queries library
+embodied-refinement:world -> curriculum-rail:state: arrow; Latest world events update exploration state
+embodied-refinement:critic -> curriculum-rail:state: arrow; Task outcome updates task history
+curriculum-rail:state -> curriculum-rail:curriculum: internal; Exploration state informs automatic curriculum
+embodied-refinement:world -> embodied-refinement:feedback: internal; Execution events enter prompt refinement
+embodied-refinement:critic -> embodied-refinement:feedback: internal; Critique enters prompt refinement
+embodied-refinement:feedback -> embodied-refinement:action: internal; Refined prompt returns to generation only if not done; task loop stops on success or retry cap
+Exact visible text whitelist; do not print metadata or add prose:
+"Automatic curriculum"
+"Task examples"
+"Mine a wood log"
+"Craft a crafting table"
+"Craft a wooden pickaxe"
+"Exploration state"
+"Latest events"
+"Task history"
+"Task + context"
+"Generate code"
+"craftWoodenPickaxe.js"
+"await craftCraftingTable(bot);"
+"Execute"
+"Minecraft"
+"All skills + primitives"
+"Verify"
+"Refine prompt"
+"Events + critique"
+"If not done"
+"Skill library"
+"mineWoodLog"
+"craftCraftingTable"
+"craftWoodenPickaxe"
+"Top-k code"
+"Query"
+"Context + chat summary"
+"Eligible success"
+"Store skill"
+"Task outcome"
+"Bounded retries"
+Text budget: 100 words maximum; do not duplicate labels to fill space.
+Semantic solid palette:
+#DDEBF8: LM computation only; curriculum, program generation and verifier. No arbitrary per-module identity colors.; owners curriculum, action, critic
+#DDEFE5: Retained exploration state and reusable skill memory; owners state, skills
+#F3F5F7: World execution and parameter-free prompt assembly/data interfaces; owners world, feedback
+White background; flat solid fills; no gradients, shadows, glow, glossy effects, title, subtitle, footer, footnotes, decorative icons or unrequested stage panels. Neutral black/gray text, borders and arrows are allowed. Colors do not replace labels or shape cues.
+Modules are not automatically one rectangle per semantic node. Follow the specified representation. Use consistent border anchors, precise arrowheads and unobstructed text. Reused schematic states are illustrative, not measured executions.
+Forbidden scientific additions: No optimizer/gradient/weight-training arrows; No task-outcome-to-library edge that stores failures; No claim that retrieved top-k snippets are the whole executor program bundle; No extra model for prompt assembly or retrieval-query construction; No unconditional infinite refinement; No claim that illustrated task examples form a fixed actual curriculum or measured successful rollout; No photo/screenshots, logos, decorative emoji, gradients, title, footer or tiny explanatory footnotes; Do not print semantic node IDs, metadata, source citations or this brief inside the figure.
+Do not invent a mechanism to make the layout easier. If the requested topology cannot be legibly drawn, retain it and return a candidate for review; generated pixels never authorize a scientific change.

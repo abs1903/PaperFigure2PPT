@@ -1,0 +1,41 @@
+{
+  "paper": "https://proceedings.neurips.cc/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html",
+  "sourceCommit": "218cf0ef1df84b05ce379dd4a8e47f17766733a0",
+  "styleReference": "../blip2-opt-code/output-solid/figure.png",
+  "preserve": [
+    "White canvas; native serif labels; semantic color; controlled line weight; no titles/footer/fine print."
+  ],
+  "deviations": [
+    "Solid fills only; no gradients.",
+    "Topology follows this agent implementation, not the VLM reference geometry."
+  ],
+  "palette": {
+    "lm": {
+      "fill": "#E8F0F7",
+      "stroke": "#59778E",
+      "meaning": "Language-model inference / generation",
+      "nodes": [
+        "actor",
+        "reflect"
+      ]
+    },
+    "state": {
+      "fill": "#E8F3EF",
+      "stroke": "#507E71",
+      "meaning": "Retained context or persistent memory; lifetime stated locally",
+      "nodes": [
+        "memory"
+      ]
+    },
+    "external": {
+      "fill": "#FAFBFC",
+      "stroke": "#839099",
+      "meaning": "External execution, parameter-free checks and input/output",
+      "nodes": [
+        "question",
+        "tools",
+        "check"
+      ]
+    }
+  }
+}

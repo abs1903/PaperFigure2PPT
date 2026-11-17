@@ -1,0 +1,86 @@
+[
+  {
+    "kind": "center-text",
+    "module": "question",
+    "dx": -4.333984375,
+    "dy": 8.1875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "tree",
+    "dx": 45.88232421875,
+    "dy": -3.5468292236328125,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "select",
+    "dx": 10.433837890625,
+    "dy": -1.8142166137695312,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "policy",
+    "dx": 0.769775390625,
+    "dy": 1.4929122924804688,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "tools",
+    "dx": 2.114013671875,
+    "dy": 0.35979461669921875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "failed",
+    "dx": -9.238037109375,
+    "dy": 7.30126953125,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "reflect",
+    "dx": -4.955810546875,
+    "dy": 8.441650390625,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "context",
+    "dx": -5.77490234375,
+    "dy": -4.3957672119140625,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "value",
+    "dx": -4.45703125,
+    "dy": 9.857421875,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "rollout",
+    "dx": 165.034423828125,
+    "dy": -5.54681396484375,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "backup",
+    "dx": -5.80712890625,
+    "dy": -2.81109619140625,
+    "pass": 0
+  },
+  {
+    "kind": "center-text",
+    "module": "result",
+    "dx": 23.4482421875,
+    "dy": -2.51318359375,
+    "pass": 0
+  }
+]

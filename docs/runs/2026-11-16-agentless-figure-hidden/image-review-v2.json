@@ -1,0 +1,74 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_figure_hidden_review"
+  },
+  "reviewKind": "isolated-image-stage-v2-comparison",
+  "verdict": "revise",
+  "contextIsolation": "Direct V1/V2 and paper-width-diagnostic pixel inspection; author figures/captions/README/web and external reference images remained embargoed.",
+  "authorFigureComparison": "not performed; prohibited",
+  "lineage": {
+    "parentImage": {
+      "path": "candidate-v1.png",
+      "sha256": "082cfbaf36b7736f0de414295ab95b6388ea00ddce4128d3946a44e87e9aeed8"
+    },
+    "outputImage": {
+      "path": "candidate-v2.png",
+      "sha256": "f2e23eb3c6ad5d5a351eab73a1a2da3e85d5b11884ac4e1624a7fc28be20e280",
+      "sizePx": [
+        1816,
+        866
+      ]
+    },
+    "paperWidthDiagnostic": {
+      "path": "candidate-v2-paper-width-diagnostic.png",
+      "sha256": "c93a89ef78704ec004b4e9d499a01da3db0a3248ab5a06721570ff6e3358118a",
+      "sizePx": [
+        672,
+        320
+      ]
+    },
+    "deltaPrompt": {
+      "path": "prompt-edit-v2.txt",
+      "sha256": "0ab61004495af432f907670a749c905e707266cf1310ddc7a19512ea06b84792"
+    },
+    "generationRecord": {
+      "path": "generation-record-v2.json",
+      "sha256": "53ae10e9c192490a3ba6b43a693327b3c6511179be75685ed021ffa1682f68f8"
+    }
+  },
+  "checks": {
+    "authorFigureHidden": "pass",
+    "semanticFidelity": "pass",
+    "normalizedKeyVsOriginalOutput": "pass",
+    "regressionAndConditionalFallback": "pass",
+    "twoPaperPhases": "pass",
+    "composition": "pass",
+    "typographyAt7In": "fail",
+    "semanticColors": "pass",
+    "noTitleOrFooter": "pass",
+    "nativeFeasibility": "unverified"
+  },
+  "revision": {
+    "defectClass": "publication-width typography/detail density",
+    "observedDefect": "Selection-region labels and miniature details are illegible or below target at the 672-px 7-inch diagnostic.",
+    "change": "Enlarge semantic labels by removing/reducing only redundant decorative micro-strokes/stack copies, while retaining a single legible paired key-plus-original record.",
+    "invariants": [
+      "V2 key-to-raw tether",
+      "raw-slip outgoing arrow to Original patch",
+      "two Fewest-failures inputs",
+      "conditional dashed bypass",
+      "exact labels",
+      "two phase headings",
+      "colors",
+      "left/middle pipeline",
+      "no title/footer",
+      "no new claims/modules"
+    ]
+  },
+  "notes": [
+    "V2 corrects the sole semantic defect in V1.",
+    "No native artifact was inspected or accepted.",
+    "A new paper-width diagnostic is required on re-review."
+  ]
+}

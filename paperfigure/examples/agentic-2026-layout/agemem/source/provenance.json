@@ -1,0 +1,31 @@
+{
+  "paperURL": "https://arxiv.org/abs/2601.01885v1",
+  "htmlURL": "https://arxiv.org/html/2601.01885v1",
+  "imageURL": "https://arxiv.org/html/2601.01885v1/framework_new_addmode.png",
+  "version": "2601.01885v1",
+  "referenceSHA256": "8a2ab882b9a3a73615d237e1cb0aa1ffffa181cced23ec9e9dc990bd552e0c68",
+  "licenseFound": [
+    {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": "paper.html arXiv license link; original authors retain copyright"
+    }
+  ],
+  "purpose": "Attributed local editable reconstruction and constraint evaluation; not new paper content",
+  "htmlFigureSHA256": "8aec630ec0ef5630a79b74d8bd6f5ec29a4dc6a30965f7a77ec1fea3a5da79b5",
+  "referenceDerivation": {
+    "type": "Lossless original PDF page raster crop",
+    "pdfFile": "paper.pdf",
+    "pdfSHA256": "49b008ec9220b53166e3b21eaa521a940512fb213fffc8cb844702732ee33f09",
+    "page": 2,
+    "cropPoints": [
+      375.2,
+      70.8,
+      524.5,
+      267.5
+    ],
+    "scale": 4,
+    "noRedesign": true
+  },
+  "selectedFigure": "Figure 1(c); other comparison panels and LaTeX caption intentionally outside selected input"
+}

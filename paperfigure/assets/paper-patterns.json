@@ -1,0 +1,56 @@
+{
+  "version": "0.1",
+  "records": [
+    {
+      "paper": "Visual Instruction Tuning",
+      "venue": "NeurIPS 2023",
+      "url": "https://proceedings.nips.cc/paper_files/paper/2023/file/6dcf277ea32ce3288914faf369fe6de0-Paper-Conference.pdf",
+      "evidence": "Sections 4.1 and 4.2 independently inspected; Figure 1 used only to verify the described interface.",
+      "pattern": "A lightweight learned linear bridge maps visual features into the language model conditioning space. Keep the two input modalities distinct; stage-dependent trainable states belong in a separate training view when requested.",
+      "sourceFigureRights": "Not assessed; link-only reference. No paper figure asset redistributed.",
+      "localExample": "examples/llava-paper/",
+      "designOrigin": "Original project-generated visual study and native reconstruction, not copied paper artwork."
+    },
+    {
+      "paper": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+      "venue": "ICML 2023",
+      "url": "https://proceedings.mlr.press/v202/li23q.html",
+      "evidence": "Pinned official LAVIS OPT generation route independently audited before figure comparison; Figure 3 top and section 3.3 inspected after initial native freeze.",
+      "pattern": "A learned query bottleneck extracts image-conditioned representations; a linear bridge maps them into a frozen causal LM embedding space. Explicit prefix concatenation can clarify optional prompt input. Keep configured inference and generic training frameworks distinct.",
+      "sourceFigureRights": "Not established; link-only. Author crop exists only in ignored local analysis artifacts, not skill assets.",
+      "localExample": "examples/blip2-opt-code/",
+      "designOrigin": "Code-first native reconstruction, then independent routing review and user-requested semantic color refinement. Not a fully blind held-out evaluation."
+    },
+    {
+      "paper": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "venue": "ICLR 2023",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "evidence": "Pinned official source independently audited; original figure inspected after initial native figure freeze. See source manifest and case METHOD.md.",
+      "pattern": "Interleave reasoning and tool actions; returned observations extend task-local text context. Show bounded interaction and distinguish submitted answer from verified success.",
+      "sourceFigureRights": "Not established; link-only. Local comparison crops remain in ignored dist, not skill assets.",
+      "localExample": "examples/react-hotpotqa/",
+      "designOrigin": "Original source-supported solid-fill native layout, not traced author artwork. Independent reviews are scoped, not venue-quality certification."
+    },
+    {
+      "paper": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "venue": "NeurIPS 2023",
+      "url": "https://proceedings.neurips.cc/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html",
+      "evidence": "Pinned official source independently audited; original figure inspected after initial native figure freeze. See source manifest and case METHOD.md.",
+      "pattern": "Separate within-attempt tool interaction from across-attempt textual reflection memory. Evaluator type and memory lifetime must match the selected implementation.",
+      "sourceFigureRights": "Not established; link-only. Local comparison crops remain in ignored dist, not skill assets.",
+      "localExample": "examples/reflexion-hotpotqa/",
+      "designOrigin": "Original source-supported solid-fill native layout, not traced author artwork. Independent reviews are scoped, not venue-quality certification."
+    },
+    {
+      "paper": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+      "venue": "TMLR 2024; author arXiv used for local comparison",
+      "url": "https://arxiv.org/abs/2305.16291",
+      "evidence": "Pinned official source independently audited; original figure inspected after initial native figure freeze. See source manifest and case METHOD.md.",
+      "pattern": "Automatic curriculum, code-as-action refinement and success-conditioned persistent skill registration. Differentiate retrieved prompt snippets from the executable program bundle.",
+      "sourceFigureRights": "Not established; link-only. Local comparison crops remain in ignored dist, not skill assets.",
+      "localExample": "examples/voyager-agent/",
+      "designOrigin": "Original source-supported solid-fill native layout, not traced author artwork. Independent reviews are scoped, not venue-quality certification."
+    }
+  ],
+  "policy": "Add only source-reviewed metadata and original pattern descriptions. Unknown figure rights means link-only; do not redistribute paper figures by default."
+}

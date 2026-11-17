@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "review_type": "source-informed B2 raster review",
+  "decision": "accept_as_frozen_native_reconstruction_target",
+  "native_or_office_accepted": false,
+  "scientific_semantics": "pass",
+  "paper_width_readability": "pass_with_native_minimum_text_size_constraint",
+  "structure": {
+    "requested_composition": "horizontal-bottleneck",
+    "realized": true,
+    "summary": "continuous sparse four-token encoder lane expands only after restoration into full 16-slot lightweight-decoder sequence"
+  },
+  "grid_audit": {
+    "input_image_patches": {"shape": "4x4", "count": 16},
+    "visible_tokens": {"count": 4},
+    "encoded_visible_tokens": {"count": 4},
+    "learned_mask_token_copies": {"count": 12, "introduced_after_encoder": true},
+    "restored_decoder_grid": {
+      "shape": "4x4",
+      "blue_visible_positions": ["r1c1", "r1c4", "r3c2", "r4c4"],
+      "gray_mask_positions": 12
+    },
+    "prediction_grid": {"shape": "4x4", "all_positions": true},
+    "target_grid": {"shape": "4x4", "supervision_only": true},
+    "loss_selector": {
+      "shape": "4x4",
+      "white_unscored_positions": ["r1c1", "r1c4", "r3c2", "r4c4"],
+      "gold_scored_positions": 12,
+      "matches_restored_visible_complement": true
+    }
+  },
+  "label_audit": {
+    "masked_patch_mse_exact": true,
+    "standalone_mse_duplicate": false,
+    "whitelist_regression": false
+  },
+  "style": {
+    "original_schematic_artwork": true,
+    "vector_friendly_geometry": true,
+    "flat_fill_strictly_met": false,
+    "nonblocking_note": "Mild tonal shading should be converted to solid palette fills during native reconstruction."
+  },
+  "required_for_native_reconstruction": [
+    "Preserve all audited grid counts and positions.",
+    "Do not reduce lower-inset text below its B2 paper-width size.",
+    "Use solid palette fills instead of mild raster tonal shading.",
+    "Verify native/Office editability and export parity separately."
+  ],
+  "unverified": [
+    "native/Office editability and export parity",
+    "final native text measurements at seven-inch width",
+    "training, speed, reconstruction-quality, benchmark, and downstream-use claims"
+  ],
+  "hashes": {
+    "candidate-b2.png": "0ea262af8cb3968d0c83ba05733cb27cb8469119227b83efa8a6b5b04d1e8766",
+    "candidate-b2-paper-width.png": "a7ebe892df3a8e3bbd02be19fb1b01953866c830b149686267e0a090a48ad0a0",
+    "prompt-edit-b2.txt": "0a73d1f9a91b9771f0543aa2cafbc113d09d6cfc2bcd2e7ae181a58c0dd8493b",
+    "generation-record-b2.json": "0ec950f5a204f951dde9e9c6c0498fe17ab750d1b5a0ad8195eff023ef1a73bf",
+    "image-review-initial.json": "1fc9f06f2ef09598bd46c8e148f60bee241a2c5a68f47854e9c8d30198768d8e",
+    "spec.json": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+    "source-plan-review.json": "66ccc10c5d535145e7d5c848950cdad53886bb669c33f113a67f9c956dd79ffb"
+  }
+}

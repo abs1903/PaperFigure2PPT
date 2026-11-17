@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "sourceReferenceSHA256": "5513b5de64da5929ac09592c51ae95ab078397f51e9e1211f6ce4beab46a3f31",
+  "semanticHash": "9d7208bcc87134cd4d56a22f95642fa7314fdb974cdc26d68cdd5e6bd9c86721",
+  "topologyHash": "c01efaebbfd14f8b2bb6ad488f46bfa8d352ab385db464825c3b82851c9cafe5",
+  "labelsUnchanged": true,
+  "unchangedNonTargetPrimitives": 473,
+  "editedTextIDs": [
+    "math-3-base",
+    "math-3-sub",
+    "math-4-base",
+    "math-4-sub",
+    "math-5-base",
+    "math-5-sub",
+    "math-8-base",
+    "math-8-sub",
+    "text-11",
+    "text-21",
+    "text-22"
+  ],
+  "mathChecks": [
+    {
+      "ids": [
+        "math-3-base",
+        "math-3-sub"
+      ],
+      "baseSize": 40,
+      "subSize": 23.2,
+      "baseBaseline": 178,
+      "subBaseline": 186,
+      "dx": 0.000018596649169921875
+    },
+    {
+      "ids": [
+        "math-4-base",
+        "math-4-sub"
+      ],
+      "baseSize": 40,
+      "subSize": 23.2,
+      "baseBaseline": 178,
+      "subBaseline": 186,
+      "dx": 0.00001239776611328125
+    },
+    {
+      "ids": [
+        "math-5-base",
+        "math-5-sub"
+      ],
+      "baseSize": 40,
+      "subSize": 23.2,
+      "baseBaseline": 178,
+      "subBaseline": 186,
+      "dx": 0.00001239776611328125
+    }
+  ],
+  "tokenChecks": [
+    {
+      "icon": "icon-0",
+      "sequence": [
+        "circle",
+        "square",
+        "circle",
+        null,
+        "circle",
+        "square",
+        "diamond",
+        "square",
+        "diamond"
+      ],
+      "dividers": 8
+    },
+    {
+      "icon": "icon-12",
+      "sequence": [
+        "circle",
+        "square",
+        "circle",
+        null,
+        "circle",
+        "square",
+        "diamond",
+        "square",
+        "diamond"
+      ],
+      "dividers": 8
+    },
+    {
+      "icon": "icon-15",
+      "sequence": [
+        "circle",
+        null,
+        "square",
+        "circle",
+        "square",
+        null,
+        "square",
+        "diamond",
+        null
+      ],
+      "dividers": 8
+    },
+    {
+      "icon": "icon-18",
+      "sequence": [
+        "circle",
+        "square",
+        null,
+        "diamond",
+        null,
+        "circle",
+        null,
+        "diamond",
+        "diamond"
+      ],
+      "dividers": 8
+    },
+    {
+      "icon": "icon-21",
+      "sequence": [
+        "circle",
+        null,
+        "circle",
+        "diamond",
+        "square",
+        "circle",
+        "square",
+        null,
+        "diamond"
+      ],
+      "dividers": 8
+    },
+    {
+      "icon": "icon-24",
+      "sequence": [
+        "circle",
+        "square",
+        "circle",
+        null,
+        "circle",
+        "square",
+        "diamond",
+        "square",
+        "diamond"
+      ],
+      "dividers": 8
+    }
+  ],
+  "icons": 23,
+  "iconParts": 208,
+  "native": {
+    "nativeTextBoxes": 233,
+    "nativeSVGLabelsCovered": 238,
+    "centeredTextBlocks": 12,
+    "nativeSemanticConnectorSegments": 48,
+    "nativeLineArt": 59,
+    "nativeShapes": 276,
+    "auxiliaryPorts": 76,
+    "groups": 77,
+    "pictures": 0,
+    "media": 0,
+    "contentObjects": 616
+  },
+  "editability": {
+    "nativeContent": 616,
+    "totalContent": 616,
+    "ratio": 1,
+    "excluded": "Transparent auxiliary ports and semantic groups; native representation is not visual quality."
+  },
+  "reproducible": true,
+  "sha256": {
+    "editable.svg": "cb69c7337351995a154159f2a44b82e4c91ae5b7100c424cc6093f14e8ae1536",
+    "preview.png": "9a2d94c97c7cd88cd8ea7c42134656aefb36a2bd7a711527e61abf35fd2313bd",
+    "figure.pptx": "0fc3fb39ec3580d3d8107942cac67b38aeb11c6eb0b93ad0396f9e66e339ac4c",
+    "layout-scene.json": "ecba8696b523cae8d8039a39ec8175435ff418165ee5782d1fc5d0265e5e3417",
+    "refinement-changes.json": "3bbf406492d9b677a6a5adc41c2147df8db816c588a00eccf0a7ee484769ed0f",
+    "icon-regions.json": "3b635727de0ebbfe7f8821a8cc07c478afe10c7730cd117b177424bbf74ba801",
+    "layout-qa.json": "bf5587919f6c27a76a2ac24291a73c6d6371fbd4f48f181b67310d5819e79d79",
+    "native-audit.json": "6ddf4ae1edabedf54fa15bffa0598e3bdf5e5199d4777753805569aef408e168",
+    "native-render/preview.png": "3b79bbfd6e76c201a0b0d1587788c9c2281ef665d3141c49a182d30c4a3beb73",
+    "native-render/render-qa.json": "f780b6969cba53614a5102a3d1a683769cb7ee7ff7dc1f3b23a41adaefc9d1b3",
+    "icon-detail/contact-sheet.png": "d49f631e5a549e1f08a26a6f6b5052e265c85f2d20b96f28babc66b62493f7bb",
+    "icon-detail/icon-detail-qa.json": "ce720be61bdf00f08c608e94cc4a1f847ab3176b9001833d5d9fa35edbbe2a87",
+    "comparison-original-svg.png": "07eae42b85c44b98219e5808fc6e8e287bb248851ab524db471dd3efff4796ef",
+    "comparison-svg-pptx.png": "0ff060eb16cccc059053b043852e461ee383a2816bc366641e445715a9034994",
+    "token-strip-comparison.png": "2902bdcc33d33a05bf4740cfc90aff98aed10cd402274ed6b654ee03d76f2077"
+  },
+  "visualAcceptance": "Separate isolated review required; not inferred from mechanical checks."
+}

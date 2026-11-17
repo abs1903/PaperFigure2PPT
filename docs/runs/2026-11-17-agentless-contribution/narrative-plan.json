@@ -1,0 +1,136 @@
+{
+  "version": "2.0",
+  "scope": {
+    "paper": "arXiv:2407.01489v1",
+    "role": "contribution-oriented method illustration",
+    "publicationWidthIn": 7,
+    "figureHidden": false,
+    "creatorPreviouslySawAuthorFigure": true
+  },
+  "takeaway": "A fixed, interpretable localization-and-repair design confines LLM work to focused selections and local edits, combining established techniques rather than claiming each as novel.",
+  "contributionHierarchy": [
+    {
+      "claim": "Fixed control with bounded LLM tasks",
+      "kind": "central design/conceptual contribution, not a new computational primitive",
+      "source": "Abstract/Introduction; Section2 final paragraph",
+      "evidence": "without letting the LLM decide future actions or operate with complex tools",
+      "visualCue": "A framing bracket explicitly says Fixed localization + repair with No autonomous planning. It spans the two focal mechanisms; LLM markers belong only to bounded selection/edit tasks, without a controller or agent-planning loop.",
+      "prominence": "Framing annotation, not a new process box"
+    },
+    {
+      "claim": "Hierarchical localization using concise source representations",
+      "kind": "supporting design combination",
+      "source": "Section2.1; paper introduction",
+      "evidence": "hierarchical process to first localize the fault to specific files, then to relevant classes or functions, and finally to fine-grained edit locations",
+      "visualCue": "One dominant source-reduction composition: repository tree, selected-file skeletons, selected source, highlighted edit interval with retained context; progressively focused geometry, linked identifiers and LLM selection points.",
+      "prominence": "Primary focal mechanism"
+    },
+    {
+      "claim": "Localized Search/Replace generation",
+      "kind": "supporting established technique in the combination; not uniquely invented here",
+      "source": "Section2.2 Patch format",
+      "evidence": "avoids generating the complete code and instead focuses on producing small edits",
+      "visualCue": "A highlighted interval in a source window is expanded into SEARCH / REPLACE; gray surrounding code stays unchanged, then multiple local candidate edits are sampled.",
+      "prominence": "Second focal mechanism"
+    },
+    {
+      "claim": "Syntax/regression filtering and normalized frequency ranking",
+      "kind": "established support operations",
+      "source": "Section2.2 filtering and patch selection",
+      "visualCue": "Compact supporting strip leading from candidates to selected patch; no equal-sized main cards.",
+      "prominence": "Small support region"
+    },
+    {
+      "claim": "Benchmark audit and SWE-bench Lite-S",
+      "kind": "separate dataset/evaluation contribution",
+      "source": "Abstract; Introduction; later paper sections",
+      "visualCue": "Outside this method figure; retained here rather than inserted as an algorithm module.",
+      "prominence": "record-only"
+    }
+  ],
+  "story": {
+    "problem": "Repository-level repair requires finding a small relevant region in a large codebase; the paper questions autonomous action planning.",
+    "mechanism": "Constrain where the model reasons (progressive source selection) and what it emits (small local edits), under fixed control.",
+    "output": "Selected patch with no guaranteed correctness claim"
+  },
+  "informationSelection": [
+    {
+      "item": "Full repository/tree, selected files and skeletons, selected elements and their original code, edit locations and padded context",
+      "placement": "main",
+      "owner": "localize",
+      "source": "Section2.1\u20132.2",
+      "reason": "These transformations explain the central bounded-context design",
+      "representation": "Contained source-reduction illustration, not equal step cards"
+    },
+    {
+      "item": "Issue conditioning and four LLM uses",
+      "placement": "internal",
+      "owner": "issue/localize/repair",
+      "source": "Accepted paper-v1 spec edge evidence",
+      "reason": "Retain role distinctions without making role labels the main claim",
+      "representation": "Small issue input, bounded LLM markers; same explicit issue-edge boundary as accepted prior spec"
+    },
+    {
+      "item": "Tree building, skeleton construction, original-source retrieval and context padding",
+      "placement": "internal",
+      "owner": "localize",
+      "source": "Accepted spec internal edges",
+      "reason": "Do not imply that LLMs synthesize original source or build all representations",
+      "representation": "Small transformation captions and linked source sheets; no extra large processing boxes"
+    },
+    {
+      "item": "Search/Replace, multiple candidate sampling and unchanged surroundings",
+      "placement": "main",
+      "owner": "repair",
+      "source": "Section2.2",
+      "reason": "Make locality tangible rather than drawing generic patch cards",
+      "representation": "Context-to-local-edit magnification; candidate fan"
+    },
+    {
+      "item": "Filtering, normalization/frequency and output",
+      "placement": "internal",
+      "owner": "select",
+      "source": "Section2.2",
+      "reason": "Necessary output path but not the visual contribution focus",
+      "representation": "Compact deterministic support strip"
+    },
+    {
+      "item": "AST operations, later implementation fallbacks, output serialization, benchmark numbers and dataset audit",
+      "placement": "record-only",
+      "owner": "source records",
+      "source": "Paper/earlier configured-code records",
+      "reason": "Outside this illustration scope; no performance badges or invented novelty"
+    }
+  ],
+  "visualEvidence": {
+    "sourceFragments": [
+      "fields.py",
+      "UUIDField",
+      "to_python"
+    ],
+    "source": "Paper Figure2 textual skeleton example; signatures shortened to identifiers for readability",
+    "status": "Representation example, not an executed bug or a real repair result. Gray strokes denote unspecified source; no invented concrete faulty/repaired statements.",
+    "cue": "Selected identifiers persist across source representations; selected source interval is gold, only generated diffs use red/green."
+  },
+  "alternatives": [
+    {
+      "name": "Numbered flow across equal cards",
+      "selected": false,
+      "reason": "Explains chronology while flattening design distinctions; user explicitly rejected this organization."
+    },
+    {
+      "name": "Two focal mechanism illustrations plus compact selection support",
+      "selected": true,
+      "reason": "Uses containment and magnification to explain bounded context and local editing; fixed-control bracket frames their combination."
+    }
+  ],
+  "composition": {
+    "maxVisibleWords": 85,
+    "layout": "Wide ~1.7:1 paper figure; source-reduction illustration at left, context-to-local-edit illustration at right, compact deterministic selection below right. No step numbers or equal stage-header cards.",
+    "prominence": "Central mechanisms carry most of the area; support operations remain small but legible."
+  },
+  "review": {
+    "path": "source-contribution-review-v2.md",
+    "requirement": "Trace contribution claims to source and distinguish known primitives; actual pixels must make design choices visible, not merely show a process."
+  }
+}

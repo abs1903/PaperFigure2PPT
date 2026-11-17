@@ -1,0 +1,1789 @@
+{
+  "width": 2560,
+  "height": 1100,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "curriculum",
+      "label": "Automatic\ncurriculum",
+      "detail": "",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "task, context = self.curriculum_agent.propose_next_task("
+        },
+        {
+          "source": "craftWoodenPickaxe-description",
+          "quote": "The function crafts a wooden pickaxe"
+        }
+      ],
+      "x": 60,
+      "y": 260,
+      "w": 480,
+      "h": 300,
+      "fontSize": 48,
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "radius": 17,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:curriculum:label:0",
+          "text": "Automatic",
+          "x": 82,
+          "y": 280,
+          "w": 436,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        },
+        {
+          "id": "text:curriculum:label:1",
+          "text": "curriculum",
+          "x": 82,
+          "y": 336.64,
+          "w": 436,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "label": "Program generation",
+      "detail": "",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "ai_message = self.action_agent.llm(self.messages)"
+        },
+        {
+          "source": "craftWoodenPickaxe-code",
+          "quote": "if (craftingTableCount === 0) {\n    await craftCraftingTable(bot);\n  }"
+        }
+      ],
+      "x": 850,
+      "y": 180,
+      "w": 880,
+      "h": 300,
+      "fontSize": 48,
+      "fill": "#FFFFFF",
+      "stroke": "#587A96",
+      "radius": 17,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:action:label:0",
+          "text": "Program generation",
+          "x": 872,
+          "y": 194,
+          "w": 550,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "label": "Execute program",
+      "detail": "",
+      "role": "environment",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "events = self.env.step("
+        }
+      ],
+      "x": 820,
+      "y": 710,
+      "w": 500,
+      "h": 275,
+      "fontSize": 48,
+      "fill": "#FFFFFF",
+      "stroke": "#839099",
+      "radius": 17,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:world:label:0",
+          "text": "Execute program",
+          "x": 842,
+          "y": 727,
+          "w": 456,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "critic",
+      "label": "Verify task",
+      "detail": "",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "success, critique = self.critic_agent.check_task_success("
+        }
+      ],
+      "x": 1410,
+      "y": 760,
+      "w": 360,
+      "h": 220,
+      "fontSize": 48,
+      "fill": "#FFFFFF",
+      "stroke": "#587A96",
+      "radius": 17,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:critic:label:0",
+          "text": "Verify task",
+          "x": 1432,
+          "y": 777,
+          "w": 316,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Skill library",
+      "detail": "",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "skills",
+          "quote": "self.skills[program_name] = {"
+        },
+        {
+          "source": "mineWoodLog-code",
+          "quote": "async function mineWoodLog(bot)"
+        },
+        {
+          "source": "craftCraftingTable-code",
+          "quote": "async function craftCraftingTable(bot)"
+        },
+        {
+          "source": "craftWoodenPickaxe-code",
+          "quote": "async function craftWoodenPickaxe(bot)"
+        }
+      ],
+      "x": 1960,
+      "y": 220,
+      "w": 550,
+      "h": 810,
+      "fontSize": 48,
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "radius": 17,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:skills:label:0",
+          "text": "Skill library",
+          "x": 1982,
+          "y": 236,
+          "w": 506,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "label": "Exploration state",
+      "detail": "",
+      "role": "memory",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "self.last_events = copy.deepcopy(events)"
+        }
+      ],
+      "x": 60,
+      "y": 700,
+      "w": 480,
+      "h": 240,
+      "fontSize": 48,
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "radius": 17,
+      "strokeWidth": 2.2,
+      "texts": [
+        {
+          "id": "text:state:label:0",
+          "text": "Exploration state",
+          "x": 82,
+          "y": 714,
+          "w": 436,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    },
+    {
+      "id": "feedback",
+      "label": "Refine prompt",
+      "detail": "",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "human_message = self.action_agent.render_human_message(\n                events=events,"
+        },
+        {
+          "source": "orchestrator",
+          "quote": "critique=critique,"
+        }
+      ],
+      "x": 1020,
+      "y": 540,
+      "w": 750,
+      "h": 140,
+      "fontSize": 48,
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "radius": 10,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:feedback:label:0",
+          "text": "Refine prompt",
+          "x": 1040,
+          "y": 552,
+          "w": 710,
+          "h": 56.64,
+          "fontSize": 48,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Times New Roman"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "task",
+      "from": "curriculum",
+      "to": "action",
+      "label": {
+        "id": "edge-label:task",
+        "text": "Task + context",
+        "x": 546,
+        "y": 320,
+        "w": 296.764,
+        "h": 57.2,
+        "fontSize": 44,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "task=task,\n                    context=context,"
+        }
+      ],
+      "points": [
+        [
+          540,
+          500
+        ],
+        [
+          650,
+          500
+        ],
+        [
+          650,
+          380
+        ],
+        [
+          850,
+          380
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.8,
+      "toFraction": 0.6666666666666666,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": false
+    },
+    {
+      "id": "execute",
+      "from": "action",
+      "to": "world",
+      "label": null,
+      "kind": "control",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "code = parsed_result[\"program_code\"] + \"\\n\" + parsed_result[\"exec_code\"]"
+        }
+      ],
+      "points": [
+        [
+          938,
+          480
+        ],
+        [
+          938,
+          710
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "top",
+      "fromFraction": 0.1,
+      "toFraction": 0.236,
+      "stroke": "#14344B",
+      "strokeWidth": 4.2,
+      "dashed": true
+    },
+    {
+      "id": "verify",
+      "from": "world",
+      "to": "critic",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "success, critique = self.critic_agent.check_task_success(\n                events=events,"
+        }
+      ],
+      "points": [
+        [
+          1320,
+          835
+        ],
+        [
+          1410,
+          835
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.45454545454545453,
+      "toFraction": 0.3409090909090909,
+      "stroke": "#14344B",
+      "strokeWidth": 4.2,
+      "dashed": false
+    },
+    {
+      "id": "success",
+      "from": "critic",
+      "to": "skills",
+      "label": null,
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "if info[\"success\"]:\n                self.skill_manager.add_new_skill(info)"
+        }
+      ],
+      "points": [
+        [
+          1770,
+          945
+        ],
+        [
+          1960,
+          945
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.8409090909090909,
+      "toFraction": 0.8950617283950617,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": true
+    },
+    {
+      "id": "retrieved-code",
+      "from": "skills",
+      "to": "action",
+      "label": {
+        "id": "edge-label:retrieved-code",
+        "text": "Top-k",
+        "x": 1738,
+        "y": 318,
+        "w": 123.184,
+        "h": 57.2,
+        "fontSize": 44,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "system_message = self.action_agent.render_system_message(skills=skills)"
+        }
+      ],
+      "points": [
+        [
+          1960,
+          380
+        ],
+        [
+          1730,
+          380
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.19753086419753085,
+      "toFraction": 0.6666666666666666,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": false
+    },
+    {
+      "id": "query",
+      "from": "action",
+      "to": "skills",
+      "label": null,
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "+ self.action_agent.summarize_chatlog(events)"
+        }
+      ],
+      "points": [
+        [
+          1730,
+          440
+        ],
+        [
+          1960,
+          440
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.8666666666666667,
+      "toFraction": 0.2716049382716049,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": true
+    },
+    {
+      "id": "latest",
+      "from": "world",
+      "to": "state",
+      "label": null,
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "self.last_events = copy.deepcopy(events)"
+        }
+      ],
+      "points": [
+        [
+          820,
+          835
+        ],
+        [
+          540,
+          835
+        ]
+      ],
+      "fromPort": "left",
+      "toPort": "right",
+      "fromFraction": 0.45454545454545453,
+      "toFraction": 0.5625,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": true
+    },
+    {
+      "id": "outcome",
+      "from": "critic",
+      "to": "state",
+      "label": null,
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "self.curriculum_agent.update_exploration_progress(info)"
+        }
+      ],
+      "points": [
+        [
+          1590,
+          980
+        ],
+        [
+          1590,
+          1040
+        ],
+        [
+          300,
+          1040
+        ],
+        [
+          300,
+          940
+        ]
+      ],
+      "fromPort": "bottom",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": true
+    },
+    {
+      "id": "next-task",
+      "from": "state",
+      "to": "curriculum",
+      "label": null,
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "events=self.last_events,"
+        }
+      ],
+      "points": [
+        [
+          300,
+          700
+        ],
+        [
+          300,
+          560
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": true
+    },
+    {
+      "id": "runtime-context",
+      "from": "world",
+      "to": "feedback",
+      "label": null,
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "human_message = self.action_agent.render_human_message(\n                events=events,"
+        },
+        {
+          "source": "orchestrator",
+          "quote": "critique=critique,"
+        }
+      ],
+      "points": [
+        [
+          1142,
+          710
+        ],
+        [
+          1142,
+          680
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "bottom",
+      "fromFraction": 0.644,
+      "toFraction": 0.16266666666666665,
+      "stroke": "#14344B",
+      "strokeWidth": 2.2,
+      "dashed": false
+    },
+    {
+      "id": "critic-context",
+      "from": "critic",
+      "to": "feedback",
+      "label": null,
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "human_message = self.action_agent.render_human_message(\n                events=events,"
+        },
+        {
+          "source": "orchestrator",
+          "quote": "critique=critique,"
+        }
+      ],
+      "points": [
+        [
+          1590,
+          760
+        ],
+        [
+          1590,
+          680
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.76,
+      "stroke": "#14344B",
+      "strokeWidth": 4.2,
+      "dashed": true
+    },
+    {
+      "id": "refine",
+      "from": "feedback",
+      "to": "action",
+      "label": {
+        "id": "edge-label:refine",
+        "text": "If not done",
+        "x": 1418,
+        "y": 481,
+        "w": 223.944,
+        "h": 57.2,
+        "fontSize": 44,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Times New Roman"
+      },
+      "kind": "feedback",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "orchestrator",
+          "quote": "human_message = self.action_agent.render_human_message(\n                events=events,"
+        },
+        {
+          "source": "orchestrator",
+          "quote": "critique=critique,"
+        },
+        {
+          "source": "orchestrator",
+          "quote": "if done:\n                break"
+        }
+      ],
+      "points": [
+        [
+          1395,
+          540
+        ],
+        [
+          1395,
+          480
+        ]
+      ],
+      "fromPort": "top",
+      "toPort": "bottom",
+      "fromFraction": 0.5,
+      "toFraction": 0.6193181818181818,
+      "stroke": "#14344B",
+      "strokeWidth": 4.2,
+      "dashed": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "refinement-loop",
+      "label": "Iterative code refinement",
+      "members": [
+        "action",
+        "world",
+        "critic",
+        "feedback"
+      ],
+      "x": 798,
+      "y": 98.8,
+      "w": 994,
+      "h": 908.2,
+      "fill": "#FBFCFD",
+      "stroke": "none",
+      "radius": 18,
+      "strokeWidth": 1.4
+    }
+  ],
+  "texts": [
+    {
+      "id": "group-label:refinement-loop",
+      "text": "Iterative code refinement",
+      "x": 812,
+      "y": 110.8,
+      "w": 966,
+      "h": 57.2,
+      "fontSize": 44,
+      "bold": true,
+      "color": "#526477",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:curriculum:label:0",
+      "text": "Automatic",
+      "x": 82,
+      "y": 280,
+      "w": 436,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:curriculum:label:1",
+      "text": "curriculum",
+      "x": 82,
+      "y": 336.64,
+      "w": 436,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:action:label:0",
+      "text": "Program generation",
+      "x": 872,
+      "y": 194,
+      "w": 550,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:world:label:0",
+      "text": "Execute program",
+      "x": 842,
+      "y": 727,
+      "w": 456,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:critic:label:0",
+      "text": "Verify task",
+      "x": 1432,
+      "y": 777,
+      "w": 316,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:skills:label:0",
+      "text": "Skill library",
+      "x": 1982,
+      "y": 236,
+      "w": 506,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:state:label:0",
+      "text": "Exploration state",
+      "x": 82,
+      "y": 714,
+      "w": 436,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "text:feedback:label:0",
+      "text": "Refine prompt",
+      "x": 1040,
+      "y": 552,
+      "w": 710,
+      "h": 56.64,
+      "fontSize": 48,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:task",
+      "text": "Task + context",
+      "x": 546,
+      "y": 320,
+      "w": 296.764,
+      "h": 57.2,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:retrieved-code",
+      "text": "Top-k",
+      "x": 1738,
+      "y": 318,
+      "w": 123.184,
+      "h": 57.2,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "edge-label:refine",
+      "text": "If not done",
+      "x": 1418,
+      "y": 481,
+      "w": 223.944,
+      "h": 57.2,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Times New Roman"
+    },
+    {
+      "id": "art:task-context",
+      "owner": "curriculum",
+      "text": "Example task",
+      "x": 86,
+      "y": 410,
+      "w": 428,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": true,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:task-example",
+      "owner": "curriculum",
+      "text": "Wooden pickaxe",
+      "x": 98,
+      "y": 485,
+      "w": 412,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:code-0",
+      "owner": "action",
+      "text": "craftWoodenPickaxe.js (excerpt)",
+      "x": 890,
+      "y": 290,
+      "w": 800,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:code-2",
+      "owner": "action",
+      "text": "await craftCraftingTable(bot);",
+      "x": 890,
+      "y": 375,
+      "w": 800,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Courier New",
+      "italic": false
+    },
+    {
+      "id": "art:execute",
+      "owner": "world",
+      "text": "Minecraft",
+      "x": 1010,
+      "y": 797,
+      "w": 286,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": true,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:all-code",
+      "owner": "world",
+      "text": "All skills",
+      "x": 1010,
+      "y": 860,
+      "w": 286,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:primitives",
+      "owner": "world",
+      "text": "+ primitives",
+      "x": 1010,
+      "y": 923,
+      "w": 286,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:critic-output",
+      "owner": "critic",
+      "text": "Critique: refine",
+      "x": 1430,
+      "y": 852,
+      "w": 320,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:skill-name-0",
+      "owner": "skills",
+      "text": "mineWoodLog",
+      "x": 2008,
+      "y": 365,
+      "w": 460,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Courier New",
+      "italic": false
+    },
+    {
+      "id": "art:skill-desc-0",
+      "owner": "skills",
+      "text": "Mine a wood log",
+      "x": 2008,
+      "y": 425,
+      "w": 460,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:skill-name-1",
+      "owner": "skills",
+      "text": "craftCraftingTable",
+      "x": 2008,
+      "y": 495,
+      "w": 460,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Courier New",
+      "italic": false
+    },
+    {
+      "id": "art:skill-desc-1",
+      "owner": "skills",
+      "text": "Craft a crafting table",
+      "x": 2008,
+      "y": 555,
+      "w": 460,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:skill-name-2",
+      "owner": "skills",
+      "text": "craftWoodenPickaxe",
+      "x": 2008,
+      "y": 625,
+      "w": 460,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Courier New",
+      "italic": false
+    },
+    {
+      "id": "art:skill-desc-2",
+      "owner": "skills",
+      "text": "Craft pickaxe",
+      "x": 2008,
+      "y": 685,
+      "w": 460,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": true
+    },
+    {
+      "id": "art:query-initial",
+      "owner": "skills",
+      "text": "Query: task context",
+      "x": 1996,
+      "y": 790,
+      "w": 480,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:query-refine",
+      "owner": "skills",
+      "text": "Refine: + chat summary",
+      "x": 1996,
+      "y": 850,
+      "w": 480,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:state-events",
+      "owner": "state",
+      "text": "Latest events",
+      "x": 86,
+      "y": 790,
+      "w": 428,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:state-history",
+      "owner": "state",
+      "text": "Task history",
+      "x": 86,
+      "y": 860,
+      "w": 428,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "left",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:eligible-port",
+      "owner": "critic",
+      "text": "Eligible success",
+      "x": 1430,
+      "y": 916,
+      "w": 320,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:register-label",
+      "owner": "skills",
+      "text": "Store reusable skill",
+      "x": 1980,
+      "y": 930,
+      "w": 510,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": true,
+      "color": "#14344B",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    },
+    {
+      "id": "art:feedback-payload",
+      "owner": "feedback",
+      "text": "Events + critique; bounded retries",
+      "x": 1040,
+      "y": 612,
+      "w": 710,
+      "h": 59.4,
+      "fontSize": 44,
+      "bold": false,
+      "color": "#14344B",
+      "align": "center",
+      "fontFamily": "Times New Roman",
+      "italic": false
+    }
+  ],
+  "decorations": [
+    {
+      "id": "art:curriculum-header",
+      "owner": "curriculum",
+      "type": "rect",
+      "x": 61.5,
+      "y": 261.5,
+      "w": 477,
+      "h": 140,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#E8F0F7",
+      "stroke": "none",
+      "strokeWidth": 1.5,
+      "radius": 14,
+      "textBackground": true
+    },
+    {
+      "id": "art:curriculum-head-rule",
+      "owner": "curriculum",
+      "type": "line",
+      "x": 60,
+      "y": 400,
+      "w": 480,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#587A96",
+      "fill": "none",
+      "strokeWidth": 1.4
+    },
+    {
+      "id": "art:task-slip",
+      "owner": "curriculum",
+      "type": "rect",
+      "x": 86,
+      "y": 470,
+      "w": 428,
+      "h": 80,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#F7F9FA",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 8,
+      "textBackground": true
+    },
+    {
+      "id": "art:action-header",
+      "owner": "action",
+      "type": "rect",
+      "x": 851.5,
+      "y": 181.5,
+      "w": 877,
+      "h": 75,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#E8F0F7",
+      "stroke": "none",
+      "strokeWidth": 1.5,
+      "radius": 14,
+      "textBackground": true
+    },
+    {
+      "id": "art:action-head-rule",
+      "owner": "action",
+      "type": "line",
+      "x": 850,
+      "y": 255,
+      "w": 880,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#587A96",
+      "fill": "none",
+      "strokeWidth": 1.4
+    },
+    {
+      "id": "art:world-header",
+      "owner": "world",
+      "type": "rect",
+      "x": 821.5,
+      "y": 711.5,
+      "w": 497,
+      "h": 76,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#F7F9FA",
+      "stroke": "none",
+      "strokeWidth": 1.5,
+      "radius": 14,
+      "textBackground": true
+    },
+    {
+      "id": "art:world-head-rule",
+      "owner": "world",
+      "type": "line",
+      "x": 820,
+      "y": 786,
+      "w": 500,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#839099",
+      "fill": "none",
+      "strokeWidth": 1.4
+    },
+    {
+      "id": "art:ground-0",
+      "owner": "world",
+      "type": "rect",
+      "x": 842,
+      "y": 920,
+      "w": 24,
+      "h": 14,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:ground-1",
+      "owner": "world",
+      "type": "rect",
+      "x": 866,
+      "y": 920,
+      "w": 24,
+      "h": 14,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:ground-2",
+      "owner": "world",
+      "type": "rect",
+      "x": 890,
+      "y": 920,
+      "w": 24,
+      "h": 14,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:ground-3",
+      "owner": "world",
+      "type": "rect",
+      "x": 914,
+      "y": 920,
+      "w": 24,
+      "h": 14,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:ground-4",
+      "owner": "world",
+      "type": "rect",
+      "x": 938,
+      "y": 920,
+      "w": 24,
+      "h": 14,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:ground-5",
+      "owner": "world",
+      "type": "rect",
+      "x": 962,
+      "y": 920,
+      "w": 24,
+      "h": 14,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:tree-trunk",
+      "owner": "world",
+      "type": "rect",
+      "x": 939,
+      "y": 856,
+      "w": 20,
+      "h": 64,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#C0C9CF",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:tree-crown-top",
+      "owner": "world",
+      "type": "rect",
+      "x": 920,
+      "y": 807,
+      "w": 58,
+      "h": 22,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:tree-crown",
+      "owner": "world",
+      "type": "rect",
+      "x": 908,
+      "y": 829,
+      "w": 82,
+      "h": 28,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D8DEE2",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:avatar-head",
+      "owner": "world",
+      "type": "rect",
+      "x": 857,
+      "y": 854,
+      "w": 18,
+      "h": 18,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#B3BEC6",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:avatar-body",
+      "owner": "world",
+      "type": "rect",
+      "x": 853,
+      "y": 874,
+      "w": 22,
+      "h": 29,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#D0D7DC",
+      "stroke": "#839099",
+      "strokeWidth": 1.5,
+      "radius": 0,
+      "textBackground": false
+    },
+    {
+      "id": "art:avatar-leg-1",
+      "owner": "world",
+      "type": "line",
+      "x": 859,
+      "y": 903,
+      "w": -8,
+      "h": 17,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#839099",
+      "fill": "none",
+      "strokeWidth": 3
+    },
+    {
+      "id": "art:avatar-leg-2",
+      "owner": "world",
+      "type": "line",
+      "x": 868,
+      "y": 903,
+      "w": 10,
+      "h": 17,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#839099",
+      "fill": "none",
+      "strokeWidth": 3
+    },
+    {
+      "id": "art:avatar-arm",
+      "owner": "world",
+      "type": "line",
+      "x": 874,
+      "y": 879,
+      "w": 20,
+      "h": -11,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#839099",
+      "fill": "none",
+      "strokeWidth": 3
+    },
+    {
+      "id": "art:pick-handle",
+      "owner": "world",
+      "type": "line",
+      "x": 889,
+      "y": 881,
+      "w": 16,
+      "h": -25,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#839099",
+      "fill": "none",
+      "strokeWidth": 3
+    },
+    {
+      "id": "art:pick-head",
+      "owner": "world",
+      "type": "line",
+      "x": 895,
+      "y": 853,
+      "w": 22,
+      "h": 12,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#839099",
+      "fill": "none",
+      "strokeWidth": 3
+    },
+    {
+      "id": "art:critic-header",
+      "owner": "critic",
+      "type": "rect",
+      "x": 1411.5,
+      "y": 761.5,
+      "w": 357,
+      "h": 74,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#E8F0F7",
+      "stroke": "none",
+      "strokeWidth": 1.5,
+      "radius": 14,
+      "textBackground": true
+    },
+    {
+      "id": "art:critic-head-rule",
+      "owner": "critic",
+      "type": "line",
+      "x": 1410,
+      "y": 834,
+      "w": 360,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#587A96",
+      "fill": "none",
+      "strokeWidth": 1.4
+    },
+    {
+      "id": "art:skills-header",
+      "owner": "skills",
+      "type": "rect",
+      "x": 1961.5,
+      "y": 221.5,
+      "w": 547,
+      "h": 80,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#E8F3EF",
+      "stroke": "none",
+      "strokeWidth": 1.5,
+      "radius": 14,
+      "textBackground": true
+    },
+    {
+      "id": "art:skills-head-rule",
+      "owner": "skills",
+      "type": "line",
+      "x": 1960,
+      "y": 300,
+      "w": 550,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#507E71",
+      "fill": "none",
+      "strokeWidth": 1.4
+    },
+    {
+      "id": "art:skill-front",
+      "owner": "skills",
+      "type": "rect",
+      "x": 1996,
+      "y": 346,
+      "w": 484,
+      "h": 420,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#F5FAF7",
+      "stroke": "none",
+      "strokeWidth": 1.5,
+      "radius": 8,
+      "textBackground": true
+    },
+    {
+      "id": "art:skill-separator-0",
+      "owner": "skills",
+      "type": "line",
+      "x": 2008,
+      "y": 488,
+      "w": 460,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#507E71",
+      "fill": "none",
+      "strokeWidth": 1.5
+    },
+    {
+      "id": "art:skill-separator-1",
+      "owner": "skills",
+      "type": "line",
+      "x": 2008,
+      "y": 618,
+      "w": 460,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#507E71",
+      "fill": "none",
+      "strokeWidth": 1.5
+    },
+    {
+      "id": "art:state-header",
+      "owner": "state",
+      "type": "rect",
+      "x": 61.5,
+      "y": 701.5,
+      "w": 477,
+      "h": 78,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "fill": "#E8F3EF",
+      "stroke": "none",
+      "strokeWidth": 1.5,
+      "radius": 14,
+      "textBackground": true
+    },
+    {
+      "id": "art:state-head-rule",
+      "owner": "state",
+      "type": "line",
+      "x": 60,
+      "y": 778,
+      "w": 480,
+      "h": 0,
+      "purpose": "Source-supported operation, stored field, input example or non-quantitative environment illustration.",
+      "stroke": "#507E71",
+      "fill": "none",
+      "strokeWidth": 1.4
+    },
+    {
+      "id": "art:register-port",
+      "owner": "skills",
+      "type": "rect",
+      "x": 1961.5,
+      "y": 920,
+      "w": 547,
+      "h": 69,
+      "fill": "#E8F3EF",
+      "stroke": "#507E71",
+      "strokeWidth": 1.5,
+      "radius": 9,
+      "textBackground": true,
+      "purpose": "Source-supported add_new_skill registration interface, not a new learned module."
+    }
+  ],
+  "assets": [],
+  "title": "Voyager: iterative code refinement and reusable skills",
+  "typography": {
+    "fontFamily": "Times New Roman",
+    "moduleSize": 48,
+    "detailSize": 44,
+    "annotationSize": 44,
+    "titleSize": 30,
+    "moduleBold": true
+  },
+  "specHash": "ab13f1e65eb1e7756da406cded591372098b8fae80bcd8d3d67bdf84d5e9fc1f",
+  "semanticHash": "d85c33f2af14e2bc09d4d22c5abf29ea3beffcab21d1fb8f478095514dc18b76",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "id": 2,
+    "name": "log-left",
+    "type": "shape",
+    "owner": "icon-log",
+    "bbox": [
+      78,
+      169,
+      52,
+      89
+    ]
+  },
+  {
+    "id": 3,
+    "name": "log-right",
+    "type": "shape",
+    "owner": "icon-log",
+    "bbox": [
+      130,
+      169,
+      51,
+      89
+    ]
+  },
+  {
+    "id": 4,
+    "name": "log-top",
+    "type": "shape",
+    "owner": "icon-log",
+    "bbox": [
+      78,
+      142,
+      103,
+      55
+    ]
+  },
+  {
+    "id": 5,
+    "name": "log-ring-outer",
+    "type": "shape",
+    "owner": "icon-log",
+    "bbox": [
+      97,
+      152,
+      64,
+      34
+    ]
+  },
+  {
+    "id": 6,
+    "name": "log-ring-inner",
+    "type": "shape",
+    "owner": "icon-log",
+    "bbox": [
+      115,
+      161,
+      30,
+      16
+    ]
+  },
+  {
+    "id": 7,
+    "name": "grain-a",
+    "type": "shape",
+    "owner": "icon-log",
+    "bbox": [
+      95,
+      179,
+      4,
+      63
+    ]
+  },
+  {
+    "id": 8,
+    "name": "grain-b",
+    "type": "shape",
+    "owner": "icon-log",
+    "bbox": [
+      149,
+      189,
+      4,
+      58
+    ]
+  },
+  {
+    "id": 26,
+    "name": "icon-log",
+    "type": "group",
+    "owner": "log"
+  },
+  {
+    "id": 27,
+    "name": "log",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 12,
+    "name": "t-code",
+    "type": "text",
+    "owner": "code",
+    "text": "await craftCraftingTable(bot);",
+    "font": "Courier New",
+    "fontSize": 25.5,
+    "bbox": [
+      714,
+      210.54,
+      459.07470703125,
+      31.875
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 28,
+    "name": "code",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 9,
+    "name": "box-refine",
+    "type": "shape",
+    "owner": "refine",
+    "bbox": [
+      657,
+      674,
+      281,
+      69
+    ]
+  },
+  {
+    "id": 17,
+    "name": "label-block:refine",
+    "type": "text-block",
+    "owner": "refine",
+    "sourceTextIds": [
+      "t-refine"
+    ],
+    "text": "Refine prompt",
+    "bbox": [
+      657,
+      674,
+      281,
+      69
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 21,
+    "name": "port-2-refine",
+    "type": "port-helper",
+    "owner": "refine",
+    "point": [
+      938,
+      708.5
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 25,
+    "name": "port-6-refine",
+    "type": "port-helper",
+    "owner": "refine",
+    "point": [
+      707,
+      743
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 29,
+    "name": "refine",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 11,
+    "name": "box-store",
+    "type": "shape",
+    "owner": "store",
+    "bbox": [
+      1537,
+      684,
+      262,
+      71
+    ]
+  },
+  {
+    "id": 19,
+    "name": "label-block:store",
+    "type": "text-block",
+    "owner": "store",
+    "sourceTextIds": [
+      "t-store"
+    ],
+    "text": "Store skill",
+    "bbox": [
+      1537,
+      684,
+      262,
+      71
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 23,
+    "name": "port-4-store",
+    "type": "port-helper",
+    "owner": "store",
+    "point": [
+      1537,
+      722
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 30,
+    "name": "store",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 31,
+    "name": "critique-to-refine",
+    "type": "connector",
+    "owner": null,
+    "edge": "critique-to-refine",
+    "fromBinding": "port-1-verify",
+    "toBinding": "port-2-refine",
+    "stroke": "#111111",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 32,
+    "name": "success-to-store",
+    "type": "connector",
+    "owner": null,
+    "edge": "success-to-store",
+    "fromBinding": "port-3-verify",
+    "toBinding": "port-4-store",
+    "stroke": "#111111",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 33,
+    "name": "bounded-return:segment:0",
+    "type": "connector",
+    "owner": "group-bounded-return",
+    "edge": "bounded-return",
+    "fromBinding": "port-5-verify",
+    "toBinding": null,
+    "stroke": "#111111",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 34,
+    "name": "bounded-return:segment:1",
+    "type": "connector",
+    "owner": "group-bounded-return",
+    "edge": "bounded-return",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#111111",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 35,
+    "name": "bounded-return:segment:2",
+    "type": "connector",
+    "owner": "group-bounded-return",
+    "edge": "bounded-return",
+    "fromBinding": null,
+    "toBinding": "port-6-refine",
+    "stroke": "#111111",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 36,
+    "name": "group-bounded-return",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 10,
+    "name": "box-verify",
+    "type": "shape",
+    "owner": "verify",
+    "bbox": [
+      1026,
+      674,
+      183,
+      69
+    ]
+  },
+  {
+    "id": 16,
+    "name": "stop-diamond",
+    "type": "shape",
+    "owner": "verify",
+    "bbox": [
+      1096,
+      774,
+      43,
+      42
+    ]
+  },
+  {
+    "id": 18,
+    "name": "label-block:verify",
+    "type": "text-block",
+    "owner": "verify",
+    "sourceTextIds": [
+      "t-verify"
+    ],
+    "text": "Verify",
+    "bbox": [
+      1026,
+      674,
+      183,
+      69
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 20,
+    "name": "port-1-verify",
+    "type": "port-helper",
+    "owner": "verify",
+    "point": [
+      1026,
+      708.5
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 22,
+    "name": "port-3-verify",
+    "type": "port-helper",
+    "owner": "verify",
+    "point": [
+      1209,
+      722
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 24,
+    "name": "port-5-verify",
+    "type": "port-helper",
+    "owner": "verify",
+    "point": [
+      1117.5,
+      743
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 37,
+    "name": "verify",
+    "type": "group",
+    "owner": null
+  }
+]

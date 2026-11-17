@@ -1,0 +1,32 @@
+{
+  "round": 3,
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "0a29489cbbd336813499024a242e0654043c9424975312e2e3d8ed75673c7d07",
+  "promptPath": "prompt-edit-v3.txt",
+  "promptSHA256": "17a0110ec721d1aa6d58ccdbb9006559f091b0c84573ccfa06d2b2e4d2a563ba",
+  "inputImages": [
+    {
+      "path": "candidate-v2.png",
+      "sha256": "0a29489cbbd336813499024a242e0654043c9424975312e2e3d8ed75673c7d07",
+      "role": "actual referenced_image_paths edit target"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-v3.png",
+    "sha256": "ef2b1ea6e8cb5b4255d2932390cd39d758a21ebc4ba01ed750760616712b0757",
+    "sizePx": [
+      1685,
+      934
+    ]
+  },
+  "specSHA256": "cdef0cf5d66b9709bc6e22e9f7564c5995041fff27ec8491d0e68e438344fa2e",
+  "briefSHA256": "985839e929f82bb333d48a2845fefdc07f9af77e9f47326badf4ec45d6a5bca5",
+  "narrativePlanSHA256": "1c878fe7157ed7473c968853e0edd1196e7f339817d369d403baf33441477378",
+  "semanticFreezeSHA256": "8d21545553b3a26abdd34187c91aee56e3f7e2daaf57c417a9290196a3bb61a5",
+  "defectClass": "Appearance only: flat fills, reduced shadows, quiet semantic grouping",
+  "sourceFigureAccess": true,
+  "figureHidden": false,
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

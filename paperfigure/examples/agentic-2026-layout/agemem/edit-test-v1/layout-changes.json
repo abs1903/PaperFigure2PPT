@@ -1,0 +1,31 @@
+{
+  "topologyBefore": "3cdf208d71369250f2241eafbc3d95a036452e904f2962f3b39ffc982357cf70",
+  "topologyAfter": "3cdf208d71369250f2241eafbc3d95a036452e904f2962f3b39ffc982357cf70",
+  "moves": [
+    {
+      "id": "query",
+      "dx": 12,
+      "dy": 0
+    }
+  ],
+  "styles": [
+    {
+      "id": "query-input",
+      "value": {
+        "stroke": "#334455",
+        "width": 3,
+        "dashed": true,
+        "dashPattern": [
+          10,
+          6
+        ],
+        "endArrow": "stealth",
+        "arrowSize": "med",
+        "lineCap": "square"
+      }
+    }
+  ],
+  "semanticBefore": "15f7010043fdb9090ecd0edc7977976a716e59fb080ba9d037473133bf94df35",
+  "semanticAfter": "15f7010043fdb9090ecd0edc7977976a716e59fb080ba9d037473133bf94df35",
+  "changes": []
+}

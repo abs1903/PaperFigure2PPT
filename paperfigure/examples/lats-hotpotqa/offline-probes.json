@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "value prompt discards passed reflection feedback",
+      "passed": true
+    },
+    {
+      "test": "backup changes visits/value, not neural weights",
+      "passed": true
+    },
+    {
+      "test": "reflection guard zero failures",
+      "passed": true
+    },
+    {
+      "test": "reflection guard one distinct failure",
+      "passed": true
+    },
+    {
+      "test": "reflection guard four distinct failures",
+      "passed": true
+    },
+    {
+      "test": "sibling candidates step one shared environment object",
+      "passed": true
+    },
+    {
+      "test": "rollout horizon is absolute depth, not four extra steps",
+      "passed": true
+    },
+    {
+      "test": "rollout returns first terminal even when a later terminal succeeds",
+      "passed": true
+    },
+    {
+      "test": "entry resets failed traces and reflections per question",
+      "passed": true
+    }
+  ],
+  "count": 9,
+  "scope": "Extracted original function definitions with stubbed model/environment callbacks; no upstream module import, models, API, live Wikipedia or task performance test."
+}

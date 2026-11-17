@@ -1,0 +1,30 @@
+{
+  "mode": "png-native-reconstruction",
+  "reference": {
+    "path": "reference.png",
+    "width": 2061,
+    "height": 763,
+    "sha256": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f"
+  },
+  "authorizedChanges": [
+    "Replace gradients and subtle shaded fills by flat solid colors while preserving region boundaries, geometry and visual class."
+  ],
+  "preserve": [
+    "Three-panel composition and compact framing",
+    "All readable labels, line breaks and original code as pictured",
+    "OpenAI-like knot marks and other drawn icons as visual elements, not endorsements",
+    "Original arrow routing, feedback/success/failure badges, bottom next-task return",
+    "Original gray Minecraft illustration silhouettes and local details"
+  ],
+  "notAuthorized": [
+    "Redesigning layout",
+    "Correcting depicted scientific content or swapping actual-code examples",
+    "Deleting title-like region headings or labels",
+    "Replacing detail with generic cards"
+  ],
+  "limits": [
+    "The original imagegen figure contains unverified or schematic science/code. This is a visual reconstruction, not a validated Voyager-method diagram.",
+    "Exact font and antialiasing cannot be inferred uniquely from PNG.",
+    "Fine grayscale illustration texture may be simplified into flat vector regions; detail losses must be listed and reviewed."
+  ]
+}

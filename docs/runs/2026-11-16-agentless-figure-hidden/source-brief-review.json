@@ -1,0 +1,36 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/agentless_figure_hidden_review"
+  },
+  "verdict": "revise",
+  "scope": "source-to-brief review before image generation; author figures remain hidden",
+  "hashes": {
+    "spec.json": "91fc27a5e30c34d6a31172a17f2298e427686af4c57e065f0b298a9bf3af146f",
+    "design-brief.json": "b2d222653fa9ab3964f17ac2f40ab3b376539388c02772efd80aec23b2822a44",
+    "prompt-v1.txt": "3e2b0cddc5047d15c13a6e5c4ff3ade5d100917758a70c9ade732e499c298c63",
+    "design-options.md": "604b0f146bce33a2a92ce313c4f4930435ef2334dcdceb56c20d1903445e5052",
+    "semantic-freeze.json": "6770722469aec8e41607ba70037280d7128748a07f0d48bbfbb1ac424b7412a9",
+    "source-manifest.json": "09de0c43d7d21ff1da7854fc3fdcbb1a5b38b237c8bdae30a82ee501f2afee14"
+  },
+  "checks": {
+    "authorFigureHidden": "pass",
+    "twoPaperPhases": "pass",
+    "localization": "pass",
+    "repairAndSyntaxScreen": "pass",
+    "regressionLeastFailure": "pass",
+    "conditionalFallback": "pass",
+    "normalizedKeyVsOriginalPatch": "pass",
+    "briefAt7in": "pass",
+    "unsupportedAssuranceWording": "fail"
+  },
+  "requiredChanges": [
+    "Replace 'reproducible filtering' with 'syntax and regression filtering' in brief message and prompt takeaway.",
+    "Replace 'Paired deterministic evidence streams' with 'Paired evidence streams'."
+  ],
+  "notes": [
+    "No author figure comparison occurred.",
+    "No ImageGen or test execution occurred.",
+    "Re-review only the corrected text/hash before generation; visual review remains required after pixels exist."
+  ]
+}

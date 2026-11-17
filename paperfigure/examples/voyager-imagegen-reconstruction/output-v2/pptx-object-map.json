@@ -1,0 +1,1657 @@
+[
+  {
+    "id": 2,
+    "name": "curriculum-panel",
+    "type": "group",
+    "role": "container"
+  },
+  {
+    "id": 3,
+    "name": "curriculum-panel-1",
+    "owner": "curriculum-panel",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 4,
+    "name": "curriculum-panel-2",
+    "owner": "curriculum-panel",
+    "type": "text",
+    "text": "Automatic Curriculum"
+  },
+  {
+    "id": 5,
+    "name": "generation-panel",
+    "type": "group",
+    "role": "container"
+  },
+  {
+    "id": 6,
+    "name": "generation-panel-3",
+    "owner": "generation-panel",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 7,
+    "name": "generation-panel-4",
+    "owner": "generation-panel",
+    "type": "text",
+    "text": "Program Generation & Iterative Refinement"
+  },
+  {
+    "id": 8,
+    "name": "library-panel",
+    "type": "group",
+    "role": "container"
+  },
+  {
+    "id": 9,
+    "name": "library-panel-5",
+    "owner": "library-panel",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 10,
+    "name": "library-panel-6",
+    "owner": "library-panel",
+    "type": "text",
+    "text": "Reusable Skill Library"
+  },
+  {
+    "id": 11,
+    "name": "library-panel-7",
+    "owner": "library-panel",
+    "type": "text",
+    "text": "(Persistent, Growing)"
+  },
+  {
+    "id": 12,
+    "name": "observations-to-curriculum",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 13,
+    "name": "observations-to-curriculum-8",
+    "owner": "observations-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 14,
+    "name": "observations-to-curriculum-9",
+    "owner": "observations-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 15,
+    "name": "observations-to-curriculum-10",
+    "owner": "observations-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 16,
+    "name": "observations-to-curriculum-11",
+    "owner": "observations-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 17,
+    "name": "observations-to-curriculum-12",
+    "owner": "observations-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 18,
+    "name": "observations-to-curriculum-13",
+    "owner": "observations-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 19,
+    "name": "history-to-curriculum",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 20,
+    "name": "history-to-curriculum-14",
+    "owner": "history-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 21,
+    "name": "history-to-curriculum-15",
+    "owner": "history-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 22,
+    "name": "history-to-curriculum-16",
+    "owner": "history-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 23,
+    "name": "history-to-curriculum-17",
+    "owner": "history-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 24,
+    "name": "history-to-curriculum-18",
+    "owner": "history-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 25,
+    "name": "history-to-curriculum-19",
+    "owner": "history-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 26,
+    "name": "curriculum-to-task",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 27,
+    "name": "curriculum-to-task-20",
+    "owner": "curriculum-to-task",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 28,
+    "name": "curriculum-to-task-21",
+    "owner": "curriculum-to-task",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 29,
+    "name": "retained-to-curriculum",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 30,
+    "name": "retained-to-curriculum-22",
+    "owner": "retained-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 31,
+    "name": "retained-to-curriculum-23",
+    "owner": "retained-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 32,
+    "name": "retained-to-curriculum-24",
+    "owner": "retained-to-curriculum",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 33,
+    "name": "retained-to-curriculum-25",
+    "owner": "retained-to-curriculum",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 34,
+    "name": "context-to-generator",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 35,
+    "name": "context-to-generator-26",
+    "owner": "context-to-generator",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 36,
+    "name": "context-to-generator-27",
+    "owner": "context-to-generator",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 37,
+    "name": "context-to-generator-28",
+    "owner": "context-to-generator",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 38,
+    "name": "context-to-generator-29",
+    "owner": "context-to-generator",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 39,
+    "name": "context-to-generator-30",
+    "owner": "context-to-generator",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 40,
+    "name": "context-to-generator-31",
+    "owner": "context-to-generator",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 41,
+    "name": "generator-to-program",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 42,
+    "name": "generator-to-program-32",
+    "owner": "generator-to-program",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 43,
+    "name": "generator-to-program-33",
+    "owner": "generator-to-program",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 44,
+    "name": "program-to-runtime",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 45,
+    "name": "program-to-runtime-34",
+    "owner": "program-to-runtime",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 46,
+    "name": "program-to-runtime-35",
+    "owner": "program-to-runtime",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 47,
+    "name": "runtime-to-critic",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 48,
+    "name": "runtime-to-critic-36",
+    "owner": "runtime-to-critic",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 49,
+    "name": "runtime-to-critic-37",
+    "owner": "runtime-to-critic",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 50,
+    "name": "critic-to-feedback",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 51,
+    "name": "critic-to-feedback-38",
+    "owner": "critic-to-feedback",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 52,
+    "name": "critic-to-feedback-39",
+    "owner": "critic-to-feedback",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 53,
+    "name": "feedback-refinement-upper",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 54,
+    "name": "feedback-refinement-upper-40",
+    "owner": "feedback-refinement-upper",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 55,
+    "name": "feedback-refinement-upper-41",
+    "owner": "feedback-refinement-upper",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 56,
+    "name": "feedback-refinement-upper-42",
+    "owner": "feedback-refinement-upper",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 57,
+    "name": "feedback-refinement-upper-43",
+    "owner": "feedback-refinement-upper",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 58,
+    "name": "feedback-refinement-outer",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 59,
+    "name": "feedback-refinement-outer-44",
+    "owner": "feedback-refinement-outer",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 60,
+    "name": "feedback-refinement-outer-45",
+    "owner": "feedback-refinement-outer",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 61,
+    "name": "feedback-refinement-outer-46",
+    "owner": "feedback-refinement-outer",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 62,
+    "name": "feedback-refinement-outer-47",
+    "owner": "feedback-refinement-outer",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 63,
+    "name": "critic-success-to-library",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 64,
+    "name": "critic-success-to-library-48",
+    "owner": "critic-success-to-library",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 65,
+    "name": "critic-success-to-library-49",
+    "owner": "critic-success-to-library",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 66,
+    "name": "critic-failure",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 67,
+    "name": "critic-failure-50",
+    "owner": "critic-failure",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 68,
+    "name": "critic-failure-51",
+    "owner": "critic-failure",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 69,
+    "name": "critic-failure-52",
+    "owner": "critic-failure",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 70,
+    "name": "critic-failure-53",
+    "owner": "critic-failure",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 71,
+    "name": "critic-failure-54",
+    "owner": "critic-failure",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 72,
+    "name": "critic-failure-55",
+    "owner": "critic-failure",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 73,
+    "name": "next-task-return",
+    "type": "group",
+    "role": "edge"
+  },
+  {
+    "id": 74,
+    "name": "next-task-return-56",
+    "owner": "next-task-return",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 75,
+    "name": "next-task-return-57",
+    "owner": "next-task-return",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 76,
+    "name": "next-task-return-58",
+    "owner": "next-task-return",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 77,
+    "name": "next-task-return-59",
+    "owner": "next-task-return",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 78,
+    "name": "next-task-return-60",
+    "owner": "next-task-return",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 79,
+    "name": "next-task-return-61",
+    "owner": "next-task-return",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 80,
+    "name": "world-observations",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 81,
+    "name": "world-observations-62",
+    "owner": "world-observations",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 82,
+    "name": "world-observations-63",
+    "owner": "world-observations",
+    "type": "text",
+    "text": "World"
+  },
+  {
+    "id": 83,
+    "name": "world-observations-64",
+    "owner": "world-observations",
+    "type": "text",
+    "text": "Observations"
+  },
+  {
+    "id": 84,
+    "name": "world-observations-65",
+    "owner": "world-observations",
+    "type": "text",
+    "text": "(latest)"
+  },
+  {
+    "id": 85,
+    "name": "task-history",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 86,
+    "name": "task-history-66",
+    "owner": "task-history",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 87,
+    "name": "task-history-67",
+    "owner": "task-history",
+    "type": "text",
+    "text": "Task History"
+  },
+  {
+    "id": 88,
+    "name": "task-history-68",
+    "owner": "task-history",
+    "type": "text",
+    "text": "(completed)"
+  },
+  {
+    "id": 89,
+    "name": "curriculum-controller",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 90,
+    "name": "curriculum-controller-69",
+    "owner": "curriculum-controller",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 91,
+    "name": "curriculum-controller-70",
+    "owner": "curriculum-controller",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 92,
+    "name": "curriculum-controller-71",
+    "owner": "curriculum-controller",
+    "type": "text",
+    "text": "Curriculum"
+  },
+  {
+    "id": 93,
+    "name": "curriculum-controller-72",
+    "owner": "curriculum-controller",
+    "type": "text",
+    "text": "Propose Task"
+  },
+  {
+    "id": 94,
+    "name": "curriculum-controller-73",
+    "owner": "curriculum-controller",
+    "type": "text",
+    "text": "+ Context"
+  },
+  {
+    "id": 95,
+    "name": "task-context",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 96,
+    "name": "task-context-74",
+    "owner": "task-context",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 97,
+    "name": "task-context-75",
+    "owner": "task-context",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 98,
+    "name": "task-context-76",
+    "owner": "task-context",
+    "type": "text",
+    "text": "Task:"
+  },
+  {
+    "id": 99,
+    "name": "task-context-77",
+    "owner": "task-context",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 100,
+    "name": "task-context-78",
+    "owner": "task-context",
+    "type": "text",
+    "text": "Mine 1 wood log"
+  },
+  {
+    "id": 101,
+    "name": "task-context-79",
+    "owner": "task-context",
+    "type": "text",
+    "text": "Context:"
+  },
+  {
+    "id": 102,
+    "name": "task-context-80",
+    "owner": "task-context",
+    "type": "text",
+    "text": "•  Retrieved code (top-k)"
+  },
+  {
+    "id": 103,
+    "name": "task-context-81",
+    "owner": "task-context",
+    "type": "text",
+    "text": "•  Recent events (filtered)"
+  },
+  {
+    "id": 104,
+    "name": "retained-state",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 105,
+    "name": "retained-state-82",
+    "owner": "retained-state",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 106,
+    "name": "retained-state-83",
+    "owner": "retained-state",
+    "type": "text",
+    "text": "State (Retained)"
+  },
+  {
+    "id": 107,
+    "name": "retained-state-84",
+    "owner": "retained-state",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 108,
+    "name": "retained-state-85",
+    "owner": "retained-state",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 109,
+    "name": "retained-state-86",
+    "owner": "retained-state",
+    "type": "text",
+    "text": "Latest world observations"
+  },
+  {
+    "id": 110,
+    "name": "retained-state-87",
+    "owner": "retained-state",
+    "type": "text",
+    "text": "Runtime events (recent)"
+  },
+  {
+    "id": 111,
+    "name": "retained-state-88",
+    "owner": "retained-state",
+    "type": "text",
+    "text": "</>"
+  },
+  {
+    "id": 112,
+    "name": "retrieved-code",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 113,
+    "name": "retrieved-code-89",
+    "owner": "retrieved-code",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 114,
+    "name": "retrieved-code-90",
+    "owner": "retrieved-code",
+    "type": "text",
+    "text": "Retrieved Code (top-k)"
+  },
+  {
+    "id": 115,
+    "name": "retrieved-code-91",
+    "owner": "retrieved-code",
+    "type": "text",
+    "text": "• chopTree()"
+  },
+  {
+    "id": 116,
+    "name": "retrieved-code-92",
+    "owner": "retrieved-code",
+    "type": "text",
+    "text": "• placeBlock()"
+  },
+  {
+    "id": 117,
+    "name": "retrieved-code-93",
+    "owner": "retrieved-code",
+    "type": "text",
+    "text": "• ..."
+  },
+  {
+    "id": 118,
+    "name": "task-chat-context",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 119,
+    "name": "task-chat-context-94",
+    "owner": "task-chat-context",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 120,
+    "name": "task-chat-context-95",
+    "owner": "task-chat-context",
+    "type": "text",
+    "text": "Context (task + filtered chat log)"
+  },
+  {
+    "id": 121,
+    "name": "action-generator",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 122,
+    "name": "action-generator-96",
+    "owner": "action-generator",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 123,
+    "name": "action-generator-97",
+    "owner": "action-generator",
+    "type": "text",
+    "text": "Action LM (Code Generator)"
+  },
+  {
+    "id": 124,
+    "name": "action-generator-98",
+    "owner": "action-generator",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 125,
+    "name": "action-generator-99",
+    "owner": "action-generator",
+    "type": "text",
+    "text": "Generate / Refine JavaScript (bounded)"
+  },
+  {
+    "id": 126,
+    "name": "refine-caption",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 127,
+    "name": "refine-caption-100",
+    "owner": "refine-caption",
+    "type": "text",
+    "text": "Refine"
+  },
+  {
+    "id": 128,
+    "name": "refine-caption-101",
+    "owner": "refine-caption",
+    "type": "text",
+    "text": "(with feedback)"
+  },
+  {
+    "id": 129,
+    "name": "program-document",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 130,
+    "name": "program-document-102",
+    "owner": "program-document",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 131,
+    "name": "program-document-103",
+    "owner": "program-document",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 132,
+    "name": "program-document-104",
+    "owner": "program-document",
+    "type": "text",
+    "text": "</>"
+  },
+  {
+    "id": 133,
+    "name": "program-document-105",
+    "owner": "program-document",
+    "type": "text",
+    "text": "program.js"
+  },
+  {
+    "id": 134,
+    "name": "program-document-106",
+    "owner": "program-document",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 135,
+    "name": "program-document-107",
+    "owner": "program-document",
+    "type": "text",
+    "text": "1"
+  },
+  {
+    "id": 136,
+    "name": "program-document-108",
+    "owner": "program-document",
+    "type": "text",
+    "text": "2"
+  },
+  {
+    "id": 137,
+    "name": "program-document-109",
+    "owner": "program-document",
+    "type": "text",
+    "text": "3"
+  },
+  {
+    "id": 138,
+    "name": "program-document-110",
+    "owner": "program-document",
+    "type": "text",
+    "text": "4"
+  },
+  {
+    "id": 139,
+    "name": "program-document-111",
+    "owner": "program-document",
+    "type": "text",
+    "text": "5"
+  },
+  {
+    "id": 140,
+    "name": "program-document-112",
+    "owner": "program-document",
+    "type": "text",
+    "text": "async function main() {"
+  },
+  {
+    "id": 141,
+    "name": "program-document-113",
+    "owner": "program-document",
+    "type": "text",
+    "text": "const tree = await findBlock("
+  },
+  {
+    "id": 142,
+    "name": "program-document-114",
+    "owner": "program-document",
+    "type": "text",
+    "text": "\"oak_log\");"
+  },
+  {
+    "id": 143,
+    "name": "program-document-115",
+    "owner": "program-document",
+    "type": "text",
+    "text": "await mineBlock(tree);"
+  },
+  {
+    "id": 144,
+    "name": "program-document-116",
+    "owner": "program-document",
+    "type": "text",
+    "text": "}"
+  },
+  {
+    "id": 145,
+    "name": "runtime-execution",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 146,
+    "name": "runtime-execution-117",
+    "owner": "runtime-execution",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 147,
+    "name": "runtime-execution-118",
+    "owner": "runtime-execution",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 148,
+    "name": "runtime-execution-119",
+    "owner": "runtime-execution",
+    "type": "text",
+    "text": "Execute JS"
+  },
+  {
+    "id": 149,
+    "name": "runtime-execution-120",
+    "owner": "runtime-execution",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 150,
+    "name": "runtime-execution-121",
+    "owner": "runtime-execution",
+    "type": "text",
+    "text": "Runtime"
+  },
+  {
+    "id": 151,
+    "name": "runtime-execution-122",
+    "owner": "runtime-execution",
+    "type": "text",
+    "text": "(all saved programs + primitives)"
+  },
+  {
+    "id": 152,
+    "name": "minecraft-tone-208",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 153,
+    "name": "minecraft-tone-208-181",
+    "owner": "minecraft-tone-208",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 154,
+    "name": "minecraft-tone-177",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 155,
+    "name": "minecraft-tone-177-182",
+    "owner": "minecraft-tone-177",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 156,
+    "name": "minecraft-tone-144",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 157,
+    "name": "minecraft-tone-144-183",
+    "owner": "minecraft-tone-144",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 158,
+    "name": "minecraft-tone-106",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 159,
+    "name": "minecraft-tone-106-184",
+    "owner": "minecraft-tone-106",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 160,
+    "name": "minecraft-tone-67",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 161,
+    "name": "minecraft-tone-67-185",
+    "owner": "minecraft-tone-67",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 162,
+    "name": "critic",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 163,
+    "name": "critic-123",
+    "owner": "critic",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 164,
+    "name": "critic-124",
+    "owner": "critic",
+    "type": "connector",
+    "text": null
+  },
+  {
+    "id": 165,
+    "name": "critic-125",
+    "owner": "critic",
+    "type": "text",
+    "text": "Critic"
+  },
+  {
+    "id": 166,
+    "name": "critic-126",
+    "owner": "critic",
+    "type": "text",
+    "text": "Verify"
+  },
+  {
+    "id": 167,
+    "name": "critic-127",
+    "owner": "critic",
+    "type": "text",
+    "text": "(+ critique)"
+  },
+  {
+    "id": 168,
+    "name": "feedback",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 169,
+    "name": "feedback-128",
+    "owner": "feedback",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 170,
+    "name": "feedback-129",
+    "owner": "feedback",
+    "type": "text",
+    "text": "Feedback"
+  },
+  {
+    "id": 171,
+    "name": "feedback-130",
+    "owner": "feedback",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 172,
+    "name": "feedback-131",
+    "owner": "feedback",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 173,
+    "name": "feedback-132",
+    "owner": "feedback",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 174,
+    "name": "feedback-133",
+    "owner": "feedback",
+    "type": "text",
+    "text": "Success: Yes"
+  },
+  {
+    "id": 175,
+    "name": "feedback-134",
+    "owner": "feedback",
+    "type": "text",
+    "text": "Critique:"
+  },
+  {
+    "id": 176,
+    "name": "feedback-135",
+    "owner": "feedback",
+    "type": "text",
+    "text": "(clear and reusable)"
+  },
+  {
+    "id": 177,
+    "name": "success-filter",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 178,
+    "name": "success-filter-136",
+    "owner": "success-filter",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 179,
+    "name": "success-filter-137",
+    "owner": "success-filter",
+    "type": "text",
+    "text": "Success only"
+  },
+  {
+    "id": 180,
+    "name": "failure-filter",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 181,
+    "name": "failure-filter-138",
+    "owner": "failure-filter",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 182,
+    "name": "failure-filter-139",
+    "owner": "failure-filter",
+    "type": "text",
+    "text": "Failure"
+  },
+  {
+    "id": 183,
+    "name": "failure-filter-140",
+    "owner": "failure-filter",
+    "type": "text",
+    "text": "(not saved)"
+  },
+  {
+    "id": 184,
+    "name": "skill-card-1",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 185,
+    "name": "skill-card-1-141",
+    "owner": "skill-card-1",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 186,
+    "name": "skill-card-1-142",
+    "owner": "skill-card-1",
+    "type": "text",
+    "text": "chopTree()"
+  },
+  {
+    "id": 187,
+    "name": "skill-card-1-143",
+    "owner": "skill-card-1",
+    "type": "text",
+    "text": "Chop an entire tree and"
+  },
+  {
+    "id": 188,
+    "name": "skill-card-1-144",
+    "owner": "skill-card-1",
+    "type": "text",
+    "text": "collect the wood logs."
+  },
+  {
+    "id": 189,
+    "name": "skill-card-1-145",
+    "owner": "skill-card-1",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 190,
+    "name": "skill-card-1-146",
+    "owner": "skill-card-1",
+    "type": "text",
+    "text": "</>"
+  },
+  {
+    "id": 191,
+    "name": "skill-card-2",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 192,
+    "name": "skill-card-2-147",
+    "owner": "skill-card-2",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 193,
+    "name": "skill-card-2-148",
+    "owner": "skill-card-2",
+    "type": "text",
+    "text": "mineBlock(type)"
+  },
+  {
+    "id": 194,
+    "name": "skill-card-2-149",
+    "owner": "skill-card-2",
+    "type": "text",
+    "text": "Mine a block of the given"
+  },
+  {
+    "id": 195,
+    "name": "skill-card-2-150",
+    "owner": "skill-card-2",
+    "type": "text",
+    "text": "type (e.g., \"oak_log\")."
+  },
+  {
+    "id": 196,
+    "name": "skill-card-2-151",
+    "owner": "skill-card-2",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 197,
+    "name": "skill-card-2-152",
+    "owner": "skill-card-2",
+    "type": "text",
+    "text": "</>"
+  },
+  {
+    "id": 198,
+    "name": "skill-card-3",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 199,
+    "name": "skill-card-3-153",
+    "owner": "skill-card-3",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 200,
+    "name": "skill-card-3-154",
+    "owner": "skill-card-3",
+    "type": "text",
+    "text": "placeBlock(type, pos)"
+  },
+  {
+    "id": 201,
+    "name": "skill-card-3-155",
+    "owner": "skill-card-3",
+    "type": "text",
+    "text": "Place a block of the given"
+  },
+  {
+    "id": 202,
+    "name": "skill-card-3-156",
+    "owner": "skill-card-3",
+    "type": "text",
+    "text": "type at the target position."
+  },
+  {
+    "id": 203,
+    "name": "skill-card-3-157",
+    "owner": "skill-card-3",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 204,
+    "name": "skill-card-3-158",
+    "owner": "skill-card-3",
+    "type": "text",
+    "text": "</>"
+  },
+  {
+    "id": 205,
+    "name": "library-continuation",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 206,
+    "name": "library-continuation-159",
+    "owner": "library-continuation",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 207,
+    "name": "library-continuation-160",
+    "owner": "library-continuation",
+    "type": "text",
+    "text": "•••"
+  },
+  {
+    "id": 208,
+    "name": "next-task-label",
+    "type": "group",
+    "role": "module"
+  },
+  {
+    "id": 209,
+    "name": "next-task-label-161",
+    "owner": "next-task-label",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 210,
+    "name": "next-task-label-162",
+    "owner": "next-task-label",
+    "type": "text",
+    "text": "Next task"
+  },
+  {
+    "id": 211,
+    "name": "curriculum-mark",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 212,
+    "name": "curriculum-mark-163",
+    "owner": "curriculum-mark",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 213,
+    "name": "generation-mark",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 214,
+    "name": "generation-mark-164",
+    "owner": "generation-mark",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 215,
+    "name": "controller-mark",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 216,
+    "name": "controller-mark-165",
+    "owner": "controller-mark",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 217,
+    "name": "action-mark",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 218,
+    "name": "action-mark-166",
+    "owner": "action-mark",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 219,
+    "name": "critic-mark",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 220,
+    "name": "critic-mark-167",
+    "owner": "critic-mark",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 221,
+    "name": "world-icon",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 222,
+    "name": "world-icon-168",
+    "owner": "world-icon",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 223,
+    "name": "history-icon",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 224,
+    "name": "history-icon-169",
+    "owner": "history-icon",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 225,
+    "name": "retrieved-icon",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 226,
+    "name": "retrieved-icon-170",
+    "owner": "retrieved-icon",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 227,
+    "name": "context-icon",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 228,
+    "name": "context-icon-171",
+    "owner": "context-icon",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 229,
+    "name": "edit-icon",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 230,
+    "name": "edit-icon-172",
+    "owner": "edit-icon",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 231,
+    "name": "cube-icon",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 232,
+    "name": "cube-icon-173",
+    "owner": "cube-icon",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 233,
+    "name": "state-database",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 234,
+    "name": "state-database-174",
+    "owner": "state-database",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 235,
+    "name": "state-globe",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 236,
+    "name": "state-globe-175",
+    "owner": "state-globe",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 237,
+    "name": "library-database",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 238,
+    "name": "library-database-176",
+    "owner": "library-database",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 239,
+    "name": "skill-document-1",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 240,
+    "name": "skill-document-1-177",
+    "owner": "skill-document-1",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 241,
+    "name": "skill-document-2",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 242,
+    "name": "skill-document-2-178",
+    "owner": "skill-document-2",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 243,
+    "name": "skill-document-3",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 244,
+    "name": "skill-document-3-179",
+    "owner": "skill-document-3",
+    "type": "shape",
+    "text": null
+  },
+  {
+    "id": 245,
+    "name": "feedback-bubble",
+    "type": "group",
+    "role": "icon"
+  },
+  {
+    "id": 246,
+    "name": "feedback-bubble-180",
+    "owner": "feedback-bubble",
+    "type": "shape",
+    "text": null
+  }
+]

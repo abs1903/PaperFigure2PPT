@@ -1,0 +1,48 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "voyager_image_stage_review",
+    "contextIsolation": "V2 and V3 pixels, raw pinned sources/current source audits, current run inputs, and the immutable V3 generation record were directly inspected. Prompt wording was not treated as output evidence."
+  },
+  "stage": "isolated-raster-review",
+  "verdict": "revise",
+  "publicationWidthIn": 7,
+  "artifacts": {
+    "parentImage": {"path": "candidate-v2.png", "sha256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132"},
+    "image": {"path": "candidate-v3.png", "sha256": "d6bfb6bf3cb807ba860e1a1e09eb9841725f4b993a3fba4ebe4f2bd3865dfeda", "pixelWidth": 1860, "pixelHeight": 845},
+    "spec": {"path": "spec.json", "sha256": "09975ef413ed42cc6d2c09ae6aaa125a75ee923809bf82d1f2297dceabeea543"},
+    "brief": {"path": "design-brief.json", "sha256": "7439845a9def1080cd6a87448c1f51c3ce1dfc809419dd7a53d8ab5c1a22467e"},
+    "prompt": {"path": "prompt-v3.txt", "sha256": "917f3d8f2e95dee9e5f77727c35718d6db8e08f6b3943d99d4c12f1fbbcea221"},
+    "generationRecord": {"path": "generation-record-v3.json", "sha256": "af75afb0a8a49f22995091b0a5d56cb566e78edc4b909efac8c63042a621d7a7", "round": 3, "parentImageSHA256": "60852158ce2033ab427d4ec6ed834e313fee08b663693f98dda9ffb316e3c132"},
+    "sourceAudits": [
+      {"path": "source-audit.md", "sha256": "dc538a8e8496725dd2f60081ebf2a3939eb6b5e4a109b7aa31387263fe3f14cb"},
+      {"path": "source-audit-v2.md", "sha256": "acad436f5d0cdea3b88b6b1e59a777acb6b043abd838bffcfd7ccaf24d388acf"}
+    ]
+  },
+  "checks": {
+    "semanticFidelity": "pass",
+    "relationDirectionality": "pass",
+    "sourceBoundException": "pass",
+    "composition": "pass",
+    "typographyAtSevenInches": "pass",
+    "flatNativeModality": "pass",
+    "semanticColorOwnership": "pass",
+    "uniformSolidFills": "fail",
+    "noTitleOrFooter": "pass",
+    "nativeFeasibility": "pass",
+    "officeOrEditability": "unverified"
+  },
+  "primaryBlocker": {
+    "class": "uniform background fill",
+    "decision": "one final attached-image edit justified",
+    "regions": ["right Skill-library field", "central blue field", "left blue and green fields"],
+    "finding": "Visible tonal gradients remain; sampled right-field colors differ from srgb(215,241,226) at top to srgb(224,249,239) lower down.",
+    "invariants": ["all text characters", "all illustrations", "object boundaries", "module geometry", "source topology", "arrow routes/directions", "relative hierarchy", "whitespace", "no title/footer"],
+    "stopCondition": "If the final fill-only edit does not make fields visibly uniform, stop ImageGen refinement and retain the reviewed candidates rather than iterating further."
+  },
+  "nonblockingDeviations": [
+    {"class": "code excerpt marker", "region": "source-code sheet", "finding": "`...` is a source-compatible local excerpt marker, not an invented scientific claim, but is outside the literal text whitelist."},
+    {"class": "deferred native layout refinement", "region": "lower condition and return band", "finding": "Compact but readable at 7 inches; it does not block raster promotion after uniform-fill repair."}
+  ],
+  "limitations": ["No SVG/PPTX/PDF/Office artifact was inspected.", "The final permitted fill-only image edit has not been reviewed."]
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "icon": "icon-50",
+    "family": "session",
+    "sourceRegion": [
+      349.7135,
+      35.9315,
+      44.6141,
+      44.6141
+    ],
+    "owner": "session-content",
+    "previousParts": 6,
+    "nativeParts": 6,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-51",
+    "family": "query",
+    "sourceRegion": [
+      82.3636,
+      25.1996,
+      53.2338,
+      53.2338
+    ],
+    "owner": "query",
+    "previousParts": 8,
+    "nativeParts": 10,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-55",
+    "family": "robot",
+    "sourceRegion": [
+      85.1517,
+      246.5854,
+      59.7395,
+      59.7395
+    ],
+    "owner": "memory-manager",
+    "previousParts": 10,
+    "nativeParts": 29,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-56",
+    "family": "tools",
+    "sourceRegion": [
+      80.8427,
+      325.0833,
+      42.5863,
+      42.5864
+    ],
+    "owner": "short-term-tools",
+    "previousParts": 8,
+    "nativeParts": 7,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-57",
+    "family": "maintenance",
+    "sourceRegion": [
+      324.7028,
+      321.5347,
+      43.1777,
+      43.1778
+    ],
+    "owner": "long-term-tools",
+    "previousParts": 8,
+    "nativeParts": 4,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-58",
+    "family": "document",
+    "sourceRegion": [
+      57.7736,
+      475.6597,
+      48.0782,
+      48.0782
+    ],
+    "owner": "agentic-context",
+    "previousParts": 8,
+    "nativeParts": 8,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-59",
+    "family": "database",
+    "sourceRegion": [
+      320.6473,
+      475.2356,
+      42.1639,
+      42.1639
+    ],
+    "owner": "agentic-memory",
+    "previousParts": 9,
+    "nativeParts": 13,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-61",
+    "family": "robot",
+    "sourceRegion": [
+      74.9267,
+      583.562,
+      59.7395,
+      59.7395
+    ],
+    "owner": "llm-answer",
+    "previousParts": 9,
+    "nativeParts": 29,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-62",
+    "family": "robot",
+    "sourceRegion": [
+      417.3968,
+      560.8324,
+      59.7395,
+      59.7395
+    ],
+    "owner": "construction-agent",
+    "previousParts": 10,
+    "nativeParts": 29,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-63",
+    "family": "document",
+    "sourceRegion": [
+      339.9128,
+      664.9342,
+      44.3606,
+      44.3607
+    ],
+    "owner": "stm-instance",
+    "previousParts": 8,
+    "nativeParts": 8,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-64",
+    "family": "database",
+    "sourceRegion": [
+      505.1904,
+      665.1877,
+      42.1639,
+      42.1639
+    ],
+    "owner": "ltm-instance",
+    "previousParts": 8,
+    "nativeParts": 13,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  },
+  {
+    "icon": "icon-65",
+    "family": "check",
+    "sourceRegion": [
+      426.5234,
+      673.6367,
+      35.9116,
+      35.9116
+    ],
+    "owner": "construction",
+    "previousParts": 6,
+    "nativeParts": 1,
+    "change": "Source-guided smooth paths replace fragmented automatic color contours. No raster, gradients, or outlined words."
+  }
+]

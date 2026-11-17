@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-17",
+  "purpose": "Contribution-oriented redesign following user rejection of process-centric V4",
+  "figureHidden": false,
+  "source": "arXiv:2407.01489v1",
+  "sourcePDF": "../2026-11-16-agentless-figure-hidden/comparison-after-freeze/paper-v1.pdf",
+  "sourcePDFSHA256": "44d9d4254ab08687f2c6dd8f33359ffd6ef8078e5eb6e63888022850f43a2ea8",
+  "userFeedback": "../2026-11-17-agentless-narrative/user-feedback.json",
+  "bounds": {
+    "initialGenerations": 1,
+    "maximumAttachedEdits": 2
+  },
+  "scope": "Raster contribution communication; native/Office downstream"
+}

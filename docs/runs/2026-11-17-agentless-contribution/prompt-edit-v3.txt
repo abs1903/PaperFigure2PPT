@@ -1,0 +1,10 @@
+Input Image 1 is the actual Agentless contribution figure. Change ONE connector only; every other element is locked.
+The bottom-left Context window currently has a gray arrow pointing straight RIGHT into the lower Syntax + regression strip. That is WRONG and must be erased. Context is not a generated patch and must not feed filtering directly.
+Replace that one connector with this exact elbow route on the existing 1637×960 canvas:
+- Start at the RIGHT EDGE of the bottom-left Context window sheet, around (668,882).
+- Go right only to the clear gutter around x=876.
+- Turn UP along that gutter to about y=408, staying just LEFT of the right-side panel and LEFT of the small repeated Issue report token.
+- Turn RIGHT, ending with an arrowhead at the LEFT EDGE of the UPPER-RIGHT Context window sheet, around (943,408).
+This single handoff means focused original context is passed to localized Search/Replace generation. Preserve the UPPER-RIGHT Context window -> LLM -> Candidate patches path. The candidate patches then feed the lower filter/rank strip through the already existing downward arrow from the right panel. No direct path from the left Context window into Syntax + regression may remain.
+Do not change the funnel, contribution captions, brackets, text, code identifiers, gold intervals, SEARCH/REPLACE magnification, candidate fan, colors, numbered-free structure, canvas, issue branches, other arrows or filter/rank sequence. Especially preserve: left Issue report feeds exactly the first TWO localization LLMs, the final localization LLM has no direct issue branch, and right Issue report feeds repair LLM. Do not create a whole-repository bypass or any new module.
+Success test: one continuous focused-context handoff into the upper-right source sheet; generated candidate patches are the only depicted input to the filtering strip.

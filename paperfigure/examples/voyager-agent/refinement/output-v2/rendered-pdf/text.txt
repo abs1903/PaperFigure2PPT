@@ -1,0 +1,62 @@
+Context query
+
+Program generation
+
+Automatic
+curriculum
+
+Top-k code
+
+async function skill(bot) {
+/* generated body */
+}
+await skill(bot);
+
+Latest observations
+Completed / failed tasks
+
+Task + context
+
+Query
+
+description
+
+Mine 1 wood log
+
+Reusable behavior
+Execute
+
+Runtime feedback
+Next task
+Events
+
+Latest events
+Completed / failed tasks
+
+program_name
+program_code
+
+Refine until success or retry cap
+
+Exploration state
+
+Skill library
+
+Action LM
+
+Critique / refine
+Events
+
+Minecraft
+Execute JS
+All saved code
++ primitives
+
+Task outcome
+
+Retrieve top-k code
+
+Critic
+Success + critique
+
+Save on success

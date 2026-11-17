@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-16",
+  "supersedes": "MemSkill output-v12 appearance; scientific semantics/topology unchanged",
+  "acceptance": {
+    "mechanical": "PASS",
+    "sourceFidelity": "PASS, isolated reviewer",
+    "svgVersusActualPptx": "PASS, isolated reviewer",
+    "nativeEditability": "616/616 content objects native; excludes auxiliary ports/groups",
+    "interactiveMicrosoftPowerPoint": "Not tested",
+    "venueQualityCertification": "Not claimed"
+  },
+  "mechanical": {
+    "icons": 23,
+    "parts": 208,
+    "labels": 238,
+    "logicalEdges": 38,
+    "centeredTextBlocks": 12,
+    "labelsUnchanged": true,
+    "nonTargetPrimitivesUnchanged": 473,
+    "tokenRows": 6,
+    "formulaClusters": 3,
+    "reproducible": true,
+    "semanticHash": "9d7208bcc87134cd4d56a22f95642fa7314fdb974cdc26d68cdd5e6bd9c86721",
+    "topologyHash": "c01efaebbfd14f8b2bb6ad488f46bfa8d352ab385db464825c3b82851c9cafe5"
+  },
+  "sha256": {
+    "editable.svg": "cb69c7337351995a154159f2a44b82e4c91ae5b7100c424cc6093f14e8ae1536",
+    "preview.png": "9a2d94c97c7cd88cd8ea7c42134656aefb36a2bd7a711527e61abf35fd2313bd",
+    "figure.pptx": "0fc3fb39ec3580d3d8107942cac67b38aeb11c6eb0b93ad0396f9e66e339ac4c",
+    "layout-scene.json": "ecba8696b523cae8d8039a39ec8175435ff418165ee5782d1fc5d0265e5e3417",
+    "refinement-changes.json": "3bbf406492d9b677a6a5adc41c2147df8db816c588a00eccf0a7ee484769ed0f",
+    "icon-regions.json": "3b635727de0ebbfe7f8821a8cc07c478afe10c7730cd117b177424bbf74ba801",
+    "layout-qa.json": "bf5587919f6c27a76a2ac24291a73c6d6371fbd4f48f181b67310d5819e79d79",
+    "native-audit.json": "6ddf4ae1edabedf54fa15bffa0598e3bdf5e5199d4777753805569aef408e168",
+    "native-render/preview.png": "3b79bbfd6e76c201a0b0d1587788c9c2281ef665d3141c49a182d30c4a3beb73",
+    "native-render/render-qa.json": "f780b6969cba53614a5102a3d1a683769cb7ee7ff7dc1f3b23a41adaefc9d1b3",
+    "icon-detail/contact-sheet.png": "d49f631e5a549e1f08a26a6f6b5052e265c85f2d20b96f28babc66b62493f7bb",
+    "icon-detail/icon-detail-qa.json": "ce720be61bdf00f08c608e94cc4a1f847ab3176b9001833d5d9fa35edbbe2a87",
+    "comparison-original-svg.png": "07eae42b85c44b98219e5808fc6e8e287bb248851ab524db471dd3efff4796ef",
+    "comparison-svg-pptx.png": "0ff060eb16cccc059053b043852e461ee383a2816bc366641e445715a9034994",
+    "token-strip-comparison.png": "2902bdcc33d33a05bf4740cfc90aff98aed10cd402274ed6b654ee03d76f2077"
+  },
+  "evidenceSHA256": {
+    "docs/MEMSKILL_REFINEMENT_REVIEW_V13.md": "dbc6d9ff9685373c6513b2f7fe765fa723acdb33626ce2e7f3c428925d87dd9b",
+    "docs/MEMSKILL_REFINEMENT.md": "a7d7bb1b6d13c9ba2078bf1c00021be8c3353487e59bbe988fafc4bce3660244",
+    "paperfigure/references/detail-fidelity.md": "1f1af4bdec05cc2a27dd92d17cf33a4a00755bc0d1f970530310005628c1d7ef",
+    "paperfigure/examples/agentic-2026-layout/memskill/refinement/icons.mjs": "ee22279bf0e75e3991918d8360fa6f5b43080918c7bf0f4ac0274d15fbcf0496",
+    "paperfigure/examples/agentic-2026-layout/memskill/refinement/refine.mjs": "5e8ac6326504e43fa85db02a200edbf80e05212f317579a6e9b998fc6d95a745",
+    "paperfigure/examples/agentic-2026-layout/memskill/refinement/verify.mjs": "ccc4f987d949784ad62579d335e324a14514ad70a14e0d69bbc0d17339d5ae6a",
+    "paperfigure/scripts/layout-export.mjs": "9b9fb36326e0dd4e89d49f33768146096b35e3c2f12b9f3e09617b1d1b8117fc",
+    "paperfigure/scripts/layout-inspect.mjs": "ba6f9d37fb68cff70730e296ca864be4e5be8255cc14584daf1a49c1f76bcb77",
+    "paperfigure/scripts/layout-native-audit.mjs": "c57ba12c3204932fd47e31e9077bdec2dfd0db5f68474c6e2ac508f6b34a88bb",
+    "paperfigure/scripts/render-layout.py": "09605bd1b353a78afba65f0af0a94a0d1b99a76a800a5a33dcf41020ed4a22c3",
+    "paperfigure/scripts/icon-detail-check.mjs": "d48ee611bb6066936bb7e0dd6a06b7bf3d9474a19bcdccba1179ba523561edfc"
+  },
+  "limits": [
+    "Smooth source-guided icons and approximate native math/font recovery.",
+    "User-authorized flat transfer colors; original source gradients omitted.",
+    "No interactive Microsoft PowerPoint editing or automatic GUI-reroute test."
+  ]
+}

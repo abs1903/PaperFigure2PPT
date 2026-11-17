@@ -1,0 +1,38 @@
+{
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/voyager_paper_audit"
+  },
+  "verdict": "revise",
+  "checks": {
+    "referenceComparison": "pass",
+    "semanticFidelity": "revise",
+    "composition": "pass",
+    "modalityIdentity": "pass",
+    "typography": "pass",
+    "phaseClarity": "pass",
+    "editability": "pass",
+    "noTitleOrFooter": "pass",
+    "officeRender": "pass"
+  },
+  "reference": {
+    "path": "../../blip2-opt-code/output-solid/figure.png",
+    "sha256": "5af776269bdc0c4592c312c12f9c3dee60a99ce1bf08f7450a91081e6eb43fd9"
+  },
+  "artifacts": {
+    "spec.json": "cbbda32af669ad520093e63d29139c183b81dc8b47cc5466065a7144f269e1dd",
+    "figure.svg": "59ba99de73ff1fed1fa9d12034cedad2559a46d4a18762e3c5d556f4593ba98f",
+    "figure.pptx": "a9ef83c693b2c9bf8e6bf08880baf5bfe35656c0e65e3bda9eb06ea188a437c4",
+    "figure.pdf": "9030df0ca3541ad060e56508bfabbb5af95f1aa5222f8959d92667ec56191800",
+    "figure.png": "c721f73cb167996fd3eaa5cb7bfe716bf75a185330054a62c4b0213bb4c34340",
+    "rendered-pptx/figure.png": "1d9a044de022a92456c60b51daf89e8f569cdb967e7108219c75d6865ac88f1a",
+    "rendered-pdf/figure.png": "cb798462dd56822d9b8f1ff0a55b16d6bc4bc6e292a3dc011fe1a95485f27edb"
+  },
+  "notes": [
+    "Inspected preview, independent LibreOffice PowerPoint render, and PDF render; inspected hashes match initial-figure-freeze.json. No author diagram was inspected.",
+    "Revise required: curriculum detail says 'State + task history' but omits explicit 'latest events'. With the world-to-curriculum wire intentionally absent, that local detail is insufficiently specific for a code-verified input.",
+    "The Query arrow is accepted as a declared helper/orchestration abstraction, not an extra LLM. The critic-to-library route is accepted as a success-gated registration abstraction; neither depicts gradient training.",
+    "Reference comparison is scoped to the design contract's flat-fill, serif, semantic-color, controlled-line treatment; topology is intentionally different.",
+    "All review criteria besides semantic fidelity pass for the inspected frozen artifacts. Any artifact change invalidates this review."
+  ]
+}

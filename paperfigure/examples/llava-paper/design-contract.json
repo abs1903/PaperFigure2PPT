@@ -1,0 +1,26 @@
+{
+  "reference": "design-studies/c.png",
+  "referenceSha256": "d236bd07bb58295d0740e11e46ffcc08e4261a3acd0ddbd50412f96c0ee67cf9",
+  "userDirection": "Preserve A visual finish, remove detached Stage 1/Stage 2 panels, realign modality lanes. User explicitly accepted layout C.",
+  "layoutStatus": "user-accepted",
+  "scope": "Architecture-only, paper-grounded source summary. Training schedule stays in METHOD.md.",
+  "preserve": [
+    "C positions, dimensions and whitespace",
+    "C photo crop",
+    "slate-blue/teal/amber palette and native gradients",
+    "serif math variables with native subscripts",
+    "two aligned input lanes and direct response endpoint"
+  ],
+  "safeCorrections": [
+    "label W as learned linear",
+    "label language response",
+    "replace unsourced pseudo-layer filler with autoregressive/conditional notation"
+  ],
+  "invariants": [
+    "No new learned fusion module",
+    "No Q-Former or MLP projector",
+    "No fixed token or layer counts",
+    "No figure title, footer or fine print"
+  ],
+  "finalQualityStatus": "See output/visual-review.json; layout approval is not human approval of every native output."
+}

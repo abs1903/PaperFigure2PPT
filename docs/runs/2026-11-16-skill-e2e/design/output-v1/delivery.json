@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "mode": "design",
+  "mechanicalPassed": true,
+  "validation": {
+    "mechanical": {
+      "status": "pass",
+      "reasons": []
+    },
+    "render": {
+      "status": "pass",
+      "reasons": []
+    },
+    "review": {
+      "status": "fail",
+      "reasons": [
+        "Independent reviewer has not accepted this candidate",
+        "Unpassed review criterion: composition",
+        "Unpassed review criterion: typography"
+      ]
+    }
+  },
+  "deliveryReady": false,
+  "visualAcceptance": "needs-revision",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/voyager_e2e_review"
+  },
+  "reasons": [
+    "Independent reviewer has not accepted this candidate",
+    "Unpassed review criterion: composition",
+    "Unpassed review criterion: typography"
+  ],
+  "scope": "Source-grounded design and declared reference comparison; not venue certification or user approval"
+}

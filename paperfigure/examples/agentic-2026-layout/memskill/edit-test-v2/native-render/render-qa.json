@@ -1,0 +1,508 @@
+{
+  "engine": "LibreOffice -> PDF -> MuPDF",
+  "pptxSHA256": "135448719436cea4d9ac7fad63b26ddc4fc2df18454a648b5c40d8c4446df848",
+  "pdfSHA256": "4cf71681a64ada9b0b1a3a3139de7720f30c5a02f237e76ff035c9a60cdbce2b",
+  "requestedFonts": [
+    "Arial",
+    "Comic Sans MS",
+    "Times New Roman",
+    "Verdana",
+    "Verdana-Bold"
+  ],
+  "renderedFonts": [
+    "ABAAAA+ComicSansMS-Bold",
+    "BAAAAA+Arial-BoldMT",
+    "BBAAAA+ComicSansMS",
+    "CAAAAA+Arial-BoldMT",
+    "DAAAAA+ComicSansMS-Bold",
+    "EAAAAA+ComicSansMS",
+    "FAAAAA+Arial-BoldMT",
+    "GAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "HAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "IAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "JAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "KAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "LAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "MAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "NAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "OAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "PAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "QAAAAA+ComicSansMS-Bold",
+    "RAAAAA+ComicSansMS",
+    "SAAAAA+ComicSansMS",
+    "TAAAAA+Arial-BoldMT",
+    "UAAAAA+ComicSansMS-Bold",
+    "VAAAAA+HiraginoSans-W7",
+    "WAAAAA+Verdana",
+    "XAAAAA+HiraginoSans-W7",
+    "YAAAAA+ArialMT",
+    "ZAAAAA+ComicSansMS"
+  ],
+  "fontScope": "Conversion-process-only fontconfig; no fonts installed globally",
+  "errors": [],
+  "limits": [
+    "No interactive Microsoft PowerPoint editing test.",
+    "Port attachment and font appearance are verified through this independent rendering engine."
+  ],
+  "textChecks": [
+    {
+      "id": "label-block:retriever",
+      "ink": [
+        638,
+        333,
+        125,
+        22
+      ],
+      "container": [
+        611,
+        309,
+        179,
+        71
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.0,
+      "dy": -0.5
+    },
+    {
+      "id": "label-block:state-skill-encoder",
+      "ink": [
+        907,
+        337,
+        129,
+        50
+      ],
+      "container": [
+        885,
+        328,
+        174,
+        69
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": -0.5,
+      "dy": -0.5
+    },
+    {
+      "id": "label-block:skill-selection",
+      "ink": [
+        909,
+        416,
+        125,
+        49
+      ],
+      "container": [
+        885,
+        407,
+        174,
+        69
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": -0.5,
+      "dy": -1.0
+    },
+    {
+      "id": "label-block:executor",
+      "ink": [
+        912,
+        550,
+        119,
+        59
+      ],
+      "container": [
+        876,
+        536,
+        190,
+        84
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": 0.5,
+      "dy": 1.5
+    },
+    {
+      "id": "label-block:reset-event",
+      "ink": [
+        387,
+        432,
+        215,
+        27
+      ],
+      "container": [
+        384,
+        426,
+        220,
+        34
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.5,
+      "dy": 2.5
+    },
+    {
+      "id": "label-block:evaluation",
+      "ink": [
+        379,
+        688,
+        352,
+        30
+      ],
+      "container": [
+        367,
+        675,
+        375,
+        50
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.5,
+      "dy": 3.0
+    },
+    {
+      "id": "label-block:task-reward",
+      "ink": [
+        895,
+        700,
+        164,
+        23
+      ],
+      "container": [
+        882,
+        687,
+        190,
+        50
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.0,
+      "dy": -0.5
+    },
+    {
+      "id": "label-block:refine-skills",
+      "ink": [
+        1649,
+        153,
+        242,
+        54
+      ],
+      "container": [
+        1643,
+        138,
+        254,
+        80
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": 0.0,
+      "dy": 2.0
+    },
+    {
+      "id": "label-block:analyze-failures",
+      "ink": [
+        1676,
+        283,
+        189,
+        27
+      ],
+      "container": [
+        1644.2595,
+        267.9744,
+        252.8184,
+        52.9419
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": -0.16869999999994434,
+      "dy": 2.054649999999981
+    },
+    {
+      "id": "label-block:aggregate-cases",
+      "ink": [
+        1661,
+        424,
+        212,
+        49
+      ],
+      "container": [
+        1640.9297,
+        411.2171,
+        252.8184,
+        73.8398
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": -0.3388999999999669,
+      "dy": 0.36299999999999955
+    },
+    {
+      "id": "label-block:difficulty-filtering",
+      "ink": [
+        1660,
+        564,
+        221,
+        27
+      ],
+      "container": [
+        1643,
+        549,
+        254,
+        52
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.5,
+      "dy": 2.5
+    },
+    {
+      "id": "label-block:cluster-cases",
+      "ink": [
+        1658,
+        669,
+        223,
+        21
+      ],
+      "container": [
+        1643,
+        654,
+        254,
+        52
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": -0.5,
+      "dy": -0.5
+    }
+  ],
+  "edgeChecks": [
+    {
+      "id": "trace-selection-a",
+      "coverage": 1.0,
+      "samples": 12,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "trace-selection-b",
+      "coverage": 1.0,
+      "samples": 12,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "segmentation",
+      "coverage": 1.0,
+      "samples": 37,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "span-step-1",
+      "coverage": 1.0,
+      "samples": 10,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "span-step-2",
+      "coverage": 1.0,
+      "samples": 10,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "span-step-3",
+      "coverage": 1.0,
+      "samples": 10,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "span-step-4",
+      "coverage": 1.0,
+      "samples": 10,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "current-to-retriever",
+      "coverage": 1.0,
+      "samples": 25,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "current-to-controller",
+      "coverage": 1.0,
+      "samples": 96,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "retrieved-to-controller",
+      "coverage": 1.0,
+      "samples": 19,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "retrieve-memory",
+      "coverage": 1.0,
+      "samples": 29,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "memory-query",
+      "coverage": 1.0,
+      "samples": 29,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "selected-skills-to-executor",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "memory-update",
+      "coverage": 1.0,
+      "samples": 30,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "evaluate-1",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "evaluate-2",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "evaluate-3",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "evaluate-4",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "evaluation-to-reward",
+      "coverage": 1.0,
+      "samples": 35,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "optimize-controller",
+      "coverage": 1.0,
+      "samples": 57,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "record-failures",
+      "coverage": 1.0,
+      "samples": 155,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "read-hard-cases-535",
+      "coverage": 1.0,
+      "samples": 7,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "read-hard-cases-775",
+      "coverage": 1.0,
+      "samples": 7,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "evolve-skills-165",
+      "coverage": 1.0,
+      "samples": 7,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "evolve-skills-345",
+      "coverage": 1.0,
+      "samples": 7,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "read-skills-286",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "read-skills-450",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "cluster-to-filter",
+      "coverage": 1.0,
+      "samples": 12,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "cluster-to-filter-b",
+      "coverage": 1.0,
+      "samples": 12,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "filter-to-aggregate",
+      "coverage": 1.0,
+      "samples": 14,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "filter-to-aggregate-b",
+      "coverage": 1.0,
+      "samples": 14,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "aggregate-to-analysis",
+      "coverage": 1.0,
+      "samples": 39,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "aggregate-to-analysis-b",
+      "coverage": 1.0,
+      "samples": 39,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "analysis-to-refine",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "analysis-to-refine-b",
+      "coverage": 1.0,
+      "samples": 11,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "closed-loop",
+      "coverage": 1.0,
+      "samples": 229,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "retrieved-memory-notation-link",
+      "coverage": 1.0,
+      "samples": 14,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    },
+    {
+      "id": "reset-every-trace",
+      "coverage": 1.0,
+      "samples": 13,
+      "limits": "Shaft coverage detects route drift; XML separately verifies head/tail/dash/style. Near short arrowheads coverage may be unmeasurable."
+    }
+  ],
+  "passed": true
+}

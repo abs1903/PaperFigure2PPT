@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2240" height="960" viewBox="0 0 2240 960" lang="en"><title>Reflexion: textual feedback across repeated attempts</title><metadata>{&quot;specHash&quot;:&quot;73b13e8bc5104c1fff9cc83086c5321ba97847b3e845e01833fcaf2c4a238cca&quot;,&quot;semanticHash&quot;:&quot;cb3a5cd89e26acee7dcbb661dad7870cdaf23adbc7cbc636041505dad8ce7017&quot;}</metadata><rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#15354A" stroke-width="1.5"/></marker></defs>
+<defs></defs>
+<path id="edge:e1" data-from="question" data-to="actor" d="M 325 355 L 440 355" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e2" data-from="actor" data-to="tools" d="M 820 355 L 990 355" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e3" data-from="tools" data-to="actor" d="M 1165 240 L 1165 170 L 630 170 L 630 240" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e4" data-from="actor" data-to="check" d="M 744 470 L 744 540 L 1642.5 540 L 1642.5 470" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e5" data-from="check" data-to="reflect" d="M 1867.5 470 L 1867.5 650" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<path id="edge:e6" data-from="actor" data-to="reflect" d="M 535 470 L 535 600 L 1450 600 L 1450 750 L 1530 750" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e7" data-from="reflect" data-to="memory" d="M 1530 750 L 1350 750" fill="none" stroke="#15354A" stroke-width="2.8"  marker-end="url(#arrow0)"/>
+<path id="edge:e8" data-from="memory" data-to="actor" d="M 900 750 L 370 750 L 370 410 L 440 410" fill="none" stroke="#15354A" stroke-width="2.8" stroke-dasharray="8 5" marker-end="url(#arrow0)"/>
+<rect id="node:question" x="65" y="295" width="260" height="120" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<rect id="node:actor" x="440" y="240" width="380" height="230" rx="19" fill="#E8F0F7" stroke="#59778E" stroke-width="2"/>
+<rect id="node:tools" x="990" y="240" width="350" height="230" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<rect id="node:check" x="1530" y="240" width="450" height="230" rx="19" fill="#FAFBFC" stroke="#839099" stroke-width="2"/>
+<rect id="node:reflect" x="1530" y="650" width="450" height="200" rx="19" fill="#E8F0F7" stroke="#59778E" stroke-width="2"/>
+<rect id="node:memory" x="900" y="650" width="450" height="200" rx="19" fill="#E8F3EF" stroke="#507E71" stroke-width="2"/>
+<text id="text:question:label:0" x="195" y="359.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Question</text>
+<text id="text:actor:label:0" x="630" y="300.8" font-family="Times New Roman, Helvetica, sans-serif" font-size="40" font-weight="bold"  fill="#172B42" text-anchor="middle">ReAct actor</text>
+<text id="text:actor:detail:0" x="630" y="418.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Thought + action loop</text>
+<text id="text:tools:label:0" x="1165" y="298.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Wikipedia tools</text>
+<text id="text:tools:detail:0" x="1165" y="418.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Search / Lookup</text>
+<text id="text:check:label:0" x="1755" y="298.04" font-family="Times New Roman, Helvetica, sans-serif" font-size="37" font-weight="bold"  fill="#172B42" text-anchor="middle">Exact-match check</text>
+<text id="text:check:detail:0" x="1755" y="418.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Correct: stop</text>
+<text id="text:reflect:label:0" x="1755" y="708.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Self-reflection LM</text>
+<text id="text:reflect:detail:0" x="1755" y="807.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Truncated prior trace</text>
+<text id="text:memory:label:0" x="1125" y="708.96" font-family="Times New Roman, Helvetica, sans-serif" font-size="38" font-weight="bold"  fill="#172B42" text-anchor="middle">Reflection memory</text>
+<text id="text:memory:detail:0" x="1125" y="807.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Same agent / same question</text>
+<text id="edge-label:e2" x="924.336" y="326.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Tool action</text>
+<text id="edge-label:e3" x="924.336" y="137.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Observation</text>
+<text id="edge-label:e4" x="1179.808" y="513.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Finish / halt</text>
+<text id="edge-label:e5" x="1750.24" y="582.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Incorrect</text>
+<text id="edge-label:e6" x="1111.872" y="633.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Prior trace</text>
+<text id="edge-label:e7" x="1437.152" y="720.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Append</text>
+<text id="edge-label:e8" x="630.352" y="829.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#526477" text-anchor="middle">Next run(): fresh attempt</text>
+<text id="art:gate-key" x="1755" y="358.44" font-family="Times New Roman, Helvetica, sans-serif" font-size="32" font-weight="normal"  fill="#15354A" text-anchor="middle">Answer versus reference key</text>
+</svg>

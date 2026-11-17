@@ -1,0 +1,133 @@
+{
+  "version": "mae-case-1",
+  "scope": "CVPR2022 paper pre-training architecture with 75% masking example; pinned official implementation corroborates restoration and masked-only MSE. A 4x4 teaching grid depicts 16 image-patch tokens, four visible and twelve removed; class token is not counted. No training, inference evaluation or performance measurement.",
+  "takeaway": "High-ratio random masking lets a large encoder process only visible patches; learned mask tokens enter afterward, and a lightweight decoder learns pixel reconstruction with masked-only supervision.",
+  "contributionHierarchy": [
+    {
+      "id": "asymmetric-load",
+      "claim": "Encode only the visible patch subset; reconstruct the full image with a lightweight decoder",
+      "kind": "Coupled architectural design, not a new transformer primitive",
+      "placement": "main",
+      "blocks": [
+        "encode",
+        "restore",
+        "decode"
+      ],
+      "evidence": [
+        {
+          "source": "paper",
+          "quote": "Masked patches are removed; no mask tokens are used."
+        },
+        {
+          "source": "paper",
+          "quote": "the full set of tokens are only processed by the lightweight decoder"
+        }
+      ],
+      "visualCue": "Four visible patch tokens enter a visibly substantial encoder; twelve gray learned mask tokens join the encoded visible tokens only afterward, making a full 16-slot decoder input. Decoder is visually smaller than encoder.",
+      "prominence": "Primary visual distinction: sparse encoder versus full-sequence lightweight decoder"
+    },
+    {
+      "id": "high-mask",
+      "claim": "High-ratio random masking creates a nontrivial reconstruction task",
+      "kind": "Key design finding coupled with the architecture; 75% is the illustrative/default setting",
+      "placement": "main",
+      "blocks": [
+        "input",
+        "encode"
+      ],
+      "evidence": [
+        {
+          "source": "paper",
+          "quote": "masking a high proportion of the input image, e.g., 75%"
+        },
+        {
+          "source": "code",
+          "quote": "def forward(self, imgs, mask_ratio=0.75):"
+        }
+      ],
+      "visualCue": "A 4x4 source-patch teaching grid becomes exactly four visible image-patch tokens. Clearly label Mask 75% and keep the empty/removed patches out of the encoder.",
+      "prominence": "Prominent paired claim with the asymmetric token load"
+    },
+    {
+      "id": "masked-supervision",
+      "claim": "Learn pixel reconstruction using only masked positions in the MSE",
+      "kind": "Supporting self-supervision objective, not a separately novel loss",
+      "placement": "support",
+      "blocks": [
+        "objective"
+      ],
+      "evidence": [
+        {
+          "source": "code",
+          "quote": "loss = (loss * mask).sum() / mask.sum()"
+        }
+      ],
+      "visualCue": "Compact original-pixel target and prediction comparison; the same binary mask selects the twelve removed positions for MSE. No reconstruction correctness tick.",
+      "prominence": "Small supervision inset, subordinate to the architecture"
+    },
+    {
+      "id": "recognition",
+      "claim": "Use the encoder without the reconstruction decoder for downstream recognition",
+      "kind": "Downstream evaluation/use, outside this pre-training illustration",
+      "placement": "outside",
+      "blocks": [],
+      "evidence": [
+        {
+          "source": "paper",
+          "quote": "only the encoder is used to produce image representations for recognition"
+        }
+      ],
+      "visualCue": "Keep this stage boundary in the companion record; do not draw an inference decoder path.",
+      "prominence": "Not drawn"
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "sparse-full-columns",
+      "composition": "White landscape approximately 1.8:1. Two aligned visual regions: sparse visible-only encoding on the left and restored full-sequence lightweight decoding on the right, linked by the four encoded-visible tokens. Source image-patch grid is upper left, compact masked-only objective is a low supporting strip. Compare token LOAD via four blue encoder tokens versus a 4x4 decoder grid with four blue and twelve gray tokens. No numbered steps, card grid, background bands, oversized overall title or borrowed photographic artwork.",
+      "mechanism": "Alignment and explicit token counts expose encoder/decoder asymmetry. A learned gray-mask-token inlet joins only after the encoder, with Restore order marking the full 4x4 decoder input. A gold dashed mask-metadata path provides restoration indices and the masked-only loss selector; target pixel reference is a thin separate supervision path, never input to the encoder."
+    },
+    {
+      "id": "horizontal-bottleneck",
+      "composition": "White landscape approximately 2:1. A continuous left-to-right sparse bottleneck: source patch grid, exactly four visible tokens, large Encoder, exactly four encoded-visible tokens, a post-encoder mask-token merge and full restored 4x4 token grid, then small Lightweight decoder and a 4x4 pixel prediction. The twelve learned mask tokens enter from a short upper branch. Pixel target and masked-only loss occupy a compact lower inset. No two-column panels, numbered card pipeline, background bands or photo assets.",
+      "mechanism": "The narrow visible-token lane through the expensive encoder expands ONLY afterward into the full decoder sequence, making the architectural distinction tangible. Small dashed metadata links carry restoration indices and the same binary mask; original pixel targets feed only supervision. All literal patch tokens and predicted-grid glyphs are schematic, not observed model outputs."
+    }
+  ],
+  "informationSelection": [
+    {
+      "item": "Visible-only encoder and high masking ratio",
+      "placement": "main",
+      "source": "Paper Abstract/Section3; official encoder/random_masking",
+      "owner": "input/encode",
+      "representation": "Explicit 16→4 patch-token selection and encoder excluding mask tokens"
+    },
+    {
+      "item": "Post-encoder learned mask insertion and positional restoration",
+      "placement": "main",
+      "source": "Paper Section3; official forward_decoder",
+      "owner": "restore",
+      "representation": "Learned gray tokens enter after encoder; 4 blue +12 gray slots restored in original positions"
+    },
+    {
+      "item": "Full prediction, original target, masked-only MSE",
+      "placement": "support",
+      "source": "Paper Section3; official forward_loss",
+      "owner": "objective",
+      "representation": "Compact supervision inset with explicit same-mask selector"
+    },
+    {
+      "item": "Class token, detailed embedding layers, target normalization option, optimizer and downstream scores",
+      "placement": "record-only",
+      "source": "Pinned implementation and paper",
+      "owner": "companion record",
+      "representation": "Omit without changing patch-token counts or implying a frozen encoder"
+    }
+  ],
+  "review": {
+    "sourceAudit": "source-audit.md",
+    "planReview": "source-plan-review.md"
+  },
+  "notes": [
+    "This run is author-informed; the author Figure1 was opened before design. Fresh image-only interpretation will use isolated context and neutral file paths, without this plan."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "reader_identity": "/root/image_first_read_02",
+  "isolation": {
+    "fork_turns": "none",
+    "method": "pixel-only first reading",
+    "excluded": [
+      "source paper",
+      "specification or brief",
+      "plan or prior review",
+      "parent conversation content",
+      "other project files",
+      "web/search",
+      "metadata beyond dimensions and hashes"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "candidate-a.png",
+      "dimensions_px": [1684, 934],
+      "sha256": "1924ee246390da207d959b61a0ad3d5c53f310747ffbbfb7fa8054edb493f376"
+    },
+    {
+      "path": "candidate-b.png",
+      "dimensions_px": [1774, 887],
+      "sha256": "fe548d6e60d42d21b44870ec72a09fb87422b5b3e19fe5d2d29e3f5fb657fb8b"
+    },
+    {
+      "path": "candidate-a-paper-width.png",
+      "dimensions_px": [672, 373],
+      "sha256": "4bb9a576f43c4b6f261f8bcbfee5b4d0e3fe408ee53d917931460efdc48aa29e",
+      "diagnostic": "stated intended paper width: 7 inches"
+    },
+    {
+      "path": "candidate-b-paper-width.png",
+      "dimensions_px": [672, 336],
+      "sha256": "cc6bf2d7eca4905c2293e434ad504ed649985677112733a5f9dd7a0d584cc81e",
+      "diagnostic": "stated intended paper width: 7 inches"
+    }
+  ],
+  "candidate_a": {
+    "apparent_claim": "A masked-patch reconstruction workflow encodes visible patches, restores them to original order with learned mask tokens, decodes pixels, and applies MSE only to masked patches.",
+    "primary_regions": ["upper forward pipeline", "full-width lower masked-patch MSE panel"],
+    "supporting_mechanisms": ["Mask 75%", "four visible versus sixteen original patch cells", "learned mask tokens x12", "restore indices", "binary mask", "prediction-to-loss and target-to-loss paths"],
+    "ambiguities": ["restore-order algorithm", "mask/index representations", "loss reduction", "training context and downstream use"],
+    "paper_width_reading": "All major labels readable; smallest dashed-control details are least legible.",
+    "prior_familiarity": "Resembles a masked-autoencoder/masked-image-modeling pattern, unverified from pixels alone."
+  },
+  "candidate_b": {
+    "apparent_claim": "The same broad masked-patch reconstruction workflow is shown, with a compact left-to-right forward path and a lower-right masked-only MSE panel.",
+    "primary_regions": ["continuous upper forward pipeline"],
+    "supporting_mechanisms": ["Mask 75%", "learned mask tokens x12", "restore indices", "binary mask", "original-target and predicted-output paths into MSE"],
+    "ambiguities": ["restore-order algorithm", "mask/index representations", "loss reduction", "exact role of yellow/white selected-location grid", "training context and downstream use"],
+    "paper_width_reading": "Upper path readable; compact loss-panel labels and white selection outlines are less legible.",
+    "prior_familiarity": "Resembles a generic masked-autoencoder/masked-image reconstruction layout, unverified from pixels alone."
+  },
+  "comparison": {
+    "shared_understanding": "Both communicate masking, visible-patch encoding, reordering with learned missing tokens, lightweight pixel decoding, and a masked-only reconstruction objective.",
+    "candidate_a": "Better foregrounds and preserves readability of the masked-only objective.",
+    "candidate_b": "Better foregrounds a single scanable end-to-end forward pipeline and uses more recognisably image-like patch artwork.",
+    "not_inferred": ["scientific novelty", "provenance", "factual correctness", "empirical performance", "implementation correctness"]
+  },
+  "limitations": "Interpretation is confined to visible pixels and labels; diagrams cannot establish omitted operations or real-world validity."
+}

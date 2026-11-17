@@ -1,0 +1,441 @@
+{
+  "version": "1.0",
+  "title": "Agentless: contribution-oriented method illustration",
+  "subtitle": "",
+  "sources": [
+    {
+      "id": "paper-method",
+      "kind": "paper",
+      "locator": "arXiv:2407.01489v1, Section 2, PDF pp.3-5; paper-method-source.txt; normalized whitespace and joined PDF line-broken words",
+      "text": "2 A GENTLESS Approach Figure 1 shows the overview of A GENTLESS, consisting of two phases: localization and repair. We first take in the issue description and the existing project codebase as input. Then, we begin our hierarchical localization process by 1 turning the project codebase into a tree-like structure format that demonstrates the relative location of each file in the project. Next, 2 using this repository structure format along with the original issue description, we ask the LLM to localize and rank the top N most suspicious files that need editing to solve the issue. However, not all contents in each file need to be modified. As such, 3 we provide a skeleton for each file (i.e., a list of declaration headers of the classes and functions) and ask the LLM to output a specific list of classes and functions that we should examine more closely to fix the bug. We then provide the complete code content of the previous locations and 4 ask the LLM to finalize a smaller set of edit locations (i.e., classes, functions, or even 3 [PDF page 4] specific lines). For the repair phase, we provide the code snippets at these edit locations together with the issue description and 5 ask the LLM to sample multiple patches to solve the issue. Next, 6 we perform a simple filtering to remove any patches with syntax errors and regression test failures, and use majority voting to rank the remaining patches. Finally, 7 A GENTLESS selects the top-ranked patch as the final patch for submission. We now describe the steps in each of A GENTLESS\u2019s two phases in more detail. 2.1 Localization To fix or implement a new feature, the first step is to obtain the locations in the source code, as without the correct locations, it can be impossible to provide the right edits. The difficulty lies in the fact that there could be hundreds of files with thousands of lines of code each in a repository, whereas the correct locations to edit are only a few selected lines or functions. A GENTLESS addresses this by using a simple three-step hierarchical localization process: 1) localize to selected files; 2) localize each selected files into relevant classes, functions, and variables; 3) localize to code edit locations. Localize to suspicious files. First, A GENTLESS localizes the possible locations to specific suspicious files. Instead of providing the complete code snippet for each file in the repository, A GENTLESS constructs a succinct representation of the repository\u2019s file and directory structure. We refer to this as the repository structure format, which begins with the root folder of the repository and organizes code files or folder names. Files and folders at the same directory level are aligned vertically, and files/folders in sub-directories are indented. We recursively traverse the entire repository to obtain the repository structure format, which will be used as input for the LLM. The repository structure format provides the necessary file paths alongside the neighboring file names to maintain organizational information in the original codebase. A GENTLESS then inputs the processed repository structure format along with the original issue description to an LLM and requests it to identify a list of the top N suspicious files in the repository that need further inspection or modification to resolve the issue. Localize to related elements. After obtaining the list of suspicious files to edit to solve the issue, A GENTLESS then moves on to the second part of the local- class UUIDField(CharField): default_error_messages = { ization process: localize to related elements within } 'invalid': _('Enter a valid UUID.'), django/forms/fields.py the suspicious files. Directly providing the complete def prepare_value(self, value): ... context of all files can be large. As such, A GENTLESS def to_python(self, value): ... builds a compressed format of each file that contains class JSONField(CharField): default_error_messages = { the list of class, function, or variable declarations. We 'invalid': _('Enter a valid JSON.'), refer to this format as skeleton format, with an ex- } widget = Textarea ample shown in Figure 2. In the skeleton format, we ... def ._init._(self, encoder=None, decoder=None): provide only the headers of the classes and functions def to_python(self, value): # Process JSON path from the right-hand side in the file. For classes, we further include any class ... def slugify(value, allow_unicode=False): fields and methods (signatures only). Additionally, we also keep comments in the class and module level to provide further information. Compared to provid- Figure 2: Skeleton format ing the entire file context to the model, the skeleton format is a much more concise representation, especially when the file contains thousands of lines, making it impractical/costly to process all at once with existing LLMs. We provide the skeleton of all suspicious files to the LLM at one time in a single prompt, enabling the model to comprehensively analyze the pertinent information and decide the most relevant elements. Using this input, we ask the LLM to provide a list of related classes and functions that one should examine to fix the provided issue. Localize to edit locations. The previous localization step provided us with a list of related code elements. We then directly provide the code content from these elements to the model and ask it to localize to specific edit locations. Compared to using the entire file content, the input context we provide here is much smaller. With this input, we then ask the LLM to identify the final set of edit locations, specified by line numbers, functions, or classes. Our 4 [PDF page 5] simple hierarchical localization process allows A GENTLESS to select a set of relevant code snippets as edit locations to perform repair. 2.2 Repair In the repair stage, the goal is to produce the correct patch to solve the issue. FollowGenerate Issue: ing existing work on LLM-based program from flask import Flask Search/Replace Lambdify misinterprets some matrix expressions Using lambdify on an ... app = Flask( name ) Diff to fix issue repair [31, 48, 27], we first utilize the iden- @app.route(\"/\") tified edit locations and construct a con- <<<<<<< SEARCH SEARCH Original File <<<<<<< text window of code snippets to provide from flask from flask import import Flask Flask ======= to the LLM for repair. For example, if the import import mathmath identified location was a class from line 40 from from flask flask import import Flask Flask >>>>>>> >>>>>>> REPLACE REPLACE + import math to 78, we would produce a context win- from flask import Flask Search/Replace Diff app = Flask( name ) Apply diff to dow of [40 - x, 78 + x] where x denotes @app.route(\"/\") original file to the context window size. The intuition be- perform edit Edited File hind adding the additional code before and after the identified location is to provide the LLM with relevant contextual information Figure 3: Search/Replace edit format for better program repair [57]. If multiple edit locations are identified, we would concatenate these context windows together separated with \u201c...\u201d to indicate missing context in the middle. Patch format. Using the code snippets, we then ask the LLM to generate patches to solve the issue. However, instead of directly producing the entire code snippet to replace the entire given context, A GENTLESS asks the LLM to generate a Search/Replace edit [21]: a simple diff format to efficiently create each patch. Figure 3 shows an example of the Search/Replace format containing two main parts: 1) search: the original code snippet we want to replace and 2) replace: the replacement code snippet we want to replace with. To apply the generated Search/Replace diff to the original file, we can simply match the search code snippet and replace it with the replacement. This simple diff format avoids generating the complete code and instead focuses on producing small edits, which are not only more cost-efficient, but also more reliable and accurate (less chances for hallucination). Filtering and patch selection. For each issue, A GENTLESS uses the LLM to generate multiple potential patches (starting with greedy and then sample multiple patches with higher temperature). We also apply traditional software engineering technique of regression testing [55] to run the existing tests in the repository on all the generated patches. Any patches which failed the existing tests can be filtered out as they incorrectly change the correct behavior of previous code. Note, our implementation of this regression test filtering step follows prior work also evaluated on the same benchmark [21, 17]. For the remaining patches, A GENTLESS applies a re-ranking approach using majority voting: We first normalize each patch to ignore surface-level differences (e.g., extra spaces, newlines, and comments), and then select the patch with the highest number of occurrences as the final patch for submission. More specifically, to standardize the patch, we begin by parsing both the old and new code (after applying the patch) into abstract syntax trees. Next, we unparse the trees into a canonical source code format with docstrings removed. Finally, we compute the textual diff between the standardized old and new code to get the normalized patch. A GENTLESS solves repository-level issues using a simple step-by-step procedure. We note here that none of the techniques used by A GENTLESS in isolation are revolutionary, but instead A GENTLESS smartly combines existing techniques to construct an easy-to-understand approach. Different from prior autonomous agent-based tools that involve complex interactions with the environment, A GENTLESS uses a simple two phase approach to first localize and then repair the bug without relying on any agents for decision-making. By conducting localization in a hierarchical manner, A GENTLESS can efficiently and effectively compute the fine-grained locations for editing. A GENTLESS then performs repair by sampling multiple patches using a simple diff format. We filter out any patches with syntax and regression tests errors, and finally select the patch for submission using classic majority voting. 5 "
+    },
+    {
+      "id": "paper-intro",
+      "kind": "paper",
+      "locator": "arXiv:2407.01489v1 abstract and introduction, PDF pp.1-2; paper-introduction-source.txt; whitespace/line-break normalization",
+      "text": " A GENTLESS : Demystifying LLM-based Software Engineering Agents Chunqiu Steven Xia\u2217 Yinlin Deng\u2217 Soren Dunn Lingming Zhang University of Illinois Urbana-Champaign {chunqiu2, yinlind2, sorend2, lingming}@illinois.edu Abstract arXiv:2407.01489v1 [cs.SE] 1 Jul 2024 Recent advancements in large language models (LLMs) have significantly advanced the automation of software development tasks, including code synthesis, program repair, and test generation. More recently, researchers and industry practitioners have developed various autonomous LLM agents to perform end-to-end software development tasks. These agents are equipped with the ability to use tools, run commands, observe feedback from the environment, and plan for future actions. However, the complexity of these agent-based approaches, together with the limited abilities of current LLMs, raises the following question: Do we really have to employ complex autonomous software agents? To attempt to answer this question, we build A GENTLESS \u2013 an agentless approach to automatically solve software development problems. Compared to the verbose and complex setup of agentbased approaches, A GENTLESS employs a simplistic two-phase process of localization followed by repair, without letting the LLM decide future actions or operate with complex tools. Our results on the popular SWE-bench Lite benchmark show that surprisingly the simplistic A GENTLESS is able to achieve both the highest performance (27.33%) and lowest cost ($0.34) compared with all existing open-source software agents! Furthermore, we manually classified the problems in SWE-bench Lite and found problems with exact ground truth patch or insufficient/misleading issue descriptions. As such, we construct SWE-bench Lite-S by excluding such problematic issues to perform more rigorous evaluation and comparison. Our work highlights the current overlooked potential of a simple, interpretable technique in autonomous software development. We hope A GENTLESS will help reset the baseline, starting point, and horizon for autonomous software agents, and inspire future work along this crucial direction. We have opensourced A GENTLESS at: https://github.com/OpenAutoCoder/Agentless 1 Introduction Large language models (LLMs) have become the go-to default choice for code generation [18, 14, 34, 54]. State-of-the-art LLMs like GPT-4 [44] and Claude-3.5 [13] have demonstrated their prowess in being able to synthesize code snippets based on given user description. However, compared to the main evaluation setting of simple, self-contained problems, applying LLMs on repository-level software engineering tasks has been understudied. Software engineering tasks like feature addition, program repair, and test generation require an in-depth understanding of not only information within files, which can contain thousands of lines of code, but also repository-level dependencies across files. Recently, to address the gap and evaluate the ability of tools to automatically solve real-world software engineering problems, the popular SWE-bench [28] benchmark has been developed. In SWE-bench, each problem consists of a real-world GitHub issue \u2217 Contributed equally with author ordering decided by Nigiri. 1 description and the corresponding Python repository. The task is to modify the repository to resolve the issue, either fixing a bug or introducing a new feature. Recently, the authors have published a subset of the benchmark \u2013 SWE-bench Lite [11] (300 problems) that performs further filtering and focuses on bug fixing issues. To solve the challenging real-world software development problems from SWE-bench, inspired by the Devin AI Software Engineer [4], there has been a significant body of work from both academia and industry focusing on developing agent-based approaches [65, 21, 61, 17, 41, 15]. While there is not a fixed definition for agent-based approaches, they generally equip LLMs with a set of tools and allow agents to iteratively and autonomously perform actions, observe feedback, and plan future steps. Example tools can include the ability to open/write/create files, search for code lines, run tests, and execute shell commands. In each attempt to solve a problem, agent-based approaches will have multiple turns, where each turn consists of performing an action. Subsequent turns depend on previous actions and the feedback information the agent receives from the environment. At first glance, agent-based approaches appear to be a natural and straightforward way to tackle software development tasks. After all, human developers also perform similar actions and use feedback to plan future steps. However, the disparity between human and current LLM abilities leads to the following limitations of agent-based approaches: \u2022 Complex tool usage/design. To utilize tools, current agent-based approaches apply an abstraction layer between the agent and the environment. Examples are mapping real actions to API calls so that agents can use tools by outputting an API call instruction. However, such abstractions and API call specifications require careful design of input/output formats and can easily lead to incorrect or imprecise tool design/usage, especially for more complex action spaces. Given the iterative nature of agent-based approaches, where current action/plan depends on previous turns, incorrectly or imprecisely defining/using a tool can both reduce performance and incur additional cost in wasted LLM queries. \u2022 Lack of control in decision planning. In addition to using tools, current agent-based approaches also delegates the decision making process to the agents \u2013 deciding when and what action to perform. The agents decide the current action to take based on previous actions taken and the feedback provided by the environment, often with minimal checks to ensure the action taken make sense. Due to the large possible action space and feedback response, it can be extremely easy for autonomous agents to become confused and perform sub-optimal explorations. Furthermore, to solve an issue, an agent can take upwards of 30 or 40 turns which makes it extremely difficult to both understand the decisions made by the agents and also debug the exact turns where the incorrect decision is made. \u2022 Limited ability to self-reflect. Existing agents struggle with the capability to perform self-reflection [43, 24]. That is to say they tend to take all information/feedback and do not know how to filter out or correct irrelevant, incorrect, or misleading information [53, 64]. For example, a common step in the agent-based approach is to reproduce an issue with a minimal test case. However, the reproduced test case may not be always correct or precise. The limited ability to self-reflect means that an incorrect step can be easily amplified and negatively affect all future decisions taken by the agent. In this paper, we advocate that instead of rushing to develop increasingly complex LLM agent-based approaches and tools for software development (which can also be non-trivial to use or replicate due to the fully autonomous setup), we should first take a step back and ask the following introspective question: Do we really have to employ complex autonomous software agents? Our work. We set out to answer this important question by building A GENTLESS \u2013 an agentless approach to automatically solve software development problems. To solve each issue, A GENTLESS follows a simple two phase process: localization and repair. In the localization process, A GENTLESS employs a hierarchical process to first localize the fault to specific files, then to relevant classes or functions, and finally to fine-grained edit locations. To perform repair, A GENTLESS takes the edit locations and generates multiple candidate patches in a simple diff format. A GENTLESS then performs simple filtering to remove any patches that have syntax errors or cannot pass the previous tests in the repository. Finally, A GENTLESS re-ranks all remaining patches and selects one to submit in order 2 "
+    }
+  ],
+  "claims": {
+    "summary": "A fixed, interpretable localization-and-repair design confines LLM work to focused selections and local edits, combining established techniques rather than claiming each as novel.",
+    "innovation": "Paper-level contribution is the deliberate agentless combination: hierarchical localization with concise source representations followed by localized Search/Replace generation and simple selection, instead of autonomous action planning. Individual techniques are not claimed to be new primitives.",
+    "baseline": null,
+    "scope": "Paper-v1 method contribution and its supporting mechanisms, not a configured later code route. Benchmark auditing/Lite-S is a separate paper contribution outside this method illustration. No benchmark execution or correctness guarantee."
+  },
+  "assumptions": [
+    "Class/function fragments derive from the paper Figure 2 skeleton example and illustrate representation only; no specific issue is asserted to be solved.",
+    "Paper prose explicitly states issue conditioning for file/element localization and repair generation. Final edit-location localization is depicted as LLM selection from selected source code without an additional explicit issue input claim. File skeletons and selected source are derived from the original repository.",
+    "Context windows retain surrounding source code; they are not restricted to highlighted edit lines.",
+    "Filtering and normalization/ranking are deterministic support operations grouped in one visual block. Frequency ranks patches after normalization; output is depicted as Selected patch without asserting its exact serialization.",
+    "No autonomous policy, feedback loop, training, least-failure fallback, reproduction-test generation or performance claim.",
+    "Candidate miniatures and highlights are schematic, without measured vote counts or asserted executed tests.",
+    "Tree extraction, skeleton construction, selected-source retrieval and context padding are deterministic internal operations, distinct from the four depicted LLM calls."
+  ],
+  "nodes": [
+    {
+      "id": "issue",
+      "label": "Issue report",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "issue description"
+        }
+      ]
+    },
+    {
+      "id": "codebase",
+      "label": "Code repository",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "existing project codebase"
+        }
+      ]
+    },
+    {
+      "id": "repository",
+      "label": "Repository structure",
+      "role": "input",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "tree-like structure format"
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "label": "Top-N files",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "localize and rank the top N most suspicious files"
+        }
+      ]
+    },
+    {
+      "id": "skeletons",
+      "label": "File skeletons",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "builds a compressed format of each file"
+        }
+      ]
+    },
+    {
+      "id": "elements",
+      "label": "Related code elements",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "list of related classes and functions"
+        }
+      ]
+    },
+    {
+      "id": "element-code",
+      "label": "Selected element code",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "code content from these elements"
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "label": "Edit locations",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "final set of edit locations"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Context windows",
+      "role": "neutral",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "code snippets at these edit locations"
+        }
+      ]
+    },
+    {
+      "id": "samples",
+      "label": "Search/Replace candidates",
+      "role": "core",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "Search/Replace edit"
+        }
+      ]
+    },
+    {
+      "id": "filter",
+      "label": "Syntax and regression filtering",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "remove any patches with syntax errors and regression test failures"
+        }
+      ]
+    },
+    {
+      "id": "rank",
+      "label": "Normalize and frequency rank",
+      "role": "tool",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "highest number of occurrences"
+        }
+      ]
+    },
+    {
+      "id": "patch",
+      "label": "Selected patch",
+      "role": "output",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "final patch for submission"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "codebase-tree",
+      "from": "codebase",
+      "to": "repository",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "turning the project codebase into a tree-like structure format"
+        }
+      ]
+    },
+    {
+      "id": "files-skeletons",
+      "from": "files",
+      "to": "skeletons",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "builds a compressed format of each file"
+        }
+      ]
+    },
+    {
+      "id": "elements-code",
+      "from": "elements",
+      "to": "element-code",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "code content from these elements"
+        }
+      ]
+    },
+    {
+      "id": "issue-files",
+      "from": "issue",
+      "to": "files",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "along with the original issue description"
+        }
+      ]
+    },
+    {
+      "id": "issue-elements",
+      "from": "issue",
+      "to": "elements",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "fix the provided issue"
+        }
+      ]
+    },
+    {
+      "id": "issue-samples",
+      "from": "issue",
+      "to": "samples",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "together with the issue description"
+        }
+      ]
+    },
+    {
+      "id": "repo-files",
+      "from": "repository",
+      "to": "files",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "repository structure format"
+        }
+      ]
+    },
+    {
+      "id": "files-elements",
+      "from": "skeletons",
+      "to": "elements",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "provide the skeleton of all suspicious files to the LLM"
+        }
+      ]
+    },
+    {
+      "id": "elements-locations",
+      "from": "element-code",
+      "to": "locations",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "code content from these elements"
+        }
+      ]
+    },
+    {
+      "id": "locations-context",
+      "from": "locations",
+      "to": "context",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "If multiple edit locations are identified"
+        }
+      ]
+    },
+    {
+      "id": "context-samples",
+      "from": "context",
+      "to": "samples",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "Using the code snippets"
+        }
+      ]
+    },
+    {
+      "id": "samples-filter",
+      "from": "samples",
+      "to": "filter",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "remove any patches with syntax errors and regression test failures"
+        }
+      ]
+    },
+    {
+      "id": "filter-rank",
+      "from": "filter",
+      "to": "rank",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "rank the remaining patches"
+        }
+      ]
+    },
+    {
+      "id": "rank-patch",
+      "from": "rank",
+      "to": "patch",
+      "label": "",
+      "kind": "data",
+      "status": "neutral",
+      "phase": "inference",
+      "evidence": [
+        {
+          "source": "paper-method",
+          "quote": "highest number of occurrences"
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "layout": {
+    "canvas": {
+      "width": 1800,
+      "height": 1050
+    },
+    "direction": "LR",
+    "nodes": {},
+    "edges": {}
+  },
+  "visual": {
+    "theme": "paper",
+    "publicationWidthIn": 7,
+    "minTextPt": 8,
+    "showTitle": false,
+    "showSubtitle": false,
+    "showLegend": false,
+    "typography": {
+      "fontFamily": "Arial",
+      "moduleSize": 40,
+      "detailSize": 29,
+      "annotationSize": 29
+    }
+  }
+}

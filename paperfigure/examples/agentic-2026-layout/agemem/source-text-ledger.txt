@@ -1,0 +1,33 @@
+text-90	136.0,40.0,82.8,30.4	Query
+text-91	86.8,89.6,155.8,20.3	Which band has 
+text-92	62.0,113.9,205.5,20.3	more members, Muse 
+text-93	69.0,138.2,185.3,20.3	or The Raconteurs?
+text-94	405.3,34.3,102.2,30.4	Session 
+text-95	400.2,59.8,104.8,30.4	Content
+text-96	331.5,93.1,200.0,20.3	1. Narcissus (band) ...
+text-97	331.5,117.5,193.0,20.3	2. The Raconteurs ...
+text-98	331.5,141.8,159.8,20.3	3. Sundae Club ...
+text-99	151.4,268.0,359.7,27.0	Agentic  Memory Management
+text-100	230.9,408.8,155.0,23.7	Tools calling & 
+text-101	215.1,431.4,180.7,23.7	Memory operation
+text-102	150.5,322.8,112.5,23.7	Short-term 
+text-103	134.3,345.5,139.1,23.7	Memory Tools
+text-104	393.1,318.2,109.8,23.7	Long-term 
+text-105	375.5,340.8,139.1,23.7	Memory Tools
+text-106	109.7,488.0,168.1,23.7	 Agentic Context
+text-107	365.3,485.8,174.6,23.7	 Agentic Memory
+text-108	152.3,588.1,76.9,30.4	LLM 
+text-109	137.1,613.6,99.7,30.4	Answer
+text-110	86.0,644.8,81.1,20.3	<answer>
+text-111	86.0,669.2,153.3,20.3	The Raconteurs.
+text-112	86.0,693.5,91.5,20.3	</answer>
+text-113	16.8,537.0,103.6,20.3	Multi-round
+text-114	28.1,556.4,81.1,20.3	responses
+text-115	486.8,410.2,74.9,20.3	Memory 
+text-116	468.4,429.6,106.6,20.3	retrieval tool
+text-117	479.4,711.0,93.5,20.3	Long-term
+text-118	489.0,730.4,74.4,20.3	Memory
+text-119	411.1,626.5,75.0,23.7	Agentic
+text-120	387.4,649.2,122.4,23.7	construction
+text-121	319.4,710.8,96.9,20.3	Short-term
+text-122	330.6,730.2,74.4,20.3	Memory

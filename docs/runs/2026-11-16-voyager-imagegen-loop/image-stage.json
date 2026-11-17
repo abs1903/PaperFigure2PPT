@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "stage": "accepted-image-design-and-partial-native-feasibility",
+  "selectedImage": {
+    "path": "selected-reference.png",
+    "sha256": "4e5729fc2ff80c88b54680500a47ab618541cd61a0ce5295494265eb05604e70"
+  },
+  "imageReview": {
+    "path": "image-review-v4.json",
+    "sha256": "112619bdb52c079988b761208e234ce8d8aca72dacf86c147ea96913b9e436b8",
+    "verdict": "accept"
+  },
+  "partialNativeSample": {
+    "path": "native-sample-v2",
+    "scope": "Log icon, one code line, selected lower junction; not full figure",
+    "mechanicalPassed": true,
+    "actualOfficeRenderPassed": true,
+    "actualFontCheckPassed": true,
+    "independentReviewPath": "native-sample-v2/native-sample-review.md",
+    "independentReviewSHA256": "fe412408bddadbd71e45c5638be02da7306a8740ab8e064090c0ea743920e865"
+  },
+  "readyForFullNativePlanning": true,
+  "fullNativeReconstructionStarted": false,
+  "fullReferenceContractAndTypographyPlan": "pending full source inventory",
+  "deliveryReady": false,
+  "nextStage": "Inventory exact selected PNG regions/labels/icons/routes, freeze full reference contract and typography, faithfully rebuild, render actual Office output and obtain new independent native review. No generic auto-layout substitution."
+}

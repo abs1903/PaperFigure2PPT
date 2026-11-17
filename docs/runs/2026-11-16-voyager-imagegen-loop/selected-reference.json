@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "stage": "accepted-image-design",
+  "path": "selected-reference.png",
+  "sha256": "4e5729fc2ff80c88b54680500a47ab618541cd61a0ce5295494265eb05604e70",
+  "sizePx": [
+    1860,
+    845
+  ],
+  "imageReviewPath": "image-review-v4.json",
+  "imageReviewSHA256": "112619bdb52c079988b761208e234ce8d8aca72dacf86c147ea96913b9e436b8",
+  "briefPath": "design-brief-v4.json",
+  "briefSHA256": "6dd89bdeb872fceb3a7f4ba3fa276d1c7914d6c021a0ece0a521923a9583185e",
+  "fullReferenceContract": "pending full object/region inventory before complete reconstruction",
+  "note": "Selected exact accepted PNG; do not replace it by generic auto-layout. Native sample is a partial feasibility check only."
+}

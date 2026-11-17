@@ -1,0 +1,14 @@
+{
+  "version":"1.0",
+  "reviewType":"post-freeze-unblinded-author-comparison",
+  "reviewer":{"kind":"independent-agent","name":"/root/agentless_narrative_review","priorIsolation":"fork_turns:none for source/raster reviews","comparisonState":"intentionally unblinded after selected-reference freeze"},
+  "verdict":"qualitative-comparison-complete",
+  "scope":{"author":"Agentless Figure 1, arXiv:2407.01489v1 PDF p.3","candidate":"frozen V4 paper-v1 overview","excluded":["reader-study inference","native/Office/editability assessment","superiority claim"]},
+  "conclusion":"V4 is clearer for first-pass sequence and role distinction; author is richer in concrete prompt/code grounding. Neither is universally superior.",
+  "comparison":{"mainStory":{"author":"explicit but return-route-heavy","candidate":"more immediately traceable upper localization then lower repair sequence"},"progressiveContext":{"author":"richer concrete prompt/code artifacts but dense","candidate":"cleaner tree/skeleton/code/context transformation, less concrete issue grounding"},"roles":{"author":"LLM participation salient but visually noisy","candidate":"clearer LLM-plus-issue versus LLM and deterministic-operation distinction"},"hierarchy":{"author":"many co-salient cards/icons/details","candidate":"stronger stage/card hierarchy and compact repair support"},"paperWidth":{"author":"coarse stages readable, fine text mostly too small","candidate":"essential labels/routes readable; code intentionally secondary"},"craft":{"author":"bespoke and operationally tangible but cluttered","candidate":"clean/consistent flat system but somewhat generic"}},
+  "candidateStrengths":["first-pass route clarity","role distinction","final-width scanability","flat visual consistency"],
+  "authorStrengths":["concrete issue/prompt grounding","artifact-specific intermediate examples","operational detail"],
+  "candidateWeaknesses":["generic issue token","less artifact-specific than author","no superiority conclusion"],
+  "historicalScopeNote":"previous-generated-paper-width.png is a later pinned-code route and not a paper-v1 semantic baseline.",
+  "artifacts":{"author-figure-1.png":"2115ac12019b5d66729e5b9a00f984c7d86241301eb3dec0f8be202f02bf0e8e","author-figure-1-paper-width.png":"88d56759f5e08029fd1e1d8852440a84bea3dfaae1a4c7997be75ca4a11dda7b","selected-reference.png":"81bea89ab5a2cfd8437c5ed5e194f66a81fa27852b98f372d9755e8e63ad6bcf","candidate-v4-paper-width.png":"009194c9df89915577dc0d758c0790ba82bf771e5244ada45d130e21c8db3563","selected-reference.json":"df57666fa126ceed644a1facede7d7b6bb201c84554f82398762a1f2c6b69a0b","previous-generated-paper-width.png":"ace2e2d988fd71d77cfc016325878d609e12e3e650703f597e50c222315921b9","historical-pinned-code-selected-reference.png":"8ada8240f87b2f77d76097d43ec714f0d68b156481009f30a15ed2154df12d91"}
+}

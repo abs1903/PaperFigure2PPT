@@ -1,0 +1,23 @@
+{
+  "round": 1,
+  "operation": "generate",
+  "tool": "built-in image_gen",
+  "promptPath": "prompt-generate-v1.txt",
+  "promptSHA256": "68e52d89786c85046f60ca8c90b4c9397d063d8bee5c65dd21903aaf6b13c07d",
+  "inputImages": [],
+  "outputImage": {
+    "path": "candidate-v1.png",
+    "sha256": "147845dfbea55fd8bf1aa1fe229477a6bddb28e3eefbc65eba74f5b0276e44e7",
+    "sizePx": [
+      1637,
+      960
+    ]
+  },
+  "specSHA256": "4a5efd5a2079c68cf61a2448386f1bc4657dc98187d8b410e8f9f1bc4959f78c",
+  "briefSHA256": "e965ca4207598708ddcce97db60cc14c785b5440f3258fa18e5cce740eb6e1b8",
+  "narrativePlanSHA256": "776020b618cb219ff46353bc536f8bb99da7b30f21ea41a6524027c54043ab65",
+  "semanticFreezeSHA256": "d2104eedef8d904d2d39ef353f0906bb6a01a0c9be7314a95be592005efc92cb",
+  "figureHidden": false,
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

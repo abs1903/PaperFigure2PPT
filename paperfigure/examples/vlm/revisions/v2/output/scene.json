@@ -1,0 +1,1459 @@
+{
+  "width": 1800,
+  "height": 590,
+  "theme": {
+    "background": "#FFFFFF",
+    "ink": "#172B42",
+    "muted": "#526477",
+    "line": "#65788B",
+    "roles": {
+      "input": [
+        "#F0F4F8",
+        "#6B8299"
+      ],
+      "output": [
+        "#EAF4ED",
+        "#427855"
+      ],
+      "encoder": [
+        "#EAF0FA",
+        "#5579B0"
+      ],
+      "core": [
+        "#E9EDF8",
+        "#657BB0"
+      ],
+      "proposed": [
+        "#E2F3F0",
+        "#237F78"
+      ],
+      "memory": [
+        "#F1ECF8",
+        "#8568AA"
+      ],
+      "tool": [
+        "#FFF2DF",
+        "#AA7933"
+      ],
+      "environment": [
+        "#EDF3EE",
+        "#5C8167"
+      ],
+      "loss": [
+        "#FBECE8",
+        "#B57362"
+      ],
+      "neutral": [
+        "#F1F4F7",
+        "#788A9C"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "image",
+      "label": "Image",
+      "detail": "RGB input",
+      "role": "input",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "x": 40,
+      "y": 105,
+      "w": 200,
+      "h": 270,
+      "fill": "#FFFFFF",
+      "stroke": "#173654",
+      "radius": 1,
+      "strokeWidth": 1.5,
+      "texts": [
+        {
+          "id": "text:image:label:0",
+          "text": "Image",
+          "x": 50,
+          "y": 297,
+          "w": 180,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:image:detail:0",
+          "text": "RGB input",
+          "x": 50,
+          "y": 333,
+          "w": 180,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "Vision encoder",
+      "detail": "Frozen weights",
+      "role": "encoder",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "x": 290,
+      "y": 130,
+      "w": 210,
+      "h": 180,
+      "fill": "#E5F0FA",
+      "stroke": "#578BB6",
+      "radius": 3,
+      "strokeWidth": 1.5,
+      "texts": [
+        {
+          "id": "text:vision:label:0",
+          "text": "Vision",
+          "x": 306,
+          "y": 186,
+          "w": 178,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:vision:label:1",
+          "text": "encoder",
+          "x": 306,
+          "y": 219.04,
+          "w": 178,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:vision:detail:0",
+          "text": "Frozen weights",
+          "x": 300,
+          "y": 270,
+          "w": 190,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "projector",
+      "label": "Projector",
+      "detail": "Trainable mapping",
+      "role": "core",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ],
+      "x": 590,
+      "y": 130,
+      "w": 170,
+      "h": 180,
+      "fill": "#EDE5F7",
+      "stroke": "#8263AD",
+      "radius": 3,
+      "strokeWidth": 1.5,
+      "texts": [
+        {
+          "id": "text:projector:label:0",
+          "text": "Projector",
+          "x": 604,
+          "y": 188,
+          "w": 142,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": false,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:projector:detail:0",
+          "text": "Trainable",
+          "x": 604,
+          "y": 234,
+          "w": 142,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:projector:detail:1",
+          "text": "mapping",
+          "x": 604,
+          "y": 264.68,
+          "w": 142,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "prompt",
+      "label": "Text prompt",
+      "detail": "Instruction tokens",
+      "role": "input",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The text prompt is consumed by the same decoder-only language model."
+        }
+      ],
+      "x": 40,
+      "y": 410,
+      "w": 330,
+      "h": 115,
+      "fill": "#FFFFFF",
+      "stroke": "#173654",
+      "radius": 1,
+      "strokeWidth": 1.5,
+      "texts": [
+        {
+          "id": "text:prompt:label:0",
+          "text": "Text prompt",
+          "x": 58,
+          "y": 420,
+          "w": 294,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:prompt:detail:0",
+          "text": "Instruction tokens",
+          "x": 58,
+          "y": 476,
+          "w": 294,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "left",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "lm",
+      "label": "Language model",
+      "detail": "Decoder-only",
+      "role": "core",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ],
+      "x": 980,
+      "y": 55,
+      "w": 500,
+      "h": 470,
+      "fill": "#E8F3FC",
+      "stroke": "#173654",
+      "radius": 2,
+      "strokeWidth": 1.8,
+      "texts": [
+        {
+          "id": "text:lm:label:0",
+          "text": "Language model",
+          "x": 1000,
+          "y": 69,
+          "w": 460,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:lm:detail:0",
+          "text": "Decoder-only",
+          "x": 1000,
+          "y": 106,
+          "w": 460,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "label": "Answer",
+      "detail": "Text output",
+      "role": "output",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "At inference, the language model produces an answer."
+        }
+      ],
+      "x": 1570,
+      "y": 190,
+      "w": 190,
+      "h": 110,
+      "fill": "#FFFFFF",
+      "stroke": "#173654",
+      "radius": 1,
+      "strokeWidth": 1.5,
+      "texts": [
+        {
+          "id": "text:answer:label:0",
+          "text": "Answer",
+          "x": 1586,
+          "y": 200,
+          "w": 158,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#172B42",
+          "align": "left",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:answer:detail:0",
+          "text": "Text output",
+          "x": 1586,
+          "y": 255,
+          "w": 158,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "left",
+          "fontFamily": "Arial"
+        }
+      ]
+    },
+    {
+      "id": "loss",
+      "label": "Supervised loss",
+      "detail": "Training only",
+      "role": "loss",
+      "phase": "train",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "During training only, the language model predictions are consumed by a supervised loss. The loss is a supervision path, not an inference module."
+        }
+      ],
+      "x": 1500,
+      "y": 440,
+      "w": 260,
+      "h": 95,
+      "fill": "#F0E9F8",
+      "stroke": "#8263AD",
+      "radius": 2,
+      "strokeWidth": 1.5,
+      "texts": [
+        {
+          "id": "text:loss:label:0",
+          "text": "Supervised loss",
+          "x": 1512,
+          "y": 452,
+          "w": 236,
+          "h": 33.04,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#172B42",
+          "align": "center",
+          "fontFamily": "Arial"
+        },
+        {
+          "id": "text:loss:detail:0",
+          "text": "Training only",
+          "x": 1512,
+          "y": 493,
+          "w": 236,
+          "h": 30.68,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#526477",
+          "align": "center",
+          "fontFamily": "Arial"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "image",
+      "to": "vision",
+      "label": null,
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "points": [
+        [
+          240,
+          220
+        ],
+        [
+          290,
+          220
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.42592592592592593,
+      "toFraction": 0.5,
+      "stroke": "#173654",
+      "strokeWidth": 2,
+      "dashed": false
+    },
+    {
+      "id": "e2",
+      "from": "vision",
+      "to": "projector",
+      "label": null,
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The image is processed by a frozen vision encoder, which sends visual features to a trainable projector."
+        }
+      ],
+      "points": [
+        [
+          500,
+          220
+        ],
+        [
+          590,
+          220
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.5,
+      "stroke": "#173654",
+      "strokeWidth": 2,
+      "dashed": false
+    },
+    {
+      "id": "e3",
+      "from": "projector",
+      "to": "lm",
+      "label": {
+        "id": "edge-label:e3",
+        "text": "Visual tokens",
+        "x": 776,
+        "y": 166,
+        "w": 170.102,
+        "h": 33.800000000000004,
+        "fontSize": 26,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Arial"
+      },
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The projector maps visual features into visual tokens consumed by a decoder-only language model."
+        }
+      ],
+      "points": [
+        [
+          760,
+          220
+        ],
+        [
+          980,
+          220
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.35106382978723405,
+      "stroke": "#173654",
+      "strokeWidth": 2,
+      "dashed": false
+    },
+    {
+      "id": "e4",
+      "from": "prompt",
+      "to": "lm",
+      "label": {
+        "id": "edge-label:e4",
+        "text": "Text tokens",
+        "x": 550,
+        "y": 490,
+        "w": 145.974,
+        "h": 33.800000000000004,
+        "fontSize": 26,
+        "bold": false,
+        "color": "#526477",
+        "align": "center",
+        "fontFamily": "Arial"
+      },
+      "kind": "data",
+      "phase": "both",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "The text prompt is consumed by the same decoder-only language model."
+        }
+      ],
+      "points": [
+        [
+          370,
+          467.5
+        ],
+        [
+          895,
+          467.5
+        ],
+        [
+          895,
+          440
+        ],
+        [
+          980,
+          440
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.5,
+      "toFraction": 0.8191489361702128,
+      "stroke": "#173654",
+      "strokeWidth": 2,
+      "dashed": false
+    },
+    {
+      "id": "e5",
+      "from": "lm",
+      "to": "answer",
+      "label": null,
+      "kind": "data",
+      "phase": "inference",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "At inference, the language model produces an answer."
+        }
+      ],
+      "points": [
+        [
+          1480,
+          245
+        ],
+        [
+          1570,
+          245
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.40425531914893614,
+      "toFraction": 0.5,
+      "stroke": "#173654",
+      "strokeWidth": 2,
+      "dashed": false
+    },
+    {
+      "id": "e6",
+      "from": "lm",
+      "to": "loss",
+      "label": null,
+      "kind": "data",
+      "phase": "train",
+      "status": "neutral",
+      "evidence": [
+        {
+          "source": "method",
+          "quote": "During training only, the language model predictions are consumed by a supervised loss. The loss is a supervision path, not an inference module."
+        }
+      ],
+      "points": [
+        [
+          1480,
+          360.5
+        ],
+        [
+          1490,
+          360.5
+        ],
+        [
+          1490,
+          487.5
+        ],
+        [
+          1500,
+          487.5
+        ]
+      ],
+      "fromPort": "right",
+      "toPort": "left",
+      "fromFraction": 0.65,
+      "toFraction": 0.5,
+      "stroke": "#8263AD",
+      "strokeWidth": 2,
+      "dashed": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "visual",
+      "label": "Visual tokenization",
+      "members": [
+        "vision",
+        "projector"
+      ],
+      "x": 268,
+      "y": 78,
+      "w": 514,
+      "h": 254,
+      "fill": "none",
+      "stroke": "#578BB6",
+      "radius": 3,
+      "strokeWidth": 1.3,
+      "dashed": true
+    }
+  ],
+  "texts": [
+    {
+      "id": "group-label:visual",
+      "text": "Visual tokenization",
+      "x": 282,
+      "y": 90,
+      "w": 486,
+      "h": 33.800000000000004,
+      "fontSize": 26,
+      "bold": true,
+      "color": "#526477",
+      "align": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:image:label:0",
+      "text": "Image",
+      "x": 50,
+      "y": 297,
+      "w": 180,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:image:detail:0",
+      "text": "RGB input",
+      "x": 50,
+      "y": 333,
+      "w": 180,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:label:0",
+      "text": "Vision",
+      "x": 306,
+      "y": 186,
+      "w": 178,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:label:1",
+      "text": "encoder",
+      "x": 306,
+      "y": 219.04,
+      "w": 178,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:vision:detail:0",
+      "text": "Frozen weights",
+      "x": 300,
+      "y": 270,
+      "w": 190,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:projector:label:0",
+      "text": "Projector",
+      "x": 604,
+      "y": 188,
+      "w": 142,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": false,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:projector:detail:0",
+      "text": "Trainable",
+      "x": 604,
+      "y": 234,
+      "w": 142,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:projector:detail:1",
+      "text": "mapping",
+      "x": 604,
+      "y": 264.68,
+      "w": 142,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:prompt:label:0",
+      "text": "Text prompt",
+      "x": 58,
+      "y": 420,
+      "w": 294,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:prompt:detail:0",
+      "text": "Instruction tokens",
+      "x": 58,
+      "y": 476,
+      "w": 294,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:lm:label:0",
+      "text": "Language model",
+      "x": 1000,
+      "y": 69,
+      "w": 460,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:lm:detail:0",
+      "text": "Decoder-only",
+      "x": 1000,
+      "y": 106,
+      "w": 460,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:answer:label:0",
+      "text": "Answer",
+      "x": 1586,
+      "y": 200,
+      "w": 158,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": true,
+      "color": "#172B42",
+      "align": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:answer:detail:0",
+      "text": "Text output",
+      "x": 1586,
+      "y": 255,
+      "w": 158,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:loss:label:0",
+      "text": "Supervised loss",
+      "x": 1512,
+      "y": 452,
+      "w": 236,
+      "h": 33.04,
+      "fontSize": 28,
+      "bold": true,
+      "color": "#172B42",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text:loss:detail:0",
+      "text": "Training only",
+      "x": 1512,
+      "y": 493,
+      "w": 236,
+      "h": 30.68,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e3",
+      "text": "Visual tokens",
+      "x": 776,
+      "y": 166,
+      "w": 170.102,
+      "h": 33.800000000000004,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "edge-label:e4",
+      "text": "Text tokens",
+      "x": 550,
+      "y": 490,
+      "w": 145.974,
+      "h": 33.800000000000004,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#526477",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "art:context-ellipsis",
+      "owner": "lm",
+      "text": "...",
+      "x": 1294,
+      "y": 167,
+      "w": 44,
+      "h": 32,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#173654",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "art:decoder-caption-0",
+      "owner": "lm",
+      "text": "Decoder block",
+      "x": 1053,
+      "y": 275,
+      "w": 350,
+      "h": 32,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#173654",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "art:decoder-caption-1",
+      "owner": "lm",
+      "text": "Decoder block",
+      "x": 1053,
+      "y": 436,
+      "w": 350,
+      "h": 32,
+      "fontSize": 26,
+      "bold": false,
+      "color": "#173654",
+      "align": "center",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "art:decoder-ellipsis",
+      "owner": "lm",
+      "text": "...",
+      "x": 1053,
+      "y": 351,
+      "w": 350,
+      "h": 32,
+      "fontSize": 28,
+      "bold": false,
+      "color": "#173654",
+      "align": "center",
+      "fontFamily": "Arial"
+    }
+  ],
+  "decorations": [
+    {
+      "id": "art:prompt-header",
+      "owner": "prompt",
+      "type": "rect",
+      "x": 41,
+      "y": 411,
+      "w": 328,
+      "h": 45,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#E7EFF7",
+      "stroke": "none",
+      "radius": 0,
+      "strokeWidth": 1,
+      "textBackground": true
+    },
+    {
+      "id": "art:answer-header",
+      "owner": "answer",
+      "type": "rect",
+      "x": 1571,
+      "y": 191,
+      "w": 188,
+      "h": 45,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#E3F2EC",
+      "stroke": "none",
+      "radius": 0,
+      "strokeWidth": 1,
+      "textBackground": true
+    },
+    {
+      "id": "art:frozen-0",
+      "owner": "vision",
+      "type": "line",
+      "x": 426,
+      "y": 136,
+      "w": 0,
+      "h": 30,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "none",
+      "stroke": "#578BB6",
+      "strokeWidth": 1.5
+    },
+    {
+      "id": "art:frozen-1",
+      "owner": "vision",
+      "type": "line",
+      "x": 413,
+      "y": 143.5,
+      "w": 26,
+      "h": 15,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "none",
+      "stroke": "#578BB6",
+      "strokeWidth": 1.5
+    },
+    {
+      "id": "art:frozen-2",
+      "owner": "vision",
+      "type": "line",
+      "x": 413,
+      "y": 158.5,
+      "w": 26,
+      "h": -15,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "none",
+      "stroke": "#578BB6",
+      "strokeWidth": 1.5
+    },
+    {
+      "id": "art:visual-token-0",
+      "owner": "e3",
+      "type": "rect",
+      "x": 800,
+      "y": 207,
+      "w": 24,
+      "h": 26,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#69BFB5",
+      "stroke": "#54AFA5",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:visual-token-1",
+      "owner": "e3",
+      "type": "rect",
+      "x": 834,
+      "y": 207,
+      "w": 24,
+      "h": 26,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#69BFB5",
+      "stroke": "#54AFA5",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:visual-token-2",
+      "owner": "e3",
+      "type": "rect",
+      "x": 868,
+      "y": 207,
+      "w": 24,
+      "h": 26,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#69BFB5",
+      "stroke": "#54AFA5",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:visual-ellipsis-space",
+      "owner": "e3",
+      "type": "rect",
+      "x": 901,
+      "y": 207,
+      "w": 28,
+      "h": 25,
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "purpose": "Whitespace around schematic sequence ellipsis, not a semantic module."
+    },
+    {
+      "id": "art:visual-ellipsis-0",
+      "owner": "e3",
+      "type": "ellipse",
+      "x": 904,
+      "y": 218,
+      "w": 3,
+      "h": 3,
+      "fill": "#173654",
+      "stroke": "none",
+      "purpose": "Non-quantitative token sequence ellipsis."
+    },
+    {
+      "id": "art:visual-ellipsis-1",
+      "owner": "e3",
+      "type": "ellipse",
+      "x": 912,
+      "y": 218,
+      "w": 3,
+      "h": 3,
+      "fill": "#173654",
+      "stroke": "none",
+      "purpose": "Non-quantitative token sequence ellipsis."
+    },
+    {
+      "id": "art:visual-ellipsis-2",
+      "owner": "e3",
+      "type": "ellipse",
+      "x": 920,
+      "y": 218,
+      "w": 3,
+      "h": 3,
+      "fill": "#173654",
+      "stroke": "none",
+      "purpose": "Non-quantitative token sequence ellipsis."
+    },
+    {
+      "id": "art:text-token-0",
+      "owner": "e4",
+      "type": "rect",
+      "x": 535,
+      "y": 454.5,
+      "w": 26,
+      "h": 26,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:text-token-1",
+      "owner": "e4",
+      "type": "rect",
+      "x": 571,
+      "y": 454.5,
+      "w": 26,
+      "h": 26,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:text-token-2",
+      "owner": "e4",
+      "type": "rect",
+      "x": 607,
+      "y": 454.5,
+      "w": 26,
+      "h": 26,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:text-token-3",
+      "owner": "e4",
+      "type": "rect",
+      "x": 643,
+      "y": 454.5,
+      "w": 26,
+      "h": 26,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:text-ellipsis-space",
+      "owner": "e4",
+      "type": "rect",
+      "x": 685,
+      "y": 454.5,
+      "w": 28,
+      "h": 25,
+      "fill": "#FFFFFF",
+      "stroke": "none",
+      "purpose": "Whitespace around schematic sequence ellipsis, not a semantic module."
+    },
+    {
+      "id": "art:text-ellipsis-0",
+      "owner": "e4",
+      "type": "ellipse",
+      "x": 688,
+      "y": 465.5,
+      "w": 3,
+      "h": 3,
+      "fill": "#173654",
+      "stroke": "none",
+      "purpose": "Non-quantitative token sequence ellipsis."
+    },
+    {
+      "id": "art:text-ellipsis-1",
+      "owner": "e4",
+      "type": "ellipse",
+      "x": 696,
+      "y": 465.5,
+      "w": 3,
+      "h": 3,
+      "fill": "#173654",
+      "stroke": "none",
+      "purpose": "Non-quantitative token sequence ellipsis."
+    },
+    {
+      "id": "art:text-ellipsis-2",
+      "owner": "e4",
+      "type": "ellipse",
+      "x": 704,
+      "y": 465.5,
+      "w": 3,
+      "h": 3,
+      "fill": "#173654",
+      "stroke": "none",
+      "purpose": "Non-quantitative token sequence ellipsis."
+    },
+    {
+      "id": "art:input-context",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1004,
+      "y": 155,
+      "w": 452,
+      "h": 58,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#FFFFFF",
+      "stroke": "#89ACCA",
+      "radius": 4,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:context-visual-0",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1022,
+      "y": 172,
+      "w": 24,
+      "h": 25,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#69BFB5",
+      "stroke": "#54AFA5",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:context-visual-1",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1057,
+      "y": 172,
+      "w": 24,
+      "h": 25,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#69BFB5",
+      "stroke": "#54AFA5",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:context-visual-2",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1092,
+      "y": 172,
+      "w": 24,
+      "h": 25,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#69BFB5",
+      "stroke": "#54AFA5",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:context-text-0",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1142,
+      "y": 172,
+      "w": 24,
+      "h": 25,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:context-text-1",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1177,
+      "y": 172,
+      "w": 24,
+      "h": 25,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:context-text-2",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1212,
+      "y": 172,
+      "w": 24,
+      "h": 25,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:context-text-3",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1247,
+      "y": 172,
+      "w": 24,
+      "h": 25,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#B697DE",
+      "stroke": "#9473BF",
+      "radius": 1,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:decoder-0",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1041,
+      "y": 260,
+      "w": 374,
+      "h": 62,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#F5F9FD",
+      "stroke": "#7F9FBC",
+      "radius": 3,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:decoder-1",
+      "owner": "lm",
+      "type": "rect",
+      "x": 1041,
+      "y": 421,
+      "w": 374,
+      "h": 62,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "#F5F9FD",
+      "stroke": "#7F9FBC",
+      "radius": 3,
+      "strokeWidth": 1
+    },
+    {
+      "id": "art:bracket-1",
+      "owner": "lm",
+      "type": "line",
+      "x": 1025,
+      "y": 258,
+      "w": -12,
+      "h": 0,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "none",
+      "stroke": "#578BB6",
+      "strokeWidth": 1.5
+    },
+    {
+      "id": "art:bracket-2",
+      "owner": "lm",
+      "type": "line",
+      "x": 1013,
+      "y": 258,
+      "w": 0,
+      "h": 226,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "none",
+      "stroke": "#578BB6",
+      "strokeWidth": 1.5
+    },
+    {
+      "id": "art:bracket-3",
+      "owner": "lm",
+      "type": "line",
+      "x": 1013,
+      "y": 484,
+      "w": 12,
+      "h": 0,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "fill": "none",
+      "stroke": "#578BB6",
+      "strokeWidth": 1.5
+    }
+  ],
+  "assets": [
+    {
+      "id": "art:scene",
+      "owner": "image",
+      "type": "asset",
+      "x": 41,
+      "y": 106,
+      "w": 198,
+      "h": 180,
+      "purpose": "Non-quantitative visual representation of a source-supported stream or module; motif counts do not assert scientific dimensions.",
+      "asset": "assets/illustrations/vlm-scene.png",
+      "path": "assets/illustrations/vlm-scene.png"
+    }
+  ],
+  "title": "Vision-language model overview",
+  "typography": {
+    "fontFamily": "Arial",
+    "moduleSize": 28,
+    "detailSize": 26,
+    "annotationSize": 26,
+    "titleSize": 30,
+    "moduleBold": false
+  },
+  "specHash": "bbbe66799f115dadbabba366faf253401b814c11dd2963b79c7a44fa0d917ed2",
+  "semanticHash": "81ef27c1b2399d65af965744cee835198f52edfc3d6809d3184dd20643c1808d",
+  "publicationWidthIn": 7,
+  "minTextPt": 7
+}

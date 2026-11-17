@@ -1,0 +1,16 @@
+{
+  "frozenAt": "2026-11-15T13:23:00.183745+00:00",
+  "authorFigureVisuallyInspected": false,
+  "protocol": "Source-first figure-hidden run, not held-out evaluation; textual search snippets/prior model knowledge uncontrolled.",
+  "artifacts": {
+    "spec.json": "cbbda32af669ad520093e63d29139c183b81dc8b47cc5466065a7144f269e1dd",
+    "METHOD.md": "537bb46f160da6c74c94d28b50e3758b176990463db57a2d5fc0d37aeac79064",
+    "design-contract.json": "788d2c2d7c0a6afccdf0098ba537d8be91ba799077782cd545d25540a85070c1",
+    "output/figure.svg": "59ba99de73ff1fed1fa9d12034cedad2559a46d4a18762e3c5d556f4593ba98f",
+    "output/figure.pptx": "a9ef83c693b2c9bf8e6bf08880baf5bfe35656c0e65e3bda9eb06ea188a437c4",
+    "output/figure.pdf": "9030df0ca3541ad060e56508bfabbb5af95f1aa5222f8959d92667ec56191800",
+    "output/figure.png": "c721f73cb167996fd3eaa5cb7bfe716bf75a185330054a62c4b0213bb4c34340",
+    "output/rendered-pptx/figure.png": "1d9a044de022a92456c60b51daf89e8f569cdb967e7108219c75d6865ac88f1a",
+    "output/rendered-pdf/figure.png": "cb798462dd56822d9b8f1ff0a55b16d6bc4bc6e292a3dc011fe1a95485f27edb"
+  }
+}

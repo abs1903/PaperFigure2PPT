@@ -1,0 +1,56 @@
+{
+  "userBrief": "Refine Voyager as an AI paper main figure, solid meaningful colors, native editable text; independent visual-quality review.",
+  "scientificScope": "Pinned automatic learn() method overview, with explicit grouped exploration state and concrete author-released code examples; not a new model/environment run.",
+  "reference": {
+    "path": "design-study.png",
+    "sha256": "d3e87edda4269dfaea5360a71b497b7fd42a47d19ec1da2aaa89743edc1a716f",
+    "role": "Exploratory composition reference; not source authority or an automatically sufficient quality bar."
+  },
+  "authorReference": "dist/agent-papers-comparison/voyager-author.png in repository; original author arXiv Fig2, source images not bundled.",
+  "preserve": [
+    "Dominant program-generation/refinement workspace",
+    "Visually distinguish program source, world execution, state and skill catalog",
+    "Meaningful concrete task / actual released reusable-skill examples",
+    "Pure white surfaces, flat semantic header tints, serif headings and native monospaced code"
+  ],
+  "requiredDeviations": [
+    "Remove generated gradients, brand logos and unsupported program names/code",
+    "Do not depict example as a fresh successful execution",
+    "Context is curriculum context, not a fabricated task-only retrieval query",
+    "Only eligible critic-success programs are registered; deposit-useless-items tasks excluded",
+    "Latest events and task histories are state inputs to curriculum, not new task outputs"
+  ],
+  "palette": {
+    "blue": {
+      "fill": "#E8F0F7",
+      "meaning": "LM computation, header/background tint",
+      "nodes": [
+        "curriculum",
+        "action",
+        "critic"
+      ]
+    },
+    "green": {
+      "fill": "#E8F3EF",
+      "meaning": "Retained state / skill memory, header tint",
+      "nodes": [
+        "state",
+        "skills"
+      ]
+    },
+    "neutral": {
+      "fill": "#F7F9FA",
+      "meaning": "External execution and data surfaces; gray environment-vignette tones do not encode LM/state categories",
+      "nodes": [
+        "world"
+      ]
+    }
+  },
+  "acceptance": [
+    "Judge visual quality separately from semantic correctness / native ratio / mechanical QA",
+    "Assess focal mechanism, reading order, meaningful visual specificity and communication at 7-inch width",
+    "Ordinary equal-weight cards are not sufficient merely because all exports render",
+    "No overall title/footer/legend/fine print; necessary conditions locally legible",
+    "Pure solid fills and independently editable texts/modules/connectors in PPTX"
+  ]
+}

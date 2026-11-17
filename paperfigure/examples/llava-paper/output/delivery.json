@@ -1,0 +1,10 @@
+{
+  "deliveryReady": true,
+  "visualAcceptance": "independently-accepted-for-reference-reconstruction",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "independent_visual_review"
+  },
+  "reasons": [],
+  "scope": "Reference reconstruction review; not a venue-quality certification or a human user approval"
+}

@@ -1,0 +1,37 @@
+Reusable success only
+
+Skill library
+
+Context query
+
+Saved code + primitives
+
+Code + descriptions
+Query
+
+Automatic
+curriculum
+
+Task + context
+
+State + task history
+
+Code
+
+Action agent
+
+JavaScript
+
+Generate / refine code
+
+Minecraft runtime
+
+Execute JS programs
+Runtime feedback
+Events + task
+
+Critique
+
+Critic
+Success + critique
+Record task outcome

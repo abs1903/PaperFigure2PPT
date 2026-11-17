@@ -1,0 +1,219 @@
+{
+  "version": "1.0",
+  "semanticSHA256": "45ad9c6961dce994956286f25da23f5dd70b465a33e0838b0ad38f3c515b9849",
+  "scope": "Paper-v1 conceptual method overview. Not the later configured implementation route; no benchmark execution or guaranteed repair success.",
+  "message": "Agentless progressively narrows repository code with three issue-conditioned LLM selections, then generates and deterministically selects a candidate patch.",
+  "sourceReview": "source-narrative-review.md",
+  "narrativePlan": "narrative-plan.json",
+  "narrativeReview": "source-narrative-review.md",
+  "composition": "Wide paper figure, approximately 1.8:1. Two clearly grouped rows with left-aligned modest phase labels, not huge headings/braces. Upper Localization row reads left to right through steps 1 Repository tree, 2 Top-N files/Skeletons, 3 Related elements/Selected code, 4 Edit locations/Context windows. Lower Repair row reads right to left: step 5 Generate patches (Candidate patches), step 6 Filter & rank, step 7 Selected patch at lower left. A single short downward arrow connects upper-right context to lower-right generation. Balanced horizontal margins, quiet spacing, no sprawling return. Issue report is a small input token above the first arrow. Four consistent LLM + issue pills identify model-driven arrows. Use phase-colored regions lightly, no equal-card grid imposed on all operations.",
+  "mechanism": "The upper row is a progressively focusing source view: repository directory tree with a path selected; selected-file skeletons show class/function headers; relevant elements show source content; edit locations are highlighted WITH surrounding context preserved. Make the three narrowing steps visually tangible by progressively reducing the number of selected elements. Thin gray source lines may supplement source-derived signatures but must not be the whole mechanism. Bottom row expands one context into several clearly distinct diff sheets, passes them through one compact deterministic filter/rank block, and picks one original candidate diff. Diff signs encode edits, not tests passed or a proven correct fix. No empirical patch/vote counts.",
+  "blocks": [
+    {
+      "id": "issue",
+      "label": "Issue report",
+      "nodes": [
+        "issue"
+      ],
+      "representation": "Small neutral issue input token, no invented concrete bug text. The repeated phrase LLM + issue on four arrows explicitly denotes conditioning on this same issue; no bus spaghetti."
+    },
+    {
+      "id": "repo",
+      "label": "Repository tree",
+      "nodes": [
+        "repository"
+      ],
+      "representation": "Step 1: a compact indented directory tree with django/, forms/, fields.py and utils/. Highlight the fields.py path. Real folders/file lines, not a decorative standalone icon."
+    },
+    {
+      "id": "files",
+      "label": "Top-N files",
+      "nodes": [
+        "files"
+      ],
+      "representation": "Step 2: selected files represented by a short stack of skeleton sheets. Sublabel Skeletons; show class UUIDField(CharField): with def prepare_value(self, value): and def to_python(self, value):, and another class JSONField(CharField):; signatures only, no invented full program."
+    },
+    {
+      "id": "elements",
+      "label": "Related elements",
+      "nodes": [
+        "elements"
+      ],
+      "representation": "Step 3: Selected code, source excerpt for the selected UUIDField/to_python element rather than the whole file. Repeat the selected signature, add indentation and a small number of schematic body strokes/ellipses. Keep source linkage visually consistent. No assumption that this element is an actual bug."
+    },
+    {
+      "id": "focus",
+      "label": "Edit locations",
+      "nodes": [
+        "locations",
+        "context"
+      ],
+      "representation": "Step 4: Context windows, show surrounding source lines on both sides of a narrow highlighted editing interval within a source sheet. Not just an isolated line or selected function body. Internal locations-to-context relation is depicted by the selected interval WITH the surrounding original source. The model selects edit locations; context padding itself is deterministic."
+    },
+    {
+      "id": "sample",
+      "label": "Generate patches",
+      "nodes": [
+        "samples"
+      ],
+      "representation": "Step 5 at lower right: fourth LLM + issue badge on context-to-generation arrow; a fan of three unnumbered diff sheets, each with a red minus and green plus line. Candidate patches label identifies model output. Repeated schematic sheets imply multiple samples, not three measured candidates."
+    },
+    {
+      "id": "select",
+      "label": "Filter & rank",
+      "nodes": [
+        "filter",
+        "rank"
+      ],
+      "representation": "Step 6 at lower middle: one compact deterministic operation with two legible sequential substeps Syntax + regression then Normalize + frequency. Internal directed sequence makes filtering precede ranking. Do not draw LLM badge here. No AST, failure-count or empty-cohort branches."
+    },
+    {
+      "id": "patch",
+      "label": "Selected patch",
+      "nodes": [
+        "patch"
+      ],
+      "representation": "Step 7 at lower left: one candidate diff sheet selected from the input set, preserving edit signs and without a correctness tick or trophy."
+    }
+  ],
+  "relations": [
+    {
+      "edge": "issue-files",
+      "mode": "arrow",
+      "display": "Issue input feeds the first selection through its LLM + issue badge."
+    },
+    {
+      "edge": "issue-elements",
+      "mode": "arrow",
+      "display": "The repeated LLM + issue badge over the second selection explicitly binds the original issue."
+    },
+    {
+      "edge": "issue-locations",
+      "mode": "arrow",
+      "display": "The third LLM + issue badge binds the original issue to edit-location selection."
+    },
+    {
+      "edge": "issue-samples",
+      "mode": "arrow",
+      "display": "The fourth LLM + issue badge binds the original issue to generation."
+    },
+    {
+      "edge": "repo-files",
+      "mode": "arrow",
+      "display": "Left-to-right arrow with LLM + issue: tree input selects files; selected-file skeletons are fetched from original source, not generated source."
+    },
+    {
+      "edge": "files-elements",
+      "mode": "arrow",
+      "display": "Left-to-right arrow with LLM + issue: skeleton input selects related elements, whose source is then shown."
+    },
+    {
+      "edge": "elements-locations",
+      "mode": "arrow",
+      "display": "Left-to-right arrow with LLM + issue: selected source produces edit locations."
+    },
+    {
+      "edge": "locations-context",
+      "mode": "internal",
+      "display": "Within the same focus sheet, edit interval plus visible surrounding lines represents context construction; no fifth LLM stage."
+    },
+    {
+      "edge": "context-samples",
+      "mode": "arrow",
+      "display": "A short downward arrow at the right passes the context to patch generation, carrying the fourth LLM + issue badge."
+    },
+    {
+      "edge": "samples-filter",
+      "mode": "arrow",
+      "display": "Right-to-left arrow from candidate diffs into Filter & rank."
+    },
+    {
+      "edge": "filter-rank",
+      "mode": "internal",
+      "display": "Within Filter & rank: syntax/regression filtering precedes normalized frequency ranking, shown by an internal small arrow or vertically ordered substeps."
+    },
+    {
+      "edge": "rank-patch",
+      "mode": "arrow",
+      "display": "Right-to-left arrow from Filter & rank to one selected original candidate."
+    }
+  ],
+  "labels": [
+    "Localization",
+    "Repair",
+    "Issue report",
+    "Repository tree",
+    "Top-N files",
+    "Skeletons",
+    "Related elements",
+    "Selected code",
+    "Edit locations",
+    "Context windows",
+    "LLM + issue",
+    "Generate patches",
+    "Candidate patches",
+    "Filter & rank",
+    "Syntax + regression",
+    "Normalize + frequency",
+    "Selected patch",
+    "django/",
+    "forms/",
+    "fields.py",
+    "utils/",
+    "class UUIDField(CharField):",
+    "def prepare_value(self, value):",
+    "def to_python(self, value):",
+    "class JSONField(CharField):",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "maxVisibleWords": 95,
+  "publicationWidthIn": 7,
+  "typography": "At seven-inch width, primary labels should read at around 9pt or above, consistent sans serif; source snippets may be smaller secondary cues but all essential stage/LLM/filter labels remain legible. Avoid text overlapping routes, oversized headings, and tiny dense implementation labels.",
+  "palette": [
+    {
+      "color": "#64748B",
+      "meaning": "Neutral source/input and deterministic support",
+      "nodes": [
+        "issue",
+        "repository",
+        "context",
+        "filter",
+        "rank"
+      ]
+    },
+    {
+      "color": "#2563EB",
+      "meaning": "Issue-conditioned localization selections",
+      "nodes": [
+        "files",
+        "elements",
+        "locations"
+      ]
+    },
+    {
+      "color": "#0F766E",
+      "meaning": "Generated candidates and selected output; not correctness status",
+      "nodes": [
+        "samples",
+        "patch"
+      ]
+    }
+  ],
+  "forbidden": [
+    "Autonomous agent/controller/environment loop",
+    "Model badge on deterministic filtering or ranking",
+    "New benchmark measurements or successful-fix claims",
+    "Strict greater-than-half majority guarantee",
+    "Minimum-failure cohort or empty-cohort bypass from later code",
+    "Selecting newly normalized code instead of an associated candidate",
+    "Dropping issue conditioning or context surrounding the selected interval",
+    "AST implementation internals as competing primary panels",
+    "Author logo, robot mascot, gradients, shadows, huge brace headings, overall title or caption"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "reference": {
+    "path": "output-v1/preview.png",
+    "sha256": "467da274fff36e2ee004ffe391f80416ec64d4822b6419f3ac6783074913d05e",
+    "width": 600,
+    "height": 580
+  },
+  "typography": {
+    "path": "output-v1/typography-profile.json",
+    "sha256": "206d515337d91dfff5ccb438d9eb1707a5a75e01a573b4667af6cd25da94f98d"
+  },
+  "regions": [
+    {
+      "module": "sample-0",
+      "box": [
+        20,
+        20,
+        560,
+        115
+      ]
+    },
+    {
+      "module": "sample-1",
+      "box": [
+        20,
+        160,
+        560,
+        115
+      ]
+    },
+    {
+      "module": "sample-2",
+      "box": [
+        20,
+        300,
+        560,
+        115
+      ]
+    },
+    {
+      "module": "sample-3",
+      "box": [
+        20,
+        440,
+        560,
+        115
+      ]
+    }
+  ],
+  "centerTolerancePx": 1,
+  "sizeTolerancePx": 1,
+  "geometryChanges": [],
+  "purpose": "Controlled roundtrip integration fixture, not an automatic paper-image parser or an accepted paper figure."
+}

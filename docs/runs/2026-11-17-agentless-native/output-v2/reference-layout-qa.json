@@ -1,0 +1,718 @@
+{
+  "passed": true,
+  "errors": [],
+  "regions": [
+    {
+      "id": "control-brace",
+      "reference": [
+        126,
+        55,
+        1470,
+        33
+      ],
+      "expected": [
+        126,
+        55,
+        1470,
+        33
+      ],
+      "actual": [
+        127,
+        57,
+        1466,
+        30
+      ],
+      "delta": {
+        "center": 1.118033988749895,
+        "width": 4,
+        "height": 3
+      },
+      "change": null
+    },
+    {
+      "id": "fixed-control",
+      "reference": [
+        334,
+        8,
+        637,
+        68
+      ],
+      "expected": [
+        334,
+        8,
+        637,
+        68
+      ],
+      "actual": [
+        334,
+        8,
+        637,
+        68
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "no-autonomy",
+      "reference": [
+        1003,
+        14,
+        421,
+        52
+      ],
+      "expected": [
+        1003,
+        14,
+        421,
+        52
+      ],
+      "actual": [
+        1003,
+        14,
+        421,
+        52
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "funnel",
+      "reference": [
+        94,
+        116,
+        806,
+        839
+      ],
+      "expected": [
+        94,
+        116,
+        806,
+        839
+      ],
+      "actual": [
+        94.40487670898438,
+        117,
+        804.9285278320312,
+        838
+      ],
+      "delta": {
+        "center": 0.5168405711874704,
+        "width": 1.07147216796875,
+        "height": 1
+      },
+      "change": null
+    },
+    {
+      "id": "repair-panel",
+      "reference": [
+        914,
+        141,
+        718,
+        587
+      ],
+      "expected": [
+        914,
+        141,
+        718,
+        587
+      ],
+      "actual": [
+        914,
+        141,
+        717,
+        588
+      ],
+      "delta": {
+        "center": 0.7071067811865476,
+        "width": 1,
+        "height": 1
+      },
+      "change": null
+    },
+    {
+      "id": "selection-panel",
+      "reference": [
+        906,
+        774,
+        731,
+        174
+      ],
+      "expected": [
+        906,
+        774,
+        731,
+        174
+      ],
+      "actual": [
+        907,
+        775,
+        729,
+        173
+      ],
+      "delta": {
+        "center": 0.5,
+        "width": 2,
+        "height": 1
+      },
+      "change": null
+    },
+    {
+      "id": "issue-left",
+      "reference": [
+        6,
+        572,
+        131,
+        88
+      ],
+      "expected": [
+        6,
+        572,
+        131,
+        88
+      ],
+      "actual": [
+        6,
+        572,
+        131,
+        88
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "repo-icon",
+      "reference": [
+        238,
+        299,
+        132,
+        74
+      ],
+      "expected": [
+        238,
+        299,
+        132,
+        74
+      ],
+      "actual": [
+        238,
+        299,
+        132,
+        74
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "tree",
+      "reference": [
+        646,
+        316,
+        118,
+        33
+      ],
+      "expected": [
+        646,
+        316,
+        118,
+        33
+      ],
+      "actual": [
+        646,
+        316,
+        118,
+        33
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "llm-files",
+      "reference": [
+        177,
+        443,
+        82,
+        42
+      ],
+      "expected": [
+        177,
+        443,
+        82,
+        42
+      ],
+      "actual": [
+        178,
+        442,
+        80,
+        42
+      ],
+      "delta": {
+        "center": 1,
+        "width": 2,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "selected-files",
+      "reference": [
+        275,
+        459,
+        162,
+        50
+      ],
+      "expected": [
+        275,
+        459,
+        162,
+        50
+      ],
+      "actual": [
+        275,
+        459,
+        162,
+        50
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "skeleton",
+      "reference": [
+        582,
+        449,
+        213,
+        86
+      ],
+      "expected": [
+        582,
+        449,
+        213,
+        86
+      ],
+      "actual": [
+        582,
+        449,
+        213,
+        86
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "llm-elements",
+      "reference": [
+        212,
+        597,
+        80,
+        42
+      ],
+      "expected": [
+        212,
+        597,
+        80,
+        42
+      ],
+      "actual": [
+        212,
+        597,
+        80,
+        42
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "selected-element",
+      "reference": [
+        303,
+        619,
+        155,
+        42
+      ],
+      "expected": [
+        303,
+        619,
+        155,
+        42
+      ],
+      "actual": [
+        303,
+        619,
+        155,
+        42
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "selected-code",
+      "reference": [
+        584,
+        612,
+        195,
+        81
+      ],
+      "expected": [
+        584,
+        612,
+        195,
+        81
+      ],
+      "actual": [
+        584,
+        612,
+        195,
+        81
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "llm-locations",
+      "reference": [
+        238,
+        720,
+        81,
+        42
+      ],
+      "expected": [
+        238,
+        720,
+        81,
+        42
+      ],
+      "actual": [
+        238,
+        720,
+        81,
+        42
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "left-context",
+      "reference": [
+        413,
+        833,
+        251,
+        111
+      ],
+      "expected": [
+        413,
+        833,
+        251,
+        111
+      ],
+      "actual": [
+        413,
+        833,
+        251,
+        111
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "right-context",
+      "reference": [
+        945,
+        307,
+        245,
+        180
+      ],
+      "expected": [
+        945,
+        307,
+        245,
+        180
+      ],
+      "actual": [
+        945,
+        307,
+        245,
+        180
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "search",
+      "reference": [
+        1298,
+        242,
+        314,
+        96
+      ],
+      "expected": [
+        1298,
+        242,
+        314,
+        96
+      ],
+      "actual": [
+        1298,
+        242,
+        314,
+        96
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "replace",
+      "reference": [
+        1298,
+        350,
+        314,
+        96
+      ],
+      "expected": [
+        1298,
+        350,
+        314,
+        96
+      ],
+      "actual": [
+        1298,
+        350,
+        314,
+        96
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "issue-right",
+      "reference": [
+        887,
+        586,
+        97,
+        66
+      ],
+      "expected": [
+        887,
+        586,
+        97,
+        66
+      ],
+      "actual": [
+        887,
+        586,
+        97,
+        66
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "llm-repair",
+      "reference": [
+        1035,
+        596,
+        101,
+        49
+      ],
+      "expected": [
+        1035,
+        596,
+        101,
+        49
+      ],
+      "actual": [
+        1035,
+        596,
+        101,
+        49
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "candidates",
+      "reference": [
+        1318,
+        582,
+        221,
+        121
+      ],
+      "expected": [
+        1318,
+        582,
+        221,
+        121
+      ],
+      "actual": [
+        1318,
+        582,
+        221,
+        121
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "syntax",
+      "reference": [
+        926,
+        824,
+        170,
+        78
+      ],
+      "expected": [
+        926,
+        824,
+        170,
+        78
+      ],
+      "actual": [
+        926,
+        824,
+        170,
+        78
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "normalize",
+      "reference": [
+        1164,
+        824,
+        188,
+        78
+      ],
+      "expected": [
+        1164,
+        824,
+        188,
+        78
+      ],
+      "actual": [
+        1164,
+        824,
+        188,
+        78
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    },
+    {
+      "id": "selected-patch",
+      "reference": [
+        1415,
+        790,
+        208,
+        141
+      ],
+      "expected": [
+        1415,
+        790,
+        208,
+        141
+      ],
+      "actual": [
+        1415,
+        790,
+        208,
+        141
+      ],
+      "delta": {
+        "center": 0,
+        "width": 0,
+        "height": 0
+      },
+      "change": null
+    }
+  ],
+  "reference": {
+    "path": "/Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-17-agentless-contribution/selected-reference.png",
+    "sha256": "8e42486349ee50cb69b29b9708c3347ad601252ef878e19b8ea1ac102db7fcfb",
+    "width": 1637,
+    "height": 960
+  },
+  "contractSHA256": "7e8c679ff29d3ae8854b37dddb6587d66fbc85dde995df736e350c8fbd2cf9eb",
+  "svgSHA256": "02b4d4dbfb3a051efae9c3a91b576a40770bd6cd92130e8a5fed25fd0dcef8ef",
+  "sceneSHA256": "cd3160fbe93731ccd2013cdbe8eccdec4470eb890e261ba824c29a6189a2ed11",
+  "scope": "Actual SVG anchor geometry versus frozen PNG regions; colors, text, arrow routes and aesthetics still require region comparisons and isolated fidelity review."
+}

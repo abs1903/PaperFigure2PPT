@@ -1,0 +1,78 @@
+{
+  "case": "BLIP-2 OPT caption generation",
+  "repo": "salesforce/LAVIS",
+  "commit": "05cb670f47296522e24e7727e366b4a997d28582",
+  "config": "pretrain_opt2.7b",
+  "nodes": [
+    "image",
+    "vision",
+    "norm",
+    "queries",
+    "qformer",
+    "projection",
+    "prompt",
+    "embeddings",
+    "opt",
+    "caption"
+  ],
+  "edges": [
+    [
+      "image",
+      "vision"
+    ],
+    [
+      "vision",
+      "norm"
+    ],
+    [
+      "norm",
+      "qformer"
+    ],
+    [
+      "queries",
+      "qformer"
+    ],
+    [
+      "qformer",
+      "projection"
+    ],
+    [
+      "projection",
+      "opt"
+    ],
+    [
+      "prompt",
+      "embeddings"
+    ],
+    [
+      "embeddings",
+      "opt"
+    ],
+    [
+      "opt",
+      "caption"
+    ]
+  ],
+  "facts": {
+    "vision": "EVA-CLIP-G, frozen by constructor/config",
+    "norm": "Separate ln_vision after encoder; not frozen by that encoder freeze loop",
+    "queries": "32 learned query embeddings",
+    "qformer": "Query-only path; query states cross-attend to normalized image features",
+    "projection": "Learned linear opt_proj into OPT embedding width",
+    "prompt": "Optional; configured default empty string; tokenize then frozen OPT embedding table",
+    "opt": "Frozen facebook/opt-2.7b; input embeddings concatenate visual prefix before prompt embeddings",
+    "caption": "Generated IDs decoded into stripped text"
+  },
+  "excluded": [
+    "Stage-1 representation-learning objectives",
+    "FLAN-T5 encoder-decoder branch",
+    "Teacher-forced loss visualization",
+    "Exact patch count and hidden widths not separately resolved",
+    "Runtime or parameter-update validation"
+  ],
+  "protocol": {
+    "author_figure_viewed": false,
+    "initial_spec_written_before_author_figure": true,
+    "limitations": "This is a figure-hidden code reconstruction within this run, not proof of no prior model/paper knowledge. Web search snippets included textual paper context; no author diagram was visually inspected."
+  }
+}

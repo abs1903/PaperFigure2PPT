@@ -1,0 +1,84 @@
+{
+  "passed": false,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [
+    {
+      "code": "text-width",
+      "objects": [
+        "text:memory:detail:0"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-width",
+      "objects": [
+        "art:gate-key"
+      ],
+      "message": "Helvetica metric estimate exceeds text box; inspect target font"
+    },
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:tools:label:0",
+        "edge-label:e2"
+      ],
+      "message": "Text bounding boxes overlap"
+    },
+    {
+      "code": "text-node-overlap",
+      "objects": [
+        "edge-label:e2",
+        "tools"
+      ],
+      "message": "Unrelated label overlaps a semantic node"
+    },
+    {
+      "code": "edge-text-occlusion",
+      "objects": [
+        "e6",
+        "edge-label:e7"
+      ],
+      "message": "Edge passes through text box"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "edge-shared-segment",
+      "objects": [
+        "e6",
+        "e7"
+      ],
+      "message": "Distinct edges share a collinear segment; review ambiguity"
+    },
+    {
+      "code": "font-metrics",
+      "objects": [],
+      "message": "Text bounds use Helvetica estimates; independently render the selected font"
+    }
+  ],
+  "metrics": {
+    "nodes": 6,
+    "edges": 8,
+    "texts": 19,
+    "groups": 0,
+    "minFinalTextPt": 7.199999999999999,
+    "nativeShapes": 25,
+    "nativeConnectors": 17,
+    "logicalEdges": 8,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 19,
+    "pictures": 0,
+    "editableRatio": 1
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}

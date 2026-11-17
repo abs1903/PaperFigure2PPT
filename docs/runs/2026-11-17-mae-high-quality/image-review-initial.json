@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "review_type": "source-informed raster candidate review",
+  "first_reading": {
+    "used_after_freeze": true,
+    "freeze_path": "first-reading-freeze.json",
+    "freeze_sha256": "d95edd6b8fc96a035c0c9ccfc2c9fbad77bffc4ce82c0e86cdc1dfd6168f79dc",
+    "scope": "qualitative only; not scientific correctness evidence"
+  },
+  "candidates": [
+    {
+      "id": "A",
+      "composition": "sparse-full-columns",
+      "decision": "revise_before_selection_or_delivery",
+      "scientific_relations": "revise",
+      "paper_width_readability": "revise",
+      "structure_realized": "two aligned sparse/full regions with full-width lower objective strip",
+      "strength": "target, selector, prediction, and MSE region are clearest at paper width",
+      "findings": [
+        "Loss selector is 4x4 but has 5 blue visible cells and 11 gray cells.",
+        "Selector blue positions do not match the four blue positions in restored decoder input."
+      ],
+      "required_revision": [
+        "Use a 4x4 selector with exactly 4 unscored visible positions and 12 scored masked positions.",
+        "Make its four visible positions exactly match restored decoder-grid positions."
+      ],
+      "hashes": {
+        "full": "1924ee246390da207d959b61a0ad3d5c53f310747ffbbfb7fa8054edb493f376",
+        "paper_width": "4bb9a576f43c4b6f261f8bcbfee5b4d0e3fe408ee53d917931460efdc48aa29e"
+      }
+    },
+    {
+      "id": "B",
+      "composition": "horizontal-bottleneck",
+      "decision": "revise_before_selection_or_delivery",
+      "scientific_relations": "revise",
+      "paper_width_readability": "revise",
+      "structure_realized": "continuous top-row sparse-to-full bottleneck with compact lower-right objective",
+      "strength": "primary architectural load asymmetry and separate restore-index/binary-mask controls are clearest",
+      "findings": [
+        "Standalone visible MSE is outside the exact label whitelist, which specifies Masked-patch MSE.",
+        "Lower-right objective labels and selector are materially less readable at 672 px than Candidate A.",
+        "Loss selector is 3x4=12 cells with 3 white and 9 gold cells, so it cannot represent the required 16-position mask."
+      ],
+      "required_revision": [
+        "Remove or replace standalone MSE without losing masked-only supervision wording.",
+        "Rebuild and enlarge lower objective as a 4x4 selector retaining 4 visible and 12 selected masked positions.",
+        "Preserve continuous upper bottleneck and distinct restore-index versus binary-mask routes."
+      ],
+      "hashes": {
+        "full": "fe548d6e60d42d21b44870ec72a09fb87422b5b3e19fe5d2d29e3f5fb657fb8b",
+        "paper_width": "cc6bf2d7eca4905c2293e434ad504ed649985677112733a5f9dd7a0d584cc81e"
+      }
+    }
+  ],
+  "shared_semantic_checks": {
+    "4x4_input_4_visible_12_removed": "pass",
+    "visible_only_encoder": "pass",
+    "post_encoder_shared_mask_tokens": "pass",
+    "restored_16_slot_decoder_input": "pass",
+    "all_position_predictions": "pass",
+    "masked_only_mse_with_original_target": "revise: Candidate A selector has 5 visible cells; Candidate B selector has only 12 total cells",
+    "class_positional_projection_details_omitted": "pass",
+    "no_downstream_decoder_or_execution_claim": "pass"
+  },
+  "unverified": [
+    "native/Office editability and export parity",
+    "generated-image originality beyond visible plan-level non-copying choices",
+    "training, throughput, reconstruction-fidelity, or downstream-utility claims"
+  ],
+  "evidence_inputs": {
+    "spec.json": "c99c126ae1b5053ae08571139d13f3ed307ddf798bd395256a33f374f6bb2ea9",
+    "source-plan-review.json": "66ccc10c5d535145e7d5c848950cdad53886bb669c33f113a67f9c956dd79ffb",
+    "first-reading.md": "eaaba73dbd7ebcdb6116f5f351a5d373ec50f6ffd43a5676c279a0768d798297"
+  }
+}

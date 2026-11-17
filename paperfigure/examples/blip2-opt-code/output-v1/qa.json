@@ -1,0 +1,46 @@
+{
+  "passed": false,
+  "deliveryReady": false,
+  "visualAcceptance": "unreviewed",
+  "errors": [
+    {
+      "code": "text-overlap",
+      "objects": [
+        "text:vision:label:2",
+        "text:vision:detail:0"
+      ],
+      "message": "Text bounding boxes overlap"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "font-metrics",
+      "objects": [],
+      "message": "Text bounds use Helvetica estimates; independently render the selected font"
+    }
+  ],
+  "metrics": {
+    "nodes": 10,
+    "edges": 9,
+    "texts": 25,
+    "groups": 0,
+    "minFinalTextPt": 7.199999999999999,
+    "nativeShapes": 80,
+    "nativeConnectors": 11,
+    "logicalEdges": 9,
+    "automaticEndpointAttachment": false,
+    "nativeTextBoxes": 25,
+    "pictures": 1,
+    "editableRatio": 0.9891304347826086
+  },
+  "subjective": {
+    "semanticFidelity": "requires-source-review",
+    "visualQuality": "requires-independent-visual-review",
+    "humanEditingCost": "not-measured"
+  },
+  "limits": [
+    "Structural and geometry parity checked. Font substitution and raster appearance require independent PPTX rendering.",
+    "Evidence quotation checks establish traceability, not scientific entailment.",
+    "Connector segments are grouped per semantic edge and are not auto-attached to modules; moving modules requires route adjustment."
+  ]
+}
