@@ -1,0 +1,12 @@
+{
+  "stage": "independently accepted before generation",
+  "files": {
+    "spec.json": "4545b44746364e2bb31809fad6db643db084b247791a26bd870ee2f971f7ff62",
+    "narrative-plan.json": "51590c85ddd8699f1b46a6312646fe12bcae3dd8307fdf4cb91ef30ff705b5b5",
+    "brief-matrix-bridge.json": "05750a284c986fafe6cdc8d5b82b91c31669ffada315139bb3a005bfdcd2c4ec",
+    "brief-stacked-transfer.json": "93e3ac8adaa9da910d5ca3bc1a1e3ba00e32394db7f0d5e66db647077d533b70",
+    "prompt-matrix-bridge.txt": "3511ced5d9be7e51334bc417295f272b77cf394cebb41aa1ce4cfe0ae047d6fa",
+    "prompt-stacked-transfer.txt": "c02e0bf414ae18c852b8f0ffadc1ac05abf8bc674016d5446e48b0ad934ce81a",
+    "source-plan-review.json": "b5a9593d77a3fea3edf03986e1950a8a5de551041199f54df73e4a69e35e62af"
+  }
+}

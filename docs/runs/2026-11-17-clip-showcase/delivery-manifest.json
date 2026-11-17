@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "deliveryReady": true,
+  "selectedOutput": "output-v2",
+  "imageCalls": {
+    "initial": 2,
+    "edits": 1,
+    "maxCalls": 4
+  },
+  "sourcePlanFreezeUnchanged": true,
+  "authorInformed": true,
+  "files": {
+    "selected-reference.png": "e108391ae577afe2378d6439e86a03270518d3535eebccbfef86d88f4016d758",
+    "selected-reference-freeze.json": "11b0df1272e2078f2c205b8ea38c194a261ce6d2927b54d6ba4373805b277594",
+    "spec.json": "4545b44746364e2bb31809fad6db643db084b247791a26bd870ee2f971f7ff62",
+    "narrative-plan.json": "51590c85ddd8699f1b46a6312646fe12bcae3dd8307fdf4cb91ef30ff705b5b5",
+    "semantic-freeze.json": "e4bcb69b3bfcbae139d609721f5c7b08a1c675c8befc1486f6627c185e743f14",
+    "source/manifest.json": "ff5e964af4f2fdca2bc621b12bee9108ccb8d5f7779c3649ec15843dcec2eb1c",
+    "author-scene.mjs": "e464788716dc9f3e09649787018da22ba5da76a108d1db92dae4b4511b5a813e",
+    "reference-geometry.json": "2bc082f584f8f06f0c58a79f4a53177b3ff91043a2206b9294a3f99885b2a23a",
+    "first-reading-freeze.json": "a2bab13e359d5ea1356bcdb1aa789be2c0519b184a0e06949093ccabf196f100",
+    "first-reading.json": "07f2ab5d50bd6830a09f1f109803775d140e76c17cb5991b8bd67a9d5cc266eb",
+    "rereading-c.json": "83133011dac6c5f404c1d11b04f96f12448b3f4be76f74d85f0404e339bd2031",
+    "image-review-initial.json": "1314f4e108a62941ac95b844dc0f96d51c0286df115ad0bc3d355e9b6de02835",
+    "image-review-b2.json": "594cd3fe0e8183dbb1b4cbc5f7e351c46e35d5584d477e0080024cce6f5a6b0a",
+    "output-v2/editable.svg": "b91eb03b1421860acbc29442e1aefb2d747f881e3e7e936eb7a5f215acd5ee01",
+    "output-v2/figure.pptx": "fa8e8df5bdc04ee97b03020926311dc87c8982ff21efa680a98d01645def6a62",
+    "output-v2/native-render/figure.pdf": "e576ba3ae8b2c73282a6b878613e476e24d819cd162d187c8be4ae15d55a28f0",
+    "output-v2/native-render/preview.png": "ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7",
+    "output-v2/native-audit.json": "9fb866eac76f58d6f4f4c78a85d488a39239de246a858c68bab48dad102e46c6",
+    "output-v2/native-render/render-qa.json": "c963c7afca2ae0bb1a9abb3e59193a2308479ee8a0e4b27bf16b7c2bd96132ac",
+    "output-v2/typography-qa.json": "476cc6156608e1750b309822b1fc3046d0199c5db340299f5d2fa5ed2ecd2d92",
+    "output-v2/visual-review.json": "6aea76ce7087f6236ce6db16ddbf1bc1d8e542302052862201b520ec15c55aec",
+    "output-v2/reconstruction-review.json": "2548b5351d25183ffe8e98cd3ca689d25186dd8fcf8cf6188c8016de246bc95f",
+    "output-v2/delivery.json": "820f643309116ced83ab913d4bf410fe8692bec8146f395e6f4fa9eefeddd57d",
+    "REPORT.md": "e46b2dca283c567021cf4fe221cf7f2ec0134453f053404224a2f6adb0449019"
+  }
+}

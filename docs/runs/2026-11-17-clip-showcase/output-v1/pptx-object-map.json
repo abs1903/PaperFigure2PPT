@@ -1,0 +1,1780 @@
+[
+  {
+    "id": 2,
+    "name": "train-phase-anchor",
+    "type": "shape",
+    "owner": "train-phase",
+    "bbox": [
+      22,
+      15,
+      542,
+      66
+    ]
+  },
+  {
+    "id": 79,
+    "name": "label-block:train-phase",
+    "type": "text-block",
+    "owner": "train-phase",
+    "sourceTextIds": [
+      "text-train-phase-0"
+    ],
+    "text": "Contrastive pre-training",
+    "bbox": [
+      22,
+      15,
+      542,
+      66
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 113,
+    "name": "train-phase",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 3,
+    "name": "test-phase-anchor",
+    "type": "shape",
+    "owner": "test-phase",
+    "bbox": [
+      22,
+      623,
+      329,
+      58
+    ]
+  },
+  {
+    "id": 80,
+    "name": "label-block:test-phase",
+    "type": "text-block",
+    "owner": "test-phase",
+    "sourceTextIds": [
+      "text-test-phase-0"
+    ],
+    "text": "Zero-shot use",
+    "bbox": [
+      22,
+      623,
+      329,
+      58
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 114,
+    "name": "test-phase",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "train-images-anchor",
+    "type": "shape",
+    "owner": "train-images",
+    "bbox": [
+      88,
+      203,
+      161,
+      370
+    ]
+  },
+  {
+    "id": 27,
+    "name": "train-boat-sail-a",
+    "type": "shape",
+    "owner": "train-boat-glyph",
+    "bbox": [
+      139.02,
+      220.72,
+      31.74999999999997,
+      45.58000000000001
+    ]
+  },
+  {
+    "id": 28,
+    "name": "train-boat-sail-b",
+    "type": "shape",
+    "owner": "train-boat-glyph",
+    "bbox": [
+      175.85000000000002,
+      219,
+      34.289999999999964,
+      43.860000000000014
+    ]
+  },
+  {
+    "id": 29,
+    "name": "train-boat-hull",
+    "type": "shape",
+    "owner": "train-boat-glyph",
+    "bbox": [
+      111.08,
+      271.46,
+      116.84000000000002,
+      30.100000000000023
+    ]
+  },
+  {
+    "id": 115,
+    "name": "train-boat-glyph",
+    "type": "group",
+    "owner": "train-images"
+  },
+  {
+    "id": 33,
+    "name": "bird-body",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      110.44,
+      344.36,
+      117.12,
+      78.32
+    ]
+  },
+  {
+    "id": 34,
+    "name": "bird-leg-a",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      165.34,
+      417.4,
+      15.859999999999985,
+      17.600000000000023
+    ]
+  },
+  {
+    "id": 35,
+    "name": "bird-leg-b",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      183.64,
+      417.4,
+      12.200000000000017,
+      17.600000000000023
+    ]
+  },
+  {
+    "id": 36,
+    "name": "bird-eye",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      197,
+      362,
+      7,
+      7
+    ]
+  },
+  {
+    "id": 116,
+    "name": "train-bird-glyph",
+    "type": "group",
+    "owner": "train-images"
+  },
+  {
+    "id": 37,
+    "name": "cup-handle",
+    "type": "shape",
+    "owner": "train-cup-glyph",
+    "bbox": [
+      185.31,
+      489.34,
+      55.59,
+      42.900000000000034
+    ]
+  },
+  {
+    "id": 38,
+    "name": "cup-body",
+    "type": "shape",
+    "owner": "train-cup-glyph",
+    "bbox": [
+      121,
+      490,
+      81.75,
+      75.89999999999998
+    ]
+  },
+  {
+    "id": 117,
+    "name": "train-cup-glyph",
+    "type": "group",
+    "owner": "train-images"
+  },
+  {
+    "id": 39,
+    "name": "image-branch-boat",
+    "type": "shape",
+    "owner": "train-images",
+    "bbox": [
+      249,
+      259,
+      44,
+      137
+    ]
+  },
+  {
+    "id": 40,
+    "name": "image-branch-cup",
+    "type": "shape",
+    "owner": "train-images",
+    "bbox": [
+      249,
+      396,
+      44,
+      125
+    ]
+  },
+  {
+    "id": 41,
+    "name": "image-branch-bird",
+    "type": "line-decoration",
+    "owner": "train-images",
+    "bbox": [
+      249,
+      396,
+      44,
+      0
+    ]
+  },
+  {
+    "id": 51,
+    "name": "paired-caption",
+    "type": "text",
+    "owner": "train-images",
+    "text": "Paired examples",
+    "font": "Arial",
+    "fontSize": 36,
+    "bbox": [
+      53.416015625,
+      130.713984375,
+      284.16796875,
+      45
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 89,
+    "name": "port-1-train-images",
+    "type": "port-helper",
+    "owner": "train-images",
+    "point": [
+      293,
+      396
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 118,
+    "name": "train-images",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 5,
+    "name": "train-captions-anchor",
+    "type": "shape",
+    "owner": "train-captions",
+    "bbox": [
+      663,
+      15,
+      574,
+      59
+    ]
+  },
+  {
+    "id": 42,
+    "name": "caption-branch-boat",
+    "type": "shape",
+    "owner": "train-captions",
+    "bbox": [
+      749,
+      75,
+      203,
+      27
+    ]
+  },
+  {
+    "id": 43,
+    "name": "caption-branch-cup",
+    "type": "shape",
+    "owner": "train-captions",
+    "bbox": [
+      952,
+      75,
+      201,
+      27
+    ]
+  },
+  {
+    "id": 44,
+    "name": "caption-branch-bird",
+    "type": "line-decoration",
+    "owner": "train-captions",
+    "bbox": [
+      952,
+      75,
+      0,
+      27
+    ]
+  },
+  {
+    "id": 52,
+    "name": "train-caption-0",
+    "type": "text",
+    "owner": "train-captions",
+    "text": "boat",
+    "font": "Arial",
+    "fontSize": 36,
+    "bbox": [
+      710.5048828125,
+      24.053828124999995,
+      75.990234375,
+      45
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 53,
+    "name": "train-caption-1",
+    "type": "text",
+    "owner": "train-captions",
+    "text": "bird",
+    "font": "Arial",
+    "fontSize": 36,
+    "bbox": [
+      917.50390625,
+      24.053828124999995,
+      67.9921875,
+      45
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 54,
+    "name": "train-caption-2",
+    "type": "text",
+    "owner": "train-captions",
+    "text": "cup",
+    "font": "Arial",
+    "fontSize": 36,
+    "bbox": [
+      1119.4990234375,
+      17.374140624999995,
+      64.001953125,
+      45
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 91,
+    "name": "port-3-train-captions",
+    "type": "port-helper",
+    "owner": "train-captions",
+    "point": [
+      952,
+      102
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 119,
+    "name": "train-captions",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 6,
+    "name": "train-image-encoder-anchor",
+    "type": "shape",
+    "owner": "train-image-encoder",
+    "bbox": [
+      350,
+      333,
+      207,
+      135
+    ]
+  },
+  {
+    "id": 58,
+    "name": "train-image-norm-a",
+    "type": "text",
+    "owner": "train-image-encoder",
+    "text": "Normalized",
+    "font": "Arial",
+    "fontSize": 28,
+    "bbox": [
+      574.7001953125,
+      346.097421875,
+      141.599609375,
+      35
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 59,
+    "name": "train-image-norm-b",
+    "type": "text",
+    "owner": "train-image-encoder",
+    "text": "embeddings",
+    "font": "Arial",
+    "fontSize": 28,
+    "bbox": [
+      569.224609375,
+      373.3151953125,
+      152.55078125,
+      35
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 81,
+    "name": "label-block:train-image-encoder",
+    "type": "text-block",
+    "owner": "train-image-encoder",
+    "sourceTextIds": [
+      "text-train-image-encoder-0",
+      "text-train-image-encoder-1"
+    ],
+    "text": "Image\nencoder",
+    "bbox": [
+      350,
+      333,
+      207,
+      135
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 90,
+    "name": "port-2-train-image-encoder",
+    "type": "port-helper",
+    "owner": "train-image-encoder",
+    "point": [
+      346,
+      396
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 93,
+    "name": "port-5-train-image-encoder",
+    "type": "port-helper",
+    "owner": "train-image-encoder",
+    "point": [
+      557,
+      422
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 99,
+    "name": "port-11-train-image-encoder",
+    "type": "port-helper",
+    "owner": "train-image-encoder",
+    "point": [
+      412,
+      468
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 120,
+    "name": "train-image-encoder",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 7,
+    "name": "train-text-encoder-anchor",
+    "type": "shape",
+    "owner": "train-text-encoder",
+    "bbox": [
+      764,
+      132,
+      379,
+      59
+    ]
+  },
+  {
+    "id": 60,
+    "name": "train-text-norm",
+    "type": "text",
+    "owner": "train-text-encoder",
+    "text": "Normalized embeddings",
+    "font": "Arial",
+    "fontSize": 28,
+    "bbox": [
+      826.53515625,
+      197.3151953125,
+      301.9296875,
+      35
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 82,
+    "name": "label-block:train-text-encoder",
+    "type": "text-block",
+    "owner": "train-text-encoder",
+    "sourceTextIds": [
+      "text-train-text-encoder-0"
+    ],
+    "text": "Text encoder",
+    "bbox": [
+      764,
+      132,
+      379,
+      59
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 92,
+    "name": "port-4-train-text-encoder",
+    "type": "port-helper",
+    "owner": "train-text-encoder",
+    "point": [
+      952,
+      127
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 95,
+    "name": "port-7-train-text-encoder",
+    "type": "port-helper",
+    "owner": "train-text-encoder",
+    "point": [
+      952,
+      239
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 101,
+    "name": "port-13-train-text-encoder",
+    "type": "port-helper",
+    "owner": "train-text-encoder",
+    "point": [
+      1143,
+      161
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 121,
+    "name": "train-text-encoder",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 8,
+    "name": "matrix-anchor",
+    "type": "shape",
+    "owner": "matrix",
+    "bbox": [
+      736,
+      278,
+      441,
+      270
+    ]
+  },
+  {
+    "id": 9,
+    "name": "matrix-cell-0-0",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      736,
+      278,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 10,
+    "name": "matrix-cell-0-1",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      883,
+      278,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 11,
+    "name": "matrix-cell-0-2",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      1030,
+      278,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 12,
+    "name": "matrix-cell-1-0",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      736,
+      368,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 13,
+    "name": "matrix-cell-1-1",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      883,
+      368,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 14,
+    "name": "matrix-cell-1-2",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      1030,
+      368,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 15,
+    "name": "matrix-cell-2-0",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      736,
+      458,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 16,
+    "name": "matrix-cell-2-1",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      883,
+      458,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 17,
+    "name": "matrix-cell-2-2",
+    "type": "shape",
+    "owner": "alignment-matrix",
+    "bbox": [
+      1030,
+      458,
+      147,
+      90
+    ]
+  },
+  {
+    "id": 122,
+    "name": "alignment-matrix",
+    "type": "group",
+    "owner": "matrix"
+  },
+  {
+    "id": 94,
+    "name": "port-6-matrix",
+    "type": "port-helper",
+    "owner": "matrix",
+    "point": [
+      732,
+      422
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 96,
+    "name": "port-8-matrix",
+    "type": "port-helper",
+    "owner": "matrix",
+    "point": [
+      811,
+      274
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 97,
+    "name": "port-9-matrix",
+    "type": "port-helper",
+    "owner": "matrix",
+    "point": [
+      952,
+      274
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 98,
+    "name": "port-10-matrix",
+    "type": "port-helper",
+    "owner": "matrix",
+    "point": [
+      1105,
+      274
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 123,
+    "name": "matrix",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 18,
+    "name": "objective-anchor",
+    "type": "shape",
+    "owner": "objective",
+    "bbox": [
+      1227,
+      447,
+      355,
+      65
+    ]
+  },
+  {
+    "id": 45,
+    "name": "direction-i2t",
+    "type": "line-decoration",
+    "owner": "objective",
+    "bbox": [
+      1230,
+      331,
+      72,
+      0
+    ]
+  },
+  {
+    "id": 46,
+    "name": "direction-i2t-tip",
+    "type": "shape",
+    "owner": "objective",
+    "bbox": [
+      1302,
+      320,
+      17,
+      22
+    ]
+  },
+  {
+    "id": 47,
+    "name": "direction-t2i",
+    "type": "line-decoration",
+    "owner": "objective",
+    "bbox": [
+      1248,
+      393,
+      69,
+      0
+    ]
+  },
+  {
+    "id": 48,
+    "name": "direction-t2i-tip",
+    "type": "shape",
+    "owner": "objective",
+    "bbox": [
+      1231,
+      382,
+      17,
+      22
+    ]
+  },
+  {
+    "id": 61,
+    "name": "i2t-caption",
+    "type": "text",
+    "owner": "objective",
+    "text": "Image to text",
+    "font": "Arial",
+    "fontSize": 32,
+    "bbox": [
+      1330,
+      310.1459375,
+      197.375,
+      40
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 62,
+    "name": "t2i-caption",
+    "type": "text",
+    "owner": "objective",
+    "text": "Text to image",
+    "font": "Arial",
+    "fontSize": 32,
+    "bbox": [
+      1340,
+      373.1459375,
+      203.890625,
+      40
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 83,
+    "name": "label-block:objective",
+    "type": "text-block",
+    "owner": "objective",
+    "sourceTextIds": [
+      "text-objective-0"
+    ],
+    "text": "Symmetric loss",
+    "bbox": [
+      1227,
+      447,
+      355,
+      65
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 124,
+    "name": "objective",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 19,
+    "name": "separator-anchor",
+    "type": "line-decoration",
+    "owner": "separator",
+    "bbox": [
+      22,
+      601,
+      1568,
+      0
+    ]
+  },
+  {
+    "id": 125,
+    "name": "separator",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 20,
+    "name": "query-anchor",
+    "type": "shape",
+    "owner": "query",
+    "bbox": [
+      55,
+      749,
+      175,
+      119
+    ]
+  },
+  {
+    "id": 30,
+    "name": "query-boat-sail-a",
+    "type": "shape",
+    "owner": "query-boat-glyph",
+    "bbox": [
+      110.14,
+      768.68,
+      34.749999999999986,
+      44.520000000000095
+    ]
+  },
+  {
+    "id": 31,
+    "name": "query-boat-sail-b",
+    "type": "shape",
+    "owner": "query-boat-glyph",
+    "bbox": [
+      150.45,
+      767,
+      37.53,
+      42.84000000000003
+    ]
+  },
+  {
+    "id": 32,
+    "name": "query-boat-hull",
+    "type": "shape",
+    "owner": "query-boat-glyph",
+    "bbox": [
+      79.56,
+      818.24,
+      127.88,
+      29.399999999999977
+    ]
+  },
+  {
+    "id": 126,
+    "name": "query-boat-glyph",
+    "type": "group",
+    "owner": "query"
+  },
+  {
+    "id": 65,
+    "name": "query-caption",
+    "type": "text",
+    "owner": "query",
+    "text": "New image",
+    "font": "Arial",
+    "fontSize": 32,
+    "bbox": [
+      63.4140625,
+      699.1459375,
+      167.171875,
+      40
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 103,
+    "name": "port-15-query",
+    "type": "port-helper",
+    "owner": "query",
+    "point": [
+      231,
+      794
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 127,
+    "name": "query",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 21,
+    "name": "test-image-encoder-anchor",
+    "type": "shape",
+    "owner": "test-image-encoder",
+    "bbox": [
+      318,
+      743,
+      207,
+      93
+    ]
+  },
+  {
+    "id": 84,
+    "name": "label-block:test-image-encoder",
+    "type": "text-block",
+    "owner": "test-image-encoder",
+    "sourceTextIds": [
+      "text-test-image-encoder-0",
+      "text-test-image-encoder-1"
+    ],
+    "text": "Image\nencoder",
+    "bbox": [
+      318,
+      743,
+      207,
+      93
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 100,
+    "name": "port-12-test-image-encoder",
+    "type": "port-helper",
+    "owner": "test-image-encoder",
+    "point": [
+      414,
+      739
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 104,
+    "name": "port-16-test-image-encoder",
+    "type": "port-helper",
+    "owner": "test-image-encoder",
+    "point": [
+      315,
+      794
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 107,
+    "name": "port-19-test-image-encoder",
+    "type": "port-helper",
+    "owner": "test-image-encoder",
+    "point": [
+      428,
+      837
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 128,
+    "name": "test-image-encoder",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 22,
+    "name": "test-text-encoder-anchor",
+    "type": "shape",
+    "owner": "test-text-encoder",
+    "bbox": [
+      649,
+      743,
+      211,
+      93
+    ]
+  },
+  {
+    "id": 64,
+    "name": "same-encoders-caption",
+    "type": "text",
+    "owner": "test-text-encoder",
+    "text": "Same encoders",
+    "font": "Arial",
+    "fontSize": 31,
+    "bbox": [
+      477.9150390625,
+      627.067646484375,
+      229.169921875,
+      38.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 85,
+    "name": "label-block:test-text-encoder",
+    "type": "text-block",
+    "owner": "test-text-encoder",
+    "sourceTextIds": [
+      "text-test-text-encoder-0",
+      "text-test-text-encoder-1"
+    ],
+    "text": "Text\nencoder",
+    "bbox": [
+      649,
+      743,
+      211,
+      93
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 102,
+    "name": "port-14-test-text-encoder",
+    "type": "port-helper",
+    "owner": "test-text-encoder",
+    "point": [
+      750,
+      739
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 106,
+    "name": "port-18-test-text-encoder",
+    "type": "port-helper",
+    "owner": "test-text-encoder",
+    "point": [
+      863,
+      784
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 109,
+    "name": "port-21-test-text-encoder",
+    "type": "port-helper",
+    "owner": "test-text-encoder",
+    "point": [
+      750,
+      837
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 129,
+    "name": "test-text-encoder",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 23,
+    "name": "template-anchor",
+    "type": "shape",
+    "owner": "template",
+    "bbox": [
+      916,
+      708,
+      347,
+      50
+    ]
+  },
+  {
+    "id": 66,
+    "name": "class-caption",
+    "type": "text",
+    "owner": "template",
+    "text": "Class descriptions",
+    "font": "Arial",
+    "fontSize": 35,
+    "bbox": [
+      946.388427734375,
+      633.588330078125,
+      311.22314453125,
+      43.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 86,
+    "name": "label-block:template",
+    "type": "text-block",
+    "owner": "template",
+    "sourceTextIds": [
+      "text-template-0"
+    ],
+    "text": "a photo of a {label}",
+    "bbox": [
+      916,
+      708,
+      347,
+      50
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 105,
+    "name": "port-17-template",
+    "type": "port-helper",
+    "owner": "template",
+    "point": [
+      916,
+      738
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 130,
+    "name": "template",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 24,
+    "name": "class-chips-anchor",
+    "type": "shape",
+    "owner": "class-chips",
+    "bbox": [
+      936,
+      774,
+      324,
+      48
+    ]
+  },
+  {
+    "id": 72,
+    "name": "class-caption-0",
+    "type": "text",
+    "owner": "class-chips",
+    "text": "boat",
+    "font": "Arial",
+    "fontSize": 30,
+    "bbox": [
+      953.83740234375,
+      780.9615234375,
+      63.3251953125,
+      37.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 73,
+    "name": "class-caption-1",
+    "type": "text",
+    "owner": "class-chips",
+    "text": "bird",
+    "font": "Arial",
+    "fontSize": 30,
+    "bbox": [
+      1069.669921875,
+      780.9615234375,
+      56.66015625,
+      37.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 74,
+    "name": "class-caption-2",
+    "type": "text",
+    "owner": "class-chips",
+    "text": "cup",
+    "font": "Arial",
+    "fontSize": 30,
+    "bbox": [
+      1184.83251953125,
+      775.3951171875,
+      53.3349609375,
+      37.5
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 131,
+    "name": "class-chips",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 25,
+    "name": "cosine-anchor",
+    "type": "shape",
+    "owner": "cosine",
+    "bbox": [
+      895,
+      872,
+      267,
+      88
+    ]
+  },
+  {
+    "id": 75,
+    "name": "test-norm-caption",
+    "type": "text",
+    "owner": "cosine",
+    "text": "Normalized embeddings",
+    "font": "Arial",
+    "fontSize": 28,
+    "bbox": [
+      477.03515625,
+      919.8151953125,
+      301.9296875,
+      35
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 87,
+    "name": "label-block:cosine",
+    "type": "text-block",
+    "owner": "cosine",
+    "sourceTextIds": [
+      "text-cosine-0",
+      "text-cosine-1"
+    ],
+    "text": "Cosine\nsimilarity",
+    "bbox": [
+      895,
+      872,
+      267,
+      88
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 108,
+    "name": "port-20-cosine",
+    "type": "port-helper",
+    "owner": "cosine",
+    "point": [
+      890,
+      915
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 110,
+    "name": "port-22-cosine",
+    "type": "port-helper",
+    "owner": "cosine",
+    "point": [
+      596,
+      878
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 111,
+    "name": "port-23-cosine",
+    "type": "port-helper",
+    "owner": "cosine",
+    "point": [
+      1164,
+      915
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 132,
+    "name": "cosine",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 26,
+    "name": "nearest-anchor",
+    "type": "shape",
+    "owner": "nearest",
+    "bbox": [
+      1285,
+      874,
+      307,
+      81
+    ]
+  },
+  {
+    "id": 88,
+    "name": "label-block:nearest",
+    "type": "text-block",
+    "owner": "nearest",
+    "sourceTextIds": [
+      "text-nearest-0"
+    ],
+    "text": "Nearest label",
+    "bbox": [
+      1285,
+      874,
+      307,
+      81
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 112,
+    "name": "port-24-nearest",
+    "type": "port-helper",
+    "owner": "nearest",
+    "point": [
+      1280,
+      915
+    ],
+    "excludedFromContentEditabilityDenominator": true
+  },
+  {
+    "id": 133,
+    "name": "nearest",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 134,
+    "name": "image-batch-encode",
+    "type": "connector",
+    "owner": null,
+    "edge": "image-batch-encode",
+    "fromBinding": "port-1-train-images",
+    "toBinding": "port-2-train-image-encoder",
+    "stroke": "#1656CC",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 135,
+    "name": "text-batch-encode",
+    "type": "connector",
+    "owner": null,
+    "edge": "text-batch-encode",
+    "fromBinding": "port-3-train-captions",
+    "toBinding": "port-4-train-text-encoder",
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 136,
+    "name": "image-to-matrix",
+    "type": "connector",
+    "owner": null,
+    "edge": "image-to-matrix",
+    "fromBinding": "port-5-train-image-encoder",
+    "toBinding": "port-6-matrix",
+    "stroke": "#1656CC",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 137,
+    "name": "text-to-matrix-left:segment:0",
+    "type": "connector",
+    "owner": "group-text-to-matrix-left",
+    "edge": "text-to-matrix-left",
+    "fromBinding": "port-7-train-text-encoder",
+    "toBinding": null,
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 138,
+    "name": "text-to-matrix-left:segment:1",
+    "type": "connector",
+    "owner": "group-text-to-matrix-left",
+    "edge": "text-to-matrix-left",
+    "fromBinding": null,
+    "toBinding": "port-8-matrix",
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 139,
+    "name": "group-text-to-matrix-left",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 140,
+    "name": "text-to-matrix-mid",
+    "type": "connector",
+    "owner": null,
+    "edge": "text-to-matrix-mid",
+    "fromBinding": "port-7-train-text-encoder",
+    "toBinding": "port-9-matrix",
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 141,
+    "name": "text-to-matrix-right:segment:0",
+    "type": "connector",
+    "owner": "group-text-to-matrix-right",
+    "edge": "text-to-matrix-right",
+    "fromBinding": "port-7-train-text-encoder",
+    "toBinding": null,
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 142,
+    "name": "text-to-matrix-right:segment:1",
+    "type": "connector",
+    "owner": "group-text-to-matrix-right",
+    "edge": "text-to-matrix-right",
+    "fromBinding": null,
+    "toBinding": "port-10-matrix",
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 143,
+    "name": "group-text-to-matrix-right",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 144,
+    "name": "reuse-image",
+    "type": "connector",
+    "owner": null,
+    "edge": "reuse-image",
+    "fromBinding": "port-11-train-image-encoder",
+    "toBinding": "port-12-test-image-encoder",
+    "stroke": "#1656CC",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 145,
+    "name": "reuse-text:segment:0",
+    "type": "connector",
+    "owner": "group-reuse-text",
+    "edge": "reuse-text",
+    "fromBinding": "port-13-train-text-encoder",
+    "toBinding": null,
+    "stroke": "#108C80",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 146,
+    "name": "reuse-text:segment:1",
+    "type": "connector",
+    "owner": "group-reuse-text",
+    "edge": "reuse-text",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#108C80",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 147,
+    "name": "reuse-text:segment:2",
+    "type": "connector",
+    "owner": "group-reuse-text",
+    "edge": "reuse-text",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#108C80",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 148,
+    "name": "reuse-text:segment:3",
+    "type": "connector",
+    "owner": "group-reuse-text",
+    "edge": "reuse-text",
+    "fromBinding": null,
+    "toBinding": "port-14-test-text-encoder",
+    "stroke": "#108C80",
+    "width": 3.5,
+    "dashed": true,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 149,
+    "name": "group-reuse-text",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 150,
+    "name": "query-image-encode",
+    "type": "connector",
+    "owner": null,
+    "edge": "query-image-encode",
+    "fromBinding": "port-15-query",
+    "toBinding": "port-16-test-image-encoder",
+    "stroke": "#1656CC",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 151,
+    "name": "class-text-encode:segment:0",
+    "type": "connector",
+    "owner": "group-class-text-encode",
+    "edge": "class-text-encode",
+    "fromBinding": "port-17-template",
+    "toBinding": null,
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 152,
+    "name": "class-text-encode:segment:1",
+    "type": "connector",
+    "owner": "group-class-text-encode",
+    "edge": "class-text-encode",
+    "fromBinding": null,
+    "toBinding": "port-18-test-text-encoder",
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 153,
+    "name": "group-class-text-encode",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 154,
+    "name": "image-to-similarity:segment:0",
+    "type": "connector",
+    "owner": "group-image-to-similarity",
+    "edge": "image-to-similarity",
+    "fromBinding": "port-19-test-image-encoder",
+    "toBinding": null,
+    "stroke": "#1656CC",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 155,
+    "name": "image-to-similarity:segment:1",
+    "type": "connector",
+    "owner": "group-image-to-similarity",
+    "edge": "image-to-similarity",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#1656CC",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 156,
+    "name": "image-to-similarity:segment:2",
+    "type": "connector",
+    "owner": "group-image-to-similarity",
+    "edge": "image-to-similarity",
+    "fromBinding": null,
+    "toBinding": null,
+    "stroke": "#1656CC",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 157,
+    "name": "image-to-similarity:segment:3",
+    "type": "connector",
+    "owner": "group-image-to-similarity",
+    "edge": "image-to-similarity",
+    "fromBinding": null,
+    "toBinding": "port-20-cosine",
+    "stroke": "#1656CC",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  },
+  {
+    "id": 158,
+    "name": "group-image-to-similarity",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 159,
+    "name": "text-to-similarity:segment:0",
+    "type": "connector",
+    "owner": "group-text-to-similarity",
+    "edge": "text-to-similarity",
+    "fromBinding": "port-21-test-text-encoder",
+    "toBinding": null,
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 160,
+    "name": "text-to-similarity:segment:1",
+    "type": "connector",
+    "owner": "group-text-to-similarity",
+    "edge": "text-to-similarity",
+    "fromBinding": null,
+    "toBinding": "port-22-cosine",
+    "stroke": "#108C80",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "none"
+  },
+  {
+    "id": 161,
+    "name": "group-text-to-similarity",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 162,
+    "name": "similarity-readout",
+    "type": "connector",
+    "owner": null,
+    "edge": "similarity-readout",
+    "fromBinding": "port-23-cosine",
+    "toBinding": "port-24-nearest",
+    "stroke": "#4E576B",
+    "width": 4,
+    "dashed": false,
+    "startArrow": "none",
+    "endArrow": "triangle"
+  }
+]

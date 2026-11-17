@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "review_type": "source-informed initial-raster review after frozen pixel-only reading",
+  "native_artifact_accepted": false,
+  "pixel_only_freeze": {"path": "first-reading-freeze.json", "sha256": "a2bab13e359d5ea1356bcdb1aa789be2c0519b184a0e06949093ccabf196f100"},
+  "candidate_a": {"verdict": "retain_as_fallback", "full_sha256": "cf35019c1e6833366e417f2f1e38e4a9199165c2fc755645bcea2d9f4f939555", "paper_width_sha256": "d2532fffc39d314a1b766239ebba2bc54f1b657ffdf0d83d5f2e58041d90a1bd", "scientific_status": "usable", "issue": "Top matrix-caption arrows can suggest caption-to-matrix bypass; nonblocking."},
+  "candidate_b": {"verdict": "revise_not_selectable", "full_sha256": "81736939d72b5c1e1afa1f99f4edaf2c3f0d5bb7371cd6ce3188e9860030bfb9", "paper_width_sha256": "dfcdbf614c5c45f17abe0d30991c1c81c46ac5669c44331a501acc72b5c55801", "blockers": ["teal reuse appears matrix-sourced", "class text arrow reads encoder-to-prompts", "individual class names incorrectly retain braces"]},
+  "b2_edit_prompt": {"path": "prompt-edit-b2.txt", "sha256": "3b131472bbabf7c90e88bfb9ca200807f99014817e769a1adffc209f32598ed1", "verdict": "scientifically sufficient narrow repair"},
+  "nonblocking_design_note": "Both candidates use gradients despite flat-fill request; reserve edits for scientific relations."
+}

@@ -1,0 +1,132 @@
+{
+  "version": "clip-showcase-1",
+  "scope": "ICML2021 paper concept, symmetric paired-batch contrastive pretraining and single-template zero-shot classification. Released code corroborates normalized scaled-cosine forward path only. No execution, benchmark, dataset-size claim or guaranteed classification result.",
+  "takeaway": "Contrastive image-text alignment learns reusable visual concepts; class descriptions become a classifier without task-specific training.",
+  "contributionHierarchy": [
+    {
+      "id": "paired-alignment",
+      "claim": "Learn visual representations by aligning images with their paired natural-language descriptions",
+      "kind": "Scalable combination of natural-language supervision and established contrastive learning, not a new loss primitive",
+      "placement": "main",
+      "blocks": [
+        "paired",
+        "encoders",
+        "alignment"
+      ],
+      "evidence": [
+        {
+          "source": "paper",
+          "quote": "CLIP jointly trains an image encoder and a text encoder"
+        },
+        {
+          "source": "paper",
+          "quote": "symmetric cross entropy loss"
+        }
+      ],
+      "visualCue": "A large 3x3 image-caption similarity matrix is the focal object: exactly three coral diagonal true pairs and six pale off-diagonal comparisons. Row and column arrows visibly establish both retrieval directions.",
+      "prominence": "Primary composition anchor; geometry communicates matched versus mismatched image-text pairs"
+    },
+    {
+      "id": "language-classifier",
+      "claim": "Reuse the learned encoders so class descriptions define a zero-shot image classifier",
+      "kind": "Transfer interface enabled by cross-modal pretraining; not a separate trained task head",
+      "placement": "main",
+      "blocks": [
+        "reuse",
+        "query",
+        "classify"
+      ],
+      "evidence": [
+        {
+          "source": "paper",
+          "quote": "synthesizes a zero-shot linear classifier"
+        },
+        {
+          "source": "paper",
+          "quote": "embedding the names or descriptions of the"
+        }
+      ],
+      "visualCue": "A clearly separated zero-shot region uses a new image and named text prompts with the SAME pretrained encoders; compare normalized embeddings to select nearest class text. No task-specific training arrow or loss.",
+      "prominence": "Secondary linked focal point; explains why alignment matters without a second training pipeline"
+    },
+    {
+      "id": "symmetry",
+      "claim": "Train both image-to-text and text-to-image retrieval using symmetric cross entropy",
+      "kind": "Supporting established training objective",
+      "placement": "support",
+      "blocks": [
+        "alignment"
+      ],
+      "evidence": [
+        {
+          "source": "paper",
+          "quote": "loss_i = cross_entropy_loss(logits, labels, axis=0)"
+        },
+        {
+          "source": "paper",
+          "quote": "loss_t = cross_entropy_loss(logits, labels, axis=1)"
+        }
+      ],
+      "visualCue": "Two small direction labels next to matrix; a compact Symmetric loss label, no optimizer graph.",
+      "prominence": "Local explanation subordinate to matrix"
+    },
+    {
+      "id": "scale-results",
+      "claim": "Scaling and downstream benchmark performance",
+      "kind": "Empirical contributions outside a computation overview",
+      "placement": "outside",
+      "blocks": [],
+      "evidence": [
+        {
+          "source": "paper",
+          "quote": "400 million (image, text) pairs"
+        }
+      ],
+      "visualCue": "No dataset-size badge, leaderboard or fabricated result.",
+      "prominence": "Not drawn"
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "matrix-bridge",
+      "composition": "White landscape about1.8:1. LEFT two aligned image/text input lanes into blue/teal encoders; CENTER a large 3x3 pairing matrix with coral diagonal, reading as the visual heart. RIGHT compact zero-shot region separated by a fine vertical rule: new image and class-prompt chips converge through reused encoder roles to cosine matching and Nearest label. Paired learning occupies about65% of width. Supporting captions short and precisely placed; no uniform cards or numbered steps.",
+      "mechanism": "The matrix is a cross-modal bridge, not another rectangle in a flowchart. Small blue image glyphs align to matrix rows and teal caption labels to columns; two directional cues explain symmetric retrieval. A fine dashed transfer link carries both trained encoders across an explicit zero-shot boundary. Class names visibly become text candidates, not a learned classifier head."
+    },
+    {
+      "id": "stacked-transfer",
+      "composition": "White landscape about1.65:1. TOP large bilateral alignment composition: three image patches along matrix LEFT and three caption chips along TOP, with separate blue Image encoder and teal Text encoder feeding rows/columns. Coral diagonal is dominant. LOWER full-width zero-shot strip reuses encoder weights: image lane and text-prompt lane converge into cosine matching and Nearest label. Top occupies65%height, bottom35%, separated by slim horizontal rule. No title/footer or repeated block panels.",
+      "mechanism": "Orthogonal row and column identity makes matched pairs visually obvious. The contrastive phase is a two-axis relationship, then a narrow transfer band shows language-provided classes with no task-specific update. Dashed model-reuse arrows distinguish parameter transfer from data arrows."
+    }
+  ],
+  "informationSelection": [
+    {
+      "item": "Paired batch, dual normalized embeddings, full similarity matrix, symmetric loss",
+      "placement": "main",
+      "reason": "Defines alignment mechanism",
+      "representation": "Three matched examples and explicit diagonal versus off-diagonal geometry"
+    },
+    {
+      "item": "Natural-language descriptions define classes, pretrained encoders reused without task-specific training",
+      "placement": "main",
+      "reason": "Connects representation learning to transfer contribution",
+      "representation": "Separate zero-shot context, input prompts and query meet at cosine matching"
+    },
+    {
+      "item": "Projection, normalization, learned scale",
+      "placement": "internal",
+      "reason": "Necessary similarity definition without tensor clutter",
+      "representation": "Inside encoder/scoring blocks, local normalized-embedding label"
+    },
+    {
+      "item": "Data scale, training recipe, backbones, prompt ensembling and measured performance",
+      "placement": "record-only",
+      "reason": "Outside conceptual architecture scope",
+      "representation": "Sources and record only"
+    }
+  ],
+  "review": {
+    "sourceAudit": "source-audit.md",
+    "planReview": "source-plan-review.md"
+  },
+  "authorFigureSeen": true
+}

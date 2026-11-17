@@ -1,0 +1,74 @@
+{
+  "engine": "LibreOffice -> PDF -> MuPDF",
+  "pptxSHA256": "1fd7440c1a828e20c8d2fb2162d5b1eb5dd971185efc9e467d333f8cff0c0a13",
+  "pdfSHA256": "c6a68b5c628b044619df701d3d31511d021f3871aaf70365065ddcb3ed07a2f3",
+  "requestedFonts": [
+    "Arial"
+  ],
+  "renderedFonts": [
+    "BAAAAA+Arial-BoldMT",
+    "CAAAAA+ArialMT",
+    "DAAAAA+Arial-BoldMT",
+    "EAAAAA+Arial-BoldMT",
+    "FAAAAA+Arial-BoldMT"
+  ],
+  "fontScope": "Conversion-process-only fontconfig; no fonts installed globally",
+  "errors": [],
+  "limits": [
+    "No interactive Microsoft PowerPoint editing test.",
+    "Port attachment and font appearance are verified through this independent rendering engine.",
+    "Text isolation uses a contrasting matte without changing text styles; composed-slide contrast/occlusion still requires visual review."
+  ],
+  "textChecks": [
+    {
+      "id": "label-block:train-image-encoder",
+      "ink": [
+        375,
+        362,
+        159,
+        76
+      ],
+      "container": [
+        350,
+        333,
+        207,
+        135
+      ],
+      "expectedLines": 2,
+      "actualLines": 2,
+      "dx": 1.0,
+      "dy": -0.5,
+      "isolationMatte": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "label-block:template",
+      "ink": [
+        955,
+        722,
+        269,
+        29
+      ],
+      "container": [
+        916,
+        708,
+        347,
+        50
+      ],
+      "expectedLines": 1,
+      "actualLines": 1,
+      "dx": 0.0,
+      "dy": 3.5,
+      "isolationMatte": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "edgeChecks": [],
+  "passed": true
+}

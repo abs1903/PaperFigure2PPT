@@ -1,0 +1,20 @@
+{
+  "operation": "generate",
+  "tool": "built-in image_gen",
+  "compositionId": "matrix-bridge",
+  "promptPath": "prompt-matrix-bridge.txt",
+  "promptSHA256": "3511ced5d9be7e51334bc417295f272b77cf394cebb41aa1ce4cfe0ae047d6fa",
+  "inputImages": [],
+  "outputImage": {
+    "path": "candidate-a.png",
+    "sha256": "cf35019c1e6833366e417f2f1e38e4a9199165c2fc755645bcea2d9f4f939555",
+    "sizePx": [
+      1682,
+      935
+    ]
+  },
+  "semanticFreezeSHA256": "e4bcb69b3bfcbae139d609721f5c7b08a1c675c8befc1486f6627c185e743f14",
+  "decision": "unreviewed",
+  "modelSnapshot": "not exposed",
+  "nativeOrOfficeAccepted": false
+}

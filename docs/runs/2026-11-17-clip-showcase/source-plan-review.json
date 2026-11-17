@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.1",
+  "review_type": "regenerated source-narrative-plan-brief-prompt review before generation",
+  "verdict": "accept",
+  "generation_authorized": true,
+  "supersedes": "source-plan-v1-rejected/source-plan-review.json",
+  "summary": "The v1 reuse-evidence blocker is repaired. The plan is source-bounded, phase-correct, contribution-led, and ready for the two reviewed image-generation alternatives.",
+  "integrity": {
+    "pinned_pdf_sha256": "2a4952960f350e50a3a4a847371b80b8aaa09ba82d1c2a8f6b30450e392a1fe4",
+    "pinned_model_sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+    "method_prose": {"path": "source/method-prose.txt", "sha256": "3413ab2b60a88b9857555972d8cd8d763c8a1ba565a2d4200cb68ad13d63cc9e", "purpose": "column-aware sequential extraction for paper pages 1-5"},
+    "generator_evidence_input": "normalized concatenation of raw paper-text.txt and method-prose.txt",
+    "raw_pdf_and_code_changed": false
+  },
+  "reviewed_artifacts": {
+    "spec": {"path": "spec.json", "nodes": 12, "edges": 12},
+    "narrative_plan": {"path": "narrative-plan.json", "semantic_digest_emitted": "0b787b11e6db4526d477e8ea1d0ffb67c34acbd07525491da0cc3d3b8f76832c", "plan_digest_emitted": "21031f43cbb9b0cb5e1c72ad14038254055e7c475adf9ec23d8bf90346c5dc0d"},
+    "briefs": ["brief-matrix-bridge.json", "brief-stacked-transfer.json"],
+    "prompts": ["prompt-matrix-bridge.txt", "prompt-stacked-transfer.txt"]
+  },
+  "repaired_blocker": {
+    "id": "reuse-edge-evidence",
+    "result": "accepted",
+    "affected_edges": ["image-reuse", "text-reuse"],
+    "current_quote": "To apply CLIP to downstream tasks, we reuse this capability",
+    "current_evidence": ["source/method-prose.txt:438-444", "source/paper-text.txt:296-305"],
+    "phase": "inference",
+    "kind": "control",
+    "boundary": "Dashed reuse means conceptual model/parameter reuse, not training dataflow or a locally verified frozen-checkpoint execution."
+  },
+  "accepted": [
+    {"id": "contribution-abstraction", "finding": "Matrix-first paired alignment plus class-text zero-shot transfer is source-bounded and does not claim a new loss primitive."},
+    {"id": "train-semantics", "finding": "N by N all-pairs comparison, diagonal paired examples, off-diagonal mismatches, and symmetric image-to-text/text-to-image loss are represented.", "evidence": ["source/paper-text.txt:181-195", "source/paper-text.txt:210-224"]},
+    {"id": "code-boundary", "finding": "Plan distinguishes paper loss from normalized scaled-cosine forward logits returned by released code.", "evidence": ["source/model.py:358-372"]},
+    {"id": "phase-boundary", "finding": "Model encoders span both phases; loss/data flow stays train-only and zero-shot prohibits loss, gradients and a new head."},
+    {"id": "non-empirical", "finding": "Examples, diagonal marks and nearest-label output are explicitly schematic with no asserted result."},
+    {"id": "alternatives", "finding": "Matrix bridge and stacked transfer differ materially in spatial/narrative composition while retaining the same source semantics."}
+  ],
+  "generation_conditions": [
+    "Use only the two accepted alternatives and the declared image-call budget.",
+    "Do not change scientific claims based on generated pixels.",
+    "Save a raster pixel-only first reading before source/brief comparison.",
+    "Do not treat raster review as native-artifact acceptance."
+  ]
+}

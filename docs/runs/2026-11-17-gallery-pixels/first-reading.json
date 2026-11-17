@@ -1,0 +1,27 @@
+{
+  "isolation_statement": "This account was produced by opening only candidate-a.png, candidate-a-paper-width.png, candidate-b.png, and candidate-b-paper-width.png. No source, parent, prompt, plan, review, metadata beyond dimensions and SHA-256 hashes, or external material was inspected. It is a pixel-only first reading, not a novelty, correctness, or scientific-validity assessment.",
+  "intended_publication_width_inches": 7,
+  "diagnostic_width_px": 672,
+  "files": [
+    {"name": "candidate-a.png", "sha256": "cf35019c1e6833366e417f2f1e38e4a9199165c2fc755645bcea2d9f4f939555", "width_px": 1682, "height_px": 935},
+    {"name": "candidate-a-paper-width.png", "sha256": "d2532fffc39d314a1b766239ebba2bc54f1b657ffdf0d83d5f2e58041d90a1bd", "width_px": 672, "height_px": 374},
+    {"name": "candidate-b.png", "sha256": "81736939d72b5c1e1afa1f99f4edaf2c3f0d5bb7371cd6ce3188e9860030bfb9", "width_px": 1610, "height_px": 977},
+    {"name": "candidate-b-paper-width.png", "sha256": "dfcdbf614c5c45f17abe0d30991c1c81c46ac5669c44331a501acc72b5c55801", "width_px": 672, "height_px": 408}
+  ],
+  "candidate_a": {
+    "main_claim": "Contrastive image-text pre-training aligns paired image and text embeddings bidirectionally; the same encoders then support zero-shot classification through cosine comparison between a new image and textual class descriptions.",
+    "primary_regions": ["left contrastive pre-training panel", "3 x 3 image-text matching matrix"],
+    "supporting_regions": ["right zero-shot-use panel", "dashed same-encoder reuse links"],
+    "paper_width_readability": "Major stages and components are legible; secondary annotations, directional labels, dashed reuse path, and small template text are crowded or small.",
+    "pixel_only_ambiguities": ["loss formula and reduction", "negative-pair semantics", "batch and temperature details", "exact nearest-label rule", "which final class is predicted"],
+    "prior_familiarity": "The generic dual-encoder contrastive/zero-shot pattern is visually familiar; this does not support claims about source, novelty, implementation, or correctness."
+  },
+  "candidate_b": {
+    "main_claim": "The same contrastive pre-training and zero-shot classification story is arranged as an upper training stage and a lower deployment stage.",
+    "primary_regions": ["upper training field", "central matching matrix and encoder paths"],
+    "supporting_regions": ["lower zero-shot-use field", "direction legend", "dashed same-encoder reuse links"],
+    "paper_width_readability": "The stacked stage structure and major components are legible; normalized-embedding labels, template strings, text-input branches, and dashed reuse links are dense or small.",
+    "pixel_only_ambiguities": ["loss formula and reduction", "negative-pair semantics", "image-to-label pairing on text side", "one-image versus class-text embedding-set distinction", "which final class is predicted"],
+    "prior_familiarity": "The generic dual-encoder contrastive/zero-shot pattern is visually familiar; this does not support claims about source, novelty, implementation, or correctness."
+  }
+}

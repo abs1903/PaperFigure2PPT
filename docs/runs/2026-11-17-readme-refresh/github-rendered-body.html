@@ -1,0 +1,77 @@
+<h1 align="center" dir="auto">PaperFigure</h1>
+<p align="center" dir="auto"><strong>Research figures you can actually edit.</strong></p>
+<p align="center" dir="auto">A Codex skill for source-grounded paper overviews, designed with ImageGen<br>and delivered as native PowerPoint shapes, text and connectors.</p>
+<p align="center" dir="auto">
+  <a href="#examples">Examples</a> ·
+  <a href="#install">Install</a> ·
+  <a href="#how-it-works">Workflow</a> ·
+  <a href="paperfigure/SKILL.md">Skill</a> ·
+  <a href="docs/USAGE.md">Reference</a>
+</p>
+<h2 dir="auto">Examples</h2>
+<p dir="auto">These figures use the current image-first workflow: source and contribution planning,<br>
+ImageGen design, isolated review, then faithful native reconstruction. The previews<br>
+below are <strong>actual LibreOffice renders of the downloadable PPTX files</strong>. Click any<br>
+figure to inspect it at full resolution.</p>
+<h3 dir="auto">CLIP · Alignment becomes a classifier</h3>
+<p dir="auto">A cross-modal pairing matrix makes the learning objective visible; a separate<br>
+zero-shot region shows how language descriptions define the classes.</p>
+<p dir="auto"><a href="docs/runs/2026-11-17-clip-showcase/output-v2/native-render/preview.png"><img src="docs/runs/2026-11-17-clip-showcase/output-v2/native-render/preview.png" width="100%" alt="CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders." style="max-width: 100%;"></a></p>
+<p dir="auto"><strong><a href="docs/runs/2026-11-17-clip-showcase/output-v2/figure.pptx">PowerPoint</a></strong> · <a href="docs/runs/2026-11-17-clip-showcase/output-v2/editable.svg">SVG</a> · <a href="docs/runs/2026-11-17-clip-showcase/output-v2/native-render/figure.pdf">PDF</a> · <a href="docs/runs/2026-11-17-clip-showcase/REPORT.md">Source &amp; review</a></p>
+<hr>
+<h3 dir="auto">Agentless · Narrow the search, focus the edit</h3>
+<p dir="auto">A narrowing repository funnel exposes hierarchical localization. The enlarged edit<br>
+window makes localized Search/Replace distinct from unconstrained planning.</p>
+<p dir="auto"><a href="docs/runs/2026-11-17-agentless-native/output-v2/native-render/preview.png"><img src="docs/runs/2026-11-17-agentless-native/output-v2/native-render/preview.png" width="100%" alt="Agentless: repository-to-edit-location localization funnel, focused context for local Search/Replace, and candidate patch selection." style="max-width: 100%;"></a></p>
+<p dir="auto"><strong><a href="docs/runs/2026-11-17-agentless-native/output-v2/figure.pptx">PowerPoint</a></strong> · <a href="docs/runs/2026-11-17-agentless-native/output-v2/editable.svg">SVG</a> · <a href="docs/runs/2026-11-17-agentless-native/output-v2/native-render/figure.pdf">PDF</a> · <a href="docs/runs/2026-11-17-agentless-native/REPORT.md">Source &amp; review</a></p>
+<hr>
+<h3 dir="auto">MAE · Encode less, reconstruct the full image</h3>
+<p dir="auto">The sparse encoder lane expands only after mask tokens are inserted. A separate<br>
+objective inset preserves the distinction between full prediction and masked-only loss.</p>
+<p dir="auto"><a href="docs/runs/2026-11-17-mae-high-quality/output-v2/native-render/preview.png"><img src="docs/runs/2026-11-17-mae-high-quality/output-v2/native-render/preview.png" width="100%" alt="MAE: four visible patches enter the encoder, twelve learned mask tokens join afterward, and a lightweight decoder predicts all patches with masked-only MSE." style="max-width: 100%;"></a></p>
+<p dir="auto"><strong><a href="docs/runs/2026-11-17-mae-high-quality/output-v2/figure.pptx">PowerPoint</a></strong> · <a href="docs/runs/2026-11-17-mae-high-quality/output-v2/editable.svg">SVG</a> · <a href="docs/runs/2026-11-17-mae-high-quality/output-v2/native-render/figure.pdf">PDF</a> · <a href="docs/runs/2026-11-17-mae-high-quality/REPORT.md">Source &amp; review</a></p>
+<p dir="auto">All three cases retain native text, shapes and connectors with <strong>zero embedded<br>
+pictures</strong>. Source, actual-render and independent-review evidence are recorded for<br>
+each output. These are author-informed explanatory designs, not new experimental<br>
+results or claims to outperform the original paper figures.</p>
+<p dir="auto">Earlier ReAct, Reflexion, Voyager, BLIP-2 and LLaVA studies remain available in the<br>
+<a href="docs/USAGE.md#examples">case archive and technical reference</a>.</p>
+<h2 dir="auto">Install</h2>
+<p dir="auto">Requires Node.js 20+ and npm. Clone the repository, then run:</p>
+<div class="highlight highlight-source-shell" dir="auto"><pre class="notranslate">git clone https://github.com/abs1903/PaperFigure2PPT.git
+<span class="pl-c1">cd</span> PaperFigure2PPT
+npm --prefix paperfigure ci
+node paperfigure/scripts/install.mjs</pre></div>
+<p dir="auto">Follow the dependency command printed by the installer, start a new Codex chat,<br>
+and invoke <code class="notranslate">$paperfigure</code>. Existing installations are protected from overwriting.<br>
+See <a href="docs/USAGE.md#install-in-codex">custom destinations and dependencies</a>.</p>
+<p dir="auto">Image generation uses the host's built-in tool when available; no external provider<br>
+API is called silently. Independent PowerPoint verification requires LibreOffice.<br>
+Deterministic native authoring is also available without image generation.</p>
+<h2 dir="auto">Try it</h2>
+<blockquote>
+<p dir="auto">Use $paperfigure to read this paper and its official code, identify the central<br>
+contribution, and design a clear method overview. Compare two visual compositions,<br>
+review the generated image independently, then deliver an editable SVG and PPTX<br>
+with an actual Office render. Keep the figure free of an overall title or footer.</p>
+</blockquote>
+<p dir="auto">For a supplied figure, ask to preserve its design while reconstructing native<br>
+editable elements. Text, modules and connectors remain editable; exact font identity<br>
+and interactive Microsoft PowerPoint behavior are not guaranteed by an Office render.</p>
+<h2 dir="auto">How it works</h2>
+<p dir="auto"><strong>Sources → contribution plan → ImageGen candidates → isolated review → native SVG/PPTX → Office render → final review</strong></p>
+<p dir="auto">The paper story determines what gets visual emphasis. ImageGen explores the design;<br>
+the reviewed image is then frozen as a reconstruction target. SVG and PPTX are<br>
+built from the same authored scene, inspected and independently rendered.</p>
+<p dir="auto">The shared <code class="notranslate">delivery.json</code> gate separates <strong>mechanical</strong>, <strong>render</strong> and <strong>review</strong><br>
+status. Every stage must pass before an output is marked ready. Rejected candidates,<br>
+source evidence and earlier versions are retained alongside the accepted files.</p>
+<p dir="auto">This is an agent-assisted skill, not a one-command paper parser or automatic PNG<br>
+vectorizer. See the <a href="paperfigure/SKILL.md">skill entrypoint</a>,<br>
+<a href="paperfigure/references/image-reference.md">image-first workflow</a>,<br>
+<a href="paperfigure/references/png-reconstruction.md">native reconstruction</a> and<br>
+<a href="docs/USAGE.md">CLI / verification reference</a>.</p>
+<h2 dir="auto">License</h2>
+<p dir="auto">Original implementation: <a href="LICENSE">MIT</a>. Paper text, official source snapshots,<br>
+fonts and author figures retain their respective rights; each case records its<br>
+provenance. Displayed showcase figures use newly authored schematic artwork.</p>

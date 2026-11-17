@@ -1,0 +1,25 @@
+{
+  "operation": "edit",
+  "tool": "built-in image_gen",
+  "parentImageSHA256": "81736939d72b5c1e1afa1f99f4edaf2c3f0d5bb7371cd6ce3188e9860030bfb9",
+  "promptPath": "prompt-edit-b2.txt",
+  "promptSHA256": "3b131472bbabf7c90e88bfb9ca200807f99014817e769a1adffc209f32598ed1",
+  "inputImages": [
+    {
+      "path": "candidate-b.png",
+      "sha256": "81736939d72b5c1e1afa1f99f4edaf2c3f0d5bb7371cd6ce3188e9860030bfb9",
+      "role": "actual referenced_image_paths edit target"
+    }
+  ],
+  "outputImage": {
+    "path": "candidate-b2.png",
+    "sha256": "e108391ae577afe2378d6439e86a03270518d3535eebccbfef86d88f4016d758",
+    "sizePx": [
+      1610,
+      977
+    ]
+  },
+  "semanticFreezeSHA256": "e4bcb69b3bfcbae139d609721f5c7b08a1c675c8befc1486f6627c185e743f14",
+  "decision": "unreviewed",
+  "nativeOrOfficeAccepted": false
+}

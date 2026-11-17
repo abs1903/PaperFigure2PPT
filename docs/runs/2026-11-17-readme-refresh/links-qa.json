@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "localLinkChecks": {
+    "README.md": 27,
+    "docs/USAGE.md": 60
+  },
+  "missing": []
+}

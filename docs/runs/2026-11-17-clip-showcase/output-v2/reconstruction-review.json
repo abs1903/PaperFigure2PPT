@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/clip_native_review",
+    "isolation": "Separate non-authoring agent; wrote the pre-output B2 count/region/text/route inventory before native output existed, then independently reopened final target, SVG, and actual LibreOffice render."
+  },
+  "referenceFidelity": "pass",
+  "svgNativeEditability": "pass",
+  "pptxNativeEditability": "pass",
+  "reference": {
+    "path": "../selected-reference.png",
+    "sha256": "e108391ae577afe2378d6439e86a03270518d3535eebccbfef86d88f4016d758",
+    "width": 1610,
+    "height": 977
+  },
+  "artifacts": {
+    "preOutputInspection": "../native-reference-inspection.md",
+    "editable.svg": "b91eb03b1421860acbc29442e1aefb2d747f881e3e7e936eb7a5f215acd5ee01",
+    "svgPreview": "1d91288956607695ed38db880c0e085f59d8dea2f8add95c1751f8f7635c6a35",
+    "figure.pptx": "fa8e8df5bdc04ee97b03020926311dc87c8982ff21efa680a98d01645def6a62",
+    "officePreview": "ce886ec948cac40eaef1100579809585d093c93e3f3077204c4dd6627bd323d7",
+    "officePdf": "e576ba3ae8b2c73282a6b878613e476e24d819cd162d187c8be4ae15d55a28f0",
+    "objectMap": "d1a1be0e05d331459e303b3e537455294067bf9c15b1c319649ffe7e2e404725",
+    "nativeAudit": "9fb866eac76f58d6f4f4c78a85d488a39239de246a858c68bab48dad102e46c6",
+    "referenceGeometry": "2bc082f584f8f06f0c58a79f4a53177b3ff91043a2206b9294a3f99885b2a23a",
+    "referenceTranscript": "fa632c37cb05b1d8a56c1c0a4b963e4f5f1fafc584e494f2f28488d27843d039",
+    "renderQa": "c963c7afca2ae0bb1a9abb3e59193a2308479ee8a0e4b27bf16b7c2bd96132ac",
+    "typographyQa": "476cc6156608e1750b309822b1fc3046d0199c5db340299f5d2fa5ed2ecd2d92"
+  },
+  "regionChecklist": [
+    {"region": "upper image tiles", "verdict": "pass", "finding": "Three outlined tiles retain sailboat, bird, and handled-cup identity; their collector leads to Image encoder."},
+    {"region": "upper text chips and Text encoder", "verdict": "pass", "finding": "boat/bird/cup chips merge down into Text encoder and its three matrix-column routes."},
+    {"region": "3x3 matrix", "verdict": "pass", "finding": "Nine cells, three main-diagonal coral positives, and six off-diagonal comparisons preserved."},
+    {"region": "training objective", "verdict": "pass", "finding": "Both labeled directions and Symmetric loss remain visually separate and train-only."},
+    {"region": "phase bridge", "verdict": "pass", "finding": "Blue and teal dashed encoder-reuse routes cross only the divider annotation, visibly start/end at same-modality encoders, and do not originate at matrix."},
+    {"region": "zero-shot inputs and readout", "verdict": "pass", "finding": "New image and class-description text enter their encoders; lower embeddings reach Cosine similarity then Nearest label."},
+    {"region": "full and 672px typography", "verdict": "pass", "finding": "No clipping, overlap, missing label, or route/text collision observed in actual Office render; source-like hierarchy and wrapping retained."}
+  ],
+  "authorizedDeviations": [
+    "Mild blue/teal/coral/slate gradients were reconstructed as matched solid fills.",
+    "Unknown raster font was reconstructed with measured Arial/Arial Bold.",
+    "Icon contours are native vector approximations retaining boat, bird, and cup identities and major silhouettes.",
+    "The two reference-visible dashed reuse paths cross the horizontal phase-divider annotation; no other edge-through-module exception is accepted."
+  ],
+  "unresolvedExceptions": [
+    "No interactive Microsoft PowerPoint edit/reflow session was performed; native XML/object-map and independent LibreOffice render establish structure and appearance, not user editing effort.",
+    "Neither source-raster pixels nor this review identifies the original font family; Arial is a documented measured substitute."
+  ],
+  "evidence": [
+    "reference-svg-office-triptych.png and reference-paper-width.png/svg-paper-width.png/office-paper-width.png were visually inspected.",
+    "reference-layout-qa, layout-qa, native-audit, render-qa, typography-style-qa, and typography-qa all report pass for their stated scopes.",
+    "SVG was checked for native text/vector content and PPTX XML/object-map evidence reports 0 pictures and 0 media."
+  ]
+}

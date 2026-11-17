@@ -1,0 +1,18 @@
+{
+  "selected": "candidate-b2.png",
+  "imageCalls": {
+    "initial": 2,
+    "attachedEdits": 1,
+    "used": 3,
+    "maximum": 4
+  },
+  "selectionReason": "Stacked pairing/transfer composition; attached B2 fixes scientific reuse origins and prompt input/literals; independent source/design acceptance and pixel-only account retained.",
+  "hashes": {
+    "selected-reference.png": "e108391ae577afe2378d6439e86a03270518d3535eebccbfef86d88f4016d758",
+    "image-review-b2.json": "594cd3fe0e8183dbb1b4cbc5f7e351c46e35d5584d477e0080024cce6f5a6b0a",
+    "rereading-c.json": "83133011dac6c5f404c1d11b04f96f12448b3f4be76f74d85f0404e339bd2031",
+    "reference-geometry.json": "2bc082f584f8f06f0c58a79f4a53177b3ff91043a2206b9294a3f99885b2a23a",
+    "semantic-freeze.json": "e4bcb69b3bfcbae139d609721f5c7b08a1c675c8befc1486f6627c185e743f14"
+  },
+  "scope": "Raster target accepted only; native and Office separate."
+}

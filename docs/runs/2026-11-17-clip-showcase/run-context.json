@@ -1,0 +1,13 @@
+{
+  "scope": "README showcase; current skill end-to-end new CLIP case plus previously verified Agentless/MAE gallery promotion",
+  "authorFigureSeen": true,
+  "authorFigure": "Official Figure1 viewed on PDF page2 before design; source/paper-page-2.png",
+  "imageBudget": {
+    "initial": 2,
+    "maxEdits": 2,
+    "maxCalls": 4
+  },
+  "noExecution": "No model, training, inference, benchmark or real output. All icons/matrices schematic.",
+  "nativeDeliveryRequired": true,
+  "readmeShowcase": "Use actual independently rendered native PPTX output; no flattened image mockup shown as editable."
+}

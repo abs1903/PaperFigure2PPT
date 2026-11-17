@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "review_type": "source-informed B2 raster review after frozen pixel-only reading",
+  "verdict": "accept_selected_raster",
+  "native_artifact_accepted": false,
+  "selected_candidate": "candidate-b2.png",
+  "reviewed_rasters": {
+    "full": {"path": "candidate-b2.png", "sha256": "e108391ae577afe2378d6439e86a03270518d3535eebccbfef86d88f4016d758", "dimensions_px": [1610, 977]},
+    "paper_width": {"path": "candidate-b2-paper-width.png", "sha256": "79bba3e2792d2a84acfb01cb3f9f681cd55e5a0336c2adb035a621c311c5bde5", "dimensions_px": [672, 408]}
+  },
+  "provenance": {
+    "generation_record": {"path": "generation-record-b2.json", "sha256": "90640e3abdbaccd17d2a233ef1411ff70d2fa040a13580dd9bb3c7ad059305ba"},
+    "edit_prompt": {"path": "prompt-edit-b2.txt", "sha256": "3b131472bbabf7c90e88bfb9ca200807f99014817e769a1adffc209f32598ed1"},
+    "pixel_only_freeze": {"path": "first-reading-freeze.json", "sha256": "a2bab13e359d5ea1356bcdb1aa789be2c0519b184a0e06949093ccabf196f100"}
+  },
+  "repair_verification": [
+    {"id": "text-reuse-origin", "verdict": "fixed", "finding": "Dashed teal reuse link visibly starts at upper Text encoder and ends at lower Text encoder, routing around the matrix."},
+    {"id": "class-input-direction", "verdict": "fixed", "finding": "Class-description cluster arrowhead points into lower Text encoder."},
+    {"id": "template-literals", "verdict": "fixed", "finding": "One literal template a photo of a {label} appears above separate boat, bird, cup chips; braced individual class names are absent."}
+  ],
+  "accepted_semantics": [
+    "separate image and text encoders in both phases",
+    "3 by 3 all-pairs matrix with three diagonal paired targets and off-diagonal comparisons",
+    "symmetric image-to-text and text-to-image objective labels",
+    "paper training loss remains distinct from released-code forward logits",
+    "reused encoder links are model reuse, not training dataflow",
+    "zero-shot class text is input to Text encoder with no inference loss, gradient, target fitting, or new head",
+    "no numerical score, accuracy, claimed local execution, or asserted correct prediction"
+  ],
+  "at_7in": "Main phase transition, matrix, reuse routes, template/class chips and nearest-label route are legible. Normalized-embedding annotations are secondary but interpretable.",
+  "nonblocking_design_notes": [
+    "Phase headers are prominent but do not displace matrix as pre-training focal object.",
+    "Mild gradients depart from flat-fill brief but do not change scientific meaning; no final image call is warranted for this alone.",
+    "If later reconstructed natively with solid fills, call it a source-matched native approximation rather than pixel-derived evidence."
+  ],
+  "next_gate": "B2 may move to README/native workflow. A later native artifact still requires its own verifier and acceptance decision."
+}

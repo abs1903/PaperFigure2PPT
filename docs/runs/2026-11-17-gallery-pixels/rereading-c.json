@@ -1,0 +1,22 @@
+{
+  "isolation_statement": "This rereading opened only candidate-c.png and candidate-c-paper-width.png in this directory and compared their visible presentation with the already saved first-reading account of candidates A and B. No A/B pixels were reopened; no source, parent, prompt, plan, review, metadata beyond C's dimensions and SHA-256 hashes, or external material was inspected.",
+  "files": [
+    {"name": "candidate-c.png", "sha256": "e108391ae577afe2378d6439e86a03270518d3535eebccbfef86d88f4016d758", "width_px": 1610, "height_px": 977},
+    {"name": "candidate-c-paper-width.png", "sha256": "79bba3e2792d2a84acfb01cb3f9f681cd55e5a0336c2adb035a621c311c5bde5", "width_px": 672, "height_px": 408}
+  ],
+  "apparent_mechanism": "Upper contrastive pre-training encodes paired images and word labels into a diagonal-highlighted similarity matrix with bidirectional symmetric loss; lower zero-shot use encodes a new image and template-built class descriptions, compares them with cosine similarity, and selects the nearest label.",
+  "primary_regions": ["upper encoder-to-matrix pre-training field", "lower zero-shot encoder-to-decision field"],
+  "supporting_regions": ["direction legend", "symmetric-loss pill", "dashed same-encoder routes", "horizontal divider", "section badges"],
+  "directions": {
+    "global": "top-to-bottom from training to use",
+    "upper_image_path": "left-to-right",
+    "upper_text_path": "top-to-bottom",
+    "lower_image_path": "left-to-right",
+    "lower_text_path": "right-to-left into text encoder",
+    "decision_path": "blue and green routes toward cosine similarity, then rightward to nearest label"
+  },
+  "comparison_to_prior_account": "C visibly retains B's stacked layout and central matrix. It separates one generic class-description template from three label tokens, and its green dashed reuse connector visibly routes into the lower text encoder. This is a visual-layout comparison only.",
+  "paper_width_readability": "Major phases, cards, encoders, matrix, loss, similarity, and endpoint are recognizable. The template braces and label tokens, normalized-embedding text, dashed green route, text-input elbow, and lower-route convergence are dense or small.",
+  "pixel_only_ambiguities": ["loss equation and reduction", "batching and off-diagonal-negative semantics", "temperature or scaling", "matrix axes", "explicit image-text pair binding", "full template instantiations and representation count", "exact decision rule and predicted class", "unambiguous attachment of legend directions to matrix traversal"],
+  "prior_familiarity": "The graphical method family is visually familiar as a generic dual-encoder contrastive/zero-shot schematic; this does not evidence source, novelty, implementation, or correctness."
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "audit_type": "author-informed source semantics; no proposal, execution, or raster acceptance",
+  "status": "ready_for_pending_plan_review",
+  "pinned_commit": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+  "artifacts": {
+    "paper_pdf": {"path": "source/paper.pdf", "sha256": "2a4952960f350e50a3a4a847371b80b8aaa09ba82d1c2a8f6b30450e392a1fe4", "locator": "source/manifest.json"},
+    "paper_text": {"path": "source/paper-text.txt", "sha256": "17e0e352f7047a02fd80070f717d4cfeced7bdd6d3422b208cc908feebaa7613"},
+    "official_model": {"path": "source/model.py", "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c"},
+    "official_readme": {"path": "source/README.md", "sha256": "f82c5c75e140532eb37a7d943921e1bdd57d740c6b40d0030985bc5b5d11d6f1"},
+    "license": {"path": "source/LICENSE", "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db", "title_locator": "source/LICENSE:1-3"}
+  },
+  "semantic_requirements": [
+    {"id": "all-pairs", "requirement": "Pre-training compares N image-text pairs across an N by N affinity matrix; diagonal entries are real paired examples and off-diagonals are mismatches.", "evidence": ["source/paper-text.txt:210-222", "source/paper-text.txt:181-190"]},
+    {"id": "symmetric-objective", "requirement": "Paper training uses the average of image-to-text and text-to-image cross entropy over scaled pairwise cosine scores.", "evidence": ["source/paper-text.txt:181-195", "source/paper-text.txt:220-224"]},
+    {"id": "code-logits", "requirement": "Pinned forward code L2-normalizes features and returns scaled image-to-text logits plus transpose; it does not compute loss.", "evidence": ["source/model.py:358-372"]},
+    {"id": "zero-shot-class-text", "requirement": "At test time the learned text encoder embeds target class names or descriptions to synthesize a zero-shot linear classifier; downstream use reuses image-text pairing capability.", "evidence": ["source/paper-text.txt:110-113", "source/paper-text.txt:263-268", "source/paper-text.txt:296-305"]},
+    {"id": "readme-inference", "requirement": "README exposes separate image/text encoders and an example that normalizes feature vectors and ranks candidate class text by scaled dot-product similarity.", "evidence": ["source/README.md:69-81", "source/README.md:104-118"]},
+    {"id": "scale-boundary", "requirement": "README says cosine similarities times 100; model code uses learned exp(logit_scale), so fixed times-100 is not an implementation invariant.", "evidence": ["source/README.md:79-81", "source/model.py:292", "source/model.py:366-369"]}
+  ],
+  "hard_rejections": [
+    "isolated paired cards with no all-pairs N by N comparison",
+    "one-direction-only contrastive loss",
+    "unnormalized dot product labeled cosine similarity",
+    "fixed times-100 scale claimed as code invariant",
+    "cross entropy claimed as output of the released forward function",
+    "target-label fitting or newly trained classifier weights in zero-shot use",
+    "training or inference execution, measured score, probability, speed, data volume, or model-size claim",
+    "copy of paper Figure 1 or Figure 3 layout, caption, or assets"
+  ],
+  "pending_plan_gate": [
+    "symmetric contrastive pre-training is visually distinct from zero-shot use",
+    "all-pairs N by N matrix and diagonal positives are legible",
+    "normalized embeddings and scaled cosine logits are correct",
+    "paper loss and released forward logits are not conflated",
+    "class-text reuse does not imply target-dataset fitting or actual execution",
+    "composition is original and contribution-led rather than equal-card flow"
+  ],
+  "raster_stage_boundary": "Require a saved pixel-only first reading before source/brief comparison. Raster review cannot accept native artifacts."
+}

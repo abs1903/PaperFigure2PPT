@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "review_type": "source-narrative-plan-brief-prompt review before generation",
+  "verdict": "revise",
+  "generation_authorized": false,
+  "summary": "The scientific abstraction and two alternatives are accepted in substance. Repair the incomplete source evidence attached to both model-reuse edges, then regenerate and re-review the digests before image generation.",
+  "reviewed_artifacts": {
+    "spec": {"path": "spec.json", "nodes": 12, "edges": 12},
+    "narrative_plan": {"path": "narrative-plan.json", "semantic_digest_emitted": "3be36bc7f445b80824d2e2a9635f580a495f7e3d392fd0ace9cf92effac1d297", "plan_digest_emitted": "21031f43cbb9b0cb5e1c72ad14038254055e7c475adf9ec23d8bf90346c5dc0d"},
+    "briefs": ["brief-matrix-bridge.json", "brief-stacked-transfer.json"],
+    "prompts": ["prompt-matrix-bridge.txt", "prompt-stacked-transfer.txt"]
+  },
+  "accepted": [
+    {"id": "contribution-abstraction", "finding": "Matrix-first paired alignment plus class-text zero-shot transfer is source-bounded and does not claim a new loss primitive."},
+    {"id": "train-semantics", "finding": "N by N all-pairs comparison, diagonal paired examples, off-diagonal mismatches, and symmetric image-to-text/text-to-image loss are represented.", "evidence": ["source/paper-text.txt:181-195", "source/paper-text.txt:210-224"]},
+    {"id": "code-boundary", "finding": "Plan correctly distinguishes paper loss from normalized scaled-cosine forward logits returned by released code.", "evidence": ["source/model.py:358-372"]},
+    {"id": "phase-boundary", "finding": "Objective is train-only; reuse edges are control/model-reuse rather than data edges; zero-shot forbids loss, gradients and a new head."},
+    {"id": "non-empirical", "finding": "Examples, diagonal marks, and nearest-label output are explicitly schematic with no asserted result."},
+    {"id": "alternatives", "finding": "Matrix bridge and stacked transfer differ materially in spatial/narrative composition while preserving the same source semantics."}
+  ],
+  "required_revisions": [
+    {
+      "id": "reuse-edge-evidence",
+      "severity": "blocking",
+      "affected": ["spec.json: edges image-reuse, text-reuse", "prepare-inputs.mjs: both corresponding E calls"],
+      "observed": "Both reuse edges cite only 'At test time the learned text encoder'.",
+      "why": "That caption fragment supports text-side classifier synthesis, but does not independently support an image-encoder parameter-reuse edge.",
+      "required": "Use the Section 2.5 whole-model reuse statement 'To apply CLIP to downstream tasks, we reuse this capability' for both reuse edges; optionally retain the Figure 1 caption for text-side synthesis.",
+      "evidence": ["source/paper-text.txt:110-113", "source/paper-text.txt:296-305"],
+      "constraint": "Keep links as inference-phase control/model-reuse only. Do not claim a locally executed frozen checkpoint, requires_grad setting, eval mode, or an inference gradient state."
+    }
+  ],
+  "post_repair_gate": [
+    "regenerate spec, narrative plan, both briefs, and both prompts through prepare-inputs.mjs",
+    "record and consistently propagate the newly emitted semantic and plan digests",
+    "preserve 12 nodes and 12 edges",
+    "preserve train-only objective and zero-shot no-gradient/no-loss/no-new-head restrictions",
+    "save raster pixel-only first reading before any source/brief comparison",
+    "do not treat raster review as native-artifact acceptance"
+  ]
+}

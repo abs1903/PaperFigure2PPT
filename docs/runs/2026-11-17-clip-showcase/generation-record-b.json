@@ -1,0 +1,20 @@
+{
+  "operation": "generate",
+  "tool": "built-in image_gen",
+  "compositionId": "stacked-transfer",
+  "promptPath": "prompt-stacked-transfer.txt",
+  "promptSHA256": "c02e0bf414ae18c852b8f0ffadc1ac05abf8bc674016d5446e48b0ad934ce81a",
+  "inputImages": [],
+  "outputImage": {
+    "path": "candidate-b.png",
+    "sha256": "81736939d72b5c1e1afa1f99f4edaf2c3f0d5bb7371cd6ce3188e9860030bfb9",
+    "sizePx": [
+      1610,
+      977
+    ]
+  },
+  "semanticFreezeSHA256": "e4bcb69b3bfcbae139d609721f5c7b08a1c675c8befc1486f6627c185e743f14",
+  "decision": "unreviewed",
+  "modelSnapshot": "not exposed",
+  "nativeOrOfficeAccepted": false
+}

@@ -1,0 +1,325 @@
+[
+  {
+    "id": 2,
+    "name": "train-images-anchor",
+    "type": "shape",
+    "owner": "train-images",
+    "bbox": [
+      88,
+      203,
+      161,
+      370
+    ]
+  },
+  {
+    "id": 5,
+    "name": "train-boat-sail-a",
+    "type": "shape",
+    "owner": "train-boat-glyph",
+    "bbox": [
+      139.02,
+      220.72,
+      31.74999999999997,
+      45.58000000000001
+    ]
+  },
+  {
+    "id": 6,
+    "name": "train-boat-sail-b",
+    "type": "shape",
+    "owner": "train-boat-glyph",
+    "bbox": [
+      175.85000000000002,
+      219,
+      34.289999999999964,
+      43.860000000000014
+    ]
+  },
+  {
+    "id": 7,
+    "name": "train-boat-hull",
+    "type": "shape",
+    "owner": "train-boat-glyph",
+    "bbox": [
+      111.08,
+      271.46,
+      116.84000000000002,
+      30.100000000000023
+    ]
+  },
+  {
+    "id": 26,
+    "name": "train-boat-glyph",
+    "type": "group",
+    "owner": "train-images"
+  },
+  {
+    "id": 8,
+    "name": "bird-body",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      110.44,
+      344.36,
+      117.12,
+      78.32
+    ]
+  },
+  {
+    "id": 9,
+    "name": "bird-leg-a",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      165.34,
+      417.4,
+      15.859999999999985,
+      17.600000000000023
+    ]
+  },
+  {
+    "id": 10,
+    "name": "bird-leg-b",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      183.64,
+      417.4,
+      12.200000000000017,
+      17.600000000000023
+    ]
+  },
+  {
+    "id": 11,
+    "name": "bird-eye",
+    "type": "shape",
+    "owner": "train-bird-glyph",
+    "bbox": [
+      197,
+      362,
+      7,
+      7
+    ]
+  },
+  {
+    "id": 27,
+    "name": "train-bird-glyph",
+    "type": "group",
+    "owner": "train-images"
+  },
+  {
+    "id": 12,
+    "name": "cup-handle",
+    "type": "shape",
+    "owner": "train-cup-glyph",
+    "bbox": [
+      185.31,
+      489.34,
+      55.59,
+      42.900000000000034
+    ]
+  },
+  {
+    "id": 13,
+    "name": "cup-body",
+    "type": "shape",
+    "owner": "train-cup-glyph",
+    "bbox": [
+      121,
+      490,
+      81.75,
+      75.89999999999998
+    ]
+  },
+  {
+    "id": 28,
+    "name": "train-cup-glyph",
+    "type": "group",
+    "owner": "train-images"
+  },
+  {
+    "id": 14,
+    "name": "image-branch-boat",
+    "type": "shape",
+    "owner": "train-images",
+    "bbox": [
+      249,
+      259,
+      44,
+      137
+    ]
+  },
+  {
+    "id": 15,
+    "name": "image-branch-cup",
+    "type": "shape",
+    "owner": "train-images",
+    "bbox": [
+      249,
+      396,
+      44,
+      125
+    ]
+  },
+  {
+    "id": 16,
+    "name": "image-branch-bird",
+    "type": "line-decoration",
+    "owner": "train-images",
+    "bbox": [
+      249,
+      396,
+      44,
+      0
+    ]
+  },
+  {
+    "id": 17,
+    "name": "paired-caption",
+    "type": "text",
+    "owner": "train-images",
+    "text": "Paired examples",
+    "font": "Arial",
+    "fontSize": 36,
+    "bbox": [
+      53.416015625,
+      130.713984375,
+      284.16796875,
+      45
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 29,
+    "name": "train-images",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 3,
+    "name": "train-image-encoder-anchor",
+    "type": "shape",
+    "owner": "train-image-encoder",
+    "bbox": [
+      350,
+      333,
+      207,
+      135
+    ]
+  },
+  {
+    "id": 20,
+    "name": "train-image-norm-a",
+    "type": "text",
+    "owner": "train-image-encoder",
+    "text": "Normalized",
+    "font": "Arial",
+    "fontSize": 28,
+    "bbox": [
+      574.7001953125,
+      346.097421875,
+      141.599609375,
+      35
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 21,
+    "name": "train-image-norm-b",
+    "type": "text",
+    "owner": "train-image-encoder",
+    "text": "embeddings",
+    "font": "Arial",
+    "fontSize": 28,
+    "bbox": [
+      569.224609375,
+      373.3151953125,
+      152.55078125,
+      35
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 24,
+    "name": "label-block:train-image-encoder",
+    "type": "text-block",
+    "owner": "train-image-encoder",
+    "sourceTextIds": [
+      "text-train-image-encoder-0",
+      "text-train-image-encoder-1"
+    ],
+    "text": "Image\nencoder",
+    "bbox": [
+      350,
+      333,
+      207,
+      135
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 30,
+    "name": "train-image-encoder",
+    "type": "group",
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "template-anchor",
+    "type": "shape",
+    "owner": "template",
+    "bbox": [
+      916,
+      708,
+      347,
+      50
+    ]
+  },
+  {
+    "id": 22,
+    "name": "class-caption",
+    "type": "text",
+    "owner": "template",
+    "text": "Class descriptions",
+    "font": "Arial",
+    "fontSize": 35,
+    "bbox": [
+      946.388427734375,
+      633.588330078125,
+      311.22314453125,
+      43.75
+    ],
+    "alignment": "left",
+    "verticalAlignment": "middle"
+  },
+  {
+    "id": 25,
+    "name": "label-block:template",
+    "type": "text-block",
+    "owner": "template",
+    "sourceTextIds": [
+      "text-template-0"
+    ],
+    "text": "a photo of a {label}",
+    "bbox": [
+      916,
+      708,
+      347,
+      50
+    ],
+    "alignment": "center",
+    "verticalAlignment": "middle",
+    "editableWrapping": true
+  },
+  {
+    "id": 31,
+    "name": "template",
+    "type": "group",
+    "owner": null
+  }
+]
