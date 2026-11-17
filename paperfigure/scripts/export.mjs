@@ -1,3 +1,4 @@
+import {finalizePptxPackage} from './pptx-package.mjs';
 import fs from 'node:fs/promises';
 import {createWriteStream,readFileSync,existsSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
@@ -108,6 +109,8 @@ export async function toPPTX(scene,spec) {
   zip.file('ppt/slides/slide1.xml',xml);
   zip.file('paperfigure/spec.json',JSON.stringify(spec,null,2));
   zip.file('paperfigure/scene.json',JSON.stringify(scene,null,2));
+  await finalizePptxPackage(zip);
+
   // Generated document metadata must not break byte reproducibility.
   let core=await zip.file('docProps/core.xml').async('string');
   core=core.replace(/<dcterms:(created|modified)[^>]*>.*?<\/dcterms:\1>/g,(_m,k)=>`<dcterms:${k} xsi:type="dcterms:W3CDTF">2000-01-01T00:00:00Z</dcterms:${k}>`);

@@ -1,0 +1,27 @@
+import fs from 'node:fs/promises';import path from 'node:path';
+import {readerHandoff,sha256} from '../../../paperfigure/scripts/reader-test.mjs';
+const root=path.join(path.dirname(new URL(import.meta.url).pathname),'reader');
+const questions={
+ a:['What supplies supervision in the learning region, and how does it differ from class information during use?','What makes matching image/text pairs distinguishable from other comparisons?','Which components are learned versus reused during use?','Which central method claim is visually explicit, and what is ambiguous or unsupported?'],
+ b:['What enters the encoder and what is excluded?','When and how is the full representation restored?','Which positions are predicted, and which positions contribute to the loss?','What central design distinction is visible and which tempting interpretation remains unsupported?'],
+ c:['How is the portion to edit selected from the whole repository?','What determines the scope and form of the proposed edit?','How are multiple candidates reduced to a final patch?','Does the figure support autonomous planning, and what claims about success cannot be read from it?']};
+const expectations={
+ a:[['Training uses paired images and natural-language descriptions, without requiring a predetermined class vocabulary; at use time candidate class descriptions are encoded for matching. A schematic word example must not make that distinction unreadable.',true],['All-pairs image/text similarities, diagonal paired examples, both retrieval directions with a symmetric training objective.',true],['Image and text encoders are learned in pre-training and reused at zero-shot use; class descriptions define candidates without a new task-trained head or task-specific training.',true],['Cross-modal alignment enables reuse with language-provided classes. No numerical performance or exact loss formula is established by the picture.',false]],
+ b:[['Only visible patches enter the encoder; mask tokens do not enter it.',true],['After encoding, visible representations join learned mask-token copies in restored positions before the lightweight decoder.',true],['The full patch grid is predicted, with reconstruction loss restricted to masked positions.',true],['Sparse encoder input and later restoration/reconstruction are distinct; the figure does not establish measured speed or performance.',true]],
+ c:[['Hierarchical repository/file/element/edit-location narrowing selects local context.',true],['Localized context constrains Search/Replace patch generation; no open-ended autonomous planning.',true],['Candidate patches pass syntax/regression checks and normalization/frequency selection; do not infer a broader learned ranking or guaranteed repair.',true],['The explicit fixed localization/repair design excludes autonomous planning. No success rate or guaranteed correctness is shown.',true]]};
+const sources={a:'../../2026-11-17-clip-showcase/narrative-plan.json and source/method-prose.txt',b:'../../2026-11-17-mae-high-quality/source-audit.md and narrative-plan.json',c:'../../2026-11-17-agentless-contribution/narrative-plan.json and source-audit.md'};
+const freeze={protocol:'Three fresh image-only host-agent handoffs preceded sources/rubrics. Raw answers remain immutable. CLI-shaped handoff records and normalized field layouts are saved after observation for deterministic bookkeeping; they are not claimed to have launched the original readers.',records:[]};
+for(const id of ['a','b','c']){
+ const raw=await fs.readFile(path.join(root,id+'-observation.json')),j=JSON.parse(raw),imageBytes=await fs.readFile(path.join(root,id+'.png'));
+ const q={version:'1.0',audience:'ML researcher unfamiliar with this figure',publicationWidthIn:7,questions:questions[id].map((prompt,i)=>({id:'q'+(i+1),prompt}))};
+ await fs.writeFile(path.join(root,id+'-questions.json'),JSON.stringify(q,null,2)+'\n');
+ await fs.writeFile(path.join(root,id+'-handoff.json'),JSON.stringify(readerHandoff(q,{path:id+'.png',sha256:sha256(imageBytes)}),null,2)+'\n');
+ const rubric={version:'1.0',scope:'Declared conceptual scope only; implementation details outside the question are not required.',questions:expectations[id].map(([expected,critical],i)=>({id:'q'+(i+1),critical,expected,sourceEvidence:[sources[id]]}))};
+ await fs.writeFile(path.join(root,id+'-rubric.json'),JSON.stringify(rubric,null,2)+'\n');
+ let answers=id==='b'?Object.entries(j).filter(([k])=>/^q\d+$/.test(k)).map(([k,v])=>({id:k,...v})):Array.isArray(j.answers)?j.answers:Object.entries(j.answers).map(([k,v])=>({id:k,...v}));
+ answers=answers.map(a=>({...a,visibleEvidence:Array.isArray(a.visibleEvidence)?a.visibleEvidence.join('\n'):a.visibleEvidence}));
+ const obs={version:'1.0',reviewer:{kind:'independent-agent',name:'/root/reader_'+id},isolation:j.isolation??j.protocol??'Fresh image-only host-agent task; no sources or rubric supplied',priorFamiliarity:typeof j.priorFamiliarity==='string'?j.priorFamiliarity:JSON.stringify(j.priorFamiliarity),image:{path:id+'.png',sha256:sha256(imageBytes)},answers,normalization:{rawPath:id+'-observation.json',rawSHA256:sha256(raw),scope:'Field normalization only; answer prose preserved.'}};
+ const bytes=Buffer.from(JSON.stringify(obs,null,2)+'\n');await fs.writeFile(path.join(root,id+'-normalized.json'),bytes);
+ freeze.records.push({id,rawSHA256:sha256(raw),normalizedSHA256:sha256(bytes),imageSHA256:sha256(imageBytes)});
+}
+await fs.writeFile(path.join(root,'observation-freeze.json'),JSON.stringify(freeze,null,2)+'\n');

@@ -1,0 +1,23 @@
+{
+  "scope": "Artifact identity; source fidelity, reader interpretation and application editing keep their separate qualifications.",
+  "files": {
+    "REPORT.md": "00de7246f0aff869e6ef4249a8cb80ef0ea9e5d4c682418f18b8d26869c9e812",
+    "final-checks.json": "48e6aba1233b2aef59f282ab1387f044be7c06734ccc9ac0a688646c8f1480a5",
+    "final-regression.txt": "46ca4c6550d0425d98742ddf4de952323b7f2a51cc21539659987f70f4ed0f67",
+    "reader/a-report.json": "1c409fced49ae178a16c07144a942d945653d30d00b42ff883746b3b089d0e7a",
+    "reader/b-report.json": "0dfa3a87ce6b5c74a153286c25941a5854f9374c86b158800b6031bb116518ba",
+    "reader/c-report.json": "aeb2cf54fec3bfe179fc8cd476f6b078ed289fabeb6c4f6320e3593f56e96ebd",
+    "reader/observation-freeze.json": "22b9c2d6b77969b54d7944df272e58879dc744f6d20bf1d7c60bef8a2f839b20",
+    "bridge/output/delivery.json": "bd5c47664b48e73641219c7d3c69f3091bdc5732d27d8d05e7f4c37290b8faaf",
+    "bridge/output/visual-review.json": "0434361bed831502f28b02a4acf836fc2feb795c0f7c072b8c90ff3ecf358d62",
+    "bridge/output/figure.pptx": "fa54818787e18e6adcac33c97ca543839d44ed21d0c14565c9d1fce6fd37951a",
+    "bridge/output/editable.svg": "287806fb1fd97fa164080ad467ec123b9e1ae1c95bff4c5f05f497c1fd34d064",
+    "bridge/output/native-render/preview.png": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d",
+    "forward-review.json": "3b3b9ce4ffaef4a84b7f509c03268dbe32951128fd6b8506185c87d299b83657",
+    "scene-edit-results.json": "78800f20991f3d48b23cd2954109fb8ba8b4badecdd14237d38d7b6c767a6fae",
+    "scene-edit-office-results.json": "0238061f21cb0dd115bf4b32360dd219c6a3c68075e357bf503deff85ffd8c47",
+    "powerpoint/task-results.json": "8347529b2e2f7fc71fa635c0ca596decdc860147409cf26dc77b6757cb167c8f",
+    "powerpoint/application-open-errors.txt": "e79aa253d6b52f11d913ce00159441f6656ba2077adaaa2e45adb58d9baf1e87",
+    "powerpoint/ecma-xsd-qa.json": "d53f0835ce1b3e6ca29ed4cff7b7cf0ba892bc37bd261af9dd5c5e7729aa8638"
+  }
+}

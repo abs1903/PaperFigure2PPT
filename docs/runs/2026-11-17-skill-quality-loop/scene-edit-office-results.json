@@ -1,0 +1,23 @@
+{
+  "budgetSeconds": 300,
+  "elapsedSeconds": 33.812205207999796,
+  "requested": 3,
+  "attempted": 3,
+  "results": [
+    {
+      "task": "long-label",
+      "exitCode": 0,
+      "renderQA": "docs/runs/2026-11-17-skill-quality-loop/scene-edits/long-label/native-render/render-qa.json"
+    },
+    {
+      "task": "move-module",
+      "exitCode": 0,
+      "renderQA": "docs/runs/2026-11-17-skill-quality-loop/scene-edits/move-module/native-render/render-qa.json"
+    },
+    {
+      "task": "add-branch",
+      "exitCode": 0,
+      "renderQA": "docs/runs/2026-11-17-skill-quality-loop/scene-edits/add-branch/native-render/render-qa.json"
+    }
+  ]
+}

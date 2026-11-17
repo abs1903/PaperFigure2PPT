@@ -1,0 +1,33 @@
+{
+  "scope": "Code-regeneration functional probes; not Microsoft PowerPoint editing, human effort or source-reviewed new method figures.",
+  "requested": 3,
+  "tasks": [
+    {
+      "id": "long-label",
+      "request": "Replace Nearest label with Nearest class description, with explicit wrapping.",
+      "method": "code-regeneration",
+      "application": "PaperFigure native exporter; actual LibreOffice evidence is recorded separately",
+      "status": "fail",
+      "error": "ENOENT: no such file or directory, mkdir '/Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-17-skill-quality-loop/scene-edits/long-label'",
+      "elapsedSeconds": 0.8343450000000002
+    },
+    {
+      "id": "move-module",
+      "request": "Move the nearest-output module and reroute its incident connector.",
+      "method": "code-regeneration",
+      "application": "PaperFigure native exporter; actual LibreOffice evidence is recorded separately",
+      "status": "fail",
+      "error": "ENOENT: no such file or directory, mkdir '/Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-17-skill-quality-loop/scene-edits/move-module'",
+      "elapsedSeconds": 0.025501290999999583
+    },
+    {
+      "id": "add-branch",
+      "request": "Add a native comparison/output branch (structural editing fixture only).",
+      "method": "code-regeneration",
+      "application": "PaperFigure native exporter; actual LibreOffice evidence is recorded separately",
+      "status": "fail",
+      "error": "ENOENT: no such file or directory, mkdir '/Users/jackychen/02projs/tbs/PaperFigure2PPT/docs/runs/2026-11-17-skill-quality-loop/scene-edits/add-branch'",
+      "elapsedSeconds": 0.6597900420000006
+    }
+  ]
+}

@@ -52,6 +52,12 @@ async function reconstructionEvidence(dir,contract,record,validation){
   }
   try{
     const scene=await read('layout-scene.json');
+    if(contract?.visualContract){
+      const {loadVisualContract,auditVisualContract}=await import('./visual-contract.mjs');
+      const c=(await loadVisualContract(contract.visualContract,dir)).contract;
+      const current=auditVisualContract(scene,c),saved=await read('visual-contract-qa.json');
+      if(c.coverage!=='complete'||!current.passed||hash(JSON.stringify(current))!==hash(JSON.stringify(saved)))issue(mechanical,'Shared visual contract failed, incomplete or stale');
+    }
     if(scene.labels?.length&&!contract?.typography)issue(mechanical,'Frozen typography profile missing','unverified');
     if(contract?.typography){
       const profileBytes=await fs.readFile(path.resolve(dir,contract.typography.path));
@@ -64,7 +70,7 @@ async function reconstructionEvidence(dir,contract,record,validation){
         q.renderReportDigest!==hash(JSON.stringify(render)))
         issue(mechanical,'Typography profile, actual-font verification or style comparison failed/stale');
     }
-  }catch{issue(mechanical,'Typography verification unavailable','unverified');}
+  }catch(e){issue(mechanical,'Typography/visual contract verification unavailable: '+e.message,'unverified');}
 
   try{
     if(!(await read('layout-qa.json')).qa?.passed||!(await read('native-audit.json')).passed)
@@ -118,8 +124,15 @@ export async function deliveryStatus(dir,recordPath=path.join(dir,'visual-review
     try{contract=await readJSON(dir,'reference-contract.json');}
     catch{issue(validation.mechanical,'Frozen reference contract missing or unreadable','unverified');}
   }
-  const artifacts=mode==='design'?REVIEW_ARTIFACTS:[...REFERENCE_ARTIFACTS,...(contract?.typography?['typography-profile.json','typography-style-qa.json','typography-qa.json']:[])];
+  let readerBinding;
+  try{readerBinding=await readJSON(dir,'reader-test-binding.json');}catch(e){if(e.code!=='ENOENT')issue(validation.review,'Unreadable reader-test binding','unverified');}
+  const artifacts=mode==='design'?[...REVIEW_ARTIFACTS]:[...REFERENCE_ARTIFACTS,...(contract?.typography?['typography-profile.json','typography-style-qa.json','typography-qa.json']:[]),...(contract?.visualContract?[contract.visualContract.path,'visual-contract-qa.json']:[])];
+  if(readerBinding){artifacts.push('reader-test-binding.json');if(typeof readerBinding.path==='string')artifacts.push(readerBinding.path);}
   const record=await reviewEvidence(dir,recordPath,artifacts,validation.review);
+  if(readerBinding){
+    try{const {checkReaderEvidence}=await import('./reader-test.mjs');const imageHash=mode==='reconstruct'?await fileHash(path.resolve(dir,contract.reference.path)):await fileHash(path.join(dir,'figure.png'));const q=await checkReaderEvidence(readerBinding,dir,imageHash);if(!q.passed)issue(validation.review,'Reader test: '+q.errors.join('; '));}
+    catch(e){issue(validation.review,'Reader evidence unavailable: '+e.message,'unverified');}
+  }
   if(mode==='design')await designEvidence(dir,validation);
   else await reconstructionEvidence(dir,contract,record,validation);
   const reasons=Object.values(validation).flatMap(check=>check.reasons);

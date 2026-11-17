@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "mode": "reconstruct",
+  "mechanicalPassed": true,
+  "validation": {
+    "mechanical": {
+      "status": "pass",
+      "reasons": []
+    },
+    "render": {
+      "status": "pass",
+      "reasons": []
+    },
+    "review": {
+      "status": "pass",
+      "reasons": []
+    }
+  },
+  "deliveryReady": true,
+  "visualAcceptance": "independently-accepted",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/quality_forward_review"
+  },
+  "reasons": [],
+  "scope": "Fidelity to the selected target plus declared deviations; not venue certification or user approval"
+}

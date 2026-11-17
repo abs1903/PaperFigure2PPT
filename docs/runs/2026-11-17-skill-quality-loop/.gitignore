@@ -1,0 +1,4 @@
+# Preserve raw application metadata locally; publish scoped error receipts instead.
+powerpoint/logs/
+powerpoint/v2/logs/
+powerpoint/v3/logs/

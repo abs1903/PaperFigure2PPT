@@ -1,0 +1,27 @@
+{
+  "grader": { "kind": "independent-agent", "name": "/root/reader_grading" },
+  "observationSHA256": "308aa3e2e2a65661441284e1899bb30967a705d6369e2f00264b84e116c78947",
+  "rubricSHA256": "fb5c7d4cab3c699627b6de3c179d251128cac0248a7f998009bc0ba9e9d15bf5",
+  "answers": [
+    {
+      "id": "q1",
+      "status": "correct",
+      "reason": "It accurately distinguishes the four visible tokens entering the encoder from the twelve learned mask tokens that join only after encoding. It does not overclaim a patch-selection algorithm."
+    },
+    {
+      "id": "q2",
+      "status": "correct",
+      "reason": "It identifies post-encoder restoration, the incoming encoded visible tokens, learned mask-token copies, restore indices, and the resulting full 4x4 decoder input. The withheld data-structure details are outside scope."
+    },
+    {
+      "id": "q3",
+      "status": "correct",
+      "reason": "It correctly separates dense/full-position pixel prediction from masked-only MSE supervision. Its caveat that the schematic does not specify tensor shape is compatible with the rubric's conceptual claim."
+    },
+    {
+      "id": "q4",
+      "status": "correct",
+      "reason": "It reads the central sparse-encoder/later-restoration distinction and rejects the two material misreadings: encoder-side masked-pixel reconstruction and loss over every position. It also correctly does not infer speed or performance."
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+Use case: scientific-educational. Asset: paper method illustration. Art-direction metadata below is not extra canvas text.
+Reader takeaway: Contrastive image-text alignment learns reusable visual concepts; class descriptions become a classifier without task-specific training.
+Scientific scope: ICML2021 paper concept, symmetric paired-batch contrastive pretraining and single-template zero-shot classification. Released code corroborates normalized scaled-cosine forward path only. No execution, benchmark, dataset-size claim or guaranteed classification result.
+Contribution hierarchy; emphasize the supported design choices without claiming every primitive is new:
+Focal design: Learn visual representations by aligning images with their paired natural-language descriptions. Status: Scalable combination of natural-language supervision and established contrastive learning, not a new loss primitive. Visible evidence: A large 3x3 image-caption similarity matrix is the focal object: exactly three coral diagonal true pairs and six pale off-diagonal comparisons. Row and column arrows visibly establish both retrieval directions.. Prominence: Primary composition anchor; geometry communicates matched versus mismatched image-text pairs. Visual owners: Paired image and text examples, Jointly trained image and text encoders, Cross-modal alignment.
+Focal design: Reuse the learned encoders so class descriptions define a zero-shot image classifier. Status: Transfer interface enabled by cross-modal pretraining; not a separate trained task head. Visible evidence: A clearly separated zero-shot region uses a new image and named text prompts with the SAME pretrained encoders; compare normalized embeddings to select nearest class text. No task-specific training arrow or loss.. Prominence: Secondary linked focal point; explains why alignment matters without a second training pipeline. Visual owners: Reuse pretrained encoders, New image and class text, Compare with class descriptions.
+Supporting operation: Train both image-to-text and text-to-image retrieval using symmetric cross entropy. Status: Supporting established training objective. Visible evidence: Two small direction labels next to matrix; a compact Symmetric loss label, no optimizer graph.. Prominence: Local explanation subordinate to matrix. Visual owners: Cross-modal alignment.
+Outside figure scope; do not depict: Scaling and downstream benchmark performance.
+Composition: White landscape about1.65:1. TOP large bilateral alignment composition: three image patches along matrix LEFT and three caption chips along TOP, with separate blue Image encoder and teal Text encoder feeding rows/columns. Coral diagonal is dominant. LOWER full-width zero-shot strip reuses encoder weights: image lane and text-prompt lane converge into cosine matching and Nearest label. Top occupies65%height, bottom35%, separated by slim horizontal rule. No title/footer or repeated block panels.
+Visible mechanism: Orthogonal row and column identity makes matched pairs visually obvious. The contrastive phase is a two-axis relationship, then a narrow transfer band shows language-provided classes with no task-specific update. Dashed model-reuse arrows distinguish parameter transfer from data arrows.
+Typography: Refined Arial-like sans serif. Short sentence-case labels, balanced regular/bold roles, generous whitespace, legible at7-inchwidth. Mechanism labels larger than directional annotations; never use miniature paragraph labels.; publication width 7 inches.
+Visual representations; semantic coverage is validated separately:
+Paired image and text examples: Exactly three original geometric image glyphs: boat, bird, cup, matched to three caption chips boat/bird/cup. Use recognizable clean flat native-friendly geometry, no external photos or visual ornament. Pair identities must remain consistent.
+Jointly trained image and text encoders: Parallel blue Image encoder and teal Text encoder. Their outputs are normalized embeddings. Both train under the symmetric pairing objective. Do not draw captions generated from images or feed either encoder the other modality.
+Cross-modal alignment: Large precise3x3 matrix with exactly3coral diagonal paired positives and6pale offdiagonal non-pairs. Three image-row and three text-column positions are unmistakable. Small Image to text and Text to image cues (both directions) plus Symmetric loss caption. No values or accuracy claims, no output correctness tick. Diagonal highlights represent pair labels, not actual measured scores.
+Reuse pretrained encoders: Clearly labelled zero-shot region reuses SAME blue Image encoder and teal Text encoder, fixed for this use. Dashed links from trained counterparts labelled Same encoders; no inference gradients, training loss or new classifier head.
+New image and class text: One schematic boat image and three candidate text chips using template a photo of a {label}, with labels boat,bird,cup. New image feeds image encoder only; text prompts feed text encoder only. Label vocabulary can change without fitting a head. Do not imply training labels exactly enumerate all web captions.
+Compare with class descriptions: Image/text normalized embeddings converge into Cosine similarity and then Nearest label. Avoid numeric scores/probabilities or an executed correct prediction; final label can be Nearest label without naming a winner.
+Directed relations; internal operations must remain visibly meaningful:
+Paired image and text examples -> Jointly trained image and text encoders: Three image examples feed Image encoder only.
+Paired image and text examples -> Jointly trained image and text encoders: Paired caption text feeds Text encoder only.
+Jointly trained image and text encoders -> Cross-modal alignment: Normalized image embeddings index matrix rows.
+Jointly trained image and text encoders -> Cross-modal alignment: Normalized text embeddings index matrix columns.
+Within Cross-modal alignment: Within alignment region, the diagonal pair targets supervise both row and column retrieval under Symmetric loss.
+Jointly trained image and text encoders -> Reuse pretrained encoders: Thin dashed model-reuse link from trained Image encoder to its fixed zero-shot counterpart.
+Jointly trained image and text encoders -> Reuse pretrained encoders: Thin dashed model-reuse link from trained Text encoder to its fixed zero-shot counterpart.
+New image and class text -> Reuse pretrained encoders: Within zero-shot region, a new image feeds reused Image encoder.
+New image and class text -> Reuse pretrained encoders: Within zero-shot region, class descriptions with prompt template feed reused Text encoder.
+Reuse pretrained encoders -> Compare with class descriptions: Normalized query image representation feeds Cosine similarity.
+Reuse pretrained encoders -> Compare with class descriptions: Normalized class text representations feed Cosine similarity.
+Within Compare with class descriptions: Within comparison region, nearest text embedding determines Nearest label; no trained task head.
+Exact visible text whitelist:
+"Contrastive pre-training"
+"Zero-shot use"
+"Image encoder"
+"Text encoder"
+"Normalized embeddings"
+"Image to text"
+"Text to image"
+"Symmetric loss"
+"Paired examples"
+"Same encoders"
+"Class descriptions"
+"a photo of a {label}"
+"boat"
+"bird"
+"cup"
+"Cosine similarity"
+"Nearest label"
+"New image"
+Text budget: 75 words maximum; repeat labels only when needed to show shared inputs or source linkage.
+Semantic solid palette:
+#2762DB: Images, image encoder and image representations
+#18877B: Captions, class descriptions, text encoder and text representations
+#E58C78: Matched-pair diagonal targets and shared similarity/contrastive objective
+#465265: Neutral nearest-label readout
+White background and flat solid fills. No overall title, footer, shadows, glow or decorative icons. Keep the requested local mechanism/contribution captions. Colors supplement labels and geometry.
+Do not turn every semantic node into an equal card. Keep the primary mechanism prominent, supporting checks subordinate, and arrowheads/text unobstructed. Schematic examples are not measured executions.
+Forbidden scientific additions: Caption generation, autoregressive decoder or generative loss; Only diagonal similarities computed without negative all-pairs comparisons; Mismatched boat/bird/cup identities on the highlighted training diagonal; One-way-only training objective; Inference gradients/loss or fitting a task-specific head in zero-shot use; Cross-modal mixing before separate encoders; Training code execution claimed from released inference code; Invented numerical probabilities, scores, accuracy or correct prediction ticks; Third-party photos, overalltitle/footer,3D/shadows/gradients or decorativeclipart.
+Generated pixels never authorize scientific changes. Return an imperfect candidate for review rather than inventing a mechanism.
+Shared visual contract (role IDs are authoring metadata, never extra canvas text):
+Publication width 7 inches; 1609 × 977 source pixels.
+Type role type0: Arial, 44px, regular.
+Type role type1: Arial, 42px, regular.
+Type role type2: Arial, 36px, regular.
+Type role type3: Arial, 36px, bold.
+Type role type4: Arial, 34px, bold.
+Type role type5: Arial, 28px, regular.
+Type role type6: Arial, 32px, regular.
+Type role type7: Arial, 30px, regular.
+Type role type8: Arial, 35px, regular.
+Type role type9: Arial, 32px, bold.
+Type role type10: Arial, 31px, regular.
+Type role type11: Arial, 27px, regular.
+Type role type12: Arial, 38px, regular.
+Paint role paint0: #FFFFFF; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint1: #99A3AC; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint2: #EAF1EC; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint3: #568B79; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint4: #E6EEF4; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint5: #A9BCCB; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint6: #E9F1EC; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint7: #91B2A3; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint8: #F1F3F4; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint9: #76848F; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint10: #DFA88C; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint11: #F2DFD3; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint12: #E3C2AF; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint13: none; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint14: #8D989F; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint15: #D5B6A3; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint16: #F0F2F3; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint17: #CCD2D7; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint18: #396F90; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint19: #6C9BB5; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint20: #7CA2B7; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint21: #73828C; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint22: #7CA5BA; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint23: #DAE5E9; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint24: #7B7B72; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint25: #5D947D; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint26: #488A6E; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint27: #DCE7ED; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint28: #236E57; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint29: #22313A; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint30: #4F5E69; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Paint role paint31: #3E4F59; Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit.
+Registered module train-images: [x,y,width,height]=[84,202,168,372]; authoring metadata, not canvas text.
+Registered module train-captions: [x,y,width,height]=[661,16,578,58]; authoring metadata, not canvas text.
+Registered module train-image-encoder: [x,y,width,height]=[351,334,205,130]; authoring metadata, not canvas text.
+Registered module train-text-encoder: [x,y,width,height]=[764,132,377,59]; authoring metadata, not canvas text.
+Registered module matrix: [x,y,width,height]=[735,278,444,272]; authoring metadata, not canvas text.
+Registered module objective: [x,y,width,height]=[1229,449,353,61]; authoring metadata, not canvas text.
+Registered module separator: [x,y,width,height]=[22,600,1567,2]; authoring metadata, not canvas text.
+Registered module query: [x,y,width,height]=[54,750,176,118]; authoring metadata, not canvas text.
+Registered module test-image-encoder: [x,y,width,height]=[317,744,207,94]; authoring metadata, not canvas text.
+Registered module test-text-encoder: [x,y,width,height]=[649,744,209,94]; authoring metadata, not canvas text.
+Registered module template: [x,y,width,height]=[916,707,349,52]; authoring metadata, not canvas text.
+Registered module class-chips: [x,y,width,height]=[936,774,327,48]; authoring metadata, not canvas text.
+Registered module cosine: [x,y,width,height]=[896,871,267,87]; authoring metadata, not canvas text.
+Registered module nearest: [x,y,width,height]=[1290,875,300,78]; authoring metadata, not canvas text.
+Registered module train-phase: [x,y,width,height]=[47,24,484,49]; authoring metadata, not canvas text.
+Registered module test-phase: [x,y,width,height]=[47,631,275,46]; authoring metadata, not canvas text.
+Registered module train-images: [x,y,width,height]=[84,202,168,372]; authoring metadata, not canvas text.
+Registered module train-captions: [x,y,width,height]=[661,16,578,58]; authoring metadata, not canvas text.
+Registered module train-image-encoder: [x,y,width,height]=[351,334,205,130]; authoring metadata, not canvas text.
+Registered module train-text-encoder: [x,y,width,height]=[764,132,377,59]; authoring metadata, not canvas text.
+Registered module matrix: [x,y,width,height]=[735,278,444,272]; authoring metadata, not canvas text.
+Registered module objective: [x,y,width,height]=[1229,449,353,61]; authoring metadata, not canvas text.
+Registered module separator: [x,y,width,height]=[22,600,1567,2]; authoring metadata, not canvas text.
+Registered module query: [x,y,width,height]=[54,750,176,118]; authoring metadata, not canvas text.
+Registered module test-image-encoder: [x,y,width,height]=[317,744,207,94]; authoring metadata, not canvas text.
+Registered module test-text-encoder: [x,y,width,height]=[649,744,209,94]; authoring metadata, not canvas text.
+Registered module template: [x,y,width,height]=[916,707,349,52]; authoring metadata, not canvas text.
+Registered module class-chips: [x,y,width,height]=[936,774,327,48]; authoring metadata, not canvas text.
+Registered module cosine: [x,y,width,height]=[896,871,267,87]; authoring metadata, not canvas text.
+Registered module nearest: [x,y,width,height]=[1290,875,300,78]; authoring metadata, not canvas text.
+Registered module train-phase: [x,y,width,height]=[47,24,484,49]; authoring metadata, not canvas text.
+Registered module test-phase: [x,y,width,height]=[47,631,275,46]; authoring metadata, not canvas text.
+Registered module train-images: [x,y,width,height]=[84,202,168,372]; authoring metadata, not canvas text.
+Registered module train-captions: [x,y,width,height]=[661,16,578,58]; authoring metadata, not canvas text.
+Registered module train-image-encoder: [x,y,width,height]=[351,334,205,130]; authoring metadata, not canvas text.
+Registered module train-text-encoder: [x,y,width,height]=[764,132,377,59]; authoring metadata, not canvas text.
+Registered module matrix: [x,y,width,height]=[735,278,444,272]; authoring metadata, not canvas text.
+Registered module objective: [x,y,width,height]=[1229,449,353,61]; authoring metadata, not canvas text.
+Registered module separator: [x,y,width,height]=[22,600,1567,2]; authoring metadata, not canvas text.
+Registered module query: [x,y,width,height]=[54,750,176,118]; authoring metadata, not canvas text.
+Registered module test-image-encoder: [x,y,width,height]=[317,744,207,94]; authoring metadata, not canvas text.
+Registered module test-text-encoder: [x,y,width,height]=[649,744,209,94]; authoring metadata, not canvas text.
+Registered module template: [x,y,width,height]=[916,707,349,52]; authoring metadata, not canvas text.
+Registered module class-chips: [x,y,width,height]=[936,774,327,48]; authoring metadata, not canvas text.
+Registered module cosine: [x,y,width,height]=[896,871,267,87]; authoring metadata, not canvas text.
+Registered module nearest: [x,y,width,height]=[1290,875,300,78]; authoring metadata, not canvas text.
+Registered module train-phase: [x,y,width,height]=[47,24,484,49]; authoring metadata, not canvas text.
+Registered module test-phase: [x,y,width,height]=[47,631,275,46]; authoring metadata, not canvas text.
+Label "Contrastive pre-training" uses type type0 and paint paint29.
+Label "Zero-shot use" uses type type1 and paint paint29.
+Label "Paired examples" uses type type2 and paint paint29.
+Label "boat" uses type type2 and paint paint28.
+Label "bird" uses type type2 and paint paint28.
+Label "cup" uses type type2 and paint paint28.
+Label "Image" uses type type3 and paint paint29.
+Label "encoder" uses type type3 and paint paint29.
+Label "Text encoder" uses type type4 and paint paint29.
+Label "Normalized" uses type type5 and paint paint30.
+Label "embeddings" uses type type5 and paint paint30.
+Label "Normalized embeddings" uses type type5 and paint paint30.
+Label "Image to text" uses type type6 and paint paint29.
+Label "Text to image" uses type type6 and paint paint29.
+Label "Symmetric loss" uses type type3 and paint paint29.
+Label "Same encoders" uses type type7 and paint paint31.
+Label "New image" uses type type6 and paint paint29.
+Label "Class descriptions" uses type type8 and paint paint29.
+Label "Image" uses type type9 and paint paint29.
+Label "encoder" uses type type9 and paint paint29.
+Label "Text" uses type type9 and paint paint29.
+Label "encoder" uses type type9 and paint paint29.
+Label "a photo of a {label}" uses type type7 and paint paint29.
+Label "boat" uses type type10 and paint paint28.
+Label "bird" uses type type10 and paint paint28.
+Label "cup" uses type type10 and paint paint28.
+Label "Normalized embeddings" uses type type11 and paint paint30.
+Label "Cosine" uses type type2 and paint paint29.
+Label "similarity" uses type type2 and paint paint29.
+Label "Nearest label" uses type type12 and paint paint29.
+Relation train-images -> train-image-encoder: paint18.
+Relation train-captions -> train-text-encoder: paint28.
+Relation train-image-encoder -> matrix: paint18.
+Relation train-text-encoder -> matrix: paint28.
+Relation train-text-encoder -> matrix: paint28.
+Relation train-text-encoder -> matrix: paint28.
+Relation train-image-encoder -> test-image-encoder: paint18, dashed reuse/state route.
+Relation train-text-encoder -> test-text-encoder: paint28, dashed reuse/state route.
+Relation query -> test-image-encoder: paint18.
+Relation template -> test-text-encoder: paint28.
+Relation test-image-encoder -> cosine: paint18.
+Relation test-text-encoder -> cosine: paint28.
+Relation cosine -> nearest: paint9.
+Native text, simple vector contours and explicit anchor relationships must remain reproducible. Pixel output still requires inspection; this contract does not prove generated compliance.

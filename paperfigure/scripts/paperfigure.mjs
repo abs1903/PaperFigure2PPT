@@ -48,7 +48,15 @@ async function main(){
     const {saveEditableFigure,toEditableSVG}=await import('./layout-export.mjs'),{inspectLayout}=await import('./layout-inspect.mjs'),{auditNativeLayout}=await import('./layout-native-audit.mjs'),{checkReferenceLayout}=await import('./reference-layout.mjs');
     const scene=readJSON(o.scene),contract=readJSON(o.contract),svg=toEditableSVG(scene),binding=await checkReferenceLayout(svg,scene,contract,path.dirname(path.resolve(o.contract)));
     if(!binding.passed)throw new Error('Reference reconstruction failed before export: '+JSON.stringify(binding.errors));
+    let visual;
+    if(contract.visualContract){
+      const {loadVisualContract,auditVisualContract}=await import('./visual-contract.mjs');
+      visual=await loadVisualContract(contract.visualContract,path.dirname(path.resolve(o.contract)));
+      visual.report=auditVisualContract(scene,visual.contract);
+      if(visual.contract.coverage!=='complete'||!visual.report.passed)throw Error('Complete visual contract failed before export: '+JSON.stringify(visual.report.errors));
+    }
     await saveEditableFigure(scene,o.out);let typographyStyle;if(contract.typography){const {auditTypography}=await import('./typography-profile.mjs');const bytes=await fs.readFile(path.resolve(path.dirname(path.resolve(o.contract)),contract.typography.path)),profile=JSON.parse(bytes);await fs.writeFile(path.join(o.out,'typography-profile.json'),bytes);contract.typography.path='typography-profile.json';typographyStyle=await auditTypography(scene,svg,await fs.readFile(path.join(o.out,'figure.pptx')),readJSON(path.join(o.out,'pptx-object-map.json')),profile);await fs.writeFile(path.join(o.out,'typography-style-qa.json'),JSON.stringify(typographyStyle,null,2));}const qa=await inspectLayout(svg,scene),native=await auditNativeLayout(scene,await fs.readFile(path.join(o.out,'figure.pptx')),readJSON(path.join(o.out,'pptx-object-map.json')));
+    if(visual){await fs.writeFile(path.join(o.out,'visual-contract.json'),visual.bytes);await fs.writeFile(path.join(o.out,'visual-contract-qa.json'),JSON.stringify(visual.report,null,2)+'\n');contract.visualContract.path='visual-contract.json';}
     contract.reference.path=path.relative(path.resolve(o.out),path.resolve(path.dirname(path.resolve(o.contract)),contract.reference.path));
     binding.contractSHA256=digest(contract);
     for(const [name,value] of Object.entries({'reference-contract.json':contract,'reference-layout-qa.json':binding,'layout-qa.json':qa,'native-audit.json':native}))await fs.writeFile(path.join(o.out,name),JSON.stringify(value,null,2)+'\n');
@@ -89,7 +97,9 @@ async function main(){
       if(typeof brief.narrative?.path!=='string'||!brief.narrative.path.trim())throw new Error('Version 1.1 requires narrative.path relative to the brief file');
       narrativePlan=readJSON(path.resolve(path.dirname(path.resolve(o.brief)),brief.narrative.path));
     }
-    process.stdout.write(designPrompt(spec,brief,narrativePlan));
+    let visualContract;
+    if(brief.visualContract){const {loadVisualContract}=await import('./visual-contract.mjs');visualContract=(await loadVisualContract(brief.visualContract,path.dirname(path.resolve(o.brief)))).contract;}
+    process.stdout.write(designPrompt(spec,brief,narrativePlan,visualContract));
   }else if(command==='candidates'){
     if(!o.spec||!o.out)throw new Error('candidates requires --spec FILE --out NEW_DIRECTORY');
     const spec=assertSpec(readJSON(o.spec));

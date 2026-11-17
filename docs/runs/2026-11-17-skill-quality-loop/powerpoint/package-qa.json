@@ -1,0 +1,25 @@
+{
+  "before": {
+    "passed": false,
+    "errors": [
+      {
+        "code": "untyped-package-part",
+        "part": "paperfigure/layout-scene.json"
+      },
+      {
+        "code": "presentation-child-order",
+        "part": "ppt/presentation.xml"
+      },
+      {
+        "code": "drawingml-text-space-attribute",
+        "part": "ppt/slides/slide1.xml"
+      }
+    ],
+    "scope": "Content-type coverage and observed DrawingML/presentation compatibility regressions; not complete schema or application-edit validation."
+  },
+  "after": {
+    "passed": true,
+    "errors": [],
+    "scope": "Content-type coverage and observed DrawingML/presentation compatibility regressions; not complete schema or application-edit validation."
+  }
+}

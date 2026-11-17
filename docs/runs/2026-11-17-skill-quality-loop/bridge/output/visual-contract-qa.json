@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "passed": true,
+  "coverage": "complete",
+  "errors": [],
+  "contractDigest": "cb36401631f7afb211fbf60a303ed2588f61ca18d981e9770c82a3791e41f27d",
+  "sceneDigest": "d351ed27cd46ac999e0659b958325864830df20aabcaf22d6faf96881bd5714e",
+  "counts": {
+    "modules": 16,
+    "labels": 30,
+    "shapes": 56,
+    "edges": 13
+  },
+  "scope": "Native authoring values versus explicit design roles/geometry. Raster adherence, original-font identity, Office rendering and scientific meaning require their own checks."
+}

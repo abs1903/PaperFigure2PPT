@@ -1,0 +1,57 @@
+{
+  "run": {
+    "date": "2026-11-17",
+    "mode": "programmatic Microsoft PowerPoint AppleScript editing; no human mouse or time measurement",
+    "application": {"name": "Microsoft PowerPoint", "version": "16.115"},
+    "source": "docs/runs/2026-11-17-clip-refinement/output-v2/figure.pptx",
+    "source_sha256": "e1be931ec13f745c8a2f33525b914815706f3f455d4e82889ce715a014d8f420",
+    "budget": {"total_minutes": 10, "per_external_call_seconds_max": 60, "shared_blocker_evidence_attempts": 3}
+  },
+  "capability_evidence": {
+    "sdef": "logs/sdef-relevant-extract.txt",
+    "supported_read_operations_observed": ["open", "enumerate shapes", "read text", "read shape geometry", "identify connector shapes"],
+    "connector_format_properties_declared": ["begin connected", "end connected", "begin connected shape", "end connected shape"],
+    "native_open_result": "PowerPoint opened the copied deck only as a recovered '[Repaired]' document; encoder input inventory is retained in logs/encoder-input-shapes.txt."
+  },
+  "tasks": [
+    {
+      "id": "task1_label_reflow",
+      "requested_edit": "Change 'Nearest label' to 'Nearest class description' with explicit resize/reflow.",
+      "input": "inputs/label_reflow-input.pptx",
+      "input_sha256": "e1be931ec13f745c8a2f33525b914815706f3f455d4e82889ce715a014d8f420",
+      "script": "scripts/task1_label_reflow.applescript",
+      "status": "fail",
+      "operation_success": false,
+      "usable_task_success": false,
+      "failure": "The copied document was recovered by PowerPoint. The attempted native save/export did not create a PPTX or PDF; a subsequent bounded retry returned PowerPoint error -9074. No output was available to reopen, render, or inspect as XML.",
+      "checks": {"saved": false, "reopened": false, "pdf_exported": false, "png_exported": false, "render_inspected": false, "xml_inspected": false},
+      "evidence": ["logs/task1.stderr", "logs/task1-retry.stderr", "logs/task1-ui-state.txt", "logs/after-task1-retry-presentations.txt"]
+    },
+    {
+      "id": "task2_encoder_move_connector_repair",
+      "requested_edit": "Move the lower image-encoder group and inspect/repair its incident connector routes, including the shared junction.",
+      "input": "inputs/encoder_move-input.pptx",
+      "input_sha256": "e1be931ec13f745c8a2f33525b914815706f3f455d4e82889ce715a014d8f420",
+      "status": "unverified",
+      "operation_success": false,
+      "usable_task_success": false,
+      "failure": "Not attempted after the shared save/reopen blocker. Native inventory did confirm the lower encoder and relevant connectors/groups exist, but did not establish editable group membership or connector attachment integrity after movement.",
+      "checks": {"saved": false, "reopened": false, "pdf_exported": false, "png_exported": false, "render_inspected": false, "xml_inspected": false},
+      "evidence": ["logs/encoder-input-shapes.txt", "logs/sdef-relevant-extract.txt"]
+    },
+    {
+      "id": "task3_native_comparison_output_branch",
+      "requested_edit": "Add a new comparison/output branch with native text, group, and connector.",
+      "input": "inputs/new_branch-input.pptx",
+      "input_sha256": "e1be931ec13f745c8a2f33525b914815706f3f455d4e82889ce715a014d8f420",
+      "status": "unverified",
+      "operation_success": false,
+      "usable_task_success": false,
+      "failure": "Not attempted after the shared save/reopen blocker; no native output artifact exists.",
+      "checks": {"saved": false, "reopened": false, "pdf_exported": false, "png_exported": false, "render_inspected": false, "xml_inspected": false},
+      "evidence": ["logs/task1-retry.stderr", "logs/presentations-after-owned-close.txt"]
+    }
+  ],
+  "denominators": {"requested_tasks": 3, "usable_native_edit_outputs": 0, "saved_reopened_outputs": 0, "native_pdf_or_png_outputs": 0, "tasks_with_render_and_xml_review": 0},
+  "cleanup": {"owned_test_documents_closed": true, "verification": "logs/presentations-after-owned-close.txt lists only the two pre-existing user presentations."}
+}

@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "status": "fail",
+  "communicationReady": false,
+  "image": {
+    "path": "a.png",
+    "sha256": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d"
+  },
+  "reader": {
+    "kind": "independent-agent",
+    "name": "/root/reader_a"
+  },
+  "grader": {
+    "kind": "independent-agent",
+    "name": "/root/reader_grading"
+  },
+  "counts": {
+    "questions": 4,
+    "answered": 4,
+    "correct": 3,
+    "criticalFailures": 1
+  },
+  "outcomes": [
+    {
+      "id": "q1",
+      "critical": true,
+      "status": "correct",
+      "reason": "It identifies paired image/text supervision in pre-training and class-description matching for zero-shot use. Calling the pictured words short labels is a pixel-level description, while its uncertainty correctly avoids claiming that the pictured examples reveal caption provenance or a fixed training vocabulary."
+    },
+    {
+      "id": "q2",
+      "critical": true,
+      "status": "correct",
+      "reason": "It correctly reads the diagonal paired cells, off-diagonal alternatives, two retrieval directions, and symmetric-loss cue. The stated limits about unlabeled matrix axes and lack of numeric scores do not conflict with the declared conceptual scope."
+    },
+    {
+      "id": "q3",
+      "critical": true,
+      "status": "unclear",
+      "reason": "The answer correctly establishes same-encoder reuse and appropriately refuses to invent freeze/update details, but it does not resolve the rubric's requested learned-versus-reused distinction: the top-stage encoder placement under Contrastive pre-training supports saying the encoders are learned in pre-training and reused below."
+    },
+    {
+      "id": "q4",
+      "critical": false,
+      "status": "correct",
+      "reason": "It captures the displayed alignment-to-zero-shot reuse claim and correctly limits the figure to a conceptual pipeline, without asserting an exact loss formula, numerical performance, or a guarantee."
+    }
+  ],
+  "errors": [],
+  "bindings": {
+    "observationSHA256": "a19c96d01527744d0f8a7ca32123118a44ac6631e5d2350b5babdc9177c183ab",
+    "rubricSHA256": "d048d67d8cd96824436cdaa98c0040e1f40e1b1db1cf781be58ba4d73b35efb3"
+  },
+  "scope": "Source-informed judgments of saved image-only answers. Hashes do not prove isolation, entailment, human comprehension speed or aesthetic superiority.",
+  "evidence": {
+    "handoff": {
+      "path": "a-handoff.json",
+      "sha256": "d435432d68713a78b7b1060460369f7d40ddc2328d2fd860f33ec9bd0fead45c"
+    },
+    "observation": {
+      "path": "a-normalized.json",
+      "sha256": "a19c96d01527744d0f8a7ca32123118a44ac6631e5d2350b5babdc9177c183ab"
+    },
+    "rubric": {
+      "path": "a-rubric.json",
+      "sha256": "d048d67d8cd96824436cdaa98c0040e1f40e1b1db1cf781be58ba4d73b35efb3"
+    },
+    "grading": {
+      "path": "a-grading.json",
+      "sha256": "c8b785a1d663417fb36d1122828c24ce6f9350da1ef29ac77aca2243a5d8d79f"
+    }
+  }
+}

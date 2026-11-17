@@ -1,3 +1,4 @@
+import {auditPptxPackage} from './pptx-package.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import JSZip from 'jszip';
@@ -85,6 +86,7 @@ export async function artifactQA(dir,scene) {
   const images=descendants(svg,'image');
   if(images.length!==scene.assets.length)fail('svg-raster',[],'Image inventory differs from declared independent assets');
   const zip=await JSZip.loadAsync(await fs.readFile(path.join(dir,'figure.pptx')));
+  errors.push(...(await auditPptxPackage(zip)).errors);
   const xml=await zip.file('ppt/slides/slide1.xml').async('string');
   const rels=parser.parse(await zip.file('ppt/slides/_rels/slide1.xml.rels').async('string')).Relationships;
   if(XMLValidator.validate(xml)!==true)fail('invalid-pptx-xml',[],'Slide XML is not well-formed');

@@ -1,0 +1,9 @@
+{
+  "method": "LaunchServices open, followed by AppleScript lookup limited to owned probe name",
+  "openExitCode": 0,
+  "openStderr": "",
+  "lookupExitCode": 0,
+  "lookupStdout": "missing value\n",
+  "lookupStderr": "",
+  "elapsedSeconds": 0.5608998329844326
+}

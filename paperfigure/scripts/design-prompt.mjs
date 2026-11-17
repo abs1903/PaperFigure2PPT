@@ -1,4 +1,5 @@
 import {assertSpec, digest, semanticSnapshot} from './spec.mjs';
+import {assertVisualContract,visualContractPrompt} from './visual-contract.mjs';
 
 const requiredText = (v, label) => {
   if (typeof v !== 'string' || !v.trim()) throw new Error(`Design brief requires ${label}`);
@@ -47,7 +48,7 @@ function assertNarrative(spec, brief, plan) {
 }
 
 // This validates coverage, not whether the visual abstraction is scientifically true.
-export function assertDesignBrief(spec, brief, narrativePlan) {
+export function assertDesignBrief(spec, brief, narrativePlan, visualContract) {
   assertSpec(spec);
   if (!['1.0', '1.1'].includes(brief.version)) throw new Error('Design brief version must be 1.0 or 1.1');
   if (brief.semanticSHA256 !== digest(semanticSnapshot(spec))) throw new Error('Design brief semantic snapshot is stale');
@@ -96,6 +97,11 @@ export function assertDesignBrief(spec, brief, narrativePlan) {
   if (!Number.isInteger(brief.maxVisibleWords) || brief.maxVisibleWords <= 0 || words > brief.maxVisibleWords) throw new Error(`Visible text budget exceeded: ${words}`);
   if (!Array.isArray(brief.forbidden) || !brief.forbidden.length || brief.forbidden.some(s => typeof s !== 'string' || !s.trim())) throw new Error('Source-specific forbidden additions required');
   if (brief.version === '1.1') assertNarrative(spec, brief, narrativePlan);
+  if (brief.visualContract) {
+    assertVisualContract(visualContract);
+    if(digest(visualContract)!==brief.visualContract.sha256)throw Error('Visual contract is stale');
+    if(visualContract.canvas.publicationWidthIn!==brief.publicationWidthIn)throw Error('Visual contract publication width disagrees with brief');
+  }
   return brief;
 }
 
@@ -134,8 +140,7 @@ function narrativePrompt(spec, brief, plan) {
   ].join('\n') + '\n';
 }
 
-export function designPrompt(spec, brief, narrativePlan) {
-  assertDesignBrief(spec, brief, narrativePlan);
+function baseDesignPrompt(spec, brief, narrativePlan) {
   if (brief.version === '1.1') return narrativePrompt(spec, brief, narrativePlan);
   const owner = new Map(brief.blocks.flatMap(b => b.nodes.map(n => [n, b.id])));
   return [
@@ -159,4 +164,9 @@ export function designPrompt(spec, brief, narrativePlan) {
     `Forbidden scientific additions: ${brief.forbidden.join('; ')}.`,
     'Do not invent a mechanism to make the layout easier. If the requested topology cannot be legibly drawn, retain it and return a candidate for review; generated pixels never authorize a scientific change.'
   ].join('\n') + '\n';
+}
+
+export function designPrompt(spec,brief,narrativePlan,visualContract){
+  assertDesignBrief(spec,brief,narrativePlan,visualContract);
+  return baseDesignPrompt(spec,brief,narrativePlan)+(brief.visualContract?visualContractPrompt(visualContract)+'\n':'');
 }

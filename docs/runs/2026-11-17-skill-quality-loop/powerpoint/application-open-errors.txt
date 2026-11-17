@@ -1,0 +1,25 @@
+logs/input-shapes.stderr
+docs/runs/2026-11-17-skill-quality-loop/powerpoint/scripts/inspect_shapes.applescript:163:169: execution error: 变量“docRef”没有定义。 (-2753)
+exit=1 wall_seconds=13
+
+
+logs/task1-retry.stderr
+docs/runs/2026-11-17-skill-quality-loop/powerpoint/scripts/task1_label_reflow.applescript:159:186: execution error: “Microsoft PowerPoint”遇到一个错误：发生“-9074”类型错误。 (-9074)
+exit=1 wall_seconds=0
+
+
+logs/task1.stderr
+docs/runs/2026-11-17-skill-quality-loop/powerpoint/scripts/task1_label_reflow.applescript:159:186: execution error: “Microsoft PowerPoint”遇到一个错误：AppleEvent已超时。 (-1712)
+exit=1 wall_seconds=120
+
+
+v2/logs/open-probe.stderr
+docs/runs/2026-11-17-skill-quality-loop/powerpoint/v2/scripts/open_probe.applescript:92:119: execution error: “Microsoft PowerPoint”遇到一个错误：发生“-9074”类型错误。 (-9074)
+
+
+v3/logs/control-open-probe.stderr
+docs/runs/2026-11-17-skill-quality-loop/powerpoint/v3/scripts/open_probe.applescript:92:119: execution error: “Microsoft PowerPoint”遇到一个错误：发生“-9074”类型错误。 (-9074)
+
+
+v3/logs/fixed-open-probe.stderr
+docs/runs/2026-11-17-skill-quality-loop/powerpoint/v3/scripts/open_probe.applescript:92:119: execution error: “Microsoft PowerPoint”遇到一个错误：发生“-9074”类型错误。 (-9074)

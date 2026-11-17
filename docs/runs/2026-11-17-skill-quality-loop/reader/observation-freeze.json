@@ -1,0 +1,23 @@
+{
+  "protocol": "Three fresh image-only host-agent handoffs preceded sources/rubrics. Raw answers remain immutable. CLI-shaped handoff records and normalized field layouts are saved after observation for deterministic bookkeeping; they are not claimed to have launched the original readers.",
+  "records": [
+    {
+      "id": "a",
+      "rawSHA256": "56f62619f4b2f26100e472b25622bc3a090c622bc4ee81ffe254f9e435d0855f",
+      "normalizedSHA256": "a19c96d01527744d0f8a7ca32123118a44ac6631e5d2350b5babdc9177c183ab",
+      "imageSHA256": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d"
+    },
+    {
+      "id": "b",
+      "rawSHA256": "a13f05b404841e5c5afb5d10f31e57513918320414374e88a9721480d90580fe",
+      "normalizedSHA256": "308aa3e2e2a65661441284e1899bb30967a705d6369e2f00264b84e116c78947",
+      "imageSHA256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa"
+    },
+    {
+      "id": "c",
+      "rawSHA256": "31a9f59556190cba986d605fd646ea4e32cb5441f1fd2627d390376d8a9d8422",
+      "normalizedSHA256": "b59f73254611946bd081c47c40fab58b8e6ed4263f2e14f314b388493ab228c6",
+      "imageSHA256": "fe36e2edff4ff7ffffc0de1ef2869d9f7b9d0f7a0034a925ee170862b7fcfc6f"
+    }
+  ]
+}

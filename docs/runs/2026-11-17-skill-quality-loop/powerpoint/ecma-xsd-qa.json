@@ -1,0 +1,14 @@
+{
+  "source": "https://ecma-international.org/wp-content/uploads/ECMA-376-4_5th_edition_december_2016.zip",
+  "schema": "OfficeOpenXML-XMLSchema-Transitional.zip/pml.xsd",
+  "results": {
+    "ppt/slides/slide1.xml": {
+      "passed": true,
+      "errors": []
+    },
+    "ppt/presentation.xml": {
+      "passed": true,
+      "errors": []
+    }
+  }
+}

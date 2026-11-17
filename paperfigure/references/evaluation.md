@@ -3,6 +3,11 @@
 Report six dimensions separately; do not average them into a misleading single
 publication-readiness score.
 
+For executable reader evidence, shared design bindings and actual application
+edit tasks, use [quality-loop.md](quality-loop.md). Critical reader ambiguity can
+fail a new design despite correct arrows and faithful export. A passing Office
+render does not qualify native PowerPoint editing or a normal open/save round-trip.
+
 | Dimension | Automated evidence | Human assessment |
 | --- | --- | --- |
 | Semantic fidelity | Schema, known endpoints, phase compatibility, group hierarchy, source-quote presence, exact exported node/edge/text inventory | Compare each assertion, arrow and omission with Method/code; quotes are not entailment |

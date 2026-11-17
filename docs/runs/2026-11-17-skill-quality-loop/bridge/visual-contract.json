@@ -1,0 +1,1802 @@
+{
+  "version": "1.0",
+  "coverage": "complete",
+  "canvas": {
+    "width": 1609,
+    "height": 977,
+    "publicationWidthIn": 7
+  },
+  "geometryTolerancePx": 2,
+  "typography": {
+    "type0": {
+      "font": "Arial",
+      "size": 44,
+      "bold": false
+    },
+    "type1": {
+      "font": "Arial",
+      "size": 42,
+      "bold": false
+    },
+    "type2": {
+      "font": "Arial",
+      "size": 36,
+      "bold": false
+    },
+    "type3": {
+      "font": "Arial",
+      "size": 36,
+      "bold": true
+    },
+    "type4": {
+      "font": "Arial",
+      "size": 34,
+      "bold": true
+    },
+    "type5": {
+      "font": "Arial",
+      "size": 28,
+      "bold": false
+    },
+    "type6": {
+      "font": "Arial",
+      "size": 32,
+      "bold": false
+    },
+    "type7": {
+      "font": "Arial",
+      "size": 30,
+      "bold": false
+    },
+    "type8": {
+      "font": "Arial",
+      "size": 35,
+      "bold": false
+    },
+    "type9": {
+      "font": "Arial",
+      "size": 32,
+      "bold": true
+    },
+    "type10": {
+      "font": "Arial",
+      "size": 31,
+      "bold": false
+    },
+    "type11": {
+      "font": "Arial",
+      "size": 27,
+      "bold": false
+    },
+    "type12": {
+      "font": "Arial",
+      "size": 38,
+      "bold": false
+    }
+  },
+  "colors": {
+    "paint0": {
+      "value": "#FFFFFF",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint1": {
+      "value": "#99A3AC",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint2": {
+      "value": "#EAF1EC",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint3": {
+      "value": "#568B79",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint4": {
+      "value": "#E6EEF4",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint5": {
+      "value": "#A9BCCB",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint6": {
+      "value": "#E9F1EC",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint7": {
+      "value": "#91B2A3",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint8": {
+      "value": "#F1F3F4",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint9": {
+      "value": "#76848F",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint10": {
+      "value": "#DFA88C",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint11": {
+      "value": "#F2DFD3",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint12": {
+      "value": "#E3C2AF",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint13": {
+      "value": "none",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint14": {
+      "value": "#8D989F",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint15": {
+      "value": "#D5B6A3",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint16": {
+      "value": "#F0F2F3",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint17": {
+      "value": "#CCD2D7",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint18": {
+      "value": "#396F90",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint19": {
+      "value": "#6C9BB5",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint20": {
+      "value": "#7CA2B7",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint21": {
+      "value": "#73828C",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint22": {
+      "value": "#7CA5BA",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint23": {
+      "value": "#DAE5E9",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint24": {
+      "value": "#7B7B72",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint25": {
+      "value": "#5D947D",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint26": {
+      "value": "#488A6E",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint27": {
+      "value": "#DCE7ED",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint28": {
+      "value": "#236E57",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint29": {
+      "value": "#22313A",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint30": {
+      "value": "#4F5E69",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    },
+    "paint31": {
+      "value": "#3E4F59",
+      "meaning": "Recorded accepted-reference paint; semantic meaning remains bound to the associated owners and source audit"
+    }
+  },
+  "modules": [
+    {
+      "id": "train-images",
+      "box": [
+        84,
+        202,
+        168,
+        372
+      ]
+    },
+    {
+      "id": "train-captions",
+      "box": [
+        661,
+        16,
+        578,
+        58
+      ]
+    },
+    {
+      "id": "train-image-encoder",
+      "box": [
+        351,
+        334,
+        205,
+        130
+      ]
+    },
+    {
+      "id": "train-text-encoder",
+      "box": [
+        764,
+        132,
+        377,
+        59
+      ]
+    },
+    {
+      "id": "matrix",
+      "box": [
+        735,
+        278,
+        444,
+        272
+      ]
+    },
+    {
+      "id": "objective",
+      "box": [
+        1229,
+        449,
+        353,
+        61
+      ]
+    },
+    {
+      "id": "separator",
+      "box": [
+        22,
+        600,
+        1567,
+        2
+      ]
+    },
+    {
+      "id": "query",
+      "box": [
+        54,
+        750,
+        176,
+        118
+      ]
+    },
+    {
+      "id": "test-image-encoder",
+      "box": [
+        317,
+        744,
+        207,
+        94
+      ]
+    },
+    {
+      "id": "test-text-encoder",
+      "box": [
+        649,
+        744,
+        209,
+        94
+      ]
+    },
+    {
+      "id": "template",
+      "box": [
+        916,
+        707,
+        349,
+        52
+      ]
+    },
+    {
+      "id": "class-chips",
+      "box": [
+        936,
+        774,
+        327,
+        48
+      ]
+    },
+    {
+      "id": "cosine",
+      "box": [
+        896,
+        871,
+        267,
+        87
+      ]
+    },
+    {
+      "id": "nearest",
+      "box": [
+        1290,
+        875,
+        300,
+        78
+      ]
+    },
+    {
+      "id": "train-phase",
+      "box": [
+        47,
+        24,
+        484,
+        49
+      ]
+    },
+    {
+      "id": "test-phase",
+      "box": [
+        47,
+        631,
+        275,
+        46
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "id": "train-phase-label",
+      "owner": "train-phase",
+      "text": "Contrastive pre-training",
+      "typography": "type0",
+      "color": "paint29",
+      "box": [
+        47,
+        15.38671875,
+        457.31640625,
+        55
+      ]
+    },
+    {
+      "id": "test-phase-label",
+      "owner": "test-phase",
+      "text": "Zero-shot use",
+      "typography": "type1",
+      "color": "paint29",
+      "box": [
+        47,
+        626.7861328125,
+        259.1162109375,
+        52.5
+      ]
+    },
+    {
+      "id": "paired-caption",
+      "owner": "train-images",
+      "text": "Paired examples",
+      "typography": "type2",
+      "color": "paint29",
+      "box": [
+        51,
+        126.3076171875,
+        268.13671875,
+        45
+      ]
+    },
+    {
+      "id": "train-caption-0",
+      "owner": "train-captions",
+      "text": "boat",
+      "typography": "type2",
+      "color": "paint28",
+      "box": [
+        712.466796875,
+        21.673828125,
+        70.06640625,
+        45
+      ]
+    },
+    {
+      "id": "train-caption-1",
+      "owner": "train-captions",
+      "text": "bird",
+      "typography": "type2",
+      "color": "paint28",
+      "box": [
+        920.4853515625,
+        21.673828125,
+        60.029296875,
+        45
+      ]
+    },
+    {
+      "id": "train-caption-2",
+      "owner": "train-captions",
+      "text": "cup",
+      "typography": "type2",
+      "color": "paint28",
+      "box": [
+        1123.978515625,
+        14.9677734375,
+        58.04296875,
+        45
+      ]
+    },
+    {
+      "id": "text-train-image-encoder-0",
+      "owner": "train-image-encoder",
+      "text": "Image",
+      "typography": "type3",
+      "color": "paint29",
+      "box": [
+        401.4775390625,
+        355.873828125,
+        104.044921875,
+        45
+      ]
+    },
+    {
+      "id": "text-train-image-encoder-1",
+      "owner": "train-image-encoder",
+      "text": "encoder",
+      "typography": "type3",
+      "color": "paint29",
+      "box": [
+        383.4775390625,
+        395.473828125,
+        140.044921875,
+        45
+      ]
+    },
+    {
+      "id": "text-train-text-encoder-0",
+      "owner": "train-text-encoder",
+      "text": "Text encoder",
+      "typography": "type4",
+      "color": "paint29",
+      "box": [
+        847.95166015625,
+        139.4697265625,
+        209.0966796875,
+        42.5
+      ]
+    },
+    {
+      "id": "train-image-norm-a",
+      "owner": "train-image-encoder",
+      "text": "Normalized",
+      "typography": "type5",
+      "color": "paint30",
+      "box": [
+        576.7001953125,
+        343.857421875,
+        141.599609375,
+        35
+      ]
+    },
+    {
+      "id": "train-image-norm-b",
+      "owner": "train-image-encoder",
+      "text": "embeddings",
+      "typography": "type5",
+      "color": "paint30",
+      "box": [
+        570.724609375,
+        371.0751953125,
+        152.55078125,
+        35
+      ]
+    },
+    {
+      "id": "train-text-norm",
+      "owner": "train-text-encoder",
+      "text": "Normalized embeddings",
+      "typography": "type5",
+      "color": "paint30",
+      "box": [
+        824.03515625,
+        195.5751953125,
+        301.9296875,
+        35
+      ]
+    },
+    {
+      "id": "i2t-caption",
+      "owner": "objective",
+      "text": "Image to text",
+      "typography": "type6",
+      "color": "paint29",
+      "box": [
+        1331,
+        306.0859375,
+        184.984375,
+        40
+      ]
+    },
+    {
+      "id": "t2i-caption",
+      "owner": "objective",
+      "text": "Text to image",
+      "typography": "type6",
+      "color": "paint29",
+      "box": [
+        1340,
+        371.0859375,
+        190.3125,
+        40
+      ]
+    },
+    {
+      "id": "text-objective-0",
+      "owner": "objective",
+      "text": "Symmetric loss",
+      "typography": "type3",
+      "color": "paint29",
+      "box": [
+        1272.43359375,
+        452.81640625,
+        266.1328125,
+        45
+      ]
+    },
+    {
+      "id": "same-encoders-caption",
+      "owner": "test-text-encoder",
+      "text": "Same encoders",
+      "typography": "type7",
+      "color": "paint31",
+      "box": [
+        480,
+        629.7373046875,
+        210.1171875,
+        37.5
+      ]
+    },
+    {
+      "id": "query-caption",
+      "owner": "query",
+      "text": "New image",
+      "typography": "type6",
+      "color": "paint29",
+      "box": [
+        64,
+        696.0859375,
+        160.0625,
+        40
+      ]
+    },
+    {
+      "id": "class-caption",
+      "owner": "template",
+      "text": "Class descriptions",
+      "typography": "type8",
+      "color": "paint29",
+      "box": [
+        949,
+        630.7626953125,
+        283.9990234375,
+        43.75
+      ]
+    },
+    {
+      "id": "text-test-image-encoder-0",
+      "owner": "test-image-encoder",
+      "text": "Image",
+      "typography": "type9",
+      "color": "paint29",
+      "box": [
+        374.2578125,
+        752.665625,
+        92.484375,
+        40
+      ]
+    },
+    {
+      "id": "text-test-image-encoder-1",
+      "owner": "test-image-encoder",
+      "text": "encoder",
+      "typography": "type9",
+      "color": "paint29",
+      "box": [
+        358.2578125,
+        787.865625,
+        124.484375,
+        40
+      ]
+    },
+    {
+      "id": "text-test-text-encoder-0",
+      "owner": "test-text-encoder",
+      "text": "Text",
+      "typography": "type9",
+      "color": "paint29",
+      "box": [
+        721.7890625,
+        752.665625,
+        63.421875,
+        40
+      ]
+    },
+    {
+      "id": "text-test-text-encoder-1",
+      "owner": "test-text-encoder",
+      "text": "encoder",
+      "typography": "type9",
+      "color": "paint29",
+      "box": [
+        691.2578125,
+        787.865625,
+        124.484375,
+        40
+      ]
+    },
+    {
+      "id": "text-template-0",
+      "owner": "template",
+      "text": "a photo of a {label}",
+      "typography": "type7",
+      "color": "paint29",
+      "box": [
+        965.3876953125,
+        710.763671875,
+        250.224609375,
+        37.5
+      ]
+    },
+    {
+      "id": "class-caption-0",
+      "owner": "class-chips",
+      "text": "boat",
+      "typography": "type10",
+      "color": "paint28",
+      "box": [
+        956.33251953125,
+        777.91357421875,
+        60.3349609375,
+        38.75
+      ]
+    },
+    {
+      "id": "class-caption-1",
+      "owner": "class-chips",
+      "text": "bird",
+      "typography": "type10",
+      "color": "paint28",
+      "box": [
+        1073.654052734375,
+        777.91357421875,
+        51.69189453125,
+        38.75
+      ]
+    },
+    {
+      "id": "class-caption-2",
+      "owner": "class-chips",
+      "text": "cup",
+      "typography": "type10",
+      "color": "paint28",
+      "box": [
+        1188.50927734375,
+        772.138916015625,
+        49.9814453125,
+        38.75
+      ]
+    },
+    {
+      "id": "test-norm-caption",
+      "owner": "cosine",
+      "text": "Normalized embeddings",
+      "typography": "type11",
+      "color": "paint30",
+      "box": [
+        479,
+        914.822509765625,
+        291.146484375,
+        33.75
+      ]
+    },
+    {
+      "id": "text-cosine-0",
+      "owner": "cosine",
+      "text": "Cosine",
+      "typography": "type2",
+      "color": "paint29",
+      "box": [
+        973.4697265625,
+        868.01640625,
+        112.060546875,
+        45
+      ]
+    },
+    {
+      "id": "text-cosine-1",
+      "owner": "cosine",
+      "text": "similarity",
+      "typography": "type2",
+      "color": "paint29",
+      "box": [
+        959.50390625,
+        907.6164062500001,
+        139.9921875,
+        45
+      ]
+    },
+    {
+      "id": "text-nearest-0",
+      "owner": "nearest",
+      "text": "Nearest label",
+      "typography": "type12",
+      "color": "paint29",
+      "box": [
+        1328.05029296875,
+        889.3779296875,
+        223.8994140625,
+        47.5
+      ]
+    }
+  ],
+  "shapes": [
+    {
+      "id": "train-images-anchor",
+      "owner": "train-images",
+      "fill": "paint0",
+      "stroke": "paint1",
+      "width": 2,
+      "box": [
+        84,
+        202,
+        168,
+        372
+      ]
+    },
+    {
+      "id": "train-captions-anchor",
+      "owner": "train-captions",
+      "fill": "paint2",
+      "stroke": "paint3",
+      "width": 2.2,
+      "box": [
+        661,
+        16,
+        578,
+        58
+      ]
+    },
+    {
+      "id": "train-image-encoder-anchor",
+      "owner": "train-image-encoder",
+      "fill": "paint4",
+      "stroke": "paint5",
+      "width": 1.8,
+      "box": [
+        351,
+        334,
+        205,
+        130
+      ]
+    },
+    {
+      "id": "train-text-encoder-anchor",
+      "owner": "train-text-encoder",
+      "fill": "paint6",
+      "stroke": "paint7",
+      "width": 1.8,
+      "box": [
+        764,
+        132,
+        377,
+        59
+      ]
+    },
+    {
+      "id": "matrix-anchor",
+      "owner": "matrix",
+      "fill": "paint8",
+      "stroke": "paint9",
+      "width": 2.6,
+      "box": [
+        735,
+        278,
+        444,
+        272
+      ]
+    },
+    {
+      "id": "matrix-cell-0-0",
+      "owner": "matrix",
+      "fill": "paint10",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        735,
+        278,
+        148,
+        90.66666666666669
+      ]
+    },
+    {
+      "id": "matrix-cell-0-1",
+      "owner": "matrix",
+      "fill": "paint8",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        883,
+        278,
+        148,
+        90.66666666666669
+      ]
+    },
+    {
+      "id": "matrix-cell-0-2",
+      "owner": "matrix",
+      "fill": "paint8",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        1031,
+        278,
+        148,
+        90.66666666666669
+      ]
+    },
+    {
+      "id": "matrix-cell-1-0",
+      "owner": "matrix",
+      "fill": "paint8",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        735,
+        368.6666666666667,
+        148,
+        90.66666666666669
+      ]
+    },
+    {
+      "id": "matrix-cell-1-1",
+      "owner": "matrix",
+      "fill": "paint10",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        883,
+        368.6666666666667,
+        148,
+        90.66666666666669
+      ]
+    },
+    {
+      "id": "matrix-cell-1-2",
+      "owner": "matrix",
+      "fill": "paint8",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        1031,
+        368.6666666666667,
+        148,
+        90.66666666666669
+      ]
+    },
+    {
+      "id": "matrix-cell-2-0",
+      "owner": "matrix",
+      "fill": "paint8",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        735,
+        459.33333333333337,
+        148,
+        90.66666666666663
+      ]
+    },
+    {
+      "id": "matrix-cell-2-1",
+      "owner": "matrix",
+      "fill": "paint8",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        883,
+        459.33333333333337,
+        148,
+        90.66666666666663
+      ]
+    },
+    {
+      "id": "matrix-cell-2-2",
+      "owner": "matrix",
+      "fill": "paint10",
+      "stroke": "paint9",
+      "width": 1.6,
+      "box": [
+        1031,
+        459.33333333333337,
+        148,
+        90.66666666666663
+      ]
+    },
+    {
+      "id": "objective-anchor",
+      "owner": "objective",
+      "fill": "paint11",
+      "stroke": "paint12",
+      "width": 1.5,
+      "box": [
+        1229,
+        449,
+        353,
+        61
+      ]
+    },
+    {
+      "id": "separator-anchor",
+      "owner": "separator",
+      "fill": "paint13",
+      "stroke": "paint14",
+      "width": 2.3,
+      "box": [
+        22,
+        601,
+        1567,
+        0
+      ]
+    },
+    {
+      "id": "query-anchor",
+      "owner": "query",
+      "fill": "paint0",
+      "stroke": "paint1",
+      "width": 2,
+      "box": [
+        54,
+        750,
+        176,
+        118
+      ]
+    },
+    {
+      "id": "test-image-encoder-anchor",
+      "owner": "test-image-encoder",
+      "fill": "paint4",
+      "stroke": "paint5",
+      "width": 1.8,
+      "box": [
+        317,
+        744,
+        207,
+        94
+      ]
+    },
+    {
+      "id": "test-text-encoder-anchor",
+      "owner": "test-text-encoder",
+      "fill": "paint6",
+      "stroke": "paint7",
+      "width": 1.8,
+      "box": [
+        649,
+        744,
+        209,
+        94
+      ]
+    },
+    {
+      "id": "template-anchor",
+      "owner": "template",
+      "fill": "paint2",
+      "stroke": "paint3",
+      "width": 2.2,
+      "box": [
+        916,
+        707,
+        349,
+        52
+      ]
+    },
+    {
+      "id": "class-chips-anchor",
+      "owner": "class-chips",
+      "fill": "paint2",
+      "stroke": "paint3",
+      "width": 2.2,
+      "box": [
+        936,
+        774,
+        327,
+        48
+      ]
+    },
+    {
+      "id": "cosine-anchor",
+      "owner": "cosine",
+      "fill": "paint11",
+      "stroke": "paint15",
+      "width": 1.6,
+      "box": [
+        896,
+        871,
+        267,
+        87
+      ]
+    },
+    {
+      "id": "nearest-anchor",
+      "owner": "nearest",
+      "fill": "paint16",
+      "stroke": "paint17",
+      "width": 1.6,
+      "box": [
+        1290,
+        875,
+        300,
+        78
+      ]
+    },
+    {
+      "id": "train-boat-sail-a",
+      "owner": "train-images",
+      "fill": "paint18",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        139,
+        220.76,
+        30.80000000000001,
+        45.75999999999999
+      ]
+    },
+    {
+      "id": "train-boat-sail-b",
+      "owner": "train-images",
+      "fill": "paint19",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        175.3,
+        219,
+        31.899999999999977,
+        45.75999999999999
+      ]
+    },
+    {
+      "id": "train-boat-hull",
+      "owner": "train-images",
+      "fill": "paint18",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        119.2,
+        270.92,
+        105.60000000000001,
+        28.159999999999968
+      ]
+    },
+    {
+      "id": "train-boat-wave",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint20",
+      "width": 3.8,
+      "box": [
+        123.6,
+        294.68,
+        96.79999999999998,
+        14.95999999999998
+      ]
+    },
+    {
+      "id": "query-boat-sail-a",
+      "owner": "query",
+      "fill": "paint18",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        111.8,
+        768.76,
+        33.32000000000001,
+        45.75999999999999
+      ]
+    },
+    {
+      "id": "query-boat-sail-b",
+      "owner": "query",
+      "fill": "paint19",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        151.07,
+        767,
+        34.50999999999999,
+        45.75999999999999
+      ]
+    },
+    {
+      "id": "query-boat-hull",
+      "owner": "query",
+      "fill": "paint18",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        90.38,
+        818.92,
+        114.24000000000001,
+        28.160000000000082
+      ]
+    },
+    {
+      "id": "query-boat-wave",
+      "owner": "query",
+      "fill": "paint13",
+      "stroke": "paint20",
+      "width": 3.8,
+      "box": [
+        95.14,
+        842.68,
+        104.72000000000001,
+        14.960000000000036
+      ]
+    },
+    {
+      "id": "bird-body",
+      "owner": "train-images",
+      "fill": "paint18",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        106.97,
+        342.08,
+        99.98999999999998,
+        96.80000000000001
+      ]
+    },
+    {
+      "id": "bird-beak",
+      "owner": "train-images",
+      "fill": "paint21",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        199.89,
+        363.2,
+        23.230000000000018,
+        9.680000000000007
+      ]
+    },
+    {
+      "id": "bird-wing",
+      "owner": "train-images",
+      "fill": "paint22",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        123.13,
+        367.6,
+        74.74000000000001,
+        45.75999999999999
+      ]
+    },
+    {
+      "id": "bird-wing-contour",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint23",
+      "width": 1.3,
+      "box": [
+        123.13,
+        377.28,
+        72.72,
+        44
+      ]
+    },
+    {
+      "id": "bird-eye",
+      "owner": "train-images",
+      "fill": "paint0",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        195,
+        360,
+        6,
+        6
+      ]
+    },
+    {
+      "id": "bird-foot-a",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint18",
+      "width": 3,
+      "box": [
+        165,
+        420,
+        11,
+        14
+      ]
+    },
+    {
+      "id": "bird-foot-b",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint18",
+      "width": 3,
+      "box": [
+        181,
+        420,
+        8,
+        13
+      ]
+    },
+    {
+      "id": "bird-perch",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint24",
+      "width": 2.7,
+      "box": [
+        145,
+        424,
+        73,
+        16
+      ]
+    },
+    {
+      "id": "bird-sprig-stem",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint25",
+      "width": 1.8,
+      "box": [
+        204,
+        415,
+        20,
+        17
+      ]
+    },
+    {
+      "id": "bird-leaf-a",
+      "owner": "train-images",
+      "fill": "paint26",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        198,
+        413,
+        15,
+        13
+      ]
+    },
+    {
+      "id": "bird-leaf-b",
+      "owner": "train-images",
+      "fill": "paint26",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        213,
+        413,
+        14,
+        13
+      ]
+    },
+    {
+      "id": "bird-leaf-c",
+      "owner": "train-images",
+      "fill": "paint26",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        211,
+        427,
+        16,
+        15
+      ]
+    },
+    {
+      "id": "cup-handle",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint18",
+      "width": 7.5,
+      "box": [
+        194,
+        488,
+        39,
+        51
+      ]
+    },
+    {
+      "id": "cup-body",
+      "owner": "train-images",
+      "fill": "paint18",
+      "stroke": "paint18",
+      "width": 1.7,
+      "box": [
+        122,
+        480,
+        77,
+        83
+      ]
+    },
+    {
+      "id": "cup-rim",
+      "owner": "train-images",
+      "fill": "paint27",
+      "stroke": "paint18",
+      "width": 4,
+      "box": [
+        125,
+        479,
+        72,
+        25
+      ]
+    },
+    {
+      "id": "image-branch-boat",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint18",
+      "width": 3.2,
+      "box": [
+        249,
+        259,
+        44,
+        137
+      ]
+    },
+    {
+      "id": "image-branch-cup",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint18",
+      "width": 3.2,
+      "box": [
+        249,
+        396,
+        44,
+        125
+      ]
+    },
+    {
+      "id": "image-branch-bird",
+      "owner": "train-images",
+      "fill": "paint13",
+      "stroke": "paint18",
+      "width": 3.2,
+      "box": [
+        249,
+        396,
+        44,
+        0
+      ]
+    },
+    {
+      "id": "caption-branch-boat",
+      "owner": "train-captions",
+      "fill": "paint13",
+      "stroke": "paint28",
+      "width": 3.2,
+      "box": [
+        749,
+        75,
+        203,
+        27
+      ]
+    },
+    {
+      "id": "caption-branch-cup",
+      "owner": "train-captions",
+      "fill": "paint13",
+      "stroke": "paint28",
+      "width": 3.2,
+      "box": [
+        952,
+        75,
+        201,
+        27
+      ]
+    },
+    {
+      "id": "caption-branch-bird",
+      "owner": "train-captions",
+      "fill": "paint13",
+      "stroke": "paint28",
+      "width": 3.2,
+      "box": [
+        952,
+        75,
+        0,
+        27
+      ]
+    },
+    {
+      "id": "direction-i2t",
+      "owner": "objective",
+      "fill": "paint13",
+      "stroke": "paint18",
+      "width": 4.2,
+      "box": [
+        1230,
+        331,
+        72,
+        0
+      ]
+    },
+    {
+      "id": "direction-i2t-tip",
+      "owner": "objective",
+      "fill": "paint18",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        1302,
+        320,
+        17,
+        22
+      ]
+    },
+    {
+      "id": "direction-t2i",
+      "owner": "objective",
+      "fill": "paint13",
+      "stroke": "paint28",
+      "width": 4.2,
+      "box": [
+        1248,
+        393,
+        69,
+        0
+      ]
+    },
+    {
+      "id": "direction-t2i-tip",
+      "owner": "objective",
+      "fill": "paint28",
+      "stroke": "paint13",
+      "width": 0,
+      "box": [
+        1231,
+        382,
+        17,
+        22
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "image-batch-encode",
+      "from": {
+        "module": "train-images",
+        "side": "right",
+        "offset": [
+          209,
+          194
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "train-image-encoder",
+        "side": "left",
+        "offset": [
+          -5,
+          62
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint18",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "text-batch-encode",
+      "from": {
+        "module": "train-captions",
+        "side": "right",
+        "offset": [
+          291,
+          86
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "train-text-encoder",
+        "side": "left",
+        "offset": [
+          188,
+          -5
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint28",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "image-to-matrix",
+      "from": {
+        "module": "train-image-encoder",
+        "side": "right",
+        "offset": [
+          205,
+          89
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "matrix",
+        "side": "left",
+        "offset": [
+          -5,
+          145
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint18",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "text-to-matrix-left",
+      "from": {
+        "module": "train-text-encoder",
+        "side": "right",
+        "offset": [
+          188,
+          107
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "matrix",
+        "side": "left",
+        "offset": [
+          76,
+          -4
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint28",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "text-to-matrix-mid",
+      "from": {
+        "module": "train-text-encoder",
+        "side": "right",
+        "offset": [
+          188,
+          107
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "matrix",
+        "side": "left",
+        "offset": [
+          217,
+          -4
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint28",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "text-to-matrix-right",
+      "from": {
+        "module": "train-text-encoder",
+        "side": "right",
+        "offset": [
+          188,
+          107
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "matrix",
+        "side": "left",
+        "offset": [
+          370,
+          -4
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint28",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "reuse-image",
+      "from": {
+        "module": "train-image-encoder",
+        "side": "right",
+        "offset": [
+          62,
+          131
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "test-image-encoder",
+        "side": "left",
+        "offset": [
+          97,
+          -5
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint18",
+      "width": 3,
+      "dashed": true,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "reuse-text",
+      "from": {
+        "module": "train-text-encoder",
+        "side": "right",
+        "offset": [
+          377,
+          29
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "test-text-encoder",
+        "side": "left",
+        "offset": [
+          101,
+          -5
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint28",
+      "width": 3,
+      "dashed": true,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "query-image-encode",
+      "from": {
+        "module": "query",
+        "side": "right",
+        "offset": [
+          177,
+          44
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "test-image-encoder",
+        "side": "left",
+        "offset": [
+          -2,
+          50
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint18",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "class-text-encode",
+      "from": {
+        "module": "template",
+        "side": "right",
+        "offset": [
+          0,
+          31
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "test-text-encoder",
+        "side": "left",
+        "offset": [
+          214,
+          40
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint28",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "image-to-similarity",
+      "from": {
+        "module": "test-image-encoder",
+        "side": "right",
+        "offset": [
+          111,
+          93
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "cosine",
+        "side": "left",
+        "offset": [
+          -6,
+          44
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint18",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    },
+    {
+      "id": "text-to-similarity",
+      "from": {
+        "module": "test-text-encoder",
+        "side": "right",
+        "offset": [
+          101,
+          93
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "cosine",
+        "side": "left",
+        "offset": [
+          -300,
+          7
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint28",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "none"
+    },
+    {
+      "id": "similarity-readout",
+      "from": {
+        "module": "cosine",
+        "side": "right",
+        "offset": [
+          268,
+          43
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "to": {
+        "module": "nearest",
+        "side": "left",
+        "offset": [
+          -7,
+          39
+        ],
+        "reason": "Source-registered visible endpoint"
+      },
+      "color": "paint9",
+      "width": 3.3,
+      "dashed": false,
+      "endArrow": "triangle"
+    }
+  ]
+}

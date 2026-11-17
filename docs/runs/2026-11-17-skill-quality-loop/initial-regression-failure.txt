@@ -1,0 +1,171 @@
+
+> paperfigure-skill@0.1.0 test
+> node --test tests/*.test.mjs tests/*.browser.mjs
+
+✔ design: shared contract and compatibility entrypoints agree (238.5645ms)
+✔ design: absent or invalid review cannot hide mechanical/render evidence (81.79ms)
+✔ design: missing renders and mechanical failures remain separate from review acceptance (127.950042ms)
+✔ design: user rejection, stale artifacts and review criteria block acceptance (30.748416ms)
+✔ design: CLI persists the shared status and rejects missing acceptance (886.39425ms)
+✔ reconstruct: shared contract and compatibility entrypoints agree (50.310458ms)
+✔ reconstruct: absent or invalid review cannot hide mechanical/render evidence (37.443917ms)
+✔ reconstruct: missing renders and mechanical failures remain separate from review acceptance (296.914459ms)
+✔ reconstruct: user rejection, stale artifacts and review criteria block acceptance (196.366041ms)
+✔ reconstruct: CLI persists the shared status and rejects missing acceptance (861.124583ms)
+✔ reconstruction mode survives a missing contract and requires typography for text (94.803042ms)
+✔ communication prompt covers the corrected graph without demanding a card for every entity (11.507625ms)
+✔ stale semantics and omitted or invented owners/edges fail before prompting (1.953667ms)
+✔ compression cannot hide cross-block relations; palette and exact-label budgets are checked (7.605166ms)
+✔ CLI refuses graph-dump prompting and emits the reviewed-brief prompt without provider calls (1153.149458ms)
+✔ v1.1 compiles bound contribution hierarchy and only the selected composition (2.074083ms)
+✔ v1.1 cannot omit, silently mutate or contradict its narrative plan (2.9545ms)
+✔ v1.1 checks contribution evidence, visible ownership and focal/support boundaries (3.508167ms)
+✔ v1.1 requires a real composition selection or an explicit single-composition exception (2.024458ms)
+✔ v1.1 CLI resolves the plan relative to the brief and rejects a stale on-disk plan (808.21575ms)
+✔ short diagonal collisions are exact; tangent boundary contact is not interior collision (6.083125ms)
+✔ orthogonal routing avoids a module and retains the exact scientific graph (12.796ms)
+✔ moving a module without moving the SVG endpoint fails anchoring (0.231083ms)
+✔ native measured text overflow and off-center multiline blocks are distinct errors (0.278166ms)
+✔ overlap exceptions are scoped to declared source owners and do not suppress a new collision (0.472541ms)
+✔ missing rendered SVG edge cannot be replaced by claimed scene geometry (0.119916ms)
+✔ no feasible corridor fails explicitly instead of passing a line through a module (0.519917ms)
+✔ a text region for a centered body does not incorrectly constrain the separate header (0.219333ms)
+✔ a thick arrowhead can collide with text when its shaft does not (0.947875ms)
+✔ a rendered interior route edit fails parity even when endpoints still match (0.258875ms)
+✔ the declared padded text region is enforced, rather than just the outer box (0.264542ms)
+✔ source occlusion exceptions require evidence, reject relative edits, and survive joint translation (1.655167ms)
+✔ schema rejects colliding module/edge IDs and invalid arrow properties (6.175875ms)
+✔ native centering, styles and binding are proven from the actual OOXML (261.880375ms)
+✔ a native file with a wrong arrowhead or missing attachment fails audit (68.645542ms)
+✔ native package regeneration is deterministic (199.215167ms)
+✔ arrowhead dimensions and dash pattern drift are rejected (109.684375ms)
+✔ editability denominator comes from real slide objects, including an injected picture (86.428792ms)
+✔ grouped icons retain native shapes/text and exact physical ownership without raster substitution (48.30725ms)
+✔ icon grouping rejects ID collisions, cross-module instances and painter-order interleaving (0.623209ms)
+✔ icon detail audit detects actual native paint and path corruption (110.454541ms)
+✔ native icon line art is unfilled geometry and preserves its explicit cap (36.227375ms)
+✔ actual glyph bounds distinguish overflow, centering and line-box whitespace (11127.354542ms)
+✔ real opaque path overpainting is flagged even if the label fits its box (2375.24075ms)
+✔ invisible native labels cannot satisfy layout verification (1709.480667ms)
+✔ measured word wrapping retains every word and refuses an unfit single token (2061.044042ms)
+✔ closed SVG heads keep a sharp tip instead of exposing a broad round shaft (990.681875ms)
+✔ multiline blocks center every line, not just their union (4712.124041ms)
+✔ design QA refreshes evidence from actual SVG and preserves no-op report bytes (4530.315791ms)
+✔ reconstruct and QA use the shared contract and detect undeclared native-picture substitution (14874.43125ms)
+✔ vlm: complete exports, valid graph, native editability, zero layout errors (4470.8345ms)
+✔ tool-memory-agent: complete exports, valid graph, native editability, zero layout errors (157.567417ms)
+✔ physical-vln: complete exports, valid graph, native editability, zero layout errors (186.523667ms)
+✔ default is caption-free and footer-free, with metadata title retained (1.808292ms)
+✔ headings and legend are explicit opt-ins (1.428416ms)
+✔ global typography and per-node font override change native text (20.076ms)
+✔ duplicate node id is rejected (0.363625ms)
+✔ missing endpoint is rejected (0.142584ms)
+✔ fabricated evidence quote is rejected (0.349708ms)
+✔ wrong evidence source is rejected (0.286334ms)
+✔ phase mismatch is rejected (0.287375ms)
+✔ unmarked cycle is rejected (0.26675ms)
+✔ unjustified novelty highlighting is rejected (0.250208ms)
+✔ unknown layout node is rejected (0.270667ms)
+✔ group parent cycle is rejected (0.183542ms)
+✔ schema rejects unknown fields and invalid glyphs (0.142208ms)
+✔ node overlaps are detected (1.596958ms)
+✔ text overflow is detected without reducing fonts (1.786708ms)
+✔ edge through a module is detected (0.957042ms)
+✔ final publication size has an independent readability gate (0.990583ms)
+✔ crossing detector distinguishes crossing from shared endpoint (0.035916ms)
+✔ independent raster route metric catches displaced thin arrows (0.3685ms)
+✔ two routes sharing a segment are reported (0.967ms)
+✔ automatic layout routes an unseen linear graph (2.489542ms)
+✔ SVG and PPTX are byte-reproducible for identical input (157.659042ms)
+✔ appearance candidates preserve the entire semantic graph (3.483833ms)
+✔ output source and existing user files are preserved (8.499834ms)
+✔ tampered SVG label is detected from actual output (49.791208ms)
+✔ missing native PPTX connector is detected (92.554583ms)
+✔ connector geometry corruption is detected (34.064042ms)
+✔ isolated skill installation refuses a second installation (9649.5965ms)
+✔ CLI executes through a symlinked installation path (296.06075ms)
+✔ renderer can be imported by a stdin-driven generation script (183.447458ms)
+✔ installer rejects a recursive destination before making changes (189.2185ms)
+✔ mechanical success cannot imply visual acceptance (1.150167ms)
+✔ a rejected or stale review cannot approve delivery (66.0995ms)
+✔ reference-driven VLM preserves source semantics and native structure (1818.593125ms)
+✔ illustrations cannot escape asset roots or cover other modules (1.040125ms)
+✔ paper-grounded native reconstruction retains gradients, math and a cropped independent input (1991.33125ms)
+✔ a corrupted native gradient is rejected (1185.369084ms)
+✔ PDF math keeps embedded fonts and the Greek phi glyph (1211.725708ms)
+✔ PDF downward arrowhead follows the final edge direction (2063.489541ms)
+✔ react-hotpotqa: pinned code, solid semantic colors, entirely native exports (1660.726875ms)
+✔ reflexion-hotpotqa: pinned code, solid semantic colors, entirely native exports (489.810166ms)
+✔ voyager-agent: pinned code, solid semantic colors, entirely native exports (495.333833ms)
+✔ BLIP-2 solid revision preserves scientific graph and removes all gradients (850.109292ms)
+✔ Voyager refinement: large group labels, source examples and native solid exports (403.270417ms)
+✔ reader handoff does not disclose a private answer or rubric (15.359333ms)
+✔ critical ambiguity blocks communication acceptance; unknown remains unknown (0.834458ms)
+✔ stale images, stale grades, omitted questions and no critical question cannot pass (46.004375ms)
+✔ shared visual values detect geometry, typography, paint, labels and direction drift (70.700708ms)
+✔ contract identity tolerates JSON formatting but rejects changed values (12.542084ms)
+✔ prompt uses the same design roles and rejects a changed bound contract (10.0105ms)
+✔ native package declares JSON and avoids schema-invalid DrawingML text/order (180.386666ms)
+✔ native reconstruction inventory preserves text, vector ownership and roles (3.393125ms)
+✔ a screenshot behind native labels cannot pass the native SVG check (0.452917ms)
+✔ outlined-label substitution fails even though paths are valid icon geometry (0.238458ms)
+✔ unowned vectors and duplicate IDs are reported (0.214208ms)
+✔ local quoted paint URLs are allowed; resource-loading URLs are not (0.361541ms)
+✔ comparison renders original size and exposes visual drift without approving it (1334.442458ms)
+✔ aspect-ratio changes fail instead of being hidden by resizing (8.4175ms)
+✔ definition and hidden-label substitutions cannot satisfy visible native text (3.530792ms)
+✔ catch-all roles, missing vector ledger entries and wrong semantic owners fail (0.397708ms)
+✔ explicit photograph exception does not silently pass a strict native audit (0.481375ms)
+✔ hidden tspan glyphs and definition-only semantic groups cannot count as visible (0.252292ms)
+✔ singular transforms and zero text length cannot masquerade as visible labels (1.355084ms)
+✔ reference geometry inspects actual rendered SVG, not only claimed scene boxes (3763.481334ms)
+✔ changed target and changed canvas fail reference binding (1066.26325ms)
+✔ invisible anchor and unbounded generic layout exception cannot pass reconstruction (1062.23475ms)
+✔ a selected PNG target cannot silently use generic build (408.364083ms)
+✔ user rejection and a different reviewed image cannot be overridden by a claimed acceptance (22.881ms)
+✔ a justified geometry exception cannot move a whole panel or omit a new anchor (2948.144916ms)
+✔ omitting anchor metadata cannot exempt a semantic panel from target binding (3792.631958ms)
+✔ grouped icon anchors resolve to their semantic module without waiving ownership (2995.984584ms)
+✖ accepted agemem typography and native artifacts remain unchanged (247.133833ms)
+✖ accepted memskill typography and native artifacts remain unchanged (213.041083ms)
+✔ actual SVG/native font, size and weight substitutions fail a frozen profile (1609.269584ms)
+✔ choosing a font is distinct from observing it in an actual Office render (1343.607209ms)
+✔ PDF face normalization is explicit and never mutates the accepted source scene (0.341542ms)
+ℹ tests 129
+ℹ suites 0
+ℹ pass 127
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 28527.326208
+
+✖ failing tests:
+
+test at tests/typography-profile.test.mjs:4:39
+✖ accepted agemem typography and native artifacts remain unchanged (247.133833ms)
+  AssertionError [ERR_ASSERTION]: regenerated native file must preserve the accepted figure
+      at TestContext.<anonymous> (file:///Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/tests/typography-profile.test.mjs:4:670)
+      at async Test.run (node:internal/test_runner/test:1125:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/typography-profile.test.mjs:4:39
+✖ accepted memskill typography and native artifacts remain unchanged (213.041083ms)
+  AssertionError [ERR_ASSERTION]: regenerated native file must preserve the accepted figure
+      at TestContext.<anonymous> (file:///Users/jackychen/02projs/tbs/PaperFigure2PPT/paperfigure/tests/typography-profile.test.mjs:4:670)
+      at async Test.run (node:internal/test_runner/test:1125:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

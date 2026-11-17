@@ -1,0 +1,51 @@
+{
+  "softwareRegression": {
+    "passed": 131,
+    "failed": 0,
+    "log": "final-regression.txt"
+  },
+  "skillValidation": "pass",
+  "skillDiscovery": {
+    "count": 1,
+    "name": "paperfigure"
+  },
+  "reader": {
+    "a": {
+      "correct": 3,
+      "total": 4,
+      "status": "fail"
+    },
+    "b": {
+      "correct": 4,
+      "total": 4,
+      "status": "pass"
+    },
+    "c": {
+      "correct": 4,
+      "total": 4,
+      "status": "pass"
+    }
+  },
+  "sharedContract": {
+    "coverage": "complete",
+    "modules": 16,
+    "labels": 30,
+    "shapes": 56,
+    "edges": 13,
+    "retroactiveCapture": true
+  },
+  "sceneRegenerationEdits": {
+    "passed": 3,
+    "total": 3,
+    "renderer": "LibreOffice",
+    "independentVisualReview": "pass"
+  },
+  "powerPointApplicationEdits": {
+    "usableOutputs": 0,
+    "total": 3,
+    "status": "unverified",
+    "reason": "PowerPoint 16.115 open/control fails with -9074; minimal library control also fails"
+  },
+  "newImageGenCalls": 0,
+  "unchangedSVGAndOfficePNG": true
+}

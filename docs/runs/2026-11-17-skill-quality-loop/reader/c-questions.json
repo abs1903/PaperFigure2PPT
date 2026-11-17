@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "audience": "ML researcher unfamiliar with this figure",
+  "publicationWidthIn": 7,
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How is the portion to edit selected from the whole repository?"
+    },
+    {
+      "id": "q2",
+      "prompt": "What determines the scope and form of the proposed edit?"
+    },
+    {
+      "id": "q3",
+      "prompt": "How are multiple candidates reduced to a final patch?"
+    },
+    {
+      "id": "q4",
+      "prompt": "Does the figure support autonomous planning, and what claims about success cannot be read from it?"
+    }
+  ]
+}

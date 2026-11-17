@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "status": "pass",
+  "communicationReady": true,
+  "image": {
+    "path": "c.png",
+    "sha256": "fe36e2edff4ff7ffffc0de1ef2869d9f7b9d0f7a0034a925ee170862b7fcfc6f"
+  },
+  "reader": {
+    "kind": "independent-agent",
+    "name": "/root/reader_c"
+  },
+  "grader": {
+    "kind": "independent-agent",
+    "name": "/root/reader_grading"
+  },
+  "counts": {
+    "questions": 4,
+    "answered": 4,
+    "correct": 4,
+    "criticalFailures": 0
+  },
+  "outcomes": [
+    {
+      "id": "q1",
+      "critical": true,
+      "status": "correct",
+      "reason": "It reads the depicted repository-to-file-to-element-to-edit-location narrowing and accurately ties the selected identifiers to the illustration, without requiring hidden prompt or ranking details."
+    },
+    {
+      "id": "q2",
+      "critical": true,
+      "status": "correct",
+      "reason": "It correctly describes the localized context window and Search/Replace form producing candidate patches, and it explicitly leaves the unshown semantic-generation rule open. The fixed, non-autonomous boundary is also explicit elsewhere in the same figure and answered in q4."
+    },
+    {
+      "id": "q3",
+      "critical": true,
+      "status": "correct",
+      "reason": "It gives the visible candidate-to-syntax/regression-to-normalize/frequency-to-selected-patch order and avoids inferring a learned ranker, tie-breaker, fallback, or guaranteed repair."
+    },
+    {
+      "id": "q4",
+      "critical": true,
+      "status": "correct",
+      "reason": "It directly reads Fixed localization + repair and No autonomous planning, and properly states that no success rate, correctness guarantee, or broader performance claim is available from the figure."
+    }
+  ],
+  "errors": [],
+  "bindings": {
+    "observationSHA256": "b59f73254611946bd081c47c40fab58b8e6ed4263f2e14f314b388493ab228c6",
+    "rubricSHA256": "5a957ba742ca90061eaaa77cc43efe6e525f89942d999c7988a84e77949bddec"
+  },
+  "scope": "Source-informed judgments of saved image-only answers. Hashes do not prove isolation, entailment, human comprehension speed or aesthetic superiority.",
+  "evidence": {
+    "handoff": {
+      "path": "c-handoff.json",
+      "sha256": "2da3aa53544195c120a4ba6b4f86162971959020c338decffe31c2d72a28059e"
+    },
+    "observation": {
+      "path": "c-normalized.json",
+      "sha256": "b59f73254611946bd081c47c40fab58b8e6ed4263f2e14f314b388493ab228c6"
+    },
+    "rubric": {
+      "path": "c-rubric.json",
+      "sha256": "5a957ba742ca90061eaaa77cc43efe6e525f89942d999c7988a84e77949bddec"
+    },
+    "grading": {
+      "path": "c-grading.json",
+      "sha256": "063ac6c39c3ef9f3642ebe272125f2e3aa77cd4b162065e417bb1e8e6a7a51c6"
+    }
+  }
+}

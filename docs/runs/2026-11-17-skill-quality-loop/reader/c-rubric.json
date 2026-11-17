@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "scope": "Declared conceptual scope only; implementation details outside the question are not required.",
+  "questions": [
+    {
+      "id": "q1",
+      "critical": true,
+      "expected": "Hierarchical repository/file/element/edit-location narrowing selects local context.",
+      "sourceEvidence": [
+        "../../2026-11-17-agentless-contribution/narrative-plan.json and source-audit.md"
+      ]
+    },
+    {
+      "id": "q2",
+      "critical": true,
+      "expected": "Localized context constrains Search/Replace patch generation; no open-ended autonomous planning.",
+      "sourceEvidence": [
+        "../../2026-11-17-agentless-contribution/narrative-plan.json and source-audit.md"
+      ]
+    },
+    {
+      "id": "q3",
+      "critical": true,
+      "expected": "Candidate patches pass syntax/regression checks and normalization/frequency selection; do not infer a broader learned ranking or guaranteed repair.",
+      "sourceEvidence": [
+        "../../2026-11-17-agentless-contribution/narrative-plan.json and source-audit.md"
+      ]
+    },
+    {
+      "id": "q4",
+      "critical": true,
+      "expected": "The explicit fixed localization/repair design excludes autonomous planning. No success rate or guaranteed correctness is shown.",
+      "sourceEvidence": [
+        "../../2026-11-17-agentless-contribution/narrative-plan.json and source-audit.md"
+      ]
+    }
+  ]
+}

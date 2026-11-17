@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "scope": "Declared conceptual scope only; implementation details outside the question are not required.",
+  "questions": [
+    {
+      "id": "q1",
+      "critical": true,
+      "expected": "Training uses paired images and natural-language descriptions, without requiring a predetermined class vocabulary; at use time candidate class descriptions are encoded for matching. A schematic word example must not make that distinction unreadable.",
+      "sourceEvidence": [
+        "../../2026-11-17-clip-showcase/narrative-plan.json and source/method-prose.txt"
+      ]
+    },
+    {
+      "id": "q2",
+      "critical": true,
+      "expected": "All-pairs image/text similarities, diagonal paired examples, both retrieval directions with a symmetric training objective.",
+      "sourceEvidence": [
+        "../../2026-11-17-clip-showcase/narrative-plan.json and source/method-prose.txt"
+      ]
+    },
+    {
+      "id": "q3",
+      "critical": true,
+      "expected": "Image and text encoders are learned in pre-training and reused at zero-shot use; class descriptions define candidates without a new task-trained head or task-specific training.",
+      "sourceEvidence": [
+        "../../2026-11-17-clip-showcase/narrative-plan.json and source/method-prose.txt"
+      ]
+    },
+    {
+      "id": "q4",
+      "critical": false,
+      "expected": "Cross-modal alignment enables reuse with language-provided classes. No numerical performance or exact loss formula is established by the picture.",
+      "sourceEvidence": [
+        "../../2026-11-17-clip-showcase/narrative-plan.json and source/method-prose.txt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "status": "pass",
+  "communicationReady": true,
+  "image": {
+    "path": "b.png",
+    "sha256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa"
+  },
+  "reader": {
+    "kind": "independent-agent",
+    "name": "/root/reader_b"
+  },
+  "grader": {
+    "kind": "independent-agent",
+    "name": "/root/reader_grading"
+  },
+  "counts": {
+    "questions": 4,
+    "answered": 4,
+    "correct": 4,
+    "criticalFailures": 0
+  },
+  "outcomes": [
+    {
+      "id": "q1",
+      "critical": true,
+      "status": "correct",
+      "reason": "It accurately distinguishes the four visible tokens entering the encoder from the twelve learned mask tokens that join only after encoding. It does not overclaim a patch-selection algorithm."
+    },
+    {
+      "id": "q2",
+      "critical": true,
+      "status": "correct",
+      "reason": "It identifies post-encoder restoration, the incoming encoded visible tokens, learned mask-token copies, restore indices, and the resulting full 4x4 decoder input. The withheld data-structure details are outside scope."
+    },
+    {
+      "id": "q3",
+      "critical": true,
+      "status": "correct",
+      "reason": "It correctly separates dense/full-position pixel prediction from masked-only MSE supervision. Its caveat that the schematic does not specify tensor shape is compatible with the rubric's conceptual claim."
+    },
+    {
+      "id": "q4",
+      "critical": true,
+      "status": "correct",
+      "reason": "It reads the central sparse-encoder/later-restoration distinction and rejects the two material misreadings: encoder-side masked-pixel reconstruction and loss over every position. It also correctly does not infer speed or performance."
+    }
+  ],
+  "errors": [],
+  "bindings": {
+    "observationSHA256": "308aa3e2e2a65661441284e1899bb30967a705d6369e2f00264b84e116c78947",
+    "rubricSHA256": "fb5c7d4cab3c699627b6de3c179d251128cac0248a7f998009bc0ba9e9d15bf5"
+  },
+  "scope": "Source-informed judgments of saved image-only answers. Hashes do not prove isolation, entailment, human comprehension speed or aesthetic superiority.",
+  "evidence": {
+    "handoff": {
+      "path": "b-handoff.json",
+      "sha256": "26d08fb918051f470844906d840dc13349d458a6008a72ce58a2228fda09101e"
+    },
+    "observation": {
+      "path": "b-normalized.json",
+      "sha256": "308aa3e2e2a65661441284e1899bb30967a705d6369e2f00264b84e116c78947"
+    },
+    "rubric": {
+      "path": "b-rubric.json",
+      "sha256": "fb5c7d4cab3c699627b6de3c179d251128cac0248a7f998009bc0ba9e9d15bf5"
+    },
+    "grading": {
+      "path": "b-grading.json",
+      "sha256": "856421bc9e8dad69488e52ff8b2a4a7756993c80bfd57c1a184a3adf06105e23"
+    }
+  }
+}

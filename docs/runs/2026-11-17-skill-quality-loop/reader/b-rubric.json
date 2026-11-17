@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "scope": "Declared conceptual scope only; implementation details outside the question are not required.",
+  "questions": [
+    {
+      "id": "q1",
+      "critical": true,
+      "expected": "Only visible patches enter the encoder; mask tokens do not enter it.",
+      "sourceEvidence": [
+        "../../2026-11-17-mae-high-quality/source-audit.md and narrative-plan.json"
+      ]
+    },
+    {
+      "id": "q2",
+      "critical": true,
+      "expected": "After encoding, visible representations join learned mask-token copies in restored positions before the lightweight decoder.",
+      "sourceEvidence": [
+        "../../2026-11-17-mae-high-quality/source-audit.md and narrative-plan.json"
+      ]
+    },
+    {
+      "id": "q3",
+      "critical": true,
+      "expected": "The full patch grid is predicted, with reconstruction loss restricted to masked positions.",
+      "sourceEvidence": [
+        "../../2026-11-17-mae-high-quality/source-audit.md and narrative-plan.json"
+      ]
+    },
+    {
+      "id": "q4",
+      "critical": true,
+      "expected": "Sparse encoder input and later restoration/reconstruction are distinct; the figure does not establish measured speed or performance.",
+      "sourceEvidence": [
+        "../../2026-11-17-mae-high-quality/source-audit.md and narrative-plan.json"
+      ]
+    }
+  ]
+}

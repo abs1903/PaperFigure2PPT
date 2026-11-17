@@ -1,0 +1,35 @@
+{
+  "reader": "b",
+  "protocol": "Image-only review. I inspected b.png at 1774x887 pixels and a 672px-wide derivative; no source materials, briefs, maps, prior reviews, or recalled method knowledge were used as evidence.",
+  "image": {
+    "path": "docs/runs/2026-11-17-skill-quality-loop/reader/b.png",
+    "sha256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa",
+    "dimensions": "1774x887",
+    "derived672": {
+      "path": "docs/runs/2026-11-17-skill-quality-loop/reader/b-672.png",
+      "sha256": "be71f721253673bd174d865ab06d1bd426df409e68238a912273af153af8b771"
+    }
+  },
+  "priorFamiliarity": "I recognize generic diagram labels such as encoder, decoder, and MSE, but did not use any recalled knowledge of a named method. Every claim below is limited to visible pixels and labels.",
+  "q1": {
+    "answer": "Only the visible patches enter the Encoder. The masked patches are excluded from its input; the image patch grid is labeled 'Mask 75%' and is reduced to four blue visible-patch tokens before the Encoder. The gray learned mask tokens are not drawn as Encoder inputs.",
+    "visibleEvidence": "A 4x4 'Image patches' grid points through 'Mask 75%' to a vertical row labeled 'Visible patches' containing four blue squares, then into the blue Encoder. Gray squares labeled 'Learned mask tokens ×12' instead point down into 'Restore order' after the Encoder.",
+    "uncertainty": "The colors and the 4-versus-12 token count are explicit, but the diagram does not state the exact patch-selection rule or whether the shown pattern is one example or fixed."
+  },
+  "q2": {
+    "answer": "The full token layout is restored immediately after the Encoder, at the 'Restore order' box. Encoded visible-patch tokens enter from the left, twelve learned mask tokens enter from above, and dashed 'Restore indices' enter from below; the outgoing 4x4 grid interleaves blue and gray positions before the lightweight decoder.",
+    "visibleEvidence": "The arrows and labels visibly route 'Encoded visible patches' into 'Restore order'; a downward arrow from the gray 'Learned mask tokens ×12' block and a dashed arrow labeled 'Restore indices' terminate at the same box. Its output is a complete-looking 4x4 blue/gray grid.",
+    "uncertainty": "The figure names the operation but does not specify the index data structure, ordering algorithm, or whether token values themselves are transformed in restoration."
+  },
+  "q3": {
+    "answer": "The lightweight decoder visibly emits a dense 4x4 'Pixel predictions' grid. The loss uses only masked positions: the dashed yellow path labeled 'Binary mask' feeds a gold/white grid labeled 'Masked positions only', and the loss box is labeled 'Masked-patch MSE'. Thus the visible positions may be displayed as predictions, but they are not shown as loss contributors.",
+    "visibleEvidence": "A full 4x4 colored grid sits directly under 'Pixel predictions'. In the lower dashed enclosure, arrows from 'Original target' and the prediction side meet a mask grid whose gold cells are captioned 'Masked positions only', then point into 'Masked-patch MSE'.",
+    "uncertainty": "The diagram does not explicitly write an equation or state whether every position is numerically decoded; 'dense' is inferred from the displayed full prediction grid. The lower cropped-looking prediction/target drawings are schematic, so they do not establish a per-patch tensor shape."
+  },
+  "q4": {
+    "answer": "The central visible design distinction is separation of encoder input masking from later reconstruction: the Encoder receives only visible tokens, while missing slots are reinstated afterwards with learned mask tokens plus restore indices, before a lightweight decoder. A tempting but unsupported interpretation is that the encoder reconstructs masked pixels itself, or that loss is computed on every displayed output position; the arrows and 'Masked positions only' label instead place reconstruction after restoration and restrict the loss. The figure alone also does not prove a particular named architecture, objective normalization, or downstream use of the representation.",
+    "visibleEvidence": "The diagram’s main left-to-right route isolates a four-token visible stream through the Encoder, joins it only later with the ×12 gray tokens at 'Restore order', and separately routes a binary mask to a dashed loss enclosure labeled 'Masked-patch MSE'.",
+    "uncertainty": "'Central' is an interpretation of layout and emphasis. The image does not state comparative claims such as speed, accuracy, novelty, or an exact implementation."
+  },
+  "limits": "This is an image-only observation for an ML-researcher reader unfamiliar with the figure, assessed at the intended approximately 7-inch width via the 672px derivative. It does not validate underlying code, source accuracy, mathematical details, or any method identity."
+}

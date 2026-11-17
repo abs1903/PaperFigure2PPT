@@ -1,0 +1,27 @@
+{
+  "grader": { "kind": "independent-agent", "name": "/root/reader_grading" },
+  "observationSHA256": "a19c96d01527744d0f8a7ca32123118a44ac6631e5d2350b5babdc9177c183ab",
+  "rubricSHA256": "d048d67d8cd96824436cdaa98c0040e1f40e1b1db1cf781be58ba4d73b35efb3",
+  "answers": [
+    {
+      "id": "q1",
+      "status": "correct",
+      "reason": "It identifies paired image/text supervision in pre-training and class-description matching for zero-shot use. Calling the pictured words short labels is a pixel-level description, while its uncertainty correctly avoids claiming that the pictured examples reveal caption provenance or a fixed training vocabulary."
+    },
+    {
+      "id": "q2",
+      "status": "correct",
+      "reason": "It correctly reads the diagonal paired cells, off-diagonal alternatives, two retrieval directions, and symmetric-loss cue. The stated limits about unlabeled matrix axes and lack of numeric scores do not conflict with the declared conceptual scope."
+    },
+    {
+      "id": "q3",
+      "status": "unclear",
+      "reason": "The answer correctly establishes same-encoder reuse and appropriately refuses to invent freeze/update details, but it does not resolve the rubric's requested learned-versus-reused distinction: the top-stage encoder placement under Contrastive pre-training supports saying the encoders are learned in pre-training and reused below."
+    },
+    {
+      "id": "q4",
+      "status": "correct",
+      "reason": "It captures the displayed alignment-to-zero-shot reuse claim and correctly limits the figure to a conceptual pipeline, without asserting an exact loss formula, numerical performance, or a guarantee."
+    }
+  ]
+}

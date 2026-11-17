@@ -1,0 +1,27 @@
+{
+  "grader": { "kind": "independent-agent", "name": "/root/reader_grading" },
+  "observationSHA256": "b59f73254611946bd081c47c40fab58b8e6ed4263f2e14f314b388493ab228c6",
+  "rubricSHA256": "5a957ba742ca90061eaaa77cc43efe6e525f89942d999c7988a84e77949bddec",
+  "answers": [
+    {
+      "id": "q1",
+      "status": "correct",
+      "reason": "It reads the depicted repository-to-file-to-element-to-edit-location narrowing and accurately ties the selected identifiers to the illustration, without requiring hidden prompt or ranking details."
+    },
+    {
+      "id": "q2",
+      "status": "correct",
+      "reason": "It correctly describes the localized context window and Search/Replace form producing candidate patches, and it explicitly leaves the unshown semantic-generation rule open. The fixed, non-autonomous boundary is also explicit elsewhere in the same figure and answered in q4."
+    },
+    {
+      "id": "q3",
+      "status": "correct",
+      "reason": "It gives the visible candidate-to-syntax/regression-to-normalize/frequency-to-selected-patch order and avoids inferring a learned ranker, tie-breaker, fallback, or guaranteed repair."
+    },
+    {
+      "id": "q4",
+      "status": "correct",
+      "reason": "It directly reads Fixed localization + repair and No autonomous planning, and properly states that no success rate, correctness guarantee, or broader performance claim is available from the figure."
+    }
+  ]
+}

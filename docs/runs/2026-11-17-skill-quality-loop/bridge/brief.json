@@ -1,0 +1,205 @@
+{
+  "version": "1.1",
+  "semanticSHA256": "0b787b11e6db4526d477e8ea1d0ffb67c34acbd07525491da0cc3d3b8f76832c",
+  "narrative": {
+    "path": "../../2026-11-17-clip-showcase/narrative-plan.json",
+    "sha256": "21031f43cbb9b0cb5e1c72ad14038254055e7c475adf9ec23d8bf90346c5dc0d"
+  },
+  "compositionId": "stacked-transfer",
+  "scope": "ICML2021 paper concept, symmetric paired-batch contrastive pretraining and single-template zero-shot classification. Released code corroborates normalized scaled-cosine forward path only. No execution, benchmark, dataset-size claim or guaranteed classification result.",
+  "sourceReview": "source-plan-review.md",
+  "publicationWidthIn": 7,
+  "typography": "Refined Arial-like sans serif. Short sentence-case labels, balanced regular/bold roles, generous whitespace, legible at7-inchwidth. Mechanism labels larger than directional annotations; never use miniature paragraph labels.",
+  "blocks": [
+    {
+      "id": "paired",
+      "label": "Paired image and text examples",
+      "nodes": [
+        "images",
+        "captions"
+      ],
+      "representation": "Exactly three original geometric image glyphs: boat, bird, cup, matched to three caption chips boat/bird/cup. Use recognizable clean flat native-friendly geometry, no external photos or visual ornament. Pair identities must remain consistent."
+    },
+    {
+      "id": "encoders",
+      "label": "Jointly trained image and text encoders",
+      "nodes": [
+        "ienc",
+        "tenc"
+      ],
+      "representation": "Parallel blue Image encoder and teal Text encoder. Their outputs are normalized embeddings. Both train under the symmetric pairing objective. Do not draw captions generated from images or feed either encoder the other modality."
+    },
+    {
+      "id": "alignment",
+      "label": "Cross-modal alignment",
+      "nodes": [
+        "matrix",
+        "loss"
+      ],
+      "representation": "Large precise3x3 matrix with exactly3coral diagonal paired positives and6pale offdiagonal non-pairs. Three image-row and three text-column positions are unmistakable. Small Image to text and Text to image cues (both directions) plus Symmetric loss caption. No values or accuracy claims, no output correctness tick. Diagonal highlights represent pair labels, not actual measured scores."
+    },
+    {
+      "id": "reuse",
+      "label": "Reuse pretrained encoders",
+      "nodes": [
+        "ifixed",
+        "tfixed"
+      ],
+      "representation": "Clearly labelled zero-shot region reuses SAME blue Image encoder and teal Text encoder, fixed for this use. Dashed links from trained counterparts labelled Same encoders; no inference gradients, training loss or new classifier head."
+    },
+    {
+      "id": "query",
+      "label": "New image and class text",
+      "nodes": [
+        "query",
+        "classes"
+      ],
+      "representation": "One schematic boat image and three candidate text chips using template a photo of a {label}, with labels boat,bird,cup. New image feeds image encoder only; text prompts feed text encoder only. Label vocabulary can change without fitting a head. Do not imply training labels exactly enumerate all web captions."
+    },
+    {
+      "id": "classify",
+      "label": "Compare with class descriptions",
+      "nodes": [
+        "similarity",
+        "label"
+      ],
+      "representation": "Image/text normalized embeddings converge into Cosine similarity and then Nearest label. Avoid numeric scores/probabilities or an executed correct prediction; final label can be Nearest label without naming a winner."
+    }
+  ],
+  "relations": [
+    {
+      "edge": "image-encode",
+      "mode": "arrow",
+      "display": "Three image examples feed Image encoder only."
+    },
+    {
+      "edge": "text-encode",
+      "mode": "arrow",
+      "display": "Paired caption text feeds Text encoder only."
+    },
+    {
+      "edge": "image-matrix",
+      "mode": "arrow",
+      "display": "Normalized image embeddings index matrix rows."
+    },
+    {
+      "edge": "text-matrix",
+      "mode": "arrow",
+      "display": "Normalized text embeddings index matrix columns."
+    },
+    {
+      "edge": "matrix-loss",
+      "mode": "internal",
+      "display": "Within alignment region, the diagonal pair targets supervise both row and column retrieval under Symmetric loss."
+    },
+    {
+      "edge": "image-reuse",
+      "mode": "arrow",
+      "display": "Thin dashed model-reuse link from trained Image encoder to its fixed zero-shot counterpart."
+    },
+    {
+      "edge": "text-reuse",
+      "mode": "arrow",
+      "display": "Thin dashed model-reuse link from trained Text encoder to its fixed zero-shot counterpart."
+    },
+    {
+      "edge": "query-encode",
+      "mode": "arrow",
+      "display": "Within zero-shot region, a new image feeds reused Image encoder."
+    },
+    {
+      "edge": "class-encode",
+      "mode": "arrow",
+      "display": "Within zero-shot region, class descriptions with prompt template feed reused Text encoder."
+    },
+    {
+      "edge": "query-compare",
+      "mode": "arrow",
+      "display": "Normalized query image representation feeds Cosine similarity."
+    },
+    {
+      "edge": "class-compare",
+      "mode": "arrow",
+      "display": "Normalized class text representations feed Cosine similarity."
+    },
+    {
+      "edge": "compare-label",
+      "mode": "internal",
+      "display": "Within comparison region, nearest text embedding determines Nearest label; no trained task head."
+    }
+  ],
+  "labels": [
+    "Contrastive pre-training",
+    "Zero-shot use",
+    "Image encoder",
+    "Text encoder",
+    "Normalized embeddings",
+    "Image to text",
+    "Text to image",
+    "Symmetric loss",
+    "Paired examples",
+    "Same encoders",
+    "Class descriptions",
+    "a photo of a {label}",
+    "boat",
+    "bird",
+    "cup",
+    "Cosine similarity",
+    "Nearest label",
+    "New image"
+  ],
+  "maxVisibleWords": 75,
+  "palette": [
+    {
+      "color": "#2762DB",
+      "meaning": "Images, image encoder and image representations",
+      "nodes": [
+        "images",
+        "ienc",
+        "query",
+        "ifixed"
+      ]
+    },
+    {
+      "color": "#18877B",
+      "meaning": "Captions, class descriptions, text encoder and text representations",
+      "nodes": [
+        "captions",
+        "tenc",
+        "classes",
+        "tfixed"
+      ]
+    },
+    {
+      "color": "#E58C78",
+      "meaning": "Matched-pair diagonal targets and shared similarity/contrastive objective",
+      "nodes": [
+        "matrix",
+        "loss",
+        "similarity"
+      ]
+    },
+    {
+      "color": "#465265",
+      "meaning": "Neutral nearest-label readout",
+      "nodes": [
+        "label"
+      ]
+    }
+  ],
+  "forbidden": [
+    "Caption generation, autoregressive decoder or generative loss",
+    "Only diagonal similarities computed without negative all-pairs comparisons",
+    "Mismatched boat/bird/cup identities on the highlighted training diagonal",
+    "One-way-only training objective",
+    "Inference gradients/loss or fitting a task-specific head in zero-shot use",
+    "Cross-modal mixing before separate encoders",
+    "Training code execution claimed from released inference code",
+    "Invented numerical probabilities, scores, accuracy or correct prediction ticks",
+    "Third-party photos, overalltitle/footer,3D/shadows/gradients or decorativeclipart"
+  ],
+  "visualContract": {
+    "path": "visual-contract.json",
+    "sha256": "cb36401631f7afb211fbf60a303ed2588f61ca18d981e9770c82a3791e41f27d"
+  }
+}

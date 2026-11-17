@@ -33,9 +33,12 @@ illustrations, then independently reviewed and rebuilt as native editable object
 Compare the [previous figure, ImageGen reference and actual Office render](docs/runs/2026-11-17-clip-refinement/comparison-original-imagegen-office.png).
 The earlier [palette study](docs/runs/2026-11-17-color-study/clip-palette-comparison.png) is also retained.
 
-<a href="docs/runs/2026-11-17-clip-refinement/output-v2/native-render/preview.png"><img src="docs/runs/2026-11-17-clip-refinement/output-v2/native-render/preview.png" width="100%" alt="CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders."></a>
+A reader-task diagnostic still flags ambiguity about learning versus encoder reuse;
+see the [reader, shared-design and editing checks](docs/runs/2026-11-17-skill-quality-loop/REPORT.md).
 
-**[PowerPoint](docs/runs/2026-11-17-clip-refinement/output-v2/figure.pptx)** · [SVG](docs/runs/2026-11-17-clip-refinement/output-v2/editable.svg) · [PDF](docs/runs/2026-11-17-clip-refinement/output-v2/native-render/figure.pdf) · [Source & review](docs/runs/2026-11-17-clip-refinement/REPORT.md)
+<a href="docs/runs/2026-11-17-skill-quality-loop/bridge/output/native-render/preview.png"><img src="docs/runs/2026-11-17-skill-quality-loop/bridge/output/native-render/preview.png" width="100%" alt="CLIP: paired image and text alignment with a symmetric contrastive objective, followed by zero-shot classification using the same encoders."></a>
+
+**[PowerPoint](docs/runs/2026-11-17-skill-quality-loop/bridge/output/figure.pptx)** · [SVG](docs/runs/2026-11-17-skill-quality-loop/bridge/output/editable.svg) · [PDF](docs/runs/2026-11-17-skill-quality-loop/bridge/output/native-render/figure.pdf) · [Source & review](docs/runs/2026-11-17-clip-refinement/REPORT.md)
 
 ---
 
@@ -129,7 +132,7 @@ and interactive Microsoft PowerPoint behavior are not guaranteed by an Office re
 
 ## How it works
 
-**Sources → contribution plan → ImageGen candidates → isolated review → native SVG/PPTX → Office render → final review**
+**Sources → contribution plan, reader tasks & shared design → ImageGen candidates → isolated review → native SVG/PPTX → Office render → final review**
 
 The paper story determines what gets visual emphasis. ImageGen explores the design;
 the reviewed image is then frozen as a reconstruction target. SVG and PPTX are

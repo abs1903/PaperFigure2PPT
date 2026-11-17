@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "checkedLinks": 66,
+  "missing": [],
+  "scope": "Touched entrypoint/reference/README local destinations; image layouts unchanged by the binary-identical preview substitution."
+}

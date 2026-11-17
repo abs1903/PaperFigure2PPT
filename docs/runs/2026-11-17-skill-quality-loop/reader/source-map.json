@@ -1,0 +1,14 @@
+{
+  "a": {
+    "source": "docs/runs/2026-11-17-clip-refinement/output-v2/native-render/preview.png",
+    "sha256": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d"
+  },
+  "b": {
+    "source": "docs/runs/2026-11-17-mae-high-quality/output-v2/native-render/preview.png",
+    "sha256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa"
+  },
+  "c": {
+    "source": "docs/runs/2026-11-17-agentless-native/output-v2/native-render/preview.png",
+    "sha256": "fe36e2edff4ff7ffffc0de1ef2869d9f7b9d0f7a0034a925ee170862b7fcfc6f"
+  }
+}

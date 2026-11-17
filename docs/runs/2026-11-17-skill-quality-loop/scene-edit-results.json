@@ -1,0 +1,57 @@
+{
+  "scope": "Code-regeneration functional probes; not Microsoft PowerPoint editing, human effort or source-reviewed new method figures.",
+  "requested": 3,
+  "tasks": [
+    {
+      "id": "long-label",
+      "request": "Replace Nearest label with Nearest class description, with explicit wrapping.",
+      "method": "code-regeneration",
+      "application": "PaperFigure native exporter; actual LibreOffice evidence is recorded separately",
+      "status": "pass",
+      "checks": {
+        "layout": true,
+        "native": true,
+        "requestedEdit": true
+      },
+      "inputSHA256": "19cd30409665421217188cfcaf5a394afd8cf152d52ffe408cb71b18839bba1a",
+      "outputSHA256": "5cf6d25e4f7f567695c3a0084119004e156342227f86f53f574677c5dd566102",
+      "output": "scene-edits/long-label",
+      "errors": [],
+      "elapsedSeconds": 1.7211090839999998
+    },
+    {
+      "id": "move-module",
+      "request": "Move the nearest-output module and reroute its incident connector.",
+      "method": "code-regeneration",
+      "application": "PaperFigure native exporter; actual LibreOffice evidence is recorded separately",
+      "status": "pass",
+      "checks": {
+        "layout": true,
+        "native": true,
+        "requestedEdit": true
+      },
+      "inputSHA256": "19cd30409665421217188cfcaf5a394afd8cf152d52ffe408cb71b18839bba1a",
+      "outputSHA256": "a9a8f4a23aacee4d9a460657deca873fc6181274be7d66cd0a05f155e17cb6a4",
+      "output": "scene-edits/move-module",
+      "errors": [],
+      "elapsedSeconds": 0.7832892499999998
+    },
+    {
+      "id": "add-branch",
+      "request": "Add a native comparison/output branch (structural editing fixture only).",
+      "method": "code-regeneration",
+      "application": "PaperFigure native exporter; actual LibreOffice evidence is recorded separately",
+      "status": "pass",
+      "checks": {
+        "layout": true,
+        "native": true,
+        "requestedEdit": true
+      },
+      "inputSHA256": "19cd30409665421217188cfcaf5a394afd8cf152d52ffe408cb71b18839bba1a",
+      "outputSHA256": "763c948da30ffe117e71bb64ce24fc41496cdf599575a89f898e652a7cc544f5",
+      "output": "scene-edits/add-branch",
+      "errors": [],
+      "elapsedSeconds": 1.4596415000000003
+    }
+  ]
+}

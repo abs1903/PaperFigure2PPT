@@ -54,6 +54,12 @@ read [image-reference.md](references/image-reference.md).
 
 ## Shared invariants
 
+- For new overviews, material redesigns and quality assessments, use
+  [quality-loop.md](references/quality-loop.md): test what an unprimed reader
+  actually infers, share design roles across ImageGen/native authoring, and
+  verify realistic edits on copies. Report understanding, fidelity and editing
+  results separately; preserve failed and unverified outcomes.
+
 - Before composing a new overview or materially redesigning one, freeze the reader
   takeaway, contribution emphasis and reviewed information hierarchy using
   [paper-narrative.md](references/paper-narrative.md). Separate paper mechanisms

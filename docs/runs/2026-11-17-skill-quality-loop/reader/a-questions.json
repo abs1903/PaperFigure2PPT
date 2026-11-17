@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "audience": "ML researcher unfamiliar with this figure",
+  "publicationWidthIn": 7,
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What supplies supervision in the learning region, and how does it differ from class information during use?"
+    },
+    {
+      "id": "q2",
+      "prompt": "What makes matching image/text pairs distinguishable from other comparisons?"
+    },
+    {
+      "id": "q3",
+      "prompt": "Which components are learned versus reused during use?"
+    },
+    {
+      "id": "q4",
+      "prompt": "Which central method claim is visually explicit, and what is ambiguous or unsupported?"
+    }
+  ]
+}

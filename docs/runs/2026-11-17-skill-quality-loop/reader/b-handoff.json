@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "image": {
+    "path": "b.png",
+    "sha256": "c73fa52480178dca2f1a3af0cce6cd6cbf1e5dc4d908cc0330499f35df6503fa"
+  },
+  "audience": "ML researcher unfamiliar with this figure",
+  "publicationWidthIn": 7,
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What enters the encoder and what is excluded?"
+    },
+    {
+      "id": "q2",
+      "prompt": "When and how is the full representation restored?"
+    },
+    {
+      "id": "q3",
+      "prompt": "Which positions are predicted, and which positions contribute to the loss?"
+    },
+    {
+      "id": "q4",
+      "prompt": "What central design distinction is visible and which tempting interpretation remains unsupported?"
+    }
+  ],
+  "instructions": "Inspect only the supplied image. Answer each question with visible evidence and uncertainty; distinguish prior familiarity from pixel evidence. Save this observation before opening sources, expected answers or prior reviews. This is qualitative agent reading, not a timed human study."
+}

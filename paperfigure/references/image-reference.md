@@ -5,6 +5,12 @@ host-assisted, not a provider call in the offline CLI. Prefer the built-in image
 tool within user scope; no paid external fallback without explicit permission.
 An image model proposes appearance; it never supplies scientific evidence.
 
+For new overviews and material redesigns, use [quality-loop.md](quality-loop.md)
+to separate public reader questions from the source rubric, and bind a shared
+visual contract before prompting. Keep exploration coordinates flexible; freeze
+complete native bindings only after inspecting the selected image. A passing
+source review does not resolve a critical reader misunderstanding.
+
 ## ImageGen-first route
 
 When the user requests this route or asks to improve a generated design before

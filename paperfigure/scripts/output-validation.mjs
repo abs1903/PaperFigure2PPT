@@ -29,6 +29,10 @@ export async function validateOutput(dir){
     reports['reference-layout-qa.json']=await checkReferenceLayout(svg,scene,contract,dir);
     reports['layout-qa.json']=await inspectLayout(svg,scene);
     reports['native-audit.json']=await auditNativeLayout(scene,pptx,map);
+    if(contract.visualContract){
+      const {loadVisualContract,auditVisualContract}=await import('./visual-contract.mjs');
+      reports['visual-contract-qa.json']=auditVisualContract(scene,(await loadVisualContract(contract.visualContract,dir)).contract);
+    }
     if(contract.typography){
       const {auditTypography}=await import('./typography-profile.mjs');
       const profile=readJSON(path.resolve(dir,contract.typography.path));

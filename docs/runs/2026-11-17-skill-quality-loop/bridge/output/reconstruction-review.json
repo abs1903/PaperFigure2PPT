@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "reviewer": {
+    "kind": "independent-agent",
+    "name": "/root/quality_forward_review",
+    "isolation": "Independent forward reviewer: inspected the frozen target, current SVG preview, current actual LibreOffice render, source audit, and native records; did not author or modify the bridge figure."
+  },
+  "referenceFidelity": "pass",
+  "svgNativeEditability": "pass",
+  "pptxNativeEditability": "pass",
+  "reference": {"path": "../../../2026-11-17-clip-refinement/selected-reference.png", "sha256": "5b40d80ea1cbf366460e0c65d884a73969cba94f6adf7005495d20c8e667f8d8"},
+  "artifacts": {
+    "preOutputInspection": "../../../2026-11-17-clip-refinement/native-reference-inspection.md",
+    "editable.svg": "287806fb1fd97fa164080ad467ec123b9e1ae1c95bff4c5f05f497c1fd34d064",
+    "svgPreview": "1fb1d2f3745f931ba54955a0e2195ec8bb7e1f33d7e779c44c6f0990b018f57f",
+    "figure.pptx": "fa54818787e18e6adcac33c97ca543839d44ed21d0c14565c9d1fce6fd37951a",
+    "officePreview": "3fa499c02a3f57feb487b78d00266c826ebc18e51853717e280f2c6ecffefa6d",
+    "officePdf": "180e14d488332cefb4180ffcb8334e018046726732cd6dc33a1c8f9143f6488b",
+    "objectMap": "f46f655b6cd44b2bfb13946bb8780d8375eb0efe115730eb9a7de993b73ee002",
+    "nativeAudit": "4b523ca229f87bc3feb80804115f37fefcb9972ddd6cbe45ede25bf8fe8c1051",
+    "referenceGeometry": "d8982c20763231064015e7bef316ce8e52190f8a47207d29b41ce662f0517edc",
+    "renderQa": "dbc06fbd22ff953d73eca8daf653c7442cbb835666287a9d8664e0c4efba8c0e",
+    "typographyQa": "d472a42d5b0192cd95bb88031114f102770866e35d791b0ab41a571e7ac1d33d",
+    "visualContract": "6ffcb80608f05df3c1713f6047531fccd5d7b2f8767c7ca908c9d18536015a22"
+  },
+  "regionChecklist": [
+    {"region":"upper cards and image encoder","verdict":"pass","finding":"Boat, bird, cup cards merge into the blue image-encoder path."},
+    {"region":"upper captions and text encoder","verdict":"pass","finding":"Three green caption chips merge into the text encoder and fan into matrix columns."},
+    {"region":"pairing field and objective","verdict":"pass","finding":"The 3x3 field keeps three warm diagonal pairs, two directional cues, and the training-only symmetric-loss annotation."},
+    {"region":"phase bridge","verdict":"pass","finding":"Blue and green dashed reuse routes originate at their upper encoders, cross only the divider annotation, and reach their lower counterparts."},
+    {"region":"zero-shot path","verdict":"pass","finding":"New image and class-description inputs visibly reach their modality encoders, then cosine similarity and Nearest label."},
+    {"region":"full-size and Office typography","verdict":"pass","finding":"Opened SVG and LibreOffice renders show no clipped text, missing labels, or route/text occlusion; expected font/gradient/elbow approximations are visible."}
+  ],
+  "authorizedDeviations": ["Flat native fills approximate mild raster shading.", "Measured Arial substitutes the unknown raster font.", "Rounded raster elbows are editable orthogonal native routes.", "Boat, bird, and cup are native vector contour approximations."],
+  "unresolvedExceptions": ["No interactive Microsoft PowerPoint editing or human-time study was performed.", "The original font family cannot be recovered from the raster."],
+  "evidence": ["Opened frozen reference, SVG preview, actual LibreOffice preview, native-render PDF record, and object/native/typography/geometry/visual-contract records.", "The required 16 route artifacts were individually hashed before this record; no QA was run after those hashes were captured."]
+}
