@@ -1,0 +1,12 @@
+{
+  "skill": "paperfigure",
+  "root": "/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/",
+  "node": "v24.14.1",
+  "nodeDependenciesReady": true,
+  "problems": [],
+  "chromium": {
+    "available": true,
+    "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  },
+  "scope": "Local runtime setup only; Office rendering and independent figure review remain separate."
+}

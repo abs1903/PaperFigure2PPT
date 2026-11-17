@@ -1,13 +1,13 @@
 
 │
 ●   codex  Agent detected — installing non-interactively
-[?25l│
+│
 ◇  Source: /var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-install-24gjklx3/source-repo
-[?25h[?25l│
+│
 ◇  Local path validated
-[?25h[?25l│
+│
 ◇  Found 1 skill
-[?25h│
+│
 ●  Selected 1 skill: paperfigure
 
 │
@@ -17,9 +17,9 @@
 │    universal: Codex            │
 │                                │
 ├────────────────────────────────╯
-[?25l│
+│
 ◒  Installing skills…◐  Installing skills…◓  Installing skills…◑  Installing skills…◒  Installing skills…◐  Installing skills…◓  Installing skills…◑  Installing skills…◒  Installing skills….◐  Installing skills….◓  Installing skills….◑  Installing skills….◇  Installation complete
-[?25h
+
 │
 ◇  Installed 1 skill ────────────────╮
 │                                    │
@@ -30,4 +30,3 @@
 
 │
 └  Done!  Review skills before use; they run with full agent permissions.
-

@@ -65,9 +65,22 @@ modified by these project-local tests.
 
 ## Remote verification
 
-The exact GitHub source and installed-file/runtime results are recorded separately
-in `github-install-report.json` after publishing the locally verified candidate.
-This section does not substitute a local copy test for remote installation.
+[Actual GitHub installation](github-install-report.json) passed from private
+`abs1903/PaperFigure2PPT`, main commit
+`fbbcda808735f8c55fc0f5f8abad98542187bcad`, with skills CLI 1.9.0 and existing
+Git/GitHub CLI credentials. No credential was added to a command or log.
+
+The real remote install took 143.52 seconds. Nine installed entrypoint/runtime,
+lockfile, setup and style/provenance files matched the published candidate hashes.
+The fresh skill had no node_modules; its cold check failed as expected, bootstrap
+installed dependencies successfully, the ready check passed, and its installed
+CLI produced native PPTX/SVG/PDF with mechanical QA pass. Remote dependency setup
+used the normal npm cache and took 3.36 seconds. Global skill directories were
+not modified.
+
+The later receipt-only commit leaves these tested skill files byte-identical.
+Full browser execution was exercised in the local clean-package run; no duplicate
+Office or publication-review claim is inferred from this remote packaging smoke.
 
 ## Scope
 

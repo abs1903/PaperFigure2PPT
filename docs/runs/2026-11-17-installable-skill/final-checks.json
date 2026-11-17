@@ -1,0 +1,11 @@
+{
+  "localCleanPackageInstall": true,
+  "actualGitHubInstall": true,
+  "gitHubCommit": "fbbcda808735f8c55fc0f5f8abad98542187bcad",
+  "testedSkillsCLI": "1.9.0",
+  "skillFileHashesStillMatch": true,
+  "entrypointAndReferences": "validated",
+  "bootstrapScript": "syntax and real cold/ready/npm execution tested",
+  "nativeExport": "mechanical smoke pass, not publication-ready",
+  "globalSkillInstallation": "not performed"
+}

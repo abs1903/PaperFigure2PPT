@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "source": "abs1903/PaperFigure2PPT",
+  "ref": "main",
+  "publishedCommit": "fbbcda808735f8c55fc0f5f8abad98542187bcad",
+  "skillsCLI": "1.9.0",
+  "privateAuthentication": "Existing Git/GitHub CLI credentials; no credential copied into arguments or logs.",
+  "installedSkillDirectory": "/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure",
+  "isolatedProject": "/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb",
+  "copiedSkillFileHashes": {
+    "SKILL.md": "4d65dede0a938b7e00ee1946489e99bbf3ef6860f775311473648d6c969abe8d",
+    "package.json": "c7d98c844c3089d8ebf78688bc5fb7e3525e6205d42522b728512351887479c9",
+    "package-lock.json": "b15c5803bac1a88600b307738405b063d881904c303159b783fcee9e12007edd",
+    "scripts/bootstrap.mjs": "cc36dc8500e56cf4f8a7d7477410f5eb09201399f9b01ff419f1ab1f967e39e8",
+    "scripts/paperfigure.mjs": "54e9eb8e707c1caecb66d305b2e5711612c4a4f863acfc850aa8bad9a50be1a6",
+    "scripts/layout-inspect.mjs": "d7161066d21e8119e159ca30290986e226584191f0d19257a59f22ec7ae8466d",
+    "references/installation.md": "b5afc83a05a39ac66a48b6d666b05ff4eb8c87e89d14e42523478c6f0a4c9939",
+    "assets/visual-styles.json": "fc51c61e079fa06e08f4ed317a0a4b8377772c8e2410b5619837270e4e79c812",
+    "assets/styles/provenance.json": "f524d18573cba6f1426f8802eaf9df2f3b39c95deafa83f98b690dbdb271d1d5"
+  },
+  "steps": [
+    {
+      "step": "github-cli-install",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 143.52
+    },
+    {
+      "step": "github-cold-check",
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "elapsedSeconds": 0.05
+    },
+    {
+      "step": "github-first-bootstrap",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 3.36
+    },
+    {
+      "step": "github-ready-check",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 0.47
+    },
+    {
+      "step": "github-native-export",
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "elapsedSeconds": 0.71
+    }
+  ],
+  "nativeExportMechanicalQA": "pass",
+  "globalSkillDirectoryModified": false,
+  "scope": "Actual remote GitHub project-local install with a fresh dependency directory on the existing macOS host; no clean OS or publication-ready figure claim."
+}

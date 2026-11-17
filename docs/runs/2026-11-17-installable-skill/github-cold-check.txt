@@ -1,0 +1,45 @@
+{
+  "skill": "paperfigure",
+  "root": "/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/",
+  "node": "v24.14.1",
+  "nodeDependenciesReady": false,
+  "problems": [
+    {
+      "name": "ajv",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/ajv/package.json'"
+    },
+    {
+      "name": "fast-xml-parser",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/fast-xml-parser/package.json'"
+    },
+    {
+      "name": "jszip",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/jszip/package.json'"
+    },
+    {
+      "name": "pdfkit",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/pdfkit/package.json'"
+    },
+    {
+      "name": "playwright",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/playwright/package.json'"
+    },
+    {
+      "name": "pptxgenjs",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/pptxgenjs/package.json'"
+    },
+    {
+      "name": "sharp",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/sharp/package.json'"
+    },
+    {
+      "name": "svg-to-pdfkit",
+      "reason": "ENOENT: no such file or directory, open '/private/var/folders/fy/xsdhkywj0vl8wph2q0rn6q_c0000gn/T/paperfigure-github-install-xk_axrcb/.agents/skills/paperfigure/node_modules/svg-to-pdfkit/package.json'"
+    }
+  ],
+  "chromium": {
+    "available": false,
+    "reason": "Node dependencies are not ready"
+  },
+  "scope": "Local runtime setup only; Office rendering and independent figure review remain separate."
+}
