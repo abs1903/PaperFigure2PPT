@@ -1,1 +1,12 @@
-{"name":"paperfigure-workspace","private":true,"version":"0.1.0","scripts":{"test":"npm --prefix paperfigure test","examples":"npm --prefix paperfigure run examples"}}
+{
+  "name": "paperfigure-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev:link": "node paperfigure/scripts/install.mjs --link .agents/skills/paperfigure",
+    "dev:check": "node .agents/skills/paperfigure/scripts/bootstrap.mjs --check",
+    "test:quick": "node --test paperfigure/tests/install.test.mjs paperfigure/tests/design-prompt.test.mjs paperfigure/tests/quality-loop.test.mjs",
+    "test": "npm --prefix paperfigure test",
+    "examples": "npm --prefix paperfigure run examples"
+  }
+}

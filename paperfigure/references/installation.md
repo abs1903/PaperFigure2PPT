@@ -67,6 +67,17 @@ provider credentials or automatic paper parser.
 
 ## Local-checkout alternative
 
+For development inside this repository, use a project-local source link:
+
+```sh
+npm run dev:link
+npm run dev:check
+```
+
+Edits to `paperfigure/` are immediately visible through `.agents/skills/paperfigure`.
+The link installer refuses other existing installations. It does not replace a
+global copy. The following copy-install workflow remains available for other uses.
+
 ```sh
 git clone https://github.com/abs1903/PaperFigure2PPT.git
 cd PaperFigure2PPT

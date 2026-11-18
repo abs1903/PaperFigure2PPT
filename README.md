@@ -121,6 +121,11 @@ Deterministic native authoring is also available without image generation.
 
 ## Try it
 
+Developing this skill locally? Use `npm run dev:link` to link the working source
+into this project, then `npm run test:quick` or `npm test`. See the
+[development and testing guide](docs/DEVELOPMENT.md) for clean behavior tests and
+separate public-install checks.
+
 > Use $paperfigure to read this paper and its official code, identify the central
 > contribution, and design a clear method overview. Compare two visual compositions,
 > review the generated image independently, then deliver an editable SVG and PPTX
