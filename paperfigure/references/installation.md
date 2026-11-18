@@ -13,9 +13,9 @@ npx skills add abs1903/PaperFigure2PPT --skill paperfigure --agent codex --globa
 
 Omit `--global` for a project installation. The explicit source URL is
 `https://github.com/abs1903/PaperFigure2PPT/tree/main/paperfigure`.
-The repository is private; installation requires an account with repository access
-and existing Git/GitHub CLI authentication. No credential should be pasted into a
-prompt or written into an install command.
+The repository is public; no repository access grant or GitHub sign-in is required
+to clone it. No credential should be pasted into a prompt or written into an
+install command.
 
 Codex's Skill Installer also supports that tree URL. Ask it to install:
 

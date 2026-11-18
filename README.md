@@ -14,8 +14,8 @@ npx skills add abs1903/PaperFigure2PPT --skill paperfigure --agent codex --globa
 ```
 
 One installable skill at [`paperfigure/`](paperfigure/SKILL.md). The `skills` CLI
-requires Node.js 22.20+; this private repository requires GitHub access. After
-installation, start a new Codex chat and invoke `$paperfigure`.
+requires Node.js 22.20+. The repository is public; after installation, start a new
+Codex chat and invoke `$paperfigure`.
 
 ## Examples
 
@@ -102,8 +102,8 @@ npx skills add abs1903/PaperFigure2PPT --skill paperfigure --agent codex --globa
 
 Omit `--global` to install into the current project. The explicit skill URL is
 [the `paperfigure` skill directory on GitHub](https://github.com/abs1903/PaperFigure2PPT/tree/main/paperfigure).
-You can also give that URL to Codex's Skill Installer. Existing Git or GitHub CLI
-authentication must have access to this private repository.
+You can also give that URL to Codex's Skill Installer. No repository access grant
+is required to install from this public repository.
 
 Start a new Codex chat and invoke `$paperfigure`. Its first-use bootstrap installs
 missing locked Node dependencies inside the installed skill. A usable Chromium
